@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="135142" started-at="2020-10-19T15:12:59Z" finished-at="2020-10-19T15:15:14Z">
+    <groups>
+    </groups>
+    <test name="Open Site" duration-ms="23331" started-at="2020-10-19T15:12:59Z" finished-at="2020-10-19T15:13:22Z">
+      <class name="TestCases_Execution.TestCase_1">
+        <test-method status="PASS" signature="initilize()[pri:0, instance:TestCases_Execution.TestCase_1@1fb19a0]" name="initilize" is-config="true" duration-ms="21866" started-at="2020-10-19T15:12:59Z" finished-at="2020-10-19T15:13:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:TestCases_Execution.TestCase_1@1fb19a0]" name="basePageNavigation" duration-ms="1133" started-at="2020-10-19T15:13:21Z" finished-at="2020-10-19T15:13:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases_Execution.TestCase_1@1fb19a0]" name="tearDown" is-config="true" duration-ms="203" started-at="2020-10-19T15:13:22Z" finished-at="2020-10-19T15:13:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases_Execution.TestCase_1 -->
+    </test> <!-- Open Site -->
+    <test name="Sign in Landing page open" duration-ms="23689" started-at="2020-10-19T15:13:23Z" finished-at="2020-10-19T15:13:47Z">
+      <class name="TestCases_Execution.TestCase_2">
+        <test-method status="PASS" signature="initilize()[pri:0, instance:TestCases_Execution.TestCase_2@7fcf2fc1]" name="initilize" is-config="true" duration-ms="17110" started-at="2020-10-19T15:13:23Z" finished-at="2020-10-19T15:13:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method status="PASS" signature="logIn()[pri:0, instance:TestCases_Execution.TestCase_2@7fcf2fc1]" name="logIn" duration-ms="6499" started-at="2020-10-19T15:13:40Z" finished-at="2020-10-19T15:13:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases_Execution.TestCase_2@7fcf2fc1]" name="tearDown" is-config="true" duration-ms="71" started-at="2020-10-19T15:13:47Z" finished-at="2020-10-19T15:13:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases_Execution.TestCase_2 -->
+    </test> <!-- Sign in Landing page open -->
+    <test name="Log In Done" duration-ms="28824" started-at="2020-10-19T15:13:47Z" finished-at="2020-10-19T15:14:16Z">
+      <class name="TestCases_Execution.TestCase_3">
+        <test-method status="PASS" signature="initilize()[pri:0, instance:TestCases_Execution.TestCase_3@6d07a63d]" name="initilize" is-config="true" duration-ms="19501" started-at="2020-10-19T15:13:47Z" finished-at="2020-10-19T15:14:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method status="PASS" signature="CheckInfo()[pri:0, instance:TestCases_Execution.TestCase_3@6d07a63d]" name="CheckInfo" duration-ms="9117" started-at="2020-10-19T15:14:06Z" finished-at="2020-10-19T15:14:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckInfo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases_Execution.TestCase_3@6d07a63d]" name="tearDown" is-config="true" duration-ms="200" started-at="2020-10-19T15:14:16Z" finished-at="2020-10-19T15:14:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases_Execution.TestCase_3 -->
+    </test> <!-- Log In Done -->
+    <test name="Game created" duration-ms="58359" started-at="2020-10-19T15:14:16Z" finished-at="2020-10-19T15:15:14Z">
+      <class name="TestCases_Execution.TestCase_4">
+        <test-method status="PASS" signature="initilize()[pri:0, instance:TestCases_Execution.TestCase_4@4e423aa2]" name="initilize" is-config="true" duration-ms="17491" started-at="2020-10-19T15:14:16Z" finished-at="2020-10-19T15:14:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method status="PASS" signature="create_Game()[pri:1, instance:TestCases_Execution.TestCase_4@4e423aa2]" name="create_Game" duration-ms="40723" started-at="2020-10-19T15:14:33Z" finished-at="2020-10-19T15:15:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_Game -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases_Execution.TestCase_4@4e423aa2]" name="tearDown" is-config="true" duration-ms="143" started-at="2020-10-19T15:15:14Z" finished-at="2020-10-19T15:15:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases_Execution.TestCase_4 -->
+    </test> <!-- Game created -->
+  </suite> <!-- Suite -->
+</testng-results>

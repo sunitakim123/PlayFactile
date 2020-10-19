@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="102390" started-at="2020-10-19T15:29:56Z" finished-at="2020-10-19T15:31:38Z">
+    <groups>
+    </groups>
+    <test name="Open Site" duration-ms="23037" started-at="2020-10-19T15:29:56Z" finished-at="2020-10-19T15:30:19Z">
+      <class name="TestCases_Execution.TestCase_1">
+        <test-method status="PASS" signature="initilize()[pri:0, instance:TestCases_Execution.TestCase_1@14fa86ae]" name="initilize" is-config="true" duration-ms="21578" started-at="2020-10-19T15:29:56Z" finished-at="2020-10-19T15:30:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:TestCases_Execution.TestCase_1@14fa86ae]" name="basePageNavigation" duration-ms="712" started-at="2020-10-19T15:30:17Z" finished-at="2020-10-19T15:30:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases_Execution.TestCase_1@14fa86ae]" name="tearDown" is-config="true" duration-ms="616" started-at="2020-10-19T15:30:18Z" finished-at="2020-10-19T15:30:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases_Execution.TestCase_1 -->
+    </test> <!-- Open Site -->
+    <test name="Sign in Landing page open" duration-ms="28535" started-at="2020-10-19T15:30:20Z" finished-at="2020-10-19T15:30:48Z">
+      <class name="TestCases_Execution.TestCase_2">
+        <test-method status="PASS" signature="initilize()[pri:0, instance:TestCases_Execution.TestCase_2@55cf0d14]" name="initilize" is-config="true" duration-ms="19976" started-at="2020-10-19T15:30:20Z" finished-at="2020-10-19T15:30:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method status="PASS" signature="logIn()[pri:0, instance:TestCases_Execution.TestCase_2@55cf0d14]" name="logIn" duration-ms="8457" started-at="2020-10-19T15:30:40Z" finished-at="2020-10-19T15:30:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases_Execution.TestCase_2@55cf0d14]" name="tearDown" is-config="true" duration-ms="101" started-at="2020-10-19T15:30:48Z" finished-at="2020-10-19T15:30:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases_Execution.TestCase_2 -->
+    </test> <!-- Sign in Landing page open -->
+    <test name="Log In Done" duration-ms="49684" started-at="2020-10-19T15:30:48Z" finished-at="2020-10-19T15:31:38Z">
+      <class name="TestCases_Execution.TestCase_3">
+        <test-method status="PASS" signature="initilize()[pri:0, instance:TestCases_Execution.TestCase_3@4066c471]" name="initilize" is-config="true" duration-ms="30117" started-at="2020-10-19T15:30:48Z" finished-at="2020-10-19T15:31:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method status="PASS" signature="CheckInfo()[pri:0, instance:TestCases_Execution.TestCase_3@4066c471]" name="CheckInfo" duration-ms="18710" started-at="2020-10-19T15:31:18Z" finished-at="2020-10-19T15:31:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckInfo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases_Execution.TestCase_3@4066c471]" name="tearDown" is-config="true" duration-ms="855" started-at="2020-10-19T15:31:37Z" finished-at="2020-10-19T15:31:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases_Execution.TestCase_3 -->
+    </test> <!-- Log In Done -->
+  </suite> <!-- Suite -->
+</testng-results>

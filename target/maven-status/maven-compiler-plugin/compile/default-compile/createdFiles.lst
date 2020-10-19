@@ -1,0 +1,7 @@
+pageObject\CreateGameUsingExcel.class
+pageObject\PlayGame.class
+resources\Base.class
+pageObject\LandingPage.class
+pageObject\CurrentAccountInfo.class
+pageObject\LoginPage.class
+resources\ExtentReporterNG.class
