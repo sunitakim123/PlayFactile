@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="TestCases_Execution.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Check Join Pin(failed)">
+    <classes>
+      <class name="TestCases_Execution.TestCase_6">
+        <methods>
+          <include name="teardown"/>
+          <include name="VerifyJoinPin"/>
+        </methods>
+      </class> <!-- TestCases_Execution.TestCase_6 -->
+    </classes>
+  </test> <!-- Check Join Pin(failed) -->
+</suite> <!-- Failed suite [Suite] -->

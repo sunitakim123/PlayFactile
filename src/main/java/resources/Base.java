@@ -33,6 +33,7 @@ public class Base {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			
+			
 			//https://stackoverflow.com/questions/49647636/delete-chromedriver-from-eclipse
 		}
 		else if (browserName.equals("firefox")) {

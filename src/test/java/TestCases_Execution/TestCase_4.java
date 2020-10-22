@@ -33,7 +33,7 @@ public class TestCase_4 extends Base {
 		}
 	
 	@Test(priority = 1)
-	public void create_Game() throws FileNotFoundException, InterruptedException
+	public void create_Game_Using_Excel_Upload() throws FileNotFoundException, InterruptedException
 	{CreateGameUsingExcel c1 = new CreateGameUsingExcel(driver);
 		c1.createGame();
 		Log.info("Game is created using excel upload");

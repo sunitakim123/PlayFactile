@@ -1,7 +1,8 @@
 D:\Project\PlayFactile_Testing\src\main\java\resources\Base.java
 D:\Project\PlayFactile_Testing\src\main\java\pageObject\LoginPage.java
-D:\Project\PlayFactile_Testing\src\main\java\pageObject\PlayGame.java
 D:\Project\PlayFactile_Testing\src\main\java\pageObject\LandingPage.java
 D:\Project\PlayFactile_Testing\src\main\java\resources\ExtentReporterNG.java
 D:\Project\PlayFactile_Testing\src\main\java\pageObject\CreateGameUsingExcel.java
+D:\Project\PlayFactile_Testing\src\main\java\pageObject\JoinPin.java
 D:\Project\PlayFactile_Testing\src\main\java\pageObject\CurrentAccountInfo.java
+D:\Project\PlayFactile_Testing\src\main\java\pageObject\UploadMascot.java

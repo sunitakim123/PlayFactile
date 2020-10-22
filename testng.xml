@@ -1,4 +1,4 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" >
 <listeners>
 <listener class-name="TestCases_Execution.Listeners"/>
@@ -15,16 +15,28 @@
          </classes>
   </test> <!-- Test -->
   
-  <test name="Log In Done">
+  <test name="Log In to Site">
     <classes>
           <class name="TestCases_Execution.TestCase_3"/>
            </classes>
   </test> <!-- Test -->
   
-  <test name="Game created">
+  <test name="Game created using excel">
     <classes>
             <class name="TestCases_Execution.TestCase_4"/>
     </classes>
   </test> <!-- Test -->
  
+ 
+  <test name="Mascot Upload Verified at Moderater screen">
+    <classes>
+            <class name="TestCases_Execution.TestCase_5"/>
+    </classes>
+      </test> <!-- Test -->
+      
+     <test name="Check Join Pin">
+    <classes>
+            <class name="TestCases_Execution.TestCase_6"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

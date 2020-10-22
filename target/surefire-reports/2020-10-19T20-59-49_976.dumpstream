@@ -1,4 +1,0 @@
-# Created at 2020-10-19T20:59:51.466
-Boot Manifest-JAR contains absolute paths in classpath 'D:\Project\PlayFactile_Testing\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-

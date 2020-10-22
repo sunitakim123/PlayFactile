@@ -1,0 +1,57 @@
+20:43:09.783 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+20:43:21.427 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+20:43:22.461 [main] INFO  TestCases_Execution.TestCase_1 - Successsfully validated text message
+20:43:22.664 [main] INFO  TestCases_Execution.TestCase_1 - Sign In page is Open
+20:43:41.972 [main] INFO  TestCases_Execution.TestCase_2 - username is entered
+20:43:42.176 [main] INFO  TestCases_Execution.TestCase_2 - password is entered
+20:43:42.314 [main] INFO  TestCases_Execution.TestCase_2 - Sign_IN is successfully Done
+20:44:16.071 [main] INFO  TestCases_Execution.TestCase_3 - account is active  >> Yearly $48 (Ends 08-Oct-2021
+20:45:12.219 [main] INFO  TestCases_Execution.TestCase_4 - Game is created using excel upload
+20:51:19.331 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+20:51:32.669 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+20:51:33.706 [main] INFO  TestCases_Execution.TestCase_1 - Successsfully validated text message
+20:51:34.082 [main] INFO  TestCases_Execution.TestCase_1 - Sign In page is Open
+20:51:56.752 [main] INFO  TestCases_Execution.TestCase_2 - username is entered
+20:51:57.064 [main] INFO  TestCases_Execution.TestCase_2 - password is entered
+20:51:57.175 [main] INFO  TestCases_Execution.TestCase_2 - Sign_IN is successfully Done
+20:52:36.125 [main] INFO  TestCases_Execution.TestCase_3 - account is active  >> Yearly $48 (Ends 08-Oct-2021
+21:00:04.680 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+21:00:17.721 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+21:00:18.251 [main] INFO  TestCases_Execution.TestCase_1 - Successsfully validated text message
+21:00:18.536 [main] INFO  TestCases_Execution.TestCase_1 - Sign In page is Open
+21:00:42.053 [main] INFO  TestCases_Execution.TestCase_2 - username is entered
+21:00:42.190 [main] INFO  TestCases_Execution.TestCase_2 - password is entered
+21:00:42.323 [main] INFO  TestCases_Execution.TestCase_2 - Sign_IN is successfully Done
+21:01:37.678 [main] INFO  TestCases_Execution.TestCase_3 - account is active  >> Yearly $48 (Ends 08-Oct-2021
+11:40:11.620 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+11:40:26.125 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+11:40:27.458 [main] INFO  TestCases_Execution.TestCase_1 - Successsfully validated text message
+11:40:27.940 [main] INFO  TestCases_Execution.TestCase_1 - Sign In page is Open
+11:41:01.469 [main] INFO  TestCases_Execution.TestCase_2 - username is entered
+11:41:01.630 [main] INFO  TestCases_Execution.TestCase_2 - password is entered
+11:41:01.734 [main] INFO  TestCases_Execution.TestCase_2 - Sign_IN is successfully Done
+11:41:47.352 [main] INFO  TestCases_Execution.TestCase_3 - account is active  >> Yearly $48 (Ends 08-Oct-2021
+11:43:22.072 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+11:43:34.574 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+11:43:35.393 [main] INFO  TestCases_Execution.TestCase_1 - Successsfully validated text message
+11:43:35.589 [main] INFO  TestCases_Execution.TestCase_1 - Sign In page is Open
+15:02:04.004 [main] INFO  TestCases_Execution.TestCase_3 - account is active  >>Yearly $48
+11:29:37.049 [main] INFO  TestCases_Execution.TestCase_5 - Mascot image is uploaded
+11:29:44.365 [main] INFO  TestCases_Execution.TestCase_5 - Name given to new mascot uploaded image
+11:29:44.487 [main] INFO  TestCases_Execution.TestCase_5 - New mascot is Activated.
+12:22:58.850 [main] INFO  TestCases_Execution.TestCase_5 - Mascot image is uploaded
+12:22:59.706 [main] INFO  TestCases_Execution.TestCase_5 - Name given to new mascot uploaded image
+12:22:59.869 [main] INFO  TestCases_Execution.TestCase_5 - New mascot is Activated.
+12:25:02.824 [main] INFO  TestCases_Execution.TestCase_5 - Mascot image is uploaded
+12:25:03.517 [main] INFO  TestCases_Execution.TestCase_5 - Name given to new mascot uploaded image
+12:25:03.829 [main] INFO  TestCases_Execution.TestCase_5 - New mascot is Activated.
+12:28:05.463 [main] INFO  TestCases_Execution.TestCase_5 - Mascot image is uploaded
+12:28:13.822 [main] INFO  TestCases_Execution.TestCase_5 - Name given to new mascot uploaded image
+12:28:14.120 [main] INFO  TestCases_Execution.TestCase_5 - New mascot is Activated.
+12:30:35.995 [main] INFO  TestCases_Execution.TestCase_5 - Mascot image is uploaded
+12:30:44.163 [main] INFO  TestCases_Execution.TestCase_5 - Name given to new mascot uploaded image
+12:30:44.330 [main] INFO  TestCases_Execution.TestCase_5 - New mascot is Activated.
+14:04:33.385 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+14:04:46.014 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+14:04:46.323 [main] INFO  TestCases_Execution.TestCase_1 - Successsfully validated text message
+14:04:46.457 [main] INFO  TestCases_Execution.TestCase_1 - Sign In page is Open

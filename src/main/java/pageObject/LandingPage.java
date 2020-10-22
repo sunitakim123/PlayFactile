@@ -17,8 +17,13 @@ public class LandingPage {
 		PageFactory.initElements(driver, this);
 	}
 		
+	
+	
+	
+	
 	@FindBy(css="span.loginButton")
 	WebElement login;
+	
 	
 	@FindBy(css="h2.jeopardyRocks")
 	WebElement Title;

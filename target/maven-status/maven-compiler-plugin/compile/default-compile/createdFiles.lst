@@ -1,5 +1,6 @@
+pageObject\UploadMascot.class
 pageObject\CreateGameUsingExcel.class
-pageObject\PlayGame.class
+pageObject\JoinPin.class
 resources\Base.class
 pageObject\LandingPage.class
 pageObject\CurrentAccountInfo.class
