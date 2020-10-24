@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="TestCases_Execution.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Check Join Pin(failed)">
+  <test thread-count="5" name="Display Gameboard at player(failed)">
     <classes>
-      <class name="TestCases_Execution.TestCase_6">
+      <class name="TestCases_Execution.TestCase_7">
         <methods>
+          <include name="VerifyGameBoardAtPlayerScreen"/>
           <include name="teardown"/>
-          <include name="VerifyJoinPin"/>
         </methods>
-      </class> <!-- TestCases_Execution.TestCase_6 -->
+      </class> <!-- TestCases_Execution.TestCase_7 -->
     </classes>
-  </test> <!-- Check Join Pin(failed) -->
+  </test> <!-- Display Gameboard at player(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -39,4 +39,9 @@
             <class name="TestCases_Execution.TestCase_6"/>
     </classes>
   </test> <!-- Test -->
+    <test name="Display Gameboard at player">
+    <classes>
+            <class name="TestCases_Execution.TestCase_7"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

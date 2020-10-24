@@ -1,24 +1,15 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" >
 <listeners>
 <listener class-name="TestCases_Execution.Listeners"/>
 </listeners>
-  <test name="Open Site">
-    <classes>
-      <class name="TestCases_Execution.TestCase_1"/>
-       </classes>
-  </test> <!-- Test -->
   
-  <test name="Sign in Landing page open">
-    <classes>
-        <class name="TestCases_Execution.TestCase_2"/>
-         </classes>
-  </test> <!-- Test -->
   
-  <test name="Log In Done">
+  <test name="Log In to Site">
     <classes>
-          <class name="TestCases_Execution.TestCase_3"/>
+          <class name="TestCases_Execution.TestCase_7"/>
            </classes>
   </test> <!-- Test -->
+  
  
 </suite> <!-- Suite -->

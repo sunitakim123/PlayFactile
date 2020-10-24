@@ -1,97 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="325672" started-at="2020-10-22T09:13:09Z" finished-at="2020-10-22T09:18:35Z">
+  <suite started-at="2020-10-24T11:06:09Z" name="Suite" finished-at="2020-10-24T11:11:47Z" duration-ms="338628">
     <groups>
     </groups>
-    <test name="Open Site" duration-ms="28796" started-at="2020-10-22T09:13:09Z" finished-at="2020-10-22T09:13:38Z">
+    <test started-at="2020-10-24T11:06:09Z" name="Open Site" finished-at="2020-10-24T11:07:03Z" duration-ms="53887">
       <class name="TestCases_Execution.TestCase_1">
-        <test-method status="PASS" signature="initilize()[pri:0, instance:TestCases_Execution.TestCase_1@31ea9581]" name="initilize" is-config="true" duration-ms="25251" started-at="2020-10-22T09:13:09Z" finished-at="2020-10-22T09:13:34Z">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:TestCases_Execution.TestCase_1@3b220bcb]" started-at="2020-10-24T11:06:09Z" name="initilize" finished-at="2020-10-24T11:06:59Z" duration-ms="50213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:TestCases_Execution.TestCase_1@31ea9581]" name="basePageNavigation" duration-ms="726" started-at="2020-10-22T09:13:34Z" finished-at="2020-10-22T09:13:35Z">
+        <test-method signature="basePageNavigation()[pri:0, instance:TestCases_Execution.TestCase_1@3b220bcb]" started-at="2020-10-24T11:06:59Z" name="basePageNavigation" finished-at="2020-10-24T11:07:01Z" duration-ms="2101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases_Execution.TestCase_1@31ea9581]" name="tearDown" is-config="true" duration-ms="2550" started-at="2020-10-22T09:13:35Z" finished-at="2020-10-22T09:13:38Z">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases_Execution.TestCase_1@3b220bcb]" started-at="2020-10-24T11:07:01Z" name="tearDown" finished-at="2020-10-24T11:07:03Z" duration-ms="1469" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCases_Execution.TestCase_1 -->
     </test> <!-- Open Site -->
-    <test name="Sign in Landing page open" duration-ms="28325" started-at="2020-10-22T09:13:40Z" finished-at="2020-10-22T09:14:09Z">
+    <test started-at="2020-10-24T11:07:04Z" name="Sign in Landing page open" finished-at="2020-10-24T11:07:37Z" duration-ms="32683">
       <class name="TestCases_Execution.TestCase_2">
-        <test-method status="PASS" signature="initilize()[pri:0, instance:TestCases_Execution.TestCase_2@6f10d5b6]" name="initilize" is-config="true" duration-ms="20707" started-at="2020-10-22T09:13:40Z" finished-at="2020-10-22T09:14:01Z">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:TestCases_Execution.TestCase_2@12dae582]" started-at="2020-10-24T11:07:04Z" name="initilize" finished-at="2020-10-24T11:07:28Z" duration-ms="23655" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method status="PASS" signature="logIn()[pri:0, instance:TestCases_Execution.TestCase_2@6f10d5b6]" name="logIn" duration-ms="7496" started-at="2020-10-22T09:14:01Z" finished-at="2020-10-22T09:14:09Z">
+        <test-method signature="logIn()[pri:0, instance:TestCases_Execution.TestCase_2@12dae582]" started-at="2020-10-24T11:07:28Z" name="logIn" finished-at="2020-10-24T11:07:36Z" duration-ms="8895" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logIn -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases_Execution.TestCase_2@6f10d5b6]" name="tearDown" is-config="true" duration-ms="114" started-at="2020-10-22T09:14:09Z" finished-at="2020-10-22T09:14:09Z">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases_Execution.TestCase_2@12dae582]" started-at="2020-10-24T11:07:36Z" name="tearDown" finished-at="2020-10-24T11:07:37Z" duration-ms="126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCases_Execution.TestCase_2 -->
     </test> <!-- Sign in Landing page open -->
-    <test name="Log In to Site" duration-ms="39657" started-at="2020-10-22T09:14:09Z" finished-at="2020-10-22T09:14:48Z">
+    <test started-at="2020-10-24T11:07:37Z" name="Log In to Site" finished-at="2020-10-24T11:08:07Z" duration-ms="30256">
       <class name="TestCases_Execution.TestCase_3">
-        <test-method status="PASS" signature="initilize()[pri:0, instance:TestCases_Execution.TestCase_3@304bb45b]" name="initilize" is-config="true" duration-ms="17479" started-at="2020-10-22T09:14:09Z" finished-at="2020-10-22T09:14:26Z">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:TestCases_Execution.TestCase_3@30f5a68a]" started-at="2020-10-24T11:07:37Z" name="initilize" finished-at="2020-10-24T11:07:55Z" duration-ms="18315" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method status="PASS" signature="CheckAccountInfo()[pri:0, instance:TestCases_Execution.TestCase_3@304bb45b]" name="CheckAccountInfo" duration-ms="22035" started-at="2020-10-22T09:14:26Z" finished-at="2020-10-22T09:14:48Z">
+        <test-method signature="CheckAccountInfo()[pri:0, instance:TestCases_Execution.TestCase_3@30f5a68a]" started-at="2020-10-24T11:07:55Z" name="CheckAccountInfo" finished-at="2020-10-24T11:08:07Z" duration-ms="11840" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckAccountInfo -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases_Execution.TestCase_3@304bb45b]" name="tearDown" is-config="true" duration-ms="138" started-at="2020-10-22T09:14:48Z" finished-at="2020-10-22T09:14:48Z">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases_Execution.TestCase_3@30f5a68a]" started-at="2020-10-24T11:08:07Z" name="tearDown" finished-at="2020-10-24T11:08:07Z" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCases_Execution.TestCase_3 -->
     </test> <!-- Log In to Site -->
-    <test name="Game created using excel" duration-ms="61691" started-at="2020-10-22T09:14:49Z" finished-at="2020-10-22T09:15:50Z">
+    <test started-at="2020-10-24T11:08:07Z" name="Game created using excel" finished-at="2020-10-24T11:09:15Z" duration-ms="67564">
       <class name="TestCases_Execution.TestCase_4">
-        <test-method status="PASS" signature="initilize()[pri:0, instance:TestCases_Execution.TestCase_4@4d0d9fe7]" name="initilize" is-config="true" duration-ms="21105" started-at="2020-10-22T09:14:49Z" finished-at="2020-10-22T09:15:10Z">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:TestCases_Execution.TestCase_4@71b3bc45]" started-at="2020-10-24T11:08:07Z" name="initilize" finished-at="2020-10-24T11:08:34Z" duration-ms="26602" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method status="PASS" signature="create_Game_Using_Excel_Upload()[pri:1, instance:TestCases_Execution.TestCase_4@4d0d9fe7]" name="create_Game_Using_Excel_Upload" duration-ms="38556" started-at="2020-10-22T09:15:10Z" finished-at="2020-10-22T09:15:48Z">
+        <test-method signature="create_Game_Using_Excel_Upload()[pri:1, instance:TestCases_Execution.TestCase_4@71b3bc45]" started-at="2020-10-24T11:08:34Z" name="create_Game_Using_Excel_Upload" finished-at="2020-10-24T11:09:15Z" duration-ms="40769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create_Game_Using_Excel_Upload -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases_Execution.TestCase_4@4d0d9fe7]" name="tearDown" is-config="true" duration-ms="2027" started-at="2020-10-22T09:15:48Z" finished-at="2020-10-22T09:15:50Z">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases_Execution.TestCase_4@71b3bc45]" started-at="2020-10-24T11:09:15Z" name="tearDown" finished-at="2020-10-24T11:09:15Z" duration-ms="189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCases_Execution.TestCase_4 -->
     </test> <!-- Game created using excel -->
-    <test name="Mascot Upload Verified at Moderater screen" duration-ms="88870" started-at="2020-10-22T09:15:50Z" finished-at="2020-10-22T09:17:19Z">
+    <test started-at="2020-10-24T11:09:15Z" name="Mascot Upload Verified at Moderater screen" finished-at="2020-10-24T11:10:03Z" duration-ms="47482">
       <class name="TestCases_Execution.TestCase_5">
-        <test-method status="PASS" signature="UploadMascotImageAtModearater()[pri:0, instance:TestCases_Execution.TestCase_5@6c4906d3]" name="UploadMascotImageAtModearater" duration-ms="88764" started-at="2020-10-22T09:15:50Z" finished-at="2020-10-22T09:17:19Z">
+        <test-method signature="UploadMascotImageAtModearater()[pri:0, instance:TestCases_Execution.TestCase_5@485a3466]" started-at="2020-10-24T11:09:15Z" name="UploadMascotImageAtModearater" finished-at="2020-10-24T11:10:02Z" duration-ms="46515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UploadMascotImageAtModearater -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:TestCases_Execution.TestCase_5@6c4906d3]" name="teardown" is-config="true" duration-ms="96" started-at="2020-10-22T09:17:19Z" finished-at="2020-10-22T09:17:19Z">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases_Execution.TestCase_5@485a3466]" started-at="2020-10-24T11:10:02Z" name="teardown" finished-at="2020-10-24T11:10:03Z" duration-ms="956" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- TestCases_Execution.TestCase_5 -->
     </test> <!-- Mascot Upload Verified at Moderater screen -->
-    <test name="Check Join Pin" duration-ms="75334" started-at="2020-10-22T09:17:19Z" finished-at="2020-10-22T09:18:35Z">
+    <test started-at="2020-10-24T11:10:03Z" name="Check Join Pin" finished-at="2020-10-24T11:10:56Z" duration-ms="52603">
       <class name="TestCases_Execution.TestCase_6">
-        <test-method status="PASS" signature="VerifyJoinPin()[pri:0, instance:TestCases_Execution.TestCase_6@7d900ecf]" name="VerifyJoinPin" duration-ms="75202" started-at="2020-10-22T09:17:19Z" finished-at="2020-10-22T09:18:35Z">
+        <test-method signature="VerifyJoinPin()[pri:0, instance:TestCases_Execution.TestCase_6@2783717b]" started-at="2020-10-24T11:10:03Z" name="VerifyJoinPin" finished-at="2020-10-24T11:10:56Z" duration-ms="52525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyJoinPin -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:TestCases_Execution.TestCase_6@7d900ecf]" name="teardown" is-config="true" duration-ms="127" started-at="2020-10-22T09:18:35Z" finished-at="2020-10-22T09:18:35Z">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases_Execution.TestCase_6@2783717b]" started-at="2020-10-24T11:10:56Z" name="teardown" finished-at="2020-10-24T11:10:56Z" duration-ms="73" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- TestCases_Execution.TestCase_6 -->
     </test> <!-- Check Join Pin -->
+    <test started-at="2020-10-24T11:10:56Z" name="Display Gameboard at player" finished-at="2020-10-24T11:11:47Z" duration-ms="51273">
+      <class name="TestCases_Execution.TestCase_7">
+        <test-method signature="VerifyGameBoardAtPlayerScreen()[pri:0, instance:TestCases_Execution.TestCase_7@30990c1b]" started-at="2020-10-24T11:10:56Z" name="VerifyGameBoardAtPlayerScreen" finished-at="2020-10-24T11:11:47Z" duration-ms="50785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyGameBoardAtPlayerScreen -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases_Execution.TestCase_7@30990c1b]" started-at="2020-10-24T11:11:47Z" name="teardown" finished-at="2020-10-24T11:11:47Z" duration-ms="484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestCases_Execution.TestCase_7 -->
+    </test> <!-- Display Gameboard at player -->
   </suite> <!-- Suite -->
 </testng-results>
