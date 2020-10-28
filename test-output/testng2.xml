@@ -1,13 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" >
 <listeners>
-<listener class-name="Play_Now.Listeners1"/>
+<listener class-name="TestCases_Execution.Listeners"/>
 </listeners>
   
   
-  <test name="Display  uploaded masoct at player side">
+  <test name="Log In to Site">
     <classes>
-          <class name="Play_Now.DGBP_B_TestCase_2"/>
+          <class name="TestCases_Execution.TestCase_7"/>
            </classes>
   </test> <!-- Test -->
   

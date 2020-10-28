@@ -2,16 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
-    <listener class-name="TestCases_Execution.Listeners"/>
+    <listener class-name="Play_Now.Listeners1"/>
   </listeners>
-  <test thread-count="5" name="Display Gameboard at player(failed)">
+  <test thread-count="5" name="Display  uploaded masoct at player side(failed)">
     <classes>
-      <class name="TestCases_Execution.TestCase_7">
+      <class name="Play_Now.DGBP_B_TestCase_2">
         <methods>
-          <include name="VerifyGameBoardAtPlayerScreen"/>
-          <include name="teardown"/>
+          <include name="initilize"/>
+          <include name="tearDown"/>
+          <include name="Verify_Uploaded_Mascot_at_Player_screen"/>
         </methods>
-      </class> <!-- TestCases_Execution.TestCase_7 -->
+      </class> <!-- Play_Now.DGBP_B_TestCase_2 -->
     </classes>
-  </test> <!-- Display Gameboard at player(failed) -->
+  </test> <!-- Display  uploaded masoct at player side(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,61 @@
+09:30:40.435 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+09:30:48.379 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+09:31:20.825 [main] INFO  TestCases_Execution.TestCase_1 - Mascot image is uploaded
+09:31:25.723 [main] INFO  TestCases_Execution.TestCase_1 - New mascot is Activated.
+09:33:54.896 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+09:34:04.286 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+09:34:31.696 [main] INFO  TestCases_Execution.TestCase_1 - Mascot image is uploaded
+09:34:41.443 [main] INFO  TestCases_Execution.TestCase_1 - New mascot is Activated.
+09:35:17.961 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+09:35:27.058 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+09:35:58.233 [main] INFO  TestCases_Execution.TestCase_1 - Mascot image is uploaded
+09:36:08.065 [main] INFO  TestCases_Execution.TestCase_1 - New mascot is Activated.
+09:38:23.271 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+09:38:31.373 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+09:39:03.350 [main] INFO  TestCases_Execution.TestCase_1 - Mascot image is uploaded
+09:39:12.941 [main] INFO  TestCases_Execution.TestCase_1 - New mascot is Activated.
+09:45:15.412 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+09:45:25.855 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+09:45:57.706 [main] INFO  TestCases_Execution.TestCase_1 - Mascot image is uploaded
+09:46:11.175 [main] INFO  TestCases_Execution.TestCase_1 - New mascot is Activated.
+09:47:33.497 [main] INFO  TestCases_Execution.TestCase_1 - uploaded masoct is active & selected at player screen .
+09:52:26.609 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+09:52:33.928 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+09:53:24.577 [main] INFO  TestCases_Execution.TestCase_1 - Mascot image is uploaded
+09:53:35.323 [main] INFO  TestCases_Execution.TestCase_1 - New mascot is Activated.
+09:57:43.714 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+09:58:30.384 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+09:59:02.565 [main] INFO  TestCases_Execution.TestCase_1 - Mascot image is uploaded
+09:59:11.459 [main] INFO  TestCases_Execution.TestCase_1 - New mascot is Activated.
+10:00:44.868 [main] INFO  TestCases_Execution.TestCase_1 - uploaded masoct is active & selected at player screen .
+10:03:57.838 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+10:04:06.126 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+10:44:14.270 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+10:44:27.736 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+10:48:38.566 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+10:48:48.775 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+10:53:17.422 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+10:53:31.125 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+10:57:53.050 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+10:58:28.529 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+11:02:39.261 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+11:02:50.673 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+11:06:30.438 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+11:06:52.927 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+11:07:24.438 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+11:07:29.693 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+11:10:56.570 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+11:11:24.910 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+11:21:55.943 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+11:22:11.041 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+11:24:16.626 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+11:24:33.065 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+11:30:41.066 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+11:31:02.423 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+11:32:59.474 [main] INFO  TestCases_Execution.TestCase_1 - Left logo is present>>=factile
+11:37:13.929 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+11:37:39.086 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+11:42:48.378 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+11:43:32.202 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+11:45:41.011 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+11:46:02.523 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage

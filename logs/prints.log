@@ -1,39 +1,6 @@
-10:47:51.403 [main] INFO  TestCases_Execution.TestCase_5 - Mascot image is uploaded
-10:47:56.751 [main] INFO  TestCases_Execution.TestCase_5 - Name given to new mascot uploaded image
-10:47:56.919 [main] INFO  TestCases_Execution.TestCase_5 - New mascot is Activated.
-12:44:27.719 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
-12:44:43.887 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
-12:44:45.471 [main] INFO  TestCases_Execution.TestCase_1 - Successsfully validated text message
-12:44:45.797 [main] INFO  TestCases_Execution.TestCase_1 - Sign In page is Open
-12:45:20.129 [main] INFO  TestCases_Execution.TestCase_2 - username is entered
-12:45:20.265 [main] INFO  TestCases_Execution.TestCase_2 - password is entered
-12:45:20.379 [main] INFO  TestCases_Execution.TestCase_2 - Sign_IN is successfully Done
-12:46:01.379 [main] INFO  TestCases_Execution.TestCase_3 - account is active  >>Yearly $48 (Ends 22-Oct-2021)
-12:47:04.972 [main] INFO  TestCases_Execution.TestCase_4 - Game is created using excel upload
-12:47:47.038 [main] INFO  TestCases_Execution.TestCase_5 - Mascot image is uploaded
-12:48:11.087 [main] INFO  TestCases_Execution.TestCase_5 - Name given to new mascot uploaded image
-12:48:11.232 [main] INFO  TestCases_Execution.TestCase_5 - New mascot is Activated.
-15:51:17.524 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
-15:51:27.359 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
-15:51:27.915 [main] INFO  TestCases_Execution.TestCase_1 - Successsfully validated text message
-15:51:28.097 [main] INFO  TestCases_Execution.TestCase_1 - Sign In page is Open
-15:51:46.115 [main] INFO  TestCases_Execution.TestCase_2 - username is entered
-15:51:46.228 [main] INFO  TestCases_Execution.TestCase_2 - password is entered
-15:51:46.318 [main] INFO  TestCases_Execution.TestCase_2 - Sign_IN is successfully Done
-15:52:14.829 [main] INFO  TestCases_Execution.TestCase_3 - account is active  >>Yearly $48 (Ends 22-Oct-2021)
-15:53:09.224 [main] INFO  TestCases_Execution.TestCase_4 - Game is created using excel upload
-15:53:42.768 [main] INFO  TestCases_Execution.TestCase_5 - Mascot image is uploaded
-15:53:50.979 [main] INFO  TestCases_Execution.TestCase_5 - Name given to new mascot uploaded image
-15:53:51.075 [main] INFO  TestCases_Execution.TestCase_5 - New mascot is Activated.
-16:36:38.548 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
-16:36:59.494 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
-16:37:00.341 [main] INFO  TestCases_Execution.TestCase_1 - Successsfully validated text message
-16:37:01.679 [main] INFO  TestCases_Execution.TestCase_1 - Sign In page is Open
-16:37:30.356 [main] INFO  TestCases_Execution.TestCase_2 - username is entered
-16:37:30.492 [main] INFO  TestCases_Execution.TestCase_2 - password is entered
-16:37:30.701 [main] INFO  TestCases_Execution.TestCase_2 - Sign_IN is successfully Done
-16:38:07.455 [main] INFO  TestCases_Execution.TestCase_3 - account is active  >>Yearly $48 (Ends 22-Oct-2021)
-16:39:11.019 [main] INFO  TestCases_Execution.TestCase_4 - Game is created using excel upload
-16:39:57.974 [main] INFO  TestCases_Execution.TestCase_5 - Mascot image is uploaded
-16:40:00.393 [main] INFO  TestCases_Execution.TestCase_5 - Name given to new mascot uploaded image
-16:40:00.493 [main] INFO  TestCases_Execution.TestCase_5 - New mascot is Activated.
+11:47:55.453 [main] INFO  TestCases_Execution.TestCase_1 - Left logo is present>>=factile
+11:49:58.990 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+11:50:42.699 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+11:54:07.489 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+11:54:50.608 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+11:59:00.145 [main] INFO  TestCases_Execution.TestCase_1 - Left logo is present>>=factile
