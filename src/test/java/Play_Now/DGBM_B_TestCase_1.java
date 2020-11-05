@@ -29,22 +29,23 @@ import junit.framework.Assert;
 import pageObject.LandingPage;
 import resources.Base;
 
-public class DGBP_B_TestCase_1 extends Base {
+public class DGBM_B_TestCase_1 extends Base {
 	WebDriver driver;
 	WebDriver driver1;
 	WebDriverWait wait;
 	int int2, x, y, z, obj1, obj2, obj3;
-	String s1;
-	public static Logger Log = LogManager.getLogger(TestCase_1.class.getName());
+	String GameName,  parent;
+	public static Logger Log = LogManager.getLogger(DGBM_B_TestCase_1.class.getName());
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\Logo1.jpg";
 
 	@BeforeTest
 	public void initilize() throws IOException {
 		driver = IntilizeDriver();
 		Log.info("Driver is Initilize");
-		driver.get(prop.getProperty("url"));
+		driver.get(prop.getProperty("rooturl"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		wait = new WebDriverWait(driver, 20);
 		Log.info("Navigated to homePage");
@@ -70,8 +71,8 @@ public class DGBP_B_TestCase_1 extends Base {
 		Thread.sleep(3000);
 		String s5 = "iradio_flat-yellow checked";
 
-		if (s3.equalsIgnoreCase(s5)) {
-			uploadLogoAtModeraterScreen();
+		if (s3.equalsIgnoreCase(s5)) { 
+			uploadLogoAtModeraterScreen();	
 			VerifyLogoAtmoderatergameboardScreen();
 		} else if (s4.equalsIgnoreCase(s5)) {
 			uploadLogoAtModeraterScreen();
@@ -84,8 +85,11 @@ public class DGBP_B_TestCase_1 extends Base {
 
 	@AfterTest
 	public void tearDown() {
-		// driver.close();
-		// driver1.close();
+		 driver.close();
+		 driver.switchTo().window(parent);
+		 driver.close();
+		 driver1.switchTo().window(driver1.getWindowHandle());
+	 driver1.close();
 	}
 
 	public void uploadLogoAtModeraterScreen() throws InterruptedException {
@@ -136,13 +140,13 @@ public class DGBP_B_TestCase_1 extends Base {
 	public void VerifyLogoAtmoderatergameboardScreen() throws InterruptedException, IOException {
 		Thread.sleep(2000);
 		// driver.switchTo().window(baseUrl);
-		String parent = driver.getWindowHandle();
+		 parent = driver.getWindowHandle();
 		System.out.println("ParentWindow id is :-" + parent);
 		driver.findElement(By.xpath("//*[@id='mygames']")).click();
-		s1 = prop.getProperty("gamename");
+		GameName = prop.getProperty("gamename");
 		// 'Test"+int1+"'
 		driver.findElement(
-				By.xpath("//div[@data-text='" + s1 + "']/following-sibling::div/span[contains(text(), 'Play')]"))
+				By.xpath("//div[@data-text='" + GameName + "']/following-sibling::div/span[contains(text(), 'Play')]"))
 				.click();
 		Thread.sleep(3000);
 		
@@ -164,13 +168,20 @@ public class DGBP_B_TestCase_1 extends Base {
 				Thread.sleep(3000);
 				driver.findElement(By.xpath("//span[@class='playNowButton']")).click();
 
-				driver.findElement(By.xpath("//*[@id='howManyTeams']/div/div[1]/span[1]")).click();
+				driver.findElement(By.xpath("//span[@data-numteams='2']")).click();
 				
 				Thread.sleep(3000);
 
-				System.out.println(driver.getTitle());
-				driver.findElement(By.xpath("//*[@id='displayBuzzerOptionBack']/div[1]/div[2]/div/div/ins")).click();
+				//System.out.println(driver.getTitle());
+				//1. Display question on buzzer device
+				driver.findElement(By.xpath("(//ins[@class='iCheck-helper'])[1]")).click();
+				
+				//2. Display GM o buzzer device
+				//driver.findElement(By.xpath("//*[@id='displayBuzzerOptionBack']/div[1]/div[2]/div/div/ins")).click();
 
+				//3. Buzzer Only
+				//driver.findElement(By.xpath("(//ins[@class='iCheck-helper'])[3]")).click();
+				
 				driver.findElement(By.xpath("//*[@id='buzzerModeQuestion']/div/div[1]/span[2]")).click();
 				wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='inviteYourTeams']/div/span[4]")));
 				Thread.sleep(3000);
@@ -179,7 +190,8 @@ public class DGBP_B_TestCase_1 extends Base {
 				Thread.sleep(3000);
 
 				driver1 = IntilizeDriver();
-				
+
+				driver1.manage().timeouts().setScriptTimeout(20, TimeUnit.SECONDS);
 				driver1.get(prop.getProperty("joinurl"));
 				Thread.sleep(3000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
@@ -214,6 +226,7 @@ public class DGBP_B_TestCase_1 extends Base {
 				//WebElement image = driver.findElement(By.xpath("//div[@data-name='Player67']//img"));
 				//String altText = image.getAttribute("alt");
 				//System.out.println("alttext is =" +altText);
+				
 				
 			}}
 	}

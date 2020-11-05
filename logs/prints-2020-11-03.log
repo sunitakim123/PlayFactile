@@ -1,0 +1,53 @@
+21:34:41.509 [main] INFO  Play_Now.DGBP_HSB_TestCase_5 - Driver is Initilize
+21:34:53.099 [main] INFO  Play_Now.DGBP_HSB_TestCase_5 - Navigated to homePage
+21:35:12.051 [main] INFO  Play_Now.DGBP_HSB_TestCase_5 - At customization page>> UnCheck display exact case>> 
+21:36:28.513 [main] INFO  Play_Now.DGBP_HSB_TestCase_5 - when unchecked from customization setting>>Exact case is not displayed
+21:41:24.716 [main] INFO  Play_Now.DGBP_HSB_TestCase_5 - Driver is Initilize
+21:41:35.359 [main] INFO  Play_Now.DGBP_HSB_TestCase_5 - Navigated to homePage
+21:44:29.612 [main] INFO  Play_Now.DGBP_HSB_TestCase_5 - Driver is Initilize
+21:44:40.837 [main] INFO  Play_Now.DGBP_HSB_TestCase_5 - Navigated to homePage
+21:45:10.694 [main] INFO  Play_Now.DGBP_HSB_TestCase_5 - At customization page>> UnCheck display exact case>> 
+21:46:31.887 [main] INFO  Play_Now.DGBP_HSB_TestCase_5 - when unchecked from customization setting>>Exact case is not displayed
+21:50:12.934 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+21:50:23.796 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+21:51:59.652 [main] INFO  TestCases_Execution.TestCase_1 - Twitter link is>>null
+22:06:20.263 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+22:06:31.859 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+22:10:38.906 [main] INFO  Play_Now.DGBM_B_TestCase_1 - Driver is Initilize
+22:10:50.499 [main] INFO  Play_Now.DGBM_B_TestCase_1 - Navigated to homePage
+22:13:53.571 [main] INFO  Play_Now.DGBM_B_TestCase_1 - Left logo is present>>=factile
+22:14:14.970 [main] INFO  Play_Now.DGBP_B_TestCase_2 - Driver is Initilize
+22:14:23.864 [main] INFO  Play_Now.DGBP_B_TestCase_2 - Navigated to homePage
+22:14:56.398 [main] INFO  Play_Now.DGBP_B_TestCase_2 - Mascot image is uploaded
+22:15:20.408 [main] INFO  Play_Now.DGBP_B_TestCase_2 - New mascot is Activated.
+22:16:18.405 [main] INFO  Play_Now.DGBP_B_TestCase_2 - uploaded masoct is active & selected at player screen .
+22:16:29.866 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - Driver is Initilize
+22:16:41.714 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - Navigated to homePage
+22:17:37.439 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+22:17:45.206 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+22:19:31.041 [main] INFO  TestCases_Execution.TestCase_1 - Twitter link is>>null
+22:19:43.121 [main] INFO  Play_Now.DGBP_HSB_TestCase_5 - Driver is Initilize
+22:19:51.588 [main] INFO  Play_Now.DGBP_HSB_TestCase_5 - Navigated to homePage
+10:02:07.463 [main] INFO  Play_Now.DGBM_B_TestCase_1 - Driver is Initilize
+10:02:22.929 [main] INFO  Play_Now.DGBM_B_TestCase_1 - Navigated to homePage
+10:05:11.286 [main] INFO  Play_Now.DGBM_B_TestCase_1 - Left logo is present>>=factile
+10:08:47.271 [main] INFO  Play_Now.DGBP_B_TestCase_2 - Driver is Initilize
+10:09:02.290 [main] INFO  Play_Now.DGBP_B_TestCase_2 - Navigated to homePage
+10:09:33.592 [main] INFO  Play_Now.DGBP_B_TestCase_2 - Mascot image is uploaded
+10:09:42.458 [main] INFO  Play_Now.DGBP_B_TestCase_2 - New mascot is Activated.
+10:10:52.462 [main] INFO  Play_Now.DGBP_B_TestCase_2 - uploaded masoct is active & selected at player screen .
+10:14:52.021 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - Driver is Initilize
+10:15:11.397 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - Navigated to homePage
+10:17:43.126 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - Background image is successfully loaded at gameboard, image url is= background: url("https://factile-test-dynamic.s3.amazonaws.com/backgrounds/bg1604378775182pf95523.jpg");
+10:17:43.208 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - At Modearter >> Game Board Color is=background-color: rgb(255, 255, 255);
+10:17:43.259 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - At Modearter >> Question Tile Color & Dollar colour is=background-color: rgb(242, 184, 58); color: rgb(31, 31, 31);
+10:17:43.311 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - At Modearter >> game category title color=color: rgb(135, 81, 232); font-size: 13.66px;
+10:21:16.688 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - Driver is Initilize
+10:23:36.333 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - Driver is Initilize
+10:23:45.446 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - Navigated to homePage
+10:27:05.302 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - Driver is Initilize
+10:27:14.600 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - Navigated to homePage
+10:29:30.815 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - Driver is Initilize
+10:29:37.962 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - Navigated to homePage
+10:32:02.937 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - Background image is successfully loaded at gameboard, image url is= background: url("https://factile-test-dynamic.s3.amazonaws.com/backgrounds/bg1604379640495pf66808.jpg");
+10:32:03.030 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - At Modearter >> Game Board Color is=background-color: rgb(255, 255, 255);

@@ -1,15 +1,33 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" >
+<suite name="Suite">
 <listeners>
 <listener class-name="Play_Now.Listeners1"/>
 </listeners>
-  
+  <test name="Display  Logo  at customize and gameboard">
+    <classes>
+          <class name="Play_Now.DGBM_B_TestCase_1"/>
+           </classes>
+  </test> <!-- Test -->  
   
   <test name="Display  uploaded masoct at player side">
     <classes>
           <class name="Play_Now.DGBP_B_TestCase_2"/>
            </classes>
   </test> <!-- Test -->
-  
+   <test name="Display gamboard background image at gameboard and player gameboard side">
+    <classes>
+          <class name="Play_Now.DGBP_HSB_TestCase_3"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Display social media on moderater screen gamboard">
+    <classes>
+          <class name="Play_Now.DGBP_HSB_TestCase_4"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Display not exact case on player screen">
+    <classes>
+          <class name="Play_Now.DGBP_HSB_TestCase_5"/>
+           </classes>
+  </test> <!-- Test -->
  
 </suite> <!-- Suite -->
