@@ -4,11 +4,6 @@
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
  
-   <test name="Display gamboard background image at gameboard and player gameboard side">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_3"/>
-           </classes>
-  </test> <!-- Test -->
   <test name="Display social media on moderater screen gamboard">
     <classes>
           <class name="Factile_Mode.DGBP_HSB_TestCase_4"/>
@@ -19,40 +14,5 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_5"/>
            </classes>
   </test> <!-- Test -->
-  <test name="Exact Case When Unchecked At Global_Settings">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_6"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Exact Case When checked At Global_Settings">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_7"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Show_category_with_Points">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_8"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Hide_category_with_Points">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_9"/>
-           </classes>
-  </test> <!-- Test -->
-  
-    <test name="Display_Answer_Button_On_Modrater_Screen">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_10"/>
-           </classes>
-  </test> <!-- Test -->
-    <test name="Display_Tag_Name">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_11"/>
-           </classes>
-  </test> <!-- Test -->
-    <test name="Hide_Tag_Name">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_12"/>
-           </classes>
-  </test> <!-- Test -->
+ 
 </suite> <!-- Suite -->

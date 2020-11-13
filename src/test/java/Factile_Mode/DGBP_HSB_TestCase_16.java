@@ -21,7 +21,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import TestCases_Execution.TestCase_1;
 import jdk.internal.org.jline.utils.Log;
 import junit.framework.Assert;
 import resources.Base;
@@ -192,7 +191,7 @@ public class DGBP_HSB_TestCase_16 extends Base {
 				Thread.sleep(3000);
 
 				driver1 = IntilizeDriver();
-				wait1 = new WebDriverWait(driver1, 50);
+				wait1 = new WebDriverWait(driver1, 60);
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				driver1.get(prop.getProperty("joinurl"));

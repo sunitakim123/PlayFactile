@@ -24,9 +24,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import TestCases_Execution.TestCase_1;
 import resources.Base;
+
 
 public class DGBP_HSB_TestCase_3  extends Base{
 	WebDriver driver;
@@ -46,7 +45,7 @@ public class DGBP_HSB_TestCase_3  extends Base{
 		Log.info("Driver is Initilize");
 		driver.get(prop.getProperty("rooturl"));
 		driver.manage().window().maximize();
-		wait = new WebDriverWait(driver, 50);	
+		wait = new WebDriverWait(driver, 60);	
 		Log.info("Navigated to homePage"); 
 
 	}

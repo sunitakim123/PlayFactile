@@ -1,8 +1,0 @@
-pageObject\UploadMascot.class
-pageObject\CreateGameUsingExcel.class
-pageObject\JoinPin.class
-resources\Base.class
-pageObject\LandingPage.class
-pageObject\CurrentAccountInfo.class
-pageObject\LoginPage.class
-resources\ExtentReporterNG.class

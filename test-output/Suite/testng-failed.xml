@@ -4,26 +4,15 @@
   <listeners>
     <listener class-name="Factile_Mode.Listeners1"/>
   </listeners>
-  <test thread-count="5" name="Hide_category_with_Points(failed)">
+  <test thread-count="5" name="Display social media on moderater screen gamboard(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_9">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_4">
         <methods>
-          <include name="initilize"/>
           <include name="tearDown"/>
-          <include name="TC_9_Verify_Hide_category_with_Points_When_checked_At_Global_Settings"/>
-        </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_9 -->
-    </classes>
-  </test> <!-- Hide_category_with_Points(failed) -->
-  <test thread-count="5" name="Game_Point_Symbol_€_Before()(failed)">
-    <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_17">
-        <methods>
           <include name="initilize"/>
-          <include name="TC_17_Verify_Game_Point_Symbol_€_Before"/>
-          <include name="tearDown"/>
+          <include name="TC_4_Verify_Show_Social_Media_on_Gameboard"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_17 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_4 -->
     </classes>
-  </test> <!-- Game_Point_Symbol_€_Before()(failed) -->
+  </test> <!-- Display social media on moderater screen gamboard(failed) -->
 </suite> <!-- Failed suite [Suite] -->

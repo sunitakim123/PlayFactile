@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-13T13:09:38 IST" name="Default suite" finished-at="2020-11-13T13:11:48 IST" duration-ms="130004">
+  <suite started-at="2020-11-13T14:50:04 IST" name="Suite" finished-at="2020-11-13T14:55:30 IST" duration-ms="325566">
     <groups>
     </groups>
-    <test started-at="2020-11-13T13:09:38 IST" name="Default test" finished-at="2020-11-13T13:11:48 IST" duration-ms="130004">
-      <class name="Factile_Mode.DGBP_HSB_TestCase_19">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_19@73194df]" started-at="2020-11-13T13:09:38 IST" name="initilize" finished-at="2020-11-13T13:09:50 IST" duration-ms="12206" status="PASS">
+    <test started-at="2020-11-13T14:50:04 IST" name="Display social media on moderater screen gamboard" finished-at="2020-11-13T14:51:50 IST" duration-ms="105538">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_4">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_4@30f5a68a]" started-at="2020-11-13T14:50:04 IST" name="initilize" finished-at="2020-11-13T14:50:12 IST" duration-ms="7984" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="TC_19_Verify_Double_Factile()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_19@73194df]" started-at="2020-11-13T13:09:50 IST" name="TC_19_Verify_Double_Factile" finished-at="2020-11-13T13:11:48 IST" duration-ms="117772" status="FAIL">
+        <test-method signature="TC_4_Verify_Show_Social_Media_on_Gameboard()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_4@30f5a68a]" started-at="2020-11-13T14:50:12 IST" name="TC_4_Verify_Show_Social_Media_on_Gameboard" finished-at="2020-11-13T14:51:49 IST" duration-ms="97162" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='characterBlock position-relative'])[last()]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='playNowButton']"}
   (Session info: chrome=86.0.4240.193)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-HKE6JL3', ip: '192.168.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\DELIGE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63589}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 2e1d504ac894209a308f7d8b0abfecc6
-*** Element info: {Using=xpath, value=(//div[@class='characterBlock position-relative'])[last()]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\DELIGE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6735de1b0d6e2f3f8fbefdf534c3cef8
+*** Element info: {Using=xpath, value=//span[@class='playNowButton']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='characterBlock position-relative'])[last()]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='playNowButton']"}
   (Session info: chrome=86.0.4240.193)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-HKE6JL3', ip: '192.168.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\DELIGE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63589}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 2e1d504ac894209a308f7d8b0abfecc6
-*** Element info: {Using=xpath, value=(//div[@class='characterBlock position-relative'])[last()]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\DELIGE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6735de1b0d6e2f3f8fbefdf534c3cef8
+*** Element info: {Using=xpath, value=//span[@class='playNowButton']}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -49,8 +49,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at Factile_Mode.DGBP_HSB_TestCase_19.PlayerScreen(DGBP_HSB_TestCase_19.java:199)
-at Factile_Mode.DGBP_HSB_TestCase_19.TC_19_Verify_Double_Factile(DGBP_HSB_TestCase_19.java:91)
+at Factile_Mode.DGBP_HSB_TestCase_4.Show_SMO_Links_A_tModrater_Screen_Gameboard(DGBP_HSB_TestCase_4.java:159)
+at Factile_Mode.DGBP_HSB_TestCase_4.TC_4_Verify_Show_Social_Media_on_Gameboard(DGBP_HSB_TestCase_4.java:82)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -84,12 +84,62 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_19_Verify_Double_Factile -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_19@73194df]" started-at="2020-11-13T13:11:48 IST" name="tearDown" finished-at="2020-11-13T13:11:48 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- TC_4_Verify_Show_Social_Media_on_Gameboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_4@30f5a68a]" started-at="2020-11-13T14:51:50 IST" name="tearDown" finished-at="2020-11-13T14:51:50 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver1" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver1" is null
+at Factile_Mode.DGBP_HSB_TestCase_4.tearDown(DGBP_HSB_TestCase_4.java:104)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
+at org.testng.TestRunner.afterRun(TestRunner.java:853)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_19 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_4 -->
+    </test> <!-- Display social media on moderater screen gamboard -->
+    <test started-at="2020-11-13T14:51:50 IST" name="Display not exact case on player screen" finished-at="2020-11-13T14:55:30 IST" duration-ms="219766">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_5">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_5@339bf286]" started-at="2020-11-13T14:51:50 IST" name="initilize" finished-at="2020-11-13T14:51:58 IST" duration-ms="7698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="TC_5_Verify_Hide_Social_Media_Link_on_Gameboard_at_ModeaterScreen()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_5@339bf286]" started-at="2020-11-13T14:51:58 IST" name="TC_5_Verify_Hide_Social_Media_Link_on_Gameboard_at_ModeaterScreen" finished-at="2020-11-13T14:55:28 IST" duration-ms="210735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_5_Verify_Hide_Social_Media_Link_on_Gameboard_at_ModeaterScreen -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_5@339bf286]" started-at="2020-11-13T14:55:28 IST" name="tearDown" finished-at="2020-11-13T14:55:30 IST" duration-ms="1329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_5 -->
+    </test> <!-- Display not exact case on player screen -->
+  </suite> <!-- Suite -->
 </testng-results>

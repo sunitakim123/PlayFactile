@@ -16,8 +16,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import TestCases_Execution.TestCase_1;
 import junit.framework.Assert;
 import resources.Base;
 
@@ -30,7 +28,7 @@ public class DGBP_HSB_TestCase_5  extends Base{
 	Actions act;
 	WebElement e1, e2;
 	
-	public static Logger Log = LogManager.getLogger(TestCase_1.class.getName());
+	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_5.class.getName());
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
 	@BeforeTest
@@ -39,7 +37,7 @@ public class DGBP_HSB_TestCase_5  extends Base{
 		Log.info("Driver is Initilize");
 		driver.get(prop.getProperty("rooturl"));
 		driver.manage().window().maximize();
-		wait = new WebDriverWait(driver, 40);
+		wait = new WebDriverWait(driver, 50);
 			Log.info("Navigated to homePage");
 
 	}
@@ -172,7 +170,7 @@ public class DGBP_HSB_TestCase_5  extends Base{
 				driver1 = IntilizeDriver();
 				
 				driver1.get(prop.getProperty("joinurl"));
-				driver1.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
 				driver1.findElement(By.xpath("//button[contains(text(),'Join')]")).click();

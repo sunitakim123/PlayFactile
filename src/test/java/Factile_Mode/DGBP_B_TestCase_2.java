@@ -24,10 +24,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import TestCases_Execution.TestCase_1;
 import junit.framework.Assert;
-import pageObject.LandingPage;
 import resources.Base;
 
 public class DGBP_B_TestCase_2 extends Base {
@@ -48,7 +45,7 @@ public class DGBP_B_TestCase_2 extends Base {
 		Log.info("Driver is Initilize");
 		driver.get(prop.getProperty("rooturl"));
 		driver.manage().window().maximize();
-		wait = new WebDriverWait(driver, 40);
+		wait = new WebDriverWait(driver, 60);
 		Log.info("Navigated to homePage");
 	}
 
@@ -211,7 +208,7 @@ public class DGBP_B_TestCase_2 extends Base {
 				driver1 = IntilizeDriver();
 				
 				driver1.get(prop.getProperty("joinurl"));
-				driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+				driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				Thread.sleep(3000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);

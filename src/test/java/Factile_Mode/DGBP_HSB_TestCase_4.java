@@ -15,8 +15,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import TestCases_Execution.TestCase_1;
 import junit.framework.Assert;
 import resources.Base;
 
@@ -28,7 +26,7 @@ public class DGBP_HSB_TestCase_4  extends Base{
 	String s6, s7, GameName, twitterclass, Pintrestclass, t1, p1, parent;
 	Actions act;
 	
-	public static Logger Log = LogManager.getLogger(TestCase_1.class.getName());
+	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_4.class.getName());
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
 	@BeforeTest

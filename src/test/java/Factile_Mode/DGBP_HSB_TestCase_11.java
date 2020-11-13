@@ -17,7 +17,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import TestCases_Execution.TestCase_1;
 import junit.framework.Assert;
 import resources.Base;
 
@@ -39,7 +38,7 @@ public class DGBP_HSB_TestCase_11  extends Base{
 		Log.info("Driver is Initilize");
 		driver.get(prop.getProperty("rooturl"));
 		driver.manage().window().maximize();
-		wait = new WebDriverWait(driver, 40);
+		wait = new WebDriverWait(driver, 60);
 		//driver1.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		//wait1 = new WebDriverWait(driver1, 20);
 		Log.info("Navigated to homePage");
@@ -182,7 +181,7 @@ public class DGBP_HSB_TestCase_11  extends Base{
 				Thread.sleep(3000);
 				
 				driver1 = IntilizeDriver();
-				driver1.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				driver1.get(prop.getProperty("joinurl"));
 				Thread.sleep(3000);

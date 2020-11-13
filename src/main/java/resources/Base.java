@@ -32,8 +32,8 @@ public class Base {
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\src\\main\\java\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 		}
 		else if (browserName.equals("firefox")) {
@@ -41,8 +41,8 @@ public class Base {
 			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir") + "\\src\\main\\java\\Drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS); 
+			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS); 
 			driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 		} 
 		else if (browserName.equals("edge")) {
@@ -50,8 +50,8 @@ public class Base {
 			System.setProperty("webdriver.edge.driver",System.getProperty("user.dir") + "\\src\\main\\java\\Drivers\\msedgedriver.exe");
 			driver = new EdgeDriver();
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-			driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS); 
+			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS); 
 			driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 		}
 		return driver;

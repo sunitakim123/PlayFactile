@@ -15,8 +15,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import TestCases_Execution.TestCase_1;
 import junit.framework.Assert;
 import resources.Base;
 
@@ -38,7 +36,7 @@ public class DGBP_HSB_TestCase_6  extends Base{
 		driver.get(prop.getProperty("rooturl"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		wait = new WebDriverWait(driver, 40);
+		wait = new WebDriverWait(driver, 60);
 		Log.info("Navigated to homePage");
 
 	}
@@ -168,7 +166,7 @@ public class DGBP_HSB_TestCase_6  extends Base{
 				Thread.sleep(3000);
 
 				driver1 = IntilizeDriver();
-				driver1.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				
 				driver1.get(prop.getProperty("joinurl"));

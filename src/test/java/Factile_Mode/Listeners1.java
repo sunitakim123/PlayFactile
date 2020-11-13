@@ -12,11 +12,14 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 import resources.Base;
-import resources.ExtentReporterNG;
+
+import resources.ExtentReporterNG1;
+
+
 
 public class Listeners1 extends Base implements ITestListener {
 	ExtentTest test;
-	ExtentReports extent = ExtentReporterNG.getReportObject();
+	ExtentReports extent = ExtentReporterNG1.getReportObject();
 	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
 
 	public void onTestStart(ITestResult result) {
