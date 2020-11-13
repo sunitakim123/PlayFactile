@@ -1,0 +1,46 @@
+23:13:46.058 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - Driver is Initilize
+23:13:50.550 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - Navigated to homePage
+23:14:04.864 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - At customization page>> Check Diaplay Answer button>> 
+23:15:47.635 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - Display answer is working fine
+23:16:21.909 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Driver is Initilize
+23:16:26.799 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Navigated to homePage
+23:16:44.397 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - At customization page>> UNCheck Turn off tag name>> 
+23:18:28.635 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Driver is Initilize
+23:18:34.213 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Navigated to homePage
+23:18:48.488 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - At customization page>> UNCheck Turn off tag name>> 
+23:20:43.551 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Driver is Initilize
+23:20:48.451 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Navigated to homePage
+23:21:03.010 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - At customization page>> UNCheck Turn off tag name>> 
+23:27:56.704 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Driver is Initilize
+23:28:01.187 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Navigated to homePage
+23:28:35.907 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - At customization page>> UNCheck Turn off tag name>> 
+23:29:37.370 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Display Tag name is working fine
+23:34:44.637 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Driver is Initilize
+23:34:49.234 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Navigated to homePage
+23:35:13.892 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - At customization page>> UNCheck Turn off tag name>> 
+23:35:51.793 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Driver is Initilize
+23:35:56.804 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Navigated to homePage
+23:36:23.615 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Display Tag name is working fine
+23:36:59.501 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - At customization page>> UNCheck Turn off tag name>> 
+23:38:48.576 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Driver is Initilize
+23:38:52.850 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Navigated to homePage
+23:39:17.767 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - At customization page>> UNCheck Turn off tag name>> 
+23:40:16.669 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Display Tag name is working fine
+23:43:08.240 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Driver is Initilize
+23:43:12.805 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Navigated to homePage
+23:44:13.876 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Background image is successfully loaded at gameboard, image url is= background: url("https://factile-test-dynamic.s3.amazonaws.com/backgrounds/bg1604561650702pf39600.jpg");
+23:44:13.900 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> Game Board Color is=background-color: rgb(255, 255, 255);
+23:44:13.920 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> Question Tile Color & Dollar colour is=background-color: rgb(242, 184, 58); color: rgb(31, 31, 31);
+23:44:13.939 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> game category title color=color: rgb(135, 81, 232); font-size: 16px;
+23:44:18.002 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At player >> gameboard background image is>>background: url("https://factile-test-dynamic.s3.amazonaws.com/backgrounds/bg1604561650702pf39600.jpg");
+23:44:18.033 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At player >> gameboard gameboard colour is =>>background: rgb(255, 255, 255);
+23:44:18.055 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At player >>game tile color is =>>background: rgb(242, 184, 58);
+23:44:18.078 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At player >>Dollar colour is=>>color: rgb(31, 31, 31);
+23:44:18.100 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> game category Title color=color: rgb(135, 81, 232);
+23:46:28.929 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Driver is Initilize
+23:46:33.501 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Navigated to homePage
+23:50:32.426 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Driver is Initilize
+23:50:49.457 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Navigated to homePage
+23:51:57.489 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Background image is successfully loaded at gameboard, image url is= background: url("https://factile-test-dynamic.s3.amazonaws.com/backgrounds/bg1604561650702pf39600.jpg");
+23:51:57.514 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> Game Board Color is=background-color: rgb(255, 255, 255);
+23:51:57.535 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> Question Tile Color & Dollar colour is=background-color: rgb(242, 184, 58); color: rgb(31, 31, 31);

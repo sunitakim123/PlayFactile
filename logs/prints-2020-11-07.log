@@ -1,0 +1,44 @@
+16:34:44.707 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> Game Board Color is=background-color: rgb(255, 255, 255);
+16:34:44.746 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> Question Tile Color & Dollar colour is=background-color: rgb(242, 184, 58); color: rgb(31, 31, 31);
+16:34:44.766 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> game category title color=color: rgb(135, 81, 232); font-size: 16px;
+16:34:48.829 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At player >> gameboard background image is>>background: url("https://factile-test-dynamic.s3.amazonaws.com/backgrounds/bg1604746992545pf97448.jpg");
+16:34:48.866 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At player >> gameboard gameboard colour is =>>background: rgb(255, 255, 255);
+16:34:48.902 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At player >>game tile color is =>>background: rgb(242, 184, 58);
+16:34:48.926 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At player >>Dollar colour is=>>color: rgb(31, 31, 31);
+16:34:48.947 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> game category Title color=color: rgb(135, 81, 232);
+16:41:37.332 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+16:41:42.207 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
+16:43:23.039 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Left logo is present>>=factile
+16:43:30.949 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Driver is Initilize
+16:43:35.087 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Navigated to homePage
+16:44:11.507 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Mascot image is uploaded
+16:45:34.203 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Driver is Initilize
+16:45:38.639 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Navigated to homePage
+16:48:16.706 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+16:48:20.903 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+16:50:17.185 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+16:50:21.504 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
+16:52:24.672 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Left logo is present>>=factile
+16:52:32.539 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Driver is Initilize
+16:52:37.586 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Navigated to homePage
+16:53:06.067 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Mascot image is uploaded
+16:54:01.768 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - uploaded masoct is active & selected at player screen .
+16:54:16.398 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - uploaded masoct is visible on player screen
+16:54:21.000 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Driver is Initilize
+16:54:25.074 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Navigated to homePage
+16:56:39.157 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Background image is successfully loaded at gameboard, image url is= background: url("https://factile-test-dynamic.s3.amazonaws.com/backgrounds/bg1604748326730pf1046.jpg");
+16:56:39.197 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> Game Board Color is=background-color: rgb(255, 255, 255);
+16:56:39.223 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> Question Tile Color & Dollar colour is=background-color: rgb(242, 184, 58); color: rgb(31, 31, 31);
+16:56:39.242 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> game category title color=color: rgb(135, 81, 232); font-size: 16px;
+16:56:43.308 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At player >> gameboard background image is>>background: url("https://factile-test-dynamic.s3.amazonaws.com/backgrounds/bg1604748326730pf1046.jpg");
+16:56:43.361 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At player >> gameboard gameboard colour is =>>background: rgb(255, 255, 255);
+16:56:43.397 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At player >>game tile color is =>>background: rgb(242, 184, 58);
+16:56:43.432 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At player >>Dollar colour is=>>color: rgb(31, 31, 31);
+16:56:43.451 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> game category Title color=color: rgb(135, 81, 232);
+16:56:48.055 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+16:56:52.626 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+16:58:08.770 [main] INFO  TestCases_Execution.TestCase_1 - When unchecked from customization setting>>Twitter link is displaying
+16:58:08.770 [main] INFO  TestCases_Execution.TestCase_1 - When unchecked from customization setting>>Pintrest link is displaying
+16:58:13.357 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+16:58:17.397 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+17:00:01.256 [main] INFO  TestCases_Execution.TestCase_1 - SMO(Twiiter & Pintrest) Links not present on gameboard at moderater screen

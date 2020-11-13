@@ -1,33 +1,58 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <listeners>
-<listener class-name="Play_Now.Listeners1"/>
+<listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
-  <test name="Display  Logo  at customize and gameboard">
-    <classes>
-          <class name="Play_Now.DGBM_B_TestCase_1"/>
-           </classes>
-  </test> <!-- Test -->  
-  
-  <test name="Display  uploaded masoct at player side">
-    <classes>
-          <class name="Play_Now.DGBP_B_TestCase_2"/>
-           </classes>
-  </test> <!-- Test -->
+ 
    <test name="Display gamboard background image at gameboard and player gameboard side">
     <classes>
-          <class name="Play_Now.DGBP_HSB_TestCase_3"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_3"/>
            </classes>
   </test> <!-- Test -->
   <test name="Display social media on moderater screen gamboard">
     <classes>
-          <class name="Play_Now.DGBP_HSB_TestCase_4"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_4"/>
            </classes>
   </test> <!-- Test -->
   <test name="Display not exact case on player screen">
     <classes>
-          <class name="Play_Now.DGBP_HSB_TestCase_5"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_5"/>
            </classes>
   </test> <!-- Test -->
- 
+  <test name="Exact Case When Unchecked At Global_Settings">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_6"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Exact Case When checked At Global_Settings">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_7"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Show_category_with_Points">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_8"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Hide_category_with_Points">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_9"/>
+           </classes>
+  </test> <!-- Test -->
+  
+    <test name="Display_Answer_Button_On_Modrater_Screen">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_10"/>
+           </classes>
+  </test> <!-- Test -->
+    <test name="Display_Tag_Name">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_11"/>
+           </classes>
+  </test> <!-- Test -->
+    <test name="Hide_Tag_Name">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_12"/>
+           </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

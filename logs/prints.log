@@ -1,56 +1,19 @@
-10:32:03.093 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - At Modearter >> Question Tile Color & Dollar colour is=background-color: rgb(242, 184, 58); color: rgb(31, 31, 31);
-10:32:03.209 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - At Modearter >> game category title color=color: rgb(135, 81, 232); font-size: 13.66px;
-13:47:10.748 [main] INFO  Play_Now.DGBM_B_TestCase_1 - Driver is Initilize
-13:47:31.668 [main] INFO  Play_Now.DGBM_B_TestCase_1 - Navigated to homePage
-13:52:32.874 [main] INFO  Play_Now.DGBM_B_TestCase_1 - Left logo is present>>=factile
-14:33:35.783 [main] INFO  Play_Now.DGBM_B_TestCase_1 - Driver is Initilize
-14:33:50.620 [main] INFO  Play_Now.DGBM_B_TestCase_1 - Navigated to homePage
-14:35:35.726 [main] INFO  Play_Now.DGBP_B_TestCase_2 - Driver is Initilize
-14:35:44.945 [main] INFO  Play_Now.DGBP_B_TestCase_2 - Navigated to homePage
-14:36:24.538 [main] INFO  Play_Now.DGBP_B_TestCase_2 - Mascot image is uploaded
-14:36:36.474 [main] INFO  Play_Now.DGBP_B_TestCase_2 - New mascot is Activated.
-14:38:46.464 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - Driver is Initilize
-14:38:57.248 [main] INFO  Play_Now.DGBP_HSB_TestCase_3 - Navigated to homePage
-14:40:49.786 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
-14:41:02.027 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
-14:43:31.485 [main] INFO  Play_Now.DGBP_HSB_TestCase_5 - Driver is Initilize
-14:43:41.244 [main] INFO  Play_Now.DGBP_HSB_TestCase_5 - Navigated to homePage
-14:44:05.854 [main] INFO  Play_Now.DGBP_HSB_TestCase_5 - At customization page>> UnCheck display exact case>> 
-15:30:25.420 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
-15:30:39.719 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
-15:35:10.582 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
-15:35:18.982 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
-15:38:10.829 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
-15:38:20.952 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
-15:39:55.044 [main] INFO  TestCases_Execution.TestCase_1 - When unchecked from customization setting>>Twitter link is displaying
-15:56:46.147 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
-15:57:01.737 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
-16:01:15.933 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
-16:01:23.901 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
-16:02:49.276 [main] INFO  TestCases_Execution.TestCase_1 - When unchecked from customization setting>>Twitter link is displaying
-16:02:49.277 [main] INFO  TestCases_Execution.TestCase_1 - When unchecked from customization setting>>Pintrest link is displaying
-16:12:34.750 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
-16:12:42.062 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
-16:13:47.773 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
-16:13:55.201 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
-16:24:05.544 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
-16:24:21.116 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
-16:46:36.056 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
-16:47:04.128 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
-16:54:18.878 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
-16:54:28.023 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
-16:59:39.928 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
-17:00:00.669 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
-17:11:01.191 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
-17:12:51.612 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
-17:15:55.214 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
-17:16:01.358 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
-17:18:11.835 [main] INFO  TestCases_Execution.TestCase_1 - SMO icons not presnt on gameboard at moderater screen
-17:46:07.280 [main] INFO  Play_Now.DGBM_B_TestCase_1 - Driver is Initilize
-17:46:48.214 [main] INFO  Play_Now.DGBM_B_TestCase_1 - Navigated to homePage
-17:47:11.746 [main] INFO  Play_Now.DGBM_B_TestCase_1 - You have not taken any subscription
-17:47:31.095 [main] INFO  Play_Now.DGBP_B_TestCase_2 - Driver is Initilize
-17:47:47.178 [main] INFO  Play_Now.DGBP_B_TestCase_2 - Navigated to homePage
-17:48:09.593 [main] INFO  Play_Now.DGBP_B_TestCase_2 - You have not taken any subscription
-17:49:36.349 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
-17:50:10.294 [main] INFO  TestCases_Execution.TestCase_1 - Navigated to homePage
+12:33:01.591 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+12:37:31.716 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+12:37:37.075 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+12:40:32.900 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Driver is Initilize
+12:40:46.346 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Navigated to homePage
+12:44:05.094 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Driver is Initilize
+12:44:10.961 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Navigated to homePage
+12:47:56.565 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Driver is Initilize
+12:48:01.717 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Navigated to homePage
+12:53:34.565 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+12:53:45.191 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+12:54:29.436 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+12:54:36.971 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+12:58:43.143 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+12:58:49.245 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+13:05:46.604 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+13:05:55.002 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+13:09:42.873 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+13:09:50.548 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage

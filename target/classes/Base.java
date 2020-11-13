@@ -12,12 +12,13 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Base {
 	//Adding logs
 	//generating html reports
-	//screenshot on falure
+	//screenshot on falure 
 	//jenkins Integration
 	public WebDriver driver;
 	public static  Properties prop = new Properties();
@@ -31,20 +32,27 @@ public class Base {
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\src\\main\\java\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			
-			
-			//https://stackoverflow.com/questions/49647636/delete-chromedriver-from-eclipse
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+			driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 		}
 		else if (browserName.equals("firefox")) {
 
 			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir") + "\\src\\main\\java\\Drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS); 
+			driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 		} 
-		else if (browserName.equals("IE")) {
+		else if (browserName.equals("edge")) {
 
+			System.setProperty("webdriver.edge.driver",System.getProperty("user.dir") + "\\src\\main\\java\\Drivers\\msedgedriver.exe");
+			driver = new EdgeDriver();
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS); 
+			driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 		}
 		return driver;
 	}

@@ -1,0 +1,58 @@
+09:32:18.993 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 -  Play as Numbered Tiles instead of Jeopardy-style is working fine 
+09:32:23.858 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+09:32:28.313 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+09:32:56.372 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+09:34:57.279 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - JGame_Point_Symbol_$_Before is working fine
+09:35:02.091 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Driver is Initilize
+09:35:06.468 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Navigated to homePage
+09:37:36.396 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - JGame_Point_Symbol_$After is working fine
+09:37:41.302 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Driver is Initilize
+09:37:46.305 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Navigated to homePage
+09:39:25.234 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Driver is Initilize
+09:39:29.484 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Navigated to homePage
+09:41:57.093 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - JGame_Point_Symbol_€_Before is working fine
+09:49:54.911 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+09:49:59.152 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+09:52:42.405 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+09:52:47.125 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+10:55:42.563 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+10:55:46.696 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+10:58:20.094 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+10:58:24.078 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+11:01:42.262 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+11:01:46.366 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+11:05:36.897 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+11:05:41.316 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+11:07:27.281 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+11:07:32.652 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+11:08:00.100 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+11:08:04.380 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+11:11:25.749 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+11:11:30.711 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+11:13:05.690 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+11:13:09.864 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+11:22:27.886 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+11:22:32.123 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+11:28:52.974 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+11:28:57.638 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+11:33:55.195 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+11:33:59.897 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+11:39:34.826 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+11:39:39.667 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+11:41:57.499 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+11:42:01.906 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+11:48:00.391 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+11:48:05.824 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+12:02:44.079 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+12:02:48.591 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+12:06:58.833 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+12:07:04.083 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+12:10:36.449 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+12:10:40.974 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+12:18:08.180 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+12:18:13.190 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+12:26:44.401 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+12:26:48.756 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+12:30:08.466 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
+12:30:12.725 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+12:32:56.993 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize

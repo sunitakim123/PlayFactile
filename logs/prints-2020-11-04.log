@@ -1,0 +1,47 @@
+22:50:14.042 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - Driver is Initilize
+22:50:18.544 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - Navigated to homePage
+22:50:33.440 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - At customization page>> UnCheck display exact case>> 
+22:51:37.158 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - when unchecked from customization setting>>Exact case is not displayed
+22:51:40.585 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Driver is Initilize
+22:51:44.952 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Navigated to homePage
+22:52:07.399 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - At customization page>> UnCheck display exact case>> 
+22:57:56.749 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Driver is Initilize
+22:58:01.352 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Navigated to homePage
+22:58:16.862 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - At customization page>> UnCheck display exact case>> 
+23:01:27.606 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Driver is Initilize
+23:01:32.112 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Navigated to homePage
+23:01:49.291 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - At customization page>> UnCheck display exact case>> 
+23:14:34.477 [main] INFO  TestCases_Execution.TestCase_1 - Driver is Initilize
+23:15:01.911 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Driver is Initilize
+23:15:06.482 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Navigated to homePage
+23:15:21.698 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - At customization page>> UnCheck display exact case>> 
+23:16:59.872 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - when Checked from customization setting>>Exact case is  displayed
+23:17:44.859 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Driver is Initilize
+23:17:49.726 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Navigated to homePage
+23:18:04.301 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - At customization page>> UnCheck display exact case>> 
+23:19:47.773 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - when Checked from customization setting>>Exact case is  displayed
+23:30:24.580 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Driver is Initilize
+23:30:29.457 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Navigated to homePage
+23:33:00.445 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Driver is Initilize
+23:33:07.200 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Navigated to homePage
+23:36:20.249 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Driver is Initilize
+23:36:25.761 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Navigated to homePage
+23:37:40.753 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Background image is successfully loaded at gameboard, image url is= background: url("https://factile-test-dynamic.s3.amazonaws.com/backgrounds/bg1604561650702pf39600.jpg");
+23:37:40.782 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> Game Board Color is=background-color: rgb(255, 255, 255);
+23:37:40.801 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> Question Tile Color & Dollar colour is=background-color: rgb(242, 184, 58); color: rgb(31, 31, 31);
+23:37:40.819 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> game category title color=color: rgb(135, 81, 232); font-size: 16px;
+23:41:05.317 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Driver is Initilize
+23:41:10.096 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Navigated to homePage
+23:42:22.915 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Background image is successfully loaded at gameboard, image url is= background: url("https://factile-test-dynamic.s3.amazonaws.com/backgrounds/bg1604561650702pf39600.jpg");
+23:42:22.944 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> Game Board Color is=background-color: rgb(255, 255, 255);
+23:42:22.964 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> Question Tile Color & Dollar colour is=background-color: rgb(242, 184, 58); color: rgb(31, 31, 31);
+23:42:22.983 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> game category title color=color: rgb(135, 81, 232); font-size: 16px;
+23:45:04.206 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Driver is Initilize
+23:45:08.704 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Navigated to homePage
+23:47:49.447 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Driver is Initilize
+23:47:54.436 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Navigated to homePage
+23:51:14.787 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Driver is Initilize
+23:51:19.197 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Navigated to homePage
+23:52:39.134 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Driver is Initilize
+23:52:43.916 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Navigated to homePage
+23:54:00.334 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Background image is successfully loaded at gameboard, image url is= background: url("https://factile-test-dynamic.s3.amazonaws.com/backgrounds/bg1604561650702pf39600.jpg");
