@@ -189,7 +189,7 @@ public class DGBP_HSB_TestCase_19 extends Base {
 				driver1 = IntilizeDriver();
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
-				wait1 = new WebDriverWait(driver1, 60);
+				wait1 = new WebDriverWait(driver1, 20);
 				driver1.get(prop.getProperty("joinurl"));
 				Thread.sleep(3000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
@@ -210,15 +210,11 @@ public class DGBP_HSB_TestCase_19 extends Base {
 				
 				driver.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])["+p+"]")).click();			
 				driver1.switchTo().window(driver1.getWindowHandle());
-				//wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
+				wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
 				//wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
-				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='inner d-flex align-items-center justify-content-center']")));
-			//	driver.findElement(By.xpath("//div[@class='inner d-flex align-items-center justify-content-center']")).click();
-			boolean obj2=	driver1.findElement(By.xpath("//div[@class='inner d-flex align-items-center justify-content-center']")).isEnabled();
-				if(obj2==true)
-				{
-					driver1.findElement(By.xpath("//div[@class='inner d-flex align-items-center justify-content-center']")).click();	
-				}   
+				driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
+				//	driver1.findElement(By.xpath("//div[@class='inner d-flex align-items-center justify-content-center']")).click();	
+		  
 				//driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
 				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='input']")));
 				driver1.findElement(By.xpath("//input[@name='input']")).sendKeys("test");

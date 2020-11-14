@@ -4,15 +4,70 @@
   <listeners>
     <listener class-name="Factile_Mode.Listeners1"/>
   </listeners>
-  <test thread-count="5" name="Display social media on moderater screen gamboard(failed)">
+  <test thread-count="5" name="Display gamboard background image at gameboard and player gameboard side(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_4">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_3">
         <methods>
+          <include name="TC_3_Verify_Uploaded_BackgroundImage_at_Player_screen"/>
           <include name="tearDown"/>
           <include name="initilize"/>
-          <include name="TC_4_Verify_Show_Social_Media_on_Gameboard"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_4 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_3 -->
     </classes>
-  </test> <!-- Display social media on moderater screen gamboard(failed) -->
+  </test> <!-- Display gamboard background image at gameboard and player gameboard side(failed) -->
+  <test thread-count="5" name="Hide_category_with_Points(failed)">
+    <classes>
+      <class name="Factile_Mode.DGBP_HSB_TestCase_9">
+        <methods>
+          <include name="initilize"/>
+          <include name="tearDown"/>
+          <include name="TC_9_Verify_Hide_category_with_Points_When_checked_At_Global_Settings"/>
+        </methods>
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_9 -->
+    </classes>
+  </test> <!-- Hide_category_with_Points(failed) -->
+  <test thread-count="5" name="Game_Point_Symbol_$_Before()(failed)">
+    <classes>
+      <class name="Factile_Mode.DGBP_HSB_TestCase_15">
+        <methods>
+          <include name="TC_15_Verify_Game_Point_Symbol_$__Before"/>
+          <include name="initilize"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_15 -->
+    </classes>
+  </test> <!-- Game_Point_Symbol_$_Before()(failed) -->
+  <test thread-count="5" name="Game_Point_Symbol_$_After()(failed)">
+    <classes>
+      <class name="Factile_Mode.DGBP_HSB_TestCase_16">
+        <methods>
+          <include name="TC_16_Verify_Game_Point_Symbol_$_After"/>
+          <include name="initilize"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_16 -->
+    </classes>
+  </test> <!-- Game_Point_Symbol_$_After()(failed) -->
+  <test thread-count="5" name="Game_Point_Symbol_€_Before()(failed)">
+    <classes>
+      <class name="Factile_Mode.DGBP_HSB_TestCase_17">
+        <methods>
+          <include name="initilize"/>
+          <include name="TC_17_Verify_Game_Point_Symbol_€_Before"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_17 -->
+    </classes>
+  </test> <!-- Game_Point_Symbol_€_Before()(failed) -->
+  <test thread-count="5" name="Game_Point_Symbol_€_After()(failed)">
+    <classes>
+      <class name="Factile_Mode.DGBP_HSB_TestCase_18">
+        <methods>
+          <include name="initilize"/>
+          <include name="tearDown"/>
+          <include name="TC_18_Verify_Game_Point_Symbol_€_after"/>
+        </methods>
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_18 -->
+    </classes>
+  </test> <!-- Game_Point_Symbol_€_After()(failed) -->
 </suite> <!-- Failed suite [Suite] -->
