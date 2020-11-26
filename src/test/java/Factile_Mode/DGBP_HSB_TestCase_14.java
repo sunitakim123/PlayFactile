@@ -139,12 +139,14 @@ public class DGBP_HSB_TestCase_14 extends Base {
 		driver.findElement(
 				By.xpath("//div[@data-text='" + GameName + "']/following-sibling::div/span[contains(text(), 'Play')]"))
 				.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
+		try {
+			WebElement obj = driver.findElement(By.xpath("//button[contains(text(),'Start new game')]"));
 
-		boolean obj = driver.findElement(By.xpath("//button[contains(text(),'Start new game')]")).isDisplayed();
-
-		if (obj == true) {
-			driver.findElement(By.xpath("//button[contains(text(),'Start new game')]")).click();
+			obj.click();
+		} catch (NoSuchElementException e) {
+			// log.debug("Impossible to click the pop-up. Reason: " + e.toString());
+			System.out.println("Impossible to click the pop-up. Reason: " + e.toString());
 		}
 
 		Thread.sleep(1000);
@@ -168,14 +170,14 @@ public class DGBP_HSB_TestCase_14 extends Base {
 				String i = driver.findElement(By.xpath("//*[@id='inviteYourTeams']/div/span[2]")).getText();
 				System.out.println(i);// System.out.println(driver.getTitle());
 				Thread.sleep(3000);
-
+ 
 				driver1 = IntilizeDriver();
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				driver1.get(prop.getProperty("joinurl"));
 				Thread.sleep(3000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-				driver1.findElement(By.xpath("//button[contains(text(),'Join')]")).click();
+				driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
 				Thread.sleep(2000);
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 				Thread.sleep(2000);
