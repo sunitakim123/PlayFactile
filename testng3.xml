@@ -44,11 +44,7 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_8"/>
            </classes>
   </test> <!-- Test -->
-  <test name="Hide_category_with_Points">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_9"/>
-           </classes>
-  </test> <!-- Test -->
+  
   
     <test name="Display_Answer_Button_On_Modrater_Screen">
     <classes>
