@@ -1,0 +1,17 @@
+22:27:55.739 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - Navigated to homePage
+22:28:14.259 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - At customization page>> UnCheck display exact case>> 
+22:29:08.922 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - when unchecked from customization setting>>Exact case is not displayed
+22:29:15.607 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Driver is Initilize
+22:29:19.476 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Navigated to homePage
+22:29:37.830 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - At customization page>> UnCheck display exact case>> 
+22:31:32.585 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - when Checked from customization setting>>Exact case is  displayed
+22:31:39.301 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - Driver is Initilize
+22:31:43.178 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - Navigated to homePage
+22:31:58.826 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - At customization page>> UnCheck Hide Category with Points>> 
+22:32:52.225 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - category with points is =T3 FOR 100
+22:32:59.005 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+22:33:02.961 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+22:33:19.170 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
+22:34:22.810 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - Driver is Initilize
+22:34:26.611 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - Navigated to homePage
+22:34:41.860 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - At customization page>> Check Diaplay Answer button>> 
