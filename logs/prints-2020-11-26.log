@@ -1,51 +1,48 @@
-15:14:06.440 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - Navigated to homePage
-15:14:21.681 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - At customization page>> Check Turn off tag name>> 
-15:14:28.422 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - Tag name turn off is working fine
-15:17:16.158 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - Tag name turn off is working fine
-15:17:22.840 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_13 - Driver is Initilize
-15:17:26.707 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_13 - Navigated to homePage
-15:17:53.277 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_13 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is unchecked >> 
-15:18:40.672 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_13 - Jeopardy_Style is working fine
-15:18:47.504 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Driver is Initilize
-15:18:51.184 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Navigated to homePage
-15:19:05.932 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
-15:19:53.082 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 -  Play as Numbered Tiles instead of Jeopardy-style is working fine 
-15:19:59.979 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
-15:20:05.460 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
-15:20:33.480 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
-15:22:45.717 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - JGame_Point_Symbol_$_Before is working fine
-15:22:52.566 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Driver is Initilize
-15:22:56.423 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Navigated to homePage
-15:25:39.209 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - JGame_Point_Symbol_$After is working fine
-15:25:46.179 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Driver is Initilize
-15:25:52.906 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Navigated to homePage
-15:28:39.952 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - JGame_Point_Symbol_€_After is working fine
-15:28:46.768 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Driver is Initilize
-15:28:50.497 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Navigated to homePage
-15:31:35.353 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - JGame_Point_Symbol_€_Before is working fine
-15:38:01.306 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
-15:38:05.097 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
-15:38:20.875 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
-15:39:22.380 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - Driver is Initilize
-15:39:26.164 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - Navigated to homePage
-15:39:42.230 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - At customization page>> Check Diaplay Answer button>> 
-15:40:58.723 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - Display answer is working fine
-15:41:05.390 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Driver is Initilize
-15:41:09.096 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Navigated to homePage
-15:41:33.353 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - At customization page>> UNCheck Turn off tag name>> 
-15:42:29.069 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Display Tag name is working fine
-15:42:35.766 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - Driver is Initilize
-15:42:39.456 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - Navigated to homePage
-15:42:54.683 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - At customization page>> Check Turn off tag name>> 
-15:43:01.204 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - Tag name turn off is working fine
-15:45:52.695 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - Tag name turn off is working fine
-15:45:59.393 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_13 - Driver is Initilize
-15:46:03.183 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_13 - Navigated to homePage
-15:46:30.216 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_13 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is unchecked >> 
-15:47:17.715 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_13 - Jeopardy_Style is working fine
-15:47:24.349 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Driver is Initilize
-15:47:28.112 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Navigated to homePage
-15:47:43.693 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
-15:48:31.846 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 -  Play as Numbered Tiles instead of Jeopardy-style is working fine 
-15:48:38.465 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
-15:48:44.839 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+15:49:15.026 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+15:51:31.443 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - JGame_Point_Symbol_$_Before is working fine
+15:51:38.090 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Driver is Initilize
+15:51:41.944 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Navigated to homePage
+15:52:04.968 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Driver is Initilize
+15:52:12.149 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Navigated to homePage
+15:54:58.693 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - JGame_Point_Symbol_€_After is working fine
+15:55:05.382 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Driver is Initilize
+15:55:09.109 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Navigated to homePage
+15:58:06.091 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - JGame_Point_Symbol_€_Before is working fine
+21:37:48.090 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+21:37:52.011 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
+21:40:20.155 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Left logo is present>>=factile
+21:50:46.809 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Driver is Initilize
+21:50:50.814 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Navigated to homePage
+22:10:43.419 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+22:10:47.235 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
+22:13:19.063 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Left logo is present>>=factile
+22:13:59.754 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+22:14:03.696 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+22:14:18.100 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
+22:16:06.322 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+22:16:10.098 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
+22:18:41.431 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Left logo is present>>=factile
+22:18:51.557 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Driver is Initilize
+22:18:55.248 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Navigated to homePage
+22:20:20.816 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Mascot image is uploaded
+22:21:02.973 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - uploaded masoct is active & selected at player screen .
+22:21:17.462 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - uploaded masoct is visible on player screen
+22:21:24.160 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Driver is Initilize
+22:21:27.873 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Navigated to homePage
+22:24:05.055 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Background image is successfully loaded at gameboard, image url is= background: url("https://factile-test-dynamic.s3.amazonaws.com/backgrounds/bg1606409576093pf11945.jpg");
+22:24:05.084 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> Game Board Color is=background-color: rgb(255, 255, 255);
+22:24:05.120 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> Question Tile Color & Dollar colour is=background-color: rgb(242, 184, 58); color: rgb(31, 31, 31);
+22:24:05.147 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> game category title color=color: rgb(135, 81, 232); font-size: 16px;
+22:24:09.195 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At player >> gameboard background image is>>background: url("https://factile-test-dynamic.s3.amazonaws.com/backgrounds/bg1606409576093pf11945.jpg");
+22:24:09.214 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At player >> gameboard gameboard colour is =>>background: rgb(255, 255, 255);
+22:24:09.230 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At player >>game tile color is =>>background: rgb(242, 184, 58);
+22:24:09.249 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At player >>Dollar colour is=>>color: rgb(31, 31, 31);
+22:24:09.266 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - At Modearter >> game category Title color=color: rgb(135, 81, 232);
+22:24:16.098 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - Driver is Initilize
+22:24:20.112 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - Navigated to homePage
+22:25:33.018 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - When unchecked from customization setting>>Twitter link is displaying
+22:25:33.018 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - When unchecked from customization setting>>Pintrest link is displaying
+22:25:39.924 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_5 - Driver is Initilize
+22:25:43.560 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_5 - Navigated to homePage
+22:27:45.133 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_5 - SMO(Twiiter & Pintrest) Links not present on gameboard at moderater screen
+22:27:51.945 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - Driver is Initilize
