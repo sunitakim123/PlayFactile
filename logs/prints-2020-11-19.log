@@ -1,0 +1,58 @@
+10:25:07.773 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
+10:31:28.500 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+10:31:32.442 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
+10:36:15.468 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+10:36:19.474 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
+10:43:38.366 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+10:43:43.123 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
+10:49:55.573 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+10:50:00.624 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
+10:59:51.915 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Driver is Initilize
+10:59:56.360 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Navigated to homePage
+11:00:44.073 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Mascot image is uploaded
+11:02:36.100 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - uploaded masoct is active & selected at player screen .
+11:02:50.575 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - uploaded masoct is visible on player screen
+11:03:14.673 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+11:03:18.695 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
+11:06:11.738 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+11:06:15.868 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
+11:11:25.592 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+11:11:30.162 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
+11:13:29.644 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Driver is Initilize
+11:13:35.337 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Navigated to homePage
+11:14:06.363 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Mascot image is uploaded
+11:15:57.960 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - uploaded masoct is active & selected at player screen .
+11:16:12.870 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - uploaded masoct is visible on player screen
+11:16:20.332 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Driver is Initilize
+11:16:26.558 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Navigated to homePage
+11:21:23.143 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+11:21:27.640 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
+11:24:03.457 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+11:24:08.032 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
+11:26:11.119 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Left logo is present>>=factile
+11:27:50.277 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+11:27:54.307 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
+11:29:56.177 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Left logo is present>>=factile
+11:30:06.098 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Driver is Initilize
+11:30:09.698 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Navigated to homePage
+11:30:38.880 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Mascot image is uploaded
+11:32:28.402 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - uploaded masoct is active & selected at player screen .
+11:32:42.807 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - uploaded masoct is visible on player screen
+11:32:49.489 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Driver is Initilize
+11:32:54.959 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Navigated to homePage
+11:35:50.499 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - Driver is Initilize
+11:35:55.174 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - Navigated to homePage
+11:37:30.436 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_5 - Driver is Initilize
+11:37:35.016 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_5 - Navigated to homePage
+11:39:03.592 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - Driver is Initilize
+11:39:07.501 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - Navigated to homePage
+11:39:26.010 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - At customization page>> UnCheck display exact case>> 
+11:40:07.876 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Driver is Initilize
+11:40:11.882 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Navigated to homePage
+11:40:29.166 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - At customization page>> UnCheck display exact case>> 
+11:41:41.222 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - Driver is Initilize
+11:41:45.078 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - Navigated to homePage
+11:42:00.380 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - At customization page>> UnCheck Hide Category with Points>> 
+11:43:12.505 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+11:43:16.275 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+11:43:32.228 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 

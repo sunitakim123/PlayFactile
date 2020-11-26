@@ -1,47 +1,83 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" >
+<suite name="Suite">
 <listeners>
-<listener class-name="TestCases_Execution.Listeners"/>
+<listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
-  <test name="Open Site">
-    <classes>
-      <class name="TestCases_Execution.TestCase_1"/>
-       </classes>
-  </test> <!-- Test -->
   
-  <test name="Sign in Landing page open">
+  <test name="Display social media on moderater screen gamboard">
     <classes>
-        <class name="TestCases_Execution.TestCase_2"/>
-         </classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_4"/>
+           </classes>
   </test> <!-- Test -->
-  
-  <test name="Log In to Site">
+  <test name="Display not exact case on player screen">
     <classes>
-          <class name="TestCases_Execution.TestCase_3"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_5"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Exact Case When Unchecked At Global_Settings">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_6"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Exact Case When checked At Global_Settings">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_7"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Show_category_with_Points">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_8"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Hide_category_with_Points">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_9"/>
            </classes>
   </test> <!-- Test -->
   
-  <test name="Game created using excel">
+    <test name="Display_Answer_Button_On_Modrater_Screen">
     <classes>
-            <class name="TestCases_Execution.TestCase_4"/>
-    </classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_10"/>
+           </classes>
   </test> <!-- Test -->
- 
- 
-  <test name="Mascot Upload Verified at Moderater screen">
+    <test name="Display_Tag_Name">
     <classes>
-            <class name="TestCases_Execution.TestCase_5"/>
-    </classes>
-      </test> <!-- Test -->
-      
-     <test name="Check Join Pin">
-    <classes>
-            <class name="TestCases_Execution.TestCase_6"/>
-    </classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_11"/>
+           </classes>
   </test> <!-- Test -->
-    <test name="Display Gameboard at player">
+    <test name="Hide_Tag_Name">
     <classes>
-            <class name="TestCases_Execution.TestCase_7"/>
-    </classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_12"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Play as jeo-pardy style">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_13"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Play as Numbered Tiles instead of Jeopardy-style">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_14"/>
+           </classes>
+  </test> <!-- Test -->
+   <test name="Game_Point_Symbol_$_Before()">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_15"/>
+           </classes>
+  </test> <!-- Test -->
+   <test name="Game_Point_Symbol_$_After()">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_16"/>
+           </classes>
+  </test> <!-- Test -->
+   <test name="Game_Point_Symbol_€_Before()">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_17"/>
+           </classes>
+  </test> <!-- Test -->
+   <test name="Game_Point_Symbol_€_After()">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_18"/>
+           </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

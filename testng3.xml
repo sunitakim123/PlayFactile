@@ -3,10 +3,10 @@
 <listeners>
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
-  <test name="Display  Logo  at customize and gameboard">
+  <test name="Display  Logo at customize and gameboard">
     <classes>
-          <class name="Factile_Mode.DGBM_B_TestCase_1"/>
-           </classes>
+    <class name="Factile_Mode.DGBM_B_TestCase_1"/>
+          </classes>          
   </test> <!-- Test -->  
   
   <test name="Display  uploaded masoct at player side">

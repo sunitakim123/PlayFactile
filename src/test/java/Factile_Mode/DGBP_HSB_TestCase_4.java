@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -136,16 +137,16 @@ public class DGBP_HSB_TestCase_4  extends Base{
 		driver.findElement(
 				By.xpath("//div[@data-text='" + GameName + "']/following-sibling::div/span[contains(text(), 'Play')]"))
 				.click();
-		Thread.sleep(3000);
-		
-			boolean obj = driver.findElement(By.xpath("//button[contains(text(),'Start new game')]")).isDisplayed();
-			
-			if(obj==true)
-{
-				 driver.findElement(By.xpath("//button[contains(text(),'Start new game')]")).click();
-}
-		
-		Thread.sleep(1000); 
+		Thread.sleep(2000);
+		try {
+			WebElement obj = driver.findElement(By.xpath("//button[contains(text(),'Start new game')]"));
+
+			obj.click();
+		} catch (NoSuchElementException e) {
+			// log.debug("Impossible to click the pop-up. Reason: " + e.toString());
+			System.out.println("Impossible to click the pop-up. Reason: " + e.toString());
+		}
+Thread.sleep(1000);
 		Set<String> allWindows = driver.getWindowHandles();
 		int count = allWindows.size();
 		System.out.println("Total window:=" + count);
@@ -176,7 +177,7 @@ public class DGBP_HSB_TestCase_4  extends Base{
 				driver1.get(prop.getProperty("joinurl"));
 				Thread.sleep(3000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-				driver1.findElement(By.xpath("//button[contains(text(),'Join')]")).click();
+				driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
 				Thread.sleep(2000);
 				 driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 				 Thread.sleep(2000);

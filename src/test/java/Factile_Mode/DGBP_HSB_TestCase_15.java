@@ -144,7 +144,7 @@ public class DGBP_HSB_TestCase_15 extends Base {
 		values.selectByIndex(0);
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
-		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("10");
+		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("5");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")).click();
 		Thread.sleep(2000);
@@ -161,13 +161,16 @@ public class DGBP_HSB_TestCase_15 extends Base {
 		driver.findElement(
 				By.xpath("//div[@data-text='" + GameName + "']/following-sibling::div/span[contains(text(), 'Play')]"))
 				.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
+		try {
+			WebElement obj = driver.findElement(By.xpath("//button[contains(text(),'Start new game')]"));
 
-		boolean obj = driver.findElement(By.xpath("//button[contains(text(),'Start new game')]")).isDisplayed();
-
-		if (obj == true) {
-			driver.findElement(By.xpath("//button[contains(text(),'Start new game')]")).click();
+			obj.click();
+		} catch (NoSuchElementException e) {
+			// log.debug("Impossible to click the pop-up. Reason: " + e.toString());
+			System.out.println("Impossible to click the pop-up. Reason: " + e.toString());
 		}
+
 
 		Thread.sleep(1000);
 		Set<String> allWindows = driver.getWindowHandles();
@@ -198,7 +201,7 @@ public class DGBP_HSB_TestCase_15 extends Base {
 				driver1.get(prop.getProperty("joinurl"));
 				Thread.sleep(3000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-				driver1.findElement(By.xpath("//button[contains(text(),'Join')]")).click();
+				driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
 				Thread.sleep(2000);
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 				Thread.sleep(2000);
@@ -211,9 +214,7 @@ public class DGBP_HSB_TestCase_15 extends Base {
 
 				Thread.sleep(3000);
 				int total = driver1
-						.findElements(
-								By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion disbledClick']/span"))
-						.size();
+						.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion disbledClick']/span")).size();
 
 				for (int c = 1; c <= total; c++) {
 
@@ -226,25 +227,25 @@ public class DGBP_HSB_TestCase_15 extends Base {
 				}
 
 				driver.switchTo().window(driver.getWindowHandle());
-				Thread.sleep(3000);
+				Thread.sleep(2000);
 				driver.findElement(By.xpath("(//span[@class='gamePointsBlock'])[1]")).click();
-
+				//Thread.sleep(6000);
 				driver1.switchTo().window(driver1.getWindowHandle());
 				wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
 				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 				driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
-				Thread.sleep(1000);
-				// wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='input']")));
-				driver1.findElement(By.xpath("//input[@name='input']")).sendKeys("test");
-				Thread.sleep(500);
-				driver1.findElement(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")).click();
+				//Thread.sleep(1000);
+				 wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@name='input']")));
+				driver1.findElement(By.xpath("//textarea[@name='input']")).sendKeys("test");
+				wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+				driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
 				// driver.switchTo().window(driver.getWindowHandle());
 				driver.switchTo().window(driver.getWindowHandle());
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
 				driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
 				driver1.switchTo().window(driver1.getWindowHandle());
 				String expectedValue = "$100";
-				Thread.sleep(2000);
+				Thread.sleep(2000); 
 				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='moneyHolder']")));
 				for (int d = 1; d <= 2; d++) {
 					String actualvalue = driver1.findElement(By.xpath("(//span[@class='moneyHolder'])[" + d + "]"))

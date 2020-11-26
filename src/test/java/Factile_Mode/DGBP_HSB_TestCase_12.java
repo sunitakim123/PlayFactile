@@ -131,14 +131,16 @@ public class DGBP_HSB_TestCase_12 extends Base {
 		driver.findElement(
 				By.xpath("//div[@data-text='" + GameName + "']/following-sibling::div/span[contains(text(), 'Play')]"))
 				.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
+		try {
+			WebElement obj = driver.findElement(By.xpath("//button[contains(text(),'Start new game')]"));
 
-		boolean obj = driver.findElement(By.xpath("//button[contains(text(),'Start new game')]")).isDisplayed();
-
-		if (obj == true) {
-			driver.findElement(By.xpath("//button[contains(text(),'Start new game')]")).click();
+			obj.click();
+		} catch (NoSuchElementException e) {
+			// log.debug("Impossible to click the pop-up. Reason: " + e.toString());
+			System.out.println("Impossible to click the pop-up. Reason: " + e.toString());
 		}
-
+ 
 		Thread.sleep(1000);
 		Set<String> allWindows = driver.getWindowHandles();
 		int count = allWindows.size();
@@ -170,7 +172,7 @@ public class DGBP_HSB_TestCase_12 extends Base {
 				driver1.get(prop.getProperty("joinurl"));
 				Thread.sleep(3000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-				driver1.findElement(By.xpath("//button[contains(text(),'Join')]")).click();
+				driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
 				Thread.sleep(2000);
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 				Thread.sleep(2000);
@@ -185,7 +187,7 @@ public class DGBP_HSB_TestCase_12 extends Base {
 					WebElement PlayerNameAtmodraterscreen = driver
 							.findElement(By.xpath("//div[@class='col-lg m-0 p-0']/span"));
 				} catch (NoSuchElementException e) {
-					System.out.println("Tag name not visible on moderater screen>>" + e.toString());
+					//System.out.println("Tag name not visible on moderater screen>>" + e.toString());
 
 				}
 				Assert.assertNull("tag name is not visible on moderater screen", PlayerNameAtmodraterscreen);

@@ -36,15 +36,13 @@ public class DGBP_B_TestCase_2 extends Base {
 	String altText, NewMascotNameAtModerater, NewMascotNameAtPlayer,  parent ;
 	Actions act;
 	public static Logger Log = LogManager.getLogger(DGBP_B_TestCase_2.class.getName());
-	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
+	private static String filePath1 = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
 	@BeforeTest
 	public void initilize() throws IOException {
 		driver = IntilizeDriver();
-		
 		Log.info("Driver is Initilize");
 		driver.get(prop.getProperty("rooturl"));
-		driver.manage().window().maximize();
 		wait = new WebDriverWait(driver, 60);
 		Log.info("Navigated to homePage");
 	}
@@ -91,68 +89,43 @@ public class DGBP_B_TestCase_2 extends Base {
 	public void tearDown() {
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
-		driver.quit();  
+	driver.quit();  
 	}
 
 	public void uploadMascot() throws InterruptedException {
 		driver.findElement(By.id("customize")).click();
-		Thread.sleep(2000);
-
-		int obj = driver.findElements(By.xpath("//div[@id='mascotSection']//span[@class='deleteCharacter']")).size();
-
-		if (obj > 4) {
-			for (int i = 4; i < obj; i++) {
-				wait.until(ExpectedConditions.elementToBeClickable(
-						By.xpath("(//div[@id='mascotSection']//span[@class='deleteCharacter'])[" + i + "]")));
-				driver.findElement(By.xpath("(//div[@id='mascotSection']//span[@class='deleteCharacter'])[" + i + "]"))
-						.click();
-				driver.findElement(By.xpath("//button[contains(text(),'Yes, Delete it!')]")).click();
-				
+Thread.sleep(2000);
+driver.navigate().refresh();
+Thread.sleep(2000);	
+try {
+			int total = driver.findElements(By.xpath("//div[@id='mascotSection']//span[@class='deleteCharacter']")).size();
+			if (total > 0) {
+				for (int i = 0; i <= total; i++) {
+					driver.findElement(By.xpath("//div[@id='mascotSection']//span[@class='deleteCharacter']")).click();
+					Thread.sleep(2000);
+					driver.findElement(By.xpath("//button[contains(text(),'Yes, Delete it!')]")).click();
+					Thread.sleep(2000);
+				}
 			}
-			
+		} catch (NoSuchElementException e) {
+			// log.debug("Impossible to click the pop-up. Reason: " + e.toString());
+		//	System.out.println("Impossible to click the pop-up. Reason: " + e.toString());
 		}
-		Thread.sleep(2000); 
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='addNewCharacter']")));
-		driver.findElement(By.xpath("//*[@id='addNewCharacter']")).click();
-		Thread.sleep(3000);
-		uploadFileWithRobot(filePath);
-		Thread.sleep(7000);
-		Log.info("Mascot image is uploaded");
 
-		int obj1 = driver.findElements(By.xpath("//div[@id='mascotSection']//input[@placeholder='Enter Name']")).size();
-		System.out.println("size is >>" + obj1);
-		int obj2=obj+1;
+		
+		Thread.sleep(2000); 
+		//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='addNewCharacter']")));
+		driver.findElement(By.xpath("//*[@id='addNewCharacter']")).click();
+		Thread.sleep(2000);
+		uploadFileWithRobot(filePath1);
+		Thread.sleep(5000);
+		Log.info("Mascot image is uploaded");
 		Random rand = new Random();
 		int2 = rand.nextInt(100);
-		Thread.sleep(6000);
-		if(obj1>=4) {
-			driver.findElement(By.xpath("(//div[@id='mascotSection']//input[@placeholder='Enter Name'])[" + obj1 + "]")).sendKeys("user"+int2);
-		}
-		else
-		{
-			driver.findElement(By.xpath("(//div[@id='mascotSection']//input[@placeholder='Enter Name'])[" + obj2 + "]")).sendKeys("user"+int2);
-		}
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//div[@id='mascotSection']//input[@placeholder='Enter Name']")).sendKeys("user"+int2);
 		
-		if(driver.findElement(By.xpath("//input[@id='onlyCustomMascots']")).isSelected())
-		{
-			System.out.println("nothing to do");
-		}
-		else
-		{ act = new Actions(driver);
-		act.moveToElement(driver.findElement(By.xpath("//input[@id='onlyCustomMascots']"))).click().perform();
-		}
-		Thread.sleep(2000);
-		if(!driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='nameTags']")).isSelected())
-		{System.out.println("nothing to do");
-		}
-		else
-		{
-			act = new Actions(driver);
-			act.moveToElement(driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='nameTags']"))).click().perform();;
-		
-		}
-		Thread.sleep(2000);
-	}
+			}
 
 	public void VerifyAtPlayerScreen() throws InterruptedException, IOException {
 		Thread.sleep(2000);
@@ -171,7 +144,7 @@ public class DGBP_B_TestCase_2 extends Base {
 			obj.click();
 		} catch (NoSuchElementException e) {
 			// log.debug("Impossible to click the pop-up. Reason: " + e.toString());
-			System.out.println("Impossible to click the pop-up. Reason: " + e.toString());
+			//System.out.println("Impossible to click the pop-up. Reason: " + e.toString());
 		}
 		Thread.sleep(1000);
 		Set<String> allWindows = driver.getWindowHandles();
@@ -180,12 +153,13 @@ public class DGBP_B_TestCase_2 extends Base {
 		for (String child : allWindows) {
 			if (!parent.equalsIgnoreCase(child)) {
 				driver.switchTo().window(child);
-				Thread.sleep(1000);
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='playNowButton']")));
+				//Thread.sleep(1000);
 				driver.findElement(By.xpath("//span[@class='playNowButton']")).click();
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//span[@data-numteams='2']")).click();
 				
-				Thread.sleep(3000);
+				Thread.sleep(2000);
 
 				//System.out.println(driver.getTitle());
 				//1. Display question on buzzer device
@@ -197,22 +171,22 @@ public class DGBP_B_TestCase_2 extends Base {
 				//3. Buzzer Only
 				//driver.findElement(By.xpath("(//ins[@class='iCheck-helper'])[3]")).click();
 				
-				 
+				Thread.sleep(2000);
 				driver.findElement(By.xpath("//*[@id='buzzerModeQuestion']/div/div[1]/span[2]")).click();
 				wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='inviteYourTeams']/div/span[4]")));
 				Thread.sleep(3000);
 				String i = driver.findElement(By.xpath("//*[@id='inviteYourTeams']/div/span[2]")).getText();
 				System.out.println(i);// System.out.println(driver.getTitle());
 				Thread.sleep(3000);
-
+ 
 				driver1 = IntilizeDriver();
+				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				
 				driver1.get(prop.getProperty("joinurl"));
-				driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-				driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				Thread.sleep(3000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-				driver1.findElement(By.xpath("//button[contains(text(),'Join')]")).click();
+				driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
 				Thread.sleep(2000);
 				WebElement image = driver1.findElement(By.xpath("//div[@data-name='user"+int2+"']//img"));
 				 altText = image.getAttribute("alt");
@@ -261,9 +235,12 @@ public class DGBP_B_TestCase_2 extends Base {
 		robot.keyRelease(KeyEvent.VK_V);
 		robot.keyRelease(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_ENTER);
-		robot.delay(2000);
+		robot.delay(150);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 	} 
 
 }
+
+
+
