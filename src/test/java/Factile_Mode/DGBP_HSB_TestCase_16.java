@@ -85,8 +85,8 @@ public class DGBP_HSB_TestCase_16 extends Base {
 			}
 		} else if (s3.equalsIgnoreCase(s5)) {
 			try {
-				modeaterscreen();
-				//PlayerScreen();
+				//modeaterscreen();
+				PlayerScreen();
 			} catch (InterruptedException e) {
 				System.out.println(e.toString());
 			}
