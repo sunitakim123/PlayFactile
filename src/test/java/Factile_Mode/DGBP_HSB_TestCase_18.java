@@ -87,7 +87,7 @@ public class DGBP_HSB_TestCase_18 extends Base {
 		} else if (s3.equalsIgnoreCase(s5)) {
 			try {
 				modeaterscreen();
-				PlayerScreen();
+			//	PlayerScreen();
 			} catch (InterruptedException e) {
 				System.out.println(e.toString());
 			}
@@ -106,9 +106,9 @@ public class DGBP_HSB_TestCase_18 extends Base {
 	@AfterTest
 	public void tearDown() throws InterruptedException {
 
-		driver1.quit();
-		driver.switchTo().window(driver.getWindowHandle());
-		driver.quit();
+	//	driver1.quit();
+	//	driver.switchTo().window(driver.getWindowHandle());
+	//	driver.quit();
 	}
 
 	public void modeaterscreen() throws InterruptedException {

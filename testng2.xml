@@ -5,11 +5,10 @@
 </listeners>
  
 
-   <test name="Game_Point_Symbol_$_After()">
+<test name="Game_Point_Symbol_€_After()">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_16"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_18"/>
            </classes>
   </test> <!-- Test -->
-  
  
 </suite> <!-- Suite -->
