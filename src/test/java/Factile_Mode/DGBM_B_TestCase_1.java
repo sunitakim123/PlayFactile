@@ -35,8 +35,8 @@ public class DGBM_B_TestCase_1 extends Base {
 	int int2, x, y, z, obj1, obj2, obj3;
 	String GameName,  parent;
 	public static Logger Log = LogManager.getLogger(DGBM_B_TestCase_1.class.getName());
-	//private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\Logo.jpg";
-	private static String filePath =  "./src/main/java/images/Logo.jpg";
+	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\Logo.jpg";
+	//private static String filePath =  "./src/main/java/images/Logo.jpg";
 	//"./src/main/java/LinuxDrivers/chromedriver";
 	@BeforeTest
 	public void initilize() throws IOException {
@@ -200,7 +200,9 @@ public class DGBM_B_TestCase_1 extends Base {
 				driver1.get(prop.getProperty("joinurl"));
 				Thread.sleep(3000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-				driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
+				Thread.sleep(1000);
+				//driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
+				driver1.findElement(By.xpath("//button[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
 				Thread.sleep(2000);
 				 driver1.findElement(By.xpath("//div[@data-name='Pineapple']")).click();
 				 Thread.sleep(2000);

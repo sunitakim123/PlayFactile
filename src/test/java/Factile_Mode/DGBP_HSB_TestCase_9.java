@@ -101,7 +101,7 @@ public class DGBP_HSB_TestCase_9 extends Base {
 
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
-		driver.quit();
+	driver.quit();
 	}
 
 	public void modeaterscreen() throws InterruptedException {
@@ -109,7 +109,7 @@ public class DGBP_HSB_TestCase_9 extends Base {
 		Thread.sleep(3000);
 
 		// checking the exact case at player screen on gameboard
-		if (!driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='categoryAndPoint']"))
+		if (driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='categoryAndPoint']"))
 				.isSelected()) {
 			System.out.println("nothing to do");
 		} else {
@@ -171,10 +171,13 @@ public class DGBP_HSB_TestCase_9 extends Base {
 				driver1 = IntilizeDriver();
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
+				wait1 = new WebDriverWait(driver1, 50);
 				driver1.get(prop.getProperty("joinurl"));
 				Thread.sleep(3000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-				driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
+				Thread.sleep(3000);
+				//driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
+				driver1.findElement(By.xpath("//button[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
 				Thread.sleep(2000);
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 				Thread.sleep(2000);
@@ -189,9 +192,9 @@ public class DGBP_HSB_TestCase_9 extends Base {
 				driver1.switchTo().window(driver1.getWindowHandle());
 				Thread.sleep(2000);
 
-				try {
-					ElementNotGoingToVisible = driver1
-							.findElement(By.xpath("//*[@id='mainGameBoard']/div[1]/div/div[2]/p"));
+			/*	try {
+					ElementNotGoingToVisible = driver1.findElement(By.xpath("//*[@id='mainGameBoard']/div[1]/div/div[2]/p"));
+					
 				}
 
 				catch (NoSuchElementException e) {
@@ -199,8 +202,14 @@ public class DGBP_HSB_TestCase_9 extends Base {
 				}
 
 				Assert.assertNull("Hide category with points", ElementNotGoingToVisible);
-				Log.info("Hide category with points is working fine");
-
+				Log.info("Hide category with points is working fine"); */
+				
+				ElementNotGoingToVisible = driver1.findElement(By.xpath("//*[@id='mainGameBoard']/div[1]/div/div[2]/p"));
+				actualValue = ElementNotGoingToVisible.getText();
+				Assert.assertTrue(actualValue.isEmpty());
+				Log.info("Hide category with points is working fine"); 
+				System.out.println("Hide category with points is working fine");
+				
 			}
 		}
 	}
