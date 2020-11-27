@@ -4,25 +4,10 @@
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
  
-<test name="Game_Point_Symbol_$_Before()">
+<test name="Display  Logo at customize and gameboard">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_15"/>
-           </classes>
-  </test> <!-- Test -->
-   <test name="Game_Point_Symbol_$_After()">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_16"/>
-           </classes>
-  </test> <!-- Test -->
-   <test name="Game_Point_Symbol_€_Before()">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_17"/>
-           </classes>
-  </test> <!-- Test -->
-   <test name="Game_Point_Symbol_€_After()">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_18"/>
-           </classes>
-  </test> <!-- Test -->
+    <class name="Factile_Mode.DGBM_B_TestCase_1"/>
+          </classes>          
+  </test> <!-- Test -->  
  
 </suite> <!-- Suite -->

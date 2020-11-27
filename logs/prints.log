@@ -28,3 +28,10 @@
 14:10:34.689 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Driver is Initilize
 14:10:39.763 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Navigated to homePage
 14:13:22.218 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - JGame_Point_Symbol_€_Before is working fine
+14:39:23.118 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+14:39:26.989 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+14:39:42.928 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
+14:45:22.065 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+14:45:25.855 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
+14:50:05.983 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+14:50:09.711 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
