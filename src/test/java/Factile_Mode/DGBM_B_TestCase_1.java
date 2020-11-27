@@ -36,7 +36,8 @@ public class DGBM_B_TestCase_1 extends Base {
 	String GameName,  parent;
 	public static Logger Log = LogManager.getLogger(DGBM_B_TestCase_1.class.getName());
 	//private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\Logo.jpg";
-	private static String filePath =  System.getProperty("user.dir") + "/src/main/java/images/Logo.jpg";
+	private static String filePath =  "./src/main/java/images/Logo.jpg";
+	//"./src/main/java/LinuxDrivers/chromedriver";
 	@BeforeTest
 	public void initilize() throws IOException {
 		driver = IntilizeDriver();
