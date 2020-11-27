@@ -132,7 +132,7 @@ public class DGBP_HSB_TestCase_16 extends Base {
 					.click().perform(); 
 		}
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='symbolValue']")));
-		Thread.sleep(2000);
+		
 		driver.findElement(By.xpath("//input[@id='symbolValue']")).clear();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='symbolValue']")).sendKeys("$");
@@ -141,7 +141,7 @@ public class DGBP_HSB_TestCase_16 extends Base {
 		values.selectByIndex(1);
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
-		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("5");
+		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("10");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")).click();
 		Thread.sleep(2000);
@@ -259,7 +259,7 @@ public class DGBP_HSB_TestCase_16 extends Base {
 
 					Assert.assertEquals(expectedValue, actualvalue);
 				}
-				Log.info("JGame_Point_Symbol_$After is working fine");
+				Log.info("JGame_Point_Symbol_$_After is working fine");
 			}
 
 		}

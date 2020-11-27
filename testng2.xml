@@ -4,22 +4,7 @@
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
  
-<test name="Display  Logo at customize and gameboard">
-    <classes>
-    <class name="Factile_Mode.DGBM_B_TestCase_1"/>
-          </classes>          
-  </test> <!-- Test -->  
-  
-  <test name="Display  uploaded masoct at player side">
-    <classes>
-          <class name="Factile_Mode.DGBP_B_TestCase_2"/>
-           </classes>
-  </test> <!-- Test -->
-   <test name="Display gamboard background image at gameboard and player gameboard side">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_3"/>
-           </classes>
-  </test> <!-- Test -->
+
    <test name="Game_Point_Symbol_$_After()">
     <classes>
           <class name="Factile_Mode.DGBP_HSB_TestCase_16"/>
