@@ -48,7 +48,7 @@ public class DGBP_HSB_TestCase_18 extends Base {
 	}
 
 	@Test
-	public void TC_18_Verify_Game_Point_Symbol_€_after() throws InterruptedException, IOException {
+	public void TC_18_Verify_Game_Point_Symbol_€_Before() throws InterruptedException, IOException {
 		driver.findElement(By.cssSelector("span.loginButton")).click();
 		driver.findElement(By.id("email")).sendKeys(prop.getProperty("username"));
 		driver.findElement(By.id("password")).sendKeys(prop.getProperty("pwd"));
@@ -87,7 +87,7 @@ public class DGBP_HSB_TestCase_18 extends Base {
 		} else if (s3.equalsIgnoreCase(s5)) {
 			try {
 				modeaterscreen();
-			//	PlayerScreen();
+				PlayerScreen();
 			} catch (InterruptedException e) {
 				System.out.println(e.toString());
 			}
@@ -169,6 +169,7 @@ public class DGBP_HSB_TestCase_18 extends Base {
 			System.out.println("Impossible to click the pop-up. Reason: " + e.toString());
 		}
 
+
 		Thread.sleep(1000);
 		Set<String> allWindows = driver.getWindowHandles();
 		int count = allWindows.size();
@@ -179,7 +180,7 @@ public class DGBP_HSB_TestCase_18 extends Base {
 				Thread.sleep(4000);
 				driver.findElement(By.xpath("//span[@class='playNowButton']")).click();
 				Thread.sleep(3000);
-				driver.findElement(By.xpath("//span[@data-numteams='2']")).click(); 
+				driver.findElement(By.xpath("//span[@data-numteams='2']")).click();
 				Thread.sleep(3000);
 				System.out.println(driver.getTitle());
 				driver.findElement(By.xpath("//*[@id='displayBuzzerOptionBack']/div[1]/div[2]/div/div/ins")).click();
@@ -211,25 +212,24 @@ public class DGBP_HSB_TestCase_18 extends Base {
 
 				Thread.sleep(3000);
 				int total = driver1
-						.findElements(
-								By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion disbledClick']/span"))
-						.size();
+						.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion disbledClick']/span")).size();
 
 				for (int c = 1; c <= total; c++) {
 
 					String actual = driver1.findElement(By.xpath(
 							"(//span[@class='gameQuestionBlock unAnsweredQuestion disbledClick']/span)[" + c + "]"))
 							.getText();
-					// System.out.println("value is >>"+actual);
+					 System.out.println("value is >>"+actual);
 					assertTrue(actual.equals("€100") || actual.equals("€200") || actual.equals("€300")
 							|| actual.equals("€400") || actual.equals("€500"));
 				}
 
 				driver.switchTo().window(driver.getWindowHandle());
-				Thread.sleep(3000);
+				Thread.sleep(2000);
 				driver.findElement(By.xpath("(//span[@class='gamePointsBlock'])[1]")).click();
-
+				Thread.sleep(2000);
 				driver1.switchTo().window(driver1.getWindowHandle());
+			
 				wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
 				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 				driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
@@ -238,6 +238,7 @@ public class DGBP_HSB_TestCase_18 extends Base {
 				driver1.findElement(By.xpath("//textarea[@name='input']")).sendKeys("test");
 				wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 				driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+				// driver.switchTo().window(driver.getWindowHandle());
 				driver.switchTo().window(driver.getWindowHandle());
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
 				driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();

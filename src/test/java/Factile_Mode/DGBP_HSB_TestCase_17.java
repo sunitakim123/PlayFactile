@@ -48,7 +48,7 @@ public class DGBP_HSB_TestCase_17 extends Base {
 	}
 
 	@Test
-	public void TC_17_Verify_Game_Point_Symbol_€_Before() throws InterruptedException, IOException {
+	public void TC_17_Verify_Game_Point_Symbol_€_After() throws InterruptedException, IOException {
 		driver.findElement(By.cssSelector("span.loginButton")).click();
 		driver.findElement(By.id("email")).sendKeys(prop.getProperty("username"));
 		driver.findElement(By.id("password")).sendKeys(prop.getProperty("pwd"));
