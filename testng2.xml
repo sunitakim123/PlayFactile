@@ -4,35 +4,20 @@
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
  
- 
-    <test name="Display_Answer_Button_On_Modrater_Screen">
+<test name="Display  Logo at customize and gameboard">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_10"/>
+    <class name="Factile_Mode.DGBM_B_TestCase_1"/>
+          </classes>          
+  </test> <!-- Test -->  
+  
+  <test name="Display  uploaded masoct at player side">
+    <classes>
+          <class name="Factile_Mode.DGBP_B_TestCase_2"/>
            </classes>
   </test> <!-- Test -->
-    <test name="Display_Tag_Name">
+   <test name="Display gamboard background image at gameboard and player gameboard side">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_11"/>
-           </classes>
-  </test> <!-- Test -->
-    <test name="Hide_Tag_Name">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_12"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Play as jeo-pardy style">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_13"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Play as Numbered Tiles instead of Jeopardy-style">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_14"/>
-           </classes>
-  </test> <!-- Test -->
-   <test name="Game_Point_Symbol_$_Before()">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_15"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_3"/>
            </classes>
   </test> <!-- Test -->
    <test name="Game_Point_Symbol_$_After()">
@@ -40,15 +25,6 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_16"/>
            </classes>
   </test> <!-- Test -->
-   <test name="Game_Point_Symbol_€_Before()">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_17"/>
-           </classes>
-  </test> <!-- Test -->
-   <test name="Game_Point_Symbol_€_After()">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_18"/>
-           </classes>
-  </test> <!-- Test -->
+  
  
 </suite> <!-- Suite -->
