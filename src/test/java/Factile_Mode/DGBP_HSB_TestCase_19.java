@@ -19,8 +19,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import jdk.internal.org.jline.utils.Log;
 import junit.framework.Assert;
 import resources.Base;
 
