@@ -251,8 +251,13 @@ public class DGBM_B_TestCase_1 extends Base {
 		} catch (AWTException e) {
 			e.printStackTrace();
 		}
-
-		robot.delay(250);
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		/*robot.delay(250);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		robot.keyPress(KeyEvent.VK_CONTROL);
@@ -262,7 +267,7 @@ public class DGBM_B_TestCase_1 extends Base {
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.delay(150);
 		robot.keyRelease(KeyEvent.VK_ENTER);
-		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyPress(KeyEvent.VK_ENTER); */
 
 	}
 
