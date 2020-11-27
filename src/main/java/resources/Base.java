@@ -27,8 +27,7 @@ public class Base {
 
 	public WebDriver IntilizeDriver() throws IOException {
 
-		FileInputStream fis = new FileInputStream(
-				System.getProperty("user.dir") + "\\src\\main\\java\\resources\\data.properties");
+		FileInputStream fis = new FileInputStream( "./src/main/java/resources/data.properties");
 		prop.load(fis);
 		String browserName = prop.getProperty("browser");
 

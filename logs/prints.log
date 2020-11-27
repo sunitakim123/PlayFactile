@@ -46,3 +46,6 @@
 22:52:12.618 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Driver is Initilize
 22:52:16.330 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Navigated to homePage
 22:54:58.943 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - JGame_Point_Symbol_€_Before is working fine
+10:55:11.231 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+10:55:14.994 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
+10:57:47.140 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Left logo is present>>=factile
