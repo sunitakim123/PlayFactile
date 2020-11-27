@@ -34,7 +34,7 @@ public class DGBP_HSB_TestCase_16 extends Base {
 	Actions act;
 
 	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_16.class.getName());
-	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
+	
 
 	@BeforeTest
 	public void initilize() throws IOException {
@@ -86,7 +86,7 @@ public class DGBP_HSB_TestCase_16 extends Base {
 		} else if (s3.equalsIgnoreCase(s5)) {
 			try {
 				modeaterscreen();
-				PlayerScreen();
+				//PlayerScreen();
 			} catch (InterruptedException e) {
 				System.out.println(e.toString());
 			}
