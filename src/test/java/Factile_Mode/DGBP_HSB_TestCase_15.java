@@ -224,7 +224,7 @@ public class DGBP_HSB_TestCase_15 extends Base {
 					String actual = driver1.findElement(By.xpath(
 							"(//span[@class='gameQuestionBlock unAnsweredQuestion disbledClick']/span)[" + c + "]"))
 							.getText();
-					// System.out.println("value is >>"+actual);
+					 System.out.println("value is >>"+actual);
 					assertTrue(actual.equals("$100") || actual.equals("$200") || actual.equals("$300")
 							|| actual.equals("$400") || actual.equals("$500"));
 				}
