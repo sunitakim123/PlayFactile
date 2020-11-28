@@ -115,7 +115,8 @@ public class DGBP_HSB_TestCase_15 extends Base {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("customize")));
 		driver.findElement(By.id("customize")).click();
 		Thread.sleep(3000);
-		Thread.sleep(3000);
+
+
 		driver.findElement(By.xpath("(//span[@class='resetToDefault resetCustomizations'])[4]")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")).click();
