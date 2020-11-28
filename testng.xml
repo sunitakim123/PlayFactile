@@ -3,7 +3,16 @@
 <listeners>
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
-  
+    <test name="Play as jeo-pardy style">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_13"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Play as Numbered Tiles instead of Jeopardy-style">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_14"/>
+           </classes>
+  </test> <!-- Test -->
 <test name="Game_Point_Symbol_$_Before()">
     <classes>
           <class name="Factile_Mode.DGBP_HSB_TestCase_15"/>
