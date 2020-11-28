@@ -1,0 +1,53 @@
+22:58:56.134 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+22:58:59.916 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+22:59:16.214 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
+23:00:47.216 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+23:00:50.978 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+23:01:05.476 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
+23:02:22.811 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+23:02:26.590 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+23:02:42.039 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
+23:07:47.247 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - Driver is Initilize
+23:07:51.055 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - Navigated to homePage
+23:08:07.483 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - At customization page>> UnCheck Hide Category with Points>> 
+23:09:00.860 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - category with points is =T3 FOR 100
+23:11:08.693 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+23:11:13.064 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+23:11:27.837 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
+23:15:37.065 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+23:15:41.698 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+23:15:57.479 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
+23:21:56.503 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+23:22:01.630 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+23:22:18.097 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
+23:26:12.152 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+23:26:16.621 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+23:26:32.017 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
+23:26:52.782 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+23:26:58.555 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+23:27:15.348 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
+23:31:00.687 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+23:31:04.486 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+23:31:19.303 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
+23:34:36.969 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+23:34:41.314 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+23:34:57.339 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
+23:58:53.319 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+23:58:57.005 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+23:59:12.679 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
+00:00:09.658 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Hide category with points is working fine
+00:01:34.581 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+00:01:39.374 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+00:01:56.291 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
+00:03:31.704 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+00:03:42.665 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+00:04:10.655 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
+00:10:01.028 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
+01:14:29.794 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+01:14:33.611 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+01:15:01.260 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+01:18:22.255 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Driver is Initilize
+01:18:25.995 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Navigated to homePage
+13:20:27.692 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Driver is Initilize
+13:20:31.364 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Navigated to homePage
+13:22:29.192 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Driver is Initilize

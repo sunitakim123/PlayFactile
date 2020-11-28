@@ -105,9 +105,9 @@ public class DGBP_HSB_TestCase_16 extends Base {
 	@AfterTest
 	public void tearDown() throws InterruptedException {
 
-	driver1.quit();
-		driver.switchTo().window(driver.getWindowHandle());
-		driver.quit();
+	//driver1.quit();
+	//	driver.switchTo().window(driver.getWindowHandle());
+	//	driver.quit();
 	}
 
 	public void modeaterscreen() throws InterruptedException {
@@ -198,8 +198,10 @@ public class DGBP_HSB_TestCase_16 extends Base {
 				Thread.sleep(3000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
 				Thread.sleep(1000);
-				//driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
-				driver1.findElement(By.xpath("//button[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
+			//	driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
+				//input[@class='btn joinBtn yellowBG mt-4 mb-4']
+				driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
+				//driver1.findElement(By.xpath("//button[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
 				Thread.sleep(2000);
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 				Thread.sleep(2000);
@@ -237,8 +239,11 @@ public class DGBP_HSB_TestCase_16 extends Base {
 				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 				driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
 				//Thread.sleep(1000);
-				 wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@name='input']")));
-				driver1.findElement(By.xpath("//textarea[@name='input']")).sendKeys("test");
+				// wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@name='input']")));
+				//driver1.findElement(By.xpath("//textarea[@name='input']")).sendKeys("test");
+				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
+				driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");				
+				
 				wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 				driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
 				// driver.switchTo().window(driver.getWindowHandle());
