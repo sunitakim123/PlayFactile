@@ -106,9 +106,9 @@ public class DGBP_HSB_TestCase_15 extends Base {
 	@AfterTest
 	public void tearDown() throws InterruptedException {
 
-		driver1.quit();
-		driver.switchTo().window(driver.getWindowHandle());
-		driver.quit();
+	//	driver1.quit();
+	//	driver.switchTo().window(driver.getWindowHandle());
+	//	driver.quit();
 	}
 
 	public void modeaterscreen() throws InterruptedException {
@@ -144,7 +144,7 @@ public class DGBP_HSB_TestCase_15 extends Base {
 		values.selectByIndex(0);
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
-		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("5");
+		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("10");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")).click();
 		Thread.sleep(2000);
