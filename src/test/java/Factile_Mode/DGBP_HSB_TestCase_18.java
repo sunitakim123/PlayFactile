@@ -142,7 +142,7 @@ public class DGBP_HSB_TestCase_18 extends Base {
 		values.selectByIndex(0);
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
-		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("5");
+		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("6");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")).click();
 		Thread.sleep(2000);
