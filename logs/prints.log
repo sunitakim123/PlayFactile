@@ -8,3 +8,7 @@
 13:41:06.989 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Driver is Initilize
 13:41:12.293 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Navigated to homePage
 13:43:59.691 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - JGame_Point_Symbol_$_After is working fine
+14:41:58.794 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+14:42:02.648 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+14:42:30.711 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+14:44:45.809 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - JGame_Point_Symbol_$_Before is working fine
