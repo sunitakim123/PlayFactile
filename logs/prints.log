@@ -10,3 +10,6 @@
 13:39:41.460 [main] INFO  Factile_Mode.DGB_B_TestCase_21 - Driver is Initilize
 13:39:45.222 [main] INFO  Factile_Mode.DGB_B_TestCase_21 - Navigated to homePage
 13:42:17.026 [main] INFO  Factile_Mode.DGB_B_TestCase_21 - Left logo is present>>=factile
+13:53:35.774 [main] INFO  Factile_Mode.DGB_B_TestCase_21 - Driver is Initilize
+13:53:39.709 [main] INFO  Factile_Mode.DGB_B_TestCase_21 - Navigated to homePage
+13:56:07.997 [main] INFO  Factile_Mode.DGB_B_TestCase_21 - Left logo is present>>=factile

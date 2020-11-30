@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-30T13:39:35 IST" name="Default suite" finished-at="2020-11-30T13:42:20 IST" duration-ms="164395">
+  <suite started-at="2020-11-30T13:53:30 IST" name="Default suite" finished-at="2020-11-30T13:56:12 IST" duration-ms="162342">
     <groups>
     </groups>
-    <test started-at="2020-11-30T13:39:35 IST" name="Default test" finished-at="2020-11-30T13:42:20 IST" duration-ms="164395">
+    <test started-at="2020-11-30T13:53:30 IST" name="Default test" finished-at="2020-11-30T13:56:12 IST" duration-ms="162342">
       <class name="Factile_Mode.DGB_B_TestCase_21">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGB_B_TestCase_21@19b93fa8]" started-at="2020-11-30T13:39:35 IST" name="initilize" finished-at="2020-11-30T13:39:45 IST" duration-ms="9556" status="PASS">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGB_B_TestCase_21@19b93fa8]" started-at="2020-11-30T13:53:30 IST" name="initilize" finished-at="2020-11-30T13:53:39 IST" duration-ms="9654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="TC_1_Verify_Uploaded_Logo_at_Moderater_Gameboard_screen()[pri:0, instance:Factile_Mode.DGB_B_TestCase_21@19b93fa8]" started-at="2020-11-30T13:39:45 IST" name="TC_1_Verify_Uploaded_Logo_at_Moderater_Gameboard_screen" finished-at="2020-11-30T13:42:20 IST" duration-ms="154811" status="PASS">
+        <test-method signature="TC_1_Verify_Uploaded_Logo_at_Moderater_Gameboard_screen()[pri:0, instance:Factile_Mode.DGB_B_TestCase_21@19b93fa8]" started-at="2020-11-30T13:53:39 IST" name="TC_1_Verify_Uploaded_Logo_at_Moderater_Gameboard_screen" finished-at="2020-11-30T13:56:11 IST" duration-ms="151299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_1_Verify_Uploaded_Logo_at_Moderater_Gameboard_screen -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGB_B_TestCase_21@19b93fa8]" started-at="2020-11-30T13:42:20 IST" name="tearDown" finished-at="2020-11-30T13:42:20 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGB_B_TestCase_21@19b93fa8]" started-at="2020-11-30T13:56:11 IST" name="tearDown" finished-at="2020-11-30T13:56:12 IST" duration-ms="1360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

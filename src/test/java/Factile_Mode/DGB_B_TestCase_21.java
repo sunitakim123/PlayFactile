@@ -123,7 +123,8 @@ public class DGB_B_TestCase_21 extends Base {
 		driver.findElement(By.xpath("//*[@id='addNewLogo']/div/span")).click();	
 		Thread.sleep(3000);
 		//uploadFileWithRobot(filePath);
-		Runtime.getRuntime().exec("E:\\LogoImage3.exe");
+		//Runtime.getRuntime().exec("E:\\LogoImage3.exe");
+		Runtime.getRuntime().exec(filePath2);
 		//C:\Users\DELIGENCE\.jenkins\PlayFactile\src\main\java\AutoIT\LogoImage3.exe
 		Thread.sleep(5000);
 		Random rand = new Random();
