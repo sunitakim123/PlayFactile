@@ -4,29 +4,9 @@
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
 
-  <test name="Play as Numbered Tiles instead of Jeopardy-style">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_14"/>
-           </classes>
-  </test> <!-- Test -->
-<test name="Game_Point_Symbol_$_Before()">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_15"/>
-           </classes>
-  </test> <!-- Test -->
-   <test name="Game_Point_Symbol_$_After()">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_16"/>
-           </classes>
-  </test> <!-- Test -->
-   <test name="Game_Point_Symbol_€_Before()">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_17"/>
-           </classes>
-  </test> <!-- Test -->
    <test name="Game_Point_Symbol_€_After()">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_18"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_21"/>
            </classes>
            </test> <!-- Test -->
 </suite> <!-- Suite -->
