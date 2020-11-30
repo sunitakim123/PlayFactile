@@ -38,6 +38,7 @@ public class DGB_B_TestCase_21 extends Base {
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\Logo1.jpg";
 	//C:\Users\DELIGENCE\.jenkins\PlayFactile\src\main\java\AutoIT\LogoImage3.exe
 	private static String filePath2 ="./src/main/java/AutoIT/LogoImage7.exe";
+	
 	//./src/main/java/images/Logo.jpg
 	//private static String filePath =  "./src/main/java/images/Logo.jpg";
 //	"./src/main/java/resources/data.properties"
@@ -125,6 +126,7 @@ public class DGB_B_TestCase_21 extends Base {
 		Thread.sleep(3000);
 		//uploadFileWithRobot(filePath);
 		//Runtime.getRuntime().exec("E:\\LogoImage3.exe");
+		//./src/main/java/LinuxDrivers/chromedriver
 		Runtime.getRuntime().exec("./src/main/java/AutoIT/LogoImage7.exe ./src/main/java/images/Logo1.jpg");
 		//C:\Users\DELIGENCE\.jenkins\PlayFactile\src\main\java\AutoIT\LogoImage3.exe
 		Thread.sleep(5000);

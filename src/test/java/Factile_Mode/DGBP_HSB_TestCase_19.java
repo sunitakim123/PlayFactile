@@ -13,6 +13,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -156,11 +157,15 @@ public class DGBP_HSB_TestCase_19 extends Base {
 				.click();
 		Thread.sleep(3000);
 
-		boolean obj = driver.findElement(By.xpath("//button[contains(text(),'Start new game')]")).isDisplayed();
+		try {
+			WebElement obj = driver.findElement(By.xpath("//button[contains(text(),'Start new game')]"));
 
-		if (obj == true) {
-			driver.findElement(By.xpath("//button[contains(text(),'Start new game')]")).click();
+			obj.click();
+		} catch (NoSuchElementException e) {
+			// log.debug("Impossible to click the pop-up. Reason: " + e.toString());
+			System.out.println("Impossible to click the pop-up. Reason: " + e.toString());
 		}
+
 
 		Thread.sleep(1000);
 		Set<String> allWindows = driver.getWindowHandles();
@@ -187,13 +192,13 @@ public class DGBP_HSB_TestCase_19 extends Base {
 				driver1 = IntilizeDriver();
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
-				driver1.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-				wait1 = new WebDriverWait(driver1,4);
+				driver1.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+				wait1 = new WebDriverWait(driver1,50);
 				driver1.get(prop.getProperty("joinurl"));
 				Thread.sleep(5000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);Thread.sleep(1000);
 				//driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
-				driver1.findElement(By.xpath("//button[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
+				driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
 				Thread.sleep(2000);
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 				Thread.sleep(2000);
@@ -204,32 +209,69 @@ public class DGBP_HSB_TestCase_19 extends Base {
 				driver.findElement(By.xpath("//span[contains(text(),'Start Game')]")).click();
 				Thread.sleep(2000);
 				
-			int activetiles=	driver.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']")).size();
+			int activetilesInSecondGame=	driver.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']")).size();
+			System.out.println("total active tiles in second game>>"+activetilesInSecondGame);
 			
-			for(int p=1;p<=activetiles;p++) {
+			for(int p=1;p<=activetilesInSecondGame;p++) {
 				
-				driver.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])["+p+"]")).click();			
+				System.out.println("value of p>>"+p);
+				wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")));
+				String value = driver.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")).getText();
+				//System.out.println("value"+ value);
+				//System.out.println("value of p>>"+p);
+				driver.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")).click();			
 				driver1.switchTo().window(driver1.getWindowHandle());
 				
 				wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
-				//wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
+				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 				driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
-				//	driver1.findElement(By.xpath("//div[@class='inner d-flex align-items-center justify-content-center']")).click();	
-		  
-				//driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
-				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='input']")));
-				driver1.findElement(By.xpath("//input[@name='input']")).sendKeys("test");
-				Thread.sleep(500);
-				driver1.findElement(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")).click();
+				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
+				driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");		
+				wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+				driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
 				// driver.switchTo().window(driver.getWindowHandle());
 				driver.switchTo().window(driver.getWindowHandle());
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
 				driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 				driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
-				Thread.sleep(1000);
+				//System.out.println("value of p at end>>"+p);
 			}
-
+			Thread.sleep(2000);
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='swal-modal']")));
+			String popupmsg=driver.findElement(By.xpath("//div[@class='swal-modal']")).getText();
+			System.out.println("pop up msg>> "+popupmsg);
+			
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='swal-modal']//button[@class='swal-button swal-button--confirm btn-success swal-button--danger']")));
+			driver.findElement(By.xpath("//div[@class='swal-modal']//button[@class='swal-button swal-button--confirm btn-success swal-button--danger']")).click();
+		
+			int activetiles=	driver.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']")).size();
+			System.out.println("total active tiles>>"+activetiles);
+			for(int p=1;p<=activetiles;p++) {
+				
+				System.out.println("value of p>>"+p);
+				wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")));
+				String value = driver.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")).getText();
+				System.out.println("value"+ value);
+				System.out.println("value of p>>"+p);
+				driver.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")).click();			
+				driver1.switchTo().window(driver1.getWindowHandle());
+				
+				wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
+				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
+				driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
+				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
+				driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");		
+				wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+				driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+				// driver.switchTo().window(driver.getWindowHandle());
+				driver.switchTo().window(driver.getWindowHandle());
+				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
+				driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
+				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
+				driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
+				System.out.println("value of p at end>>"+p);
+			}
 		}
 	}
 	} }
