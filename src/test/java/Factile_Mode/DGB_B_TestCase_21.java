@@ -37,7 +37,8 @@ public class DGB_B_TestCase_21 extends Base {
 	public static Logger Log = LogManager.getLogger(DGB_B_TestCase_21.class.getName());
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\Logo1.jpg";
 	//C:\Users\DELIGENCE\.jenkins\PlayFactile\src\main\java\AutoIT\LogoImage3.exe
-	private static String filePath2 ="./src/main/java/AutoIT/LogoImage3.exe";
+	private static String filePath2 ="./src/main/java/AutoIT/LogoImage7.exe";
+	//./src/main/java/images/Logo.jpg
 	//private static String filePath =  "./src/main/java/images/Logo.jpg";
 //	"./src/main/java/resources/data.properties"
 	//"./src/main/java/LinuxDrivers/chromedriver";
@@ -124,7 +125,7 @@ public class DGB_B_TestCase_21 extends Base {
 		Thread.sleep(3000);
 		//uploadFileWithRobot(filePath);
 		//Runtime.getRuntime().exec("E:\\LogoImage3.exe");
-		Runtime.getRuntime().exec(filePath2);
+		Runtime.getRuntime().exec("./src/main/java/AutoIT/LogoImage7.exe ./src/main/java/images/Logo1.jpg");
 		//C:\Users\DELIGENCE\.jenkins\PlayFactile\src\main\java\AutoIT\LogoImage3.exe
 		Thread.sleep(5000);
 		Random rand = new Random();
