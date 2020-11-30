@@ -120,11 +120,11 @@ public class DGB_B_TestCase_21 extends Base {
 				// log.debug("Impossible to click the pop-up. Reason: " + e.toString());
 				System.out.println("Impossible to click the pop-up. Reason: " + e.toString());
 			}
-		driver.findElement(By.xpath("//*[@id='addNewLogo']/div/span")).click();	
-		Thread.sleep(3000);
+		driver.findElement(By.xpath("//*[@id='addNewLogo']/div/span")).sendKeys("./src/main/java/AutoIT/LogoImage3.exe");
+		//Thread.sleep(3000);
 		//uploadFileWithRobot(filePath);
 		//Runtime.getRuntime().exec("E:\\LogoImage3.exe");
-		Runtime.getRuntime().exec(filePath2);
+		//Runtime.getRuntime().exec(filePath2);
 		//C:\Users\DELIGENCE\.jenkins\PlayFactile\src\main\java\AutoIT\LogoImage3.exe
 		Thread.sleep(5000);
 		Random rand = new Random();

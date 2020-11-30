@@ -6,7 +6,7 @@
 
    <test name="Display social media on moderater screen gamboard">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_4"/>
+          <class name="Factile_Mode.DGB_B_TestCase_21"/>
            </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
