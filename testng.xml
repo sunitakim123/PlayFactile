@@ -16,12 +16,12 @@
            </classes>
   </test> <!-- Test -->
 
-<test name="Verify show skip question">
+<test name="Verify show skip question button">
     <classes>
           <class name="Factile_Mode.DGBP_HSB_TestCase_21"/>
            </classes>
   </test> <!-- Test -->
-  <test name="Verify Skip final factile">
+  <test name="Verify Skip final factile ">
     <classes>
           <class name="Factile_Mode.DGBP_HSB_TestCase_22"/>
            </classes>
