@@ -5,7 +5,7 @@
 </listeners>
 
 
-  <test name="Verify Skip final factile ">
+  <test name="Verify Skip final factile">
     <classes>
           <class name="Factile_Mode.DGBP_HSB_TestCase_22"/>
            </classes>
