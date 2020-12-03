@@ -47,7 +47,7 @@ public class DGBP_HSB_TestCase_21 extends Base {
 	}
 
 	@Test
-	public void TC_10_Verify_Skip_question_Button_At_Moderater()
+	public void TC_21_Verify_Skip_question_Button_At_Moderater()
 			throws InterruptedException, IOException {
 		driver.findElement(By.cssSelector("span.loginButton")).click();
 		driver.findElement(By.id("email")).sendKeys(prop.getProperty("username"));
