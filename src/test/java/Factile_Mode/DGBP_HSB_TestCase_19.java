@@ -262,7 +262,7 @@ public class DGBP_HSB_TestCase_19 extends Base {
 				System.out.println("total active tiles>>" + activetilesInSecodGame);
 				for (int p = 1; p <= 3; p++) {
 
-					// System.out.println("value of p>>"+p);
+					System.out.println("value of p>>" + p);
 					wait.until(ExpectedConditions.elementToBeClickable(
 							By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")));
 					String value = driver
@@ -283,7 +283,6 @@ public class DGBP_HSB_TestCase_19 extends Base {
 					wait1.until(ExpectedConditions
 							.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
-
 					// driver.switchTo().window(driver.getWindowHandle());
 					driver.switchTo().window(driver.getWindowHandle());
 					Thread.sleep(2000);
