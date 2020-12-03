@@ -97,4 +97,15 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_18"/>
            </classes>
   </test> <!-- Test -->
+   <test name="Verify Double factile">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_19"/>
+           </classes>
+  </test> <!-- Test -->
+ 
+   <test name="Verify Daily double">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_20"/>
+           </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->
