@@ -188,14 +188,14 @@ public class DGBP_HSB_TestCase_22 extends Base {
 				Thread.sleep(3000);
 				String i = driver.findElement(By.xpath("//*[@id='inviteYourTeams']/div/span[2]")).getText();
 				System.out.println(i);// System.out.println(driver.getTitle());
-				Thread.sleep(3000);
+			
 
 				driver1 = IntilizeDriver();
 				driver1.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				wait1 = new WebDriverWait(driver1, 50);
 				driver1.get(prop.getProperty("joinurl"));
-				Thread.sleep(3000);
+				Thread.sleep(1000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
 				Thread.sleep(1000);
 				driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
@@ -215,7 +215,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(),'Final Factile')]")));
 			String finalfactileatgameboard=	driver.findElement(By.xpath("//span[contains(text(),'Final Factile')]")).getAttribute("class");
 			Assert.assertNotNull("Final factile question button is present on gameboard at moderater screen", finalfactileatgameboard);
-		
+			Thread.sleep(2000);
 				int activetiles = driver.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']"))
 						.size();
 				System.out.println("total active tiles in second game>>" + activetiles);
