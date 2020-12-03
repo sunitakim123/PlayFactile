@@ -33,7 +33,7 @@ public class DGBP_HSB_TestCase_19 extends Base {
 	WebElement ElementNotGoingToVisible;
 	Actions act;
 
-	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_22.class.getName());
+	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_20.class.getName());
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
 	@BeforeTest
