@@ -4,9 +4,11 @@
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
 
-   <test name="Display social media on moderater screen gamboard">
+   <test name="Verify Double factile">
     <classes>
           <class name="Factile_Mode.DGBP_HSB_TestCase_19"/>
            </classes>
   </test> <!-- Test -->
+  
+
 </suite> <!-- Suite -->

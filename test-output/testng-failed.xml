@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_19">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_22">
         <methods>
+          <include name="TC_22_Verify_Double_Factile"/>
           <include name="initilize"/>
           <include name="tearDown"/>
-          <include name="TC_19_Verify_Double_Factile"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_19 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_22 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
