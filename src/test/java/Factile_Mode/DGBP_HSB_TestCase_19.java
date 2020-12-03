@@ -189,10 +189,10 @@ public class DGBP_HSB_TestCase_19 extends Base {
 				driver1 = IntilizeDriver();
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
-				driver1.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-				wait1 = new WebDriverWait(driver1, 50);
+				driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+				wait1 = new WebDriverWait(driver1, 60);
 				driver1.get(prop.getProperty("joinurl"));
-				Thread.sleep(5000);
+				Thread.sleep(2000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
 				Thread.sleep(1000);
 				// driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4
@@ -248,6 +248,7 @@ public class DGBP_HSB_TestCase_19 extends Base {
 				Thread.sleep(2000);
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='swal-modal']")));
 				String popupmsg = driver.findElement(By.xpath("//div[@class='swal-modal']")).getText();
+				Thread.sleep(2000);
 				System.out.println("pop up msg>> " + popupmsg);
 
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(
@@ -255,7 +256,7 @@ public class DGBP_HSB_TestCase_19 extends Base {
 				driver.findElement(By.xpath(
 						"//div[@class='swal-modal']//button[@class='swal-button swal-button--confirm btn-success swal-button--danger']"))
 						.click();
-
+				Thread.sleep(2000);
 				int activetilesInSecodGame = driver
 						.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']")).size();
 				System.out.println("total active tiles>>" + activetilesInSecodGame);
