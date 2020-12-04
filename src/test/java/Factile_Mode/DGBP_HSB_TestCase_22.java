@@ -250,19 +250,14 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					wait1.until(ExpectedConditions
 							.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
-					
-					
-
 					// driver.switchTo().window(driver.getWindowHandle());
-					driver.switchTo().window(driver.getWindowHandle());		
+					driver.switchTo().window(driver.getWindowHandle());
 					Thread.sleep(2000);
-					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
-					WebElement ele2=driver.findElement(By.xpath("//i[@class='fa fa-check right']"));
-					JavascriptExecutor jse1 = (JavascriptExecutor)driver;
-					jse1.executeScript("arguments[0].click()", ele2);
+					wait.until(
+							ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
+					driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
-					// System.out.println("value of p at end>>"+p);
 				
 				Thread.sleep(2000);
 				}
