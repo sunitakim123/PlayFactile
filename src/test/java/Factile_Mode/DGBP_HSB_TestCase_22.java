@@ -139,7 +139,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 	}
 
 	public void PlayerScreen() throws InterruptedException, IOException {
-		Thread.sleep(2000);
+		Thread.sleep(1500);
 		parent = driver.getWindowHandle();
 		System.out.println("ParentWindow id is :-" + parent);
 		driver.findElement(By.xpath("//*[@id='mygames']")).click();
@@ -201,23 +201,21 @@ public class DGBP_HSB_TestCase_22 extends Base {
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
 				Thread.sleep(1000);
 				driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
-				// driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4
-				// mb-4']")).click();
-				// driver1.findElement(By.xpath("//button[@class='btn joinBtn yellowBG mt-4
-				// mb-4']")).click();
-				Thread.sleep(2000);
+				Thread.sleep(1500);
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
-				Thread.sleep(2000);
+		
 				driver.switchTo().window(driver.getWindowHandle());
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 				driver.findElement(By.xpath("//span[contains(text(),'Begin Game')]")).click();
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 				driver.findElement(By.xpath("//span[contains(text(),'Start Game')]")).click();
 				Thread.sleep(2000);
-				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(),'Final Factile')]")));
-			String finalfactileatgameboard=	driver.findElement(By.xpath("//span[contains(text(),'Final Factile')]")).getAttribute("class");
-			Assert.assertNotNull("Final factile question button is present on gameboard at moderater screen", finalfactileatgameboard);
-			Thread.sleep(2000);
+			
+		//		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(),'Final Factile')]")));
+			//String finalfactileatgameboard=	driver.findElement(By.xpath("//span[contains(text(),'Final Factile')]")).getAttribute("class");
+			//Assert.assertNotNull("Final factile question button is present on gameboard at moderater screen", finalfactileatgameboard);
+			//System.out.println("Final factile question button is present on gameboard at moderater screen");
+			Thread.sleep(1000);
 				int activetiles = driver.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']"))
 						.size();
 				System.out.println("total active tiles in 1st game>>" + activetiles);
