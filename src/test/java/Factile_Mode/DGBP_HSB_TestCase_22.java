@@ -150,7 +150,11 @@ public class DGBP_HSB_TestCase_22 extends Base {
 		String expected = "btn finalJeopardyButton completeEditBlockFinal position-relative";
 		driver.navigate().back();
 		if(expected.equalsIgnoreCase(FFPresent))
-		{
+		{	wait = new WebDriverWait(driver, 60);
+		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		wait = new WebDriverWait(driver1, 60);
 		GameName = prop.getProperty("gamename");
 		// 'Test"+int1+"'
 		driver.findElement(
@@ -221,7 +225,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 				System.out.println("total active tiles in 1st game>>" + activetiles);
 
 				for (int p = 1; p <= activetiles; p++) {
-
+					
 					System.out.println("value of p>>" + p);
 					wait.until(ExpectedConditions.elementToBeClickable(
 							By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")));
