@@ -219,7 +219,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 			//String finalfactileatgameboard=	driver.findElement(By.xpath("//span[contains(text(),'Final Factile')]")).getAttribute("class");
 			//Assert.assertNotNull("Final factile question button is present on gameboard at moderater screen", finalfactileatgameboard);
 			//System.out.println("Final factile question button is present on gameboard at moderater screen");
-			Thread.sleep(1000);
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']")));
 				int activetiles = driver.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']"))
 						.size();
 				System.out.println("total active tiles in 1st game>>" + activetiles);
