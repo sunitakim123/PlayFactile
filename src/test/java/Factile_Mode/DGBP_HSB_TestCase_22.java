@@ -259,8 +259,8 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					// System.out.println("value of p at end>>"+p);
 				}
 					Thread.sleep(1500);
-					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h2[@class='winnerTopHeader']")));
-					String header = driver.findElement(By.xpath("//h2[@class='winnerTopHeader']")).getText();
+				//	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h2[@class='winnerTopHeader']")));
+					//String header = driver.findElement(By.xpath("//h2[@class='winnerTopHeader']")).getText();
 					Thread.sleep(1500);
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[@class='winnerTeamName']")));
 					String winningTeamOnModeater = driver.findElement(By.xpath("//h1[@class='winnerTeamName']")).getText();
