@@ -222,11 +222,13 @@ public class DGBP_HSB_TestCase_22 extends Base {
 				System.out.println("total active tiles in 1st game>>" + activetiles);
 
 				for (int p = 1; p <= activetiles; p++) {
-					Thread.sleep(2000);
+
 					System.out.println("value of p>>" + p);
 					wait.until(ExpectedConditions.elementToBeClickable(
 							By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")));
-				//	String value = driver.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")).getText();
+					String value = driver
+							.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]"))
+							.getText();
 					// System.out.println("value"+ value);
 					// System.out.println("value of p>>"+p);
 					Thread.sleep(2000);
@@ -234,18 +236,8 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					driver1.switchTo().window(driver1.getWindowHandle());
 
 					wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
-					Thread.sleep(5000);
-					//wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(text(),'Buzz!')]")));
-					//wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
-			
-				//	WebElement element =driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
-					//element.click();
-				//Actions actions = new Actions(driver1);
-				//	actions.moveToElement(element).click().build().perform();
-					//JavascriptExecutor jse = (JavascriptExecutor)driver1;
-					//jse.executeScript("arguments[0].click()", element);
-					
-					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
+					wait1.until(
+							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 					driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
 					wait1.until(ExpectedConditions
 							.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
@@ -253,17 +245,17 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					wait1.until(ExpectedConditions
 							.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
-					Thread.sleep(7000);
 					// driver.switchTo().window(driver.getWindowHandle());
 					driver.switchTo().window(driver.getWindowHandle());
 					Thread.sleep(2000);
-					wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
+					wait.until(
+							ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
 					driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
-					Thread.sleep(500);
-				Thread.sleep(2000);
+					// System.out.println("value of p at end>>"+p);
 				}
+				
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h2[@class='winnerTopHeader']")));
 					String header = driver.findElement(By.xpath("//h2[@class='winnerTopHeader']")).getText();
 			

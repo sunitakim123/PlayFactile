@@ -261,9 +261,9 @@ public class DGBP_HSB_TestCase_19 extends Base {
 				int activetilesInSecodGame = driver
 						.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']")).size();
 				System.out.println("total active tiles in second game>>" + activetilesInSecodGame);
-				/*for (int p = 1; p <= 2; p++) {
+				for (int p = 1; p <= 2; p++) {
 
-					// System.out.println("value of p>>"+p);
+					System.out.println("value of p>>" + p);
 					wait.until(ExpectedConditions.elementToBeClickable(
 							By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")));
 					String value = driver
@@ -276,7 +276,8 @@ public class DGBP_HSB_TestCase_19 extends Base {
 					driver1.switchTo().window(driver1.getWindowHandle());
 
 					wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
-					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
+					wait1.until(
+							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 					driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
 					wait1.until(ExpectedConditions
 							.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
@@ -284,7 +285,6 @@ public class DGBP_HSB_TestCase_19 extends Base {
 					wait1.until(ExpectedConditions
 							.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
-
 					// driver.switchTo().window(driver.getWindowHandle());
 					driver.switchTo().window(driver.getWindowHandle());
 					Thread.sleep(2000);
@@ -294,6 +294,7 @@ public class DGBP_HSB_TestCase_19 extends Base {
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 					// System.out.println("value of p at end>>"+p);
+				
 				}
 				wait.until(
 						ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='skipToFinalFactile']")));
@@ -344,7 +345,7 @@ public class DGBP_HSB_TestCase_19 extends Base {
 						.presenceOfElementLocated(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")));
 				String winningTeamOnPlayerScreen = driver1
 						.findElement(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")).getText();
-				Assert.assertEquals(winningTeamOnModeater, winningTeamOnPlayerScreen); */
+				Assert.assertEquals(winningTeamOnModeater, winningTeamOnPlayerScreen); 
 				Log.info("Double factile is working fine");
 				System.out.println("Double factile is working fine.");
 
