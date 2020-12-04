@@ -3,9 +3,9 @@
 <listeners>
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
- <test name="Verify 22">
+ <test name="Verify 24">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_22"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_24"/>
            </classes>
   </test> <!-- Test -->
 

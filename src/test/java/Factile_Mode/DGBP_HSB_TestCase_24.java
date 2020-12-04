@@ -1,5 +1,7 @@
 package Factile_Mode;
 
+import static org.testng.Assert.assertTrue;
+
 import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -7,47 +9,44 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import junit.framework.Assert;
 import resources.Base;
 
-public class DGBP_HSB_TestCase_22 extends Base {
+public class DGBP_HSB_TestCase_24 extends Base {
 	WebDriver driver;
 	WebDriver driver1;
 	WebDriverWait wait, wait1;
 	int int2;
 	String s6, s7, GameName, twitterLink, PintrestLink, t1, p1, parent, expectedValue, actualValue,
-			modraterscreenAnswer, PlayerScreenAnswer;
+			PlayerNameAtmodraterscreen, PlayerNameAtPlayerScreen;
 	WebElement ElementNotGoingToVisible;
 	Actions act;
 
-	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_22.class.getName());
+	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_24.class.getName());
 
 	@BeforeTest
 	public void initilize() throws IOException {
 		driver = IntilizeDriver();
 		Log.info("Driver is Initilize");
 		driver.get(prop.getProperty("rooturl"));
-		driver.manage().window().maximize();
 		wait = new WebDriverWait(driver, 60);
-		// driver1.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-		// wait1 = new WebDriverWait(driver1, 20);
 		Log.info("Navigated to homePage");
 
 	}
 
 	@Test
-	public void TC_22_Verify_Skip_Final_Factile() throws InterruptedException, IOException {
+	public void TC_19_Verify_Double_Factile() throws InterruptedException, IOException {
 		driver.findElement(By.cssSelector("span.loginButton")).click();
 		driver.findElement(By.id("email")).sendKeys(prop.getProperty("username"));
 		driver.findElement(By.id("password")).sendKeys(prop.getProperty("pwd"));
@@ -55,12 +54,17 @@ public class DGBP_HSB_TestCase_22 extends Base {
 		Thread.sleep(3000);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@id='settings']")));
 		driver.findElement(By.xpath("//span[@id='settings']")).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='yearlyBox']/div")));
 		String s1 = driver.findElement(By.xpath("//*[@id='yearlyBox']/div")).getAttribute("class");
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='monthlyBox']/div")));
 		String s2 = driver.findElement(By.xpath("//*[@id='monthlyBox']/div")).getAttribute("class");
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='yearlybusinessBox']/div")));
 		String s3 = driver.findElement(By.xpath("//*[@id='yearlybusinessBox']/div")).getAttribute("class");
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='monthlybusinessBox']/div")));
 		String s4 = driver.findElement(By.xpath("//*[@id='monthlybusinessBox']/div")).getAttribute("class");
+		// wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("")));
 
-		Thread.sleep(1500);
+		Thread.sleep(3000);
 		String s5 = "iradio_flat-yellow checked";
 
 		if (s1.equalsIgnoreCase(s5)) {
@@ -71,6 +75,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 				System.out.println(e.toString());
 			}
 		} else if (s2.equalsIgnoreCase(s5)) {
+
 			try {
 				modeaterscreen();
 				PlayerScreen();
@@ -99,9 +104,9 @@ public class DGBP_HSB_TestCase_22 extends Base {
 	@AfterTest
 	public void tearDown() throws InterruptedException {
 
-		driver1.quit();
-	driver.switchTo().window(driver.getWindowHandle());
-		driver.quit();
+		 driver1.quit();
+		 driver.switchTo().window(driver.getWindowHandle());
+		 driver.quit();
 	}
 
 	public void modeaterscreen() throws InterruptedException {
@@ -135,32 +140,32 @@ public class DGBP_HSB_TestCase_22 extends Base {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")).click();
 		Thread.sleep(2000);
-
 	}
 
 	public void PlayerScreen() throws InterruptedException, IOException {
-		Thread.sleep(1500);
+		Thread.sleep(2000);
 		parent = driver.getWindowHandle();
 		System.out.println("ParentWindow id is :-" + parent);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='mygames']")));
 		driver.findElement(By.xpath("//*[@id='mygames']")).click();
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//div[@class='gameQuestionsBox'])[1]//span[3]")));
-		driver.findElement(By.xpath("(//div[@class='gameQuestionsBox'])[1]//span[3]")).click();
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[contains(text(),'Final Factile')]")));
-		String FFPresent=driver.findElement(By.xpath("//button[contains(text(),'Final Factile')]")).getAttribute("class");
-		String expected = "btn finalJeopardyButton completeEditBlockFinal position-relative";
-		driver.navigate().back();
-		if(expected.equalsIgnoreCase(FFPresent))
-		{	wait = new WebDriverWait(driver, 100);
-		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		driver.manage().timeouts().setScriptTimeout(100, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-	
+		Thread.sleep(3000);
+		// wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='jeopardy
+		// tooltip-icon'])[2]")));
+		if (driver.findElement(By.xpath("(//span[@class='jeopardy tooltip-icon'])[2]")).isSelected()) {
+			System.out.println("already Selected");
+		} else {
+			act = new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("(//span[@class='jeopardy tooltip-icon'])[2]"))).click()
+					.perform();
+
+		}
 		GameName = prop.getProperty("gamename");
 		// 'Test"+int1+"'
 		driver.findElement(
 				By.xpath("//div[@data-text='" + GameName + "']/following-sibling::div/span[contains(text(), 'Play')]"))
 				.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
+
 		try {
 			WebElement obj = driver.findElement(By.xpath("//button[contains(text(),'Start new game')]"));
 
@@ -172,28 +177,25 @@ public class DGBP_HSB_TestCase_22 extends Base {
 
 		Thread.sleep(1000);
 		Set<String> allWindows = driver.getWindowHandles();
-		int count = allWindows.size();
-		System.out.println("Total window:=" + count);
+		int count = allWindows.size(); 
+		// System.out.println("Total window:=" + count);
 		for (String child : allWindows) {
 			if (!parent.equalsIgnoreCase(child)) {
 				driver.switchTo().window(child);
-
-				Thread.sleep(3000);
+				Thread.sleep(4000);
 				driver.findElement(By.xpath("//span[@class='playNowButton']")).click();
-				Thread.sleep(3000);
+				Thread.sleep(2000);
 				driver.findElement(By.xpath("//span[@data-numteams='2']")).click();
-
-				Thread.sleep(3000);
-
+				Thread.sleep(1500);
 				System.out.println(driver.getTitle());
 				driver.findElement(By.xpath("//*[@id='displayBuzzerOptionBack']/div[1]/div[2]/div/div/ins")).click();
 
 				driver.findElement(By.xpath("//*[@id='buzzerModeQuestion']/div/div[1]/span[2]")).click();
 				wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='inviteYourTeams']/div/span[4]")));
-				Thread.sleep(3000);
+				Thread.sleep(2000);
 				String i = driver.findElement(By.xpath("//*[@id='inviteYourTeams']/div/span[2]")).getText();
 				System.out.println(i);// System.out.println(driver.getTitle());
-			
+		
 
 				driver1 = IntilizeDriver();
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
@@ -204,6 +206,8 @@ public class DGBP_HSB_TestCase_22 extends Base {
 				Thread.sleep(1000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
 				Thread.sleep(1000);
+				// driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4
+				// mb-4']")).click();
 				driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
 				Thread.sleep(1500);
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
@@ -213,19 +217,14 @@ public class DGBP_HSB_TestCase_22 extends Base {
 				driver.findElement(By.xpath("//span[contains(text(),'Begin Game')]")).click();
 				Thread.sleep(1000);
 				driver.findElement(By.xpath("//span[contains(text(),'Start Game')]")).click();
-				Thread.sleep(2000);
-			
-		//		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(),'Final Factile')]")));
-			//String finalfactileatgameboard=	driver.findElement(By.xpath("//span[contains(text(),'Final Factile')]")).getAttribute("class");
-			//Assert.assertNotNull("Final factile question button is present on gameboard at moderater screen", finalfactileatgameboard);
-			//System.out.println("Final factile question button is present on gameboard at moderater screen");
-			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']")));
+				Thread.sleep(1000);
+
 				int activetiles = driver.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']"))
 						.size();
-				System.out.println("total active tiles in 1st game>>" + activetiles);
+				System.out.println("total active tiles in first game>>" + activetiles);
 
 				for (int p = 1; p <= activetiles; p++) {
-					
+
 					System.out.println("value of p>>" + p);
 					wait.until(ExpectedConditions.elementToBeClickable(
 							By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")));
@@ -258,27 +257,70 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 					// System.out.println("value of p at end>>"+p);
 				}
-					Thread.sleep(1500);
-				//	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h2[@class='winnerTopHeader']")));
-					//String header = driver.findElement(By.xpath("//h2[@class='winnerTopHeader']")).getText();
-					Thread.sleep(1500);
-					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[@class='winnerTeamName']")));
-					String winningTeamOnModeater = driver.findElement(By.xpath("//h1[@class='winnerTeamName']")).getText();
-					System.out.println("winner team on moderater screen= " + winningTeamOnModeater);
+				Thread.sleep(2000);
+				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='swal-modal']")));
+				String popupmsg = driver.findElement(By.xpath("//div[@class='swal-modal']")).getText();
+				Thread.sleep(2000);
+				System.out.println("pop up msg>> " + popupmsg);
+
+				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(
+						"//div[@class='swal-modal']//button[@class='swal-button swal-button--confirm btn-success swal-button--danger']")));
+				driver.findElement(By.xpath(
+						"//div[@class='swal-modal']//button[@class='swal-button swal-button--confirm btn-success swal-button--danger']"))
+						.click();
+				Thread.sleep(2000);
+				int activetilesInSecodGame = driver
+						.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']")).size();
+				System.out.println("total active tiles in second game>>" + activetilesInSecodGame);
+				for (int p = 1; p <= 2; p++) {
+
+					System.out.println("value of p>>" + p);
+					wait.until(ExpectedConditions.elementToBeClickable(
+							By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")));
+					String value = driver
+							.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]"))
+							.getText();
+					// System.out.println("value"+ value);
+					// System.out.println("value of p>>"+p);
+					Thread.sleep(2000);
+					driver.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")).click();
 					driver1.switchTo().window(driver1.getWindowHandle());
-					Thread.sleep(1500);
+
+					wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
+					wait1.until(
+							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
+					driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
 					wait1.until(ExpectedConditions
-							.presenceOfElementLocated(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")));
-					String winningTeamOnPlayerScreen = driver1
-							.findElement(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")).getText();
-					Assert.assertEquals(winningTeamOnModeater, winningTeamOnPlayerScreen);
-					System.out.println("Skip final factile is got skiiped, winner screen is coming after all gameboard questions");
-				}}}
-				else
-				{
-					System.out.println("Final factile question is not present inside game, so you can't proceed with test case(TC>>Skip final factile");
+							.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
+					driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");
+					wait1.until(ExpectedConditions
+							.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+					// driver.switchTo().window(driver.getWindowHandle());
+					driver.switchTo().window(driver.getWindowHandle());
+					Thread.sleep(2000);
+					wait.until(
+							ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
+					driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
+					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
+					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
+					// System.out.println("value of p at end>>"+p);
+				
 				}
-					
-				} 
+				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[@class='winnerTeamName']")));
+				String winningTeamOnModeater = driver.findElement(By.xpath("//h1[@class='winnerTeamName']")).getText();
+				System.out.println("winner team on moderater screen= " + winningTeamOnModeater);
+				driver1.switchTo().window(driver1.getWindowHandle());
+				Thread.sleep(1500);
+				wait1.until(ExpectedConditions
+						.presenceOfElementLocated(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")));
+				String winningTeamOnPlayerScreen = driver1
+						.findElement(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")).getText();
+				Assert.assertEquals(winningTeamOnModeater, winningTeamOnPlayerScreen);
+				System.out.println("Skip final factile is got skiiped, winner screen is coming after all gameboard questions");
 			
+
+			}
+		}
+	}
 }
