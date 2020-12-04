@@ -252,17 +252,15 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
 
 					// driver.switchTo().window(driver.getWindowHandle());
-					driver.switchTo().window(driver.getWindowHandle());
-					Thread.sleep(2000);
-					wait.until(
-							ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
+					driver.switchTo().window(driver.getWindowHandle());				
+					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
 					driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 				}
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h2[@class='winnerTopHeader']")));
 					String header = driver.findElement(By.xpath("//h2[@class='winnerTopHeader']")).getText();
-					Thread.sleep(2000);
+			
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[@class='winnerTeamName']")));
 					String winningTeamOnModeater = driver.findElement(By.xpath("//h1[@class='winnerTeamName']")).getText();
 					System.out.println("winner team on moderater screen= " + winningTeamOnModeater);
