@@ -280,7 +280,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					String winningTeamOnPlayerScreen = driver1
 							.findElement(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")).getText();
 					Assert.assertEquals(winningTeamOnModeater, winningTeamOnPlayerScreen);
-					System.out.println("Skip final factile is got skiiped, winner screen is coming after all gameboard questions");
+					System.out.println("final factile is skipped, winner screen is coming after all gameboard questions finished");
 				}}}
 				else
 				{
