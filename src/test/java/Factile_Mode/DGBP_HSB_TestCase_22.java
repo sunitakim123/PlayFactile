@@ -131,7 +131,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 		}
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
-		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("5");
+		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("6");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")).click();
 		Thread.sleep(2000);
@@ -252,6 +252,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					wait1.until(ExpectedConditions
 							.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+					Thread.sleep(7000);
 					// driver.switchTo().window(driver.getWindowHandle());
 					driver.switchTo().window(driver.getWindowHandle());
 					Thread.sleep(2000);
