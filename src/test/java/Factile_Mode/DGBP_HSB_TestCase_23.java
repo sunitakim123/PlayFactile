@@ -117,7 +117,7 @@ public class DGBP_HSB_TestCase_23 extends Base {
 			;
 
 		}
-		Log.info("At customization page>> >>Show skip answer is selected ");
+		Log.info("At customization page>> >>show answer before question is already selected");
 
 		if (driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='readingTimerOnOff']"))
 				.isSelected()) {
