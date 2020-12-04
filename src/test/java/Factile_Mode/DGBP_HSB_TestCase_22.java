@@ -131,7 +131,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					.click().perform();
 
 		}
-		Thread.sleep(2000);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='readingTimerValue']")));
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("6");
 		Thread.sleep(2000);
