@@ -235,7 +235,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					driver1.switchTo().window(driver1.getWindowHandle());
 
 					wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
-					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
+					//wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 					driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
 					wait1.until(ExpectedConditions
 							.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
