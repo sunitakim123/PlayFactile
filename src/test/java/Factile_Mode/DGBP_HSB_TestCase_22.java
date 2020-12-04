@@ -252,8 +252,9 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
 
 					// driver.switchTo().window(driver.getWindowHandle());
-					driver.switchTo().window(driver.getWindowHandle());				
-					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
+					driver.switchTo().window(driver.getWindowHandle());		
+					Thread.sleep(500);
+					wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//i[@class='fa fa-check right']")));
 					driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
