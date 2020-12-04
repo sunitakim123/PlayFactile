@@ -150,9 +150,9 @@ public class DGBP_HSB_TestCase_22 extends Base {
 		String expected = "btn finalJeopardyButton completeEditBlockFinal position-relative";
 		driver.navigate().back();
 		if(expected.equalsIgnoreCase(FFPresent))
-		{	wait = new WebDriverWait(driver, 60);
+		{	wait = new WebDriverWait(driver, 100);
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().setScriptTimeout(100, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	
 		GameName = prop.getProperty("gamename");
