@@ -5,7 +5,7 @@
     <classes>
       <class name="Factile_Mode.DGBP_HSB_TestCase_22">
         <methods>
-          <include name="TC_10_Verify_Skip_Final_Factile"/>
+          <include name="TC_22_Verify_Skip_Final_Factile"/>
           <include name="initilize"/>
           <include name="tearDown"/>
         </methods>

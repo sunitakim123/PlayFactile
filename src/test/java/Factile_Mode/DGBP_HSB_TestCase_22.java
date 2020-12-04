@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -193,7 +194,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 				driver1 = IntilizeDriver();
 				driver1.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
-				wait1 = new WebDriverWait(driver1, 50);
+				wait1 = new WebDriverWait(driver1, 60);
 				driver1.get(prop.getProperty("joinurl"));
 				Thread.sleep(1000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
@@ -235,9 +236,12 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					driver1.switchTo().window(driver1.getWindowHandle());
 
 					wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
+					wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(text(),'Buzz!')]")));
 					//wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
-					Thread.sleep(1000);
+			
 					driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
+				//	JavascriptExecutor jse = (JavascriptExecutor)driver;
+				//	jse.executeScript("arguments[0].click()", ele);
 					wait1.until(ExpectedConditions
 							.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
 					driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");
