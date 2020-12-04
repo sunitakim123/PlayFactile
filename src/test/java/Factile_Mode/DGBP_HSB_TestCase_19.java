@@ -173,18 +173,18 @@ public class DGBP_HSB_TestCase_19 extends Base {
 				driver.switchTo().window(child);
 				Thread.sleep(4000);
 				driver.findElement(By.xpath("//span[@class='playNowButton']")).click();
-				Thread.sleep(3000);
+				Thread.sleep(2000);
 				driver.findElement(By.xpath("//span[@data-numteams='2']")).click();
-				Thread.sleep(3000);
+				Thread.sleep(1500);
 				System.out.println(driver.getTitle());
 				driver.findElement(By.xpath("//*[@id='displayBuzzerOptionBack']/div[1]/div[2]/div/div/ins")).click();
 
 				driver.findElement(By.xpath("//*[@id='buzzerModeQuestion']/div/div[1]/span[2]")).click();
 				wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='inviteYourTeams']/div/span[4]")));
-				Thread.sleep(3000);
+				Thread.sleep(2000);
 				String i = driver.findElement(By.xpath("//*[@id='inviteYourTeams']/div/span[2]")).getText();
 				System.out.println(i);// System.out.println(driver.getTitle());
-				Thread.sleep(3000);
+		
 
 				driver1 = IntilizeDriver();
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
@@ -192,21 +192,21 @@ public class DGBP_HSB_TestCase_19 extends Base {
 				driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				wait1 = new WebDriverWait(driver1, 60);
 				driver1.get(prop.getProperty("joinurl"));
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
 				Thread.sleep(1000);
 				// driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4
 				// mb-4']")).click();
 				driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
-				Thread.sleep(2000);
+				Thread.sleep(1500);
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
-				Thread.sleep(2000);
+		
 				driver.switchTo().window(driver.getWindowHandle());
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 				driver.findElement(By.xpath("//span[contains(text(),'Begin Game')]")).click();
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 				driver.findElement(By.xpath("//span[contains(text(),'Start Game')]")).click();
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 
 				int activetiles = driver.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']"))
 						.size();
