@@ -113,4 +113,9 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_21"/>
            </classes>
   </test> <!-- Test -->
+  <test name="Verify Skip final factile">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_22"/>
+           </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->
