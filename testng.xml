@@ -8,15 +8,5 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_19"/>
            </classes>
   </test> <!-- Test -->
- 
-   <test name="Verify Daily double">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_20"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Verify show skip question button">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_21"/>
-           </classes>
-  </test> <!-- Test -->
+
 </suite> <!-- Suite -->
