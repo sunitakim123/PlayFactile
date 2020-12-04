@@ -192,8 +192,9 @@ public class DGBP_HSB_TestCase_22 extends Base {
 			
 
 				driver1 = IntilizeDriver();
-				driver1.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
+				driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				wait1 = new WebDriverWait(driver1, 60);
 				driver1.get(prop.getProperty("joinurl"));
 				Thread.sleep(1000);
