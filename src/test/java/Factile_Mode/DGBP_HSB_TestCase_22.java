@@ -108,6 +108,11 @@ public class DGBP_HSB_TestCase_22 extends Base {
 		driver.findElement(By.id("customize")).click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='resetToDefault resetCustomizations'])[6]")));
 		driver.findElement(By.xpath("(//span[@class='resetToDefault resetCustomizations'])[6]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm']")).click();	
+		Thread.sleep(5000);
 
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='skip_ff']")));
 		// checking the exact case at player screen on gameboard
@@ -135,6 +140,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("6");
 	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")));
+
 		driver.findElement(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")).click();
 		Thread.sleep(2000);
 

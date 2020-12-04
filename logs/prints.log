@@ -22,3 +22,6 @@
 21:31:00.018 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_24 - Driver is Initilize
 21:31:03.844 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_24 - Navigated to homePage
 21:31:17.939 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_24 - At customization page>> >>Show skip answer is selected 
+22:44:48.418 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_22 - Driver is Initilize
+22:44:52.332 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_22 - Navigated to homePage
+22:45:04.952 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_22 - At customization page>> >>Show skip answer is selected 
