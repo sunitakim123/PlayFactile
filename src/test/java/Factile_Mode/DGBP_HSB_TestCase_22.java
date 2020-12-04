@@ -219,16 +219,14 @@ public class DGBP_HSB_TestCase_22 extends Base {
 			Thread.sleep(2000);
 				int activetiles = driver.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']"))
 						.size();
-				System.out.println("total active tiles in second game>>" + activetiles);
+				System.out.println("total active tiles in 1st game>>" + activetiles);
 
 				for (int p = 1; p <= activetiles; p++) {
 					Thread.sleep(2000);
 					System.out.println("value of p>>" + p);
 					wait.until(ExpectedConditions.elementToBeClickable(
 							By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")));
-					String value = driver
-							.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]"))
-							.getText();
+				//	String value = driver.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")).getText();
 					// System.out.println("value"+ value);
 					// System.out.println("value of p>>"+p);
 					Thread.sleep(2000);
@@ -253,9 +251,9 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
 					// driver.switchTo().window(driver.getWindowHandle());
 					driver.switchTo().window(driver.getWindowHandle());
-					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-					wait.until(
-							ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
+					Thread.sleep(8000);
+					driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
 					driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
