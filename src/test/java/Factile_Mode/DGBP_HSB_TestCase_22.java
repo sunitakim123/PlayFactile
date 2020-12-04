@@ -258,14 +258,15 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 					// System.out.println("value of p at end>>"+p);
 				}
-				
+					Thread.sleep(1500);
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h2[@class='winnerTopHeader']")));
 					String header = driver.findElement(By.xpath("//h2[@class='winnerTopHeader']")).getText();
-			
+					Thread.sleep(1500);
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[@class='winnerTeamName']")));
 					String winningTeamOnModeater = driver.findElement(By.xpath("//h1[@class='winnerTeamName']")).getText();
 					System.out.println("winner team on moderater screen= " + winningTeamOnModeater);
 					driver1.switchTo().window(driver1.getWindowHandle());
+					Thread.sleep(1500);
 					wait1.until(ExpectedConditions
 							.presenceOfElementLocated(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")));
 					String winningTeamOnPlayerScreen = driver1
