@@ -240,10 +240,10 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					//wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 			
 					WebElement element =driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
-					//Actions actions = new Actions(driver1);
-					//actions.moveToElement(element).click().build().perform();
-					JavascriptExecutor jse = (JavascriptExecutor)driver1;
-					jse.executeScript("arguments[0].click()", element);
+					Actions actions = new Actions(driver1);
+					actions.moveToElement(element).click().build().perform();
+					//JavascriptExecutor jse = (JavascriptExecutor)driver1;
+					//jse.executeScript("arguments[0].click()", element);
 					wait1.until(ExpectedConditions
 							.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
 					driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");
@@ -252,7 +252,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
 					// driver.switchTo().window(driver.getWindowHandle());
 					driver.switchTo().window(driver.getWindowHandle());
-					Thread.sleep(6000);
+					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 					wait.until(
 							ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
 					driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
