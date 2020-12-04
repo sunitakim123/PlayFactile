@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
 import junit.framework.Assert;
 import resources.Base;
 
-public class DGBP_HSB_TestCase_22 extends Base {
+public class DGBP_HSB_TestCase_23 extends Base {
 	WebDriver driver;
 	WebDriver driver1;
 	WebDriverWait wait, wait1;
@@ -31,7 +31,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 	WebElement ElementNotGoingToVisible;
 	Actions act;
 
-	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_22.class.getName());
+	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_23.class.getName());
 
 	@BeforeTest
 	public void initilize() throws IOException {
@@ -107,13 +107,13 @@ public class DGBP_HSB_TestCase_22 extends Base {
 	public void modeaterscreen() throws InterruptedException {
 		driver.findElement(By.id("customize")).click();
 
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='skip_ff']")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='designOption']")));
 		// checking the exact case at player screen on gameboard
-		if (driver.findElement(By.xpath("//input[@id='skip_ff']")).isSelected()) {
+		if (driver.findElement(By.xpath("//div[@class='designOption']")).isSelected()) {
 			System.out.println("Skip is already selected");
 		} else {
 			act = new Actions(driver);
-			act.moveToElement(driver.findElement(By.xpath("//input[@id='skip_ff']"))).click().perform();
+			act.moveToElement(driver.findElement(By.xpath("//div[@class='designOption']"))).click().perform();
 			;
 
 		}
@@ -254,15 +254,15 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					
 					// driver.switchTo().window(driver.getWindowHandle());
 					driver.switchTo().window(driver.getWindowHandle());		
-					Thread.sleep(2000);
-					wait.until(
-							ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
-					driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
+					Thread.sleep(1500);
+					//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
+				WebElement ele= null;
+				  WebDriverWait wait = new WebDriverWait(driver, 100);
+		            ele = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
+		            ele.click();
+		   
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
-					// System.out.println("value of p at end>>"+p);
-				
-				Thread.sleep(2000);
 				}
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h2[@class='winnerTopHeader']")));
 					String header = driver.findElement(By.xpath("//h2[@class='winnerTopHeader']")).getText();
