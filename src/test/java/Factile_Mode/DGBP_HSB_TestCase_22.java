@@ -240,8 +240,9 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					//wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 			
 					WebElement element =driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
-					Actions actions = new Actions(driver1);
-					actions.moveToElement(element).click().build().perform();
+					element.click();
+				//	Actions actions = new Actions(driver1);
+				//	actions.moveToElement(element).click().build().perform();
 					//JavascriptExecutor jse = (JavascriptExecutor)driver1;
 					//jse.executeScript("arguments[0].click()", element);
 					wait1.until(ExpectedConditions
