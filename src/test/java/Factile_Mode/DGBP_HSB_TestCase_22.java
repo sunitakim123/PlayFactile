@@ -106,6 +106,8 @@ public class DGBP_HSB_TestCase_22 extends Base {
 
 	public void modeaterscreen() throws InterruptedException {
 		driver.findElement(By.id("customize")).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='resetToDefault resetCustomizations'])[6]")));
+		driver.findElement(By.xpath("(//span[@class='resetToDefault resetCustomizations'])[6]")).click();
 
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='skip_ff']")));
 		// checking the exact case at player screen on gameboard

@@ -16,3 +16,9 @@
 21:06:18.330 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_24 - Driver is Initilize
 21:06:21.891 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_24 - Navigated to homePage
 21:06:34.685 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_24 - At customization page>> >>Show skip answer is selected 
+21:16:33.916 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_20 - Driver is Initilize
+21:16:38.155 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_20 - Navigated to homePage
+21:28:20.347 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_20 - Double factile is working fine
+21:31:00.018 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_24 - Driver is Initilize
+21:31:03.844 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_24 - Navigated to homePage
+21:31:17.939 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_24 - At customization page>> >>Show skip answer is selected 

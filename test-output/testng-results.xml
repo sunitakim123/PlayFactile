@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-04T21:06:12 IST" name="Default suite" finished-at="2020-12-04T21:15:49 IST" duration-ms="576675">
+  <suite started-at="2020-12-04T21:30:54 IST" name="Default suite" finished-at="2020-12-04T21:39:03 IST" duration-ms="489561">
     <groups>
     </groups>
-    <test started-at="2020-12-04T21:06:12 IST" name="Default test" finished-at="2020-12-04T21:15:49 IST" duration-ms="576675">
+    <test started-at="2020-12-04T21:30:54 IST" name="Default test" finished-at="2020-12-04T21:39:03 IST" duration-ms="489561">
       <class name="Factile_Mode.DGBP_HSB_TestCase_24">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_24@12f9af83]" started-at="2020-12-04T21:06:12 IST" name="initilize" finished-at="2020-12-04T21:06:21 IST" duration-ms="9282" status="PASS">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_24@12f9af83]" started-at="2020-12-04T21:30:54 IST" name="initilize" finished-at="2020-12-04T21:31:03 IST" duration-ms="9539" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="TC_19_Verify_Double_Factile()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_24@12f9af83]" started-at="2020-12-04T21:06:21 IST" name="TC_19_Verify_Double_Factile" finished-at="2020-12-04T21:15:47 IST" duration-ms="565994" status="FAIL">
+        <test-method signature="TC_19_Verify_Double_Factile()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_24@12f9af83]" started-at="2020-12-04T21:31:03 IST" name="TC_19_Verify_Double_Factile" finished-at="2020-12-04T21:39:02 IST" duration-ms="478553" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //h1[@class='winnerTeamName'] (tried for 60 second(s) with 500 milliseconds interval)]]>
@@ -20,7 +20,7 @@
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h1[@class='winnerTeamName'] (tried for 60 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at Factile_Mode.DGBP_HSB_TestCase_24.PlayerScreen(DGBP_HSB_TestCase_24.java:310)
+at Factile_Mode.DGBP_HSB_TestCase_24.PlayerScreen(DGBP_HSB_TestCase_24.java:261)
 at Factile_Mode.DGBP_HSB_TestCase_24.TC_19_Verify_Double_Factile(DGBP_HSB_TestCase_24.java:88)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
@@ -56,8 +56,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-HKE6JL3', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\DELIGE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61050}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0ba4742c43d3de2695598f425179a703
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.75, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\DELIGE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64276}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b17500e27e7df4ff30ae5efb15ef8bf1
 *** Element info: {Using=xpath, value=//h1[@class='winnerTeamName']}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
@@ -84,7 +84,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_19_Verify_Double_Factile -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_24@12f9af83]" started-at="2020-12-04T21:15:47 IST" name="tearDown" finished-at="2020-12-04T21:15:49 IST" duration-ms="1370" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_24@12f9af83]" started-at="2020-12-04T21:39:02 IST" name="tearDown" finished-at="2020-12-04T21:39:03 IST" duration-ms="1440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
