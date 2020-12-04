@@ -253,7 +253,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 
 					// driver.switchTo().window(driver.getWindowHandle());
 					driver.switchTo().window(driver.getWindowHandle());		
-					Thread.sleep(1500);
+					Thread.sleep(3000);
 					wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//i[@class='fa fa-check right']")));
 					driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
