@@ -154,7 +154,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		wait = new WebDriverWait(driver1, 60);
+	
 		GameName = prop.getProperty("gamename");
 		// 'Test"+int1+"'
 		driver.findElement(
