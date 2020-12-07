@@ -28,3 +28,16 @@
 22:48:36.761 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_22 - Driver is Initilize
 22:48:40.533 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_22 - Navigated to homePage
 22:49:03.422 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_22 - At customization page>> >>Show skip answer is selected 
+11:36:00.866 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Driver is Initilize
+11:36:04.629 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Navigated to homePage
+11:36:28.928 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - At customization page>> UNCheck Turn off tag name>> 
+11:37:26.435 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Display Tag name is working fine
+11:47:26.759 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Driver is Initilize
+11:47:30.425 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Navigated to homePage
+11:47:53.366 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - At customization page>> UNCheck Turn off tag name>> 
+11:48:50.468 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Display Tag name is working fine
+11:49:39.710 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Driver is Initilize
+11:49:43.385 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Navigated to homePage
+11:52:25.812 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - JGame_Point_Symbol_€_After is working fine
+11:56:27.490 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Driver is Initilize
+11:56:31.495 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Navigated to homePage
