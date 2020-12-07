@@ -3,20 +3,16 @@
 <listeners>
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
-   <test name="Verify Double factile">
+
+  <test name="Game_Point_Symbol_$_Before()">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_19"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_15"/>
            </classes>
   </test> <!-- Test -->
- 
-   <test name="Verify Daily double">
+
+   <test name="Game_Point_Symbol_€_Before()">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_20"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Verify show skip question button">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_21"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_17"/>
            </classes>
   </test> <!-- Test -->
   <test name="Verify Skip final factile">

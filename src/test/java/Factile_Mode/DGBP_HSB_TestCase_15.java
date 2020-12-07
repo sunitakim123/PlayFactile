@@ -198,6 +198,7 @@ public class DGBP_HSB_TestCase_15 extends Base {
 				wait1 = new WebDriverWait(driver1, 50);
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
+				driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				driver1.get(prop.getProperty("joinurl"));
 				Thread.sleep(3000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);

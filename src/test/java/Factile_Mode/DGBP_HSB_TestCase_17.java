@@ -259,6 +259,7 @@ public class DGBP_HSB_TestCase_17 extends Base {
 					Assert.assertEquals(expectedValue, actualvalue);
 				}
 				Log.info("Game_Point_Symbol_€_After is working fine");
+				System.out.println("Game_Point_Symbol_€_After is working fine");
 			}
 
 		}
