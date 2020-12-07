@@ -200,6 +200,7 @@ public class DGBP_HSB_TestCase_8  extends Base{
 				
 				Assert.assertNotNull("category with points is =+actualValue+",obj2);
 				Log.info("category with points is ="+actualValue);
+				System.out.println("category with points is =" +actualValue);
 					
 			
 			

@@ -3,18 +3,6 @@
 <listeners>
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
-
-  <test name="Game_Point_Symbol_$_Before()">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_15"/>
-           </classes>
-  </test> <!-- Test -->
-
-   <test name="Game_Point_Symbol_€_Before()">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_17"/>
-           </classes>
-  </test> <!-- Test -->
   <test name="Verify Skip final factile">
     <classes>
           <class name="Factile_Mode.DGBP_HSB_TestCase_22"/>

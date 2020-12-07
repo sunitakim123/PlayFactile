@@ -193,6 +193,7 @@ public class DGBP_HSB_TestCase_7 extends Base {
 				}
 				Assert.assertNull("Exact case is visble on player screen", ElementNotGoingToVisible);
 				Log.info("when Checked from customization setting>>Exact case is  displayed");
+				System.out.println("when Checked from customization setting>>Exact case is  displayed");
 
 			}
 		}
