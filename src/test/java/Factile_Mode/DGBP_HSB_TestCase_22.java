@@ -29,7 +29,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 	String s6, s7, GameName, twitterLink, PintrestLink, t1, p1, parent, expectedValue, actualValue,
 			modraterscreenAnswer, PlayerScreenAnswer;
 	WebElement ElementNotGoingToVisible;
-	Actions act;
+	Actions act, act1;
 
 	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_22.class.getName());
 
@@ -55,6 +55,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 		Thread.sleep(3000);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@id='settings']")));
 		driver.findElement(By.xpath("//span[@id='settings']")).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='yearlyBox']/div")));
 		String s1 = driver.findElement(By.xpath("//*[@id='yearlyBox']/div")).getAttribute("class");
 		String s2 = driver.findElement(By.xpath("//*[@id='monthlyBox']/div")).getAttribute("class");
 		String s3 = driver.findElement(By.xpath("//*[@id='yearlybusinessBox']/div")).getAttribute("class");
@@ -106,7 +107,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 
 	public void modeaterscreen() throws InterruptedException {
 		driver.findElement(By.id("customize")).click();
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='resetToDefault resetCustomizations'])[6]")));
+		/*wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='resetToDefault resetCustomizations'])[6]")));
 		driver.findElement(By.xpath("(//span[@class='resetToDefault resetCustomizations'])[6]")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")).click();
@@ -135,14 +136,34 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='readingTimerOnOff']")))
 					.click().perform();
 
-		}
+		} */
+		
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='readingTimerValue']")));
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("6");
-	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")));
 
 		driver.findElement(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")).click();
 		Thread.sleep(2000);
+		if(driver.findElement(By.xpath("//input[@id='answerTimerOnOff']")).isSelected())
+		{
+			
+		}
+		else
+		{
+			act = new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//input[@id='answerTimerOnOff']"))).click().perform();
+		}
+		if(driver.findElement(By.xpath("//input[@id='enterAnserBuzz']")).isSelected())
+		{
+			
+		}
+		else
+		{
+			act1 = new Actions(driver);
+			act1.moveToElement(driver.findElement(By.xpath("//input[@id='enterAnserBuzz']"))).click().perform();
+		}
+			
 
 	}
 
@@ -258,7 +279,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
 					// driver.switchTo().window(driver.getWindowHandle());
 					driver.switchTo().window(driver.getWindowHandle());
-				//	Thread.sleep(2000);
+					Thread.sleep(2000);
 					wait.until(
 							ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
 					driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
