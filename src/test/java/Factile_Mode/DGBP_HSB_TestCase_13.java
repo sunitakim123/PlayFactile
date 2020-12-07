@@ -211,6 +211,7 @@ public class DGBP_HSB_TestCase_13 extends Base {
 				}
 				
 				Log.info("Jeopardy_Style is working fine");
+				System.out.println("Jeopardy_Style is working fine");
 
 		}
 	}

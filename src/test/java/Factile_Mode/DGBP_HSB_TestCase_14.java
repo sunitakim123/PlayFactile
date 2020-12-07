@@ -203,7 +203,8 @@ public class DGBP_HSB_TestCase_14 extends Base {
 					 || actual.equals("21")||actual.equals("22") || actual.equals("23") || actual.equals("24") || actual.equals("25")|| actual.equals("26")|| actual.equals("27")||actual.equals("28") ||actual.equals("29") ||actual.equals("30"));
 				}
 				
-				Log.info(" Play as Numbered Tiles instead of Jeopardy-style is working fine ");
+				Log.info("Play as Numbered Tiles instead of Jeopardy-style is working fine ");
+				System.out.println("Play as Numbered Tiles instead of Jeopardy-style is working fine");
 		}
 	}
 	}}

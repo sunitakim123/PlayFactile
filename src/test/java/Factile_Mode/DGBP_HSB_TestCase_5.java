@@ -203,7 +203,7 @@ public class DGBP_HSB_TestCase_5  extends Base{
 				
 				
 				Log.info("SMO(Twiiter & Pintrest) Links not present on gameboard at moderater screen");
-				
+				System.out.println("SMO(Twiiter & Pintrest) Links not present on gameboard at moderater screen");
 					 
 				
 	

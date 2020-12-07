@@ -197,5 +197,6 @@ public class DGBP_HSB_TestCase_6  extends Base{
 				
 			Assert.assertEquals(expectedValue, ActualValue);
 			Log.info("when unchecked from customization setting>>Exact case is not displayed");
+			System.out.println("when unchecked from customization setting>>Exact case is not displayed");
 				 }	
 		}}}

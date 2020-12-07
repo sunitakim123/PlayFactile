@@ -234,6 +234,7 @@ public class DGBP_HSB_TestCase_10 extends Base {
 				Thread.sleep(2000);
 				Assert.assertEquals(modraterscreenAnswer, PlayerScreenAnswer);
 				Log.info("Display answer is working fine");
+				System.out.println("Display answer is working fine");
 
 				// PlayerScreenAnswer
 

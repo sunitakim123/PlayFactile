@@ -210,6 +210,7 @@ public class DGBP_HSB_TestCase_11  extends Base{
 				 Thread.sleep(2000);
 				 Assert.assertEquals(PlayerNameAtmodraterscreen, PlayerNameAtPlayerScreen);
 				 Log.info("Display Tag name is working fine");
+				 System.out.println("Display Tag name is working fine");
 			
 			}	
 		}}}

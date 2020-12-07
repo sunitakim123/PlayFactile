@@ -202,7 +202,7 @@ Thread.sleep(1000);
 				Log.info("When unchecked from customization setting>>Twitter link is displaying");
 				Assert.assertEquals(Pintrestclass, p1);
 				Log.info("When unchecked from customization setting>>Pintrest link is displaying");
-				
+				System.out.println("When unchecked from customization setting>>Pintrest link is displaying");
 					 }	
 				
 	

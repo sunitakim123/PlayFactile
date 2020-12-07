@@ -207,6 +207,7 @@ public class DGBP_HSB_TestCase_12 extends Base {
 			}
 			Assert.assertNull("tag name is not visible on Player screen", PlayerNameAtPlayerScreen);
 			Log.info("Tag name turn off is working fine");
+			System.out.println("Tag name turn off is working fine");
 
 		}
 	}
