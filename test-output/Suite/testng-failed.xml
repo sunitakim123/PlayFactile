@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="Factile_Mode.Listeners1"/>
   </listeners>
-  <test thread-count="5" name="Hide_category_with_Points(failed)">
+  <test thread-count="5" name="Display_Answer_Button_On_Modrater_Screen(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_9">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_10">
         <methods>
           <include name="initilize"/>
           <include name="tearDown"/>
-          <include name="TC_9_Verify_Hide_category_with_Points_When_checked_At_Global_Settings"/>
+          <include name="TC_10_Verify_Display_Answer_Button_When_checked_At_Global_Settings"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_9 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_10 -->
     </classes>
-  </test> <!-- Hide_category_with_Points(failed) -->
+  </test> <!-- Display_Answer_Button_On_Modrater_Screen(failed) -->
 </suite> <!-- Failed suite [Suite] -->
