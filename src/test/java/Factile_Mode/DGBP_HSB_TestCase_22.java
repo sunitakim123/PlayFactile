@@ -29,7 +29,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 	String s6, s7, GameName, twitterLink, PintrestLink, t1, p1, parent, expectedValue, actualValue,
 			modraterscreenAnswer, PlayerScreenAnswer;
 	WebElement ElementNotGoingToVisible;
-	Actions act, act1;
+	Actions act, act1, act3;
 
 	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_22.class.getName());
 
@@ -100,9 +100,9 @@ public class DGBP_HSB_TestCase_22 extends Base {
 	@AfterTest
 	public void tearDown() throws InterruptedException {
 
-		driver1.quit();
-	driver.switchTo().window(driver.getWindowHandle());
-		driver.quit();
+		//driver1.quit();
+	//driver.switchTo().window(driver.getWindowHandle());
+	//	driver.quit();
 	}
 
 	public void modeaterscreen() throws InterruptedException {
@@ -144,7 +144,16 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					.click().perform();
 
 		} */
-		
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='skip_ff']")));
+		if (driver.findElement(By.xpath("//input[@id='skip_ff']")).isSelected()) {
+			System.out.println("Skip is already selected");
+		} else {
+			act3 = new Actions(driver);
+			act3.moveToElement(driver.findElement(By.xpath("//input[@id='skip_ff']"))).click().perform();
+			
+
+		}
+		Log.info("At customization page>> >>Show skip answer is selected ");
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='readingTimerValue']")));
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("6");
@@ -286,7 +295,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
 					// driver.switchTo().window(driver.getWindowHandle());
 					driver.switchTo().window(driver.getWindowHandle());
-					Thread.sleep(2000);
+					Thread.sleep(1000);
 					wait.until(
 							ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
 					driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
