@@ -107,13 +107,16 @@ public class DGBP_HSB_TestCase_22 extends Base {
 
 	public void modeaterscreen() throws InterruptedException {
 		driver.findElement(By.id("customize")).click();
+		Thread.sleep(500);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='resetAll resetCustomizations']")));
 		driver.findElement(By.xpath("//button[@class='resetAll resetCustomizations']")).click();
+		Thread.sleep(500);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")));
 		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")).click();
+		Thread.sleep(500);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='swal-button swal-button--confirm']")));
 		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm']")).click();
-		
+		Thread.sleep(500);
 		/*wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='resetToDefault resetCustomizations'])[6]")));
 		driver.findElement(By.xpath("(//span[@class='resetToDefault resetCustomizations'])[6]")).click();
 		Thread.sleep(2000);
