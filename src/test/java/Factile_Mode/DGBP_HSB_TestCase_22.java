@@ -107,6 +107,13 @@ public class DGBP_HSB_TestCase_22 extends Base {
 
 	public void modeaterscreen() throws InterruptedException {
 		driver.findElement(By.id("customize")).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='resetAll resetCustomizations']")));
+		driver.findElement(By.xpath("//button[@class='resetAll resetCustomizations']")).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")));
+		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='swal-button swal-button--confirm']")));
+		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm']")).click();
+		
 		/*wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='resetToDefault resetCustomizations'])[6]")));
 		driver.findElement(By.xpath("(//span[@class='resetToDefault resetCustomizations'])[6]")).click();
 		Thread.sleep(2000);
@@ -153,7 +160,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 		{
 			act = new Actions(driver);
 			act.moveToElement(driver.findElement(By.xpath("//input[@id='answerTimerOnOff']"))).click().perform();
-		}
+		}Thread.sleep(2000);
 		if(driver.findElement(By.xpath("//input[@id='enterAnserBuzz']")).isSelected())
 		{
 			
