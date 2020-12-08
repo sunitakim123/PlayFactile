@@ -30,7 +30,7 @@ public class DGBP_HSB_TestCase_14 extends Base {
 	String s6, s7, GameName, twitterLink, PintrestLink, t1, p1, parent, expectedValue, actualValue,
 			PlayerNameAtmodraterscreen, PlayerNameAtPlayerScreen;
 	WebElement ElementNotGoingToVisible;
-	Actions act;
+	Actions act, act1, act2;
 	
 	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_14.class.getName());
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
@@ -96,6 +96,11 @@ public class DGBP_HSB_TestCase_14 extends Base {
 			} catch (InterruptedException e) {
 				System.out.println(e.toString());
 			}
+		}  else if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
+
+			modeaterscreen();
+			PlayerScreen();
+
 		} else {
 			System.out.println("You have not taken any subscription");
 		}
@@ -122,7 +127,9 @@ public class DGBP_HSB_TestCase_14 extends Base {
 			act.moveToElement(driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='playAsNumberedTiles']")))
 					.click().perform();
 
+			
 		}
+		
 		Log.info("At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> ");
 
 	}
@@ -135,6 +142,7 @@ public class DGBP_HSB_TestCase_14 extends Base {
 		driver.findElement(By.xpath("//*[@id='mygames']")).click();
 		GameName = prop.getProperty("gamename");
 		// 'Test"+int1+"'
+		Thread.sleep(2000);
 		driver.findElement(
 				By.xpath("//div[@data-text='" + GameName + "']/following-sibling::div/span[contains(text(), 'Play')]"))
 				.click();
@@ -174,12 +182,17 @@ public class DGBP_HSB_TestCase_14 extends Base {
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				driver1.get(prop.getProperty("joinurl"));
+				String url = driver1.getCurrentUrl();
 				Thread.sleep(3000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-				Thread.sleep(1000);
-				driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
-				//driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
-				//driver1.findElement(By.xpath("//button[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
+				Thread.sleep(2000);
+				//String url = driver1.getCurrentUrl();
+				if (url.equals("https://game.playfactile.com/join")) {
+					// live join button
+					driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
+				} else {
+					driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
+				}
 				Thread.sleep(2000);
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 				Thread.sleep(2000);

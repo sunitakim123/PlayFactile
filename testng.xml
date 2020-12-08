@@ -3,17 +3,27 @@
 <listeners>
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
-
-  <test name="Display social media on moderater screen gamboard">
+   <test name="Game_Point_Symbol_$_Before()">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_4"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_15"/>
            </classes>
   </test> <!-- Test -->
-  <test name="Display not exact case on player screen">
+   <test name="Game_Point_Symbol_$_After()">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_5"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_16"/>
            </classes>
   </test> <!-- Test -->
+   <test name="Game_Point_Symbol_€_Before()">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_17"/>
+           </classes>
+  </test> <!-- Test -->
+   <test name="Game_Point_Symbol_€_After()">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_18"/>
+           </classes>
+  </test> <!-- Test -->
+ 
  
 
 </suite> <!-- Suite -->

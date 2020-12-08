@@ -31,7 +31,7 @@ public class DGBP_HSB_TestCase_16 extends Base {
 	String s6, s7, GameName, twitterLink, PintrestLink, t1, p1, parent, expectedValue, actualValue,
 			PlayerNameAtmodraterscreen, PlayerNameAtPlayerScreen;
 	WebElement ElementNotGoingToVisible;
-	Actions act;
+	Actions act, act1, act2, act3;
 
 	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_16.class.getName());
 	
@@ -97,6 +97,11 @@ public class DGBP_HSB_TestCase_16 extends Base {
 			} catch (InterruptedException e) {
 				System.out.println(e.toString());
 			}
+		}else if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
+
+			modeaterscreen();
+			PlayerScreen();
+
 		} else {
 			System.out.println("You have not taken any subscription");
 		}
@@ -145,6 +150,35 @@ public class DGBP_HSB_TestCase_16 extends Base {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")).click();
 		Thread.sleep(2000);
+		if(driver.findElement(By.xpath("//input[@id='answerTimerOnOff']")).isSelected())
+		{
+			
+		}
+		else
+		{
+			act = new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//input[@id='answerTimerOnOff']"))).click().perform();
+		}Thread.sleep(2000);
+		if(driver.findElement(By.xpath("//input[@id='enterAnserBuzz']")).isSelected())
+		{
+			
+		}
+		else
+		{
+			act1 = new Actions(driver);
+			act1.moveToElement(driver.findElement(By.xpath("//input[@id='enterAnserBuzz']"))).click().perform();
+		}
+		Thread.sleep(2000);
+		if(driver.findElement(By.xpath("//input[@id='answerTimerOnOff']")).isSelected())
+		{
+			
+		}
+		else
+		{
+			act2 = new Actions(driver);
+			act2.moveToElement(driver.findElement(By.xpath("//input[@id='answerTimerOnOff']"))).click().perform();
+		}Thread.sleep(2000);
+		
 	}
 
 	public void PlayerScreen() throws InterruptedException, IOException {
@@ -195,13 +229,17 @@ public class DGBP_HSB_TestCase_16 extends Base {
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				driver1.get(prop.getProperty("joinurl"));
+				String url = driver1.getCurrentUrl();
 				Thread.sleep(3000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-				Thread.sleep(1000);
-			//	driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
-				//input[@class='btn joinBtn yellowBG mt-4 mb-4']
-				driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
-				//driver1.findElement(By.xpath("//button[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
+				Thread.sleep(1500);
+				//String url = driver1.getCurrentUrl();
+				if (url.equals("https://game.playfactile.com/join")) {
+					// live join button
+					driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
+				} else {
+					driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
+				}
 				Thread.sleep(2000);
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 				Thread.sleep(2000);

@@ -19,14 +19,14 @@ import org.testng.annotations.Test;
 import junit.framework.Assert;
 import resources.Base;
 
-public class DGBP_HSB_TestCase_6  extends Base{
+public class DGBP_HSB_TestCase_6 extends Base {
 	WebDriver driver;
 	WebDriver driver1;
 	WebDriverWait wait, wait1;
 	int int2;
-	String s6, s7, GameName, twitterLink, PintrestLink, t1, p1, parent;
+	String s6, s7, GameName, twitterLink, PintrestLink, t1, p1, parent, ActualValue;
 	Actions act;
-	
+
 	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_6.class.getName());
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
@@ -58,40 +58,41 @@ public class DGBP_HSB_TestCase_6  extends Base{
 		String s4 = driver.findElement(By.xpath("//*[@id='monthlybusinessBox']/div")).getAttribute("class");
 
 		Thread.sleep(3000);
-		String s5 = "iradio_flat-yellow checked"; 
+		String s5 = "iradio_flat-yellow checked";
 
 		if (s1.equalsIgnoreCase(s5)) {
 			try {
-			modeaterscreen();
-			PlayerScreen();
-			}
-			catch(InterruptedException e) {
+				modeaterscreen();
+				PlayerScreen();
+			} catch (InterruptedException e) {
 				System.out.println(e.toString());
 			}
 		} else if (s2.equalsIgnoreCase(s5)) {
 			try {
 				modeaterscreen();
-			PlayerScreen();
-			}
-			catch(InterruptedException e) {
+				PlayerScreen();
+			} catch (InterruptedException e) {
 				System.out.println(e.toString());
 			}
-				} else if (s3.equalsIgnoreCase(s5)) {
-					try {
-			modeaterscreen();
-			PlayerScreen();
-					}
-					catch(InterruptedException e) {
-						System.out.println(e.toString());
-					}
+		} else if (s3.equalsIgnoreCase(s5)) {
+			try {
+				modeaterscreen();
+				PlayerScreen();
+			} catch (InterruptedException e) {
+				System.out.println(e.toString());
+			}
 		} else if (s4.equalsIgnoreCase(s5)) {
 			try {
-			modeaterscreen();
-			PlayerScreen();
-			}
-			catch(InterruptedException e) {
+				modeaterscreen();
+				PlayerScreen();
+			} catch (InterruptedException e) {
 				System.out.println(e.toString());
 			}
+		} else if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
+
+			modeaterscreen();
+			PlayerScreen();
+
 		} else {
 			System.out.println("You have not taken any subscription");
 		}
@@ -101,30 +102,29 @@ public class DGBP_HSB_TestCase_6  extends Base{
 	public void tearDown() {
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
-		driver.quit(); 
+		driver.quit();
 	}
 
-	public void modeaterscreen() throws InterruptedException
-	{
+	public void modeaterscreen() throws InterruptedException {
 		driver.findElement(By.id("customize")).click();
 		Thread.sleep(3000);
-		
-		//checking the exact case at player screen on gameboard
-		if(!driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='excatCase']")).isSelected())
-		{System.out.println("nothing to do");
-		}
-		else
-		{
+
+		// checking the exact case at player screen on gameboard
+		if (!driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='excatCase']")).isSelected()) {
+			System.out.println("nothing to do");
+		} else {
 			act = new Actions(driver);
-			act.moveToElement(driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='excatCase']"))).click().perform();;
-		
+			act.moveToElement(driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='excatCase']")))
+					.click().perform();
+			
+
 		}
 		Log.info("At customization page>> UnCheck display exact case>> ");
-	} 
-	
+	}
+
 	public void PlayerScreen() throws InterruptedException, IOException {
 		Thread.sleep(2000);
-		 parent = driver.getWindowHandle();
+		parent = driver.getWindowHandle();
 		System.out.println("ParentWindow id is :-" + parent);
 		driver.findElement(By.xpath("//*[@id='mygames']")).click();
 		GameName = prop.getProperty("gamename");
@@ -142,7 +142,6 @@ public class DGBP_HSB_TestCase_6  extends Base{
 			System.out.println("Impossible to click the pop-up. Reason: " + e.toString());
 		}
 
-		
 		Thread.sleep(1000);
 		Set<String> allWindows = driver.getWindowHandles();
 		int count = allWindows.size();
@@ -150,12 +149,12 @@ public class DGBP_HSB_TestCase_6  extends Base{
 		for (String child : allWindows) {
 			if (!parent.equalsIgnoreCase(child)) {
 				driver.switchTo().window(child);
-			
+
 				Thread.sleep(4000);
 				driver.findElement(By.xpath("//span[@class='playNowButton']")).click();
 				Thread.sleep(3000);
 				driver.findElement(By.xpath("//span[@data-numteams='2']")).click();
-				
+
 				Thread.sleep(3000);
 
 				System.out.println(driver.getTitle());
@@ -171,32 +170,47 @@ public class DGBP_HSB_TestCase_6  extends Base{
 				driver1 = IntilizeDriver();
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
-				
+
 				driver1.get(prop.getProperty("joinurl"));
+				String url = driver1.getCurrentUrl();
 				Thread.sleep(3000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
 				Thread.sleep(3000);
-				driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
-				//driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
-				//driver1.findElement(By.xpath("//button[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
+				// String url = driver1.getCurrentUrl();
+				if (url.equals("https://game.playfactile.com/join")) {
+					// live join button
+					driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
+				} else {
+					driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
+				}
 				Thread.sleep(2000);
-				 driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
-				 Thread.sleep(2000);
-				 driver.switchTo().window(driver.getWindowHandle());
-				 Thread.sleep(2000);
-				 driver.findElement(By.xpath("//span[contains(text(),'Begin Game')]")).click();
-				 Thread.sleep(2000);
-				 driver.findElement(By.xpath("//span[contains(text(),'Start Game')]")).click();
-				 Thread.sleep(3000);
-				 driver.findElement(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']")).click();
-				 Thread.sleep(2000);
-				 driver1.switchTo().window(driver1.getWindowHandle());
-				 Thread.sleep(2000);
-				 String expectedValue = "text-transform: uppercase;";
-			String ActualValue=	 driver1.findElement(By.xpath("//div[@class='d-flex align-content-stretch flex-wrap h-100 w-100 questionText']")).getAttribute("style");
-				
-			Assert.assertEquals(expectedValue, ActualValue);
-			Log.info("when unchecked from customization setting>>Exact case is not displayed");
-			System.out.println("when unchecked from customization setting>>Exact case is not displayed");
-				 }	
-		}}}
+				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
+				Thread.sleep(2000);
+				driver.switchTo().window(driver.getWindowHandle());
+				Thread.sleep(2000);
+				driver.findElement(By.xpath("//span[contains(text(),'Begin Game')]")).click();
+				Thread.sleep(2000);
+				driver.findElement(By.xpath("//span[contains(text(),'Start Game')]")).click();
+				Thread.sleep(3000);
+				driver.findElement(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']")).click();
+				Thread.sleep(2000);
+				driver1.switchTo().window(driver1.getWindowHandle());
+				Thread.sleep(2000);
+				String expectedValue = "text-transform: uppercase;";
+				if(url.equals("https://game.playfactile.com/join"))
+				{
+					 ActualValue = driver1.findElement(By.xpath("//div[@class='d-flex align-content-stretch flex-wrap h-100 w-100 questionText questionWithRightSection']")).getAttribute("style");
+				}
+					 else
+				{
+					 ActualValue = driver1.findElement(By.xpath("//div[@class='d-flex align-content-stretch flex-wrap h-100 w-100 questionText']"))
+							.getAttribute("style");
+				}
+
+				Assert.assertEquals(expectedValue, ActualValue);
+				Log.info("when unchecked from customization setting>>Exact case is not displayed");
+				System.out.println("when unchecked from customization setting>>Exact case is not displayed");
+			}
+		}
+	}
+}

@@ -4,15 +4,26 @@
   <listeners>
     <listener class-name="Factile_Mode.Listeners1"/>
   </listeners>
-  <test thread-count="5" name="Display_Answer_Button_On_Modrater_Screen(failed)">
+  <test thread-count="5" name="Play as jeo-pardy style(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_10">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_13">
         <methods>
+          <include name="tearDown"/>
+          <include name="TC_13_Verify_Play_as_Jeopardy_Style"/>
+          <include name="initilize"/>
+        </methods>
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_13 -->
+    </classes>
+  </test> <!-- Play as jeo-pardy style(failed) -->
+  <test thread-count="5" name="Play as Numbered Tiles instead of Jeopardy-style(failed)">
+    <classes>
+      <class name="Factile_Mode.DGBP_HSB_TestCase_14">
+        <methods>
+          <include name="TC_14_Verify_Play_as_Numbered_Tile_instead_of_Jeopardy_Style"/>
           <include name="initilize"/>
           <include name="tearDown"/>
-          <include name="TC_10_Verify_Display_Answer_Button_When_checked_At_Global_Settings"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_10 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_14 -->
     </classes>
-  </test> <!-- Display_Answer_Button_On_Modrater_Screen(failed) -->
+  </test> <!-- Play as Numbered Tiles instead of Jeopardy-style(failed) -->
 </suite> <!-- Failed suite [Suite] -->
