@@ -1,3 +1,43 @@
 13:41:42.328 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Driver is Initilize
 13:41:47.436 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Navigated to homePage
 13:45:45.245 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Game_Point_Symbol_€_Before is working fine
+13:49:34.291 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+13:49:35.227 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+13:49:57.959 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+13:54:18.011 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Driver is Initilize
+13:54:19.451 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Navigated to homePage
+13:58:20.741 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+13:58:22.055 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+13:58:37.926 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+13:58:38.650 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+13:59:02.078 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+14:08:52.659 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+14:08:53.585 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+14:09:17.354 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+14:10:09.583 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+14:10:10.400 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+14:10:33.216 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+14:14:55.599 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Driver is Initilize
+14:14:56.598 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Navigated to homePage
+14:20:17.847 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Driver is Initilize
+14:20:19.120 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Navigated to homePage
+14:21:27.358 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Driver is Initilize
+14:21:28.247 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Navigated to homePage
+15:03:14.523 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+15:03:15.413 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+15:04:53.993 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+15:15:02.111 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+15:15:03.541 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+15:18:23.907 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+15:18:24.835 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+15:19:12.980 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+15:22:41.706 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Game_Point_Symbol_$_Before is working fine
+15:26:00.179 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Driver is Initilize
+15:26:01.276 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Navigated to homePage
+15:29:44.533 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Game_Point_Symbol_$_After is working fine
+15:30:06.320 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Driver is Initilize
+15:30:07.100 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Navigated to homePage
+15:33:50.727 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Game_Point_Symbol_€_After is working fine
+15:34:44.116 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Driver is Initilize
+15:34:44.822 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Navigated to homePage
+15:38:30.826 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Game_Point_Symbol_€_Before is working fine

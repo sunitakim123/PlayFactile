@@ -4,26 +4,48 @@
   <listeners>
     <listener class-name="Factile_Mode.Listeners1"/>
   </listeners>
-  <test thread-count="5" name="Play as jeo-pardy style(failed)">
+  <test thread-count="5" name="Game_Point_Symbol_$_Before()(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_13">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_15">
         <methods>
-          <include name="tearDown"/>
-          <include name="TC_13_Verify_Play_as_Jeopardy_Style"/>
-          <include name="initilize"/>
-        </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_13 -->
-    </classes>
-  </test> <!-- Play as jeo-pardy style(failed) -->
-  <test thread-count="5" name="Play as Numbered Tiles instead of Jeopardy-style(failed)">
-    <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_14">
-        <methods>
-          <include name="TC_14_Verify_Play_as_Numbered_Tile_instead_of_Jeopardy_Style"/>
+          <include name="TC_15_Verify_Game_Point_Symbol_$__Before"/>
           <include name="initilize"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_14 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_15 -->
     </classes>
-  </test> <!-- Play as Numbered Tiles instead of Jeopardy-style(failed) -->
+  </test> <!-- Game_Point_Symbol_$_Before()(failed) -->
+  <test thread-count="5" name="Game_Point_Symbol_$_After()(failed)">
+    <classes>
+      <class name="Factile_Mode.DGBP_HSB_TestCase_16">
+        <methods>
+          <include name="TC_16_Verify_Game_Point_Symbol_$_After"/>
+          <include name="initilize"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_16 -->
+    </classes>
+  </test> <!-- Game_Point_Symbol_$_After()(failed) -->
+  <test thread-count="5" name="Game_Point_Symbol_€_Before()(failed)">
+    <classes>
+      <class name="Factile_Mode.DGBP_HSB_TestCase_17">
+        <methods>
+          <include name="TC_17_Verify_Game_Point_Symbol_€_After"/>
+          <include name="initilize"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_17 -->
+    </classes>
+  </test> <!-- Game_Point_Symbol_€_Before()(failed) -->
+  <test thread-count="5" name="Game_Point_Symbol_€_After()(failed)">
+    <classes>
+      <class name="Factile_Mode.DGBP_HSB_TestCase_18">
+        <methods>
+          <include name="initilize"/>
+          <include name="tearDown"/>
+          <include name="TC_18_Verify_Game_Point_Symbol_€_Before"/>
+        </methods>
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_18 -->
+    </classes>
+  </test> <!-- Game_Point_Symbol_€_After()(failed) -->
 </suite> <!-- Failed suite [Suite] -->

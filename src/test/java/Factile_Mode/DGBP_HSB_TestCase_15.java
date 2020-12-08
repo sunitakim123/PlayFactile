@@ -56,6 +56,7 @@ public class DGBP_HSB_TestCase_15 extends Base {
 		Thread.sleep(3000);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@id='settings']")));
 		driver.findElement(By.xpath("//span[@id='settings']")).click();
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='yearlyBox']/div")));
 		String s1 = driver.findElement(By.xpath("//*[@id='yearlyBox']/div")).getAttribute("class");
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='monthlyBox']/div")));
@@ -270,10 +271,21 @@ public class DGBP_HSB_TestCase_15 extends Base {
 				//Thread.sleep(1000);
 				// wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@name='input']")));
 				//driver1.findElement(By.xpath("//textarea[@name='input']")).sendKeys("test");
-				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
-				driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");		
-				wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
-				driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+				
+				if (url.equals("https://game.playfactile.com/join")) {
+					// live join button
+					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
+					driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
+					wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")));
+					driver1.findElement(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")).click();
+				} else {
+					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
+					driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");	
+					wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+				}
+					
+				
 				// driver.switchTo().window(driver.getWindowHandle());
 				driver.switchTo().window(driver.getWindowHandle());
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
