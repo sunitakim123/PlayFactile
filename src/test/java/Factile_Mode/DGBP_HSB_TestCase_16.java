@@ -270,9 +270,9 @@ public class DGBP_HSB_TestCase_16 extends Base {
 				driver.switchTo().window(driver.getWindowHandle());
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("(//span[@class='gamePointsBlock'])[1]")).click();
-				Thread.sleep(2000);
+				
 				driver1.switchTo().window(driver1.getWindowHandle());
-			
+				Thread.sleep(1500);
 				wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
 				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 				driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
