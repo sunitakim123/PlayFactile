@@ -3,9 +3,20 @@
 <listeners>
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
-  <test name="Verify Skip final factile">
+
+  <test name="Display social media on moderater screen gamboard">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_22"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_4"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Display not exact case on player screen">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_5"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Exact Case When Unchecked At Global_Settings">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_6"/>
            </classes>
   </test> <!-- Test -->
 

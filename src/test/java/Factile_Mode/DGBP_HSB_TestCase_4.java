@@ -19,14 +19,14 @@ import org.testng.annotations.Test;
 import junit.framework.Assert;
 import resources.Base;
 
-public class DGBP_HSB_TestCase_4  extends Base{
+public class DGBP_HSB_TestCase_4 extends Base {
 	WebDriver driver;
 	WebDriver driver1;
 	WebDriverWait wait, wait1;
 	int int2;
 	String s6, s7, GameName, twitterclass, Pintrestclass, t1, p1, parent;
 	Actions act;
-	
+
 	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_4.class.getName());
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
@@ -56,57 +56,57 @@ public class DGBP_HSB_TestCase_4  extends Base{
 		String s4 = driver.findElement(By.xpath("//*[@id='monthlybusinessBox']/div")).getAttribute("class");
 
 		Thread.sleep(3000);
-		String s5 = "iradio_flat-yellow checked"; 
+		String s5 = "iradio_flat-yellow checked";
 
 		if (s1.equalsIgnoreCase(s5)) {
 			try {
-			 Uncheck_Hide_social_media_link();
-				Show_SMO_Links_A_tModrater_Screen_Gameboard();	
-			}
-			catch(InterruptedException e) {
+				Uncheck_Hide_social_media_link();
+				Show_SMO_Links_A_tModrater_Screen_Gameboard();
+			} catch (InterruptedException e) {
 				System.out.println(e.toString());
 			}
-			
+
 		} else if (s2.equalsIgnoreCase(s5)) {
 			try {
-				 Uncheck_Hide_social_media_link();
-					Show_SMO_Links_A_tModrater_Screen_Gameboard();	
-				}
-				catch(InterruptedException e) {
-					System.out.println(e.toString());
-				}
+				Uncheck_Hide_social_media_link();
+				Show_SMO_Links_A_tModrater_Screen_Gameboard();
+			} catch (InterruptedException e) {
+				System.out.println(e.toString());
+			}
 		} else if (s3.equalsIgnoreCase(s5)) {
 			try {
-				 Uncheck_Hide_social_media_link();
-					Show_SMO_Links_A_tModrater_Screen_Gameboard();	
-				}
-				catch(InterruptedException e) {
-					System.out.println(e.toString());
-				}
-			
+				Uncheck_Hide_social_media_link();
+				Show_SMO_Links_A_tModrater_Screen_Gameboard();
+			} catch (InterruptedException e) {
+				System.out.println(e.toString());
+			}
+
 		} else if (s4.equalsIgnoreCase(s5)) {
 			try {
-				 Uncheck_Hide_social_media_link();
-					Show_SMO_Links_A_tModrater_Screen_Gameboard();	
-				}
-				catch(InterruptedException e) {
-					System.out.println(e.toString());
-				}
+				Uncheck_Hide_social_media_link();
+				Show_SMO_Links_A_tModrater_Screen_Gameboard();
+			} catch (InterruptedException e) {
+				System.out.println(e.toString());
+			}
+		} else if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
+
+			Uncheck_Hide_social_media_link();
+			Show_SMO_Links_A_tModrater_Screen_Gameboard();
+
 		} else {
 			System.out.println("You have not taken any subscription");
 		}
-	}							
+	}
 
 	@AfterTest
 	public void tearDown() {
-		
+
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
-		driver.quit(); 
+		driver.quit();
 	}
 
-	public void Uncheck_Hide_social_media_link() throws InterruptedException
-	{
+	public void Uncheck_Hide_social_media_link() throws InterruptedException {
 		driver.findElement(By.id("customize")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[@id='mascotSection']/span")).click();
@@ -115,21 +115,23 @@ public class DGBP_HSB_TestCase_4  extends Base{
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();
 		Thread.sleep(4000);
-		//unchecking the Hide social links on gameboard
-		if(!driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='hideSocialLinks']")).isSelected())
-		{System.out.println("nothing to do");
-		}
-		else
-		{
+		// unchecking the Hide social links on gameboard
+		if (!driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='hideSocialLinks']"))
+				.isSelected()) {
+			System.out.println("nothing to do");
+		} else {
 			act = new Actions(driver);
-			act.moveToElement(driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='hideSocialLinks']"))).click().perform();;
-		
+			act.moveToElement(
+					driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='hideSocialLinks']")))
+					.click().perform();
+			;
+
 		}
-	} 
-	
+	}
+
 	public void Show_SMO_Links_A_tModrater_Screen_Gameboard() throws InterruptedException, IOException {
 		Thread.sleep(2000);
-		 parent = driver.getWindowHandle();
+		parent = driver.getWindowHandle();
 		System.out.println("ParentWindow id is :-" + parent);
 		driver.findElement(By.xpath("//*[@id='mygames']")).click();
 		GameName = prop.getProperty("gamename");
@@ -146,19 +148,19 @@ public class DGBP_HSB_TestCase_4  extends Base{
 			// log.debug("Impossible to click the pop-up. Reason: " + e.toString());
 			System.out.println("Impossible to click the pop-up. Reason: " + e.toString());
 		}
-Thread.sleep(1000);
+		Thread.sleep(1000);
 		Set<String> allWindows = driver.getWindowHandles();
 		int count = allWindows.size();
 		System.out.println("Total window:=" + count);
 		for (String child : allWindows) {
 			if (!parent.equalsIgnoreCase(child)) {
 				driver.switchTo().window(child);
-			
+
 				Thread.sleep(4000);
 				driver.findElement(By.xpath("//span[@class='playNowButton']")).click();
 
 				driver.findElement(By.xpath("//span[@data-numteams='2']")).click();
-				
+
 				Thread.sleep(3000);
 
 				System.out.println(driver.getTitle());
@@ -175,35 +177,45 @@ Thread.sleep(1000);
 				driver1.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				driver1.get(prop.getProperty("joinurl"));
+				String url = driver1.getCurrentUrl();
 				Thread.sleep(3000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
 				Thread.sleep(1000);
-				//driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
-				//driver1.findElement(By.xpath("//button[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
-				driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
+//driver1.get(prop.getProperty("joinurl"));
+				if (url.equals("https://game.playfactile.com/join")) {
+					// live join button
+					driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
+				} else {
+					driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
+				}
 				Thread.sleep(2000);
-				 driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
-				 Thread.sleep(2000);
-				 driver.switchTo().window(driver.getWindowHandle());
-				 Thread.sleep(2000);
-				 driver.findElement(By.xpath("//span[contains(text(),'Begin Game')]")).click();
-				 Thread.sleep(2000);
-				 driver.findElement(By.xpath("//span[contains(text(),'Start Game')]")).click();
-				 Thread.sleep(2000);
+				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
+				Thread.sleep(2000);
+				driver.switchTo().window(driver.getWindowHandle());
+				Thread.sleep(2000);
+				driver.findElement(By.xpath("//span[contains(text(),'Begin Game')]")).click();
+				Thread.sleep(2000);
+				driver.findElement(By.xpath("//span[contains(text(),'Start Game')]")).click();
+				Thread.sleep(2000);
 
-				 twitterclass= "fa fa-twitter";
-				 			   // "https://www.pinterest.com/pin/create/button?guid=jFE1MQuKNYAF-1&url=https%3A%2F%2Fawspf.com%2Fnewplay%2Fplay&media=undefined&description=PlayWin%20-%20Factile";
-				 Pintrestclass=	"fa fa-pinterest";
-				 
-				 t1 =driver.findElement(By.xpath("//span[@class='btn btn-social-icon btn-twitter redirectLink_blank']//span")).getAttribute("class");
-				p1= driver.findElement(By.xpath("//a[@class='btn btn-social-icon btn-pinterest']//span")).getAttribute("class");
-				
+				twitterclass = "fa fa-twitter";
+				// "https://www.pinterest.com/pin/create/button?guid=jFE1MQuKNYAF-1&url=https%3A%2F%2Fawspf.com%2Fnewplay%2Fplay&media=undefined&description=PlayWin%20-%20Factile";
+				Pintrestclass = "fa fa-pinterest";
+
+				t1 = driver
+						.findElement(
+								By.xpath("//span[@class='btn btn-social-icon btn-twitter redirectLink_blank']//span"))
+						.getAttribute("class");
+				p1 = driver.findElement(By.xpath("//a[@class='btn btn-social-icon btn-pinterest']//span"))
+						.getAttribute("class");
+
 				Assert.assertEquals(twitterclass, t1);
 				Log.info("When unchecked from customization setting>>Twitter link is displaying");
 				Assert.assertEquals(Pintrestclass, p1);
 				Log.info("When unchecked from customization setting>>Pintrest link is displaying");
 				System.out.println("When unchecked from customization setting>>Pintrest link is displaying");
-					 }	
-				
-	
-		}}}
+			}
+
+		}
+	}
+}

@@ -92,10 +92,18 @@ public class DGBP_HSB_TestCase_5  extends Base{
 			catch(InterruptedException e) {
 				System.out.println(e.toString());
 			}
-		} else {
-			System.out.println("You have not taken any subscription");
-		}
-	}							
+		}  else if(driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
+			
+			
+			Check_Hide_social_media_link();
+			Hide_SMO_Links_A_tModrater_Screen_Gameboard();
+		
+	}
+	else
+	{
+		System.out.println("You have not taken any subscription");
+	}
+}								
 
 	@AfterTest
 	public void tearDown() {
@@ -171,13 +179,21 @@ public class DGBP_HSB_TestCase_5  extends Base{
 				driver1 = IntilizeDriver();
 				
 				driver1.get(prop.getProperty("joinurl"));
+				String url = driver1.getCurrentUrl();
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
 				Thread.sleep(1000);
-				driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
-				//driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
-				//driver1.findElement(By.xpath("//button[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
+				//driver1.get(prop.getProperty("joinurl"));
+				if(url.equals("https://game.playfactile.com/join"))
+				{
+							//live join button
+								driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
+				}
+				else
+				{
+								driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
+				}
 				Thread.sleep(2000);
 				 driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 				 Thread.sleep(2000);
