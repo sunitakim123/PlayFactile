@@ -92,6 +92,11 @@ public class DGBP_HSB_TestCase_21 extends Base {
 			} catch (InterruptedException e) {
 				System.out.println(e.toString());
 			}
+		}  else if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
+
+			modeaterscreen();
+			PlayerScreen();
+
 		} else {
 			System.out.println("You have not taken any subscription");
 		}

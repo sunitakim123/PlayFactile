@@ -98,6 +98,11 @@ public class DGBP_HSB_TestCase_20 extends Base {
 			} catch (InterruptedException e) {
 				System.out.println(e.toString());
 			}
+		} else if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
+
+			modeaterscreen();
+			PlayerScreen();
+
 		} else {
 			System.out.println("You have not taken any subscription");
 		}
@@ -249,12 +254,17 @@ public class DGBP_HSB_TestCase_20 extends Base {
 				driver1.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 				wait1 = new WebDriverWait(driver1, 50);
 				driver1.get(prop.getProperty("joinurl"));
+				String url = driver1.getCurrentUrl();
 				Thread.sleep(2000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(y);
 				Thread.sleep(1000);
-				// driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4
-				// mb-4']")).click();
-				driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
+				//String url = driver1.getCurrentUrl();
+				if (url.equals("https://game.playfactile.com/join")) {
+					// live join button
+					driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
+				} else {
+					driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
+				}
 				Thread.sleep(2000);
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 				Thread.sleep(2000);
@@ -286,13 +296,18 @@ public class DGBP_HSB_TestCase_20 extends Base {
 					wait1.until(
 							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 					driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
-					wait1.until(ExpectedConditions
-							.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
-					driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");
-					wait1.until(ExpectedConditions
-							.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
-					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
-					// driver.switchTo().window(driver.getWindowHandle());
+					if (url.equals("https://game.playfactile.com/join")) {
+						// live enter answer text  box
+						wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
+						driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
+						wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")));
+						driver1.findElement(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")).click();
+					} else {
+						wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
+						driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");	
+						wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+						driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+					}
 					driver.switchTo().window(driver.getWindowHandle());
 					Thread.sleep(2000);
 					wait.until(

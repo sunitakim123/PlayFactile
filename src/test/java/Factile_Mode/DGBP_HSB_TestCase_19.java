@@ -31,7 +31,7 @@ public class DGBP_HSB_TestCase_19 extends Base {
 	String s6, s7, GameName, twitterLink, PintrestLink, t1, p1, parent, expectedValue, actualValue,
 			PlayerNameAtmodraterscreen, PlayerNameAtPlayerScreen;
 	WebElement ElementNotGoingToVisible;
-	Actions act;
+	Actions act, act1, act2;
 
 	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_20.class.getName());
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
@@ -97,6 +97,11 @@ public class DGBP_HSB_TestCase_19 extends Base {
 			} catch (InterruptedException e) {
 				System.out.println(e.toString());
 			}
+		}  else if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
+
+			modeaterscreen();
+			PlayerScreen();
+
 		} else {
 			System.out.println("You have not taken any subscription");
 		}
@@ -128,6 +133,24 @@ public class DGBP_HSB_TestCase_19 extends Base {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")).click();
 		Thread.sleep(2000);
+		if(driver.findElement(By.xpath("//input[@id='answerTimerOnOff']")).isSelected())
+		{
+			
+		}
+		else
+		{
+			act2 = new Actions(driver);
+			act2.moveToElement(driver.findElement(By.xpath("//input[@id='answerTimerOnOff']"))).click().perform();
+		}Thread.sleep(2000);
+		if(driver.findElement(By.xpath("//input[@id='enterAnserBuzz']")).isSelected())
+		{
+			
+		}
+		else
+		{
+			act1 = new Actions(driver);
+			act1.moveToElement(driver.findElement(By.xpath("//input[@id='enterAnserBuzz']"))).click().perform();
+		}
 
 	}
 
@@ -150,11 +173,12 @@ public class DGBP_HSB_TestCase_19 extends Base {
 		}
 		GameName = prop.getProperty("gamename");
 		// 'Test"+int1+"'
+		Thread.sleep(2000);
 		driver.findElement(
 				By.xpath("//div[@data-text='" + GameName + "']/following-sibling::div/span[contains(text(), 'Play')]"))
 				.click();
 		Thread.sleep(3000);
-
+		
 		try {
 			WebElement obj = driver.findElement(By.xpath("//button[contains(text(),'Start new game')]"));
 
@@ -192,13 +216,18 @@ public class DGBP_HSB_TestCase_19 extends Base {
 				driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				wait1 = new WebDriverWait(driver1, 60);
 				driver1.get(prop.getProperty("joinurl"));
+				String url = driver1.getCurrentUrl();
 				Thread.sleep(1000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
 				Thread.sleep(1000);
-				// driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4
-				// mb-4']")).click();
-				driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
 				Thread.sleep(1500);
+				//String url = driver1.getCurrentUrl();
+				if (url.equals("https://game.playfactile.com/join")) {
+					// live join button
+					driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
+				} else {
+					driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
+				}
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 		
 				driver.switchTo().window(driver.getWindowHandle());
@@ -230,12 +259,19 @@ public class DGBP_HSB_TestCase_19 extends Base {
 					wait1.until(
 							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 					driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
-					wait1.until(ExpectedConditions
-							.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
-					driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");
-					wait1.until(ExpectedConditions
-							.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
-					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+					
+					if (url.equals("https://game.playfactile.com/join")) {
+						// live join button
+						wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
+						driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
+						wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")));
+						driver1.findElement(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")).click();
+					} else {
+						wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
+						driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");	
+						wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+						driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+					}
 					// driver.switchTo().window(driver.getWindowHandle());
 					driver.switchTo().window(driver.getWindowHandle());
 					Thread.sleep(2000);
@@ -279,12 +315,19 @@ public class DGBP_HSB_TestCase_19 extends Base {
 					wait1.until(
 							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 					driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
-					wait1.until(ExpectedConditions
-							.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
-					driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");
-					wait1.until(ExpectedConditions
-							.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
-					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+					
+					if (url.equals("https://game.playfactile.com/join")) {
+						// live join button
+						wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
+						driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
+						wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")));
+						driver1.findElement(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")).click();
+					} else {
+						wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
+						driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");	
+						wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+						driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+					}
 					// driver.switchTo().window(driver.getWindowHandle());
 					driver.switchTo().window(driver.getWindowHandle());
 					Thread.sleep(2000);
@@ -311,9 +354,15 @@ public class DGBP_HSB_TestCase_19 extends Base {
 				System.out.println("moneyholder:=" + moneyvalue);
 				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='wagerInput']")));
 				driver1.findElement(By.xpath("//input[@class='wagerInput']")).sendKeys(moneyvalue);
-				wait1.until(ExpectedConditions
-						.presenceOfElementLocated(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")));
-				driver1.findElement(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")).click();
+				if (url.equals("https://game.playfactile.com/join")) {
+					// subbmit wager button
+					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='wagerPlayBtn btn--inside uppercase']")));
+					driver1.findElement(By.xpath("//button[@class='wagerPlayBtn btn--inside uppercase']")).click();
+				} else {
+					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")));
+					driver1.findElement(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")).click();
+				}
+				
 				driver.switchTo().window(driver.getWindowHandle());
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@id='playFinalJeopardy']")));
 				driver.findElement(By.xpath("//span[@id='playFinalJeopardy']")).click();
