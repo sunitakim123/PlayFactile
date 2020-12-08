@@ -14,10 +14,6 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_5"/>
            </classes>
   </test> <!-- Test -->
-  <test name="Exact Case When Unchecked At Global_Settings">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_6"/>
-           </classes>
-  </test> <!-- Test -->
+ 
 
 </suite> <!-- Suite -->
