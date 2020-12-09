@@ -340,6 +340,7 @@ Thread.sleep(2000);
 					driver1.switchTo().window(driver1.getWindowHandle());
 
 					wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
+					driver1.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 					wait1.until(
 							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 					driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
