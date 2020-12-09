@@ -1,48 +1,54 @@
-12:25:57.861 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Navigated to homePage
-12:26:10.720 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
-12:29:32.843 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_13 - Driver is Initilize
-12:29:33.680 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_13 - Navigated to homePage
-12:29:57.429 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_13 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is unchecked >> 
-12:31:43.102 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_13 - Jeopardy_Style is working fine
-12:36:30.834 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Driver is Initilize
-12:36:32.141 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Navigated to homePage
-12:36:45.170 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
-12:40:12.632 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Driver is Initilize
-12:40:13.605 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Navigated to homePage
-12:40:26.493 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
-12:42:11.920 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Play as Numbered Tiles instead of Jeopardy-style is working fine 
-12:42:30.264 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Driver is Initilize
-12:42:31.034 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Navigated to homePage
-12:42:43.626 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
-12:44:29.112 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Play as Numbered Tiles instead of Jeopardy-style is working fine 
-12:45:54.398 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
-12:45:59.577 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
-12:46:24.085 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
-12:49:42.993 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Game_Point_Symbol_$_Before is working fine
-12:51:00.401 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Driver is Initilize
-12:51:04.761 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Navigated to homePage
-12:54:49.882 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Game_Point_Symbol_$_After is working fine
-12:58:19.248 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Driver is Initilize
-12:58:34.543 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Navigated to homePage
-12:58:52.802 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
-13:07:15.404 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Driver is Initilize
-13:07:19.752 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Navigated to homePage
-13:07:50.085 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
-13:09:53.602 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Play as Numbered Tiles instead of Jeopardy-style is working fine 
-13:10:52.363 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Driver is Initilize
-13:10:56.602 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Navigated to homePage
-13:11:29.363 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
-13:13:30.663 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Play as Numbered Tiles instead of Jeopardy-style is working fine 
-13:22:09.070 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Driver is Initilize
-13:22:13.987 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Navigated to homePage
-13:22:33.349 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
-13:24:24.793 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Play as Numbered Tiles instead of Jeopardy-style is working fine 
-13:27:57.613 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Driver is Initilize
-13:28:06.135 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Navigated to homePage
-13:31:57.998 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Game_Point_Symbol_$_After is working fine
-13:32:18.413 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Driver is Initilize
-13:32:23.198 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Navigated to homePage
-13:36:20.579 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Game_Point_Symbol_$_After is working fine
-13:37:05.121 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Driver is Initilize
-13:37:20.570 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Navigated to homePage
-13:41:23.414 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Game_Point_Symbol_€_After is working fine
+13:41:42.328 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Driver is Initilize
+13:41:47.436 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Navigated to homePage
+13:45:45.245 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Game_Point_Symbol_€_Before is working fine
+13:49:34.291 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+13:49:35.227 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+13:49:57.959 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+13:54:18.011 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Driver is Initilize
+13:54:19.451 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Navigated to homePage
+13:58:20.741 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+13:58:22.055 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+13:58:37.926 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+13:58:38.650 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+13:59:02.078 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+14:08:52.659 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+14:08:53.585 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+14:09:17.354 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+14:10:09.583 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+14:10:10.400 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+14:10:33.216 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+14:14:55.599 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Driver is Initilize
+14:14:56.598 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Navigated to homePage
+14:20:17.847 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Driver is Initilize
+14:20:19.120 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Navigated to homePage
+14:21:27.358 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Driver is Initilize
+14:21:28.247 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Navigated to homePage
+15:03:14.523 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+15:03:15.413 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+15:04:53.993 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+15:15:02.111 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+15:15:03.541 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+15:18:23.907 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+15:18:24.835 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+15:19:12.980 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+15:22:41.706 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Game_Point_Symbol_$_Before is working fine
+15:26:00.179 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Driver is Initilize
+15:26:01.276 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Navigated to homePage
+15:29:44.533 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Game_Point_Symbol_$_After is working fine
+15:30:06.320 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Driver is Initilize
+15:30:07.100 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Navigated to homePage
+15:33:50.727 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Game_Point_Symbol_€_After is working fine
+15:34:44.116 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Driver is Initilize
+15:34:44.822 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Navigated to homePage
+15:38:30.826 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Game_Point_Symbol_€_Before is working fine
+16:59:49.309 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_20 - Driver is Initilize
+16:59:50.235 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_20 - Navigated to homePage
+17:03:53.828 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_20 - Driver is Initilize
+17:03:54.600 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_20 - Navigated to homePage
+17:08:07.094 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_20 - Driver is Initilize
+17:08:08.046 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_20 - Navigated to homePage
+17:19:31.426 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_20 - Driver is Initilize
+17:19:32.381 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_20 - Navigated to homePage
+17:33:48.934 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_20 - Driver is Initilize
+17:33:50.434 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_20 - Navigated to homePage
+17:52:33.809 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_20 - Driver is Initilize
