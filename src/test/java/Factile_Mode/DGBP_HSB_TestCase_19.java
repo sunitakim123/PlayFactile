@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -40,6 +41,8 @@ public class DGBP_HSB_TestCase_19 extends Base {
 	@BeforeTest
 	public void initilize() throws IOException {
 		driver = IntilizeDriver();
+		Dimension d = new Dimension(1382,744);     
+		driver.manage().window().setSize(d); 
 		Log.info("Driver is Initilize");
 		driver.get(prop.getProperty("rooturl"));
 		wait = new WebDriverWait(driver, 60);
@@ -241,6 +244,8 @@ Thread.sleep(2000);
 		
 
 				driver1 = IntilizeDriver();
+				Dimension d1 = new Dimension(1382,744);     
+				driver1.manage().window().setSize(d1); 
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
