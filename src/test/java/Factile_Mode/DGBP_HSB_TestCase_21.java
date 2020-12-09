@@ -37,7 +37,6 @@ public class DGBP_HSB_TestCase_21 extends Base {
 	public void initilize() throws IOException {
 		driver = IntilizeDriver();
 		Log.info("Driver is Initilize");
-		driver.get(prop.getProperty("rooturl"));
 		driver.manage().window().maximize();
 		wait = new WebDriverWait(driver, 60);
 		// driver1.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
