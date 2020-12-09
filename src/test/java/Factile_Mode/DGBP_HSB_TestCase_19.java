@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -285,9 +286,11 @@ Thread.sleep(2000);
 					driver1.switchTo().window(driver1.getWindowHandle());
 
 					wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
-					wait1.until(
-							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
-					driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
+					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
+					
+					WebElement ele=driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
+					JavascriptExecutor executor = (JavascriptExecutor)driver1; 
+					executor.executeScript("arguments[0].click();", ele);
 					
 					if (url.equals("https://game.playfactile.com/join")) {
 						// live join button
