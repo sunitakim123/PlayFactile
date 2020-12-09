@@ -31,7 +31,7 @@ public class DGBP_HSB_TestCase_19 extends Base {
 	String s6, s7, GameName, twitterLink, PintrestLink, t1, p1, parent, expectedValue, actualValue,
 			PlayerNameAtmodraterscreen, PlayerNameAtPlayerScreen;
 	WebElement ElementNotGoingToVisible;
-	Actions act, act1, act2;
+	Actions act, act1, act2, act3, act4;
 
 	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_20.class.getName());
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
@@ -110,15 +110,24 @@ public class DGBP_HSB_TestCase_19 extends Base {
 	@AfterTest
 	public void tearDown() throws InterruptedException {
 
-		 driver1.quit();
-		 driver.switchTo().window(driver.getWindowHandle());
-		 driver.quit();
+//		 driver1.quit();
+	//	 driver.switchTo().window(driver.getWindowHandle());
+		// driver.quit();
 	}
 
 	public void modeaterscreen() throws InterruptedException {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("customize")));
 		driver.findElement(By.id("customize")).click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
+		
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='resetAll resetCustomizations']")));
+		driver.findElement(By.xpath("//button[@class='resetAll resetCustomizations']")).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")));
+		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")).click();
+		Thread.sleep(500);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='swal-button swal-button--confirm']")));
+		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm']")).click();
+		Thread.sleep(500);		
 		if (driver.findElement(By.xpath("//input[@id='playDoubleJeopardy']")).isSelected()) {
 			System.out.println("Already selected");
 		} else {
@@ -151,7 +160,26 @@ public class DGBP_HSB_TestCase_19 extends Base {
 			act1 = new Actions(driver);
 			act1.moveToElement(driver.findElement(By.xpath("//input[@id='enterAnserBuzz']"))).click().perform();
 		}
-
+		Thread.sleep(2000);
+		if(driver.findElement(By.xpath("//input[@id='buzzerForFinalFactile']")).isSelected())
+		{
+			
+		}
+		else
+		{
+			act3 = new Actions(driver);
+			act3.moveToElement(driver.findElement(By.xpath("//input[@id='buzzerForFinalFactile']"))).click().perform();
+		}
+Thread.sleep(2000);
+		if(driver.findElement(By.xpath("//input[@id='enter_final_answer']")).isSelected())
+		{
+			
+		}
+		else
+		{
+			act4 = new Actions(driver);
+			act4.moveToElement(driver.findElement(By.xpath("//input[@id='enter_final_answer']"))).click().perform();
+		}
 	}
 
 	public void PlayerScreen() throws InterruptedException, IOException {
@@ -297,7 +325,7 @@ public class DGBP_HSB_TestCase_19 extends Base {
 				int activetilesInSecodGame = driver
 						.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']")).size();
 				System.out.println("total active tiles in second game>>" + activetilesInSecodGame);
-				for (int p = 1; p <= 2; p++) {
+				for (int p = 1; p <= activetilesInSecodGame; p++) {
 
 					System.out.println("value of p>>" + p);
 					wait.until(ExpectedConditions.elementToBeClickable(
@@ -318,6 +346,7 @@ public class DGBP_HSB_TestCase_19 extends Base {
 					
 					if (url.equals("https://game.playfactile.com/join")) {
 						// live join button
+						driver1.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 						wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
 						driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
 						wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")));
@@ -328,6 +357,7 @@ public class DGBP_HSB_TestCase_19 extends Base {
 						wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 						driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
 					}
+					Thread.sleep(2000);
 					// driver.switchTo().window(driver.getWindowHandle());
 					driver.switchTo().window(driver.getWindowHandle());
 					Thread.sleep(2000);
@@ -337,21 +367,22 @@ public class DGBP_HSB_TestCase_19 extends Base {
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 					// System.out.println("value of p at end>>"+p);
-				
 				}
-				wait.until(
-						ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='skipToFinalFactile']")));
+				Thread.sleep(3000);
+			/* wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='skipToFinalFactile']")));
 				driver.findElement(By.xpath("//span[@class='skipToFinalFactile']")).click();
-				// wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("")));
+				 wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("")));
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(
 						"//div[@class='swal-modal']//button[@class='swal-button swal-button--confirm btn-success swal-button--danger']")));
 				driver.findElement(By.xpath(
 						"//div[@class='swal-modal']//button[@class='swal-button swal-button--confirm btn-success swal-button--danger']"))
-						.click();
+						.click(); */
 				driver1.switchTo().window(driver1.getWindowHandle());
 				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='moneyHolder']")));
 				String moneyvalue = driver1.findElement(By.xpath("//span[@class='moneyHolder']")).getText();
-				System.out.println("moneyholder:=" + moneyvalue);
+				System.out.println("moneyholder:=" + moneyvalue); 
+				 
+				
 				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='wagerInput']")));
 				driver1.findElement(By.xpath("//input[@class='wagerInput']")).sendKeys(moneyvalue);
 				if (url.equals("https://game.playfactile.com/join")) {
@@ -367,15 +398,23 @@ public class DGBP_HSB_TestCase_19 extends Base {
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@id='playFinalJeopardy']")));
 				driver.findElement(By.xpath("//span[@id='playFinalJeopardy']")).click();
 				driver1.switchTo().window(driver1.getWindowHandle());
+				
 				wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
 				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 				driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
-				wait1.until(
-						ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
-				driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");
-				wait1.until(ExpectedConditions
-						.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
-				driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+				if (url.equals("https://game.playfactile.com/join")) {
+					// live join button
+					driver1.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
+					driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
+					wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")));
+					driver1.findElement(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")).click();
+				} else {
+					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
+					driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");	
+					wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+				}
 				Thread.sleep(2000);
 				wait.until(
 						ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
