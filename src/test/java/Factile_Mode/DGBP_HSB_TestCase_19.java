@@ -254,7 +254,7 @@ Thread.sleep(2000);
 				String url = driver1.getCurrentUrl();
 				Thread.sleep(1000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-				Thread.sleep(1000);
+				
 				Thread.sleep(1500);
 				//String url = driver1.getCurrentUrl();
 				if (url.equals("https://game.playfactile.com/join")) {
@@ -262,7 +262,7 @@ Thread.sleep(2000);
 					driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
 				} else {
 					driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
-				}
+				} Thread.sleep(1500);
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 		
 				driver.switchTo().window(driver.getWindowHandle());
