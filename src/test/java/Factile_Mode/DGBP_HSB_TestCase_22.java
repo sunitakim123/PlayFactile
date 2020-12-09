@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -122,36 +123,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='swal-button swal-button--confirm']")));
 		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm']")).click();
 		Thread.sleep(500);
-		/*wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='resetToDefault resetCustomizations'])[6]")));
-		driver.findElement(By.xpath("(//span[@class='resetToDefault resetCustomizations'])[6]")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")).click();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm']")).click();	
-		Thread.sleep(5000);
-
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='skip_ff']")));
-		// checking the exact case at player screen on gameboard
-		if (driver.findElement(By.xpath("//input[@id='skip_ff']")).isSelected()) {
-			System.out.println("Skip is already selected");
-		} else {
-			act = new Actions(driver);
-			act.moveToElement(driver.findElement(By.xpath("//input[@id='skip_ff']"))).click().perform();
-			;
-
-		}
-		Log.info("At customization page>> >>Show skip answer is selected ");
-
-		if (driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='readingTimerOnOff']"))
-				.isSelected()) {
-			System.out.println("nothing to do");
-		} else {
-			act = new Actions(driver);
-			act.moveToElement(
-					driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='readingTimerOnOff']")))
-					.click().perform();
-
-		} */
+		
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='skip_ff']")));
 		if (driver.findElement(By.xpath("//input[@id='skip_ff']")).isSelected()) {
 			System.out.println("Skip is already selected");
@@ -176,7 +148,6 @@ public class DGBP_HSB_TestCase_22 extends Base {
 		else
 		{
 			act = new Actions(driver);
-			act.moveToElement(driver.findElement(By.xpath("//input[@id='answerTimerOnOff']"))).click().perform();
 		}Thread.sleep(2000);
 		if(driver.findElement(By.xpath("//input[@id='enterAnserBuzz']")).isSelected())
 		{
@@ -249,16 +220,24 @@ public class DGBP_HSB_TestCase_22 extends Base {
 			
 
 				driver1 = IntilizeDriver();
+				Dimension d1 = new Dimension(1382, 744);
+				driver1.manage().window().setSize(d1);
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				wait1 = new WebDriverWait(driver1, 60);
 				driver1.get(prop.getProperty("joinurl"));
+				String url = driver1.getCurrentUrl();
 				Thread.sleep(1000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
 				Thread.sleep(1000);
-				driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
-				Thread.sleep(1500);
+				if (url.equals("https://game.playfactile.com/join")) {
+					// live join button
+					driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
+				} else {
+					driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
+				}
+				Thread.sleep(2000);
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 		
 				driver.switchTo().window(driver.getWindowHandle());
@@ -294,14 +273,21 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
 					wait1.until(
 							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
-					driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
-					wait1.until(ExpectedConditions
-							.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
-					driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");
-					wait1.until(ExpectedConditions
-							.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
-					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
-					// driver.switchTo().window(driver.getWindowHandle());
+					WebElement ele=driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
+					JavascriptExecutor executor = (JavascriptExecutor)driver1; 
+					executor.executeScript("arguments[0].click();", ele);
+					if (url.equals("https://game.playfactile.com/join")) {
+						// live join button
+						wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
+						driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
+						wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")));
+						driver1.findElement(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")).click();
+					} else {
+						wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
+						driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");	
+						wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+						driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+					}
 					driver.switchTo().window(driver.getWindowHandle());
 					Thread.sleep(4000);
 					wait.until(

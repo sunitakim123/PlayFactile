@@ -9,6 +9,8 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -217,6 +219,8 @@ public class DGBP_HSB_TestCase_17 extends Base {
 				Thread.sleep(3000);
 
 				driver1 = IntilizeDriver();
+				Dimension d1 = new Dimension(1382, 744);
+				driver1.manage().window().setSize(d1);
 				wait1 = new WebDriverWait(driver1, 60);
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS); 
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
@@ -267,7 +271,9 @@ public class DGBP_HSB_TestCase_17 extends Base {
 				Thread.sleep(1500);
 				wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
 				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
-				driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
+				WebElement ele=driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
+				JavascriptExecutor executor = (JavascriptExecutor)driver1; 
+				executor.executeScript("arguments[0].click();", ele);
 				Thread.sleep(1000);
 				if (url.equals("https://game.playfactile.com/join")) {
 					// live join button
