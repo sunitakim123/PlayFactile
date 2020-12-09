@@ -303,10 +303,18 @@ public class DGBP_HSB_TestCase_20 extends Base {
 						wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")));
 						driver1.findElement(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")).click();
 					} else {
-						wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
-						driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");	
-						wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
-						driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+						if (url.equals("https://game.playfactile.com/join")) {
+							// live join button
+							wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
+							driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
+							wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")));
+							driver1.findElement(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")).click();
+						} else {
+							wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
+							driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");	
+							wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+							driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+						}
 					}
 					driver.switchTo().window(driver.getWindowHandle());
 					Thread.sleep(2000);
@@ -315,7 +323,7 @@ public class DGBP_HSB_TestCase_20 extends Base {
 					driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
-					Thread.sleep(500);
+					Thread.sleep(1500);
 					// System.out.println("value of p at end>>"+p);
 				}
 				

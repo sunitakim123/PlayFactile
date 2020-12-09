@@ -347,7 +347,9 @@ Thread.sleep(2000);
 					driver1.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 					wait1.until(
 							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
-					driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
+					WebElement ele=driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
+					JavascriptExecutor executor = (JavascriptExecutor)driver1; 
+					executor.executeScript("arguments[0].click();", ele);
 					
 					if (url.equals("https://game.playfactile.com/join")) {
 						// live join button
@@ -406,7 +408,9 @@ Thread.sleep(2000);
 				
 				wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
 				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
-				driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
+				WebElement ele=driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
+				JavascriptExecutor executor = (JavascriptExecutor)driver1; 
+				executor.executeScript("arguments[0].click();", ele);
 				if (url.equals("https://game.playfactile.com/join")) {
 					// live join button
 					driver1.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
