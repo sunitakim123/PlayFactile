@@ -61,7 +61,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 		String s3 = driver.findElement(By.xpath("//*[@id='yearlybusinessBox']/div")).getAttribute("class");
 		String s4 = driver.findElement(By.xpath("//*[@id='monthlybusinessBox']/div")).getAttribute("class");
 
-		Thread.sleep(1500);
+		Thread.sleep(2000);
 		String s5 = "iradio_flat-yellow checked";
 
 		if (s1.equalsIgnoreCase(s5)) {
@@ -112,16 +112,16 @@ public class DGBP_HSB_TestCase_22 extends Base {
 
 	public void modeaterscreen() throws InterruptedException {
 		driver.findElement(By.id("customize")).click();
-		Thread.sleep(500);
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='resetAll resetCustomizations']")));
 		driver.findElement(By.xpath("//button[@class='resetAll resetCustomizations']")).click();
-		Thread.sleep(500);
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")));
 		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")).click();
-		Thread.sleep(500);
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='swal-button swal-button--confirm']")));
 		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm']")).click();
-		Thread.sleep(500);
+		Thread.sleep(2000);
 		
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='skip_ff']")));
 		if (driver.findElement(By.xpath("//input[@id='skip_ff']")).isSelected()) {
@@ -162,7 +162,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 	}
 
 	public void PlayerScreen() throws InterruptedException, IOException {
-		Thread.sleep(1500);
+		Thread.sleep(2000);
 		parent = driver.getWindowHandle();
 		System.out.println("ParentWindow id is :-" + parent);
 		driver.findElement(By.xpath("//*[@id='mygames']")).click();
@@ -296,15 +296,15 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 					// System.out.println("value of p at end>>"+p);
 				}
-					Thread.sleep(1500);
+					Thread.sleep(2000);
 				//	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h2[@class='winnerTopHeader']")));
 					//String header = driver.findElement(By.xpath("//h2[@class='winnerTopHeader']")).getText();
-					Thread.sleep(1500);
+					Thread.sleep(2000);
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[@class='winnerTeamName']")));
 					String winningTeamOnModeater = driver.findElement(By.xpath("//h1[@class='winnerTeamName']")).getText();
 					System.out.println("winner team on moderater screen= " + winningTeamOnModeater);
 					driver1.switchTo().window(driver1.getWindowHandle());
-					Thread.sleep(1500);
+					Thread.sleep(2000);
 					wait1.until(ExpectedConditions
 							.presenceOfElementLocated(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")));
 					String winningTeamOnPlayerScreen = driver1

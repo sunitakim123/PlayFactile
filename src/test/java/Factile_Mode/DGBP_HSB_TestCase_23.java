@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,13 +32,16 @@ public class DGBP_HSB_TestCase_23 extends Base {
 	String s6, s7, GameName, twitterLink, PintrestLink, t1, p1, parent, expectedValue, actualValue,
 			PlayerNameAtmodraterscreen, PlayerNameAtPlayerScreen;
 	WebElement ElementNotGoingToVisible;
-	Actions act;
+	Actions act, act1, act2, act3, act4;
 
 	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_23.class.getName());
+	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
 	@BeforeTest
 	public void initilize() throws IOException {
 		driver = IntilizeDriver();
+		Dimension d = new Dimension(1382,744);     
+		driver.manage().window().setSize(d); 
 		Log.info("Driver is Initilize");
 		driver.get(prop.getProperty("rooturl"));
 		wait = new WebDriverWait(driver, 60);
