@@ -51,7 +51,7 @@ public class DGBP_HSB_TestCase_23 extends Base {
 	}
 
 	@Test
-	public void TC_22_Verify_Skip_Final_Factile() throws InterruptedException, IOException {
+	public void TC_23_Verify_Display_Answer_Before_question() throws InterruptedException, IOException {
 		driver.findElement(By.cssSelector("span.loginButton")).click();
 		driver.findElement(By.id("email")).sendKeys(prop.getProperty("username"));
 		driver.findElement(By.id("password")).sendKeys(prop.getProperty("pwd"));
@@ -104,7 +104,7 @@ public class DGBP_HSB_TestCase_23 extends Base {
 		}  else if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
 
 			modeaterscreen();
-			PlayerScreen();
+		//	PlayerScreen();
 
 		} else {
 			System.out.println("You have not taken any subscription");
@@ -131,16 +131,16 @@ public class DGBP_HSB_TestCase_23 extends Base {
 		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm']")).click();
 		Thread.sleep(2000);
 		
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='skip_ff']")));
-		if (driver.findElement(By.xpath("//input[@id='skip_ff']")).isSelected()) {
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='answerFirstMode']")));
+		if (driver.findElement(By.xpath("//input[@id='answerFirstMode']")).isSelected()) {
 			System.out.println("Skip is already selected");
 		} else {
 			act3 = new Actions(driver);
-			act3.moveToElement(driver.findElement(By.xpath("//input[@id='skip_ff']"))).click().perform();
+			act3.moveToElement(driver.findElement(By.xpath("//input[@id='answerFirstMode']"))).click().perform();
 			
 
 		}
-		Log.info("At customization page>> >>Show skip answer is selected ");
+		Log.info("At customization page>> >>Display Answer before Question");
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='readingTimerValue']")));
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("6");
