@@ -219,12 +219,13 @@ public class DGBP_HSB_TestCase_22 extends Base {
 			
 
 				driver1 = IntilizeDriver();
-				driver1.get(prop.getProperty("joinurl"));
+				
 				Dimension d1 = new Dimension(1382, 744);
 				driver1.manage().window().setSize(d1);
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+				driver1.get(prop.getProperty("joinurl"));
 				wait1 = new WebDriverWait(driver1, 60);
 				
 				String url = driver1.getCurrentUrl();
