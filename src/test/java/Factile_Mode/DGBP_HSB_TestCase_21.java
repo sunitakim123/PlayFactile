@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -36,18 +37,17 @@ public class DGBP_HSB_TestCase_21 extends Base {
 	@BeforeTest
 	public void initilize() throws IOException {
 		driver = IntilizeDriver();
+		Dimension d = new Dimension(1382, 744);
+		driver.manage().window().setSize(d);
 		Log.info("Driver is Initilize");
-		driver.manage().window().maximize();
+		driver.get(prop.getProperty("rooturl"));
 		wait = new WebDriverWait(driver, 60);
-		// driver1.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-		// wait1 = new WebDriverWait(driver1, 20);
 		Log.info("Navigated to homePage");
-
-	}
+		
+		}
 
 	@Test
-	public void TC_21_Verify_Skip_question_Button_At_Moderater()
-			throws InterruptedException, IOException {
+	public void TC_21_Verify_Skip_question_Button_At_Moderater()throws InterruptedException, IOException {
 		driver.findElement(By.cssSelector("span.loginButton")).click();
 		driver.findElement(By.id("email")).sendKeys(prop.getProperty("username"));
 		driver.findElement(By.id("password")).sendKeys(prop.getProperty("pwd"));

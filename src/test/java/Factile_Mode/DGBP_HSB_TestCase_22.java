@@ -41,10 +41,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 		driver.manage().window().setSize(d);
 		Log.info("Driver is Initilize");
 		driver.get(prop.getProperty("rooturl"));
-		driver.manage().window().maximize();
 		wait = new WebDriverWait(driver, 60);
-		// driver1.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-		// wait1 = new WebDriverWait(driver1, 20);
 		Log.info("Navigated to homePage");
 
 	}

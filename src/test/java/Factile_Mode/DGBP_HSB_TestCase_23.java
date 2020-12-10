@@ -23,7 +23,7 @@ import org.testng.annotations.Test;
 import junit.framework.Assert;
 import resources.Base;
 
-public class DGBP_HSB_TestCase_24 extends Base {
+public class DGBP_HSB_TestCase_23 extends Base {
 	WebDriver driver;
 	WebDriver driver1;
 	WebDriverWait wait, wait1;
@@ -33,7 +33,7 @@ public class DGBP_HSB_TestCase_24 extends Base {
 	WebElement ElementNotGoingToVisible;
 	Actions act;
 
-	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_24.class.getName());
+	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_23.class.getName());
 
 	@BeforeTest
 	public void initilize() throws IOException {
@@ -46,7 +46,7 @@ public class DGBP_HSB_TestCase_24 extends Base {
 	}
 
 	@Test
-	public void TC_19_test() throws InterruptedException, IOException {
+	public void TC_23_Verify_Display_Answer_Before_question() throws InterruptedException, IOException {
 		driver.findElement(By.cssSelector("span.loginButton")).click();
 		driver.findElement(By.id("email")).sendKeys(prop.getProperty("username"));
 		driver.findElement(By.id("password")).sendKeys(prop.getProperty("pwd"));
