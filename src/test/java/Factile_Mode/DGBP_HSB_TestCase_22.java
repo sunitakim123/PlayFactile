@@ -276,6 +276,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					
 					if (url.equals("https://game.playfactile.com/join")) {
 						// live join button
+						driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 						wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
 						driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
 						wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")));
