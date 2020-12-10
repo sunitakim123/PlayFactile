@@ -51,7 +51,7 @@ public class DGBP_HSB_TestCase_23 extends Base {
 	}
 
 	@Test
-	public void TC_23_Verify_Display_Answer_Before_question() throws InterruptedException, IOException {
+	public void TC_22_Verify_Skip_Final_Factile() throws InterruptedException, IOException {
 		driver.findElement(By.cssSelector("span.loginButton")).click();
 		driver.findElement(By.id("email")).sendKeys(prop.getProperty("username"));
 		driver.findElement(By.id("password")).sendKeys(prop.getProperty("pwd"));
