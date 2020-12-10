@@ -219,13 +219,14 @@ public class DGBP_HSB_TestCase_22 extends Base {
 			
 
 				driver1 = IntilizeDriver();
+				driver1.get(prop.getProperty("joinurl"));
 				Dimension d1 = new Dimension(1382, 744);
 				driver1.manage().window().setSize(d1);
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				wait1 = new WebDriverWait(driver1, 60);
-				driver1.get(prop.getProperty("joinurl"));
+				
 				String url = driver1.getCurrentUrl();
 				Thread.sleep(1000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
@@ -256,16 +257,12 @@ public class DGBP_HSB_TestCase_22 extends Base {
 				System.out.println("total active tiles in 1st game>>" + activetiles);
 
 				for (int p = 1; p <= activetiles; p++) {
-
+					Thread.sleep(2000);
 					System.out.println("value of p>>" + p);
 					wait.until(ExpectedConditions.elementToBeClickable(
 							By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")));
-					String value = driver
-							.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]"))
-							.getText();
-					// System.out.println("value"+ value);
-					// System.out.println("value of p>>"+p);
-					Thread.sleep(2000);
+					
+				
 					driver.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")).click();
 					driver1.switchTo().window(driver1.getWindowHandle());
 
@@ -291,10 +288,10 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					// driver.switchTo().window(driver.getWindowHandle());
 					driver.switchTo().window(driver.getWindowHandle());
 					Thread.sleep(2000);
-					driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
 					WebElement ele2=driver.findElement(By.xpath("//i[@class='fa fa-check right']"));
-					JavascriptExecutor executor1 = (JavascriptExecutor)driver1; 
+					JavascriptExecutor executor1 = (JavascriptExecutor)driver; 
 					executor.executeScript("arguments[0].click();", ele2);
 					//driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
