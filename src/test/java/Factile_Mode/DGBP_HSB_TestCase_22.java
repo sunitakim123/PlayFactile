@@ -273,7 +273,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					WebElement ele=driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
 					JavascriptExecutor executor = (JavascriptExecutor)driver1; 
 					executor.executeScript("arguments[0].click();", ele);
-					
+					Thread.sleep(2000);
 					if (url.equals("https://game.playfactile.com/join")) {
 						// live join button
 						driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
@@ -289,7 +289,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					}
 					// driver.switchTo().window(driver.getWindowHandle());
 					driver.switchTo().window(driver.getWindowHandle());
-					Thread.sleep(2000);
+					Thread.sleep(3000);
 					driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
 					
