@@ -193,7 +193,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 			System.out.println("Impossible to click the pop-up. Reason: " + e.toString());
 		}
 
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		Set<String> allWindows = driver.getWindowHandles();
 		int count = allWindows.size();
 		System.out.println("Total window:=" + count);
@@ -228,9 +228,9 @@ public class DGBP_HSB_TestCase_22 extends Base {
 				wait1 = new WebDriverWait(driver1, 60);
 				
 				String url = driver1.getCurrentUrl();
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 				if (url.equals("https://game.playfactile.com/join")) {
 					// live join button
 					driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
@@ -241,9 +241,9 @@ public class DGBP_HSB_TestCase_22 extends Base {
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 		
 				driver.switchTo().window(driver.getWindowHandle());
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 				driver.findElement(By.xpath("//span[contains(text(),'Begin Game')]")).click();
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 				driver.findElement(By.xpath("//span[contains(text(),'Start Game')]")).click();
 				Thread.sleep(2000);
 			
