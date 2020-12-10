@@ -19,3 +19,14 @@
 21:00:41.075 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Game_Point_Symbol_€_Before is working fine
 21:00:48.484 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_20 - Driver is Initilize
 21:00:49.248 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_20 - Navigated to homePage
+10:18:44.168 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Driver is Initilize
+10:18:45.242 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Navigated to homePage
+10:19:01.462 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - At customization page>> UnCheck display exact case>> 
+10:20:52.709 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - when Checked from customization setting>>Exact case is  displayed
+10:21:27.360 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Driver is Initilize
+10:21:28.171 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Navigated to homePage
+10:21:43.855 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - At customization page>> UnCheck display exact case>> 
+10:23:35.275 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - when Checked from customization setting>>Exact case is  displayed
+10:23:55.628 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_22 - Driver is Initilize
+10:23:56.503 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_22 - Navigated to homePage
+10:24:08.357 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_22 - At customization page>> >>Show skip answer is selected 
