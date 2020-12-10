@@ -291,9 +291,12 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					// driver.switchTo().window(driver.getWindowHandle());
 					driver.switchTo().window(driver.getWindowHandle());
 					Thread.sleep(2000);
-					wait.until(
-							ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
-					driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
+					driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
+					WebElement ele2=driver.findElement(By.xpath("//i[@class='fa fa-check right']"));
+					JavascriptExecutor executor1 = (JavascriptExecutor)driver1; 
+					executor.executeScript("arguments[0].click();", ele2);
+					//driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 					// System.out.println("value of p at end>>"+p);
