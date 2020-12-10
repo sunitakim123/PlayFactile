@@ -7,7 +7,7 @@
   
   <test name="Verify Skip final factile">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_22"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_23"/>
            </classes>
   </test> <!-- Test -->
   
