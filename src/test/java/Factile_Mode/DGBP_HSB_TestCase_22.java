@@ -298,7 +298,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 					// System.out.println("value of p at end>>"+p);
 				}
-					Thread.sleep(2000);
+					
 				//	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h2[@class='winnerTopHeader']")));
 					//String header = driver.findElement(By.xpath("//h2[@class='winnerTopHeader']")).getText();
 					Thread.sleep(2000);

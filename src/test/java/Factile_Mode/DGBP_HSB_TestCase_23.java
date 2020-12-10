@@ -10,6 +10,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -100,15 +101,14 @@ public class DGBP_HSB_TestCase_23 extends Base {
 			} catch (InterruptedException e) {
 				System.out.println(e.toString());
 			}
-		} else if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
+		}  else if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
 
 			modeaterscreen();
 			PlayerScreen();
 
 		} else {
 			System.out.println("You have not taken any subscription");
-		}
-	}
+		}}
 
 	@AfterTest
 	public void tearDown() throws InterruptedException {
@@ -120,35 +120,53 @@ public class DGBP_HSB_TestCase_23 extends Base {
 
 	public void modeaterscreen() throws InterruptedException {
 		driver.findElement(By.id("customize")).click();
-
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='resetAll resetCustomizations']")));
+		driver.findElement(By.xpath("//button[@class='resetAll resetCustomizations']")).click();
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")));
+		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")).click();
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='swal-button swal-button--confirm']")));
+		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm']")).click();
+		Thread.sleep(2000);
+		
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='skip_ff']")));
-		// checking the exact case at player screen on gameboard
 		if (driver.findElement(By.xpath("//input[@id='skip_ff']")).isSelected()) {
 			System.out.println("Skip is already selected");
 		} else {
-			act = new Actions(driver);
-			act.moveToElement(driver.findElement(By.xpath("//input[@id='skip_ff']"))).click().perform();
-			;
+			act3 = new Actions(driver);
+			act3.moveToElement(driver.findElement(By.xpath("//input[@id='skip_ff']"))).click().perform();
+			
 
 		}
 		Log.info("At customization page>> >>Show skip answer is selected ");
-
-		if (driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='readingTimerOnOff']"))
-				.isSelected()) {
-			System.out.println("nothing to do");
-		} else {
-			act = new Actions(driver);
-			act.moveToElement(
-					driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='readingTimerOnOff']")))
-					.click().perform();
-
-		}
-		Thread.sleep(2000);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='readingTimerValue']")));
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("6");
-		Thread.sleep(2000);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")));
+
 		driver.findElement(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")).click();
 		Thread.sleep(2000);
+		if(driver.findElement(By.xpath("//input[@id='answerTimerOnOff']")).isSelected())
+		{
+			
+		}
+		else
+		{
+			act = new Actions(driver);
+		}Thread.sleep(2000);
+		if(driver.findElement(By.xpath("//input[@id='enterAnserBuzz']")).isSelected())
+		{
+			
+		}
+		else
+		{
+			act1 = new Actions(driver);
+			act1.moveToElement(driver.findElement(By.xpath("//input[@id='enterAnserBuzz']"))).click().perform();
+		}
+			
+
 	}
 
 	public void PlayerScreen() throws InterruptedException, IOException {
@@ -170,11 +188,12 @@ public class DGBP_HSB_TestCase_23 extends Base {
 		}
 		GameName = prop.getProperty("gamename");
 		// 'Test"+int1+"'
+		Thread.sleep(2000);
 		driver.findElement(
 				By.xpath("//div[@data-text='" + GameName + "']/following-sibling::div/span[contains(text(), 'Play')]"))
 				.click();
 		Thread.sleep(3000);
-
+		
 		try {
 			WebElement obj = driver.findElement(By.xpath("//button[contains(text(),'Start new game')]"));
 
@@ -184,18 +203,18 @@ public class DGBP_HSB_TestCase_23 extends Base {
 			System.out.println("Impossible to click the pop-up. Reason: " + e.toString());
 		}
 
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		Set<String> allWindows = driver.getWindowHandles();
 		int count = allWindows.size(); 
 		// System.out.println("Total window:=" + count);
 		for (String child : allWindows) {
 			if (!parent.equalsIgnoreCase(child)) {
 				driver.switchTo().window(child);
-				Thread.sleep(3000);
+				Thread.sleep(4000);
 				driver.findElement(By.xpath("//span[@class='playNowButton']")).click();
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//span[@data-numteams='2']")).click();
-				Thread.sleep(1500);
+				Thread.sleep(2000);
 				System.out.println(driver.getTitle());
 				driver.findElement(By.xpath("//*[@id='displayBuzzerOptionBack']/div[1]/div[2]/div/div/ins")).click();
 
@@ -207,29 +226,33 @@ public class DGBP_HSB_TestCase_23 extends Base {
 		
 
 				driver1 = IntilizeDriver();
+				Dimension d1 = new Dimension(1382,744);     
+				driver1.manage().window().setSize(d1); 
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 				wait1 = new WebDriverWait(driver1, 60);
 				driver1.get(prop.getProperty("joinurl"));
 				String url = driver1.getCurrentUrl();
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-				Thread.sleep(1000);
+				
+				Thread.sleep(2000);
+				//String url = driver1.getCurrentUrl();
 				if (url.equals("https://game.playfactile.com/join")) {
 					// live join button
 					driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
 				} else {
 					driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
-				}Thread.sleep(1500);
+				} Thread.sleep(2000);
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 		
 				driver.switchTo().window(driver.getWindowHandle());
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 				driver.findElement(By.xpath("//span[contains(text(),'Begin Game')]")).click();
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 				driver.findElement(By.xpath("//span[contains(text(),'Start Game')]")).click();
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 
 				int activetiles = driver.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']"))
 						.size();
@@ -250,9 +273,11 @@ public class DGBP_HSB_TestCase_23 extends Base {
 					driver1.switchTo().window(driver1.getWindowHandle());
 
 					wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
-					wait1.until(
-							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
-					driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
+					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
+					
+					WebElement ele=driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
+					JavascriptExecutor executor = (JavascriptExecutor)driver1; 
+					executor.executeScript("arguments[0].click();", ele);
 					
 					if (url.equals("https://game.playfactile.com/join")) {
 						// live join button
@@ -281,13 +306,14 @@ public class DGBP_HSB_TestCase_23 extends Base {
 				String winningTeamOnModeater = driver.findElement(By.xpath("//h1[@class='winnerTeamName']")).getText();
 				System.out.println("winner team on moderater screen= " + winningTeamOnModeater);
 				driver1.switchTo().window(driver1.getWindowHandle());
-				Thread.sleep(1500);
+				Thread.sleep(2000);
 				wait1.until(ExpectedConditions
 						.presenceOfElementLocated(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")));
 				String winningTeamOnPlayerScreen = driver1
 						.findElement(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")).getText();
 				Assert.assertEquals(winningTeamOnModeater, winningTeamOnPlayerScreen);
-				System.out.println("Skip final factile is got skiped, winner screen is coming after all gameboard questions");
+				System.out.println("final factile is skipped, winner screen is coming after all gameboard questions finished");
+		
 			
 
 			}
