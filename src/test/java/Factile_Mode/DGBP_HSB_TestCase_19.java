@@ -36,7 +36,7 @@ public class DGBP_HSB_TestCase_19 extends Base {
 	Actions act, act1, act2, act3, act4;
 
 	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_19.class.getName());
-	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
+	//private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
 	@BeforeTest
 	public void initilize() throws IOException {
@@ -132,7 +132,7 @@ public class DGBP_HSB_TestCase_19 extends Base {
 		Thread.sleep(2000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='swal-button swal-button--confirm']")));
 		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm']")).click();
-		Thread.sleep(500);		
+		Thread.sleep(2000);		
 		if (driver.findElement(By.xpath("//input[@id='playDoubleJeopardy']")).isSelected()) {
 			System.out.println("Already selected");
 		} else {
@@ -221,7 +221,7 @@ Thread.sleep(2000);
 			System.out.println("Impossible to click the pop-up. Reason: " + e.toString());
 		}
 
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		Set<String> allWindows = driver.getWindowHandles();
 		int count = allWindows.size(); 
 		// System.out.println("Total window:=" + count);
@@ -232,7 +232,7 @@ Thread.sleep(2000);
 				driver.findElement(By.xpath("//span[@class='playNowButton']")).click();
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//span[@data-numteams='2']")).click();
-				Thread.sleep(1500);
+				Thread.sleep(2000);
 				System.out.println(driver.getTitle());
 				driver.findElement(By.xpath("//*[@id='displayBuzzerOptionBack']/div[1]/div[2]/div/div/ins")).click();
 
@@ -252,25 +252,25 @@ Thread.sleep(2000);
 				wait1 = new WebDriverWait(driver1, 60);
 				driver1.get(prop.getProperty("joinurl"));
 				String url = driver1.getCurrentUrl();
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
 				
-				Thread.sleep(1500);
+				Thread.sleep(2000);
 				//String url = driver1.getCurrentUrl();
 				if (url.equals("https://game.playfactile.com/join")) {
 					// live join button
 					driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
 				} else {
 					driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
-				} Thread.sleep(1500);
+				} Thread.sleep(2000);
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 		
 				driver.switchTo().window(driver.getWindowHandle());
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 				driver.findElement(By.xpath("//span[contains(text(),'Begin Game')]")).click();
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 				driver.findElement(By.xpath("//span[contains(text(),'Start Game')]")).click();
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 
 				int activetiles = driver.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']"))
 						.size();
