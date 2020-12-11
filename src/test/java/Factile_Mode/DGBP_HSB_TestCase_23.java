@@ -41,8 +41,8 @@ public class DGBP_HSB_TestCase_23 extends Base {
 	@BeforeTest
 	public void initilize() throws IOException {
 		driver = IntilizeDriver();
-		Dimension d = new Dimension(1382,744);     
-		driver.manage().window().setSize(d); 
+		//Dimension d = new Dimension(1382,744);     
+	//	driver.manage().window().setSize(d); 
 		Log.info("Driver is Initilize");
 		driver.get(prop.getProperty("rooturl"));
 		wait = new WebDriverWait(driver, 60);
@@ -104,7 +104,7 @@ public class DGBP_HSB_TestCase_23 extends Base {
 		}  else if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
 
 			modeaterscreen();
-		//	PlayerScreen();
+			PlayerScreen();
 
 		} else {
 			System.out.println("You have not taken any subscription");
@@ -131,12 +131,12 @@ public class DGBP_HSB_TestCase_23 extends Base {
 		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm']")).click();
 		Thread.sleep(2000);
 		
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='answerFirstMode']")));
-		if (driver.findElement(By.xpath("//input[@id='answerFirstMode']")).isSelected()) {
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='wager_after_ff_question']")));
+		if (driver.findElement(By.xpath("//input[@id='wager_after_ff_question']")).isSelected()) {
 			System.out.println("Skip is already selected");
 		} else {
 			act3 = new Actions(driver);
-			act3.moveToElement(driver.findElement(By.xpath("//input[@id='answerFirstMode']"))).click().perform();
+			act3.moveToElement(driver.findElement(By.xpath("//input[@id='wager_after_ff_question']"))).click().perform();
 			
 
 		}
@@ -179,7 +179,6 @@ public class DGBP_HSB_TestCase_23 extends Base {
 		// wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='jeopardy
 		// tooltip-icon'])[2]")));
 		if (driver.findElement(By.xpath("(//span[@class='jeopardy tooltip-icon'])[2]")).isSelected()) {
-			System.out.println("already Selected");
 		} else {
 			act = new Actions(driver);
 			act.moveToElement(driver.findElement(By.xpath("(//span[@class='jeopardy tooltip-icon'])[2]"))).click()
@@ -226,8 +225,8 @@ public class DGBP_HSB_TestCase_23 extends Base {
 		
 
 				driver1 = IntilizeDriver();
-				Dimension d1 = new Dimension(1382,744);     
-				driver1.manage().window().setSize(d1); 
+				//Dimension d1 = new Dimension(1382,744);     
+				//driver1.manage().window().setSize(d1); 
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -301,18 +300,7 @@ public class DGBP_HSB_TestCase_23 extends Base {
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 					// System.out.println("value of p at end>>"+p);
 				}
-				Thread.sleep(2000);
-				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[@class='winnerTeamName']")));
-				String winningTeamOnModeater = driver.findElement(By.xpath("//h1[@class='winnerTeamName']")).getText();
-				System.out.println("winner team on moderater screen= " + winningTeamOnModeater);
-				driver1.switchTo().window(driver1.getWindowHandle());
-				Thread.sleep(2000);
-				wait1.until(ExpectedConditions
-						.presenceOfElementLocated(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")));
-				String winningTeamOnPlayerScreen = driver1
-						.findElement(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")).getText();
-				Assert.assertEquals(winningTeamOnModeater, winningTeamOnPlayerScreen);
-				System.out.println("final factile is skipped, winner screen is coming after all gameboard questions finished");
+			
 		
 			
 
