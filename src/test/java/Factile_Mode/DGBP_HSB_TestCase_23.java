@@ -187,10 +187,10 @@ public class DGBP_HSB_TestCase_23 extends Base {
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='btn finalJeopardyButton completeEditBlockFinal position-relative']")));
 		driver.findElement(By.xpath("//button[@class='btn finalJeopardyButton completeEditBlockFinal position-relative']")).click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//select[@id='ffCategory']")));
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 		Select dropCategory= new Select(driver.findElement(By.xpath("//select[@id='ffCategory']")));
 		dropCategory.selectByIndex(1);
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		String storedCategory=driver.findElement(By.xpath("//select[@id='ffCategory']//option[2]")).getText();
 		System.out.println("category>>"+storedCategory); 
 		String s1 ="CATEGORY :- ";
