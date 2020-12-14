@@ -5,8 +5,8 @@
     <classes>
       <class name="Factile_Mode.DGBP_HSB_TestCase_23">
         <methods>
-          <include name="TC_23_Verify_Display_Answer_Before_question"/>
           <include name="initilize"/>
+          <include name="TC_23_Verify_Show_Final_Factile_Category_Hint_at_Wager_Time"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Factile_Mode.DGBP_HSB_TestCase_23 -->

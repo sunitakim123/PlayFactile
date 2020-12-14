@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-11T14:40:10 IST" name="Default suite" finished-at="2020-12-11T14:48:33 IST" duration-ms="502936">
+  <suite started-at="2020-12-14T16:09:15 IST" name="Default suite" finished-at="2020-12-14T16:19:00 IST" duration-ms="584870">
     <groups>
     </groups>
-    <test started-at="2020-12-11T14:40:10 IST" name="Default test" finished-at="2020-12-11T14:48:33 IST" duration-ms="502936">
+    <test started-at="2020-12-14T16:09:15 IST" name="Default test" finished-at="2020-12-14T16:19:00 IST" duration-ms="584870">
       <class name="Factile_Mode.DGBP_HSB_TestCase_23">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_23@12f9af83]" started-at="2020-12-11T14:40:10 IST" name="initilize" finished-at="2020-12-11T14:40:17 IST" duration-ms="6591" status="PASS">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_23@12f9af83]" started-at="2020-12-14T16:09:15 IST" name="initilize" finished-at="2020-12-14T16:09:23 IST" duration-ms="7564" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="TC_23_Verify_Display_Answer_Before_question()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_23@12f9af83]" started-at="2020-12-11T14:40:17 IST" name="TC_23_Verify_Display_Answer_Before_question" finished-at="2020-12-11T14:48:33 IST" duration-ms="496321" status="PASS">
+        <test-method signature="TC_23_Verify_Show_Final_Factile_Category_Hint_at_Wager_Time()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_23@12f9af83]" started-at="2020-12-14T16:09:23 IST" name="TC_23_Verify_Show_Final_Factile_Category_Hint_at_Wager_Time" finished-at="2020-12-14T16:19:00 IST" duration-ms="577273" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_23_Verify_Display_Answer_Before_question -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_23@12f9af83]" started-at="2020-12-11T14:48:33 IST" name="tearDown" finished-at="2020-12-11T14:48:33 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- TC_23_Verify_Show_Final_Factile_Category_Hint_at_Wager_Time -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_23@12f9af83]" started-at="2020-12-14T16:19:00 IST" name="tearDown" finished-at="2020-12-14T16:19:00 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

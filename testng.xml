@@ -5,9 +5,9 @@
 </listeners>
  
   
- <test name="Display social media on moderater screen gamboard">
+ <test name="Show Final Factile Category Hint at Wager Time">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_4"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_23"/>
            </classes>
   </test> <!-- Test -->
   
