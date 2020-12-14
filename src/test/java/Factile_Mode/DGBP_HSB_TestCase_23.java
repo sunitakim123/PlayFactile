@@ -183,20 +183,22 @@ public class DGBP_HSB_TestCase_23 extends Base {
 		driver.findElement(
 				By.xpath("//div[@data-text='" + GameName + "']/following-sibling::div/span[contains(text(), 'Edit')]"))
 				.click();
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='btn finalJeopardyButton completeEditBlockFinal position-relative']")));
 		driver.findElement(By.xpath("//button[@class='btn finalJeopardyButton completeEditBlockFinal position-relative']")).click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//select[@id='ffCategory']")));
-	Select dropCategory= new Select(driver.findElement(By.xpath("//select[@id='ffCategory']")));
+		Thread.sleep(2000);
+		Select dropCategory= new Select(driver.findElement(By.xpath("//select[@id='ffCategory']")));
 		dropCategory.selectByIndex(1);
-		Thread.sleep(1500);
+		Thread.sleep(2000);
 		String storedCategory=driver.findElement(By.xpath("//select[@id='ffCategory']//option[2]")).getText();
 		System.out.println("category>>"+storedCategory); 
 		String s1 ="CATEGORY :- ";
 		String ExpectedCATEGORY =s1.concat(storedCategory);
-		
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='btn btn-success font-weight-bold btn-sm']")));
 		driver.findElement(By.xpath("//button[@class='btn btn-success font-weight-bold btn-sm']")).click();
-		
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='editHomeIcon']")));
 		driver.findElement(By.xpath("//div[@class='editHomeIcon']")).click();
 		//String storedCategory =dropCategory.selectByIndex(1).
