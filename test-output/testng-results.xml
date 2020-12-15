@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-14T16:42:10 IST" name="Default suite" finished-at="2020-12-14T16:52:09 IST" duration-ms="598569">
+  <suite started-at="2020-12-15T13:49:51 IST" name="Default suite" finished-at="2020-12-15T13:59:43 IST" duration-ms="591992">
     <groups>
     </groups>
-    <test started-at="2020-12-14T16:42:10 IST" name="Default test" finished-at="2020-12-14T16:52:09 IST" duration-ms="598569">
+    <test started-at="2020-12-15T13:49:51 IST" name="Default test" finished-at="2020-12-15T13:59:43 IST" duration-ms="591992">
       <class name="Factile_Mode.DGBP_HSB_TestCase_23">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_23@12f9af83]" started-at="2020-12-14T16:42:10 IST" name="initilize" finished-at="2020-12-14T16:42:17 IST" duration-ms="6996" status="PASS">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_23@12f9af83]" started-at="2020-12-15T13:49:51 IST" name="initilize" finished-at="2020-12-15T13:49:57 IST" duration-ms="6713" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="TC_23_Verify_Show_Final_Factile_Category_Hint_at_Wager_Time()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_23@12f9af83]" started-at="2020-12-14T16:42:18 IST" name="TC_23_Verify_Show_Final_Factile_Category_Hint_at_Wager_Time" finished-at="2020-12-14T16:52:09 IST" duration-ms="591543" status="PASS">
+        <test-method signature="TC_23_Verify_Show_Final_Factile_Category_Hint_at_Wager_Time()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_23@12f9af83]" started-at="2020-12-15T13:49:57 IST" name="TC_23_Verify_Show_Final_Factile_Category_Hint_at_Wager_Time" finished-at="2020-12-15T13:59:43 IST" duration-ms="585251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_23_Verify_Show_Final_Factile_Category_Hint_at_Wager_Time -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_23@12f9af83]" started-at="2020-12-14T16:52:09 IST" name="tearDown" finished-at="2020-12-14T16:52:09 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_23@12f9af83]" started-at="2020-12-15T13:59:43 IST" name="tearDown" finished-at="2020-12-15T13:59:43 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
