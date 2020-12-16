@@ -5,9 +5,9 @@
 </listeners>
  
   
- <test name="Show Final Factile Category Hint at Wager Time">
+ <test name="Allow multiple team to answer">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_23"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_24"/>
            </classes>
   </test> <!-- Test -->
   
