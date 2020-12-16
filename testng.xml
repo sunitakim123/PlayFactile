@@ -5,11 +5,7 @@
 </listeners>
  
   
- <test name="Show Final Factile Category Hint at Wager Time">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_23"/>
-           </classes>
-  </test> <!-- Test -->
+
   
   <test name="Allow_Multiple_Team_to_answer when Checked">
     <classes>
@@ -17,11 +13,6 @@
            </classes>
   </test> <!-- Test -->
  
-  <test name="Allow_Multiple_Team_to_answer when unChecked">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_25"/>
-           </classes>
-  </test> <!-- Test -->
  
  
 
