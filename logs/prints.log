@@ -27,3 +27,6 @@
 13:46:38.209 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_25 - Driver is Initilize
 13:46:39.268 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_25 - Navigated to homePage
 13:47:20.538 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_25 - At customization page>> >>Allow multiple user to answer is unchecked at global setting
+14:21:25.633 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_23 - Driver is Initilize
+14:21:26.814 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_23 - Navigated to homePage
+14:22:25.594 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_23 - At customization page>> >>Show Final Factile Category Hint at Wager Time is checked
