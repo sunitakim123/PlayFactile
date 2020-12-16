@@ -25,7 +25,7 @@ import org.testng.annotations.Test;
 import junit.framework.Assert;
 import resources.Base;
 
-public class DGBP_HSB_TestCase_24 extends Base {
+public class DGBP_HSB_TestCase_25 extends Base {
 	WebDriver driver;
 	WebDriver driver1;
 	WebDriver driver2;
@@ -36,7 +36,7 @@ public class DGBP_HSB_TestCase_24 extends Base {
 	WebElement ElementNotGoingToVisible;
 	Actions act, act1, act2, act3, act4;
 
-	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_24.class.getName());
+	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_25.class.getName());
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
 	@BeforeTest
@@ -52,7 +52,7 @@ public class DGBP_HSB_TestCase_24 extends Base {
 	}
 
 	@Test
-	public void TC_24_Allow_Multiple_Team_to_answer_When_checked() throws InterruptedException, IOException {
+	public void TC_24_Allow_Multiple_Team_to_answer_When_Unchecked() throws InterruptedException, IOException {
 		driver.findElement(By.cssSelector("span.loginButton")).click();
 		driver.findElement(By.id("email")).sendKeys(prop.getProperty("username"));
 		driver.findElement(By.id("password")).sendKeys(prop.getProperty("pwd"));
@@ -127,14 +127,14 @@ public class DGBP_HSB_TestCase_24 extends Base {
 		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm']")).click();
 		Thread.sleep(2000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='multipleCorrect']")));
-		if (driver.findElement(By.xpath("//input[@id='multipleCorrect']")).isSelected()) {
-			System.out.println("already selected");
+		if (!driver.findElement(By.xpath("//input[@id='multipleCorrect']")).isSelected()) {
+			System.out.println("not selectd");
 		} else {
 			act3 = new Actions(driver);
 			act3.moveToElement(driver.findElement(By.xpath("//input[@id='multipleCorrect']"))).click().perform();
 
 		}
-		Log.info("At customization page>> >>Allow multiple team to answer is checked at global setting");
+		Log.info("At customization page>> >>Allow multiple user to answer is unchecked at global setting");
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='readingTimerValue']")));
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("6");
@@ -326,20 +326,14 @@ public class DGBP_HSB_TestCase_24 extends Base {
 					driver.findElement(By.xpath("(//i[@class='fa fa-check right'])[1]")).click();
 					Thread.sleep(2000);
 					
-					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//i[@class='fa fa-check right'])[2]")));
-			WebElement secondtick	=	driver.findElement(By.xpath("(//i[@class='fa fa-check right'])[2]"));
-			Assert.assertNotNull(secondtick);
-			secondtick.click();
-					
-					
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
-					// System.out.println("value of p at end>>"+p);
+				
 				}
 		
 				driver1.switchTo().window(driver1.getWindowHandle());
-				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='moneyHolder']")));
-				String moneyvalue = driver1.findElement(By.xpath("//span[@class='moneyHolder']")).getText();
+				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='moneyHolder'])[3]")));
+				String moneyvalue = driver1.findElement(By.xpath("(//span[@class='moneyHolder'])[3]")).getText();
 				System.out.println("moneyholder:=" + moneyvalue); 
 				 
 				
@@ -354,8 +348,8 @@ public class DGBP_HSB_TestCase_24 extends Base {
 					driver1.findElement(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")).click();
 				}
 				driver2.switchTo().window(driver2.getWindowHandle());
-				wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='moneyHolder']")));
-				String moneyvalue1 = driver2.findElement(By.xpath("//span[@class='moneyHolder']")).getText();
+				wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='moneyHolder'])[3]")));
+				String moneyvalue1 = driver2.findElement(By.xpath("(//span[@class='moneyHolder'])[3]")).getText();
 				System.out.println("moneyholder1:=" + moneyvalue1); 
 				 
 				
@@ -427,17 +421,18 @@ public class DGBP_HSB_TestCase_24 extends Base {
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 				driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 				Thread.sleep(2000);
-				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='andTheWinnerIs']/div[2]/h2[@class='winnerTopHeader']")));
-				String winningTeamOnModeater = driver.findElement(By.xpath("//div[@id='andTheWinnerIs']/div[2]/h2[@class='winnerTopHeader']")).getText();
+				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[@class='winnerTeamName']")));
+				String winningTeamOnModeater = driver.findElement(By.xpath("//h1[@class='winnerTeamName']")).getText();
 				System.out.println("winningTeamOnModeater>>"+winningTeamOnModeater);
 				Thread.sleep(2000);
 				
 				driver1.switchTo().window(driver1.getWindowHandle());
 				wait1.until(ExpectedConditions
-						.presenceOfElementLocated(By.xpath("//div[@class='WinnerScreen-winner-top-header']")));
+						.presenceOfElementLocated(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")));
 				String winningTeamOnPlayerScreen = driver1
-						.findElement(By.xpath("//div[@class='WinnerScreen-winner-top-header']")).getText();
+						.findElement(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")).getText();
 				System.out.println("winningTeamOnPlayerScreen>>"+winningTeamOnPlayerScreen);
+				System.out.println("Allow multiple user to answer is working fine when unchecked at global setting" );
 				Assert.assertEquals(winningTeamOnModeater, winningTeamOnPlayerScreen); 
 			}}
 		 
