@@ -52,7 +52,7 @@ public class DGBP_HSB_TestCase_24 extends Base {
 	}
 
 	@Test
-	public void TC_24_Verify_Show_Final_Factile_Category_Hint_at_Wager_Time() throws InterruptedException, IOException {
+	public void TC_24_Allow_Multiple_Team_to_answer() throws InterruptedException, IOException {
 		driver.findElement(By.cssSelector("span.loginButton")).click();
 		driver.findElement(By.id("email")).sendKeys(prop.getProperty("username"));
 		driver.findElement(By.id("password")).sendKeys(prop.getProperty("pwd"));
