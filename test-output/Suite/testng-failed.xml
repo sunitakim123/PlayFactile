@@ -4,26 +4,15 @@
   <listeners>
     <listener class-name="Factile_Mode.Listeners1"/>
   </listeners>
-  <test thread-count="5" name="Verify Double factile(failed)">
+  <test thread-count="5" name="Show Final Factile Category Hint at Wager Time(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_19">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_23">
         <methods>
           <include name="initilize"/>
-          <include name="tearDown"/>
-          <include name="TC_19_Verify_Double_Factile"/>
-        </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_19 -->
-    </classes>
-  </test> <!-- Verify Double factile(failed) -->
-  <test thread-count="5" name="Verify Skip final factile(failed)">
-    <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_22">
-        <methods>
-          <include name="TC_22_Verify_Skip_Final_Factile"/>
-          <include name="initilize"/>
+          <include name="TC_23_Verify_Show_Final_Factile_Category_Hint_at_Wager_Time"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_22 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_23 -->
     </classes>
-  </test> <!-- Verify Skip final factile(failed) -->
+  </test> <!-- Show Final Factile Category Hint at Wager Time(failed) -->
 </suite> <!-- Failed suite [Suite] -->

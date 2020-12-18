@@ -99,16 +99,12 @@ public class DGBP_HSB_TestCase_23 extends Base {
 				By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")));
 		driver.findElement(
 				By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")).click();
-		Thread.sleep(2000);
-		String url1 = driver.getCurrentUrl();
-		if (url1.equalsIgnoreCase("https://www.playfactile.com/customize")) {
+		Thread.sleep(2000);		
+		
 			wait.until(ExpectedConditions
 					.presenceOfElementLocated(By.xpath("//button[@class='swal-button swal-button--confirm']")));
 			driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm']")).click();
-			Thread.sleep(2000);
-		} else {
-			System.out.println("not present");
-		}
+			
 		Thread.sleep(2000);
 		wait.until(ExpectedConditions
 				.elementToBeClickable(By.xpath("(//span[@class='resetToDefault resetCustomizations'])[6]")));
@@ -152,6 +148,18 @@ public class DGBP_HSB_TestCase_23 extends Base {
 			act1 = new Actions(driver);
 			act1.moveToElement(driver.findElement(By.xpath("//input[@id='enterAnserBuzz']"))).click().perform();
 		}
+	/*	if (driver.findElement(By.xpath("//input[@id='customNotification']")).isSelected()) {
+
+		} else {
+			act1 = new Actions(driver);
+			act1.moveToElement(driver.findElement(By.xpath("//input[@id='customNotification']"))).click().perform();
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@id='customNotificationText']")));
+			driver.findElement(By.xpath("//textarea[@id='customNotificationText']")).sendKeys("global notification is on");
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@type='submit']")));
+			driver.findElement(By.xpath("//input[@type='submit']")).click();
+		}*/
+		
+		
 
 	}
 
@@ -243,12 +251,9 @@ public class DGBP_HSB_TestCase_23 extends Base {
 
 				Thread.sleep(2000);
 				// String url = driver1.getCurrentUrl();
-				if (url.equals("https://game.playfactile.com/join")) {
-					// live join button
+				
 					driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
-				} else {
-					driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
-				}
+				
 				Thread.sleep(2000);
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 
@@ -262,7 +267,7 @@ public class DGBP_HSB_TestCase_23 extends Base {
 				int activetiles = driver.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']"))
 						.size();
 				System.out.println("total active tiles in first game>>" + activetiles);
-
+				Thread.sleep(2000);
 				for (int p = 1; p <= activetiles; p++) {
 
 					System.out.println("value of p>>" + p);

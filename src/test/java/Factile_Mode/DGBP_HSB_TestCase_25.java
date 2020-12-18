@@ -102,16 +102,11 @@ public class DGBP_HSB_TestCase_25 extends Base {
 				By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")));
 		driver.findElement(
 				By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")).click();
-		Thread.sleep(2000);
-		String url1 = driver.getCurrentUrl();
-		if (url1.equalsIgnoreCase("https://www.playfactile.com/customize")) {
+		Thread.sleep(2000);		
+		
 			wait.until(ExpectedConditions
 					.presenceOfElementLocated(By.xpath("//button[@class='swal-button swal-button--confirm']")));
 			driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm']")).click();
-			Thread.sleep(2000);
-		} else {
-			System.out.println("not present");
-		}
 		Thread.sleep(2000);
 		wait.until(ExpectedConditions
 				.elementToBeClickable(By.xpath("(//span[@class='resetToDefault resetCustomizations'])[6]")));
@@ -432,7 +427,7 @@ public class DGBP_HSB_TestCase_25 extends Base {
 				String winningTeamOnPlayerScreen = driver1
 						.findElement(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")).getText();
 				System.out.println("winningTeamOnPlayerScreen>>"+winningTeamOnPlayerScreen);
-				System.out.println("Allow multiple user to answer is working fine when unchecked at global setting" );
+				System.out.println("Allow multiple user to answer is not working  when unchecked at global setting" );
 				Assert.assertEquals(winningTeamOnModeater, winningTeamOnPlayerScreen); 
 			}}
 		 
