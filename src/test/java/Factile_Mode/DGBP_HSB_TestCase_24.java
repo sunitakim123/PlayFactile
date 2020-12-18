@@ -202,8 +202,8 @@ public class DGBP_HSB_TestCase_24 extends Base {
 		
 
 				driver1 = IntilizeDriver();
-				//Dimension d1 = new Dimension(1382,744);     
-				//driver1.manage().window().setSize(d1); 
+				Dimension d1 = new Dimension(1382,744);     
+				driver1.manage().window().setSize(d1); 
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -228,8 +228,8 @@ public class DGBP_HSB_TestCase_24 extends Base {
 				Thread.sleep(2000);
 			
 				driver2 = IntilizeDriver();
-				//Dimension d1 = new Dimension(1382,744);     
-				//driver1.manage().window().setSize(d1); 
+				Dimension d2 = new Dimension(1382,744);     
+				driver2.manage().window().setSize(d2); 
 				driver2.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver2.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				driver2.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

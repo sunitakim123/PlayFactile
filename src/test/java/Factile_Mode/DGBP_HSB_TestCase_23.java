@@ -238,8 +238,8 @@ public class DGBP_HSB_TestCase_23 extends Base {
 				System.out.println(i);// System.out.println(driver.getTitle());
 
 				driver1 = IntilizeDriver();
-				// Dimension d1 = new Dimension(1382,744);
-				// driver1.manage().window().setSize(d1);
+				 Dimension d1 = new Dimension(1382,744);
+				 driver1.manage().window().setSize(d1);
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -316,6 +316,7 @@ public class DGBP_HSB_TestCase_23 extends Base {
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 					// System.out.println("value of p at end>>"+p);
 				}
+				Thread.sleep(2000);
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@id='ffCategoryHint']")));
 				String acutalCATEGORY = driver.findElement(By.xpath("//span[@id='ffCategoryHint']")).getText();
 
