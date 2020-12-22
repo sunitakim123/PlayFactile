@@ -5,7 +5,7 @@
     <classes>
       <class name="Factile_Mode.DGBP_HSB_TestCase_26">
         <methods>
-          <include name="TC_26_Allow_Multiple_Team_to_answer_When_checked"/>
+          <include name="TC_26_Users_Can_Join_Buzzer_Mode_after_Game_Begins_When_checked"/>
           <include name="initilize"/>
           <include name="tearDown"/>
         </methods>

@@ -1,42 +1,6 @@
-15:05:00.904 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Driver is Initilize
-15:05:01.828 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Navigated to homePage
-15:05:23.734 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - At customization page>> >>Allow multiple team to answer is checked at global setting
-15:14:03.937 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Driver is Initilize
-15:14:04.771 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Navigated to homePage
-15:14:25.967 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - At customization page>> >>Allow multiple team to answer is checked at global setting
-15:21:03.618 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Driver is Initilize
-15:21:05.153 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Navigated to homePage
-15:21:27.625 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - At customization page>> >>Allow multiple team to answer is checked at global setting
-15:28:49.893 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Driver is Initilize
-15:28:51.042 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Navigated to homePage
-15:29:12.509 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - At customization page>> >>Allow multiple team to answer is checked at global setting
-15:38:07.399 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Driver is Initilize
-15:38:08.513 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Navigated to homePage
-15:38:30.107 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - At customization page>> >>Allow multiple team to answer is checked at global setting
-15:52:35.101 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Driver is Initilize
-15:52:36.038 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Navigated to homePage
-15:52:58.441 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - At customization page>> >>Allow multiple team to answer is checked at global setting
-15:56:15.140 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Driver is Initilize
-15:56:16.235 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Navigated to homePage
-15:56:56.636 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - At customization page>> >>Allow multiple team to answer is checked at global setting
-18:44:34.859 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_25 - Driver is Initilize
-18:44:35.824 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_25 - Navigated to homePage
-18:44:57.423 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_25 - At customization page>> >>Allow multiple user to answer is unchecked at global setting
-19:09:56.784 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_23 - Driver is Initilize
-19:09:58.194 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_23 - Navigated to homePage
-19:10:20.325 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_23 - At customization page>> >>Show Final Factile Category Hint at Wager Time is checked
-19:19:51.276 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_24 - Driver is Initilize
-19:19:52.642 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_24 - Navigated to homePage
-19:20:15.299 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_24 - At customization page>> >>Allow multiple team to answer is checked at global setting
-19:30:16.380 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_25 - Driver is Initilize
-19:30:17.408 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_25 - Navigated to homePage
-19:30:38.784 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_25 - At customization page>> >>Allow multiple user to answer is unchecked at global setting
-20:12:07.561 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_23 - Driver is Initilize
-20:12:09.002 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_23 - Navigated to homePage
-20:12:30.009 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_23 - At customization page>> >>Show Final Factile Category Hint at Wager Time is checked
-20:22:01.849 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_24 - Driver is Initilize
-20:22:02.639 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_24 - Navigated to homePage
-20:22:23.985 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_24 - At customization page>> >>Allow multiple team to answer is checked at global setting
-20:33:24.234 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_25 - Driver is Initilize
-20:33:25.148 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_25 - Navigated to homePage
-20:33:47.240 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_25 - At customization page>> >>Allow multiple user to answer is unchecked at global setting
+16:16:38.359 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Driver is Initilize
+16:16:39.293 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Navigated to homePage
+16:17:00.446 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins is checked
+16:27:29.923 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Driver is Initilize
+16:27:31.543 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Navigated to homePage
+16:27:52.473 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins is checked

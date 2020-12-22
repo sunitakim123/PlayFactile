@@ -4,22 +4,11 @@
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
  
-  
- <test name="Show Final Factile Category Hint at Wager Time">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_23"/>
-           </classes>
-  </test> <!-- Test -->
-  
-  <test name="Allow_Multiple_Team_to_answer when Checked">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_24"/>
-           </classes>
-  </test> <!-- Test -->
+
  
-  <test name="Allow_Multiple_Team_to_answer when unChecked">
+  <test name="Verify Users Can Join Buzzer Mode after Game Begins">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_25"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_26"/>
            </classes>
   </test> <!-- Test -->
  

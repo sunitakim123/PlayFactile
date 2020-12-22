@@ -4,6 +4,17 @@
   <listeners>
     <listener class-name="Factile_Mode.Listeners1"/>
   </listeners>
+  <test thread-count="5" name="Verify Double factile(failed)">
+    <classes>
+      <class name="Factile_Mode.DGBP_HSB_TestCase_19">
+        <methods>
+          <include name="initilize"/>
+          <include name="tearDown"/>
+          <include name="TC_19_Verify_Double_Factile"/>
+        </methods>
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_19 -->
+    </classes>
+  </test> <!-- Verify Double factile(failed) -->
   <test thread-count="5" name="Show Final Factile Category Hint at Wager Time(failed)">
     <classes>
       <class name="Factile_Mode.DGBP_HSB_TestCase_23">
@@ -15,4 +26,26 @@
       </class> <!-- Factile_Mode.DGBP_HSB_TestCase_23 -->
     </classes>
   </test> <!-- Show Final Factile Category Hint at Wager Time(failed) -->
+  <test thread-count="5" name="Allow_Multiple_Team_to_answer when Checked(failed)">
+    <classes>
+      <class name="Factile_Mode.DGBP_HSB_TestCase_24">
+        <methods>
+          <include name="tearDown"/>
+          <include name="TC_24_Allow_Multiple_Team_to_answer_When_checked"/>
+          <include name="initilize"/>
+        </methods>
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_24 -->
+    </classes>
+  </test> <!-- Allow_Multiple_Team_to_answer when Checked(failed) -->
+  <test thread-count="5" name="Allow_Multiple_Team_to_answer when unChecked(failed)">
+    <classes>
+      <class name="Factile_Mode.DGBP_HSB_TestCase_25">
+        <methods>
+          <include name="initilize"/>
+          <include name="tearDown"/>
+          <include name="TC_25_Allow_Multiple_Team_to_answer_When_Unchecked"/>
+        </methods>
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_25 -->
+    </classes>
+  </test> <!-- Allow_Multiple_Team_to_answer when unChecked(failed) -->
 </suite> <!-- Failed suite [Suite] -->

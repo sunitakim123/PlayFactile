@@ -54,6 +54,7 @@ public class DGBP_HSB_TestCase_22 extends Base {
 	public void TC_22_Verify_Skip_Final_Factile() throws InterruptedException, IOException {
 		driver.findElement(By.cssSelector("span.loginButton")).click();
 		driver.findElement(By.id("email")).sendKeys(prop.getProperty("username"));
+		
 		driver.findElement(By.id("password")).sendKeys(prop.getProperty("pwd"));
 		driver.findElement(By.cssSelector("input.accountActionButton")).click();
 		Thread.sleep(3000);
@@ -279,18 +280,12 @@ public class DGBP_HSB_TestCase_22 extends Base {
 					JavascriptExecutor executor = (JavascriptExecutor)driver1; 
 					executor.executeScript("arguments[0].click();", ele);
 					
-					if (url.equals("https://game.playfactile.com/join")) {
-						// live join button
+					
 						wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
 						driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
-						wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")));
-						driver1.findElement(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")).click();
-					} else {
-						wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
-						driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");	
 						wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 						driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
-					}
+				
 					// driver.switchTo().window(driver.getWindowHandle());
 					driver.switchTo().window(driver.getWindowHandle());
 					Thread.sleep(2000);

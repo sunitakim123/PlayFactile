@@ -275,18 +275,12 @@ public class DGBP_HSB_TestCase_17 extends Base {
 				JavascriptExecutor executor = (JavascriptExecutor)driver1; 
 				executor.executeScript("arguments[0].click();", ele);
 				Thread.sleep(1000);
-				if (url.equals("https://game.playfactile.com/join")) {
-					// live join button
+			
 					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
 					driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
-					wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")));
-					driver1.findElement(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")).click();
-				} else {
-					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
-					driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");	
 					wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
-				}
+			
 				driver.switchTo().window(driver.getWindowHandle());
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
 				driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();

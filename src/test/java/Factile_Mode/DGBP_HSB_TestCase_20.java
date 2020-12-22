@@ -305,34 +305,14 @@ public class DGBP_HSB_TestCase_20 extends Base {
 					wait1.until(
 							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 					driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
-					if (url.equals("https://game.playfactile.com/join")) {
-						// live enter answer text box
+					
 						wait1.until(ExpectedConditions
 								.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
 						driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
 						wait1.until(ExpectedConditions.elementToBeClickable(
-								By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")));
-						driver1.findElement(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")).click();
-					} else {
-						if (url.equals("https://game.playfactile.com/join")) {
-							// live join button
-							wait1.until(ExpectedConditions
-									.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
-							driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
-							wait1.until(ExpectedConditions.elementToBeClickable(
-									By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")));
-							driver1.findElement(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']"))
-									.click();
-						} else {
-							wait1.until(ExpectedConditions
-									.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
-							driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");
-							wait1.until(ExpectedConditions.elementToBeClickable(
-									By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
-							driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']"))
-									.click();
-						}
-					}
+								By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+						driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+					
 					driver.switchTo().window(driver.getWindowHandle());
 					Thread.sleep(2000);
 					wait.until(

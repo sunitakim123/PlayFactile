@@ -52,7 +52,7 @@ public class DGBP_HSB_TestCase_26 extends Base {
 	}
 
 	@Test
-	public void TC_26_Allow_Multiple_Team_to_answer_When_checked() throws InterruptedException, IOException {
+	public void TC_26_Users_Can_Join_Buzzer_Mode_after_Game_Begins_When_checked() throws InterruptedException, IOException {
 		driver.findElement(By.cssSelector("span.loginButton")).click();
 		driver.findElement(By.id("email")).sendKeys(prop.getProperty("username"));
 		driver.findElement(By.id("password")).sendKeys(prop.getProperty("pwd"));
@@ -88,8 +88,9 @@ public class DGBP_HSB_TestCase_26 extends Base {
 		 driver.quit();
 		 driver2.switchTo().window(driver2.getWindowHandle());
 		 driver2.quit();
+	driver3.switchTo().window(driver3.getWindowHandle());
+	driver3.quit();
 	}
-	
 
 	public void modeaterscreen() throws InterruptedException {
 		driver.findElement(By.id("customize")).click();
@@ -129,7 +130,17 @@ public class DGBP_HSB_TestCase_26 extends Base {
 			act3.moveToElement(driver.findElement(By.xpath("//input[@id='multipleCorrect']"))).click().perform();
 
 		}
-		Log.info("At customization page>> >>Allow multiple team to answer is checked at global setting");
+		
+		if (driver.findElement(By.xpath("//input[@id='allowUserToJoinAfterBeginGameInBuzz']")).isSelected()) {
+			System.out.println("already selected");
+		} else {
+			act3 = new Actions(driver);
+			act3.moveToElement(driver.findElement(By.xpath("//input[@id='allowUserToJoinAfterBeginGameInBuzz']"))).click().perform();
+
+		}
+		
+		
+		Log.info("At customization page>> >>Users Can Join Buzzer Mode after Game Begins is checked");
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='readingTimerValue']")));
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("6");
@@ -306,6 +317,9 @@ public class DGBP_HSB_TestCase_26 extends Base {
 							wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='btn btn-success completeModal']")));
 							driver.findElement(By.xpath("//button[@class='btn btn-success completeModal']")).click();
 							Thread.sleep(2000);
+							WebElement ThirdUser=driver.findElement(By.xpath("(//div[@class='characterPodium'])[3]"));
+							Assert.assertNotNull(allWindows);
+							System.out.println("New user has joined the game successfully");
 							
 						}
 						
@@ -321,19 +335,12 @@ public class DGBP_HSB_TestCase_26 extends Base {
 					WebElement ele=driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
 					JavascriptExecutor executor = (JavascriptExecutor)driver1; 
 					executor.executeScript("arguments[0].click();", ele);
-					
-				if (url.equals("https://game.playfactile.com/join")) {
-						// live join button
+				
 						wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
 						driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
-						wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")));
-						driver1.findElement(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")).click();
-					} else {
-						wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
-						driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");	
 						wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 						driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
-					} 
+					
 					driver2.switchTo().window(driver2.getWindowHandle());
 					//wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
 					wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
@@ -342,17 +349,27 @@ public class DGBP_HSB_TestCase_26 extends Base {
 					JavascriptExecutor executor1 = (JavascriptExecutor)driver2; 
 					executor1.executeScript("arguments[0].click();", ele1);
 					
-					if (url.equals("https://game.playfactile.com/join")) {
-						// live join button
+					
 						wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
 						driver2.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
-						wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")));
-						driver2.findElement(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")).click();
-					} else {
-						wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
-						driver2.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");	
 						wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 						driver2.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+						
+					if(p>=2)
+					{driver3.switchTo().window(driver3.getWindowHandle());
+					//wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
+					wait3.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
+					
+					WebElement ele3=driver3.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
+					JavascriptExecutor executor3 = (JavascriptExecutor)driver3; 
+					executor3.executeScript("arguments[0].click();", ele3);
+					
+					
+						wait3.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
+						driver3.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
+						wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+						driver3.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+						
 					}
 									
 					
@@ -363,14 +380,20 @@ public class DGBP_HSB_TestCase_26 extends Base {
 					Thread.sleep(2000);
 					
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//i[@class='fa fa-check right'])[2]")));
-			WebElement secondtick	=	driver.findElement(By.xpath("(//i[@class='fa fa-check right'])[2]"));
-			Assert.assertNotNull(secondtick);
-			secondtick.click();
+					driver.findElement(By.xpath("(//i[@class='fa fa-check right'])[2]")).click();
 					
-					
+					if(p>=2)
+					{
+						wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//i[@class='fa fa-check right'])[3]")));
+						driver.findElement(By.xpath("(//i[@class='fa fa-check right'])[3]")).click();
+					}
+			
+			Thread.sleep(2000);
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 					// System.out.println("value of p at end>>"+p);
+					
+					
 				}
 		
 				driver1.switchTo().window(driver1.getWindowHandle());
@@ -381,14 +404,10 @@ public class DGBP_HSB_TestCase_26 extends Base {
 				
 				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='wagerInput']")));
 				driver1.findElement(By.xpath("//input[@class='wagerInput']")).sendKeys(moneyvalue);
-				if (url.equals("https://game.playfactile.com/join")) {
-					// subbmit wager button
-					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='wagerPlayBtn btn--inside uppercase']")));
-					driver1.findElement(By.xpath("//button[@class='wagerPlayBtn btn--inside uppercase']")).click();
-				} else {
+				
 					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")));
 					driver1.findElement(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")).click();
-				}
+				
 				driver2.switchTo().window(driver2.getWindowHandle());
 				wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='moneyHolder']")));
 				String moneyvalue1 = driver2.findElement(By.xpath("//span[@class='moneyHolder']")).getText();
@@ -397,15 +416,29 @@ public class DGBP_HSB_TestCase_26 extends Base {
 				
 				wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='wagerInput']")));
 				driver2.findElement(By.xpath("//input[@class='wagerInput']")).sendKeys(moneyvalue1);
-				if (url.equals("https://game.playfactile.com/join")) {
-					// subbmit wager button
-					wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='wagerPlayBtn btn--inside uppercase']")));
-					driver2.findElement(By.xpath("//button[@class='wagerPlayBtn btn--inside uppercase']")).click();
-				} else {
+				
 					wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")));
 					driver2.findElement(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")).click();
-				}
-				
+					
+					
+					
+					
+					
+					driver3.switchTo().window(driver3.getWindowHandle());
+					wait3.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='moneyHolder'])[3]")));
+					String moneyvalue3 = driver3.findElement(By.xpath("(//span[@class='moneyHolder'])[3]")).getText();
+					System.out.println("moneyholder3:=" + moneyvalue3); 
+					 
+					
+					wait3.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='wagerInput']")));
+					driver3.findElement(By.xpath("//input[@class='wagerInput']")).sendKeys(moneyvalue3);
+					
+					wait3.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")));
+						driver3.findElement(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")).click();
+					
+					
+					
+					
 				driver.switchTo().window(driver.getWindowHandle());
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@id='playFinalJeopardy']")));
 				driver.findElement(By.xpath("//span[@id='playFinalJeopardy']")).click();
@@ -416,19 +449,13 @@ public class DGBP_HSB_TestCase_26 extends Base {
 				WebElement ele=driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
 				JavascriptExecutor executor = (JavascriptExecutor)driver1; 
 				executor.executeScript("arguments[0].click();", ele);
-				if (url.equals("https://game.playfactile.com/join")) {
-					// live join button
+			
 					driver1.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
 					driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
-					wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")));
-					driver1.findElement(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")).click();
-				} else {
-					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
-					driver1.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");	
 					wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
-				}
+				
 
 
 				driver2.switchTo().window(driver2.getWindowHandle());
@@ -438,19 +465,13 @@ public class DGBP_HSB_TestCase_26 extends Base {
 				WebElement ele2=driver2.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
 				JavascriptExecutor executor2 = (JavascriptExecutor)driver2; 
 				executor2.executeScript("arguments[0].click();", ele2);
-				if (url.equals("https://game.playfactile.com/join")) {
-					// live join button
+				
 					driver2.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 					wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
 					driver2.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
-					wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")));
-					driver2.findElement(By.xpath("//button[@class='ansSubmitBtn btn--inside uppercase']")).click();
-				} else {
-					wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Enter Answer']")));
-					driver2.findElement(By.xpath("//input[@placeholder='Enter Answer']")).sendKeys("test");	
 					wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 					driver2.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
-				}
+				
 				
 				driver.switchTo().window(driver.getWindowHandle());
 				wait.until(
@@ -459,6 +480,12 @@ public class DGBP_HSB_TestCase_26 extends Base {
 				wait.until(
 						ExpectedConditions.presenceOfElementLocated(By.xpath("(//i[@class='fa fa-check right'])[2]")));
 				driver.findElement(By.xpath("(//i[@class='fa fa-check right'])[2]")).click();
+				
+				
+				wait.until(
+						ExpectedConditions.presenceOfElementLocated(By.xpath("(//i[@class='fa fa-check right'])[3]")));
+				driver.findElement(By.xpath("(//i[@class='fa fa-check right'])[3]")).click();
+				
 				
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 				driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
