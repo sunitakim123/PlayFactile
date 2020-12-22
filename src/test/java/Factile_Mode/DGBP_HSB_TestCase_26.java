@@ -268,7 +268,10 @@ public class DGBP_HSB_TestCase_26 extends Base {
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//span[contains(text(),'Start Game')]")).click();
 				Thread.sleep(2000);
-
+				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='selectGamePodiumCandidate']")));
+				String pinvisibleOnModraterScreen=driver.findElement(By.xpath("//span[@class='selectGamePodiumCandidate']")).getText();
+			Assert.assertEquals(i, pinvisibleOnModraterScreen);
+			System.out.println("Pin is visible on moderater screen");
 				int activetiles = driver.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']"))
 						.size();
 				System.out.println("total active tiles in first game>>" + activetiles);
@@ -393,7 +396,7 @@ public class DGBP_HSB_TestCase_26 extends Base {
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 					// System.out.println("value of p at end>>"+p);
 					
-					
+					Thread.sleep(2000);
 				}
 		
 				driver1.switchTo().window(driver1.getWindowHandle());
