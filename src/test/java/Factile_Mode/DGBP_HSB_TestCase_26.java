@@ -475,6 +475,22 @@ public class DGBP_HSB_TestCase_26 extends Base {
 					wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 					driver2.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
 				
+					driver3.switchTo().window(driver3.getWindowHandle());
+					
+					//wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
+					wait3.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
+					WebElement ele3=driver2.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
+					JavascriptExecutor executor3 = (JavascriptExecutor)driver3; 
+					executor3.executeScript("arguments[0].click();", ele3);
+					
+						driver3.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+						wait3.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
+						driver3.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
+						wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+						driver3.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+					
+					
+					
 				
 				driver.switchTo().window(driver.getWindowHandle());
 				wait.until(
