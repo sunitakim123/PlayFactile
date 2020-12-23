@@ -122,4 +122,10 @@
            </classes>
   </test> <!-- Test -->
  
+  <test name="Verify Users Can Join Buzzer Mode after Game Begins">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_26"/>
+           </classes>
+  </test> <!-- Test -->
+ 
 </suite> <!-- Suite -->

@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-22T17:56:09 IST" name="Default suite" finished-at="2020-12-22T18:07:20 IST" duration-ms="670825">
+  <suite started-at="2020-12-23T15:01:12 IST" name="Default suite" finished-at="2020-12-23T15:11:24 IST" duration-ms="612181">
     <groups>
     </groups>
-    <test started-at="2020-12-22T17:56:09 IST" name="Default test" finished-at="2020-12-22T18:07:20 IST" duration-ms="670825">
-      <class name="Factile_Mode.DGBP_HSB_TestCase_26">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_26@12f9af83]" started-at="2020-12-22T17:56:09 IST" name="initilize" finished-at="2020-12-22T17:56:16 IST" duration-ms="6749" status="PASS">
+    <test started-at="2020-12-23T15:01:12 IST" name="Default test" finished-at="2020-12-23T15:11:24 IST" duration-ms="612181">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_27">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_27@2e1ef60]" started-at="2020-12-23T15:01:12 IST" name="initilize" finished-at="2020-12-23T15:01:22 IST" duration-ms="10137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="TC_26_Users_Can_Join_Buzzer_Mode_after_Game_Begins_When_checked()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_26@12f9af83]" started-at="2020-12-22T17:56:16 IST" name="TC_26_Users_Can_Join_Buzzer_Mode_after_Game_Begins_When_checked" finished-at="2020-12-22T18:07:12 IST" duration-ms="655465" status="PASS">
+        <test-method signature="TC_27_Users_Can_Join_Buzzer_Mode_after_Game_Begins_When_checked()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_27@2e1ef60]" started-at="2020-12-23T15:01:22 IST" name="TC_27_Users_Can_Join_Buzzer_Mode_after_Game_Begins_When_checked" finished-at="2020-12-23T15:11:24 IST" duration-ms="601987" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_26_Users_Can_Join_Buzzer_Mode_after_Game_Begins_When_checked -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_26@12f9af83]" started-at="2020-12-22T18:07:12 IST" name="tearDown" finished-at="2020-12-22T18:07:20 IST" duration-ms="8582" status="PASS">
+        </test-method> <!-- TC_27_Users_Can_Join_Buzzer_Mode_after_Game_Begins_When_checked -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_27@2e1ef60]" started-at="2020-12-23T15:11:24 IST" name="tearDown" finished-at="2020-12-23T15:11:24 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_26 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_27 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
