@@ -85,13 +85,13 @@ public class DGBP_HSB_TestCase_28 extends Base {
 	@AfterTest
 	public void tearDown() throws InterruptedException {
 
-		//driver1.quit();
-	//	driver.switchTo().window(driver.getWindowHandle());
-	//	driver.quit();
-		//driver2.switchTo().window(driver2.getWindowHandle());
-		//driver2.quit();
-		//driver3.switchTo().window(driver3.getWindowHandle());
-	//	driver3.quit();
+		driver1.quit();
+		driver.switchTo().window(driver.getWindowHandle());
+		driver.quit();
+	driver2.switchTo().window(driver2.getWindowHandle());
+		driver2.quit();
+		driver3.switchTo().window(driver3.getWindowHandle());
+		driver3.quit();
 	}
 
 	public void modeaterscreen() throws InterruptedException {
