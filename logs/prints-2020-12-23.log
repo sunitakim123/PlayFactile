@@ -1,51 +1,51 @@
-11:17:15.054 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_25 - Navigated to homePage
-11:17:37.187 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_25 - At customization page>> >>Allow multiple user to answer is unchecked at global setting
-11:22:25.086 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Driver is Initilize
-11:22:25.934 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Navigated to homePage
-11:22:48.488 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins is Unchecked
-11:26:29.520 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Driver is Initilize
-11:26:30.911 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Navigated to homePage
-11:26:51.857 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins is Unchecked
-11:43:10.218 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Driver is Initilize
-11:43:11.066 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Navigated to homePage
-11:43:32.492 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins is Unchecked
-11:44:47.925 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Driver is Initilize
-11:44:49.656 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Navigated to homePage
-11:45:30.825 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins is Unchecked
-11:51:04.856 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Driver is Initilize
-11:51:05.737 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Navigated to homePage
-11:51:29.404 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins is Unchecked
-12:06:47.232 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Driver is Initilize
-12:06:48.124 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Navigated to homePage
-12:07:10.872 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins is Unchecked
-12:21:51.859 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Driver is Initilize
-12:21:52.695 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Navigated to homePage
-12:22:14.077 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins is Unchecked
-12:27:36.268 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Driver is Initilize
-12:27:36.989 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Navigated to homePage
-12:28:00.873 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins is Unchecked
-12:34:51.441 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
-12:34:52.900 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
-12:36:35.432 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Driver is Initilize
-12:36:36.717 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - Navigated to homePage
-12:37:21.422 [main] INFO  Factile_Mode.DGBM_B_TestCase_1 - You have not taken any subscription
-12:37:35.274 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Driver is Initilize
-12:37:36.971 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - Navigated to homePage
-12:38:24.859 [main] INFO  Factile_Mode.DGBP_B_TestCase_2 - You have not taken any subscription
-12:38:35.538 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Driver is Initilize
-12:40:00.195 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_3 - Navigated to homePage
-12:40:45.439 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - Driver is Initilize
-12:41:02.887 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - Navigated to homePage
-12:44:17.208 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - When unchecked from customization setting>>Twitter link is displaying
-12:44:17.208 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - When unchecked from customization setting>>Pintrest link is displaying
-12:45:18.558 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_5 - Driver is Initilize
-12:47:07.721 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_5 - Navigated to homePage
-12:50:39.250 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Driver is Initilize
-12:50:40.779 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Navigated to homePage
-12:52:17.062 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins is checked
-13:04:18.846 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Driver is Initilize
-13:04:19.638 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Navigated to homePage
-13:04:40.856 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins is checked
-13:15:52.703 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Driver is Initilize
-13:15:53.576 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Navigated to homePage
-13:16:14.984 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins is Unchecked
+18:30:12.116 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_5 - Navigated to homePage
+18:32:11.800 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_5 - SMO(Twiiter & Pintrest) Links not present on gameboard at moderater screen
+18:32:18.599 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - Driver is Initilize
+18:32:19.445 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - Navigated to homePage
+18:32:35.621 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - At customization page>> UnCheck display exact case>> 
+18:33:29.114 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - when unchecked from customization setting>>Exact case is not displayed
+18:33:35.915 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Driver is Initilize
+18:33:36.691 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Navigated to homePage
+18:33:52.463 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - At customization page>> UnCheck display exact case>> 
+18:35:44.463 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - when Checked from customization setting>>Exact case is  displayed
+18:35:51.346 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - Driver is Initilize
+18:35:52.263 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - Navigated to homePage
+18:36:06.671 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - At customization page>> UnCheck Hide Category with Points>> 
+18:36:56.323 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - category with points is =CAT1 FOR 100
+18:37:03.095 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+18:37:04.024 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+18:37:18.492 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
+18:38:10.279 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Hide category with points is working fine
+18:38:17.131 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - Driver is Initilize
+18:38:17.882 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - Navigated to homePage
+18:38:31.205 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - At customization page>> Check Diaplay Answer button>> 
+18:39:41.555 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - Display answer is working fine
+18:39:48.324 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Driver is Initilize
+18:39:49.082 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Navigated to homePage
+18:40:10.977 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - At customization page>> UNCheck Turn off tag name>> 
+18:41:04.398 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Display Tag name is working fine
+18:41:11.164 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - Driver is Initilize
+18:41:12.503 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - Navigated to homePage
+18:41:25.511 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - At customization page>> Check Turn off tag name>> 
+18:41:31.424 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - Tag name turn off is working fine
+18:44:17.427 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - Tag name turn off is working fine
+18:44:24.264 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_13 - Driver is Initilize
+18:44:25.069 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_13 - Navigated to homePage
+18:44:49.313 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_13 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is unchecked >> 
+18:45:35.236 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_13 - Jeopardy_Style is working fine
+18:45:41.857 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Driver is Initilize
+18:45:43.131 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Navigated to homePage
+18:45:55.552 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+18:46:43.040 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Play as Numbered Tiles instead of Jeopardy-style is working fine 
+18:46:49.788 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Driver is Initilize
+18:46:50.461 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Navigated to homePage
+18:47:14.605 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+18:49:25.431 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_15 - Game_Point_Symbol_$_Before is working fine
+18:49:32.073 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Driver is Initilize
+18:49:32.833 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Navigated to homePage
+18:52:13.545 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_16 - Game_Point_Symbol_$_After is working fine
+18:52:20.505 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Driver is Initilize
+18:52:21.445 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Navigated to homePage
+18:55:02.497 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_17 - Game_Point_Symbol_€_After is working fine
+18:55:09.132 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Driver is Initilize
+18:55:10.059 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Navigated to homePage

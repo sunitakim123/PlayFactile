@@ -26,26 +26,15 @@
       </class> <!-- Factile_Mode.DGBP_HSB_TestCase_23 -->
     </classes>
   </test> <!-- Show Final Factile Category Hint at Wager Time(failed) -->
-  <test thread-count="5" name="Allow_Multiple_Team_to_answer when Checked(failed)">
+  <test thread-count="5" name="Verify Users Can Join Buzzer Mode after Game Begins When Unchecked(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_24">
-        <methods>
-          <include name="tearDown"/>
-          <include name="TC_24_Allow_Multiple_Team_to_answer_When_checked"/>
-          <include name="initilize"/>
-        </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_24 -->
-    </classes>
-  </test> <!-- Allow_Multiple_Team_to_answer when Checked(failed) -->
-  <test thread-count="5" name="Allow_Multiple_Team_to_answer when unChecked(failed)">
-    <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_25">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_27">
         <methods>
           <include name="initilize"/>
           <include name="tearDown"/>
-          <include name="TC_25_Allow_Multiple_Team_to_answer_When_Unchecked"/>
+          <include name="TC_27_Users_Can_Join_Buzzer_Mode_after_Game_Begins_thorugh_Manage_Team"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_25 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_27 -->
     </classes>
-  </test> <!-- Allow_Multiple_Team_to_answer when unChecked(failed) -->
+  </test> <!-- Verify Users Can Join Buzzer Mode after Game Begins When Unchecked(failed) -->
 </suite> <!-- Failed suite [Suite] -->

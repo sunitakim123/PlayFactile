@@ -52,7 +52,7 @@ public class DGBP_HSB_TestCase_26 extends Base {
 	}
 
 	@Test
-	public void TC_26_Users_Can_Join_Buzzer_Mode_after_Game_Begins_When_checked()
+	public void TC_26_Users_Can_Join_Buzzer_Mode_after_Game_Begins_directlyThroughPin()
 			throws InterruptedException, IOException {
 		driver.findElement(By.cssSelector("span.loginButton")).click();
 		driver.findElement(By.id("email")).sendKeys(prop.getProperty("username"));
