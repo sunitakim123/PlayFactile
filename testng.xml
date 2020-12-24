@@ -7,17 +7,6 @@
 
 
  
-  <test name="Verify Users Can Join Buzzer Mode after Game Begins using pin directly">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_26"/>
-           </classes>
-  </test> <!-- Test -->
-   <test name="Verify Users Can Join Buzzer Mode after Game Begins through Team manage">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_27"/>
-           </classes>
-  </test> <!-- Test -->
-  
   
   <test name="Verify Users Can Join Buzzer Mode after Game Begins When Unchecked">
     <classes>

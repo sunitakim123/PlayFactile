@@ -54,7 +54,7 @@ public class DGBP_HSB_TestCase_28 extends Base {
 	@Test
 	public void TC_28_Users_Can_Join_Buzzer_Mode_after_Game_Begins_When_UNchecked()
 			throws InterruptedException, IOException {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("span.loginButton")));
+		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		driver.findElement(By.cssSelector("span.loginButton")).click();
 		driver.findElement(By.id("email")).sendKeys(prop.getProperty("username"));
 		driver.findElement(By.id("password")).sendKeys(prop.getProperty("pwd"));
