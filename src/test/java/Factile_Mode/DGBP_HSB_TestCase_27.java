@@ -54,6 +54,7 @@ public class DGBP_HSB_TestCase_27 extends Base {
 	@Test
 	public void TC_27_Users_Can_Join_Buzzer_Mode_after_Game_Begins_thorugh_Manage_Team()
 			throws InterruptedException, IOException {
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("span.loginButton")));
 		driver.findElement(By.cssSelector("span.loginButton")).click();
 		driver.findElement(By.id("email")).sendKeys(prop.getProperty("username"));
 		driver.findElement(By.id("password")).sendKeys(prop.getProperty("pwd"));
@@ -87,6 +88,7 @@ public class DGBP_HSB_TestCase_27 extends Base {
 	}
 
 	public void modeaterscreen() throws InterruptedException {
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("customize")));
 		driver.findElement(By.id("customize")).click();
 		Thread.sleep(2000);
 		wait.until(
@@ -298,15 +300,16 @@ public class DGBP_HSB_TestCase_27 extends Base {
 					// System.out.println("value of p>>"+p);
 
 					if (p == 2) {// opening new driver to join the game in the mid
+						Thread.sleep(1000);
 						wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='remoteView manageTeams manageTeamSeparate']")));
 						driver.findElement(By.xpath("//span[@class='remoteView manageTeams manageTeamSeparate']")).click();
 						wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='addTeams']")));
 						driver.findElement(By.xpath("//button[@class='addTeams']")).click();
 						wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@data-numteams='1']")));
 						driver.findElement(By.xpath("//span[@data-numteams='1']")).click();
-						driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+						driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 						wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='game-pin-number']")));
-						driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+						driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 						
 						String GettingPinFromTEamManagemnetpage=driver.findElement(By.xpath("//span[@class='game-pin-number']")).getText();
 						System.out.println("GettingPinFromTEamManagemnetpage=="+GettingPinFromTEamManagemnetpage);
