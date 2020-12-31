@@ -17,3 +17,6 @@
 16:49:00.528 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_25 - Driver is Initilize
 16:49:01.482 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_25 - Navigated to homePage
 16:49:22.922 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_25 - At customization page>> >>Allow multiple user to answer is unchecked at global setting
+18:48:35.140 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_28 - Driver is Initilize
+18:48:35.983 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_28 - Navigated to homePage
+18:48:58.646 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_28 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins is Unchecked

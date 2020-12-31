@@ -55,6 +55,7 @@ public class DGBP_HSB_TestCase_30 extends Base {
 	public void TC_30_Verify_When_Buzzer_For_Final_Factile_Off_From_Customization()
 			throws InterruptedException, IOException {
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("span.loginButton")));
 		driver.findElement(By.cssSelector("span.loginButton")).click();
 		driver.findElement(By.id("email")).sendKeys(prop.getProperty("username"));
 		driver.findElement(By.id("password")).sendKeys(prop.getProperty("pwd"));
