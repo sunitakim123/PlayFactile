@@ -146,5 +146,11 @@
            </classes>
   </test> <!-- Test -->
   
+   <test name="Verify_When_Buzzer_For_Final_Factile_Off_From_Customization">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_30"/>
+           </classes>
+  </test> <!-- Test -->
+  
  
 </suite> <!-- Suite -->
