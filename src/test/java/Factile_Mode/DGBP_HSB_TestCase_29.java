@@ -90,8 +90,7 @@ public class DGBP_HSB_TestCase_29 extends Base {
 		driver.quit();
 	driver2.switchTo().window(driver2.getWindowHandle());
 	driver2.quit();
-	driver3.switchTo().window(driver3.getWindowHandle());
-		driver3.quit();
+	
 	}
 
 	public void modeaterscreen() throws InterruptedException {

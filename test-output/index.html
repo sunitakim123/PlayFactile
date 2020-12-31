@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">5 tests</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Factile_Mode.DGBP_HSB_TestCase_28" class="method navigator-link" hash-for-method="TC_28_Users_Cannot_Join_Buzzer_Mode_after_Game_Begins_When_UNchecked">TC_28_Users_Cannot_Join_Buzzer_Mode_after_Game_Begins_When_UNchecked</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,16 +100,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Factile_Mode.DGBP_HSB_TestCase_26" class="method navigator-link" hash-for-method="TC_26_Users_Can_Join_Buzzer_Mode_after_Game_Begins_directly_using_Pin">TC_26_Users_Can_Join_Buzzer_Mode_after_Game_Begins_directly_using_Pin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Factile_Mode.DGBP_HSB_TestCase_27" class="method navigator-link" hash-for-method="TC_27_Users_Can_Join_Buzzer_Mode_after_Game_Begins_thorugh_Manage_Team">TC_27_Users_Can_Join_Buzzer_Mode_after_Game_Begins_thorugh_Manage_Team</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Factile_Mode.DGBP_HSB_TestCase_29" class="method navigator-link" hash-for-method="TC_29_Verify_Buzzer_For_Final_Factile_Question">TC_29_Verify_Buzzer_For_Final_Factile_Question</a> <!-- method navigator-link -->
@@ -146,89 +122,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Factile_Mode.DGBP_HSB_TestCase_28</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_28_Users_Cannot_Join_Buzzer_Mode_after_Game_Begins_When_UNchecked">
-                  </a> <!-- TC_28_Users_Cannot_Join_Buzzer_Mode_after_Game_Begins_When_UNchecked -->
-                  <span class="method-name">TC_28_Users_Cannot_Join_Buzzer_Mode_after_Game_Begins_When_UNchecked</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 60.000
-  (Session info: chrome=87.0.4280.88)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-HKE6JL3&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\DELIGE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55384}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: aa68a7aeb59876b72dfe2ce619119692
-*** Element info: {Using=xpath, value=//div[contains(text(),&apos;Buzz!&apos;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at Factile_Mode.DGBP_HSB_TestCase_28.PlayerScreen(DGBP_HSB_TestCase_28.java:345)
-	at Factile_Mode.DGBP_HSB_TestCase_28.TC_28_Users_Cannot_Join_Buzzer_Mode_after_Game_Begins_When_UNchecked(DGBP_HSB_TestCase_28.java:75)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Factile_Mode.DGBP_HSB_TestCase_30</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_30_Verify_When_Buzzer_For_Final_Factile_Off_From_Customization">
-                  </a> <!-- TC_30_Verify_When_Buzzer_For_Final_Factile_Off_From_Customization -->
-                  <span class="method-name">TC_30_Verify_When_Buzzer_For_Final_Factile_Off_From_Customization</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Factile_Mode.DGBP_HSB_TestCase_26</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_26_Users_Can_Join_Buzzer_Mode_after_Game_Begins_directly_using_Pin">
-                  </a> <!-- TC_26_Users_Can_Join_Buzzer_Mode_after_Game_Begins_directly_using_Pin -->
-                  <span class="method-name">TC_26_Users_Can_Join_Buzzer_Mode_after_Game_Begins_directly_using_Pin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Factile_Mode.DGBP_HSB_TestCase_27</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_27_Users_Can_Join_Buzzer_Mode_after_Game_Begins_thorugh_Manage_Team">
-                  </a> <!-- TC_27_Users_Can_Join_Buzzer_Mode_after_Game_Begins_thorugh_Manage_Team -->
-                  <span class="method-name">TC_27_Users_Can_Join_Buzzer_Mode_after_Game_Begins_thorugh_Manage_Team</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -240,6 +133,21 @@ Session ID: aa68a7aeb59876b72dfe2ce619119692
                   <a name="TC_29_Verify_Buzzer_For_Final_Factile_Question">
                   </a> <!-- TC_29_Verify_Buzzer_For_Final_Factile_Question -->
                   <span class="method-name">TC_29_Verify_Buzzer_For_Final_Factile_Question</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Factile_Mode.DGBP_HSB_TestCase_30</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_30_Verify_When_Buzzer_For_Final_Factile_Off_From_Customization">
+                  </a> <!-- TC_30_Verify_When_Buzzer_For_Final_Factile_Off_From_Customization -->
+                  <span class="method-name">TC_30_Verify_When_Buzzer_For_Final_Factile_Off_From_Customization</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -257,21 +165,6 @@ Session ID: aa68a7aeb59876b72dfe2ce619119692
   &lt;listeners&gt;
     &lt;listener class-name=&quot;Factile_Mode.Listeners1&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Verify Users Can Join Buzzer Mode after Game Begins using pin directly&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;Factile_Mode.DGBP_HSB_TestCase_26&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Verify Users Can Join Buzzer Mode after Game Begins using pin directly --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Verify Users Can Join Buzzer Mode after Game Begins through Team manage&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;Factile_Mode.DGBP_HSB_TestCase_27&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Verify Users Can Join Buzzer Mode after Game Begins through Team manage --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Verify Users Can Join Buzzer Mode after Game Begins When Unchecked&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;Factile_Mode.DGBP_HSB_TestCase_28&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Verify Users Can Join Buzzer Mode after Game Begins When Unchecked --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Verify Buzzer mode for Fianl factile question&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Factile_Mode.DGBP_HSB_TestCase_29&quot;/&gt;
@@ -292,15 +185,6 @@ Session ID: aa68a7aeb59876b72dfe2ce619119692
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
-              <li>
-                <span class="test-name">Verify Users Can Join Buzzer Mode after Game Begins using pin directly (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Verify Users Can Join Buzzer Mode after Game Begins through Team manage (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Verify Users Can Join Buzzer Mode after Game Begins When Unchecked (1 class)</span>
-              </li>
               <li>
                 <span class="test-name">Verify Buzzer mode for Fianl factile question (1 class)</span>
               </li>
@@ -331,32 +215,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_27_Users_Can_Join_Buzzer_Mode_after_Game_Begins_thorugh_Manage_Team')
-data.setCell(0, 2, 'Factile_Mode.DGBP_HSB_TestCase_27')
-data.setCell(0, 3, 615044);
+data.setCell(0, 1, 'TC_29_Verify_Buzzer_For_Final_Factile_Question')
+data.setCell(0, 2, 'Factile_Mode.DGBP_HSB_TestCase_29')
+data.setCell(0, 3, 620247);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TC_30_Verify_When_Buzzer_For_Final_Factile_Off_From_Customization')
 data.setCell(1, 2, 'Factile_Mode.DGBP_HSB_TestCase_30')
-data.setCell(1, 3, 595134);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_29_Verify_Buzzer_For_Final_Factile_Question')
-data.setCell(2, 2, 'Factile_Mode.DGBP_HSB_TestCase_29')
-data.setCell(2, 3, 501763);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_26_Users_Can_Join_Buzzer_Mode_after_Game_Begins_directly_using_Pin')
-data.setCell(3, 2, 'Factile_Mode.DGBP_HSB_TestCase_26')
-data.setCell(3, 3, 490640);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC_28_Users_Cannot_Join_Buzzer_Mode_after_Game_Begins_When_UNchecked')
-data.setCell(4, 2, 'Factile_Mode.DGBP_HSB_TestCase_28')
-data.setCell(4, 3, 484068);
+data.setCell(1, 3, 592654);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 44 minutes</span>
+              <span class="suite-total-time">Total running time: 20 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -382,84 +254,33 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Factile_Mode.DGBP_HSB_TestCase_26</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Factile_Mode.DGBP_HSB_TestCase_29</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">TC_26_Users_Can_Join_Buzzer_Mode_after_Game_Begins_directly_using_Pin</span>
-                <span class="method-start">7564 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">498214 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Factile_Mode.DGBP_HSB_TestCase_27</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initilize</span>
-                <span class="method-start">504248 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">TC_27_Users_Can_Join_Buzzer_Mode_after_Game_Begins_thorugh_Manage_Team</span>
-                <span class="method-start">510582 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">1125629 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Factile_Mode.DGBP_HSB_TestCase_28</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initilize</span>
-                <span class="method-start">1145180 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">TC_28_Users_Cannot_Join_Buzzer_Mode_after_Game_Begins_When_UNchecked</span>
-                <span class="method-start">1153200 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDown</span>
-                <span class="method-start">1637996 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Factile_Mode.DGBP_HSB_TestCase_29</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initilize</span>
-                <span class="method-start">1641586 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
                 <span class="method-name">TC_29_Verify_Buzzer_For_Final_Factile_Question</span>
-                <span class="method-start">1647939 ms</span>
+                <span class="method-start">9952 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">2149706 ms</span>
+                <span class="method-start">630208 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Factile_Mode.DGBP_HSB_TestCase_30</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
-                <span class="method-start">2152146 ms</span>
+                <span class="method-start">633106 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">TC_30_Verify_When_Buzzer_For_Final_Factile_Off_From_Customization</span>
-                <span class="method-start">2158727 ms</span>
+                <span class="method-start">639569 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">2753862 ms</span>
+                <span class="method-start">1232226 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

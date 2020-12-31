@@ -4,15 +4,26 @@
   <listeners>
     <listener class-name="Factile_Mode.Listeners1"/>
   </listeners>
-  <test thread-count="5" name="Verify Users Can Join Buzzer Mode after Game Begins When Unchecked(failed)">
+  <test thread-count="5" name="Verify Buzzer mode for Fianl factile question(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_28">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_29">
         <methods>
+          <include name="TC_29_Verify_Buzzer_For_Final_Factile_Question"/>
           <include name="initilize"/>
-          <include name="TC_28_Users_Cannot_Join_Buzzer_Mode_after_Game_Begins_When_UNchecked"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_28 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_29 -->
     </classes>
-  </test> <!-- Verify Users Can Join Buzzer Mode after Game Begins When Unchecked(failed) -->
+  </test> <!-- Verify Buzzer mode for Fianl factile question(failed) -->
+  <test thread-count="5" name="Verify Buzzer mode for Fianl factile question when Off from global settings(failed)">
+    <classes>
+      <class name="Factile_Mode.DGBP_HSB_TestCase_30">
+        <methods>
+          <include name="tearDown"/>
+          <include name="TC_30_Verify_When_Buzzer_For_Final_Factile_Off_From_Customization"/>
+          <include name="initilize"/>
+        </methods>
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_30 -->
+    </classes>
+  </test> <!-- Verify Buzzer mode for Fianl factile question when Off from global settings(failed) -->
 </suite> <!-- Failed suite [Suite] -->
