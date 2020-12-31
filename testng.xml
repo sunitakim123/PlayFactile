@@ -9,6 +9,30 @@
            </classes>
   </test> <!-- Test -->
 
+ <test name="Verify Users Can Join Buzzer Mode after Game Begins through Team manage">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_27"/>
+           </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name="Verify Users Can Join Buzzer Mode after Game Begins When Unchecked">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_28"/>
+           </classes>
+  </test> <!-- Test -->
+    
+  <test name="Verify Buzzer mode for Fianl factile question">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_29"/>
+           </classes>
+  </test> <!-- Test -->
+  
+   <test name="Verify_When_Buzzer_For_Final_Factile_Off_From_Customization">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_30"/>
+           </classes>
+  </test> <!-- Test -->
   
  
 </suite> <!-- Suite -->
