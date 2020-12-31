@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="Factile_Mode.Listeners1"/>
-  </listeners>
-  <test thread-count="5" name="Verify Buzzer mode for Fianl factile question(failed)">
-    <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_29">
-        <methods>
-          <include name="TC_29_Verify_Buzzer_For_Final_Factile_Question"/>
-          <include name="initilize"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_29 -->
-    </classes>
-  </test> <!-- Verify Buzzer mode for Fianl factile question(failed) -->
-  <test thread-count="5" name="Verify Buzzer mode for Fianl factile question when Off from global settings(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="Factile_Mode.DGBP_HSB_TestCase_30">
         <methods>
@@ -25,5 +11,5 @@
         </methods>
       </class> <!-- Factile_Mode.DGBP_HSB_TestCase_30 -->
     </classes>
-  </test> <!-- Verify Buzzer mode for Fianl factile question when Off from global settings(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -6,14 +6,9 @@
  
     
   
-  <test name="Verify Users Can Join Buzzer Mode after Game Begins When Unchecked">
+   <test name="Verify_When_Buzzer_For_Final_Factile_Off_From_Customization">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_28"/>
-           </classes>
-  </test> <!-- Test -->
-   <test name="Verify Buzzer mode for Fianl factile question">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_29"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_30"/>
            </classes>
   </test> <!-- Test -->
   
