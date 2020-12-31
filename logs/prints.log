@@ -29,3 +29,12 @@
 19:47:08.484 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_30 - Driver is Initilize
 19:47:09.316 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_30 - Navigated to homePage
 19:47:30.662 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_30 - At customization page>> >>Buzzer is off for final factile 
+21:21:16.895 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Driver is Initilize
+21:21:17.820 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Navigated to homePage
+21:21:39.939 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins is checked
+21:31:51.723 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Driver is Initilize
+21:31:52.699 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Navigated to homePage
+21:32:14.148 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins throght team manage
+21:35:48.291 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_28 - Driver is Initilize
+21:35:49.405 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_28 - Navigated to homePage
+21:36:13.861 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_28 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins is Unchecked
