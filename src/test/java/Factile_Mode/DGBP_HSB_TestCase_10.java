@@ -208,7 +208,7 @@ public class DGBP_HSB_TestCase_10 extends Base {
 				} else {
 					driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
 				}
-				Thread.sleep(2000);
+				Thread.sleep(2000); 
 				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 				Thread.sleep(2000);
 				driver.switchTo().window(driver.getWindowHandle());

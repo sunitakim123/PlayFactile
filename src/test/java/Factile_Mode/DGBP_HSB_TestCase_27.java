@@ -63,21 +63,14 @@ public class DGBP_HSB_TestCase_27 extends Base {
 		driver.findElement(By.xpath("//span[@id='settings']")).click();
 		String url1 = driver.getCurrentUrl();
 
-		if (url1.equalsIgnoreCase("https://awspf.com/settings")) {
-			if (driver.findElement(By.xpath("//div[@class='col-md-12 currentActivePlanLabel']")).isDisplayed()) {
-
-				modeaterscreen();
-				PlayerScreen();
-			}
-		} else if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
+		 if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
 			// div[@class='col-md-12 paidOfflineLabel']
 			modeaterscreen();
 			PlayerScreen();
 
 		}
 
-		else {
-			System.out.println("You have not taken any subscription");
+		else {			System.out.println("You have not taken any subscription");
 		}
 	}
 
@@ -154,6 +147,26 @@ public class DGBP_HSB_TestCase_27 extends Base {
 
 		} else {
 			act = new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//input[@id='answerTimerOnOff']"))).click();
+		}
+		
+		
+		Thread.sleep(2000);
+		if(driver.findElement(By.xpath("//input[@id='buzzerForFinalFactile']")).isSelected())
+		{
+			
+		}
+		else
+		{
+			act3 = new Actions(driver);
+			act3.moveToElement(driver.findElement(By.xpath("//input[@id='buzzerForFinalFactile']"))).click().perform();
+		}
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='enter_final_answer']")));
+		if (driver.findElement(By.xpath("//input[@id='enter_final_answer']")).isSelected()) {
+
+		} else {
+			act1 = new Actions(driver);
+			act1.moveToElement(driver.findElement(By.xpath("//input[@id='enter_final_answer']"))).click().perform();
 		}
 		Thread.sleep(2000);
 		if (driver.findElement(By.xpath("//input[@id='enterAnserBuzz']")).isSelected()) {
@@ -291,6 +304,7 @@ public class DGBP_HSB_TestCase_27 extends Base {
 						driver.findElement(By.xpath("//button[@class='addTeams']")).click();
 						wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@data-numteams='1']")));
 						driver.findElement(By.xpath("//span[@data-numteams='1']")).click();
+						driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 						wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='game-pin-number']")));
 						driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 						

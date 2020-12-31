@@ -357,7 +357,7 @@ Thread.sleep(2000);
 						driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
 						Thread.sleep(2000);
 				
-					// driver.switchTo().window(driver.getWindowHandle());
+					// driver.switchTo().window(driver.getWindowHandle()); 
 					driver.switchTo().window(driver.getWindowHandle());
 					Thread.sleep(2000);
 					wait.until(

@@ -4,37 +4,15 @@
   <listeners>
     <listener class-name="Factile_Mode.Listeners1"/>
   </listeners>
-  <test thread-count="5" name="Verify Double factile(failed)">
-    <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_19">
-        <methods>
-          <include name="initilize"/>
-          <include name="tearDown"/>
-          <include name="TC_19_Verify_Double_Factile"/>
-        </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_19 -->
-    </classes>
-  </test> <!-- Verify Double factile(failed) -->
-  <test thread-count="5" name="Show Final Factile Category Hint at Wager Time(failed)">
-    <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_23">
-        <methods>
-          <include name="initilize"/>
-          <include name="TC_23_Verify_Show_Final_Factile_Category_Hint_at_Wager_Time"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_23 -->
-    </classes>
-  </test> <!-- Show Final Factile Category Hint at Wager Time(failed) -->
   <test thread-count="5" name="Verify Users Can Join Buzzer Mode after Game Begins When Unchecked(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_27">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_28">
         <methods>
           <include name="initilize"/>
+          <include name="TC_28_Users_Cannot_Join_Buzzer_Mode_after_Game_Begins_When_UNchecked"/>
           <include name="tearDown"/>
-          <include name="TC_27_Users_Can_Join_Buzzer_Mode_after_Game_Begins_thorugh_Manage_Team"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_27 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_28 -->
     </classes>
   </test> <!-- Verify Users Can Join Buzzer Mode after Game Begins When Unchecked(failed) -->
 </suite> <!-- Failed suite [Suite] -->

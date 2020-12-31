@@ -114,13 +114,13 @@ public class DGBP_HSB_TestCase_29 extends Base {
 		wait.until(ExpectedConditions
 				.elementToBeClickable(By.xpath("(//span[@class='resetToDefault resetCustomizations'])[6]")));
 		driver.findElement(By.xpath("(//span[@class='resetToDefault resetCustomizations'])[6]")).click();
-		Thread.sleep(2000);
+		Thread.sleep(2000); 
 		wait.until(ExpectedConditions.presenceOfElementLocated(
 				By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")));
 		driver.findElement(
 				By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")).click();
 		Thread.sleep(2000);
-		wait.until(ExpectedConditions
+		wait.until(ExpectedConditions 
 				.presenceOfElementLocated(By.xpath("//button[@class='swal-button swal-button--confirm']")));
 		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm']")).click();
 		Thread.sleep(2000);
@@ -142,7 +142,7 @@ public class DGBP_HSB_TestCase_29 extends Base {
 
 		}
 
-		Log.info("At customization page>> >>Users Can Join Buzzer Mode after Game Begins is Unchecked");
+		Log.info("At customization page>> >>Buzzer for final factile is on from customization");
 		
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='readingTimerValue']")));
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
@@ -156,8 +156,29 @@ public class DGBP_HSB_TestCase_29 extends Base {
 
 		} else {
 			act = new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//input[@id='answerTimerOnOff']"))).click();
 		}
+		
+		
 		Thread.sleep(2000);
+		if(driver.findElement(By.xpath("//input[@id='buzzerForFinalFactile']")).isSelected())
+		{
+			
+		}
+		else
+		{
+			act3 = new Actions(driver);
+			act3.moveToElement(driver.findElement(By.xpath("//input[@id='buzzerForFinalFactile']"))).click().perform();
+		}
+		
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='enter_final_answer']")));
+		if (driver.findElement(By.xpath("//input[@id='enter_final_answer']")).isSelected()) {
+
+		} else {
+			act1 = new Actions(driver);
+			act1.moveToElement(driver.findElement(By.xpath("//input[@id='enter_final_answer']"))).click().perform();
+		}
 		if (driver.findElement(By.xpath("//input[@id='enterAnserBuzz']")).isSelected()) {
 
 		} else {

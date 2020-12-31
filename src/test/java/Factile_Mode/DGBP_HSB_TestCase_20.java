@@ -33,7 +33,7 @@ public class DGBP_HSB_TestCase_20 extends Base {
 	String s6, s7, GameName, twitterLink, PintrestLink, t1, p1, parent, expectedValue, actualValue,
 			PlayerNameAtmodraterscreen, PlayerNameAtPlayerScreen;
 	WebElement ElementNotGoingToVisible;
-	Actions act;
+	Actions act, act1;
 
 	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_20.class.getName());
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
@@ -148,6 +148,16 @@ public class DGBP_HSB_TestCase_20 extends Base {
 				.presenceOfElementLocated(By.xpath("//button[@class='swal-button swal-button--confirm']")));
 		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm']")).click();
 		Thread.sleep(1000);
+		if(driver.findElement(By.xpath("//input[@id='enterAnserBuzz']")).isSelected())
+		{
+			
+		}
+		else
+		{
+			act1 = new Actions(driver);
+			act1.moveToElement(driver.findElement(By.xpath("//input[@id='enterAnserBuzz']"))).click().perform();
+		}
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='dailyDouble']")));
 		if (driver.findElement(By.xpath("//input[@id='dailyDouble']")).isSelected()) {
 			System.out.println("nothing to do");

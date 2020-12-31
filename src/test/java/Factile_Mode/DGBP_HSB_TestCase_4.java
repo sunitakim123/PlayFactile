@@ -28,7 +28,6 @@ public class DGBP_HSB_TestCase_4 extends Base {
 	Actions act;
 
 	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_4.class.getName());
-	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
 	@BeforeTest
 	public void initilize() throws IOException {
@@ -214,7 +213,7 @@ public class DGBP_HSB_TestCase_4 extends Base {
 				Assert.assertEquals(Pintrestclass, p1);
 				Log.info("When unchecked from customization setting>>Pintrest link is displaying");
 				System.out.println("When unchecked from customization setting>>Pintrest link is displaying");
-			}
+			} 
 
 		}
 	}

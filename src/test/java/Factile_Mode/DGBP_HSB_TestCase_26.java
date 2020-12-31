@@ -154,6 +154,26 @@ public class DGBP_HSB_TestCase_26 extends Base {
 
 		} else {
 			act = new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//input[@id='answerTimerOnOff']"))).click();
+		}
+		
+		
+		Thread.sleep(2000);
+		if(driver.findElement(By.xpath("//input[@id='buzzerForFinalFactile']")).isSelected())
+		{
+			
+		}
+		else
+		{
+			act3 = new Actions(driver);
+			act3.moveToElement(driver.findElement(By.xpath("//input[@id='buzzerForFinalFactile']"))).click().perform();
+		}
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='enter_final_answer']")));
+		if (driver.findElement(By.xpath("//input[@id='enter_final_answer']")).isSelected()) {
+
+		} else {
+			act1 = new Actions(driver);
+			act1.moveToElement(driver.findElement(By.xpath("//input[@id='enter_final_answer']"))).click().perform();
 		}
 		Thread.sleep(2000);
 		if (driver.findElement(By.xpath("//input[@id='enterAnserBuzz']")).isSelected()) {

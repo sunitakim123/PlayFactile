@@ -37,7 +37,6 @@ public class DGBP_HSB_TestCase_28 extends Base {
 	Actions act, act1, act2, act3, act4;
 
 	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_28.class.getName());
-	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
 	@BeforeTest
 	public void initilize() throws IOException {
@@ -52,7 +51,7 @@ public class DGBP_HSB_TestCase_28 extends Base {
 	}
 
 	@Test
-	public void TC_28_Users_Can_Join_Buzzer_Mode_after_Game_Begins_When_UNchecked()
+	public void TC_28_Users_Cannot_Join_Buzzer_Mode_after_Game_Begins_When_UNchecked()
 			throws InterruptedException, IOException {
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		driver.findElement(By.cssSelector("span.loginButton")).click();
@@ -74,7 +73,7 @@ public class DGBP_HSB_TestCase_28 extends Base {
 			// div[@class='col-md-12 paidOfflineLabel']
 			modeaterscreen();
 			PlayerScreen();
-
+   
 		}
 
 		else {
@@ -88,10 +87,10 @@ public class DGBP_HSB_TestCase_28 extends Base {
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
 		driver.quit();
-	driver2.switchTo().window(driver2.getWindowHandle());
+	   driver2.switchTo().window(driver2.getWindowHandle());
 		driver2.quit();
 		driver3.switchTo().window(driver3.getWindowHandle());
-		driver3.quit();
+		driver3.quit(); 
 	}
 
 	public void modeaterscreen() throws InterruptedException {
@@ -155,8 +154,29 @@ public class DGBP_HSB_TestCase_28 extends Base {
 
 		} else {
 			act = new Actions(driver);
+			act.moveToElement(driver.findElement(By.xpath("//input[@id='answerTimerOnOff']"))).click();
 		}
+		
+		
 		Thread.sleep(2000);
+		if(driver.findElement(By.xpath("//input[@id='buzzerForFinalFactile']")).isSelected())
+		{
+			
+		}
+		else
+		{
+			act3 = new Actions(driver);
+			act3.moveToElement(driver.findElement(By.xpath("//input[@id='buzzerForFinalFactile']"))).click().perform();
+		}
+		
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='enter_final_answer']")));
+		if (driver.findElement(By.xpath("//input[@id='enter_final_answer']")).isSelected()) {
+
+		} else {
+			act1 = new Actions(driver);
+			act1.moveToElement(driver.findElement(By.xpath("//input[@id='enter_final_answer']"))).click().perform();
+		}
 		if (driver.findElement(By.xpath("//input[@id='enterAnserBuzz']")).isSelected()) {
 
 		} else {
@@ -314,6 +334,7 @@ public class DGBP_HSB_TestCase_28 extends Base {
 					}
 
 					Thread.sleep(2000);
+					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")));
 					driver.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")).click();
 					driver1.switchTo().window(driver1.getWindowHandle());
 
@@ -459,7 +480,7 @@ public class DGBP_HSB_TestCase_28 extends Base {
 				String winningTeamOnPlayerScreen = driver1
 						.findElement(By.xpath("//div[@class='WinnerScreen-winner-top-header']")).getText();
 				System.out.println("winningTeamOnPlayerScreen>>" + winningTeamOnPlayerScreen);
-				Assert.assertEquals(winningTeamOnModeater, winningTeamOnPlayerScreen);
+				Assert.assertEquals(winningTeamOnModeater, winningTeamOnPlayerScreen); 
 			}
 		}
 
