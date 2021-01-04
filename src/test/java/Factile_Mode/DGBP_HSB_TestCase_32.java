@@ -359,7 +359,7 @@ public class DGBP_HSB_TestCase_32 extends Base {
 				driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 				
 
-				Thread.sleep(2000);
+				driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 				wait.until(ExpectedConditions.presenceOfElementLocated(
 						By.xpath("//div[@id='andTheWinnerIs']/div[2]/h2[@class='winnerTopHeader']")));
 				String winningTeamOnModeater = driver
