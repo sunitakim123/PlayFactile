@@ -3,34 +3,17 @@
 <listeners>
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
-  <test name="Verify Users Can Join Buzzer Mode after Game Begins using pin directly">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_26"/>
-           </classes>
-  </test> <!-- Test -->
 
- <test name="Verify Users Can Join Buzzer Mode after Game Begins through Team manage">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_27"/>
-           </classes>
-  </test> <!-- Test -->
-  
-  
-  <test name="Verify Users Can Join Buzzer Mode after Game Begins When Unchecked">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_28"/>
-           </classes>
-  </test> <!-- Test -->
     
-  <test name="Verify Buzzer mode for Fianl factile question">
+  <test name="Verify enter final factile answer">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_29"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_31"/>
            </classes>
   </test> <!-- Test -->
   
-   <test name="Verify_When_Buzzer_For_Final_Factile_Off_From_Customization">
+   <test name="Verify_enter_answer_after_buzz">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_30"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_32"/>
            </classes>
   </test> <!-- Test -->
   

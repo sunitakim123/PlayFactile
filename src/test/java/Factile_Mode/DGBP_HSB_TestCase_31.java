@@ -25,19 +25,19 @@ import org.testng.annotations.Test;
 import junit.framework.Assert;
 import resources.Base;
 
-public class DGBP_HSB_TestCase_30 extends Base {
+public class DGBP_HSB_TestCase_31 extends Base {
 	WebDriver driver;
 	WebDriver driver1;
 	WebDriver driver2, driver3;
 	WebDriverWait wait, wait1, wait2, wait3;
-	WebElement ele, ele1;
 	int int2;
 	String s6, s7, GameName, twitterLink, PintrestLink, t1, p1, parent, expectedValue, actualValue,
 			PlayerNameAtmodraterscreen, PlayerNameAtPlayerScreen;
 	WebElement ElementNotGoingToVisible;
 	Actions act, act1, act2, act3, act4;
 
-	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_30.class.getName());
+	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_31.class.getName());
+	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
 	@BeforeTest
 	public void initilize() throws IOException {
@@ -52,10 +52,9 @@ public class DGBP_HSB_TestCase_30 extends Base {
 	}
 
 	@Test
-	public void TC_30_Verify_When_Buzzer_For_Final_Factile_Off_From_Customization()
+	public void TC_31_Enter_Final_Factile_Answer()
 			throws InterruptedException, IOException {
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("span.loginButton")));
 		driver.findElement(By.cssSelector("span.loginButton")).click();
 		driver.findElement(By.id("email")).sendKeys(prop.getProperty("username"));
 		driver.findElement(By.id("password")).sendKeys(prop.getProperty("pwd"));
@@ -85,14 +84,13 @@ public class DGBP_HSB_TestCase_30 extends Base {
 
 	@AfterTest
 	public void tearDown() throws InterruptedException {
-/*
-		driver1.quit();
-		driver.switchTo().window(driver.getWindowHandle());
-		driver.quit();
-		driver2.switchTo().window(driver2.getWindowHandle());
-		driver2.quit();
-		driver3.switchTo().window(driver3.getWindowHandle());
-		driver3.quit(); */
+
+	//	driver1.quit();
+	//	driver.switchTo().window(driver.getWindowHandle());
+	//	driver.quit();
+	//	driver2.switchTo().window(driver2.getWindowHandle());
+		// driver2.quit();
+	
 	}
 
 	public void modeaterscreen() throws InterruptedException {
@@ -134,24 +132,9 @@ public class DGBP_HSB_TestCase_30 extends Base {
 
 		}
 
-		if (!driver.findElement(By.xpath("//input[@id='buzzerForFinalFactile']")).isSelected()) {
-			System.out.println("already selected");
-		} else {
-			act3 = new Actions(driver);
-			act3.moveToElement(driver.findElement(By.xpath("//input[@id='buzzerForFinalFactile']")))
-					.click().perform();
+	
 
-		}
-
-		Log.info("At customization page>> >>Buzzer is off for final factile ");
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='enter_final_answer']")));
-		if (!driver.findElement(By.xpath("//input[@id='enter_final_answer']")).isSelected()) {
-			System.out.println("Text box is not viible");
-
-		} else {
-			act1 = new Actions(driver);
-			act1.moveToElement(driver.findElement(By.xpath("//input[@id='enter_final_answer']"))).click().perform();
-		}
+		Log.info("At customization page>> >>Buzzer for final factile is on from customization");
 		
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='readingTimerValue']")));
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
@@ -170,10 +153,24 @@ public class DGBP_HSB_TestCase_30 extends Base {
 		
 		
 		Thread.sleep(2000);
-	
+		if(!driver.findElement(By.xpath("//input[@id='buzzerForFinalFactile']")).isSelected())
+		{
+			
+		}
+		else
+		{
+			act3 = new Actions(driver);
+			act3.moveToElement(driver.findElement(By.xpath("//input[@id='buzzerForFinalFactile']"))).click().perform();
+		}
 		
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='enter_final_answer']")));
-	
+		if (driver.findElement(By.xpath("//input[@id='enter_final_answer']")).isSelected()) {
+
+		} else {
+			act1 = new Actions(driver);
+			act1.moveToElement(driver.findElement(By.xpath("//input[@id='enter_final_answer']"))).click().perform();
+		}
 		if (driver.findElement(By.xpath("//input[@id='enterAnserBuzz']")).isSelected()) {
 
 		} else {
@@ -390,48 +387,44 @@ public class DGBP_HSB_TestCase_30 extends Base {
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@id='playFinalJeopardy']")));
 				driver.findElement(By.xpath("//span[@id='playFinalJeopardy']")).click();
 				driver1.switchTo().window(driver1.getWindowHandle());
-				driver1.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			
-				try {
-					ele = driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
-				
-				}
-				catch(NoSuchElementException e)
-				{
-					System.out.println("Element is not visible"+e.toString());
-				}
-				
-				Assert.assertNull("Buzzer is not coming for final factile to  user 1", ele);
-				
 
+				wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
 			
-				
+
+				driver1.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				wait1.until(ExpectedConditions
+						.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
+				WebElement textboxforuser1= driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']"));
+				Assert.assertNotNull("Text box for final factile is coming to user 1st", textboxforuser1);
+				driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
+				wait1.until(ExpectedConditions
+						.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+				driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
 
 				driver2.switchTo().window(driver2.getWindowHandle());
+
+			
+
 				driver2.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-				// wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
-
-
-				try {
-					ele1 = driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
+				wait2.until(ExpectedConditions
+						.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
+				WebElement textboxforuser2= driver2.findElement(By.xpath("//textarea[@placeholder='Enter Answer']"));
+				Assert.assertNotNull("Text box for final factile is coming to user 2nd", textboxforuser2);
 				
-				}
-				catch(NoSuchElementException e)
-				{
-					System.out.println("Element is not visible"+e.toString());
-				}
-								
-				Assert.assertNull("Buzzer is not coming for final factile to user 2", ele1);
-				
+				driver2.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
+				wait2.until(ExpectedConditions
+						.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+				driver2.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+
 				
 				driver.switchTo().window(driver.getWindowHandle()); 
+				
 				wait.until(
-						ExpectedConditions.presenceOfElementLocated(By.xpath("(//i[@class='fa fa-check right'])[1]")));
-				driver.findElement(By.xpath("(//i[@class='fa fa-check right'])[1]")).click();
+						ExpectedConditions.presenceOfElementLocated(By.xpath("(//i[@class='fa fa-times wrong'])[1]")));
+				driver.findElement(By.xpath("(//i[@class='fa fa-times wrong'])[1]")).click();
 				wait.until(
-						ExpectedConditions.presenceOfElementLocated(By.xpath("(//i[@class='fa fa-times wrong'])[2]")));
-				driver.findElement(By.xpath("(//i[@class='fa fa-times wrong'])[2]")).click();
- 
+						ExpectedConditions.presenceOfElementLocated(By.xpath("(//i[@class='fa fa-check right'])[2]")));
+				driver.findElement(By.xpath("(//i[@class='fa fa-check right'])[2]")).click();
 			
 
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
