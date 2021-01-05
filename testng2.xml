@@ -152,5 +152,10 @@
            </classes>
   </test> <!-- Test -->
   
- 
+     
+  <test name="Verify enter final factile answer">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_31"/>
+           </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->
