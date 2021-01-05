@@ -85,11 +85,11 @@ public class DGBP_HSB_TestCase_31 extends Base {
 	@AfterTest
 	public void tearDown() throws InterruptedException {
 
-	//	driver1.quit();
-	//	driver.switchTo().window(driver.getWindowHandle());
-	//	driver.quit();
-	//	driver2.switchTo().window(driver2.getWindowHandle());
-		// driver2.quit();
+		driver1.quit();
+	driver.switchTo().window(driver.getWindowHandle());
+		driver.quit();
+		driver2.switchTo().window(driver2.getWindowHandle());
+		 driver2.quit();
 	
 	}
 
