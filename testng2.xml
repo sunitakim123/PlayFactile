@@ -158,4 +158,9 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_31"/>
            </classes>
   </test> <!-- Test -->
+     <test name="Verify_enter_answer_after_buzz">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_32"/>
+           </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->
