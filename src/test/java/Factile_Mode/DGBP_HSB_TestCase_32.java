@@ -350,11 +350,13 @@ public class DGBP_HSB_TestCase_32 extends Base {
 				
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h4[@id='skipWagers']")));
 				driver.findElement(By.xpath("//h4[@id='skipWagers']")).click();
+				driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='swal-button swal-button--confirm btn-success swal-button--danger']")));
 				driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm btn-success swal-button--danger']")).click();
-				
+				driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='gameplayRevealAnswer']")));
 				driver.findElement(By.xpath("//div[@class='gameplayRevealAnswer']")).click();
+				driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 				driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 				
