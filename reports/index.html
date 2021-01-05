@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Web Automation Result</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 5, 2021 03:50:09 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jan 5, 2021 05:47:19 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,6 +71,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
@@ -79,7 +80,46 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">TC_31_Enter_Final_Factile_Answer</p>
+            <p class="text-sm"><span>17:47:27 PM</span> / <span>40:23:926</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=1</span></div>
+<h5 class="test-status text-pass">TC_31_Enter_Final_Factile_Answer</h5>
+<span class='badge badge-success'>01.05.2021 17:47:27</span>
+<span class='badge badge-danger'>01.05.2021 17:57:51</span>
+<span class='badge badge-default'>40:23:926</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:57:51 PM</td>
+        <td>
+          Test Passes
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
           author=""
           tag=""
           device="">
@@ -89,17 +129,17 @@
           <div class="test-detail">
             <span class="meta text-white badge badge-sm"></span>
             <p class="name">TC_32_Enter_Answer_After_Buzz</p>
-            <p class="text-sm"><span>15:51:16 PM</span> / <span>33:51:951</span></p>
+            <p class="text-sm"><span>17:58:00 PM</span> / <span>37:03:446</span></p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<div class='float-right'><span class='badge badge-default'>#test-id=1</span></div>
+<div class='float-right'><span class='badge badge-default'>#test-id=2</span></div>
 <h5 class="test-status text-fail">TC_32_Enter_Answer_After_Buzz</h5>
-<span class='badge badge-success'>01.05.2021 15:51:16</span>
-<span class='badge badge-danger'>01.05.2021 15:55:08</span>
-<span class='badge badge-default'>33:51:951</span>
+<span class='badge badge-success'>01.05.2021 17:58:00</span>
+<span class='badge badge-danger'>01.05.2021 18:05:03</span>
+<span class='badge badge-default'>37:03:446</span>
 </div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
@@ -112,15 +152,15 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:55:06 PM</td>
+        <td>6:05:03 PM</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.WebDriverException: chrome not reachable
+          <textarea readonly class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="gameplayRevealAnswer">...</div> is not clickable at point (1114, 171). Other element would receive the click: <p>...</p>
   (Session info: chrome=87.0.4280.88)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-HKE6JL3', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\DELIGE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57335}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 753f75c1bb2e5da7b4d9e2c58fc48142
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\DELIGE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64953}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 39cd8732cd69695cca14163b39b74cc9
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -132,8 +172,9 @@ Session ID: 753f75c1bb2e5da7b4d9e2c58fc48142
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:903)
-	at Factile_Mode.DGBP_HSB_TestCase_32.PlayerScreen(DGBP_HSB_TestCase_32.java:284)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at Factile_Mode.DGBP_HSB_TestCase_32.PlayerScreen(DGBP_HSB_TestCase_32.java:354)
 	at Factile_Mode.DGBP_HSB_TestCase_32.TC_32_Enter_Answer_After_Buzz(DGBP_HSB_TestCase_32.java:76)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
@@ -194,12 +235,12 @@ Session ID: 753f75c1bb2e5da7b4d9e2c58fc48142
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.WebDriverException</p>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.WebDriverException</h4>
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -213,9 +254,9 @@ Session ID: 753f75c1bb2e5da7b4d9e2c58fc48142
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>15:51:16 PM</td>
+<td>17:58:00 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>TC_32_Enter_Answer_After_Buzz</a>
+<a href="#" class="linked" test-id='2' id='2'>TC_32_Enter_Answer_After_Buzz</a>
 </td>
 </tr>
 </tbody>
@@ -235,19 +276,19 @@ Session ID: 753f75c1bb2e5da7b4d9e2c58fc48142
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 5, 2021 03:50:09 PM</h3>
+<h3>Jan 5, 2021 05:47:19 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 5, 2021 03:55:08 PM</h3>
+<h3>Jan 5, 2021 06:05:03 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -269,12 +310,12 @@ Session ID: 753f75c1bb2e5da7b4d9e2c58fc48142
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='50%'>
+<b>1</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> tests failed,
+<small data-tooltip='50%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -292,9 +333,9 @@ Session ID: 753f75c1bb2e5da7b4d9e2c58fc48142
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='50%'><b>1</b> events passed</small></div>
 <div>
-<small data-tooltip='100%'><b>1</b> events failed,
+<small data-tooltip='50%'><b>1</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -322,7 +363,7 @@ Session ID: 753f75c1bb2e5da7b4d9e2c58fc48142
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
+passParent: 1,
 failParent: 1,
 warningParent: 0,
 skipParent: 0,
@@ -339,7 +380,7 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
+passEvents: 1,
 failEvents: 1,
 warningEvents: 0,
 skipEvents: 0,
