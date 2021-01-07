@@ -1,8 +1,54 @@
-19:11:23.669 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_32 - Navigated to homePage
-19:12:16.853 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_32 - At customization page>> >>Enter answer for buzz is active from customization
-19:17:15.094 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_32 - Driver is Initilize
-19:17:15.840 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_32 - Navigated to homePage
-19:18:08.125 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_32 - At customization page>> >>Enter answer for buzz is active from customization
-19:25:48.946 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_32 - Driver is Initilize
-19:25:51.818 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_32 - Navigated to homePage
-19:26:18.972 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_32 - At customization page>> >>Enter answer for buzz is active from customization
+20:44:59.530 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+20:51:48.862 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+20:51:50.702 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+20:53:30.276 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+20:53:31.085 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+20:56:10.057 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+20:56:10.782 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+20:59:03.636 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+20:59:04.532 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+21:00:24.818 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+21:00:26.280 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+21:07:05.505 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+21:07:17.213 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+21:13:15.692 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+21:13:16.611 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+21:16:48.424 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+21:16:49.572 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+21:21:48.483 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+21:21:49.445 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+21:25:53.753 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+21:25:55.203 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+21:29:19.285 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+21:29:20.034 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+21:31:55.781 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+21:31:57.256 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+21:33:41.492 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+21:33:42.375 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+21:35:30.390 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+21:35:31.172 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+21:42:46.449 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+21:42:47.657 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+21:51:31.288 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+21:51:32.960 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+11:12:10.903 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
+11:12:12.413 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
+11:12:33.744 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - At customization page>> >>Buzzer for final factile is on from customization
+11:20:56.114 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_30 - Driver is Initilize
+11:20:57.072 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_30 - Navigated to homePage
+11:21:19.346 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_30 - At customization page>> >>Buzzer is off for final factile 
+11:29:59.659 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_31 - Driver is Initilize
+11:30:01.184 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_31 - Navigated to homePage
+11:30:23.434 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_31 - At customization page>> >>Buzzer for final factile is on from customization
+11:38:04.734 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+11:38:05.663 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+11:41:29.614 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+11:41:30.795 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+11:45:56.258 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+11:45:57.476 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+11:50:57.019 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+11:50:59.120 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+11:56:22.389 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+11:56:23.273 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage
+12:34:55.877 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Driver is Initilize
+12:34:56.824 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_33 - Navigated to homePage

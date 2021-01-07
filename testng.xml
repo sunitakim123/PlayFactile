@@ -4,14 +4,11 @@
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
 
-<test name="Verify enter final factile answer">
+
+  
+     <test name="Verify_Stop_Timer_on_BuzzIn_of_1_to_100">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_31"/>
-           </classes>
-  </test> <!-- Test -->
-     <test name="Verify_enter_answer_after_buzz">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_32"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_33"/>
            </classes>
   </test> <!-- Test -->
  
