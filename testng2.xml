@@ -163,4 +163,15 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_32"/>
            </classes>
   </test> <!-- Test -->
+  
+       <test name="Verify_Stop_Timer_on_BuzzIn_of_1_to_100">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_33"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Verify_Maximum_Buzz_in_per_try_taken1">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_34"/>
+           </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

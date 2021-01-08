@@ -286,21 +286,16 @@ public class DGBP_HSB_TestCase_33 extends Base {
 					driver1.switchTo().window(driver1.getWindowHandle());
 
 					//wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
-					//wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
-					
-					/*WebElement ele = driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
-					JavascriptExecutor executor = (JavascriptExecutor) driver1;
-					executor.executeScript("arguments[0].click();", ele); */
-
-					
-					if(driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).isDisplayed())
+					driver1.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+								
+				if(driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).isDisplayed())
 					{
 						driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
 					}
 					else
 					{
 						System.out.println("buzz not visible");
-					}
+					} 
 					wait1.until(ExpectedConditions
 							.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
 
