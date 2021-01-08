@@ -135,7 +135,7 @@ public class DGBP_HSB_TestCase_31 extends Base {
 
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='readingTimerValue']")));
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
-		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("6");
+		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("3");
 		wait.until(ExpectedConditions
 				.presenceOfElementLocated(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")));
 
@@ -299,12 +299,20 @@ public class DGBP_HSB_TestCase_31 extends Base {
 					driver1.switchTo().window(driver1.getWindowHandle());
 
 					wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
-					wait1.until(
+					/*wait1.until(
 							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 
 					WebElement ele = driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
 					JavascriptExecutor executor = (JavascriptExecutor) driver1;
-					executor.executeScript("arguments[0].click();", ele);
+					executor.executeScript("arguments[0].click();", ele); */
+					if(driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).isDisplayed())
+					{
+						driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
+					}
+					else
+					{
+						System.out.println("buzz not visible");
+					} 
 
 					wait1.until(ExpectedConditions
 							.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
