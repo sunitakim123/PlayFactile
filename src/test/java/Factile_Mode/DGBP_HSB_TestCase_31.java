@@ -137,9 +137,9 @@ public class DGBP_HSB_TestCase_31 extends Base {
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("3");
 		wait.until(ExpectedConditions
-				.presenceOfElementLocated(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")));
+				.presenceOfElementLocated(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[6]")));
 
-		driver.findElement(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")).click();
+		driver.findElement(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[6]")).click();
 		Thread.sleep(2000);
 		if (driver.findElement(By.xpath("//input[@id='answerTimerOnOff']")).isSelected()) {
 

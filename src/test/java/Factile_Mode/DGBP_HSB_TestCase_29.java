@@ -325,7 +325,7 @@ public class DGBP_HSB_TestCase_29 extends Base {
 					wait1.until(ExpectedConditions
 							.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
-
+					Thread.sleep(1500);
 					driver2.switchTo().window(driver2.getWindowHandle());
 					// wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
 					wait2.until(

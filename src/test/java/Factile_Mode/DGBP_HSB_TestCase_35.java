@@ -32,6 +32,8 @@ public class DGBP_HSB_TestCase_35 extends Base {
 	WebDriver driver2, driver3;
 	WebDriverWait wait, wait1, wait2, wait3;
 	int int2;
+	int customizeTimerValue=5;
+	String  expectedSetCustomizeTimer = String.valueOf(customizeTimerValue);
 	String s6, s7, GameName, twitterLink, PintrestLink, t1, p1, parent, expectedValue, actualValue,
 			PlayerNameAtmodraterscreen, PlayerNameAtPlayerScreen;
 	WebElement ElementNotGoingToVisible;
@@ -52,7 +54,7 @@ public class DGBP_HSB_TestCase_35 extends Base {
 	}
 
 	@Test
-	public void TC_34_Maximum_Buzz_Ins_per_Try() throws InterruptedException, IOException {
+	public void TC_35_Verify_Customize_Timer_Countdown_Time() throws InterruptedException, IOException {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("span.loginButton")));
 		driver.findElement(By.cssSelector("span.loginButton")).click();
@@ -85,11 +87,11 @@ public class DGBP_HSB_TestCase_35 extends Base {
 	@AfterTest
 	public void tearDown() throws InterruptedException {
 
-	/*	driver1.quit();
-		driver.switchTo().window(driver.getWindowHandle());
-		driver.quit();
-		driver2.switchTo().window(driver2.getWindowHandle());
-		driver2.quit(); */
+		/*
+		 * driver1.quit(); driver.switchTo().window(driver.getWindowHandle());
+		 * driver.quit(); driver2.switchTo().window(driver2.getWindowHandle());
+		 * driver2.quit();
+		 */
 
 	}
 
@@ -132,6 +134,15 @@ public class DGBP_HSB_TestCase_35 extends Base {
 
 		}
 
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='timerValue']")));
+		driver.findElement(By.xpath("//input[@id='timerValue']")).clear();
+		
+		driver.findElement(By.xpath("//input[@id='timerValue']")).sendKeys(expectedSetCustomizeTimer);
+		wait.until(ExpectedConditions
+				.presenceOfElementLocated(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")));
+
+		driver.findElement(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")).click();
+
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='readingTimerValue']")));
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("1");
@@ -149,15 +160,6 @@ public class DGBP_HSB_TestCase_35 extends Base {
 
 		Thread.sleep(2000);
 
-		if (driver.findElement(By.xpath("//input[@id='enterAnserBuzz']")).isSelected()) {
-
-		} else {
-			act1 = new Actions(driver);
-			act1.moveToElement(driver.findElement(By.xpath("//input[@id='enterAnserBuzz']"))).click().perform();
-		}
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//select[@id='buzzPerTry']")));
-		Select noumberofuser = new Select(driver.findElement(By.xpath("//select[@id='buzzPerTry']")));
-		noumberofuser.selectByValue("1");
 	}
 
 	public void PlayerScreen() throws InterruptedException, IOException {
@@ -278,44 +280,47 @@ public class DGBP_HSB_TestCase_35 extends Base {
 					wait.until(ExpectedConditions.elementToBeClickable(
 							By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")));
 
-					
-
 					Thread.sleep(2000);
 					driver.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")).click();
 					driver1.switchTo().window(driver1.getWindowHandle());
-
-					//wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
-					//wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
+					// wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='questionBoardTitletimer
+					// animated animate zoomIn']/span")));
+					String customizeTimervalueActual = driver1.findElement(By.xpath("//div[@class='questionBoardTitletimer animated animate zoomIn']/span[2]")).getText();
 					
-					/*WebElement ele = driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
+			
+					System.out.println("Customize timer value==" + customizeTimervalueActual);
+					Assert.assertEquals(expectedSetCustomizeTimer, customizeTimervalueActual);
+					Thread.sleep(6000);
+					String customizeTimervaluelast = driver1
+							.findElement(
+									By.xpath("//div[@class='questionBoardTitletimer animated animate zoomIn']/span"))
+							.getText();
+					System.out.println("Customize timer value==" + customizeTimervaluelast);
+					// wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
+					// wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
+
+					WebElement ele = driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
 					JavascriptExecutor executor = (JavascriptExecutor) driver1;
-					executor.executeScript("arguments[0].click();", ele); */
+					executor.executeScript("arguments[0].click();", ele);
 
-					
-					if(driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).isDisplayed())
-					{
-						driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
-					}
-					else
-					{
-						System.out.println("buzz not visible");
-					}
-					wait1.until(ExpectedConditions
-							.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
-
-					
-
-					driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
-					wait1.until(ExpectedConditions
-							.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
-					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
-					
-										
+					/*
+					 * wait1.until(ExpectedConditions
+					 * .presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")
+					 * ));
+					 * 
+					 * 
+					 * 
+					 * driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).
+					 * sendKeys("test"); wait1.until(ExpectedConditions .elementToBeClickable(By.
+					 * xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+					 * driver1.findElement(By.
+					 * xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+					 */
 
 					driver2.switchTo().window(driver2.getWindowHandle());
-					wait2.until(ExpectedConditions
-							.presenceOfElementLocated(By.xpath("//div[@class='questionBoardTitletimer animated animate zoomIn']//span")));
-					
+					wait2.until(ExpectedConditions.presenceOfElementLocated(
+							By.xpath("//div[@class='questionBoardTitletimer animated animate zoomIn']//span")));
+
 					wait2.until(
 							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 
@@ -323,54 +328,31 @@ public class DGBP_HSB_TestCase_35 extends Base {
 					JavascriptExecutor executor1 = (JavascriptExecutor) driver2;
 					executor1.executeScript("arguments[0].click();", ele1);
 
-					wait2.until(ExpectedConditions
-							.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
-					driver2.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
-					wait2.until(ExpectedConditions
-							.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
-					driver2.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+					/*
+					 * wait2.until(ExpectedConditions
+					 * .presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")
+					 * )); driver2.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).
+					 * sendKeys("test"); wait2.until(ExpectedConditions .elementToBeClickable(By.
+					 * xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+					 * driver2.findElement(By.
+					 * xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+					 */
 
-					driver.switchTo().window(driver.getWindowHandle());			
-					
-					wait.until(ExpectedConditions
-							.presenceOfElementLocated(By.xpath("(//div[@class='row m-0 p-0']//div[1])")));
-					String buzzersequenceOfTeam1=	driver.findElement(By.xpath("(//div[@class='row m-0 p-0']//div[1])")).getText();
-					System.out.println("buzzer sequence has been registered on moderater screen for Team 1="+buzzersequenceOfTeam1);
-					Assert.assertNotNull("buzzer sequence has been registered on moderater screen for Team 1", buzzersequenceOfTeam1);
-					
-					
-					
-					String buzzersequenceOfTeam2=	driver.findElement(By.xpath("(//div[@class='row m-0 p-0']//div[1])[2]")).getText();
-					int expected =2;
-					String expectedString=String.valueOf(expected);
-					if (buzzersequenceOfTeam2.equalsIgnoreCase(expectedString))
-					{
-						System.out.println("buzzer sequence has been registered on moderater screen for Team 2");
-					} else
-					{
-						System.out.println("buzzer sequence has not been registered on moderater screen for Team 2");
-					} 	
-					
-					//System.out.println("buzzer sequence not regerster for team 2 on moderater screen=="+buzzersequenceOfTeam2);
-				
-				
-				
-				
+					driver.switchTo().window(driver.getWindowHandle());
+
 					wait.until(ExpectedConditions
 							.presenceOfElementLocated(By.xpath("(//i[@class='fa fa-check right'])[1]")));
 					driver.findElement(By.xpath("(//i[@class='fa fa-check right'])[1]")).click();
 					Thread.sleep(2000);
 
 					wait.until(ExpectedConditions
-							.presenceOfElementLocated(By.xpath("(//i[@class='fa fa-times wrong'])[2]")));
-					driver.findElement(By.xpath("(//i[@class='fa fa-times wrong'])[2]")).click();
+							.presenceOfElementLocated(By.xpath("(//i[@class='fa fa-check right'])[2]")));
+					driver.findElement(By.xpath("(//i[@class='fa fa-check right'])[2]")).click();
 
 					Thread.sleep(2000);
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 					// System.out.println("value of p at end>>"+p);
-
-					Thread.sleep(2000);
 
 				}
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -390,20 +372,19 @@ public class DGBP_HSB_TestCase_35 extends Base {
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 				driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 
-				Thread.sleep(2000);
 				wait.until(ExpectedConditions.presenceOfElementLocated(
-						By.xpath("//h1[@class='winnerTeamName']")));
+						By.xpath("//div[@id='andTheWinnerIs']/div[2]/h2[@class='winnerTopHeader']")));
 				String winningTeamOnModeater = driver
-						.findElement(By.xpath("//h1[@class='winnerTeamName']"))
+						.findElement(By.xpath("//div[@id='andTheWinnerIs']/div[2]/h2[@class='winnerTopHeader']"))
 						.getText();
 				System.out.println("winningTeamOnModeater>>" + winningTeamOnModeater);
 				Thread.sleep(2000);
 
 				driver1.switchTo().window(driver1.getWindowHandle());
 				wait1.until(ExpectedConditions
-						.presenceOfElementLocated(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")));
+						.presenceOfElementLocated(By.xpath("//div[@class='WinnerScreen-winner-top-header']")));
 				String winningTeamOnPlayerScreen = driver1
-						.findElement(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")).getText();
+						.findElement(By.xpath("//div[@class='WinnerScreen-winner-top-header']")).getText();
 				System.out.println("winningTeamOnPlayerScreen>>" + winningTeamOnPlayerScreen);
 				Assert.assertEquals(winningTeamOnModeater, winningTeamOnPlayerScreen);
 			}
