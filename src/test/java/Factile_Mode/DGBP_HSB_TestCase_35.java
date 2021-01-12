@@ -290,12 +290,24 @@ public class DGBP_HSB_TestCase_35 extends Base {
 			
 					System.out.println("Customize timer value in starting==" + customizeTimervalueActual);
 					Assert.assertEquals(expectedSetCustomizeTimer, customizeTimervalueActual);
-					Thread.sleep(7000);
+					
+					
+					Thread.sleep(1000);
+					for(int x=1;x<5;x++)
+					{ Thread.sleep(1000);
+					String text=driver1
+							.findElement(
+									By.xpath("//div[@class='questionBoardTitletimer animated animate zoomIn']/span"))
+							.getText();
+					System.out.println(text);
+						
+					}
+					
 					String customizeTimervaluelast = driver1
 							.findElement(
 									By.xpath("//div[@class='questionBoardTitletimer animated animate zoomIn']/span"))
 							.getText();
-					System.out.println("Customize timer value in ending==" + customizeTimervaluelast);
+					System.out.println("Customize timer value at the end==" + customizeTimervaluelast);
 					// wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
 					// wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 
