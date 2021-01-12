@@ -296,12 +296,21 @@ public class DGBP_HSB_TestCase_36 extends Base {
 									By.xpath("//div[@class='questionBoardTitletimer animated animate zoomIn']//span[@class='mr-2']"))
 							.getText();
 					System.out.println("Reading timer value at the end==" + ReadingTimervaluelast);
-					 wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
+					driver1.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+					if(driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).isDisplayed())
+					{
+						driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
+					}
+					else
+					{
+						System.out.println("buzzer not active");
+					}
+					/* wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
 					 wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 
 					WebElement ele = driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
 					JavascriptExecutor executor = (JavascriptExecutor) driver1;
-					executor.executeScript("arguments[0].click();", ele);
+					executor.executeScript("arguments[0].click();", ele); */
 
 					/*
 					 * wait1.until(ExpectedConditions
@@ -353,6 +362,7 @@ public class DGBP_HSB_TestCase_36 extends Base {
 					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
 					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 					// System.out.println("value of p at end>>"+p);
+					Thread.sleep(2000);
 
 				}
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
