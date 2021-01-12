@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="Factile_Mode.Listeners1"/>
   </listeners>
-  <test thread-count="5" name="Verify_Stop_Timer_on_BuzzIn_of_1_to_100(failed)">
+  <test thread-count="5" name="Verify Reading timer(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_33">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_36">
         <methods>
-          <include name="TC_33_Stop_Timer_on_BuzzIn_of_1_to_100"/>
           <include name="initilize"/>
           <include name="tearDown"/>
+          <include name="TC_36_Verify_Reading_Timer"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_33 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_36 -->
     </classes>
-  </test> <!-- Verify_Stop_Timer_on_BuzzIn_of_1_to_100(failed) -->
+  </test> <!-- Verify Reading timer(failed) -->
 </suite> <!-- Failed suite [Suite] -->

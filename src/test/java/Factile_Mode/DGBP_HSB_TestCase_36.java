@@ -26,20 +26,20 @@ import org.testng.annotations.Test;
 import junit.framework.Assert;
 import resources.Base;
 
-public class DGBP_HSB_TestCase_35 extends Base {
+public class DGBP_HSB_TestCase_36 extends Base {
 	WebDriver driver;
 	WebDriver driver1;
 	WebDriver driver2, driver3;
 	WebDriverWait wait, wait1, wait2, wait3;
 	int int2;
-	int customizeTimerValue=5;
-	String  expectedSetCustomizeTimer = String.valueOf(customizeTimerValue);
+	int ReadingTimerValue=5;
+	String  expectedSetReadingTimer = String.valueOf(ReadingTimerValue);
 	String s6, s7, GameName, twitterLink, PintrestLink, t1, p1, parent, expectedValue, actualValue,
 			PlayerNameAtmodraterscreen, PlayerNameAtPlayerScreen;
 	WebElement ElementNotGoingToVisible;
 	Actions act, act1, act2, act3, act4;
 
-	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_35.class.getName());
+	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_36.class.getName());
 
 	@BeforeTest
 	public void initilize() throws IOException {
@@ -54,7 +54,7 @@ public class DGBP_HSB_TestCase_35 extends Base {
 	}
 
 	@Test
-	public void TC_35_Verify_Customize_Timer_Countdown_Time() throws InterruptedException, IOException {
+	public void TC_36_Verify_Reading_Timer() throws InterruptedException, IOException {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("span.loginButton")));
 		driver.findElement(By.cssSelector("span.loginButton")).click();
@@ -137,7 +137,7 @@ public class DGBP_HSB_TestCase_35 extends Base {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='timerValue']")));
 		driver.findElement(By.xpath("//input[@id='timerValue']")).clear();
 		
-		driver.findElement(By.xpath("//input[@id='timerValue']")).sendKeys(expectedSetCustomizeTimer);
+		driver.findElement(By.xpath("//input[@id='timerValue']")).sendKeys("10");
 		wait.until(ExpectedConditions
 				.presenceOfElementLocated(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")));
 
@@ -145,7 +145,7 @@ public class DGBP_HSB_TestCase_35 extends Base {
 
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='readingTimerValue']")));
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
-		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("1");
+		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys(expectedSetReadingTimer);
 		wait.until(ExpectedConditions
 				.presenceOfElementLocated(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[6]")));
 
@@ -285,19 +285,19 @@ public class DGBP_HSB_TestCase_35 extends Base {
 					driver1.switchTo().window(driver1.getWindowHandle());
 					// wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='questionBoardTitletimer
 					// animated animate zoomIn']/span")));
-					String customizeTimervalueActual = driver1.findElement(By.xpath("//div[@class='questionBoardTitletimer animated animate zoomIn']/span[2]")).getText();
+					String ReadingTimervalueActual = driver1.findElement(By.xpath("//div[@class='questionBoardTitletimer animated animate zoomIn']//span[@class='mr-2']")).getText();
 					
 			
-					System.out.println("Customize timer value in starting==" + customizeTimervalueActual);
-					Assert.assertEquals(expectedSetCustomizeTimer, customizeTimervalueActual);
-					Thread.sleep(7000);
-					String customizeTimervaluelast = driver1
+					System.out.println("Readig timer value at starting==" + ReadingTimervalueActual);
+					Assert.assertEquals(expectedSetReadingTimer, ReadingTimervalueActual);
+					Thread.sleep(4000);
+					String ReadingTimervaluelast = driver1
 							.findElement(
-									By.xpath("//div[@class='questionBoardTitletimer animated animate zoomIn']/span"))
+									By.xpath("//div[@class='questionBoardTitletimer animated animate zoomIn']//span[@class='mr-2']"))
 							.getText();
-					System.out.println("Customize timer value in ending==" + customizeTimervaluelast);
-					// wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
-					// wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
+					System.out.println("Reading timer value at the end==" + ReadingTimervaluelast);
+					 wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
+					 wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 
 					WebElement ele = driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
 					JavascriptExecutor executor = (JavascriptExecutor) driver1;
