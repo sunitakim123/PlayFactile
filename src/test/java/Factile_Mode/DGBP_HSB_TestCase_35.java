@@ -293,7 +293,7 @@ public class DGBP_HSB_TestCase_35 extends Base {
 					
 					
 					Thread.sleep(1000);
-					for(int x=1;x<customizeTimerValue;x++)
+					for(int x=1;x<=customizeTimerValue;x++)
 					{ Thread.sleep(1000);
 					String text=driver1
 							.findElement(
