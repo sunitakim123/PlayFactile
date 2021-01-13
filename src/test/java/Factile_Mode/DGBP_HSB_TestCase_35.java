@@ -275,7 +275,7 @@ public class DGBP_HSB_TestCase_35 extends Base {
 				System.out.println("total active tiles in first game>>" + activetiles);
 
 				for (int p = 1; p <= activetiles; p++) {
-
+					Thread.sleep(5000);
 					System.out.println("value of p>>" + p);
 					wait.until(ExpectedConditions.elementToBeClickable(
 							By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")));
