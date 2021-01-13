@@ -277,10 +277,15 @@ public class DGBP_HSB_TestCase_36 extends Base {
  
 					System.out.println("Reading timer value at the end="+text);
 
-					Thread.sleep(1500);
-					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
+					if(driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).isDisplayed())
+					{
+						driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
+					}else
+					{
+						System.out.println("buzz not active");
+					}
 
-					driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
+					
 
 					driver.switchTo().window(driver.getWindowHandle());
 
