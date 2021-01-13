@@ -135,7 +135,7 @@ public class DGBP_HSB_TestCase_36 extends Base {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='timerValue']")));
 		driver.findElement(By.xpath("//input[@id='timerValue']")).clear();
 		
-		driver.findElement(By.xpath("//input[@id='timerValue']")).sendKeys("10");
+		driver.findElement(By.xpath("//input[@id='timerValue']")).sendKeys("6");
 		wait.until(ExpectedConditions
 				.presenceOfElementLocated(By.xpath("(//input[@class='btn getReceipt btnSaveBtn'])[5]")));
 
@@ -246,7 +246,6 @@ public class DGBP_HSB_TestCase_36 extends Base {
 
 				for (int p = 1; p <= activetiles; p++) {
 
-					Thread.sleep(5000);
 					System.out.println("Tile number=>>" + p);
 					wait.until(ExpectedConditions.elementToBeClickable(
 							By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")));
