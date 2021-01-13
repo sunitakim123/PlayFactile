@@ -269,7 +269,11 @@ public class DGBP_HSB_TestCase_36 extends Base {
 							 text = driver1.findElement(By.xpath(
 									"//div[@class='questionBoardTitletimer animated animate zoomIn']//span[@class='mr-2']"))
 									.getText();
-							//System.out.println(text);
+
+
+							 
+							 
+							 System.out.println(text);
 
 						}
 					} catch (NoSuchElementException e) {

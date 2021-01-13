@@ -174,4 +174,10 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_34"/>
            </classes>
   </test> <!-- Test -->
+   
+  <test name="Verify_customize timer count down">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_35"/>
+           </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->
