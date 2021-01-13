@@ -35,7 +35,7 @@ public class DGBP_HSB_TestCase_36 extends Base {
 	int ReadingTimerValue=5;
 	String  expectedSetReadingTimer = String.valueOf(ReadingTimerValue);
 	String s6, s7, GameName, twitterLink, PintrestLink, t1, p1, parent, expectedValue, actualValue,
-			PlayerNameAtmodraterscreen, PlayerNameAtPlayerScreen;
+			PlayerNameAtmodraterscreen, playerNameAtPlayerScreenString, text;
 	WebElement ElementNotGoingToVisible;
 	Actions act, act1, act2, act3, act4;
 
@@ -237,15 +237,9 @@ public class DGBP_HSB_TestCase_36 extends Base {
 				driver.findElement(By.xpath("//span[contains(text(),'Begin Game')]")).click();
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//span[contains(text(),'Start Game')]")).click();
-				Thread.sleep(2000);
-				/*
-				 * wait.until(ExpectedConditions .presenceOfElementLocated(By.xpath(
-				 * "//span[@class='selectGamePodiumCandidate']"))); String
-				 * pinvisibleOnModraterScreen = driver
-				 * .findElement(By.xpath("//span[@class='selectGamePodiumCandidate']")).getText(
-				 * ); Assert.assertEquals(i, pinvisibleOnModraterScreen);
-				 * System.out.println("Pin is visible on moderater screen");
-				 */
+				Thread.sleep(5000);
+
+
 				int activetiles = driver.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']"))
 						.size();
 				System.out.println("total active tiles in current game>>" + activetiles);
@@ -265,49 +259,28 @@ public class DGBP_HSB_TestCase_36 extends Base {
 					String ReadingTimervalueActual = driver1.findElement(By.xpath("//div[@class='questionBoardTitletimer animated animate zoomIn']//span[@class='mr-2']")).getText();
 					
 			
-					System.out.println("Reading timer value at started==" + ReadingTimervalueActual);
+					System.out.println("Reading timer value at starting==" + ReadingTimervalueActual);
 					Assert.assertEquals(expectedSetReadingTimer, ReadingTimervalueActual);
 					
-					for(int x=1;x<ReadingTimerValue;x++)
-					{ Thread.sleep(1000);
-					String text=driver1
-							.findElement(
-									By.xpath("//div[@class='questionBoardTitletimer animated animate zoomIn']//span[@class='mr-2']"))
-							.getText();
-					System.out.println(text);
-						
+					try {
+						for (int x = 1; x < ReadingTimerValue; x++) {
+							Thread.sleep(1000);
+							 text = driver1.findElement(By.xpath(
+									"//div[@class='questionBoardTitletimer animated animate zoomIn']//span[@class='mr-2']"))
+									.getText();
+							//System.out.println(text);
+
+						}
+					} catch (NoSuchElementException e) {
+					//	System.out.println("reading timer giving issue" + e.toString());
 					}
-					
-					
-					/*
-					//Thread.sleep(4000);
-					String ReadingTimervaluelast = driver1
-							.findElement(
-									By.xpath("//div[@class='questionBoardTitletimer animated animate zoomIn']//span[@class='mr-2']"))
-							.getText();
-					System.out.println("Reading timer value at the end==" + ReadingTimervaluelast);
-					Thread.sleep(2000);
-					//
-					wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
+ 
+					System.out.println("Reading timer value at the end="+text);
+
+					Thread.sleep(1500);
 					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
-					
-					
-					WebElement ele = driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
-					JavascriptExecutor executor = (JavascriptExecutor) driver1;
-					executor.executeScript("arguments[0].click();", ele); */
 
-					Thread.sleep(2000);
-					if(driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).isDisplayed())
-					{
-						driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
-					}
-					else
-					{
-						System.out.println("buzzer not displayed");
-					}
-					
-
-
+					driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
 
 					driver.switchTo().window(driver.getWindowHandle());
 

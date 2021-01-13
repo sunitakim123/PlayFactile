@@ -290,22 +290,24 @@ public class DGBP_HSB_TestCase_35 extends Base {
 			
 					System.out.println("Customize timer value in starting==" + customizeTimervalueActual);
 					Assert.assertEquals(expectedSetCustomizeTimer, customizeTimervalueActual);
+				
+					try {
+						Thread.sleep(1000);
+						for(int x=1;x<=customizeTimerValue;x++)
+						{ Thread.sleep(1000);
+						String text=driver1.findElement(By.xpath("//div[@class='questionBoardTitletimer animated animate zoomIn']/span")).getText();
+					//	System.out.println(text);
+							
+						}
+					} catch (NoSuchElementException e) {
+						// log.debug("Impossible to click the pop-up. Reason: " + e.toString());
+						System.out.println("timer is giving issue");
+					} 
 					
 					
-					Thread.sleep(1000);
-					for(int x=1;x<=customizeTimerValue;x++)
-					{ Thread.sleep(1000);
-					String text=driver1
-							.findElement(
-									By.xpath("//div[@class='questionBoardTitletimer animated animate zoomIn']/span"))
-							.getText();
-					System.out.println(text);
-						
-					}
 					
-					String customizeTimervaluelast = driver1
-							.findElement(
-									By.xpath("//div[@class='questionBoardTitletimer animated animate zoomIn']/span"))
+					
+					String customizeTimervaluelast = driver1.findElement(By.xpath("//div[@class='questionBoardTitletimer animated animate zoomIn']/span"))
 							.getText();
 					System.out.println("Customize timer value at the end==" + customizeTimervaluelast);
 					// wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
