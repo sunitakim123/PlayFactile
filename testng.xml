@@ -5,14 +5,10 @@
 </listeners>
        
  
-  <test name="Verify_customize timer count down">
+ 
+  <test name="Verify final factile timer">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_35"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Verify Reading timer">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_36"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_37"/>
            </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

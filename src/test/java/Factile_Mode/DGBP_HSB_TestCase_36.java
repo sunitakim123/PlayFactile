@@ -12,6 +12,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -44,6 +45,9 @@ public class DGBP_HSB_TestCase_36 extends Base {
 	@BeforeTest
 	public void initilize() throws IOException {
 		driver = IntilizeDriver();
+		 driver.manage().deleteAllCookies();
+		    driver.get("chrome://settings/clearBrowserData");
+		    driver.findElement(By.xpath("//settings-ui")).sendKeys(Keys.ENTER);
 		Dimension d = new Dimension(1382, 744);
 		driver.manage().window().setSize(d);
 		Log.info("Driver is Initilize");
@@ -273,7 +277,7 @@ public class DGBP_HSB_TestCase_36 extends Base {
 
 							 
 							 
-							 System.out.println(text);
+							// System.out.println(text);
 
 						}
 					} catch (NoSuchElementException e) {
