@@ -45,9 +45,7 @@ public class DGBP_HSB_TestCase_36 extends Base {
 	@BeforeTest
 	public void initilize() throws IOException {
 		driver = IntilizeDriver();
-		 driver.manage().deleteAllCookies();
-		    driver.get("chrome://settings/clearBrowserData");
-		    driver.findElement(By.xpath("//settings-ui")).sendKeys(Keys.ENTER);
+		 
 		Dimension d = new Dimension(1382, 744);
 		driver.manage().window().setSize(d);
 		Log.info("Driver is Initilize");

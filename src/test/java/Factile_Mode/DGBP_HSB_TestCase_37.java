@@ -45,9 +45,7 @@ public class DGBP_HSB_TestCase_37 extends Base {
 	@BeforeTest
 	public void initilize() throws IOException {
 		driver = IntilizeDriver();
-		 driver.manage().deleteAllCookies();
-		    driver.get("chrome://settings/clearBrowserData");
-		    driver.findElement(By.xpath("//settings-ui")).sendKeys(Keys.ENTER);
+		
 		Dimension d = new Dimension(1382, 744);
 		driver.manage().window().setSize(d);
 		Log.info("Driver is Initilize");
@@ -284,7 +282,7 @@ public class DGBP_HSB_TestCase_37 extends Base {
 
 					driver.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")).click();
 					driver1.switchTo().window(driver1.getWindowHandle());
-					driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+					driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				/*	wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
 					wait1.until(
 							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
@@ -361,8 +359,8 @@ public class DGBP_HSB_TestCase_37 extends Base {
 						.getText();
 				System.out.println("Customize timer value at the end==" + FinalFinalTimervalueAtlast);
 				
-				//wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
-				driver1.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+				wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
+				//driver1.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 				
 				WebElement ele = driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
