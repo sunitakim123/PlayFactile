@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="Factile_Mode.Listeners1"/>
   </listeners>
-  <test thread-count="5" name="Verify Reading timer(failed)">
+  <test thread-count="5" name="Verify_Automatically mark incorrect when timeout(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_36">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_38">
         <methods>
+          <include name="TC_38_Verify_Automatically_Mark_incorrect_answer_upon_timeout"/>
           <include name="initilize"/>
           <include name="tearDown"/>
-          <include name="TC_36_Verify_Reading_Timer"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_36 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_38 -->
     </classes>
-  </test> <!-- Verify Reading timer(failed) -->
+  </test> <!-- Verify_Automatically mark incorrect when timeout(failed) -->
 </suite> <!-- Failed suite [Suite] -->

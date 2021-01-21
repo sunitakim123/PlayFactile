@@ -1,25 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-14T16:34:03 IST" name="Default suite" finished-at="2021-01-14T16:37:30 IST" duration-ms="207854">
+  <suite started-at="2021-01-21T19:42:07 IST" name="Suite" finished-at="2021-01-21T19:55:52 IST" duration-ms="824924">
     <groups>
     </groups>
-    <test started-at="2021-01-14T16:34:03 IST" name="Default test" finished-at="2021-01-14T16:37:30 IST" duration-ms="207854">
-      <class name="Factile_Mode.DGBP_HSB_TestCase_37">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_37@12f9af83]" started-at="2021-01-14T16:34:03 IST" name="initilize" finished-at="2021-01-14T16:34:10 IST" duration-ms="7145" status="PASS">
+    <test started-at="2021-01-21T19:42:07 IST" name="Verify_customize timer count down" finished-at="2021-01-21T19:45:44 IST" duration-ms="216450">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_35">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_35@f0e995e]" started-at="2021-01-21T19:42:07 IST" name="initilize" finished-at="2021-01-21T19:42:14 IST" duration-ms="6878" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="TC_37_Verify_Final_Factile_Timer_on()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_37@12f9af83]" started-at="2021-01-14T16:34:10 IST" name="TC_37_Verify_Final_Factile_Timer_on" finished-at="2021-01-14T16:37:30 IST" duration-ms="200679" status="PASS">
+        <test-method signature="TC_35_Verify_Customize_Timer_Countdown_Time()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_35@f0e995e]" started-at="2021-01-21T19:42:14 IST" name="TC_35_Verify_Customize_Timer_Countdown_Time" finished-at="2021-01-21T19:45:42 IST" duration-ms="208191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_35_Verify_Customize_Timer_Countdown_Time -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_35@f0e995e]" started-at="2021-01-21T19:45:42 IST" name="tearDown" finished-at="2021-01-21T19:45:44 IST" duration-ms="1345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_35 -->
+    </test> <!-- Verify_customize timer count down -->
+    <test started-at="2021-01-21T19:45:44 IST" name="Verify_reading_timer" finished-at="2021-01-21T19:48:19 IST" duration-ms="154682">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_36">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_36@29e6eb25]" started-at="2021-01-21T19:45:44 IST" name="initilize" finished-at="2021-01-21T19:45:50 IST" duration-ms="6301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="TC_36_Verify_Reading_Timer()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_36@29e6eb25]" started-at="2021-01-21T19:45:50 IST" name="TC_36_Verify_Reading_Timer" finished-at="2021-01-21T19:48:17 IST" duration-ms="147037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_36_Verify_Reading_Timer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_36@29e6eb25]" started-at="2021-01-21T19:48:17 IST" name="tearDown" finished-at="2021-01-21T19:48:19 IST" duration-ms="1339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_36 -->
+    </test> <!-- Verify_reading_timer -->
+    <test started-at="2021-01-21T19:48:19 IST" name="Verify final factile timer" finished-at="2021-01-21T19:52:00 IST" duration-ms="221094">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_37">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_37@40e10ff8]" started-at="2021-01-21T19:48:19 IST" name="initilize" finished-at="2021-01-21T19:48:25 IST" duration-ms="6395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="TC_37_Verify_Final_Factile_Timer_on()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_37@40e10ff8]" started-at="2021-01-21T19:48:25 IST" name="TC_37_Verify_Final_Factile_Timer_on" finished-at="2021-01-21T19:51:58 IST" duration-ms="213282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_37_Verify_Final_Factile_Timer_on -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_37@12f9af83]" started-at="2021-01-14T16:37:30 IST" name="tearDown" finished-at="2021-01-14T16:37:30 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_37@40e10ff8]" started-at="2021-01-21T19:51:58 IST" name="tearDown" finished-at="2021-01-21T19:52:00 IST" duration-ms="1414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Factile_Mode.DGBP_HSB_TestCase_37 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Verify final factile timer -->
+    <test started-at="2021-01-21T19:52:00 IST" name="Verify_Automatically mark incorrect when timeout" finished-at="2021-01-21T19:55:52 IST" duration-ms="232269">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_38">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_38@78fb9a67]" started-at="2021-01-21T19:52:00 IST" name="initilize" finished-at="2021-01-21T19:52:06 IST" duration-ms="6346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="TC_38_Verify_Automatically_Mark_incorrect_answer_upon_timeout()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_38@78fb9a67]" started-at="2021-01-21T19:52:06 IST" name="TC_38_Verify_Automatically_Mark_incorrect_answer_upon_timeout" finished-at="2021-01-21T19:55:52 IST" duration-ms="225920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_38_Verify_Automatically_Mark_incorrect_answer_upon_timeout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_38@78fb9a67]" started-at="2021-01-21T19:55:52 IST" name="tearDown" finished-at="2021-01-21T19:55:52 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_38 -->
+    </test> <!-- Verify_Automatically mark incorrect when timeout -->
+  </suite> <!-- Suite -->
 </testng-results>

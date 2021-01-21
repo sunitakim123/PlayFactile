@@ -90,8 +90,8 @@ public class DGBP_HSB_TestCase_37 extends Base {
 	public void tearDown() throws InterruptedException {
 
 		
-	//	 driver1.quit(); driver.switchTo().window(driver.getWindowHandle());
-		//  driver.quit(); 
+		 driver1.quit(); driver.switchTo().window(driver.getWindowHandle());
+	 driver.quit(); 
 
 	}
 
@@ -273,7 +273,7 @@ public class DGBP_HSB_TestCase_37 extends Base {
 
 				for (int p = 1; p <= activetiles; p++) {
 
-					System.out.println("value of p>>" + p);
+					System.out.println("Tile Number=>>" + p);
 					wait.until(ExpectedConditions.elementToBeClickable(
 							By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")));
 
@@ -282,22 +282,13 @@ public class DGBP_HSB_TestCase_37 extends Base {
 
 					driver.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")).click();
 					driver1.switchTo().window(driver1.getWindowHandle());
-					driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-				/*	wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
-					wait1.until(
-							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
+					
+					Thread.sleep(4000);
+
 
 					WebElement ele = driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
 					JavascriptExecutor executor = (JavascriptExecutor) driver1;
-					executor.executeScript("arguments[0].click();", ele); */
-					if(driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).isDisplayed())
-					{
-						driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
-					}
-					else
-					{
-						System.out.println("buzz not visible");
-					} 
+					executor.executeScript("arguments[0].click();", ele); 
 
 					driver.switchTo().window(driver.getWindowHandle());
 					Thread.sleep(2000);

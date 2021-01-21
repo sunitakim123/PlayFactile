@@ -90,8 +90,8 @@ public class DGBP_HSB_TestCase_36 extends Base {
 	public void tearDown() throws InterruptedException {
 
 		
-	//	 driver1.quit(); driver.switchTo().window(driver.getWindowHandle());
-		//  driver.quit(); 
+		 driver1.quit(); driver.switchTo().window(driver.getWindowHandle());
+	  driver.quit(); 
 
 	}
 
@@ -271,7 +271,10 @@ public class DGBP_HSB_TestCase_36 extends Base {
 							 text = driver1.findElement(By.xpath(
 									"//div[@class='questionBoardTitletimer animated animate zoomIn']//span[@class='mr-2']"))
 									.getText();
-
+							 if(p==1)
+							 {
+								 System.out.println(text);
+							 }
 
 							 
 							 
@@ -283,9 +286,9 @@ public class DGBP_HSB_TestCase_36 extends Base {
 					}
  
 					System.out.println("Reading timer value at the end="+text);
-					wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
-					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
-					
+				//	wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
+				//	wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
+					Thread.sleep(3000);
 					WebElement ele = driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
 					JavascriptExecutor executor = (JavascriptExecutor) driver1;
 					executor.executeScript("arguments[0].click();", ele); 
