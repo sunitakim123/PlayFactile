@@ -64,16 +64,18 @@ public class DGBP_HSB_TestCase_27 extends Base {
 		driver.findElement(By.xpath("//span[@id='settings']")).click();
 		String url1 = driver.getCurrentUrl();
 
-		 if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
-			// div[@class='col-md-12 paidOfflineLabel']
+		
+		if (driver.findElement(By.xpath("//div[@class='col-md-12 currentActivePlanLabel']")).isDisplayed()) {
+
 			modeaterscreen();
 			PlayerScreen();
-
 		}
-
-		else {			System.out.println("You have not taken any subscription");
-		}
+	
+	
+	else {
+		System.out.println("You have not taken any subscription");
 	}
+}
 
 	@AfterTest
 	public void tearDown() throws InterruptedException {

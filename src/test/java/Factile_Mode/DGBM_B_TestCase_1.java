@@ -57,36 +57,18 @@ public class DGBM_B_TestCase_1 extends Base {
 		Thread.sleep(3000);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@id='settings']")));
 		driver.findElement(By.xpath("//span[@id='settings']")).click();
-		// String s1 =
-		// driver.findElement(By.xpath("//*[@id='yearlyBox']/div")).getAttribute("class");
-		// String s2 =
-		// driver.findElement(By.xpath("//*[@id='monthlyBox']/div")).getAttribute("class");
-		String s3 = driver.findElement(By.xpath("//*[@id='yearlybusinessBox']/div")).getAttribute("class");
-		String s4 = driver.findElement(By.xpath("//*[@id='monthlybusinessBox']/div")).getAttribute("class");
+		if (driver.findElement(By.xpath("//div[@class='col-md-12 currentActivePlanLabel']")).isDisplayed()) {
 
-		Thread.sleep(3000);
-		String s5 = "iradio_flat-yellow checked";
-
-		if (s3.equalsIgnoreCase(s5)) { 
-			try {
 			uploadLogoAtModeraterScreen();	
 			VerifyLogoAtmoderatergameboardScreen();
 		}
-		catch(InterruptedException e) {
-			System.out.println(e.toString());
-		}
-		} else if (s4.equalsIgnoreCase(s5)) {
-			try {
-				uploadLogoAtModeraterScreen();	
-				VerifyLogoAtmoderatergameboardScreen();
-			}
-			catch(InterruptedException e) {
-				System.out.println(e.toString());
-			}
-		} else {
-			Log.info("You have not taken any subscription");
+
+		else {
+			System.out.println("You have not taken any subscription");
 		}
 	}
+				
+			
 
 	@AfterTest
 	public void tearDown() {
@@ -111,6 +93,10 @@ public class DGBM_B_TestCase_1 extends Base {
 				driver.findElement(By.xpath("//button[contains(text(),'Yes, Delete it!')]")).click();
 				Thread.sleep(2000);
 			}
+		}
+		else
+		{
+			System.out.println("nothing to do");
 		}
 		}
 		 catch (NoSuchElementException e) {
@@ -198,14 +184,19 @@ public class DGBM_B_TestCase_1 extends Base {
 				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				driver1.get(prop.getProperty("joinurl"));
+				String url = driver1.getCurrentUrl();
 				Thread.sleep(3000);
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
 				Thread.sleep(1000);
 				//driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
 				//driver1.findElement(By.xpath("//button[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
-				driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
-				Thread.sleep(2000);
-				 driver1.findElement(By.xpath("//div[@data-name='Pineapple']")).click();
+				if (url.equals("https://game.playfactile.com/join")) {
+					// live join button
+					driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
+				} else {
+					driver1.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
+				}
+				 driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
 				 Thread.sleep(2000);
 				 driver.switchTo().window(driver.getWindowHandle());
 				 Thread.sleep(2000);

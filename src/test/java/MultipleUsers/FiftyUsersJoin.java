@@ -42,7 +42,7 @@ public class FiftyUsersJoin extends Base {
 	WebElement ElementNotGoingToVisible;
 	Actions act, act1, act2, act3, act4, act5, act6;
 
-	public static Logger Log = LogManager.getLogger(FiftyUsersJoin.class.getName());
+	//public static Logger Log = LogManager.getLogger(FiftyUsersJoin.class.getName());
 
 	@BeforeTest
 	public void initilize() throws IOException {
@@ -53,10 +53,9 @@ public class FiftyUsersJoin extends Base {
 		wait = new WebDriverWait(driver, 120);
 		Dimension d = new Dimension(1382, 744);
 		driver.manage().window().setSize(d);
-		Log.info("Driver is Initilize");
+	
 		driver.get(prop.getProperty("rooturl"));
 
-		Log.info("Navigated to homePage");
 
 	}
 
@@ -73,19 +72,14 @@ public class FiftyUsersJoin extends Base {
 		driver.findElement(By.xpath("//span[@id='settings']")).click();
 		String url1 = driver.getCurrentUrl();
 
-		if (url1.equalsIgnoreCase("https://awspf.com/settings")) {
+	
 			if (driver.findElement(By.xpath("//div[@class='col-md-12 currentActivePlanLabel']")).isDisplayed()) {
 
 				modeaterscreen();
 				PlayerScreen();
 			}
-		} else if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
-			// div[@class='col-md-12 paidOfflineLabel']
-			modeaterscreen();
-			PlayerScreen();
-
-		}
-
+		
+		
 		else {
 			System.out.println("You have not taken any subscription");
 		}
@@ -160,18 +154,8 @@ public class FiftyUsersJoin extends Base {
 				Thread.sleep(2000);
 				
 				
-				for(int j=1;j<=50;j++)
-				{
-					System.out.println("j  value=" + j);
-					driver1 = IntilizeDriver();
-					driver1.manage().timeouts().pageLoadTimeout(30, TimeUnit.MINUTES);
-					driver1.manage().timeouts().setScriptTimeout(30, TimeUnit.MINUTES);
-					driver1.manage().timeouts().implicitlyWait(30, TimeUnit.MINUTES);
-					wait1 = new WebDriverWait(driver1, 120);
-					driver1.get(prop.getProperty("joinurl"));
-				}
-
-				/*		for(int j=1;j<=50;j++)
+				
+					for(int j=1;j<=50;j++)
 				{
 				System.out.println("j  value=" + j);
 				driver1 = IntilizeDriver();
@@ -183,9 +167,14 @@ public class FiftyUsersJoin extends Base {
 				Thread.sleep(2000);
 				wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='form-control']")));
 				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-				Thread.sleep(2000);
-				//wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")));
-			//	driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
+				
+				
+		/*		Thread.sleep(2000);
+				wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='form-control']")));
+				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
+			
+			wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")));
+				driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
 
 				List<WebElement> ele3 = driver1.findElements(By.xpath("//div[@class='characterBlock position-relative']"));
 			if (j%9==0)
@@ -199,8 +188,12 @@ public class FiftyUsersJoin extends Base {
 					ele3.get(0).click();
 					}
 				
-				Thread.sleep(5000);
-				
-				*/
+				if(j>=4)
+				{Thread.sleep(10000);
+					
 				}
-				}}}
+				
+				
+				}*/
+			}
+				}}}}

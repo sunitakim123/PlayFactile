@@ -56,35 +56,20 @@ public class DGBP_B_TestCase_2 extends Base {
 		Thread.sleep(3000);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@id='settings']")));
 		driver.findElement(By.xpath("//span[@id='settings']")).click();
-		//String s1 = driver.findElement(By.xpath("//*[@id='yearlyBox']/div")).getAttribute("class");
-		//String s2 = driver.findElement(By.xpath("//*[@id='monthlyBox']/div")).getAttribute("class");
-		String s3 = driver.findElement(By.xpath("//*[@id='yearlybusinessBox']/div")).getAttribute("class");
-		String s4 = driver.findElement(By.xpath("//*[@id='monthlybusinessBox']/div")).getAttribute("class");
+		String url1 = driver.getCurrentUrl();
 
-		Thread.sleep(3000);
-		String s5 = "iradio_flat-yellow checked";
+		if (driver.findElement(By.xpath("//div[@class='col-md-12 currentActivePlanLabel']")).isDisplayed()) {
 
-		if (s3.equalsIgnoreCase(s5)) {
-			try {
 			uploadMascot();
 			VerifyAtPlayerScreen();
-			}
-			catch(InterruptedException e) {
-				System.out.println(e.toString());
-			}
-		} else if (s4.equalsIgnoreCase(s5)) {
-			try {
-				uploadMascot();
-				VerifyAtPlayerScreen();
-				}
-				catch(InterruptedException e) {
-					System.out.println(e.toString());
-				}
-		} else {
-			Log.info("You have not taken any subscription");
+		}
+
+		else {
+			System.out.println("You have not taken any subscription");
 		}
 	}
-
+				
+			
 	@AfterTest
 	public void tearDown() {
 		driver1.quit();

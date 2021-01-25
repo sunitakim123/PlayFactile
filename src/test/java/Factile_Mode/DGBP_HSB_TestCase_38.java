@@ -55,7 +55,7 @@ public class DGBP_HSB_TestCase_38 extends Base {
 
 	}
 
-	@Test
+	@Test()
 	public void TC_38_Verify_Automatically_Mark_incorrect_answer_upon_timeout() throws InterruptedException, IOException {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("span.loginButton")));
@@ -68,23 +68,19 @@ public class DGBP_HSB_TestCase_38 extends Base {
 		driver.findElement(By.xpath("//span[@id='settings']")).click();
 		String url1 = driver.getCurrentUrl();
 
-		if (url1.equalsIgnoreCase("https://awspf.com/settings")) {
-			if (driver.findElement(By.xpath("//div[@class='col-md-12 currentActivePlanLabel']")).isDisplayed()) {
 
-				modeaterscreen();
-				PlayerScreen();
-			}
-		} else if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
-			// div[@class='col-md-12 paidOfflineLabel']
+		
+		if (driver.findElement(By.xpath("//div[@class='col-md-12 currentActivePlanLabel']")).isDisplayed()) {
+
 			modeaterscreen();
 			PlayerScreen();
-
 		}
-
-		else {
-			System.out.println("You have not taken any subscription");
-		}
+	
+	
+	else {
+		System.out.println("You have not taken any subscription");
 	}
+}
 
 	@AfterTest
 	public void tearDown() throws InterruptedException {

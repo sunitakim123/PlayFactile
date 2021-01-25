@@ -63,24 +63,18 @@ public class DGBP_HSB_TestCase_29 extends Base {
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@id='settings']")));
 		driver.findElement(By.xpath("//span[@id='settings']")).click();
 		String url1 = driver.getCurrentUrl();
+		
+		if (driver.findElement(By.xpath("//div[@class='col-md-12 currentActivePlanLabel']")).isDisplayed()) {
 
-		if (url1.equalsIgnoreCase("https://awspf.com/settings")) {
-			if (driver.findElement(By.xpath("//div[@class='col-md-12 currentActivePlanLabel']")).isDisplayed()) {
-
-				modeaterscreen();
-				PlayerScreen();
-			}
-		} else if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
-			// div[@class='col-md-12 paidOfflineLabel']
 			modeaterscreen();
 			PlayerScreen();
-
 		}
-
-		else {
-			System.out.println("You have not taken any subscription");
-		}
+	
+	
+	else {
+		System.out.println("You have not taken any subscription");
 	}
+}
 
 	@AfterTest
 	public void tearDown() throws InterruptedException {
