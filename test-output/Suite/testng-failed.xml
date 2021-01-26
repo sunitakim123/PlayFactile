@@ -4,14 +4,15 @@
   <listeners>
     <listener class-name="Factile_Mode.Listeners1"/>
   </listeners>
-  <test thread-count="5" parallel="methods" name="Verify_same_game_running_by_two_moderaters(failed)">
+  <test thread-count="5" name="Verify_reading_timer(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_39">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_36">
         <methods>
-          <include name="TC_39_Moderater_two"/>
+          <include name="initilize"/>
           <include name="tearDown"/>
+          <include name="TC_36_Verify_Reading_Timer"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_39 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_36 -->
     </classes>
-  </test> <!-- Verify_same_game_running_by_two_moderaters(failed) -->
+  </test> <!-- Verify_reading_timer(failed) -->
 </suite> <!-- Failed suite [Suite] -->
