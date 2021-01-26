@@ -1,30 +1,11 @@
-14:58:12.405 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - Driver is Initilize
-14:58:13.178 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - Navigated to homePage
-14:59:16.440 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - When unchecked from customization setting>>Twitter link is displaying
-14:59:16.440 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - When unchecked from customization setting>>Pintrest link is displaying
-14:59:23.270 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_5 - Driver is Initilize
-14:59:23.955 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_5 - Navigated to homePage
-15:01:16.029 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_5 - SMO(Twiiter & Pintrest) Links not present on gameboard at moderater screen
-15:01:22.778 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - Driver is Initilize
-15:01:23.588 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - Navigated to homePage
-15:01:36.009 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - At customization page>> UnCheck display exact case>> 
-15:02:28.961 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - when unchecked from customization setting>>Exact case is not displayed
-15:02:35.759 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Driver is Initilize
-15:02:36.465 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Navigated to homePage
-15:02:49.430 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - At customization page>> UnCheck display exact case>> 
-15:04:40.451 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - when Checked from customization setting>>Exact case is  displayed
-15:04:47.340 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - Driver is Initilize
-15:04:49.152 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - Navigated to homePage
-15:04:59.701 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - At customization page>> UnCheck Hide Category with Points>> 
-15:05:49.613 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - category with points is =CAT1 FOR 100
-15:05:56.352 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
-15:05:57.088 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
-15:06:08.527 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
-15:06:59.689 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Hide category with points is working fine
-15:07:06.320 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - Driver is Initilize
-15:07:06.983 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - Navigated to homePage
-15:07:16.754 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - At customization page>> Check Diaplay Answer button>> 
-15:08:27.157 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - Display answer is working fine
-15:08:33.988 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Driver is Initilize
-15:08:34.627 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Navigated to homePage
-15:08:53.802 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - At customization page>> UNCheck Turn off tag name>> 
+16:11:34.769 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
+16:11:35.139 [TestNG-test=Verify_same_game_running_by_two_moderaters-1] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
+16:13:56.670 [TestNG-test=Verify_same_game_running_by_two_moderaters-1] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Driver is Initilize
+16:13:57.124 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
+16:13:57.936 [TestNG-test=Verify_same_game_running_by_two_moderaters-1] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
+16:15:42.051 [TestNG-test=Verify_same_game_running_by_two_moderaters-1] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Driver is Initilize
+16:15:42.755 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
+16:15:43.857 [TestNG-test=Verify_same_game_running_by_two_moderaters-1] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
+16:35:08.353 [TestNG-test=Verify_same_game_running_by_two_moderaters-1] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Driver is Initilize
+16:35:08.981 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
+16:35:09.006 [TestNG-test=Verify_same_game_running_by_two_moderaters-1] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
