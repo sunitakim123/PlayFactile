@@ -161,5 +161,48 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_30"/>
            </classes>
   </test> <!-- Test -->
+    
+  <test name="Verify enter final factile answer">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_31"/>
+           </classes>
+  </test> <!-- Test -->
+     <test name="Verify_enter_answer_after_buzz">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_32"/>
+           </classes>
+  </test> <!-- Test -->
   
+       <test name="Verify_Stop_Timer_on_BuzzIn_of_1_to_100">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_33"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Verify_Maximum_Buzz_in_per_try_taken1">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_34"/>
+           </classes>
+  </test> <!-- Test -->
+   
+  <test name="Verify_customize timer count down">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_35"/>
+           </classes>
+  </test> <!-- Test -->
+  
+   <test name="Verify_reading_timer">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_36"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Verify final factile timer">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_37"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Verify_Automatically mark incorrect when timeout">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_38"/>
+           </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

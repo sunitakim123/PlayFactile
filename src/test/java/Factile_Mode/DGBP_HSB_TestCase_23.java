@@ -290,7 +290,7 @@ public class DGBP_HSB_TestCase_23 extends Base {
 					driver.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")).click();
 					driver1.switchTo().window(driver1.getWindowHandle());
 
-					wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
+				Thread.sleep(4000);
 					wait1.until(
 							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 
