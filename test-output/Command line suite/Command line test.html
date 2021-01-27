@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jan 25 10:42:22 IST 2021</td>
+<td>Started on:</td><td>Tue Jan 26 20:12:11 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>71 seconds (71797 ms)</td>
+<tr><td>Total time:</td><td>95 seconds (95766 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='MultipleUsers.FiftyUsersJoin.Call()'><b>Call</b><br>Test class: MultipleUsers.FiftyUsersJoin</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;col-md-12 paidOfflineLabel&apos;]&quot;}
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;displayBuzzerOptionBack&apos;]/div[1]/div[2]/div/div/ins&quot;}
   (Session info: chrome=87.0.4280.141)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-HKE6JL3&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\DELIGE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51009}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 50a81e50ec149c93d20d7469ba6ae625
-*** Element info: {Using=xpath, value=//div[@class=&apos;col-md-12 paidOfflineLabel&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\DELIGE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60265}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a8cc51f4a3ce09aca5d49ce45c81297d
+*** Element info: {Using=xpath, value=//*[@id=&apos;displayBuzzerOptionBack&apos;]/div[1]/div[2]/div/div/ins}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -95,19 +95,20 @@ Session ID: 50a81e50ec149c93d20d7469ba6ae625
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at MultipleUsers.FiftyUsersJoin.Call(FiftyUsersJoin.java:81)
+	at MultipleUsers.FiftyUsersJoin.PlayerScreen(FiftyUsersJoin.java:147)
+	at MultipleUsers.FiftyUsersJoin.Call(FiftyUsersJoin.java:79)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at MultipleUsers.TestRunner.main(TestRunner.java:14)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace38603201", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace38603201'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;col-md-12 paidOfflineLabel&apos;]&quot;}
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1614133563", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1614133563'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;displayBuzzerOptionBack&apos;]/div[1]/div[2]/div/div/ins&quot;}
   (Session info: chrome=87.0.4280.141)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-HKE6JL3&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\DELIGE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51009}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 50a81e50ec149c93d20d7469ba6ae625
-*** Element info: {Using=xpath, value=//div[@class=&apos;col-md-12 paidOfflineLabel&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\DELIGE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60265}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a8cc51f4a3ce09aca5d49ce45c81297d
+*** Element info: {Using=xpath, value=//*[@id=&apos;displayBuzzerOptionBack&apos;]/div[1]/div[2]/div/div/ins}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -123,7 +124,8 @@ Session ID: 50a81e50ec149c93d20d7469ba6ae625
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at MultipleUsers.FiftyUsersJoin.Call(FiftyUsersJoin.java:81)
+	at MultipleUsers.FiftyUsersJoin.PlayerScreen(FiftyUsersJoin.java:147)
+	at MultipleUsers.FiftyUsersJoin.Call(FiftyUsersJoin.java:79)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -151,7 +153,7 @@ Session ID: 50a81e50ec149c93d20d7469ba6ae625
 	at org.testng.TestNG.run(TestNG.java:1000)
 	at MultipleUsers.TestRunner.main(TestRunner.java:14)
 </pre></div></td>
-<td>65</td>
+<td>88</td>
 <td>MultipleUsers.FiftyUsersJoin@490ab905</td></tr>
 </table><p>
 </body>

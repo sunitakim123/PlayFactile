@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_39">
+      <class name="HundredUsers.moderaterscreen">
         <methods>
-          <include name="TC_39_Moderater_two"/>
+          <include name="initilize"/>
+          <include name="Call1"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_39 -->
+      </class> <!-- HundredUsers.moderaterscreen -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

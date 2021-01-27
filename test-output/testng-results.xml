@@ -1,45 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-26T19:33:17 IST" name="Suite" finished-at="2021-01-26T19:50:48 IST" duration-ms="1051363">
+  <suite started-at="2021-01-27T16:38:42 IST" name="Default suite" finished-at="2021-01-27T16:42:00 IST" duration-ms="197954">
     <groups>
     </groups>
-    <test started-at="2021-01-26T19:33:17 IST" name="Verify_customize timer count down" finished-at="2021-01-26T19:36:57 IST" duration-ms="219820">
-      <class name="Factile_Mode.DGBP_HSB_TestCase_35">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_35@f0e995e]" started-at="2021-01-26T19:33:17 IST" name="initilize" finished-at="2021-01-26T19:33:25 IST" duration-ms="8337" status="PASS">
+    <test started-at="2021-01-27T16:38:42 IST" name="Default test" finished-at="2021-01-27T16:42:00 IST" duration-ms="197954">
+      <class name="HundredUsers.moderaterscreen">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:HundredUsers.moderaterscreen@38c5cc4c]" started-at="2021-01-27T16:38:42 IST" name="initilize" finished-at="2021-01-27T16:38:48 IST" duration-ms="6788" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="TC_35_Verify_Customize_Timer_Countdown_Time()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_35@f0e995e]" started-at="2021-01-26T19:33:25 IST" name="TC_35_Verify_Customize_Timer_Countdown_Time" finished-at="2021-01-26T19:36:55 IST" duration-ms="209968" status="PASS">
+        <test-method signature="Call()[pri:0, instance:HundredUsers.moderaterscreen@38c5cc4c]" started-at="2021-01-27T16:38:48 IST" name="Call" finished-at="2021-01-27T16:40:36 IST" duration-ms="107763" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_35_Verify_Customize_Timer_Countdown_Time -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_35@f0e995e]" started-at="2021-01-26T19:36:55 IST" name="tearDown" finished-at="2021-01-26T19:36:57 IST" duration-ms="1449" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_35 -->
-    </test> <!-- Verify_customize timer count down -->
-    <test started-at="2021-01-26T19:36:57 IST" name="Verify_reading_timer" finished-at="2021-01-26T19:39:12 IST" duration-ms="135222">
-      <class name="Factile_Mode.DGBP_HSB_TestCase_36">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_36@29e6eb25]" started-at="2021-01-26T19:36:57 IST" name="initilize" finished-at="2021-01-26T19:37:04 IST" duration-ms="6695" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initilize -->
-        <test-method signature="TC_36_Verify_Reading_Timer()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_36@29e6eb25]" started-at="2021-01-26T19:37:04 IST" name="TC_36_Verify_Reading_Timer" finished-at="2021-01-26T19:39:10 IST" duration-ms="126727" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- Call -->
+        <test-method signature="Call1()[pri:0, instance:HundredUsers.moderaterscreen@38c5cc4c]" started-at="2021-01-27T16:40:36 IST" name="Call1" finished-at="2021-01-27T16:42:00 IST" duration-ms="83371" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[did not expect to find [true] but found [false]]]>
+              <![CDATA[element click intercepted: Element <div class="characterBlock position-relative inactive" data-id="ajPNJmCmTiiNFozYh" data-name="u2">...</div> is not clickable at point (1110, 533). Other element would receive the click: <div class="characterRow">...</div>
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HKE6JL3', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\DELIGE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59869}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 21733d8150630a08ff70ad47039394f2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: did not expect to find [true] but found [false]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.failNotEquals(Assert.java:969)
-at org.testng.Assert.assertTrue(Assert.java:43)
-at org.testng.Assert.assertTrue(Assert.java:53)
-at Factile_Mode.DGBP_HSB_TestCase_36.PlayerScreen(DGBP_HSB_TestCase_36.java:261)
-at Factile_Mode.DGBP_HSB_TestCase_36.TC_36_Verify_Reading_Timer(DGBP_HSB_TestCase_36.java:75)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="characterBlock position-relative inactive" data-id="ajPNJmCmTiiNFozYh" data-name="u2">...</div> is not clickable at point (1110, 533). Other element would receive the click: <div class="characterRow">...</div>
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HKE6JL3', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\DELIGE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59869}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 21733d8150630a08ff70ad47039394f2
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at HundredUsers.moderaterscreen.Call1(moderaterscreen.java:277)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -70,63 +78,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_36_Verify_Reading_Timer -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_36@29e6eb25]" started-at="2021-01-26T19:39:11 IST" name="tearDown" finished-at="2021-01-26T19:39:12 IST" duration-ms="1405" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_36 -->
-    </test> <!-- Verify_reading_timer -->
-    <test started-at="2021-01-26T19:39:12 IST" name="Verify final factile timer" finished-at="2021-01-26T19:42:53 IST" duration-ms="220557">
-      <class name="Factile_Mode.DGBP_HSB_TestCase_37">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_37@40e10ff8]" started-at="2021-01-26T19:39:12 IST" name="initilize" finished-at="2021-01-26T19:39:19 IST" duration-ms="6530" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initilize -->
-        <test-method signature="TC_37_Verify_Final_Factile_Timer_on()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_37@40e10ff8]" started-at="2021-01-26T19:39:19 IST" name="TC_37_Verify_Final_Factile_Timer_on" finished-at="2021-01-26T19:42:51 IST" duration-ms="212496" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_37_Verify_Final_Factile_Timer_on -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_37@40e10ff8]" started-at="2021-01-26T19:42:51 IST" name="tearDown" finished-at="2021-01-26T19:42:53 IST" duration-ms="1528" status="PASS">
+        </test-method> <!-- Call1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:HundredUsers.moderaterscreen@38c5cc4c]" started-at="2021-01-27T16:42:00 IST" name="tearDown" finished-at="2021-01-27T16:42:00 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_37 -->
-    </test> <!-- Verify final factile timer -->
-    <test started-at="2021-01-26T19:42:53 IST" name="Verify_Automatically mark incorrect when timeout" finished-at="2021-01-26T19:46:46 IST" duration-ms="233027">
-      <class name="Factile_Mode.DGBP_HSB_TestCase_38">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_38@78fb9a67]" started-at="2021-01-26T19:42:53 IST" name="initilize" finished-at="2021-01-26T19:42:59 IST" duration-ms="6404" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initilize -->
-        <test-method signature="TC_38_Verify_Automatically_Mark_incorrect_answer_upon_timeout()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_38@78fb9a67]" started-at="2021-01-26T19:42:59 IST" name="TC_38_Verify_Automatically_Mark_incorrect_answer_upon_timeout" finished-at="2021-01-26T19:46:46 IST" duration-ms="226617" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_38_Verify_Automatically_Mark_incorrect_answer_upon_timeout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_38@78fb9a67]" started-at="2021-01-26T19:46:46 IST" name="tearDown" finished-at="2021-01-26T19:46:46 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_38 -->
-    </test> <!-- Verify_Automatically mark incorrect when timeout -->
-    <test started-at="2021-01-26T19:46:46 IST" name="Verify_same_game_running_by_two_moderaters" finished-at="2021-01-26T19:50:48 IST" duration-ms="242295">
-      <class name="Factile_Mode.DGBP_HSB_TestCase_39">
-        <test-method signature="TC_39_Moderater_two()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_39@5778826f]" started-at="2021-01-26T19:46:46 IST" name="TC_39_Moderater_two" finished-at="2021-01-26T19:50:32 IST" duration-ms="226690" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_39_Moderater_two -->
-        <test-method signature="TC_39_Moderater_one()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_39@5778826f]" started-at="2021-01-26T19:46:46 IST" name="TC_39_Moderater_one" finished-at="2021-01-26T19:50:10 IST" duration-ms="203704" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_39_Moderater_one -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_39@5778826f]" started-at="2021-01-26T19:50:32 IST" name="tearDown" finished-at="2021-01-26T19:50:48 IST" duration-ms="15595" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_39 -->
-    </test> <!-- Verify_same_game_running_by_two_moderaters -->
-  </suite> <!-- Suite -->
+      </class> <!-- HundredUsers.moderaterscreen -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

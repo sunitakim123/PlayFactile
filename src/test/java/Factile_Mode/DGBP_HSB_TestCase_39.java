@@ -357,7 +357,7 @@ System.out.println("Game url is:= "+gameURL);
 
 				for (int p = 1; p <= activetiles; p++) {
 
-					System.out.println("Tile Number=>>" + p);
+					System.out.println("Tile Number on moderater 1=>>" + p);
 					wait.until(ExpectedConditions.elementToBeClickable(
 							By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")));
 
@@ -594,7 +594,7 @@ System.out.println("Game url is:= "+gameURL);
 
 				for (int p = 1; p <= activetiles; p++) {
 
-					System.out.println("Tile Number=>>" + p);
+					System.out.println("Tile Number on modeater 2 =>>" + p);
 					wait3.until(ExpectedConditions.elementToBeClickable(
 							By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")));
 

@@ -85,8 +85,7 @@ public class DGBP_HSB_TestCase_30 extends Base {
 		driver.quit();
 		driver2.switchTo().window(driver2.getWindowHandle());
 		driver2.quit();
-		driver3.switchTo().window(driver3.getWindowHandle());
-		driver3.quit(); 
+		
 	}
 
 	public void modeaterscreen() throws InterruptedException {
@@ -300,8 +299,8 @@ public class DGBP_HSB_TestCase_30 extends Base {
 					Thread.sleep(2000);
 					driver.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")).click();
 					driver1.switchTo().window(driver1.getWindowHandle());
-
-					wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
+Thread.sleep(4000);
+				//	wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
 					wait1.until(
 							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 
@@ -396,14 +395,13 @@ public class DGBP_HSB_TestCase_30 extends Base {
 				}
 				
 				Assert.assertNull("Buzzer is not coming for final factile to  user 1", ele);
-				
+			
 
 			
 				
 
 				driver2.switchTo().window(driver2.getWindowHandle());
 				driver2.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-				// wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
 
 
 				try {
@@ -416,6 +414,7 @@ public class DGBP_HSB_TestCase_30 extends Base {
 				}
 								
 				Assert.assertNull("Buzzer is not coming for final factile to user 2", ele1);
+				
 				
 				
 				driver.switchTo().window(driver.getWindowHandle()); 

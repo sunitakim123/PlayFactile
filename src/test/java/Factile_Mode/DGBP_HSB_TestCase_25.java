@@ -279,17 +279,17 @@ public class DGBP_HSB_TestCase_25 extends Base {
 
 				for (int p = 1; p <= activetiles; p++) {
 
-					System.out.println("value of p>>" + p);
+					System.out.println("Tile number>>" + p);
 					wait.until(ExpectedConditions.elementToBeClickable(
 							By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")));
 					
 					// System.out.println("value"+ value);
-					 System.out.println("value of p>>"+p);
+					// System.out.println("value of p>>"+p);
 					Thread.sleep(2000);
 					driver.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")).click();
 					driver1.switchTo().window(driver1.getWindowHandle());
 
-					wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
+				Thread.sleep(4000);
 					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 					
 					WebElement ele=driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
