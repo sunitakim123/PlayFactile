@@ -52,7 +52,7 @@ public class DGBP_HSB_TestCase_39 extends Base {
 	
 
 	@Test
-	public void TC_39_Moderater_one() throws InterruptedException, IOException {
+	public void TC_39_Same_Game_playing_from_Moderater_one() throws InterruptedException, IOException {
 	
 			driver = IntilizeDriver();		
 			Dimension d = new Dimension(1382, 744);
@@ -88,7 +88,7 @@ Log.info("Driver is Initilize");
 
 	
 	@Test
-	public void TC_39_Moderater_two() throws InterruptedException, IOException {
+	public void TC_39_Same_Game_playing_by_two__Moderater() throws InterruptedException, IOException {
 	
 			
 		FileInputStream fis = new FileInputStream( "./src/main/java/resources/data.properties");
@@ -172,9 +172,13 @@ Log.info("Driver is Initilize");
 	@AfterTest
 	public void tearDown() throws InterruptedException {
 
-		
-		 driver1.quit(); driver.switchTo().window(driver.getWindowHandle());
-	 driver.quit(); 
+		driver1.quit();
+		driver.switchTo().window(driver.getWindowHandle());
+		driver.quit();
+		driver2.switchTo().window(driver2.getWindowHandle());
+		driver2.quit(); 
+		driver3.switchTo().window(driver3.getWindowHandle());
+		driver3.quit(); 
 
 	}
 

@@ -76,9 +76,9 @@ static String i, j;
 	
 			if (driver.findElement(By.xpath("//div[@class='col-md-12 currentActivePlanLabel']")).isDisplayed()) {
 
-				modeaterscreen();
-				PlayerScreen();
-				
+			//	modeaterscreen();
+			//	PlayerScreen();
+				call2();
 			}
 		
 		
@@ -161,136 +161,47 @@ static String i, j;
 				Thread.sleep(2000);
 				
 				
-				driver1 = IntilizeDriver();
-				Dimension d1 = new Dimension(1382,744);     
-				driver1.manage().window().setSize(d1); 
-				driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
-				driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-				wait1 = new WebDriverWait(driver1, 60);
-				driver1.get(prop.getProperty("joinurl"));
-				String url = driver1.getCurrentUrl();
-				Thread.sleep(2000);
-				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);	
-								Thread.sleep(2000);			
-					driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
-								Thread.sleep(2000);
-				driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
-				Thread.sleep(2000);
+				for(int j=1;j<=50;j++) {
+					driver1 = IntilizeDriver();
+					Dimension d1 = new Dimension(1382,744);     
+					driver1.manage().window().setSize(d1); 
+					driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+					
+					
+					
+					driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
+					driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+					wait1 = new WebDriverWait(driver1, 60);
+					driver1.get(prop.getProperty("joinurl"));
+					Thread.sleep(2000);
+						driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);	
+									Thread.sleep(2000);			
 			
-				driver2 = IntilizeDriver();
-				Dimension d2 = new Dimension(1382,744);     
-				driver2.manage().window().setSize(d2); 
-				driver2.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-				driver2.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
-				driver2.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-				wait2 = new WebDriverWait(driver2, 60);
-				driver2.get(prop.getProperty("joinurl"));				
-				Thread.sleep(2000);
-				driver2.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-				Thread.sleep(2000);
-								driver2.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();			
-				Thread.sleep(2000);
-				driver2.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
-				Thread.sleep(2000);
+			
 				
-				driver3 = IntilizeDriver();
-				driver3.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-				driver3.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
-				driver3.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-				wait3 = new WebDriverWait(driver3, 60);
-				driver3.get(prop.getProperty("joinurl"));				
-				Thread.sleep(2000);
-				driver3.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-				Thread.sleep(2000);
-								driver3.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();			
-				Thread.sleep(2000);
-				driver3.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
-				Thread.sleep(2000);
-				
-				
-				driver4 = IntilizeDriver();
-				driver4.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-				driver4.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
-				driver4.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-				wait4 = new WebDriverWait(driver4, 60);
-				driver4.get(prop.getProperty("joinurl"));				
-				Thread.sleep(2000);
-				driver4.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-				Thread.sleep(2000);
-								driver4.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();			
-				Thread.sleep(2000);
-				driver4.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
-				Thread.sleep(2000);	
-				
-				}}}
+				}}}}
 	
-	@Test
-	public void Call1() throws InterruptedException, IOException {
+		
 	
-		driver1 = IntilizeDriver();
-		Dimension d1 = new Dimension(1382,744);     
-		driver1.manage().window().setSize(d1); 
-		driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
-		driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		wait1 = new WebDriverWait(driver1, 60);
-		driver1.get(prop.getProperty("joinurl"));
-		String url = driver1.getCurrentUrl();
-		Thread.sleep(2000);
-		System.out.println(i);
-		System.out.println(j);
-		driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);	
-						Thread.sleep(2000);			
-			driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();
-						Thread.sleep(2000);
-		driver1.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
-		Thread.sleep(2000);
 	
-		driver2 = IntilizeDriver();
-		Dimension d2 = new Dimension(1382,744);     
-		driver2.manage().window().setSize(d2); 
-		driver2.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		driver2.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
-		driver2.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		wait2 = new WebDriverWait(driver2, 60);
-		driver2.get(prop.getProperty("joinurl"));				
-		Thread.sleep(2000);
-		driver2.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-		Thread.sleep(2000);
-						driver2.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();			
-		Thread.sleep(2000);
-		driver2.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
-		Thread.sleep(2000);
+	void call2() throws IOException, InterruptedException
+	{
 		
-		driver3 = IntilizeDriver();
-		driver3.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		driver3.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
-		driver3.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		wait3 = new WebDriverWait(driver3, 60);
-		driver3.get(prop.getProperty("joinurl"));				
-		Thread.sleep(2000);
-		driver3.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-		Thread.sleep(2000);
-						driver3.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();			
-		Thread.sleep(2000);
-		driver3.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
-		Thread.sleep(2000);
-		
-		
-		driver4 = IntilizeDriver();
-		driver4.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		driver4.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
-		driver4.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		wait4 = new WebDriverWait(driver4, 60);
-		driver4.get(prop.getProperty("joinurl"));				
-		Thread.sleep(2000);
-		driver4.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
-		Thread.sleep(2000);
-						driver4.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']")).click();			
-		Thread.sleep(2000);
-		driver4.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]")).click();
-		Thread.sleep(2000);
+		for(int j=1;j<=20;j++) {
+			System.out.println("join user number"+j);
+			driver1 = IntilizeDriver();
+			Dimension d1 = new Dimension(1382,744);     
+			driver1.manage().window().setSize(d1); 
+			driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+			driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
+			driver1.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			wait1 = new WebDriverWait(driver1, 60);
+			driver1.get(prop.getProperty("joinurl"));
+			Thread.sleep(2000);
+				//driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);	
+				//			Thread.sleep(2000);			
 	
 	}
-}
+	
+	
+	}}

@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-27T21:38:28 IST" name="Default suite" finished-at="2021-01-27T21:42:23 IST" duration-ms="235435">
+  <suite started-at="2021-01-29T19:19:06 IST" name="Default suite" finished-at="2021-01-29T19:33:17 IST" duration-ms="850660">
     <groups>
     </groups>
-    <test started-at="2021-01-27T21:38:28 IST" name="Default test" finished-at="2021-01-27T21:42:23 IST" duration-ms="235435">
-      <class name="Factile_Mode.DGBP_HSB_TestCase_38">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_38@12f9af83]" started-at="2021-01-27T21:38:28 IST" name="initilize" finished-at="2021-01-27T21:38:35 IST" duration-ms="6921" status="PASS">
+    <test started-at="2021-01-29T19:19:06 IST" name="Default test" finished-at="2021-01-29T19:33:17 IST" duration-ms="850660">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_41">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_41@12f9af83]" started-at="2021-01-29T19:19:06 IST" name="initilize" finished-at="2021-01-29T19:19:13 IST" duration-ms="6834" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="TC_38_Verify_Automatically_Mark_incorrect_answer_upon_timeout()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_38@12f9af83]" started-at="2021-01-27T21:38:35 IST" name="TC_38_Verify_Automatically_Mark_incorrect_answer_upon_timeout" finished-at="2021-01-27T21:42:23 IST" duration-ms="228496" status="PASS">
+        <test-method signature="TC_41_MultiTeammember_RandomTeamAssignmnet()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_41@12f9af83]" started-at="2021-01-29T19:19:13 IST" name="TC_41_MultiTeammember_RandomTeamAssignmnet" finished-at="2021-01-29T19:33:17 IST" duration-ms="843802" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_38_Verify_Automatically_Mark_incorrect_answer_upon_timeout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_38@12f9af83]" started-at="2021-01-27T21:42:23 IST" name="tearDown" finished-at="2021-01-27T21:42:23 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- TC_41_MultiTeammember_RandomTeamAssignmnet -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_41@12f9af83]" started-at="2021-01-29T19:33:17 IST" name="tearDown" finished-at="2021-01-29T19:33:17 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_38 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_41 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
