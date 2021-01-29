@@ -175,10 +175,7 @@ Log.info("Driver is Initilize");
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
 		driver.quit();
-		driver2.switchTo().window(driver2.getWindowHandle());
-		driver2.quit(); 
-		driver3.switchTo().window(driver3.getWindowHandle());
-		driver3.quit(); 
+		
 
 	}
 

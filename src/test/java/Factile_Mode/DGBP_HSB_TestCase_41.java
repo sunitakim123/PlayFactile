@@ -400,7 +400,7 @@ public class DGBP_HSB_TestCase_41 extends Base {
 						WebElement ele1 = driver3.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
 						JavascriptExecutor executor1 = (JavascriptExecutor) driver3;
 						executor1.executeScript("arguments[0].click();", ele1);
-
+						Thread.sleep(2000);
 						wait3.until(ExpectedConditions
 								.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
 						driver3.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
@@ -409,7 +409,7 @@ public class DGBP_HSB_TestCase_41 extends Base {
 						driver3.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
 						wait3.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//p[@class='answerSubmitMsg']")));
 							String MsgOnTeammemberOfCaptain2Screen = driver3.findElement(By.xpath("//p[@class='answerSubmitMsg']")).getText();
-						
+							Thread.sleep(2000);
 						driver1.switchTo().window(driver1.getWindowHandle());
 						Thread.sleep(3000);
 						
