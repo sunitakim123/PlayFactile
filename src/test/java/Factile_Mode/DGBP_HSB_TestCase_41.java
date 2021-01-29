@@ -535,7 +535,8 @@ public class DGBP_HSB_TestCase_41 extends Base {
 				Assert.assertNotNull("Buzzer is coming for final factile to  user 1", ele);
 				JavascriptExecutor executor = (JavascriptExecutor) driver1;
 				executor.executeScript("arguments[0].click();", ele);
-
+				Thread.sleep(2000);
+			
 				driver1.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				wait1.until(ExpectedConditions
 						.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
@@ -543,7 +544,7 @@ public class DGBP_HSB_TestCase_41 extends Base {
 				wait1.until(ExpectedConditions
 						.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 				driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
-
+				Thread.sleep(2000);
 				driver2.switchTo().window(driver2.getWindowHandle());
 
 				// wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
