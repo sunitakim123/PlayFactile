@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_39">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_48">
         <methods>
-          <include name="TC_39_Same_Game_playing_by_two__Moderater"/>
+          <include name="TC_42_Verify_wager_submission_full_amount_by_player"/>
+          <include name="initilize"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_39 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_48 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

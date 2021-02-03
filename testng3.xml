@@ -210,4 +210,15 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_39"/>
            </classes>
   </test> <!-- Test -->
+   <test name="Verify_MultiTeamMemeber_PlayerSelctedTeamAssignmnet" >
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_40"/>
+           </classes>
+  </test> <!-- Test -->
+  
+   <test name="Verify_MultiTeamMemeber_RandomTeamAssignmnet" >
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_41"/>
+           </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

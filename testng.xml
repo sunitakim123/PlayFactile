@@ -3,22 +3,40 @@
 <listeners>
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
-   <test name="Verify_same_game_running_by_two_moderaters"  parallel="methods" thread-count="2">
+ <test name="Verify wager with full submisstion by player">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_39"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_42"/>
            </classes>
   </test> <!-- Test -->
-
- <test name="Verify_MultiTeamMemeber_PlayerSelctedTeamAssignmnet" >
+ <test name="Verify wager half submisstion by player">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_40"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_43"/>
+           </classes>
+  </test> <!-- Test --> 
+  <test name="Verify wager zero submisstion by player">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_44"/>
+           </classes>
+  </test> <!-- Test -->  
+  <test name="Verify skip wager">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_45"/>
+           </classes>
+  </test> <!-- Test -->  
+  <test name="Verify wager submission by moderator full amount">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_46"/>
            </classes>
   </test> <!-- Test -->
-  
-   <test name="Verify_MultiTeamMemeber_RandomTeamAssignmnet" >
+    <test name="Verify wager submission by moderator zero">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_41"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_47"/>
            </classes>
-  </test> <!-- Test -->
+  </test> <!-- Test -->  
+    <test name="Verify wager submit by Captain">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_48"/>
+           </classes>
+  </test> <!-- Test -->  
   
 </suite> <!-- Suite -->

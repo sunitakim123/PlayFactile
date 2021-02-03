@@ -1,52 +1,32 @@
-13:26:36.423 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-13:26:37.195 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-13:28:59.660 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-13:29:00.459 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-13:46:25.359 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-13:46:26.102 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-13:55:12.637 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-13:55:13.435 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-14:05:03.674 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-14:05:04.478 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-14:12:18.718 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-14:12:19.767 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-14:18:30.388 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-14:18:31.134 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-14:48:05.108 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-14:48:05.818 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-14:50:00.552 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-14:50:02.394 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-15:13:51.526 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-15:13:53.257 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-15:19:45.106 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-15:19:46.618 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-15:21:28.361 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-15:21:29.289 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-15:40:58.205 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-15:40:59.022 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-16:05:12.743 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-16:05:13.654 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-16:24:41.889 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_41 - Driver is Initilize
-16:24:42.740 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_41 - Navigated to homePage
-18:49:59.354 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Driver is Initilize
-18:49:59.767 [TestNG-test=Verify_same_game_running_by_two_moderaters-1] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
-18:50:00.041 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
-18:53:35.878 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-18:53:37.917 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-18:57:35.709 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_41 - Driver is Initilize
-18:57:37.294 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_41 - Navigated to homePage
-19:00:23.012 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Driver is Initilize
-19:00:23.729 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
-19:07:23.266 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-19:07:24.966 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-19:13:41.945 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-19:13:42.674 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-19:19:12.597 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_41 - Driver is Initilize
-19:19:13.379 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_41 - Navigated to homePage
-19:34:00.662 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Driver is Initilize
-19:34:01.116 [TestNG-test=Verify_same_game_running_by_two_moderaters-1] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
-19:34:01.315 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
-19:37:05.298 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-19:37:06.220 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-19:45:01.276 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_41 - Driver is Initilize
-19:45:02.373 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_41 - Navigated to homePage
+19:07:39.177 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_44 - Driver is Initilize
+19:07:40.074 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_44 - Navigated to homePage
+19:08:01.946 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_44 - At customization page>> >>Buzzer for final factile is on from customization
+19:11:58.501 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_45 - Driver is Initilize
+19:12:00.125 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_45 - Navigated to homePage
+19:12:24.094 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_45 - At customization page>> >>Buzzer for final factile is on from customization
+19:16:10.192 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_46 - Driver is Initilize
+19:16:13.007 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_46 - Navigated to homePage
+19:16:42.143 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_46 - At customization page>> >>Buzzer for final factile is on from customization
+19:20:51.824 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_47 - Driver is Initilize
+19:21:17.059 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_47 - Navigated to homePage
+19:22:30.127 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_47 - At customization page>> >>Buzzer for final factile is on from customization
+19:27:17.226 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_48 - Driver is Initilize
+19:27:18.725 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_48 - Navigated to homePage
+19:27:47.243 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_48 - At customization page>> >>Buzzer for final factile is on from customization
+19:36:39.501 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_45 - Driver is Initilize
+19:36:42.070 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_45 - Navigated to homePage
+19:37:05.289 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_45 - Driver is Initilize
+19:37:06.408 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_45 - Navigated to homePage
+19:37:29.463 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_45 - At customization page>> >>Buzzer for final factile is on from customization
+19:47:02.617 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_42 - Driver is Initilize
+19:47:11.955 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_42 - Navigated to homePage
+19:48:03.747 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_42 - At customization page>> >>Buzzer for final factile is on from customization
+19:52:19.985 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_43 - Driver is Initilize
+19:52:21.665 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_43 - Navigated to homePage
+19:53:16.847 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_43 - At customization page>> >>Buzzer for final factile is on from customization
+19:57:11.480 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_44 - Driver is Initilize
+19:57:17.184 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_44 - Navigated to homePage
+19:57:51.066 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_44 - At customization page>> >>Buzzer for final factile is on from customization
+20:02:17.325 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_45 - Driver is Initilize
+20:02:22.223 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_45 - Navigated to homePage
+20:02:55.961 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_45 - At customization page>> >>Buzzer for final factile is on from customization

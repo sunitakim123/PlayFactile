@@ -4,25 +4,26 @@
   <listeners>
     <listener class-name="Factile_Mode.Listeners1"/>
   </listeners>
-  <test thread-count="5" name="Allow_Multiple_Team_to_answer when unChecked(failed)">
+  <test thread-count="5" name="Verify_MultiTeamMemeber_PlayerSelctedTeamAssignmnet(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_25">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_40">
         <methods>
           <include name="initilize"/>
           <include name="tearDown"/>
-          <include name="TC_25_Allow_Multiple_Team_to_answer_When_Unchecked"/>
+          <include name="TC_40_MultiTeamMemeber_PlayerSelctedTeamAssignmnet"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_25 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_40 -->
     </classes>
-  </test> <!-- Allow_Multiple_Team_to_answer when unChecked(failed) -->
-  <test thread-count="5" parallel="methods" name="Verify_same_game_running_by_two_moderaters(failed)">
+  </test> <!-- Verify_MultiTeamMemeber_PlayerSelctedTeamAssignmnet(failed) -->
+  <test thread-count="5" name="Verify_MultiTeamMemeber_RandomTeamAssignmnet(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_39">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_41">
         <methods>
-          <include name="TC_39_Moderater_two"/>
           <include name="tearDown"/>
+          <include name="TC_41_MultiTeammember_RandomTeamAssignmnet"/>
+          <include name="initilize"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_39 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_41 -->
     </classes>
-  </test> <!-- Verify_same_game_running_by_two_moderaters(failed) -->
+  </test> <!-- Verify_MultiTeamMemeber_RandomTeamAssignmnet(failed) -->
 </suite> <!-- Failed suite [Suite] -->
