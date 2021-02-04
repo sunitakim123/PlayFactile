@@ -4,26 +4,15 @@
   <listeners>
     <listener class-name="Factile_Mode.Listeners1"/>
   </listeners>
-  <test thread-count="5" name="Verify_MultiTeamMemeber_PlayerSelctedTeamAssignmnet(failed)">
+  <test thread-count="5" name="Verify wager submit by Captain(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_40">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_48">
         <methods>
+          <include name="TC_48_Verify_wager_submit_by_Captain"/>
           <include name="initilize"/>
           <include name="tearDown"/>
-          <include name="TC_40_MultiTeamMemeber_PlayerSelctedTeamAssignmnet"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_40 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_48 -->
     </classes>
-  </test> <!-- Verify_MultiTeamMemeber_PlayerSelctedTeamAssignmnet(failed) -->
-  <test thread-count="5" name="Verify_MultiTeamMemeber_RandomTeamAssignmnet(failed)">
-    <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_41">
-        <methods>
-          <include name="tearDown"/>
-          <include name="TC_41_MultiTeammember_RandomTeamAssignmnet"/>
-          <include name="initilize"/>
-        </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_41 -->
-    </classes>
-  </test> <!-- Verify_MultiTeamMemeber_RandomTeamAssignmnet(failed) -->
+  </test> <!-- Verify wager submit by Captain(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -5,7 +5,7 @@
     <classes>
       <class name="Factile_Mode.DGBP_HSB_TestCase_48">
         <methods>
-          <include name="TC_42_Verify_wager_submission_full_amount_by_player"/>
+          <include name="TC_48_Verify_wager_submit_by_Captain"/>
           <include name="initilize"/>
           <include name="tearDown"/>
         </methods>
