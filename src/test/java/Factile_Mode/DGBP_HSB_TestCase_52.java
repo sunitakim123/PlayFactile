@@ -340,8 +340,10 @@ public class DGBP_HSB_TestCase_52 extends Base {
 						 JavascriptExecutor executor1 = (JavascriptExecutor) driver2;
 						  executor1.executeScript("arguments[0].click();", ele1);
 						  
-						  wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")
-						  )); driver2.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")). sendKeys("test");
+						  wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
+						  driver2.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")). sendKeys("test");
+							Thread.sleep(2000);
+
 						  wait2.until(ExpectedConditions .elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 						  driver2.findElement(By. xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
 						  
