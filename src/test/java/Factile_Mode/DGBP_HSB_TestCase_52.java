@@ -372,15 +372,15 @@ public class DGBP_HSB_TestCase_52 extends Base {
 				int value = Integer.parseInt(sub);
 				//System.out.println("wager submit by captain=" + value);
 				int expectedValue = value * 2;
-
+				Thread.sleep(2000);
 				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='wagerInput']")));
 				driver1.findElement(By.xpath("//input[@class='wagerInput']")).sendKeys(moneyvalue);
-
+				Thread.sleep(2000);
 				wait1.until(ExpectedConditions
 						.presenceOfElementLocated(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")));
 				driver1.findElement(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")).click();
 				
-
+				Thread.sleep(2000);
 				driver.switchTo().window(driver.getWindowHandle());
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@id='playFinalJeopardy']")));
 				driver.findElement(By.xpath("//span[@id='playFinalJeopardy']")).click();
