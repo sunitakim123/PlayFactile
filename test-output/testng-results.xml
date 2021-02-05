@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-05T19:18:29 IST" name="Default suite" finished-at="2021-02-05T19:22:56 IST" duration-ms="266949">
+  <suite started-at="2021-02-05T19:23:23 IST" name="Default suite" finished-at="2021-02-05T19:28:02 IST" duration-ms="279639">
     <groups>
     </groups>
-    <test started-at="2021-02-05T19:18:29 IST" name="Default test" finished-at="2021-02-05T19:22:56 IST" duration-ms="266949">
-      <class name="Factile_Mode.DGBP_HSB_TestCase_46">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_46@12f9af83]" started-at="2021-02-05T19:18:29 IST" name="initilize" finished-at="2021-02-05T19:18:39 IST" duration-ms="9652" status="PASS">
+    <test started-at="2021-02-05T19:23:23 IST" name="Default test" finished-at="2021-02-05T19:28:02 IST" duration-ms="279639">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_47">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_47@12f9af83]" started-at="2021-02-05T19:23:23 IST" name="initilize" finished-at="2021-02-05T19:23:35 IST" duration-ms="12749" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="TC_46_Verify_wager_submit_by_moderator_is_full_amount()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_46@12f9af83]" started-at="2021-02-05T19:18:39 IST" name="TC_46_Verify_wager_submit_by_moderator_is_full_amount" finished-at="2021-02-05T19:22:56 IST" duration-ms="257262" status="PASS">
+        <test-method signature="TC_47_Verify_wager_submit_by_moderator_is_zero()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_47@12f9af83]" started-at="2021-02-05T19:23:35 IST" name="TC_47_Verify_wager_submit_by_moderator_is_zero" finished-at="2021-02-05T19:28:01 IST" duration-ms="265559" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_46_Verify_wager_submit_by_moderator_is_full_amount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_46@12f9af83]" started-at="2021-02-05T19:22:56 IST" name="tearDown" finished-at="2021-02-05T19:22:56 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- TC_47_Verify_wager_submit_by_moderator_is_zero -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_47@12f9af83]" started-at="2021-02-05T19:28:01 IST" name="tearDown" finished-at="2021-02-05T19:28:02 IST" duration-ms="1274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_46 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_47 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
