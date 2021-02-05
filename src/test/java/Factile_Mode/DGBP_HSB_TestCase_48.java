@@ -405,6 +405,7 @@ public class DGBP_HSB_TestCase_48 extends Base {
 				 */
 
 				driver.switchTo().window(driver.getWindowHandle());
+				Thread.sleep(2000);
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@id='playFinalJeopardy']")));
 				driver.findElement(By.xpath("//span[@id='playFinalJeopardy']")).click();
 				driver1.switchTo().window(driver1.getWindowHandle());

@@ -67,7 +67,7 @@ public class DGBP_HSB_TestCase_46 extends Base {
 		
 		if (driver.findElement(By.xpath("//div[@class='col-md-12 currentActivePlanLabel']")).isDisplayed()) {
 
-			modeaterscreen();
+			Modeatorscreen();
 			PlayerScreen();
 		}
 	
@@ -85,7 +85,7 @@ public class DGBP_HSB_TestCase_46 extends Base {
 		
 	}
 
-	public void modeaterscreen() throws InterruptedException {
+	public void Modeatorscreen() throws InterruptedException {
 		driver.findElement(By.id("customize")).click();
 		Thread.sleep(2000);
 		wait.until(
@@ -353,10 +353,10 @@ public class DGBP_HSB_TestCase_46 extends Base {
 				
 
 	driver.switchTo().window(driver.getWindowHandle());
-	
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//img[@class='characterRep thirdPartyOnPodium']")));
 	driver.findElement(By.xpath("//img[@class='characterRep thirdPartyOnPodium']")).click();
-	
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//input[@class='finalJeopardyCallout']")));
 	driver.findElement(By.xpath("//input[@class='finalJeopardyCallout']")).sendKeys(moneyvalue);
 	System.out.println("wager submit by moderator="+value);
@@ -388,8 +388,8 @@ public class DGBP_HSB_TestCase_46 extends Base {
 			driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 			Thread.sleep(2000);
 			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[@class='winnerTeamName']")));
-			String winningTeamOnModeater = driver.findElement(By.xpath("//h1[@class='winnerTeamName']")).getText();
-			System.out.println("winningTeamOnModeater>>" + winningTeamOnModeater);
+			String winningTeamOnModeator = driver.findElement(By.xpath("//h1[@class='winnerTeamName']")).getText();
+			System.out.println("winningTeamOnModeator>>" + winningTeamOnModeator);
 			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='pointsTable']")));
 			
 			driver.findElement(By.xpath("//button[@class='pointsTable']")).click();
@@ -405,9 +405,9 @@ public class DGBP_HSB_TestCase_46 extends Base {
 			String winningTeamOnPlayerScreen = driver1
 					.findElement(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")).getText();
 			System.out.println("winningTeamOnPlayerScreen>>" + winningTeamOnPlayerScreen);
-			Assert.assertEquals(winningTeamOnModeater, winningTeamOnPlayerScreen);
+			Assert.assertEquals(winningTeamOnModeator, winningTeamOnPlayerScreen);
 			
-			System.out.println("winningTeamOnModeater>>" + winningTeamOnModeater);
+			System.out.println("winningTeamOnModeator>>" + winningTeamOnModeator);
 			wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='pointsTable btn btn-warning']")));
 			
 			driver1.findElement(By.xpath("//button[@class='pointsTable btn btn-warning']")).click();

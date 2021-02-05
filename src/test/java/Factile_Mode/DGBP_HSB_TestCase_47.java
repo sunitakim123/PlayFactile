@@ -292,7 +292,7 @@ public class DGBP_HSB_TestCase_47 extends Base {
 				int expectedValue = value + 0;
 
 				driver.switchTo().window(driver.getWindowHandle());
-
+				Thread.sleep(2000);
 				wait.until(ExpectedConditions
 						.presenceOfAllElementsLocatedBy(By.xpath("//img[@class='characterRep thirdPartyOnPodium']")));
 				driver.findElement(By.xpath("//img[@class='characterRep thirdPartyOnPodium']")).click();
