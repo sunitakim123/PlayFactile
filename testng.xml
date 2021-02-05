@@ -23,7 +23,7 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_45"/>
            </classes>
   </test> <!-- Test -->  
-  <test name="Verify wager submission by moderator full amount">
+  <test name="Verify wager submission by moderator">
     <classes>
           <class name="Factile_Mode.DGBP_HSB_TestCase_46"/>
            </classes>
@@ -38,5 +38,34 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_48"/>
            </classes>
   </test> <!-- Test -->  
+    <test name="To verify final factile answer text box with valid input character">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_49"/>
+           </classes>
+  </test> <!-- Test -->  
+    <test name="To verify final factile answer text box with valid input number">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_50"/>
+           </classes>
   
+  </test> <!-- Test -->    
+  <test name="To verify final factile answer text box with valid input special character">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_51"/>
+           </classes>
+ </test> <!-- Test -->   
+  <test name="To verify final factile answer text box submitted by Captain">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_52"/>
+           </classes>
+</test> <!-- Test -->  
+  <test name="To verify final factile answer text box submitted by team member">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_53"/>
+           </classes>
+  </test> <!-- Test --> 
+  
+  
+  
+   
 </suite> <!-- Suite -->

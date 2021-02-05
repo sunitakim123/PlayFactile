@@ -210,15 +210,47 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_39"/>
            </classes>
   </test> <!-- Test -->
-   <test name="Verify_MultiTeamMemeber_PlayerSelctedTeamAssignmnet" >
+   <test name="Verify_Multi Team Member_PlayerSelctedTeamAssignmnet" >
     <classes>
           <class name="Factile_Mode.DGBP_HSB_TestCase_40"/>
            </classes>
   </test> <!-- Test -->
   
-   <test name="Verify_MultiTeamMemeber_RandomTeamAssignmnet" >
+   <test name="Verify_Multi Team Member_RandomTeamAssignmnet" >
     <classes>
           <class name="Factile_Mode.DGBP_HSB_TestCase_41"/>
            </classes>
   </test> <!-- Test -->
+  <test name="Verify wager with full submisstion by player">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_42"/>
+           </classes>
+  </test> <!-- Test -->
+ <test name="Verify wager half submisstion by player">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_43"/>
+           </classes>
+  </test> <!-- Test --> 
+  <test name="Verify wager zero submisstion by player">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_44"/>
+           </classes>
+  </test> <!-- Test -->  
+  <test name="Verify skip wager">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_45"/>
+           </classes>
+  </test> <!-- Test -->  
+  <test name="Verify wager submission by moderator">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_46"/>
+           </classes>
+  </test> <!-- Test -->
+    <test name="Verify wager submission by moderator zero">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_47"/>
+           </classes>
+  </test> <!-- Test -->  
+  
+  
 </suite> <!-- Suite -->
