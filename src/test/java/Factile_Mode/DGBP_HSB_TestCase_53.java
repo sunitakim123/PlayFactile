@@ -372,9 +372,11 @@ public class DGBP_HSB_TestCase_53 extends Base {
 				int value = Integer.parseInt(sub);
 				//System.out.println("wager submit by captain=" + value);
 				int expectedValue = value * 2;
+				Thread.sleep(2000);
 
 				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='wagerInput']")));
 				driver1.findElement(By.xpath("//input[@class='wagerInput']")).sendKeys(moneyvalue);
+				Thread.sleep(2000);
 
 				wait1.until(ExpectedConditions
 						.presenceOfElementLocated(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")));
@@ -385,9 +387,9 @@ public class DGBP_HSB_TestCase_53 extends Base {
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@id='playFinalJeopardy']")));
 				driver.findElement(By.xpath("//span[@id='playFinalJeopardy']")).click();
 				driver2.switchTo().window(driver2.getWindowHandle());
-				Thread.sleep(2000);
+				
 				wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
-				Thread.sleep(2000);
+		
 				wait2.until(ExpectedConditions
 						.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
 				String expectedtext= "test7678#@%$@";
