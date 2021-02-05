@@ -294,14 +294,16 @@ public class DGBP_HSB_TestCase_47 extends Base {
 				driver.switchTo().window(driver.getWindowHandle());
 				Thread.sleep(2000);
 				wait.until(ExpectedConditions
-						.presenceOfAllElementsLocatedBy(By.xpath("//img[@class='characterRep thirdPartyOnPodium']")));
-				driver.findElement(By.xpath("//img[@class='characterRep thirdPartyOnPodium']")).click();
-
+						.presenceOfAllElementsLocatedBy(By.xpath("//div[@class='characterPodium']//img")));
+				driver.findElement(By.xpath("//div[@class='characterPodium']//img")).click();
+				Thread.sleep(2000);
 				wait.until(ExpectedConditions
 						.presenceOfAllElementsLocatedBy(By.xpath("//input[@class='finalJeopardyCallout']")));
 				driver.findElement(By.xpath("//input[@class='finalJeopardyCallout']")).sendKeys("0");
+				Thread.sleep(2000);
 				System.out.println("wager submit by moderator=" + 0);
 				driver.findElement(By.xpath("//input[@class='finalJeopardyCallout']")).sendKeys(Keys.ENTER);
+				Thread.sleep(2000);
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@id='playFinalJeopardy']")));
 				driver.findElement(By.xpath("//span[@id='playFinalJeopardy']")).click();
 				driver1.switchTo().window(driver1.getWindowHandle());
@@ -353,6 +355,7 @@ public class DGBP_HSB_TestCase_47 extends Base {
 				Thread.sleep(3000);
 
 				String acutalscoredpoints1 = driver1.findElement(By.xpath("(//td[@class='text-info'])[1]")).getText();
+				Thread.sleep(2000);
 				int acutalpoints1 = Integer.parseInt(acutalscoredpoints1);
 				Assert.assertEquals(expectedValue, acutalpoints1);
 

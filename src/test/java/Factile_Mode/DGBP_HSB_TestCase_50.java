@@ -336,7 +336,7 @@ public class DGBP_HSB_TestCase_50 extends Base {
 			String AcutalComingAnswerOnModeratorScreen=	driver.findElement(By.xpath("//div[@class='rightPanel']//p")).getText();
 			System.out.println("On moderater screen="+AcutalComingAnswerOnModeratorScreen);
 			Assert.assertEquals(AcutalComingAnswerOnModeratorScreen, expectedtext);
-			System.out.println("Answer submitted by plyer is coming on moderator screen");
+			System.out.println("Answer submitted by player is coming on moderator screen");
 			wait.until(
 					ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@aria-hidden='true'])[2]")));
 			driver.findElement(By.xpath("(//span[@aria-hidden='true'])[2]")).click();

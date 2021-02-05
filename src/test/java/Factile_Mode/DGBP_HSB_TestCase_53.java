@@ -28,7 +28,7 @@ import resources.Base;
 public class DGBP_HSB_TestCase_53 extends Base {
 	WebDriver driver;
 	WebDriver driver1;
-	WebDriver driver2, driver3;
+	WebDriver driver2;
 	WebDriverWait wait, wait1, wait2, wait3;
 	int int2;
 	String s6, s7, GameName, twitterLink, PintrestLink, t1, p1, parent, expectedValue, actualValue,

@@ -386,24 +386,7 @@ public class DGBP_HSB_TestCase_48 extends Base {
 				wait1.until(ExpectedConditions
 						.presenceOfElementLocated(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")));
 				driver1.findElement(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")).click();
-				/*
-				 * driver2.switchTo().window(driver2.getWindowHandle());
-				 * wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath(
-				 * "(//span[@class='moneyHolder'])[2]"))); String moneyvalue2 =
-				 * driver2.findElement(By.xpath("(//span[@class='moneyHolder'])[2]")).getText();
-				 * System.out.println("moneyholder2:=" + moneyvalue2);
-				 * 
-				 * wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath(
-				 * "//input[@class='wagerInput']")));
-				 * driver2.findElement(By.xpath("//input[@class='wagerInput']")).sendKeys(
-				 * moneyvalue2);
-				 * 
-				 * wait2.until(ExpectedConditions .presenceOfElementLocated(By.
-				 * xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")));
-				 * driver2.findElement(By.
-				 * xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")).click();
-				 */
-
+				
 				driver.switchTo().window(driver.getWindowHandle());
 				Thread.sleep(2000);
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@id='playFinalJeopardy']")));
