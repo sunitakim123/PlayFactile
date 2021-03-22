@@ -141,7 +141,7 @@ public class FiftyUsersJoin extends Base {
 
 				driver.findElement(By.xpath("//span[@class='playNowButton']")).click();
 
-				driver.findElement(By.xpath("//span[@data-numteams='50']")).click();
+				driver.findElement(By.xpath("//span[@data-numteams='10']")).click();
 				Thread.sleep(2000);
 				System.out.println(driver.getTitle());
 				driver.findElement(By.xpath("//*[@id='displayBuzzerOptionBack']/div[1]/div[2]/div/div/ins")).click();
@@ -155,7 +155,7 @@ public class FiftyUsersJoin extends Base {
 				
 				
 				
-					for(int j=1;j<=50;j++)
+					for(int j=1;j<=10;j++)
 				{
 				System.out.println("j  value=" + j);
 				driver1 = IntilizeDriver();
@@ -165,8 +165,7 @@ public class FiftyUsersJoin extends Base {
 				wait1 = new WebDriverWait(driver1, 120);
 				driver1.get(prop.getProperty("joinurl"));
 				Thread.sleep(2000);
-				wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='form-control']")));
-				driver1.findElement(By.xpath("//input[@class='form-control']")).sendKeys(i);
+			
 				
 				
 		/*		Thread.sleep(2000);

@@ -4,26 +4,15 @@
   <listeners>
     <listener class-name="Factile_Mode.Listeners1"/>
   </listeners>
-  <test thread-count="5" name="Verify wager submission by moderator(failed)">
+  <test thread-count="5" name="Verify Buzzer mode for Fianl factile question(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_46">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_29">
         <methods>
-          <include name="TC_46_Verify_wager_submit_by_moderator_is_full_amount"/>
-          <include name="tearDown"/>
-          <include name="initilize"/>
-        </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_46 -->
-    </classes>
-  </test> <!-- Verify wager submission by moderator(failed) -->
-  <test thread-count="5" name="Verify wager submission by moderator zero(failed)">
-    <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_47">
-        <methods>
+          <include name="TC_29_Verify_Buzzer_For_Final_Factile_Question"/>
           <include name="initilize"/>
           <include name="tearDown"/>
-          <include name="TC_47_Verify_wager_submit_by_moderator_is_zero"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_47 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_29 -->
     </classes>
-  </test> <!-- Verify wager submission by moderator zero(failed) -->
+  </test> <!-- Verify Buzzer mode for Fianl factile question(failed) -->
 </suite> <!-- Failed suite [Suite] -->

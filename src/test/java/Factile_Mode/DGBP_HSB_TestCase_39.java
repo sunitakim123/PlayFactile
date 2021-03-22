@@ -298,7 +298,9 @@ Log.info("Driver is Initilize");
 			System.out.println("Impossible to click the pop-up. Reason: " + e.toString());
 		}
 
-		Thread.sleep(2000);
+		
+	
+		
 		Set<String> allWindows = driver.getWindowHandles();
 		int count = allWindows.size();
 		// System.out.println("Total window:=" + count);
@@ -307,6 +309,16 @@ Log.info("Driver is Initilize");
 				driver.switchTo().window(child);
  gameURL= driver.getCurrentUrl();
 System.out.println("Game url is:= "+gameURL);
+
+wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='editShareIcon popup-nav-form']//p")));
+driver.findElement(By.xpath("//div[@class='editShareIcon popup-nav-form']//p")).click();
+	Thread.sleep(3000);
+	Select DDList = new Select(driver.findElement(By.xpath("//select[@id='shareOption']")));
+	DDList.selectByValue("link");
+	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='btn float-left closeShareModal']")));
+	driver.findElement(By.xpath("//button[@class='btn float-left closeShareModal']")).click();
+	
+	Thread.sleep(3000);
 				driver.findElement(By.xpath("//span[@class='playNowButton']")).click();
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//span[@data-numteams='2']")).click();
@@ -489,7 +501,7 @@ System.out.println("Game url is:= "+gameURL);
 		System.out.println("ParentWindow id is :-" + parent);
 		wait3.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='mygames']")));
 		driver3.findElement(By.xpath("//*[@id='mygames']")).click();
-		Thread.sleep(25000);
+		Thread.sleep(30000);
 		driver3.get(gameURL);
 
 	
