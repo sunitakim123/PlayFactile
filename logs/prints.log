@@ -1,24 +1,24 @@
-18:12:34.958 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-18:12:35.774 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-18:18:57.313 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_41 - Driver is Initilize
-18:18:58.046 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_41 - Navigated to homePage
-18:25:29.415 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-18:25:30.212 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-18:30:44.485 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Driver is Initilize
-18:30:45.309 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_29 - Navigated to homePage
-18:39:48.714 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_41 - Driver is Initilize
-18:39:50.069 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_41 - Navigated to homePage
-18:58:40.885 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_42 - Driver is Initilize
-18:58:42.208 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_42 - Navigated to homePage
-18:59:50.802 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_42 - At customization page>> >>Buzzer for final factile is on from customization
-19:03:35.489 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_42 - Driver is Initilize
-19:03:37.353 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_42 - Navigated to homePage
-19:04:04.618 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_42 - At customization page>> >>Buzzer for final factile is on from customization
-10:35:34.715 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - Driver is Initilize
-10:35:35.988 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - Navigated to homePage
-10:37:34.455 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - When unchecked from customization setting>>Twitter link is displaying
-10:37:34.455 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - When unchecked from customization setting>>Pintrest link is displaying
-10:41:07.877 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - Driver is Initilize
-10:41:10.980 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - Navigated to homePage
-10:43:12.533 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - When unchecked from customization setting>>Twitter link is displaying
-10:43:12.533 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - When unchecked from customization setting>>Pintrest link is displaying
+15:19:03.139 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Driver is Initilize
+15:19:07.455 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - Navigated to homePage
+15:19:24.440 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - At customization page>> UnCheck display exact case>> 
+15:22:15.351 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_7 - when Checked from customization setting>>Exact case is  displayed
+15:22:19.027 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - Driver is Initilize
+15:22:21.552 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - Navigated to homePage
+15:22:35.513 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - At customization page>> UnCheck Hide Category with Points>> 
+15:24:22.346 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_8 - category with points is =CAT1 FOR 100
+15:24:26.380 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Driver is Initilize
+15:24:30.422 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Navigated to homePage
+15:24:45.099 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - At customization page>> Check Hide Category with Points>> 
+15:26:36.198 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_9 - Hide category with points is working fine
+15:26:39.838 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - Driver is Initilize
+15:26:44.235 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - Navigated to homePage
+15:26:57.911 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - At customization page>> Check Diaplay Answer button>> 
+15:29:07.764 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_10 - Display answer is working fine
+15:29:11.419 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Driver is Initilize
+15:29:15.815 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Navigated to homePage
+15:29:38.465 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - At customization page>> UNCheck Turn off tag name>> 
+15:31:31.556 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_11 - Display Tag name is working fine
+15:31:35.803 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - Driver is Initilize
+15:31:38.164 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - Navigated to homePage
+15:31:49.362 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - At customization page>> Check Turn off tag name>> 
+15:32:55.534 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - Tag name turn off is working fine
