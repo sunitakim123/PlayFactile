@@ -22,3 +22,14 @@
 15:31:38.164 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - Navigated to homePage
 15:31:49.362 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - At customization page>> Check Turn off tag name>> 
 15:32:55.534 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_12 - Tag name turn off is working fine
+18:44:47.582 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - Driver is Initilize
+18:44:48.930 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - Navigated to homePage
+18:45:49.527 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - Driver is Initilize
+18:45:52.096 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - Navigated to homePage
+18:47:54.551 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - Driver is Initilize
+18:47:57.856 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - Navigated to homePage
+18:49:57.709 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - When unchecked from customization setting>>Twitter link is displaying
+18:49:57.709 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_4 - When unchecked from customization setting>>Pintrest link is displaying
+18:50:49.442 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_5 - Driver is Initilize
+18:50:52.986 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_5 - Navigated to homePage
+18:53:45.160 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_5 - SMO(Twiiter & Pintrest) Links not present on gameboard at moderater screen

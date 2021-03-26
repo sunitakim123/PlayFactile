@@ -53,7 +53,7 @@ public class DGBP_HSB_TestCase_5  extends Base{
 		driver.findElement(By.xpath("//span[@id='settings']")).click(); 
 		String url1 = driver.getCurrentUrl();
 
-		if (driver.findElement(By.xpath("//div[@class='col-md-12 currentActivePlanLabel']")).isDisplayed()) {
+		if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
 
 			Check_Hide_social_media_link();
 			Hide_SMO_Links_A_tModrater_Screen_Gameboard();
