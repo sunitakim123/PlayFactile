@@ -70,7 +70,7 @@ public class DGBP_HSB_TestCase_38 extends Base {
 
 
 		
-		if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
+		if (driver.findElement(By.xpath("//div[@class='col-md-12 currentActivePlanLabel']")).isDisplayed()) {
 
 			modeaterscreen();
 			PlayerScreen();

@@ -10,6 +10,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -61,7 +62,7 @@ public class DGBP_HSB_TestCase_19 extends Base {
 		driver.findElement(By.xpath("//span[@id='settings']")).click();
 		String url1 = driver.getCurrentUrl();
 
-		if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
+		if (driver.findElement(By.xpath("//div[@class='col-md-12 currentActivePlanLabel']")).isDisplayed()) {
 
 			modeaterscreen();
 			PlayerScreen();
@@ -289,7 +290,7 @@ Thread.sleep(2000);
 				int activetilesInSecodGame = driver
 						.findElements(By.xpath("//span[@class='gameQuestionBlock unAnsweredQuestion']")).size();
 				System.out.println("total active tiles in second game>>" + activetilesInSecodGame);
-				for (int p = 1; p <= activetilesInSecodGame; p++) {
+				for (int p = 1; p <= 1; p++) {
 
 					System.out.println("value of p>>" + p);
 					wait.until(ExpectedConditions.elementToBeClickable(
@@ -329,65 +330,101 @@ Thread.sleep(2000);
 					// System.out.println("value of p at end>>"+p);
 				}
 				Thread.sleep(3000);
-			/* wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='skipToFinalFactile']")));
+		 wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='skipToFinalFactile']")));
 				driver.findElement(By.xpath("//span[@class='skipToFinalFactile']")).click();
-				 wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("")));
+				Thread.sleep(2000);
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(
 						"//div[@class='swal-modal']//button[@class='swal-button swal-button--confirm btn-success swal-button--danger']")));
 				driver.findElement(By.xpath(
 						"//div[@class='swal-modal']//button[@class='swal-button swal-button--confirm btn-success swal-button--danger']"))
-						.click(); */
-				driver1.switchTo().window(driver1.getWindowHandle());
-				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='moneyHolder']")));
-				String moneyvalue = driver1.findElement(By.xpath("//span[@class='moneyHolder']")).getText();
-				System.out.println("moneyholder:=" + moneyvalue); 
-				 
-				
-				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='wagerInput']")));
-				driver1.findElement(By.xpath("//input[@class='wagerInput']")).sendKeys(moneyvalue);
-				
-					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")));
-					driver1.findElement(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")).click();
-			
-				
-				driver.switchTo().window(driver.getWindowHandle());
-				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@id='playFinalJeopardy']")));
-				driver.findElement(By.xpath("//span[@id='playFinalJeopardy']")).click();
-				driver1.switchTo().window(driver1.getWindowHandle());
-				
-				wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
-				wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
-				WebElement ele=driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
-				JavascriptExecutor executor = (JavascriptExecutor)driver1; 
-				executor.executeScript("arguments[0].click();", ele);
-			
-					driver1.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
-					driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
-					wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
-					driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
-				
+						.click(); 
 				Thread.sleep(2000);
-				wait.until(
-						ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
-				driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
-				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
-				driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
-				Thread.sleep(2000);
-				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h2[@class='winnerTopHeader']")));
-				String header = driver.findElement(By.xpath("//h2[@class='winnerTopHeader']")).getText();
-				Thread.sleep(2000);
-				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[@class='winnerTeamName']")));
-				String winningTeamOnModeater = driver.findElement(By.xpath("//h1[@class='winnerTeamName']")).getText();
-				System.out.println("winner team on moderater screen= " + winningTeamOnModeater);
-				driver1.switchTo().window(driver1.getWindowHandle());
-				wait1.until(ExpectedConditions
-						.presenceOfElementLocated(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")));
-				String winningTeamOnPlayerScreen = driver1
-						.findElement(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")).getText();
-				Assert.assertEquals(winningTeamOnModeater, winningTeamOnPlayerScreen); 
-				Log.info("Double factile is working fine");
-				System.out.println("Double factile is working fine.");
+				
+				
+				try{
+			    if (driver.findElement(By.xpath("//h2[@class='winnerTopHeader']")).isDisplayed()) {
+			    	Thread.sleep(2000);
+			    	Thread.sleep(2000);
+					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h2[@class='winnerTopHeader']")));
+					String header = driver.findElement(By.xpath("//h2[@class='winnerTopHeader']")).getText();
+					Thread.sleep(2000);
+					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[@class='winnerTeamName']")));
+					String winningTeamOnModeater = driver.findElement(By.xpath("//h1[@class='winnerTeamName']")).getText();
+					System.out.println("winner team on moderater screen= " + winningTeamOnModeater);
+					driver1.switchTo().window(driver1.getWindowHandle());
+					wait1.until(ExpectedConditions
+							.presenceOfElementLocated(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")));
+					String winningTeamOnPlayerScreen = driver1
+							.findElement(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")).getText();
+					Assert.assertEquals(winningTeamOnModeater, winningTeamOnPlayerScreen); 
+					Log.info("Double factile is working fine");
+					System.out.println("Double factile is working fine.");
+					
+
+			    }
+			    else
+			    {
+			    	driver1.switchTo().window(driver1.getWindowHandle());
+			    	Thread.sleep(2000);
+					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='moneyHolder']")));
+					String moneyvalue = driver1.findElement(By.xpath("//span[@class='moneyHolder']")).getText();
+					System.out.println("moneyholder:=" + moneyvalue); 
+					 
+					
+					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='wagerInput']")));
+					driver1.findElement(By.xpath("//input[@class='wagerInput']")).sendKeys(moneyvalue);
+					
+						wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")));
+						driver1.findElement(By.xpath("//input[@class='wagerPlayBtn btn--inside uppercase']")).click();
+				
+					
+					driver.switchTo().window(driver.getWindowHandle());
+					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@id='playFinalJeopardy']")));
+					driver.findElement(By.xpath("//span[@id='playFinalJeopardy']")).click();
+					driver1.switchTo().window(driver1.getWindowHandle());
+					
+					wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
+					wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
+					WebElement ele=driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
+					JavascriptExecutor executor = (JavascriptExecutor)driver1; 
+					executor.executeScript("arguments[0].click();", ele);
+				
+						driver1.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+						wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
+						driver1.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
+						wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
+						driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
+					
+					Thread.sleep(2000);
+					wait.until(
+							ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='fa fa-check right']")));
+					driver.findElement(By.xpath("//i[@class='fa fa-check right']")).click();
+					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='backToBoard']")));
+					driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
+					Thread.sleep(2000);
+					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h2[@class='winnerTopHeader']")));
+					String header = driver.findElement(By.xpath("//h2[@class='winnerTopHeader']")).getText();
+					Thread.sleep(2000);
+					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[@class='winnerTeamName']")));
+					String winningTeamOnModeater = driver.findElement(By.xpath("//h1[@class='winnerTeamName']")).getText();
+					System.out.println("winner team on moderater screen= " + winningTeamOnModeater);
+					driver1.switchTo().window(driver1.getWindowHandle());
+					wait1.until(ExpectedConditions
+							.presenceOfElementLocated(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")));
+					String winningTeamOnPlayerScreen = driver1
+							.findElement(By.xpath("//h1[@class='WinnerScreen-winner-team-name']")).getText();
+					Assert.assertEquals(winningTeamOnModeater, winningTeamOnPlayerScreen); 
+					Log.info("Double factile is working fine");
+					System.out.println("Double factile is working fine.");
+			    }
+			}
+			catch(Exception  e)
+			{System.out.println(""+e);
+			}
+				
+				
+				
+				
 
 			}
 		}

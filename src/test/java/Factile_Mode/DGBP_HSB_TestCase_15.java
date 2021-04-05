@@ -61,7 +61,7 @@ public class DGBP_HSB_TestCase_15 extends Base {
 		Thread.sleep(2000);
 		String url1 = driver.getCurrentUrl();
 
-		if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
+		if (driver.findElement(By.xpath("//div[@class='col-md-12 currentActivePlanLabel']")).isDisplayed()) {
 
 			modeaterscreen();
 			PlayerScreen();

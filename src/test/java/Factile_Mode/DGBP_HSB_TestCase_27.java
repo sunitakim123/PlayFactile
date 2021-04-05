@@ -64,18 +64,16 @@ public class DGBP_HSB_TestCase_27 extends Base {
 		driver.findElement(By.xpath("//span[@id='settings']")).click();
 		String url1 = driver.getCurrentUrl();
 
-		
-		if (driver.findElement(By.xpath("//div[@class='col-md-12 paidOfflineLabel']")).isDisplayed()) {
+		if (driver.findElement(By.xpath("//div[@class='col-md-12 currentActivePlanLabel']")).isDisplayed()) {
 
 			modeaterscreen();
 			PlayerScreen();
 		}
-	
-	
-	else {
-		System.out.println("You have not taken any subscription");
+
+		else {
+			System.out.println("You have not taken any subscription");
+		}
 	}
-}
 
 	@AfterTest
 	public void tearDown() throws InterruptedException {
@@ -84,9 +82,9 @@ public class DGBP_HSB_TestCase_27 extends Base {
 		driver.switchTo().window(driver.getWindowHandle());
 		driver.quit();
 		driver2.switchTo().window(driver2.getWindowHandle());
-	driver2.quit();
+		driver2.quit();
 		driver3.switchTo().window(driver3.getWindowHandle());
-		driver3.quit();
+		driver3.quit(); 
 	}
 
 	public void modeaterscreen() throws InterruptedException {
@@ -153,15 +151,11 @@ public class DGBP_HSB_TestCase_27 extends Base {
 			act = new Actions(driver);
 			act.moveToElement(driver.findElement(By.xpath("//input[@id='answerTimerOnOff']"))).click();
 		}
-		
-		
+
 		Thread.sleep(2000);
-		if(driver.findElement(By.xpath("//input[@id='buzzerForFinalFactile']")).isSelected())
-		{
-			
-		}
-		else
-		{
+		if (driver.findElement(By.xpath("//input[@id='buzzerForFinalFactile']")).isSelected()) {
+
+		} else {
 			act3 = new Actions(driver);
 			act3.moveToElement(driver.findElement(By.xpath("//input[@id='buzzerForFinalFactile']"))).click().perform();
 		}
@@ -303,19 +297,24 @@ public class DGBP_HSB_TestCase_27 extends Base {
 
 					if (p == 2) {// opening new driver to join the game in the mid
 						Thread.sleep(1000);
-						wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='remoteView manageTeams manageTeamSeparate']")));
-						driver.findElement(By.xpath("//span[@class='remoteView manageTeams manageTeamSeparate']")).click();
+						wait.until(ExpectedConditions.elementToBeClickable(
+								By.xpath("//span[@class='remoteView manageTeams manageTeamSeparate']")));
+						driver.findElement(By.xpath("//span[@class='remoteView manageTeams manageTeamSeparate']"))
+								.click();
+						Thread.sleep(2000);
 						wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='addTeams']")));
 						driver.findElement(By.xpath("//button[@class='addTeams']")).click();
 						wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@data-numteams='1']")));
 						driver.findElement(By.xpath("//span[@data-numteams='1']")).click();
 						driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-						wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='game-pin-number']")));
+						wait.until(ExpectedConditions
+								.presenceOfElementLocated(By.xpath("//span[@class='game-pin-number']")));
 						driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-						
-						String GettingPinFromTEamManagemnetpage=driver.findElement(By.xpath("//span[@class='game-pin-number']")).getText();
-						System.out.println("GettingPinFromTEamManagemnetpage=="+GettingPinFromTEamManagemnetpage);
-						
+
+						String GettingPinFromTEamManagemnetpage = driver
+								.findElement(By.xpath("//span[@class='game-pin-number']")).getText();
+						System.out.println("GettingPinFromTEamManagemnetpage==" + GettingPinFromTEamManagemnetpage);
+
 						driver3 = IntilizeDriver();
 						Dimension d3 = new Dimension(1382, 744);
 						driver3.manage().window().setSize(d3);
@@ -326,7 +325,8 @@ public class DGBP_HSB_TestCase_27 extends Base {
 						driver3.get(prop.getProperty("joinurl"));
 
 						Thread.sleep(2000);
-						driver3.findElement(By.xpath("//input[@class='form-control']")).sendKeys(GettingPinFromTEamManagemnetpage);
+						driver3.findElement(By.xpath("//input[@class='form-control']"))
+								.sendKeys(GettingPinFromTEamManagemnetpage);
 						Thread.sleep(2000);
 						// String url = driver1.getCurrentUrl();
 						if (url.equals("https://game.playfactile.com/join")) {
@@ -343,24 +343,30 @@ public class DGBP_HSB_TestCase_27 extends Base {
 						Thread.sleep(2000);
 
 						driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-						wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='teams-joined']/span")));
-						
-						String NoOfUserJoined = driver.findElement(By.xpath("//div[@class='teams-joined']/span")).getText();
-						
-						System.out.println("No of user has joined="+NoOfUserJoined);
-						wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='btn nextStepButton']")));
+						wait.until(ExpectedConditions
+								.presenceOfElementLocated(By.xpath("//div[@class='teams-joined']/span")));
+
+						String NoOfUserJoined = driver.findElement(By.xpath("//div[@class='teams-joined']/span"))
+								.getText();
+
+						System.out.println("No of user has joined=" + NoOfUserJoined);
+						wait.until(ExpectedConditions
+								.elementToBeClickable(By.xpath("//span[@class='btn nextStepButton']")));
 						driver.findElement(By.xpath("//span[@class='btn nextStepButton']")).click();
-						wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='backToGame d-flex align-items-center justify-content-center']")));
-						driver.findElement(By.xpath("//span[@class='backToGame d-flex align-items-center justify-content-center']")).click();
-						wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//div[@class='characterPodium'])[3]")));
-						//right code from here
-						
+						wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+								"//span[@class='backToGame d-flex align-items-center justify-content-center']")));
+						driver.findElement(By
+								.xpath("//span[@class='backToGame d-flex align-items-center justify-content-center']"))
+								.click();
+						wait.until(ExpectedConditions
+								.presenceOfElementLocated(By.xpath("(//div[@class='characterPodium'])[3]")));
+						// right code from here
+
 						WebElement ThirdUser = driver.findElement(By.xpath("(//div[@class='characterPodium'])[3]"));
 						Assert.assertNotNull(allWindows);
 						System.out.println("New user has joined the game successfully");
 						driver.switchTo().window(driver.getWindowHandle());
-						
-						
+
 					}
 
 					Thread.sleep(2000);
