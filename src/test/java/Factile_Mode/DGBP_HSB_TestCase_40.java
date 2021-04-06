@@ -36,7 +36,7 @@ public class DGBP_HSB_TestCase_40 extends Base {
 	WebElement ElementNotGoingToVisible;
 	Actions act, act1, act2, act3, act4;
 
-	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_29.class.getName());
+	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_40.class.getName());
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
 	@BeforeTest
@@ -76,7 +76,7 @@ public class DGBP_HSB_TestCase_40 extends Base {
 
 	@AfterTest
 	public void tearDown() throws InterruptedException {
-
+/*
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
 		driver.quit();
@@ -84,7 +84,7 @@ public class DGBP_HSB_TestCase_40 extends Base {
 		driver2.quit(); 
 		driver3.switchTo().window(driver3.getWindowHandle());
 		driver3.quit(); 
-	
+	*/
 	}
 
 	public void modeaterscreen() throws InterruptedException {
@@ -313,7 +313,7 @@ public class DGBP_HSB_TestCase_40 extends Base {
 					// System.out.println("value"+ value);
 					// System.out.println("value of p>>"+p);
 
-					Thread.sleep(2000);
+				//	Thread.sleep(2000);
 					driver.findElement(By.xpath("(//span[@class='gameQuestionBlock unAnsweredQuestion'])[1]")).click();
 					driver1.switchTo().window(driver1.getWindowHandle());
 
@@ -491,17 +491,16 @@ public class DGBP_HSB_TestCase_40 extends Base {
 				wait1.until(ExpectedConditions
 						.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 				driver1.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
-
+				Thread.sleep(2000);
 				driver2.switchTo().window(driver2.getWindowHandle());
-
 				// wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
-				wait2.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
-				WebElement ele2 = driver2.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
-				Assert.assertNotNull("Buzzer is coming for final factile to  user 2", ele2);
-				JavascriptExecutor executor2 = (JavascriptExecutor) driver2;
-				executor2.executeScript("arguments[0].click();", ele2);
+				wait2.until(
+						ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 
-				driver2.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				WebElement ele1 = driver2.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
+				JavascriptExecutor executor1 = (JavascriptExecutor) driver2;
+				executor1.executeScript("arguments[0].click();", ele1);
+
 				wait2.until(ExpectedConditions
 						.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
 				driver2.findElement(By.xpath("//textarea[@placeholder='Enter Answer']")).sendKeys("test");
@@ -509,6 +508,7 @@ public class DGBP_HSB_TestCase_40 extends Base {
 						.elementToBeClickable(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")));
 				driver2.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
 
+				Thread.sleep(2000);
 				driver.switchTo().window(driver.getWindowHandle());
 				wait.until(
 						ExpectedConditions.presenceOfElementLocated(By.xpath("(//i[@class='fa fa-check right'])[1]")));
@@ -539,4 +539,5 @@ public class DGBP_HSB_TestCase_40 extends Base {
 		}
 
 	}
+
 }

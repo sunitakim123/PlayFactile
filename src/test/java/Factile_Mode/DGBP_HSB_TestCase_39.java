@@ -91,7 +91,7 @@ Log.info("Driver is Initilize");
 	@Test
 	public void TC_39_Same_Game_playing_by_second__Moderater() throws InterruptedException, IOException {
 	
-			
+	
 		FileInputStream fis = new FileInputStream( "./src/main/java/resources/data.properties");
 		prop.load(fis);
 		String browserName = prop.getProperty("browser");
@@ -120,6 +120,8 @@ Log.info("Driver is Initilize");
 				driver3.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 				Dimension d3 = new Dimension(1382, 744);
 				driver3.manage().window().setSize(d3);
+
+				
 
 			}
 		} else if (browserName.equals("firefox")) {
@@ -172,11 +174,11 @@ Log.info("Driver is Initilize");
 	
 	@AfterTest
 	public void tearDown() throws InterruptedException {
-
+/*
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
 		driver.quit();
-		
+		*/
 
 	}
 
@@ -310,6 +312,8 @@ Log.info("Driver is Initilize");
  gameURL= driver.getCurrentUrl();
 System.out.println("Game url is:= "+gameURL);
 
+ //use this code when u having bussiness account
+ 
 wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='editShareIcon popup-nav-form']//p")));
 driver.findElement(By.xpath("//div[@class='editShareIcon popup-nav-form']//p")).click();
 	Thread.sleep(3000);

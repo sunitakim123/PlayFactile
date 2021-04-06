@@ -136,7 +136,7 @@ public class DGBP_HSB_TestCase_27 extends Base {
 
 		}
 
-		Log.info("At customization page>> >>Users Can Join Buzzer Mode after Game Begins throght team manage");
+		Log.info("At customization page>> >>Users Can Join Buzzer Mode after Game Begins through team manage");
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='readingTimerValue']")));
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).clear();
 		driver.findElement(By.xpath("//input[@id='readingTimerValue']")).sendKeys("6");

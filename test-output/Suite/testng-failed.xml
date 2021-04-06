@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="Factile_Mode.Listeners1"/>
   </listeners>
-  <test thread-count="5" name="Verify Buzzer mode for Fianl factile question(failed)">
+  <test thread-count="5" name="Verify_Multi Team Member_PlayerSelctedTeamAssignmnet(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_29">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_40">
         <methods>
-          <include name="TC_29_Verify_Buzzer_For_Final_Factile_Question"/>
           <include name="initilize"/>
           <include name="tearDown"/>
+          <include name="TC_40_MultiTeamMemeber_PlayerSelctedTeamAssignmnet"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_29 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_40 -->
     </classes>
-  </test> <!-- Verify Buzzer mode for Fianl factile question(failed) -->
+  </test> <!-- Verify_Multi Team Member_PlayerSelctedTeamAssignmnet(failed) -->
 </suite> <!-- Failed suite [Suite] -->

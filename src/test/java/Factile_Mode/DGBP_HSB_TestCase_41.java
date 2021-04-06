@@ -64,7 +64,7 @@ public class DGBP_HSB_TestCase_41 extends Base {
 		String url1 = driver.getCurrentUrl();
 
 		if (driver.findElement(By.xpath("//div[@class='col-md-12 currentActivePlanLabel']")).isDisplayed()) {
-
+////div[@class='col-md-12 currentActivePlanLabel']
 			modeaterscreen();
 			PlayerScreen();
 		}
@@ -323,7 +323,7 @@ public class DGBP_HSB_TestCase_41 extends Base {
 						} catch (NoSuchElementException e) {
 							// log.debug("Impossible to click the pop-up. Reason: " + e.toString());
 							System.out.println("team member is not connect with captain1");
-						}
+						}Thread.sleep(1000);
 						driver2.switchTo().window(driver2.getWindowHandle());
 						// wait2.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
 						wait2.until(ExpectedConditions
