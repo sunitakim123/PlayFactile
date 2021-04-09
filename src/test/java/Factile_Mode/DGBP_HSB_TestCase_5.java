@@ -67,12 +67,13 @@ public class DGBP_HSB_TestCase_5  extends Base{
 					
 
 	@AfterTest
-	public void tearDown() {
+	public void tearDown() throws IOException {
 		
 	
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
 		driver.quit(); 
+		Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
 	}
 
 	public void Check_Hide_social_media_link() throws InterruptedException

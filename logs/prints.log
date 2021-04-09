@@ -41,3 +41,6 @@
 13:23:16.680 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - Driver is Initilize
 13:23:20.177 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - Navigated to homePage
 13:23:34.889 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - At customization page>> UnCheck display exact case>> 
+10:45:58.046 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Driver is Initilize
+10:46:01.100 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - Navigated to homePage
+10:46:27.343 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_26 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins is checked

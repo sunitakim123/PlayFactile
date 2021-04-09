@@ -77,13 +77,14 @@ public class DGBP_HSB_TestCase_29 extends Base {
 }
 
 	@AfterTest
-	public void tearDown() throws InterruptedException {
+	public void tearDown() throws InterruptedException, IOException {
 
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
 		driver.quit();
 	driver2.switchTo().window(driver2.getWindowHandle());
 	driver2.quit();
+	Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
 	
 	}
 

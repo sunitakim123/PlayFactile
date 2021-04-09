@@ -71,10 +71,11 @@ public class DGBP_B_TestCase_2 extends Base {
 				
 			
 	@AfterTest
-	public void tearDown() {
+	public void tearDown() throws IOException {
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
 	driver.quit();  
+	Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
 	}
 
 	public void uploadMascot() throws InterruptedException {

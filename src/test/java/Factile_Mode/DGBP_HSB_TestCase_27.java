@@ -76,7 +76,7 @@ public class DGBP_HSB_TestCase_27 extends Base {
 	}
 
 	@AfterTest
-	public void tearDown() throws InterruptedException {
+	public void tearDown() throws InterruptedException, IOException {
 
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
@@ -85,6 +85,7 @@ public class DGBP_HSB_TestCase_27 extends Base {
 		driver2.quit();
 		driver3.switchTo().window(driver3.getWindowHandle());
 		driver3.quit(); 
+		Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
 	}
 
 	public void modeaterscreen() throws InterruptedException {

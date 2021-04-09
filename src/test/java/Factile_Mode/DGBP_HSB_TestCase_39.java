@@ -173,13 +173,13 @@ Log.info("Driver is Initilize");
 }
 	
 	@AfterTest
-	public void tearDown() throws InterruptedException {
+	public void tearDown() throws InterruptedException, IOException {
 /*
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
 		driver.quit();
 		*/
-
+		Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
 	}
 
 	public void modeaterscreen() throws InterruptedException {
