@@ -1,2 +1,9 @@
 16:29:57.299 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - At customization page>> UnCheck display exact case>> 
 16:30:45.274 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_6 - when unchecked from customization setting>>Exact case is not displayed
+16:42:00.111 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Driver is Initilize
+16:42:01.790 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Navigated to homePage
+16:42:12.413 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - At customization page>> Play as Numbered Tiles instead of Jeopardy-style is checked >> 
+16:42:54.612 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_14 - Play as Numbered Tiles instead of Jeopardy-style is working fine 
+16:46:39.287 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Driver is Initilize
+16:46:43.216 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Navigated to homePage
+16:49:15.704 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Game_Point_Symbol_€_Before is working fine

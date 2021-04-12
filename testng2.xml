@@ -3,13 +3,11 @@
 <listeners>
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
- 
-  <test name="Exact Case When Unchecked At Global_Settings">
+  <test name="Verify Double factile">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_6"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_19"/>
            </classes>
   </test> <!-- Test -->
-  
   
   
   
