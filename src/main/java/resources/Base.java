@@ -25,7 +25,7 @@ public class Base {
 	public WebDriver driver;
 	public static Properties prop = new Properties();
 	public ChromeOptions options;
-
+	String osName = System.getProperty("os.name");
 	public WebDriver IntilizeDriver() throws IOException {
 
 		FileInputStream fis = new FileInputStream( "./src/main/java/resources/data.properties");

@@ -26,7 +26,7 @@ public class DGBP_HSB_TestCase_6 extends Base {
 	int int2;
 	String s6, s7, GameName, twitterLink, PintrestLink, t1, p1, parent, ActualValue;
 	Actions act;
-
+	String osName = System.getProperty("os.name");
 	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_6.class.getName());
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
@@ -70,7 +70,14 @@ public class DGBP_HSB_TestCase_6 extends Base {
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
 		driver.quit();
+		if (osName.equals("Windows 10")) {
 		Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
+		}
+		else
+		{
+			String[] cmd = new String[]{"/bin/sh", "killchrome.sh"};
+			Process pr = Runtime.getRuntime().exec(cmd);
+		}
 	}
 
 	public void modeaterscreen() throws InterruptedException {

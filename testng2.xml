@@ -9,11 +9,7 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_6"/>
            </classes>
   </test> <!-- Test -->
-  <test name="Play as Numbered Tiles instead of Jeopardy-style">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_14"/>
-           </classes>
-  </test> <!-- Test -->
+  
   
   
   
