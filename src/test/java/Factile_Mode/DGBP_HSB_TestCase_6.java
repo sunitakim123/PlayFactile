@@ -83,7 +83,19 @@ public class DGBP_HSB_TestCase_6 extends Base {
 	public void modeaterscreen() throws InterruptedException {
 		driver.findElement(By.id("customize")).click();
 		Thread.sleep(3000);
+		wait.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='resetAll resetCustomizations']")));
+		driver.findElement(By.xpath("//button[@class='resetAll resetCustomizations']")).click();
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.presenceOfElementLocated(
+				By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")));
+		driver.findElement(
+				By.xpath("//button[@class='swal-button swal-button--confirm btn-danger swal-button--danger']")).click();
+		Thread.sleep(2000);
 
+		wait.until(ExpectedConditions
+				.presenceOfElementLocated(By.xpath("//button[@class='swal-button swal-button--confirm']")));
+		driver.findElement(By.xpath("//button[@class='swal-button swal-button--confirm']")).click();
 		// checking the exact case at player screen on gameboard
 		if (!driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='excatCase']")).isSelected()) {
 			System.out.println("nothing to do");
