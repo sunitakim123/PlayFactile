@@ -47,7 +47,7 @@ public class Base {
 				String chromeDriverPath = "./src/main/java/LinuxDrivers/chromedriver";
 				System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 				//added this new line for memeory related issue, ref by sajwan
-				options.addArguments("-js-flags=--expose-gc");
+				//options.addArguments("-js-flags=--expose-gc");
 				options = new ChromeOptions();
 				options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200",
 						"--ignore-certificate-errors");
