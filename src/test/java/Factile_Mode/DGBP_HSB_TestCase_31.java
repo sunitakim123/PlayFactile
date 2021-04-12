@@ -63,18 +63,17 @@ public class DGBP_HSB_TestCase_31 extends Base {
 		driver.findElement(By.xpath("//span[@id='settings']")).click();
 		String url1 = driver.getCurrentUrl();
 
-		
 		if (driver.findElement(By.xpath("//div[@class='col-md-12 currentActivePlanLabel']")).isDisplayed()) {
 
 			modeaterscreen();
 			PlayerScreen();
 		}
-	
-	
-	else {
-		System.out.println("You have not taken any subscription");
+
+		else {
+			System.out.println("You have not taken any subscription");
+		}
 	}
-}
+
 	@AfterTest
 	public void tearDown() throws InterruptedException, IOException {
 
@@ -83,7 +82,14 @@ public class DGBP_HSB_TestCase_31 extends Base {
 		driver.quit();
 		driver2.switchTo().window(driver2.getWindowHandle());
 		driver2.quit();
-		Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
+
+		String osName = System.getProperty("os.name");
+		if (osName.equals("Windows 10")) {
+			Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
+		} else {
+			String[] cmd = new String[] { "/bin/sh", "killchrome.sh" };
+			Process pr = Runtime.getRuntime().exec(cmd);
+		}
 
 	}
 
@@ -294,20 +300,20 @@ public class DGBP_HSB_TestCase_31 extends Base {
 					driver1.switchTo().window(driver1.getWindowHandle());
 
 					wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//span[@class='mr-2']")));
-					/*wait1.until(
-							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
-
-					WebElement ele = driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
-					JavascriptExecutor executor = (JavascriptExecutor) driver1;
-					executor.executeScript("arguments[0].click();", ele); */
-					if(driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).isDisplayed())
-					{
+					/*
+					 * wait1.until( ExpectedConditions.presenceOfElementLocated(By.xpath(
+					 * "//div[contains(text(),'Buzz!')]")));
+					 * 
+					 * WebElement ele =
+					 * driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
+					 * JavascriptExecutor executor = (JavascriptExecutor) driver1;
+					 * executor.executeScript("arguments[0].click();", ele);
+					 */
+					if (driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).isDisplayed()) {
 						driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]")).click();
-					}
-					else
-					{
+					} else {
 						System.out.println("buzz not visible");
-					} 
+					}
 
 					wait1.until(ExpectedConditions
 							.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));

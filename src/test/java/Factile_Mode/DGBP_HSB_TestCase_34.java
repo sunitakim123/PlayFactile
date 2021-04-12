@@ -78,13 +78,22 @@ public class DGBP_HSB_TestCase_34 extends Base {
 }
 
 	@AfterTest
-	public void tearDown() throws InterruptedException {
+	public void tearDown() throws InterruptedException, IOException {
 
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
 		driver.quit();
 		driver2.switchTo().window(driver2.getWindowHandle());
 		driver2.quit(); 
+		String osName = System.getProperty("os.name");
+		if (osName.equals("Windows 10")) {
+				Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
+				}
+				else
+				{
+					String[] cmd = new String[]{"/bin/sh", "killchrome.sh"};
+					Process pr = Runtime.getRuntime().exec(cmd);
+				}
 
 	}
 

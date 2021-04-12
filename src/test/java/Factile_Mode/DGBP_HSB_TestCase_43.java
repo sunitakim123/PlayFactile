@@ -80,7 +80,16 @@ public class DGBP_HSB_TestCase_43 extends Base {
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
 		driver.quit();
-		Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
+		String osName = System.getProperty("os.name");
+		if (osName.equals("Windows 10")) {
+				Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
+				}
+				else
+				{
+					String[] cmd = new String[]{"/bin/sh", "killchrome.sh"};
+					Process pr = Runtime.getRuntime().exec(cmd);
+				}
+
 	}
 
 	public void modeaterscreen() throws InterruptedException {
