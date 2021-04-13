@@ -4,11 +4,7 @@
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
  
- <test name="Verify_Multi Team Member_RandomTeamAssignmnet" >
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_41"/>
-           </classes>
-  </test> <!-- Test -->
+
   <test name="Verify wager with full submisstion by player">
     <classes>
           <class name="Factile_Mode.DGBP_HSB_TestCase_42"/>
