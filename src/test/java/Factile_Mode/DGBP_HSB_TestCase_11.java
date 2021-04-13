@@ -71,7 +71,8 @@ public class DGBP_HSB_TestCase_11  extends Base{
 		
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
-		driver.quit(); String osName = System.getProperty("os.name");
+		driver.quit(); 
+		String osName = System.getProperty("os.name");
 		if (osName.equals("Windows 10")) {
 			Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
 			}

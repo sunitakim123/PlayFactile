@@ -4,21 +4,6 @@
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
  
-  <test name="Exact Case When Unchecked At Global_Settings">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_6"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Play as Numbered Tiles instead of Jeopardy-style">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_14"/>
-           </classes>
-  </test> <!-- Test -->
-    <test name="Verify Double factile">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_19"/>
-           </classes>
-  </test> <!-- Test -->
  
   <test name="Verify Users Can Join Buzzer Mode after Game Begins When Unchecked">
     <classes>
