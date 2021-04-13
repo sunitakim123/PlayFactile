@@ -306,7 +306,7 @@ if (osName.equals("Windows 10")) {
 					// System.out.println("value of p>>"+p);
 
 					if (p == 2) {// opening new driver to join the game in the mid
-						Thread.sleep(1000);
+						Thread.sleep(2000);
 						wait.until(ExpectedConditions.elementToBeClickable(
 								By.xpath("//span[@class='remoteView manageTeams manageTeamSeparate']")));
 						driver.findElement(By.xpath("//span[@class='remoteView manageTeams manageTeamSeparate']"))
