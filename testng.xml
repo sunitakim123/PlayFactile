@@ -4,68 +4,34 @@
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
  
-
-  <test name="Verify wager with full submisstion by player">
+<test name="Verify Users Can Join Buzzer Mode after Game Begins When Unchecked">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_42"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_27"/>
            </classes>
   </test> <!-- Test -->
- <test name="Verify wager half submisstion by player">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_43"/>
-           </classes>
-  </test> <!-- Test --> 
-  <test name="Verify wager zero submisstion by player">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_44"/>
-           </classes>
-  </test> <!-- Test -->  
-  <test name="Verify skip wager">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_45"/>
-           </classes>
-  </test> <!-- Test -->  
-  <test name="Verify wager submission by moderator">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_46"/>
-           </classes>
-  </test> <!-- Test -->
-    <test name="Verify wager submission by moderator zero">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_47"/>
-           </classes>
-  </test> <!-- Test -->  
-    <test name="Verify wager submit by Captain">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_48"/>
-           </classes>
-  </test> <!-- Test -->  
-    <test name="To verify final factile answer text box with valid input character">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_49"/>
-           </classes>
-  </test> <!-- Test -->  
-    <test name="To verify final factile answer text box with valid input number">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_50"/>
-           </classes>
   
-  </test> <!-- Test -->    
-  <test name="To verify final factile answer text box with valid input special character">
+    <test name="Verify Buzzer mode for Fianl factile question">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_51"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_29"/>
            </classes>
- </test> <!-- Test -->   
-  <test name="To verify final factile answer text box submitted by Captain">
+  </test> <!-- Test -->
+  
+    <test name="Verify Buzzer mode for Fianl factile question when Off from global settings">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_52"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_30"/>
            </classes>
-</test> <!-- Test -->  
-  <test name="To verify final factile answer text box submitted by team member">
+  </test> <!-- Test -->
+    
+  <test name="Verify enter final factile answer">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_53"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_31"/>
            </classes>
-  </test> <!-- Test --> 
+  </test> <!-- Test -->
+     <test name="Verify_enter_answer_after_buzz">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_32"/>
+           </classes>
+  </test> <!-- Test -->
   
    
   
