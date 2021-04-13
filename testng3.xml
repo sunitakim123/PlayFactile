@@ -3,10 +3,10 @@
 <listeners>
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
-  <test name="Display  Logo  at customize and gameboard">
+   <test name="Display  Logo at customize and gameboard">
     <classes>
-          <class name="Factile_Mode.DGBM_B_TestCase_1"/>
-           </classes>
+    <class name="Factile_Mode.DGBM_B_TestCase_1"/>
+          </classes>          
   </test> <!-- Test -->  
   
   <test name="Display  uploaded masoct at player side">
@@ -44,7 +44,9 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_8"/>
            </classes>
   </test> <!-- Test -->
-  <test name="Hide_category_with_Points">
+  
+  
+    <test name="Hide_category_with_Points">
     <classes>
           <class name="Factile_Mode.DGBP_HSB_TestCase_9"/>
            </classes>
@@ -95,4 +97,190 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_18"/>
            </classes>
   </test> <!-- Test -->
+   <test name="Verify Double factile">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_19"/>
+           </classes>
+  </test> <!-- Test -->
+ 
+   <test name="Verify Daily double">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_20"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Verify show skip question button">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_21"/>
+           </classes>
+  </test> <!-- Test -->
+  
+  <test name="Verify Skip final factile">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_22"/>
+           </classes>
+  </test> <!-- Test -->
+  
+   <test name="Show Final Factile Category Hint at Wager Time">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_23"/>
+           </classes>
+  </test> <!-- Test -->
+  
+   <test name="Allow_Multiple_Team_to_answer when Checked">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_24"/>
+           </classes>
+  </test> <!-- Test -->
+ 
+  <test name="Allow_Multiple_Team_to_answer when unChecked">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_25"/>
+           </classes>
+  </test> <!-- Test -->
+ 
+  <test name="Verify Users Can Join Buzzer Mode after Game Begins when Checked">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_26"/>
+           </classes>
+  </test> <!-- Test -->
+  
+  <test name="Verify Users Can Join Buzzer Mode after Game Begins When Unchecked">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_27"/>
+           </classes>
+  </test> <!-- Test -->
+  
+    <test name="Verify Buzzer mode for Fianl factile question">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_29"/>
+           </classes>
+  </test> <!-- Test -->
+  
+    <test name="Verify Buzzer mode for Fianl factile question when Off from global settings">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_30"/>
+           </classes>
+  </test> <!-- Test -->
+    
+  <test name="Verify enter final factile answer">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_31"/>
+           </classes>
+  </test> <!-- Test -->
+     <test name="Verify_enter_answer_after_buzz">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_32"/>
+           </classes>
+  </test> <!-- Test -->
+  
+       <test name="Verify_Stop_Timer_on_BuzzIn_of_1_to_100">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_33"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Verify_Maximum_Buzz_in_per_try_taken1">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_34"/>
+           </classes>
+  </test> <!-- Test -->
+   
+  <test name="Verify_customize timer count down">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_35"/>
+           </classes>
+  </test> <!-- Test -->
+  
+   <test name="Verify_reading_timer">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_36"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Verify final factile timer">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_37"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Verify_Automatically mark incorrect when timeout">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_38"/>
+           </classes>
+  </test> <!-- Test -->
+    <test name="Verify_same_game_running_by_two_moderaters"  parallel="methods" thread-count="2">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_39"/>
+           </classes>
+  </test> <!-- Test -->
+   <test name="Verify_Multi Team Member_PlayerSelctedTeamAssignmnet" >
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_40"/>
+           </classes>
+  </test> <!-- Test -->
+  
+   <test name="Verify_Multi Team Member_RandomTeamAssignmnet" >
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_41"/>
+           </classes>
+  </test> <!-- Test -->
+  <test name="Verify wager with full submisstion by player">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_42"/>
+           </classes>
+  </test> <!-- Test -->
+ <test name="Verify wager half submisstion by player">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_43"/>
+           </classes>
+  </test> <!-- Test --> 
+  <test name="Verify wager zero submisstion by player">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_44"/>
+           </classes>
+  </test> <!-- Test -->  
+  <test name="Verify skip wager">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_45"/>
+           </classes>
+  </test> <!-- Test -->  
+  <test name="Verify wager submission by moderator">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_46"/>
+           </classes>
+  </test> <!-- Test -->
+    <test name="Verify wager submission by moderator zero">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_47"/>
+           </classes>
+  </test> <!-- Test -->  
+    <test name="Verify wager submit by Captain">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_48"/>
+           </classes>
+  </test> <!-- Test -->  
+    <test name="To verify final factile answer text box with valid input character">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_49"/>
+           </classes>
+  </test> <!-- Test -->  
+    <test name="To verify final factile answer text box with valid input number">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_50"/>
+           </classes>
+  
+  </test> <!-- Test -->    
+  <test name="To verify final factile answer text box with valid input special character">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_51"/>
+           </classes>
+ </test> <!-- Test -->   
+  <test name="To verify final factile answer text box submitted by Captain">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_52"/>
+           </classes>
+</test> <!-- Test -->  
+  <test name="To verify final factile answer text box submitted by team member">
+    <classes>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_53"/>
+           </classes>
+  </test> <!-- Test --> 
+  
 </suite> <!-- Suite -->
