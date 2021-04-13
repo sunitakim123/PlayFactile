@@ -339,9 +339,8 @@ public class DGBP_HSB_TestCase_31 extends Base {
 					driver2.findElement(By.xpath("//input[@class='ansSubmitBtn btn--inside uppercase']")).click();
 
 					driver.switchTo().window(driver.getWindowHandle());
-					Thread.sleep(2000);
-					wait.until(ExpectedConditions
-							.presenceOfElementLocated(By.xpath("(//i[@class='fa fa-check right'])[1]")));
+					Thread.sleep(3000);
+					wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//i[@class='fa fa-check right'])[1]")));
 					driver.findElement(By.xpath("(//i[@class='fa fa-check right'])[1]")).click();
 					Thread.sleep(2000);
 
