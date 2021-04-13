@@ -345,7 +345,7 @@ if (osName.equals("Windows 10")) {
 						} else {
 							driver3.findElement(By.xpath("//input[@class='btn joinBtn yellowBG mt-4 mb-4']")).click();
 						}
-						Thread.sleep(2000);
+						Thread.sleep(3000);
 						driver3.findElement(By.xpath("(//div[@class='characterBlock position-relative'])[last()]"))
 								.click();
 
