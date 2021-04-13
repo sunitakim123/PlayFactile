@@ -302,6 +302,7 @@ public class DGBP_HSB_TestCase_33 extends Base {
 					{
 						System.out.println("buzz not visible");
 					} */
+							 Thread.sleep(1500);
 					wait1.until(ExpectedConditions
 							.presenceOfElementLocated(By.xpath("//textarea[@placeholder='Enter Answer']")));
 
