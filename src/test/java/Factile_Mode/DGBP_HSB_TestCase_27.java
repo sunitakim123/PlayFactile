@@ -37,7 +37,7 @@ public class DGBP_HSB_TestCase_27 extends Base {
 	Actions act, act1, act2, act3, act4;
 
 	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_27.class.getName());
-	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
+	//private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
 	@BeforeTest
 	public void initilize() throws IOException {
