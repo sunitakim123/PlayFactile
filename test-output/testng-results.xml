@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-14T15:15:11 IST" name="Suite" finished-at="2021-04-14T15:18:36 IST" duration-ms="204760">
+  <suite started-at="2021-04-14T15:44:08 IST" name="Suite" finished-at="2021-04-14T15:47:16 IST" duration-ms="188110">
     <groups>
     </groups>
-    <test started-at="2021-04-14T15:15:11 IST" name="Verify_same_game_running_by_two_moderaters" finished-at="2021-04-14T15:18:36 IST" duration-ms="204760">
+    <test started-at="2021-04-14T15:44:08 IST" name="Verify_same_game_running_by_two_moderaters" finished-at="2021-04-14T15:47:16 IST" duration-ms="188110">
       <class name="Factile_Mode.DGBP_HSB_TestCase_39">
-        <test-method signature="TC_39_Same_Game_playing_by_second__Moderater()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_39@71b3bc45]" started-at="2021-04-14T15:15:11 IST" name="TC_39_Same_Game_playing_by_second__Moderater" finished-at="2021-04-14T15:18:36 IST" duration-ms="204730" status="PASS">
+        <test-method signature="TC_39_Same_Game_playing_by_second__Moderater()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_39@f0e995e]" started-at="2021-04-14T15:44:08 IST" name="TC_39_Same_Game_playing_by_second__Moderater" finished-at="2021-04-14T15:47:16 IST" duration-ms="188070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_39_Same_Game_playing_by_second__Moderater -->
-        <test-method signature="TC_39_Same_Game_playing_from_first_Moderater()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_39@71b3bc45]" started-at="2021-04-14T15:15:11 IST" name="TC_39_Same_Game_playing_from_first_Moderater" finished-at="2021-04-14T15:18:23 IST" duration-ms="191686" status="PASS">
+        <test-method signature="TC_39_Same_Game_playing_from_first_Moderater()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_39@f0e995e]" started-at="2021-04-14T15:44:08 IST" name="TC_39_Same_Game_playing_from_first_Moderater" finished-at="2021-04-14T15:47:10 IST" duration-ms="181703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_39_Same_Game_playing_from_first_Moderater -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_39@71b3bc45]" started-at="2021-04-14T15:18:36 IST" name="tearDown" finished-at="2021-04-14T15:18:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_39@f0e995e]" started-at="2021-04-14T15:47:16 IST" name="tearDown" finished-at="2021-04-14T15:47:16 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

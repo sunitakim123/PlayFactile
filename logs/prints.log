@@ -13,3 +13,8 @@
 15:15:14.081 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Driver is Initilize
 15:15:15.333 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
 15:15:15.810 [TestNG-test=Verify_same_game_running_by_two_moderaters-1] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
+15:41:53.152 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Driver is Initilize
+15:41:54.340 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
+15:44:10.850 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Driver is Initilize
+15:44:14.100 [TestNG-test=Verify_same_game_running_by_two_moderaters-1] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
+15:44:14.486 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
