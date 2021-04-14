@@ -317,10 +317,11 @@ if (osName.equals("Windows 10")) {
 						wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@data-numteams='1']")));
 						driver.findElement(By.xpath("//span[@data-numteams='1']")).click();
 						driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+						Thread.sleep(2000);
 						wait.until(ExpectedConditions
 								.presenceOfElementLocated(By.xpath("//span[@class='game-pin-number']")));
 						driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-							Thread.sleep(2000);
+							
 						String GettingPinFromTEamManagemnetpage = driver
 								.findElement(By.xpath("//span[@class='game-pin-number']")).getText();
 						System.out.println("GettingPinFromTEamManagemnetpage==" + GettingPinFromTEamManagemnetpage);
