@@ -7,7 +7,6 @@
         <methods>
           <include name="TC_39_Same_Game_playing_by_second__Moderater"/>
           <include name="tearDown"/>
-          <include name="TC_39_Same_Game_playing_from_first_Moderater"/>
         </methods>
       </class> <!-- Factile_Mode.DGBP_HSB_TestCase_39 -->
     </classes>

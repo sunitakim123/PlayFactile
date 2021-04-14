@@ -9,17 +9,7 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_39"/>
            </classes>
   </test> <!-- Test -->
-   <test name="Verify_Multi Team Member_PlayerSelctedTeamAssignmnet" >
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_40"/>
-           </classes>
-  </test> <!-- Test -->
   
-   <test name="Verify_Multi Team Member_RandomTeamAssignmnet" >
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_41"/>
-           </classes>
-  </test> <!-- Test -->
    
   
   
