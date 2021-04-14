@@ -40,11 +40,12 @@ public class DGBP_HSB_TestCase_41 extends Base {
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
 	@BeforeTest
-	public void initilize() throws IOException {
+	public void initilize() throws IOException, InterruptedException {
 		driver = IntilizeDriver();
 		Dimension d = new Dimension(1382, 744);
 		driver.manage().window().setSize(d);
 		Log.info("Driver is Initilize");
+		Thread.sleep(5000);
 		driver.get(prop.getProperty("rooturl"));
 		wait = new WebDriverWait(driver, 60);
 		Log.info("Navigated to homePage");
