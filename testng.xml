@@ -3,27 +3,7 @@
 <listeners>
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
- <test name="Verify_customize timer count down">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_35"/>
-           </classes>
-  </test> <!-- Test -->
-  
-   <test name="Verify_reading_timer">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_36"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Verify final factile timer">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_37"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Verify_Automatically mark incorrect when timeout">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_38"/>
-           </classes>
-  </test> <!-- Test -->
+
     <test name="Verify_same_game_running_by_two_moderaters"  parallel="methods" thread-count="2">
     <classes>
           <class name="Factile_Mode.DGBP_HSB_TestCase_39"/>
