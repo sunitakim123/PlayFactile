@@ -308,11 +308,12 @@ public class DGBP_HSB_TestCase_39 extends Base {
 				Select DDList = new Select(driver.findElement(By.xpath("//select[@id='shareOption']")));
 				DDList.selectByValue("link");
 
-				Thread.sleep(3000);
-				wait.until(ExpectedConditions
-						.presenceOfElementLocated(By.xpath("//button[@class='btn float-left closeShareModal']")));
-				driver.findElement(By.xpath("//button[@class='btn float-left closeShareModal']")).click();
-
+				Thread.sleep(4000);
+			//	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='btn float-left closeShareModal']")));
+				//driver.findElement(By.xpath("//button[@class='btn float-left closeShareModal']")).click();
+				WebElement ele6 = driver.findElement(By.xpath("//button[@class='btn float-left closeShareModal']"));
+				JavascriptExecutor executor6 = (JavascriptExecutor) driver;
+				executor6.executeScript("arguments[0].click();", ele6);
 				Thread.sleep(3000);
 				driver.findElement(By.xpath("//span[@class='playNowButton']")).click();
 				Thread.sleep(2000);
