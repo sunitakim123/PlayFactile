@@ -49,7 +49,7 @@ public class DGBP_HSB_TestCase_38 extends Base {
 		Dimension d = new Dimension(1382, 744);
 		driver.manage().window().setSize(d);
 		Log.info("Driver is Initilize");
-		Thread.sleep(5000);
+		Thread.sleep(6000);
 		driver.get(prop.getProperty("rooturl"));
 		wait = new WebDriverWait(driver, 60);
 		Log.info("Navigated to homePage");

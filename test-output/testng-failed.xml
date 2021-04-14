@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_27">
+      <class name="Factile_Mode.DGBP_HSB_TestCase_39">
         <methods>
-          <include name="initilize"/>
+          <include name="TC_39_Same_Game_playing_by_second__Moderater"/>
           <include name="tearDown"/>
-          <include name="TC_27_Users_Can_Join_Buzzer_Mode_after_Game_Begins_thorugh_Manage_Team"/>
+          <include name="TC_39_Same_Game_playing_from_first_Moderater"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_27 -->
+      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_39 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

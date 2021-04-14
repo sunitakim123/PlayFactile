@@ -57,7 +57,7 @@ public class DGBP_HSB_TestCase_39 extends Base {
 		driver.manage().window().setSize(d);
 
 		Log.info("Driver is Initilize");
-		Thread.sleep(5000);
+		Thread.sleep(6000);
 		driver.get(prop.getProperty("rooturl"));
 		wait = new WebDriverWait(driver, 60);
 		Log.info("Navigated to homePage");
@@ -166,13 +166,13 @@ public class DGBP_HSB_TestCase_39 extends Base {
 		 * driver1.quit(); driver.switchTo().window(driver.getWindowHandle());
 		 * driver.quit();
 		 */
-		String osName = System.getProperty("os.name");
+	/*	String osName = System.getProperty("os.name");
 		if (osName.equals("Windows 10")) {
 			Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
 		} else {
 			String[] cmd = new String[] { "/bin/sh", "killchrome.sh" };
 			Process pr = Runtime.getRuntime().exec(cmd);
-		}
+		} */
 
 	}
 
