@@ -41,11 +41,12 @@ public class DGBP_HSB_TestCase_23 extends Base {
 
 	@BeforeTest
 	public void initilize() throws IOException, InterruptedException {
+		Thread.sleep(3000);
 		driver = IntilizeDriver();
 		 Dimension d = new Dimension(1382,744);
 		 driver.manage().window().setSize(d);
 		Log.info("Driver is Initilize");
-		Thread.sleep(3000);
+	
 		driver.get(prop.getProperty("rooturl"));
 		wait = new WebDriverWait(driver, 60);
 		Log.info("Navigated to homePage");
@@ -91,7 +92,7 @@ public class DGBP_HSB_TestCase_23 extends Base {
 		 			String[] cmd = new String[]{"/bin/sh", "killchrome.sh"};
 		 			Process pr = Runtime.getRuntime().exec(cmd);
 		 		}
-
+		 Thread.sleep(3000);
 	}
 
 	public void modeaterscreen() throws InterruptedException {

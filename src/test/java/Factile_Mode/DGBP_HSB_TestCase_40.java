@@ -40,7 +40,8 @@ public class DGBP_HSB_TestCase_40 extends Base {
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
 	@BeforeTest
-	public void initilize() throws IOException {
+	public void initilize() throws IOException, InterruptedException {
+		Thread.sleep(3000);
 		driver = IntilizeDriver();
 		Dimension d = new Dimension(1382, 744);
 		driver.manage().window().setSize(d);
@@ -85,7 +86,7 @@ public class DGBP_HSB_TestCase_40 extends Base {
 					String[] cmd = new String[]{"/bin/sh", "killchrome.sh"};
 					Process pr = Runtime.getRuntime().exec(cmd);
 				}
-
+		Thread.sleep(3000);
 /*
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
