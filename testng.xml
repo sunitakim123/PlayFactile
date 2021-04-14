@@ -8,144 +8,47 @@
     <classes>
     <class name="Factile_Mode.DGBM_B_TestCase_1"/>
           </classes>          
-  </test> <!-- Test -->  
-  
-  <test name="Display  uploaded masoct at player side">
+</test> <!-- Test -->
+  <test name="Verify Users Can Join Buzzer Mode after Game Begins When Unchecked">
     <classes>
-          <class name="Factile_Mode.DGBP_B_TestCase_2"/>
-           </classes>
-  </test> <!-- Test -->
-   <test name="Display gamboard background image at gameboard and player gameboard side">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_3"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Display social media on moderater screen gamboard">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_4"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Display not exact case on player screen">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_5"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Exact Case When Unchecked At Global_Settings">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_6"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Exact Case When checked At Global_Settings">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_7"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Show_category_with_Points">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_8"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_27"/>
            </classes>
   </test> <!-- Test -->
   
-  
-    <test name="Hide_category_with_Points">
+    <test name="Verify Buzzer mode for Fianl factile question">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_9"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_29"/>
            </classes>
   </test> <!-- Test -->
   
-    <test name="Display_Answer_Button_On_Modrater_Screen">
+    <test name="Verify Buzzer mode for Fianl factile question when Off from global settings">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_10"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_30"/>
            </classes>
   </test> <!-- Test -->
-    <test name="Display_Tag_Name">
+    
+  <test name="Verify enter final factile answer">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_11"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_31"/>
            </classes>
   </test> <!-- Test -->
-    <test name="Hide_Tag_Name">
+     <test name="Verify_enter_answer_after_buzz">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_12"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Play as jeo-pardy style">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_13"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Play as Numbered Tiles instead of Jeopardy-style">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_14"/>
-           </classes>
-  </test> <!-- Test -->
-   <test name="Game_Point_Symbol_$_Before()">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_15"/>
-           </classes>
-  </test> <!-- Test -->
-   <test name="Game_Point_Symbol_$_After()">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_16"/>
-           </classes>
-  </test> <!-- Test -->
-   <test name="Game_Point_Symbol_€_Before()">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_17"/>
-           </classes>
-  </test> <!-- Test -->
-   <test name="Game_Point_Symbol_€_After()">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_18"/>
-           </classes>
-  </test> <!-- Test -->
-   <test name="Verify Double factile">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_19"/>
-           </classes>
-  </test> <!-- Test -->
- 
-   <test name="Verify Daily double">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_20"/>
-           </classes>
-  </test> <!-- Test -->
-  <test name="Verify show skip question button">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_21"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_32"/>
            </classes>
   </test> <!-- Test -->
   
-  <test name="Verify Skip final factile">
+       <test name="Verify_Stop_Timer_on_BuzzIn_of_1_to_100">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_22"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_33"/>
            </classes>
   </test> <!-- Test -->
-  
-   <test name="Show Final Factile Category Hint at Wager Time">
+  <test name="Verify_Maximum_Buzz_in_per_try_taken1">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_23"/>
-           </classes>
-  </test> <!-- Test -->
-  
-   <test name="Allow_Multiple_Team_to_answer when Checked">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_24"/>
-           </classes>
-  </test> <!-- Test -->
- 
-  <test name="Allow_Multiple_Team_to_answer when unChecked">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_25"/>
-           </classes>
-  </test> <!-- Test -->
- 
-  <test name="Verify Users Can Join Buzzer Mode after Game Begins when Checked">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_26"/>
+          <class name="Factile_Mode.DGBP_HSB_TestCase_34"/>
            </classes>
   </test> <!-- Test -->
    
-  
   
   
 </suite> <!-- Suite -->
