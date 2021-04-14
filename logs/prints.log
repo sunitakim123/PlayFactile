@@ -9,3 +9,14 @@
 16:49:15.704 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Game_Point_Symbol_€_Before is working fine
 16:51:20.916 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
 16:51:22.717 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+09:24:06.055 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_31 - Driver is Initilize
+09:24:07.600 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_31 - Navigated to homePage
+09:24:53.886 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_31 - Driver is Initilize
+09:24:57.175 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_31 - Navigated to homePage
+09:25:19.450 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_31 - At customization page>> >>Buzzer for final factile is on from customization
+09:46:00.466 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Driver is Initilize
+09:46:02.091 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Navigated to homePage
+09:46:24.508 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins through team manage
+09:50:41.966 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Driver is Initilize
+09:50:43.660 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - Navigated to homePage
+09:51:06.046 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_27 - At customization page>> >>Users Can Join Buzzer Mode after Game Begins through team manage
