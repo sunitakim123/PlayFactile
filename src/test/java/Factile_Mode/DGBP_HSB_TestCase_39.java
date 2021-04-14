@@ -474,7 +474,7 @@ public class DGBP_HSB_TestCase_39 extends Base {
 		System.out.println("ParentWindow id is :-" + parent);
 		wait3.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='mygames']")));
 		driver3.findElement(By.xpath("//*[@id='mygames']")).click();
-		Thread.sleep(30000);
+		Thread.sleep(35000);
 		driver3.get(gameURL);
 
 		driver3.findElement(By.xpath("//span[@class='playNowButton']")).click();
