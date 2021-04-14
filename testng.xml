@@ -3,12 +3,7 @@
 <listeners>
 <listener class-name="Factile_Mode.Listeners1"/>
 </listeners>
- 
- <test name="Display  Logo at customize and gameboard">
-    <classes>
-    <class name="Factile_Mode.DGBM_B_TestCase_1"/>
-          </classes>          
-</test> <!-- Test -->
+
   <test name="Verify Users Can Join Buzzer Mode after Game Begins When Unchecked">
     <classes>
           <class name="Factile_Mode.DGBP_HSB_TestCase_27"/>
