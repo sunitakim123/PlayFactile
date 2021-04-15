@@ -34,9 +34,11 @@ public class DGBP_HSB_TestCase_10 extends Base {
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
 	@BeforeTest
-	public void initilize() throws IOException {
+	public void initilize() throws IOException, InterruptedException {
+		Thread.sleep(3000);
 		driver = IntilizeDriver();
 		Log.info("Driver is Initilize");
+		
 		driver.get(prop.getProperty("rooturl"));
 		driver.manage().window().maximize();
 		wait = new WebDriverWait(driver, 60);
@@ -67,6 +69,7 @@ public class DGBP_HSB_TestCase_10 extends Base {
 		else {
 			System.out.println("You have not taken any subscription");
 		}
+		
 	}
 
 	@AfterTest
@@ -83,6 +86,7 @@ public class DGBP_HSB_TestCase_10 extends Base {
 				String[] cmd = new String[]{"/bin/sh", "killchrome.sh"};
 				Process pr = Runtime.getRuntime().exec(cmd);
 			}
+		Thread.sleep(3000);
 
 	}
 

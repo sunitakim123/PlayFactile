@@ -9,3 +9,18 @@
 16:49:15.704 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_18 - Game_Point_Symbol_€_Before is working fine
 16:51:20.916 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Driver is Initilize
 16:51:22.717 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_19 - Navigated to homePage
+15:08:40.390 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Driver is Initilize
+15:08:41.628 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
+15:10:13.508 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Driver is Initilize
+15:10:16.657 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
+15:10:58.218 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Driver is Initilize
+15:11:01.593 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
+15:12:15.787 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Driver is Initilize
+15:12:19.142 [TestNG-test=Verify_same_game_running_by_two_moderaters-1] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
+15:12:19.466 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
+15:17:25.729 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_40 - Driver is Initilize
+15:17:30.029 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_40 - Navigated to homePage
+15:21:36.276 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_40 - Driver is Initilize
+15:21:38.589 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_40 - Navigated to homePage
+15:22:32.233 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_40 - Driver is Initilize
+15:22:33.799 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_40 - Navigated to homePage

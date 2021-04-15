@@ -43,7 +43,8 @@ public class DGBP_HSB_TestCase_36 extends Base {
 	public static Logger Log = LogManager.getLogger(DGBP_HSB_TestCase_36.class.getName());
 
 	@BeforeTest
-	public void initilize() throws IOException {
+	public void initilize() throws IOException, InterruptedException {
+		Thread.sleep(3000);
 		driver = IntilizeDriver();
 		 
 		Dimension d = new Dimension(1382, 744);
@@ -95,7 +96,7 @@ public class DGBP_HSB_TestCase_36 extends Base {
 	  		{
 	  			String[] cmd = new String[]{"/bin/sh", "killchrome.sh"};
 	  			Process pr = Runtime.getRuntime().exec(cmd);
-	  		}
+	  		}Thread.sleep(2000);
 
 	}
 
