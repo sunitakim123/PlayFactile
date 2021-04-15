@@ -41,7 +41,7 @@ public class DGBP_HSB_TestCase_15 extends Base {
 
 	@BeforeTest
 	public void initilize() throws IOException, InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(10000);
 		driver = IntilizeDriver();
 		Log.info("Driver is Initilize");
 
