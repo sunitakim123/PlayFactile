@@ -51,7 +51,7 @@ public class DGBP_HSB_TestCase_39 extends Base {
 
 	@Test
 	public void TC_39_Same_Game_playing_from_first_Moderater() throws InterruptedException, IOException {
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		driver = IntilizeDriver();
 		Dimension d = new Dimension(1382, 744);
 		driver.manage().window().setSize(d);
@@ -308,8 +308,10 @@ public class DGBP_HSB_TestCase_39 extends Base {
 				DDList.selectByValue("link");
 				wait.until(ExpectedConditions
 						.presenceOfElementLocated(By.xpath("//button[@class='btn float-left closeShareModal']")));
-				driver.findElement(By.xpath("//button[@class='btn float-left closeShareModal']")).click();
-
+				//driver.findElement(By.xpath("//button[@class='btn float-left closeShareModal']")).click();
+				WebElement ele6 = driver.findElement(By.xpath("//button[@class='btn float-left closeShareModal']"));
+				JavascriptExecutor executor6 = (JavascriptExecutor) driver;
+				executor6.executeScript("arguments[0].click();", ele6);
 				Thread.sleep(3000);
 				driver.findElement(By.xpath("//span[@class='playNowButton']")).click();
 				Thread.sleep(2000);
