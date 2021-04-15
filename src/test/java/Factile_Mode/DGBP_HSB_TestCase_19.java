@@ -41,7 +41,7 @@ public class DGBP_HSB_TestCase_19 extends Base {
 
 	@BeforeTest
 	public void initilize() throws IOException, InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		driver = IntilizeDriver();
 		Dimension d = new Dimension(1382,744);     
 		driver.manage().window().setSize(d); 
