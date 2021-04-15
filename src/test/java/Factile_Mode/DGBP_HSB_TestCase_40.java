@@ -76,7 +76,7 @@ public class DGBP_HSB_TestCase_40 extends Base {
 
 	@AfterTest
 	public void tearDown() throws InterruptedException, IOException {
-		String osName = System.getProperty("os.name");
+		/*String osName = System.getProperty("os.name");
 		if (osName.equals("Windows 10")) {
 				Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
 				}
@@ -86,7 +86,7 @@ public class DGBP_HSB_TestCase_40 extends Base {
 					Process pr = Runtime.getRuntime().exec(cmd);
 				}
 
-/*
+
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
 		driver.quit();
@@ -328,8 +328,7 @@ public class DGBP_HSB_TestCase_40 extends Base {
 					driver1.switchTo().window(driver1.getWindowHandle());
 
 					Thread.sleep(4000);
-					wait1.until(
-							ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
+					//wait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(text(),'Buzz!')]")));
 
 					WebElement ele = driver1.findElement(By.xpath("//div[contains(text(),'Buzz!')]"));
 					JavascriptExecutor executor = (JavascriptExecutor) driver1;
