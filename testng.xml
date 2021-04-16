@@ -11,11 +11,7 @@
           <class name="Factile_Mode.DGBP_HSB_TestCase_37"/>
            </classes>
   </test> <!-- Test -->
-  <test name="Verify_Automatically mark incorrect when timeout">
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_38"/>
-           </classes>
-  </test> <!-- Test -->
+
     <test name="Verify_same_game_running_by_two_moderaters"  parallel="methods" thread-count="2">
     <classes>
           <class name="Factile_Mode.DGBP_HSB_TestCase_39"/>
@@ -27,10 +23,6 @@
            </classes>
   </test> <!-- Test -->
   
-   <test name="Verify_Multi Team Member_RandomTeamAssignmnet" >
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_41"/>
-           </classes>
-  </test> <!-- Test -->
+ 
   
 </suite> <!-- Suite -->
