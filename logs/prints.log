@@ -32,3 +32,5 @@
 11:21:57.749 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_37 - Navigated to homePage
 11:28:06.676 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_40 - Driver is Initilize
 11:28:09.813 [main] INFO  Factile_Mode.DGBP_HSB_TestCase_40 - Navigated to homePage
+13:54:45.753 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Driver is Initilize
+13:54:46.811 [TestNG-test=Verify_same_game_running_by_two_moderaters-2] INFO  Factile_Mode.DGBP_HSB_TestCase_39 - Navigated to homePage
