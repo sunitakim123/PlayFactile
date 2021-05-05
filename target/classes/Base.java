@@ -69,7 +69,8 @@ public class Base {
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 			driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
-		} else if (browserName.equals("edge")) {
+		}
+		 else if (browserName.equals("edge")) {
 
 			System.setProperty("webdriver.edge.driver",
 					System.getProperty("user.dir") + "\\src\\main\\java\\Drivers\\msedgedriver.exe");

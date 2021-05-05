@@ -1,26 +1,32 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <listeners>
-<listener class-name="Factile_Mode.Listeners1"/>
+<listener class-name="Factile_Mode_v3.Listeners2"/>
 </listeners>
   
  
-    <test name="Verify_same_game_running_by_two_moderaters"  parallel="methods" thread-count="2">
+    <test name="sign up">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_39"/>
+          <class name="Factile_Mode_v3.Sign_UP"/>
            </classes>
   </test> <!-- Test -->
-   <test name="Verify_Multi Team Member_PlayerSelctedTeamAssignmnet" >
+   
+    <test name="Log in">
     <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_40"/>
+          <class name="Factile_Mode_v3.Log_In"/>
            </classes>
   </test> <!-- Test -->
+   
+    <test name="Forget Password">
+    <classes>
+          <class name="Factile_Mode_v3.ForgetPassword"/>
+           </classes>
+  </test> <!-- Test -->
+   
   
-   <test name="Verify_Multi Team Member_RandomTeamAssignmnet" >
-    <classes>
-          <class name="Factile_Mode.DGBP_HSB_TestCase_41"/>
-           </classes>
-  </test> <!-- Test -->
- 
-  
+ <test name="Two_Factor_Authentication">
+ <classes>
+ <class name="Factile_Mode_v3.TwoFactorAuthentication"/> 
+ </classes>
+    </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -2,17 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
-    <listener class-name="Factile_Mode.Listeners1"/>
+    <listener class-name="Factile_Mode_v3.Listeners2"/>
   </listeners>
-  <test thread-count="5" name="Verify_Multi Team Member_PlayerSelctedTeamAssignmnet(failed)">
+  <test thread-count="5" name="Two_Factor_Authentication(failed)">
     <classes>
-      <class name="Factile_Mode.DGBP_HSB_TestCase_40">
+      <class name="Factile_Mode_v3.TwoFactorAuthentication">
         <methods>
           <include name="initilize"/>
-          <include name="tearDown"/>
-          <include name="TC_40_MultiTeamMemeber_PlayerSelctedTeamAssignmnet"/>
+          <include name="close"/>
+          <include name="Two_Factor_Authentication"/>
         </methods>
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_40 -->
+      </class> <!-- Factile_Mode_v3.TwoFactorAuthentication -->
     </classes>
-  </test> <!-- Verify_Multi Team Member_PlayerSelctedTeamAssignmnet(failed) -->
+  </test> <!-- Two_Factor_Authentication(failed) -->
 </suite> <!-- Failed suite [Suite] -->

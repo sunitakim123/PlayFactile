@@ -1,25 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-16T18:33:28 IST" name="Suite" finished-at="2021-04-16T18:36:31 IST" duration-ms="183187">
+  <suite started-at="2021-05-05T10:50:38 IST" name="Suite" finished-at="2021-05-05T10:51:59 IST" duration-ms="80328">
     <groups>
     </groups>
-    <test started-at="2021-04-16T18:33:28 IST" name="Verify_same_game_running_by_two_moderaters" finished-at="2021-04-16T18:36:31 IST" duration-ms="183187">
-      <class name="Factile_Mode.DGBP_HSB_TestCase_39">
-        <test-method signature="TC_39_Same_Game_playing_from_first_Moderater()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_39@f0e995e]" started-at="2021-04-16T18:33:28 IST" name="TC_39_Same_Game_playing_from_first_Moderater" finished-at="2021-04-16T18:36:19 IST" duration-ms="171245" status="PASS">
+    <test started-at="2021-05-05T10:50:38 IST" name="sign up" finished-at="2021-05-05T10:50:46 IST" duration-ms="7891">
+      <class name="Factile_Mode_v3.Sign_UP">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.Sign_UP@5b7ea70d]" started-at="2021-05-05T10:50:38 IST" name="initilize" finished-at="2021-05-05T10:50:44 IST" duration-ms="5924" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_39_Same_Game_playing_from_first_Moderater -->
-        <test-method signature="TC_39_Same_Game_playing_by_second__Moderater()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_39@f0e995e]" started-at="2021-04-16T18:33:28 IST" name="TC_39_Same_Game_playing_by_second__Moderater" finished-at="2021-04-16T18:36:31 IST" duration-ms="183158" status="PASS">
+        </test-method> <!-- initilize -->
+        <test-method signature="Sign_in()[pri:0, instance:Factile_Mode_v3.Sign_UP@5b7ea70d]" started-at="2021-05-05T10:50:44 IST" name="Sign_in" finished-at="2021-05-05T10:50:46 IST" duration-ms="1234" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_39_Same_Game_playing_by_second__Moderater -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode.DGBP_HSB_TestCase_39@f0e995e]" started-at="2021-04-16T18:36:31 IST" name="tearDown" finished-at="2021-04-16T18:36:31 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Sign_in -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.Sign_UP@5b7ea70d]" started-at="2021-05-05T10:50:46 IST" name="close" finished-at="2021-05-05T10:50:46 IST" duration-ms="695" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Factile_Mode.DGBP_HSB_TestCase_39 -->
-    </test> <!-- Verify_same_game_running_by_two_moderaters -->
+        </test-method> <!-- close -->
+      </class> <!-- Factile_Mode_v3.Sign_UP -->
+    </test> <!-- sign up -->
+    <test started-at="2021-05-05T10:50:47 IST" name="Log in" finished-at="2021-05-05T10:50:54 IST" duration-ms="7462">
+      <class name="Factile_Mode_v3.Log_In">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.Log_In@3e34ace1]" started-at="2021-05-05T10:50:47 IST" name="initilize" finished-at="2021-05-05T10:50:53 IST" duration-ms="6130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="Log_in()[pri:0, instance:Factile_Mode_v3.Log_In@3e34ace1]" started-at="2021-05-05T10:50:53 IST" name="Log_in" finished-at="2021-05-05T10:50:53 IST" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Log_in -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.Log_In@3e34ace1]" started-at="2021-05-05T10:50:53 IST" name="close" finished-at="2021-05-05T10:50:54 IST" duration-ms="924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Factile_Mode_v3.Log_In -->
+    </test> <!-- Log in -->
+    <test started-at="2021-05-05T10:50:54 IST" name="Forget Password" finished-at="2021-05-05T10:51:18 IST" duration-ms="23687">
+      <class name="Factile_Mode_v3.ForgetPassword">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.ForgetPassword@29e6eb25]" started-at="2021-05-05T10:50:54 IST" name="initilize" finished-at="2021-05-05T10:51:00 IST" duration-ms="5973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="Forget_Password()[pri:0, instance:Factile_Mode_v3.ForgetPassword@29e6eb25]" started-at="2021-05-05T10:51:00 IST" name="Forget_Password" finished-at="2021-05-05T10:51:17 IST" duration-ms="17022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Forget_Password -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.ForgetPassword@29e6eb25]" started-at="2021-05-05T10:51:17 IST" name="close" finished-at="2021-05-05T10:51:18 IST" duration-ms="689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Factile_Mode_v3.ForgetPassword -->
+    </test> <!-- Forget Password -->
+    <test started-at="2021-05-05T10:51:18 IST" name="Two_Factor_Authentication" finished-at="2021-05-05T10:51:59 IST" duration-ms="40844">
+      <class name="Factile_Mode_v3.TwoFactorAuthentication">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.TwoFactorAuthentication@40e10ff8]" started-at="2021-05-05T10:51:18 IST" name="initilize" finished-at="2021-05-05T10:51:23 IST" duration-ms="5440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="Two_Factor_Authentication()[pri:0, instance:Factile_Mode_v3.TwoFactorAuthentication@40e10ff8]" started-at="2021-05-05T10:51:23 IST" name="Two_Factor_Authentication" finished-at="2021-05-05T10:51:57 IST" duration-ms="34047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Two_Factor_Authentication -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.TwoFactorAuthentication@40e10ff8]" started-at="2021-05-05T10:51:57 IST" name="close" finished-at="2021-05-05T10:51:59 IST" duration-ms="1353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Factile_Mode_v3.TwoFactorAuthentication -->
+    </test> <!-- Two_Factor_Authentication -->
   </suite> <!-- Suite -->
 </testng-results>
