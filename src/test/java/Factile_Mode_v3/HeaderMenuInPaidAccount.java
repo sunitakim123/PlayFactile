@@ -42,7 +42,7 @@ public class HeaderMenuInPaidAccount extends Base {
 	
 	
 	@Test
-	public void Getting_Header_menu_From_FreeAccount() throws InterruptedException
+	public void Fetching_Header_menu_From_FreeAccount() throws InterruptedException
 	{
 		
 		Log_in_Elements lobj1= new Log_in_Elements(driver);
@@ -52,11 +52,13 @@ public class HeaderMenuInPaidAccount extends Base {
 		lobj1.getlogin().click();
 		Thread.sleep(3000);
 		List<WebElement> allLinks=	driver.findElements(By.xpath("//div[@class='collapse navbar-collapse']//ul//li"));
-		System.out.println("Total menus in paid account inside haeder:-"+allLinks.size());
-		for(WebElement link:allLinks){
+		System.out.println("Total menus in paid account inside header:-"+allLinks.size());
+		for(WebElement link:allLinks)
+		{
 		String myString=link.getText();
-		 System.out.println(link.getText());
-		 assertTrue(myString.equals("My Games") || myString.equals("Customize")||myString.equals("Account")||myString.equals("Support") || myString.equals("Sign Out"));		 }
+		System.out.println(link.getText());
+		assertTrue(myString.equals("My Games") || myString.equals("Customize")||myString.equals("Account")||myString.equals("Support") || myString.equals("Sign Out"));		 
+		}
 	
 	}
 	

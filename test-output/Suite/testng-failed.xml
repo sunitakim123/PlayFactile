@@ -6,35 +6,24 @@
   </listeners>
   <test thread-count="5" name="Forget Password(failed)">
     <classes>
-      <class name="Factile_Mode_v3.forgetPassword">
+      <class name="Factile_Mode_v3.ForgetPassword">
         <methods>
-          <include name="Forget_Password"/>
-          <include name="close"/>
           <include name="initilize"/>
+          <include name="close"/>
+          <include name="Forget_Password"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.forgetPassword -->
+      </class> <!-- Factile_Mode_v3.ForgetPassword -->
     </classes>
   </test> <!-- Forget Password(failed) -->
-  <test thread-count="5" name="change password(failed)">
-    <classes>
-      <class name="Factile_Mode_v3.changePassword">
-        <methods>
-          <include name="close"/>
-          <include name="initilize"/>
-          <include name="ChangePassword"/>
-        </methods>
-      </class> <!-- Factile_Mode_v3.changePassword -->
-    </classes>
-  </test> <!-- change password(failed) -->
   <test thread-count="5" name="delete Account(failed)">
     <classes>
-      <class name="Factile_Mode_v3.deleteAccount">
+      <class name="Factile_Mode_v3.DeleteAccount">
         <methods>
-          <include name="close"/>
-          <include name="DeleteAccount"/>
           <include name="initilize"/>
+          <include name="DeleteAccount"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.deleteAccount -->
+      </class> <!-- Factile_Mode_v3.DeleteAccount -->
     </classes>
   </test> <!-- delete Account(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -42,7 +42,7 @@ public class HeaderMenuInFreeAccount extends Base {
 	
 	
 	@Test
-	public void Getting_Header_menu_From_Paid_Account() throws InterruptedException
+	public void Fetching_Header_menus_From_Paid_Account() throws InterruptedException
 	{
 		
 		Log_in_Elements lobj1 = new Log_in_Elements(driver);
@@ -56,7 +56,7 @@ public class HeaderMenuInFreeAccount extends Base {
 	for(WebElement link:allLinks){
 		String myString=link.getText();
 		 System.out.println(link.getText());
-		 assertTrue(myString.equals("GO PRO") || myString.equals("My Games") || myString.equals("Customize")||myString.equals("Account")||myString.equals("Support") || myString.equals("Sign Out"));		 }
+		 assertTrue(myString.equals("Go Pro") || myString.equals("My Games") || myString.equals("Customize")||myString.equals("Account")||myString.equals("Support") || myString.equals("Sign Out"));		 }
 	
 	}
 	

@@ -23,13 +23,13 @@ import org.testng.annotations.Test;
 import Page_Object_v3.SignUP_elements;
 import resources.Base;
 
-public class deleteAccount extends Base {
+public class DeleteAccount extends Base {
 	WebDriver driver;
 	int int2;
 	Actions act;
 	WebDriverWait wait;
 	String expectedURL = "https://v3.awspf.com/signin";
-	public static Logger Log = LogManager.getLogger(deleteAccount.class.getName());
+	public static Logger Log = LogManager.getLogger(DeleteAccount.class.getName());
 
 	@BeforeTest
 	public void initilize() throws IOException, InterruptedException {
@@ -74,9 +74,8 @@ public class deleteAccount extends Base {
 		driver.findElement(By.xpath("//*[contains(text(),'Delete!')]")).click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'Yes!')]")));
 		driver.findElement(By.xpath("//*[contains(text(),'Yes!')]")).click();
-		Thread.sleep(4000);
-		//driver.navigate().refresh();
-		Thread.sleep(3000);
+		//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='email']")));
+		Thread.sleep(7000);
 		String currentURL = driver.getCurrentUrl();
 		System.out.println(">>" + currentURL);
 		assertEquals(currentURL, expectedURL);

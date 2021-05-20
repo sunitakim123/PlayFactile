@@ -22,13 +22,13 @@ import org.testng.annotations.Test;
 import Page_Object_v3.SignUP_elements;
 import resources.Base;
 
-public class sign_UP extends Base{
+public class Sign_UP extends Base{
 	WebDriver driver;	
 	int int2;
 	Actions act;
 	WebDriverWait wait;
 	String  Newgmailidsent;
-	public static Logger Log = LogManager.getLogger(sign_UP.class.getName());
+	public static Logger Log = LogManager.getLogger(Sign_UP.class.getName());
 
 	@BeforeTest
 	public void initilize() throws IOException, InterruptedException {		
@@ -44,7 +44,7 @@ public class sign_UP extends Base{
 	
 	
 	@Test
-	public void Sign_UP() throws InterruptedException
+	public void SignUP_Verify() throws InterruptedException
 	{
 		//driver.navigate().to("http://www.yopmail.com/en/");
 		Random randomGenerator = new Random();  
@@ -61,7 +61,10 @@ public class sign_UP extends Base{
 		String GmailAfterLogin=sobj.getemailFromAccountPage().getText();
 		assertEquals(GmailAfterLogin, Newgmailidsent);
 		Thread.sleep(4000);
-	
+		delete_Account();
+	}
+		public void delete_Account() throws InterruptedException
+		{
 		driver.findElement(By.xpath("//ul[@class='navbar-nav menu']//li[4]")).click();
 		Thread.sleep(2000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='deleteAccountWrapper']/button")));
@@ -79,8 +82,8 @@ public class sign_UP extends Base{
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'Yes!')]")));
 		driver.findElement(By.xpath("//*[contains(text(),'Yes!')]")).click();
 		Thread.sleep(4000);
-		
-	}
+		}
+	
 	@AfterTest
 	public void close()
 	{

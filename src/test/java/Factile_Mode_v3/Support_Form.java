@@ -20,13 +20,13 @@ import Page_Object_v3.Log_in_Elements;
 import lombok.var;
 import resources.Base;
 
-public class support_Form extends Base {
+public class Support_Form extends Base {
 	WebDriver driver;
 	int int2;
 	Actions act;
 	WebDriverWait wait;
 
-	public static Logger Log = LogManager.getLogger(support_Form.class.getName());
+	public static Logger Log = LogManager.getLogger(Support_Form.class.getName());
 
 	@BeforeTest
 	public void initilize() throws IOException, InterruptedException {

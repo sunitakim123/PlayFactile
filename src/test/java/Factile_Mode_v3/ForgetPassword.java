@@ -19,14 +19,14 @@ import Page_Object_v3.Log_in_Elements;
 import Page_Object_v3.SignUP_elements;
 import resources.Base;
 
-public class forgetPassword extends Base {
+public class ForgetPassword extends Base {
 	WebDriver driver;
 	int int2;
 	Actions act;
 	WebDriverWait wait;
 	String parent;
 	String expectedUrl = "https://v3.awspf.com/mygames";
-	public static Logger Log = LogManager.getLogger(forgetPassword.class.getName());
+	public static Logger Log = LogManager.getLogger(ForgetPassword.class.getName());
 
 	@BeforeTest
 	public void initilize() throws IOException, InterruptedException {
@@ -54,6 +54,7 @@ public class forgetPassword extends Base {
 		driver.findElement(By.cssSelector("input#login")).sendKeys("sunita26");
 		driver.findElement(By.cssSelector("input.sbut")).click();
 		Thread.sleep(10000);
+		driver.navigate().refresh();
 		driver.findElement(By.cssSelector("span.slientext")).click();
 		driver.switchTo().frame("ifmail");
 		driver.findElement(By.linkText("RESET YOUR PASSWORD")).click();
@@ -83,7 +84,7 @@ public class forgetPassword extends Base {
 
 	@AfterTest
 	public void close() {
-		 //driver.quit();
+		driver.quit();
 	}
 
 }

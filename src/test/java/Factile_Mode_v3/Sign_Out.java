@@ -20,13 +20,13 @@ import Page_Object_v3.Log_in_Elements;
 import Page_Object_v3.SignUP_elements;
 import resources.Base;
 
-public class sign_Out extends Base {
+public class Sign_Out extends Base {
 	WebDriver driver;	
 	int int2;
 	Actions act;
 	WebDriverWait wait;
 	String expectedURL = "https://v3.awspf.com/signin";
-	public static Logger Log = LogManager.getLogger(sign_Out.class.getName());
+	public static Logger Log = LogManager.getLogger(Sign_Out.class.getName());
 
 	@BeforeTest
 	public void initilize() throws IOException, InterruptedException {		

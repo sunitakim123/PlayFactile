@@ -21,13 +21,13 @@ import org.testng.annotations.Test;
 import Page_Object_v3.Log_in_Elements;
 import resources.Base;
 
-public class changePassword extends Base {
+public class ChangePassword extends Base {
 	WebDriver driver;
 	int int2;
 	Actions act;
 	WebDriverWait wait;
 	String expected = "Password changed successfully";
-	public static Logger Log = LogManager.getLogger(changePassword.class.getName());
+	public static Logger Log = LogManager.getLogger(ChangePassword.class.getName());
 
 	@BeforeTest
 	public void initilize() throws IOException, InterruptedException {

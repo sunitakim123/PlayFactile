@@ -18,14 +18,14 @@ import Page_Object_v3.Log_in_Elements;
 import Page_Object_v3.SignUP_elements;
 import resources.Base;
 
-public class log_In extends Base{
+public class Log_In extends Base{
 
 	WebDriver driver;	
 	int int2;
 	Actions act;
 	WebDriverWait wait;
 
-	public static Logger Log = LogManager.getLogger(log_In.class.getName());
+	public static Logger Log = LogManager.getLogger(Log_In.class.getName());
 
 	@BeforeTest
 	public void initilize() throws IOException, InterruptedException {		

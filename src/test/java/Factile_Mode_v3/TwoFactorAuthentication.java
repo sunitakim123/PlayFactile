@@ -21,14 +21,14 @@ import Page_Object_v3.Log_in_Elements;
 import Page_Object_v3.SignUP_elements;
 import resources.Base;
 
-public class twoFactorAuthentication extends Base {
+public class TwoFactorAuthentication extends Base {
 	WebDriver driver, driver1;
 	int int2;
 	Actions act;
 	WebDriverWait wait;
 	String parent;
 	String expectedUrl = "https://v3.awspf.com/mygames";
-	public static Logger Log = LogManager.getLogger(twoFactorAuthentication.class.getName());
+	public static Logger Log = LogManager.getLogger(TwoFactorAuthentication.class.getName());
 
 	@BeforeTest
 	public void initilize() throws IOException, InterruptedException {
