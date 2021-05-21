@@ -52,7 +52,11 @@ public class ChangePassword extends Base {
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//div[@class='col-sm-12 col-md-3 col-lg-3']//input")).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='col-sm-12 col-md-3 col-lg-3']//input")));
+		JavascriptExecutor js1 = (JavascriptExecutor) driver;
+		WebElement button1 = driver.findElement(By.xpath("//div[@class='col-sm-12 col-md-3 col-lg-3']//input"));
+		js1.executeScript("arguments[0].click();", button1);
+		
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@name='oldPass']")).sendKeys("12345678");
 		driver.findElement(By.xpath("//input[@name='newPass']")).sendKeys("12345678");
@@ -60,7 +64,7 @@ public class ChangePassword extends Base {
 		driver.findElement(By.xpath("//input[@name='cnfNewPass']")).sendKeys("12345678");
 
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@value='Save']")));
-		JavascriptExecutor js1 = (JavascriptExecutor) driver;
+	
 		WebElement button = driver.findElement(By.xpath("//input[@value='Save']"));
 		js1.executeScript("arguments[0].click();", button);
 

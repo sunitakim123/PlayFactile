@@ -91,7 +91,7 @@ public class GoProToSubscriptionHomeSchoolMonthlyData_Verify extends Base {
 
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='billingName']")));
 		driver.findElement(By.xpath("//input[@id='billingName']")).sendKeys("sunita");
-
+		Thread.sleep(3000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(
 				By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[1]/form[1]/div[2]/div[4]/button[1]/div[3]")));
 		driver.findElement(
