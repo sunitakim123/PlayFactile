@@ -47,7 +47,7 @@ public class GoProToSubscriptionHomeSchoolYearlyData_Verify extends Base {
 		Log.info("Driver is Initilize");
 		driver.get(prop.getProperty("rooturl"));
 		driver.manage().window().maximize();
-		wait = new WebDriverWait(driver, 40);
+		wait = new WebDriverWait(driver, 120);
 		Log.info("Navigated to homePage");
 
 	}
