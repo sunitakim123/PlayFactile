@@ -54,6 +54,14 @@ public class DeleteAccount extends Base {
 		sobj.Sign_in_button().click();
 		sobj.getEmail().sendKeys(Newgmailidsent);
 		sobj.getPassword().sendKeys("12345678");
+		
+		
+		
+		
+		
+		
+		
+		
 		sobj.getConfirmPassword().sendKeys("12345678");
 		sobj.getSignIN().click();
 		sobj.getfreeaccount().click();

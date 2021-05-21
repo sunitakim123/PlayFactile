@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Factile_Mode_v3.DeleteAccount">
+      <class name="Factile_Mode_v3.FreeAccount_NoOfGameAllowedToCreate">
         <methods>
-          <include name="initilize"/>
-          <include name="DeleteAccount"/>
+          <include name="NoOfGamesCreationInFreeAccount_Verify"/>
           <include name="close"/>
+          <include name="initilize"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.DeleteAccount -->
+      </class> <!-- Factile_Mode_v3.FreeAccount_NoOfGameAllowedToCreate -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

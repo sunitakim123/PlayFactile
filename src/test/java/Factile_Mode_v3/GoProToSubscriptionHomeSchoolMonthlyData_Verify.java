@@ -53,12 +53,16 @@ public class GoProToSubscriptionHomeSchoolMonthlyData_Verify extends Base {
 	}
 
 	@Test
-	public void Subscription_Verify() throws InterruptedException, ParseException {
+	public void GoProToHomeSchoolMonthlySubscriptionAndNextComingDate() throws InterruptedException, ParseException {
 		System.out.println("System Default TimeZone : " + defaultZoneId);
 
 		Random randomGenerator = new Random();
 		int randomInt = randomGenerator.nextInt(1000);
 		Newgmailidsent = "username1" + randomInt + "@gmail.com";
+		
+	
+		
+		
 		System.out.println(Newgmailidsent);
 		SignUP_elements sobj = new SignUP_elements(driver);
 		sobj.Sign_in_button().click();
@@ -109,7 +113,7 @@ public class GoProToSubscriptionHomeSchoolMonthlyData_Verify extends Base {
 		String datecaptureFromAccountPage = driver.findElement(By.xpath("//div[@class='currentActivePlanLabel']/p"))
 				.getText();
 		//capture date from account page after successfully subscription.
-		System.out.println("datecaptureFromAccountPage" + datecaptureFromAccountPage);
+		System.out.println("date capture From AccountPage" + datecaptureFromAccountPage);
 		//extracting only data here that why using substring method
 		String dateExtracted = datecaptureFromAccountPage.substring(41, 52);
 		System.out.println(":- " + dateExtracted);

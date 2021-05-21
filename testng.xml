@@ -88,6 +88,11 @@
   </test> <!-- Test -->
   
   
+    <test name="Number of account created by free account holder">
+    <classes>
+          <class name="Factile_Mode_v3.FreeAccount_NoOfGameAllowedToCreate"/>
+           </classes>
+  </test> <!-- Test -->
    
    
 </suite> <!-- Suite -->

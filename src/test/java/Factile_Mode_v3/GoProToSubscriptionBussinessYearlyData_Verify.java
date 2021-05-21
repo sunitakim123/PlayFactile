@@ -53,7 +53,7 @@ public class GoProToSubscriptionBussinessYearlyData_Verify extends Base {
 	}
 
 	@Test
-	public void Subscription_Verify() throws InterruptedException, ParseException {
+	public void GoProToBussinessYearlySubscriptionAndNextComingDate() throws InterruptedException, ParseException {
 		System.out.println("System Default TimeZone : " + defaultZoneId);
 
 		Random randomGenerator = new Random();

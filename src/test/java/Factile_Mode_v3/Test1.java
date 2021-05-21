@@ -50,8 +50,49 @@ public class Test1 extends Base{
 	public void Log_in() throws InterruptedException
 	{	
 		
-		LocalDate futureDate = LocalDate.now().plusMonths(1);
-		System.out.println("Date after one month="+futureDate);
+		Log_in_Elements lobj1= new Log_in_Elements(driver);
+		lobj1.Log_in_button().click();
+		Thread.sleep(3000);
+		lobj1.getenterEmail().sendKeys("username1833@gmail.com");
+		lobj1.getenterPwd().sendKeys(("12345678"));
+		lobj1.getlogin().click();
+		
+		Thread.sleep(3000);
+		
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='form-control']")));
+		JavascriptExecutor js1 = (JavascriptExecutor) driver;
+		WebElement textbox = driver.findElement(By.xpath("//input[@class='form-control']"));
+		js1.executeScript("arguments[0].click();", textbox);
+		textbox.sendKeys("heena78");
+
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='advanceOptionWrap']")));
+		WebElement ClickOnAdvancedOption = driver.findElement(By.xpath("//div[@class='advanceOptionWrap']"));
+		js1.executeScript("arguments[0].click();", ClickOnAdvancedOption);
+		
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='form-control']")));
+		WebElement enterGameName = driver.findElement(By.xpath("//input[@class='form-control']"));
+		js1.executeScript("arguments[0].click();", enterGameName);
+		enterGameName.sendKeys("gift1234");
+		
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[contains(text(),'Submit')]")));
+		WebElement button = driver.findElement(By.xpath("//button[contains(text(),'Submit')]"));
+		js1.executeScript("arguments[0].click();", button);
+		Thread.sleep(5000);
+		
+		if(driver.findElements(By.xpath("(//a[@class='option clickable'])[1]")).isEmpty()){
+		    //THEN CLICK ON THE SUBMIT BUTTON
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='swal2-content']")));
+			String s1= driver.findElement(By.xpath("//div[@id='swal2-content']")).getText();
+			System.out.println(">>"+s1);
+		}else{
+		    //DO SOMETHING ELSE AS SUBMIT BUTTON IS NOT THERE
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//a[@class='option clickable'])[1]")));
+			WebElement mygamelink = driver.findElement(By.xpath("(//a[@class='option clickable'])[1]"));
+			js1.executeScript("arguments[0].click();", mygamelink);
+		}
+		
+		
+		
 	}
 	@AfterTest
 	public void close()

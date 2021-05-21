@@ -61,7 +61,7 @@ public class Sign_UP extends Base{
 		String GmailAfterLogin=sobj.getemailFromAccountPage().getText();
 		assertEquals(GmailAfterLogin, Newgmailidsent);
 		Thread.sleep(4000);
-		delete_Account();
+		//delete_Account();
 	}
 		public void delete_Account() throws InterruptedException
 		{
