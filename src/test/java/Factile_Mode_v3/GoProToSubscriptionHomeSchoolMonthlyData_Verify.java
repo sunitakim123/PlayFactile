@@ -42,7 +42,7 @@ public class GoProToSubscriptionHomeSchoolMonthlyData_Verify extends Base {
 
 	@BeforeTest
 	public void initilize() throws IOException, InterruptedException {
-			
+
 		driver = IntilizeDriver();
 		Log.info("Driver is Initilize");
 		driver.get(prop.getProperty("rooturl"));
@@ -59,10 +59,7 @@ public class GoProToSubscriptionHomeSchoolMonthlyData_Verify extends Base {
 		Random randomGenerator = new Random();
 		int randomInt = randomGenerator.nextInt(1000);
 		Newgmailidsent = "username1" + randomInt + "@gmail.com";
-		
-	
-		
-		
+
 		System.out.println(Newgmailidsent);
 		SignUP_elements sobj = new SignUP_elements(driver);
 		sobj.Sign_in_button().click();
@@ -91,17 +88,21 @@ public class GoProToSubscriptionHomeSchoolMonthlyData_Verify extends Base {
 
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='billingName']")));
 		driver.findElement(By.xpath("//input[@id='billingName']")).sendKeys("sunita");
-		
+
 		wait.until(ExpectedConditions.presenceOfElementLocated(
 				By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[1]/form[1]/div[2]/div[4]/button[1]/div[3]")));
 		driver.findElement(
 				By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[1]/form[1]/div[2]/div[4]/button[1]/div[3]"))
 				.click();
-		Thread.sleep(6000);
-		//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")));
+		// Thread.sleep(6000);
+		// wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")));
 
-		driver.findElement(By.xpath("//*[@class='goBack'][2]")).click();
-		Thread.sleep(3000);
+		JavascriptExecutor js2 = (JavascriptExecutor) driver;
+		WebElement button2 = driver.findElement(By.xpath("//*[@class='goBack'][2]"));
+		js2.executeScript("arguments[0].click();", button2);
+
+		// driver.findElement(By.xpath("//*[@class='goBack'][2]")).click();
+		// Thread.sleep(3000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")));
 
 		// driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")).click();
@@ -116,9 +117,9 @@ public class GoProToSubscriptionHomeSchoolMonthlyData_Verify extends Base {
 
 		String datecaptureFromAccountPage = driver.findElement(By.xpath("//div[@class='currentActivePlanLabel']/p"))
 				.getText();
-		//capture date from account page after successfully subscription.
+		// capture date from account page after successfully subscription.
 		System.out.println("date capture From AccountPage" + datecaptureFromAccountPage);
-		//extracting only data here that why using substring method
+		// extracting only data here that why using substring method
 		String dateExtracted = datecaptureFromAccountPage.substring(41, 52);
 		System.out.println(":- " + dateExtracted);
 		DateFormat df3 = new SimpleDateFormat("dd-MMM-yyyy");
@@ -135,11 +136,12 @@ public class GoProToSubscriptionHomeSchoolMonthlyData_Verify extends Base {
 			System.out.println("They are the same date");
 		} else {
 			System.out.println("They are different dates");
-		}delete_Account();
+		}
+		delete_Account();
 	}
 
 	public void delete_Account() throws InterruptedException {
-		
+
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='deleteAccountWrapper']/button")));
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
 		WebElement button = driver.findElement(By.xpath("//*[@class='deleteAccountWrapper']/button"));
@@ -159,6 +161,6 @@ public class GoProToSubscriptionHomeSchoolMonthlyData_Verify extends Base {
 
 	@AfterTest
 	public void close() {
-		 driver.quit();
+		driver.quit();
 	}
 }

@@ -3,22 +3,31 @@
 <listeners>
 <listener class-name="Factile_Mode_v3.Listeners2"/>
 </listeners>
-  
-  <test name="delete Account">
+    <test name="sign up">
     <classes>
-          <class name="Factile_Mode_v3.DeleteAccount"/>
+          <class name="Factile_Mode_v3.Sign_UP"/>
+           </classes>
+  </test> <!-- Test -->
+
+    <test name="Verifing home/school month end plan date">
+    <classes>
+          <class name="Factile_Mode_v3.GoProToSubscriptionHomeSchoolMonthlyData_Verify"/>
            </classes>
   </test> <!-- Test -->
   
- <test name="Two_Factor_Authentication">
- <classes>
- <class name="Factile_Mode_v3.TwoFactorAuthentication"/> 
- </classes>
-    </test> <!-- Test -->
- 
-    <test name="change password">
+    <test name="Verifing home/school yearly end plan date">
     <classes>
-          <class name="Factile_Mode_v3.ChangePassword"/>
+          <class name="Factile_Mode_v3.GoProToSubscriptionHomeSchoolYearlyData_Verify"/>
+           </classes>
+  </test> <!-- Test -->
+    <test name="Verifing bussiness month end plan date">
+    <classes>
+          <class name="Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify"/>
+           </classes>
+  </test> <!-- Test -->
+    <test name="Verifing bussiness yearly end plan date">
+    <classes>
+          <class name="Factile_Mode_v3.GoProToSubscriptionBussinessYearlyData_Verify"/>
            </classes>
   </test> <!-- Test -->
  

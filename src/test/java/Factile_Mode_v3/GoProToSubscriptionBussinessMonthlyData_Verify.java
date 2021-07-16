@@ -94,11 +94,19 @@ public class GoProToSubscriptionBussinessMonthlyData_Verify extends Base {
 				By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[1]/form[1]/div[2]/div[4]/b"
 						+ "utton[1]/div[3]"))
 				.click();
-		Thread.sleep(6000);
+
+		
+		
 		//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")));
 
-		driver.findElement(By.xpath("//*[@class='goBack'][2]")).click();
-		Thread.sleep(3000);
+		//driver.findElement(By.xpath("//*[@class='goBack'][2]")).click();
+		
+		
+		JavascriptExecutor js2 = (JavascriptExecutor) driver;
+		WebElement button2 = driver.findElement(By.xpath("//*[@class='goBack'][2]"));
+		js2.executeScript("arguments[0].click();", button2);
+		
+		
 		// driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")).click();
 		WebElement ClickOnAccountLink = driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a"));
 		js1.executeScript("arguments[0].click();", ClickOnAccountLink);
