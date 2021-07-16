@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="Factile_Mode_v3.Listeners2"/>
+</listeners>
+  
+  <test name="delete Account">
+    <classes>
+          <class name="Factile_Mode_v3.DeleteAccount"/>
+           </classes>
+  </test> <!-- Test -->
+  
+ <test name="Two_Factor_Authentication">
+ <classes>
+ <class name="Factile_Mode_v3.TwoFactorAuthentication"/> 
+ </classes>
+    </test> <!-- Test -->
+ 
+    <test name="change password">
+    <classes>
+          <class name="Factile_Mode_v3.ChangePassword"/>
+           </classes>
+  </test> <!-- Test -->
+ 
+  
+  
+   
+   
+</suite> <!-- Suite -->

@@ -51,7 +51,7 @@ public class HeaderMenuInPaidAccount extends Base {
 		lobj1.getenterPwd().sendKeys(prop.getProperty("pwd"));
 		lobj1.getlogin().click();
 		Thread.sleep(3000);
-		List<WebElement> allLinks=	driver.findElements(By.xpath("//div[@class='collapse navbar-collapse']//ul//li"));
+		List<WebElement> allLinks=	driver.findElements(By.xpath("//div[@class='collapse navbar-collapse']//ul//li//a"));
 		System.out.println("Total menus in paid account inside header:-"+allLinks.size());
 		for(WebElement link:allLinks)
 		{

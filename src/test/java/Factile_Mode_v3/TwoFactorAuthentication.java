@@ -53,13 +53,17 @@ public class TwoFactorAuthentication extends Base {
 		driver1 = IntilizeDriver();
 		driver1.get("http://www.yopmail.com/en/");
 		driver1.findElement(By.cssSelector("input#login")).sendKeys("sunita11");
-		driver1.findElement(By.cssSelector("input.sbut")).click();
-		Thread.sleep(25000);
-		driver1.findElement(By.cssSelector("span.slientext")).click();
-		Thread.sleep(2000);
+		driver1.findElement(By.xpath("//button[@class='md']/i")).click();
+		//driver1.findElement(By.cssSelector("input.sbut")).click();
+		Thread.sleep(20000);
+		driver1.navigate().refresh();
+		//driver1.findElement(By.cssSelector("span.slientext")).click();
+	
 		driver1.switchTo().frame("ifmail");
 		
-		String verificationcode = driver1.findElement(By.xpath("(//td[@class='content-block'])[3]")).getText();
+	//	String verificationcode = driver1.findElement(By.xpath("(//td[@class='content-block'])[3]")).getText();
+		
+		String verificationcode =	driver1.findElement(By.xpath("//td[contains(text(),'Verification code')]")).getText();
 		
 		System.out.println("--" + verificationcode);
 		String code = verificationcode.substring(19);
@@ -74,7 +78,7 @@ public class TwoFactorAuthentication extends Base {
 
 	@AfterTest 
 	public void close() {
-		
+	
 	}
 
 }

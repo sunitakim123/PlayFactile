@@ -51,27 +51,25 @@ public class HeaderMenuInFreeAccount extends Base {
 		lobj1.getenterPwd().sendKeys("12345678");
 		lobj1.getlogin().click();
 		Thread.sleep(3000);
-		List<WebElement> allLinks=	driver.findElements(By.xpath("//div[@class='collapse navbar-collapse']//ul//li"));
+		List<WebElement> allLinks=	driver.findElements(By.xpath("//div[@class='collapse navbar-collapse']//ul//li/a"));
+		
+		
 	System.out.println("total menus in free account inside header:-"+allLinks.size());
 	for(WebElement link:allLinks){
 		String myString=link.getText();
 		 System.out.println(link.getText());
-		 assertTrue(myString.equals("Go Pro") || myString.equals("My Games") || myString.equals("Customize")||myString.equals("Account")||myString.equals("Support") || myString.equals("Sign Out"));		 }
+		 assertTrue(myString.equals("Go Pro") || myString.equals("My Games") || myString.equals("Customize")||myString.equals("Account")||myString.equals("Support") || myString.equals("Sign Out") );	
+		 }
 	
 	}
 	
 	
-
-	private Object assertThat(String string) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 
 	@AfterTest
 	public void close()
 	{ 
-		driver.quit();
+		//driver.quit();
 	}
 	
 }

@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="Factile_Mode_v3.Listeners2"/>
   </listeners>
-  <test thread-count="5" name="change password(failed)">
+  <test thread-count="5" name="support form(failed)">
     <classes>
-      <class name="Factile_Mode_v3.ChangePassword">
+      <class name="Factile_Mode_v3.Support_Form">
         <methods>
-          <include name="ChangePassword"/>
+          <include name="Support_Form_Verify"/>
           <include name="initilize"/>
           <include name="close"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.ChangePassword -->
+      </class> <!-- Factile_Mode_v3.Support_Form -->
     </classes>
-  </test> <!-- change password(failed) -->
+  </test> <!-- support form(failed) -->
 </suite> <!-- Failed suite [Suite] -->

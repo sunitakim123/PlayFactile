@@ -52,10 +52,11 @@ public class ForgetPassword extends Base {
 		parent = driver.getWindowHandle();
 		System.out.println("ParentWindow id is :-" + parent);
 		driver.findElement(By.cssSelector("input#login")).sendKeys("sunita26");
-		driver.findElement(By.cssSelector("input.sbut")).click();
+		driver.findElement(By.xpath("//button[@class='md']/i")).click();
+		//driver.findElement(By.cssSelector("input.sbut")).click();
 		Thread.sleep(10000);
 		driver.navigate().refresh();
-		driver.findElement(By.cssSelector("span.slientext")).click();
+		//driver.findElement(By.cssSelector("span.slientext")).click();
 		driver.switchTo().frame("ifmail");
 		driver.findElement(By.linkText("RESET YOUR PASSWORD")).click();
 
@@ -84,7 +85,7 @@ public class ForgetPassword extends Base {
 
 	@AfterTest
 	public void close() {
-		driver.quit();
+	driver.quit();
 	}
 
 }

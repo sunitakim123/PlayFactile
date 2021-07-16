@@ -97,7 +97,11 @@ public class GoProToSubscriptionHomeSchoolMonthlyData_Verify extends Base {
 		driver.findElement(
 				By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[1]/form[1]/div[2]/div[4]/button[1]/div[3]"))
 				.click();
-		Thread.sleep(10000);
+		Thread.sleep(6000);
+		//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")));
+
+		driver.findElement(By.xpath("//*[@class='goBack'][2]")).click();
+		Thread.sleep(3000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")));
 
 		// driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")).click();

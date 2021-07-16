@@ -49,8 +49,16 @@ public class ChangePassword extends Base {
 		lobj1.getenterEmail().sendKeys("playfactile14@gmail.com");
 		lobj1.getenterPwd().sendKeys("12345678");
 		lobj1.getlogin().click();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")).click();
+		
+		
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='navbar-list-2']/ul/li[4]/a")));
+		JavascriptExecutor js2 = (JavascriptExecutor) driver;
+		WebElement button2 = driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[4]/a"));
+		js2.executeScript("arguments[0].click();", button2);
+		
+		
+		
+		driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[4]/a")).click();
 		Thread.sleep(2000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='col-sm-12 col-md-3 col-lg-3']//input")));
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
@@ -58,6 +66,7 @@ public class ChangePassword extends Base {
 		js1.executeScript("arguments[0].click();", button1);
 		
 		Thread.sleep(2000);
+		
 		driver.findElement(By.xpath("//input[@name='oldPass']")).sendKeys("12345678");
 		driver.findElement(By.xpath("//input[@name='newPass']")).sendKeys("12345678");
 
@@ -108,7 +117,7 @@ public class ChangePassword extends Base {
 
 	@AfterTest
 	public void close() {
-		driver.quit();
+		//driver.quit();
 	}
 
 }
