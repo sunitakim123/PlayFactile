@@ -58,9 +58,15 @@ public class DeleteAccount extends Base {
 		sobj.getConfirmPassword().sendKeys("12345678");
 		sobj.getSignIN().click();
 		sobj.getfreeaccount().click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//ul[@class='navbar-nav menu']//li[4]")).click();
-		Thread.sleep(2000);
+		
+		
+		
+		JavascriptExecutor js2 = (JavascriptExecutor) driver;
+		WebElement button2 = driver.findElement(By.xpath("//ul[@class='navbar-nav menu']//li[4]"));
+		js2.executeScript("arguments[0].click();", button2);
+		
+	//	driver.findElement(By.xpath("//ul[@class='navbar-nav menu']//li[4]")).click();
+		//Thread.sleep(2000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='deleteAccountWrapper']/button")));
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
 		WebElement button = driver.findElement(By.xpath("//*[@class='deleteAccountWrapper']/button"));

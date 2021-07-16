@@ -9,9 +9,12 @@ import java.util.Set;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -69,7 +72,12 @@ public class TwoFactorAuthentication extends Base {
 		String code = verificationcode.substring(19);
 		driver.switchTo().window(driver.getWindowHandle());
 		driver.findElement(By.xpath("//input[@class='form-control']")).sendKeys(code);
-		driver.findElement(By.xpath("//button[@class='btn signin']")).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='btn signin']")));
+		JavascriptExecutor js1 = (JavascriptExecutor) driver;
+		WebElement button = driver.findElement(By.xpath("//button[@class='btn signin']"));
+		js1.executeScript("arguments[0].click();", button);
+		
+		//driver.findElement(By.xpath("//button[@class='btn signin']")).click();
 		Thread.sleep(10000);
 		String currentURL = null;
 		currentURL = driver.getCurrentUrl();

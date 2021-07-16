@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-16T15:40:36 IST" name="Default suite" finished-at="2021-07-16T15:41:13 IST" duration-ms="37495">
+  <suite started-at="2021-07-16T17:15:01 IST" name="Default suite" finished-at="2021-07-16T17:15:46 IST" duration-ms="45119">
     <groups>
     </groups>
-    <test started-at="2021-07-16T15:40:36 IST" name="Default test" finished-at="2021-07-16T15:41:13 IST" duration-ms="37495">
-      <class name="Factile_Mode_v3.GoProToSubscriptionHomeSchoolYearlyData_Verify">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.GoProToSubscriptionHomeSchoolYearlyData_Verify@31dadd46]" started-at="2021-07-16T15:40:36 IST" name="initilize" finished-at="2021-07-16T15:40:41 IST" duration-ms="5787" status="PASS">
+    <test started-at="2021-07-16T17:15:01 IST" name="Default test" finished-at="2021-07-16T17:15:46 IST" duration-ms="45119">
+      <class name="Factile_Mode_v3.TwoFactorAuthentication">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.TwoFactorAuthentication@335b5620]" started-at="2021-07-16T17:15:01 IST" name="initilize" finished-at="2021-07-16T17:15:07 IST" duration-ms="6557" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="GoProToHomeSchoolYearlySubscriptionAndNextComingDate()[pri:0, instance:Factile_Mode_v3.GoProToSubscriptionHomeSchoolYearlyData_Verify@31dadd46]" started-at="2021-07-16T15:40:41 IST" name="GoProToHomeSchoolYearlySubscriptionAndNextComingDate" finished-at="2021-07-16T15:41:12 IST" duration-ms="30958" status="PASS">
+        <test-method signature="Two_Factor_Authentication()[pri:0, instance:Factile_Mode_v3.TwoFactorAuthentication@335b5620]" started-at="2021-07-16T17:15:07 IST" name="Two_Factor_Authentication" finished-at="2021-07-16T17:15:46 IST" duration-ms="38530" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GoProToHomeSchoolYearlySubscriptionAndNextComingDate -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.GoProToSubscriptionHomeSchoolYearlyData_Verify@31dadd46]" started-at="2021-07-16T15:41:12 IST" name="close" finished-at="2021-07-16T15:41:13 IST" duration-ms="716" status="PASS">
+        </test-method> <!-- Two_Factor_Authentication -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.TwoFactorAuthentication@335b5620]" started-at="2021-07-16T17:15:46 IST" name="close" finished-at="2021-07-16T17:15:46 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- Factile_Mode_v3.GoProToSubscriptionHomeSchoolYearlyData_Verify -->
+      </class> <!-- Factile_Mode_v3.TwoFactorAuthentication -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
