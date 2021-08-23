@@ -66,6 +66,7 @@ public class GoProToSubscriptionHomeSchoolYearlyData_Verify extends Base {
 		sobj.getPassword().sendKeys("12345678");
 		sobj.getConfirmPassword().sendKeys("12345678");
 		sobj.getSignIN().click();
+		Thread.sleep(3000);
 		sobj.getfreeaccount().click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//li[@class='goPro nav-link']/a")));
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
