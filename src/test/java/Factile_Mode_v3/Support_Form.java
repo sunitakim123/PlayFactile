@@ -49,7 +49,7 @@ public class Support_Form extends Base {
 		lobj1.getenterPwd().sendKeys(prop.getProperty("pwd"));
 		lobj1.getlogin().click();
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[@id=\"navbar-list-2\"]/ul/li[4]/a")).click();
+		driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[4]")).click();
 		Thread.sleep(3000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
@@ -65,13 +65,13 @@ public class Support_Form extends Base {
 		js1.executeScript("arguments[0].click();", button);
 		Thread.sleep(2000);
 //	
-		String popupmsg = driver.findElement(By.xpath("//div[@class='d-flex justify-content-center toast_content']"))
+		String popupmsg = driver.findElement(By.xpath("//div[@class='swal2-popup swal2-modal swal2-icon-success swal2-show']"))
 				.getText();
 		System.out.println("After support form submission getting message is:-" + popupmsg);
 	}
 
 	@AfterTest
 	public void close() {
-		//driver.quit();
+		driver.quit();
 	}
 }

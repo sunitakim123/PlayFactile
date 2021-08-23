@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Factile_Mode_v3.TwoFactorAuthentication">
+      <class name="Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify">
         <methods>
           <include name="initilize"/>
+          <include name="GoProTBussinessMonthlySubscriptionAndNextComingDate"/>
           <include name="close"/>
-          <include name="Two_Factor_Authentication"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.TwoFactorAuthentication -->
+      </class> <!-- Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

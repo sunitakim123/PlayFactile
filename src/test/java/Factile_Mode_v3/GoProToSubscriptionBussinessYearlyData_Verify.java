@@ -131,7 +131,7 @@ public class GoProToSubscriptionBussinessYearlyData_Verify extends Base {
 		LocalDate localDate = instant.atZone(defaultZoneId).toLocalDate();
 		System.out.println("localDate : " + localDate);
 
-		if (futureDate.isEqual(localDate)) {
+		if  (futureDate.isEqual(localDate)) {
 			System.out.println("They are the same date");
 		} else {
 			System.out.println("They are different dates");
