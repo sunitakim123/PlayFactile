@@ -3,11 +3,7 @@
 <listeners>
 <listener class-name="Factile_Mode_v3.Listeners2"/>
 </listeners>
-    <test name="sign up">
-    <classes>
-          <class name="Factile_Mode_v3.Sign_UP"/>
-           </classes>
-  </test> <!-- Test -->
+   
 
     <test name="Verifing home/school month end plan date">
     <classes>
