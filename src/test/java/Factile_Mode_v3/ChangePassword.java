@@ -117,7 +117,7 @@ public class ChangePassword extends Base {
 
 	@AfterTest
 	public void close() {
-		//driver.quit();
+		driver.quit();
 	}
 
 }

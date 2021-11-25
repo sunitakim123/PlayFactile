@@ -17,7 +17,7 @@ public class Log_in_Elements {
 		
 	
 
-	@FindBy(xpath="//a[@class='blueOutlineSec01']")
+	@FindBy(xpath="//a[@class='yellowSignUpButtonOutline']")
 	
 	WebElement clickOnLog_in_home;
 	public WebElement Log_in_button()

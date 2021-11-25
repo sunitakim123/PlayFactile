@@ -45,6 +45,8 @@ public class Support_Form extends Base {
 
 		Log_in_Elements lobj1 = new Log_in_Elements(driver);
 		lobj1.Log_in_button().click();
+		Thread.sleep(3000);
+
 		lobj1.getenterEmail().sendKeys(prop.getProperty("username"));
 		lobj1.getenterPwd().sendKeys(prop.getProperty("pwd"));
 		lobj1.getlogin().click();

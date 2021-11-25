@@ -28,6 +28,7 @@ public class Log_In extends Base{
 	public static Logger Log = LogManager.getLogger(Log_In.class.getName());
 
 	@BeforeTest
+	
 	public void initilize() throws IOException, InterruptedException {		
 	
 		driver = IntilizeDriver();

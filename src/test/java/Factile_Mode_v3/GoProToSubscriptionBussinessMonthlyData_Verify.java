@@ -72,7 +72,7 @@ public class GoProToSubscriptionBussinessMonthlyData_Verify extends Base {
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
 		WebElement GoProLink = driver.findElement(By.xpath("//li[@class='goPro nav-link']/a"));
 		js1.executeScript("arguments[0].click();", GoProLink);
-
+Thread.sleep(2000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@id='monthlybusiness']")));
 		WebElement enternumber = driver.findElement(By.xpath("//span[@id='monthlybusiness']"));
 		js1.executeScript("arguments[0].click();", enternumber);
@@ -90,10 +90,9 @@ public class GoProToSubscriptionBussinessMonthlyData_Verify extends Base {
 		driver.findElement(By.xpath("//input[@id='billingName']")).sendKeys("sunita");
 
 		wait.until(ExpectedConditions.presenceOfElementLocated(
-				By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[1]/form[1]/div[2]/div[4]/button[1]/div[3]")));
+				By.xpath("//button[@class='SubmitButton SubmitButton--complete']")));
 		driver.findElement(
-				By.xpath("//body/div[@id='root']/div[1]/div[2]/div[2]/div[1]/form[1]/div[2]/div[4]/b"
-						+ "utton[1]/div[3]"))
+				By.xpath("//button[@class='SubmitButton SubmitButton--complete']"))
 				.click();
 
 		
