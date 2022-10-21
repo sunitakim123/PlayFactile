@@ -1,6 +1,7 @@
 package Factile_Mode_v3;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -30,13 +31,14 @@ public class TwoFactorAuthentication extends Base {
 	Actions act;
 	WebDriverWait wait;
 	String parent;
-	String expectedUrl = "https://v3.awspf.com/mygames";
+	String expectedUrl = "https://www.playfactile.com/mygames";
 	public static Logger Log = LogManager.getLogger(TwoFactorAuthentication.class.getName());
 
 	@BeforeTest
 	public void initilize() throws IOException, InterruptedException {
 
 		driver = IntilizeDriver();
+		
 		Log.info("Driver is Initilize");
 		driver.get(prop.getProperty("rooturl"));
 		driver.manage().window().maximize();
@@ -81,12 +83,14 @@ public class TwoFactorAuthentication extends Base {
 		Thread.sleep(10000);
 		String currentURL = null;
 		currentURL = driver.getCurrentUrl();
-		assertEquals(currentURL, expectedUrl);
+		//assertEquals(currentURL, expectedUrl);
+		assertTrue(currentURL.equals("https://awspf.com/mygames") || currentURL.equals("https://www.playfactile.com/mygames"));
+		
 	}
 
 	@AfterTest 
 	public void close() {
-		driver.quit();
+		//driver.quit();
 	}
 
 }

@@ -47,7 +47,7 @@ public class FreeAccount_NoOfGameAllowedToCreate extends Base {
 		// driver.navigate().to("http://www.yopmail.com/en/");
 		Random randomGenerator = new Random();
 		int randomInt = randomGenerator.nextInt(1000);
-		Newgmailidsent = "username1" + randomInt + "@gmail.com";
+		Newgmailidsent = "Newuser1" + randomInt + "@gmail.com";
 
 	
 		System.out.println(Newgmailidsent);
@@ -57,7 +57,9 @@ public class FreeAccount_NoOfGameAllowedToCreate extends Base {
 		sobj.getPassword().sendKeys("12345678");
 		sobj.getConfirmPassword().sendKeys("12345678");
 		sobj.getSignIN().click();
-		sobj.getfreeaccount().click();
+		//sobj.getfreeaccount().click();
+		Thread.sleep(2000);
+		driver.navigate().refresh();
 		
 		for(int i=1;i<=4;i++)
 		{
@@ -72,7 +74,7 @@ public class FreeAccount_NoOfGameAllowedToCreate extends Base {
 		WebElement textbox = driver.findElement(By.xpath("//input[@class='form-control']"));
 		js1.executeScript("arguments[0].click();", textbox);
 		textbox.sendKeys(gamename);
-
+		/*
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='advanceOptionWrap']")));
 		WebElement ClickOnAdvancedOption = driver.findElement(By.xpath("//div[@class='advanceOptionWrap']"));
 		js1.executeScript("arguments[0].click();", ClickOnAdvancedOption);
@@ -81,11 +83,11 @@ public class FreeAccount_NoOfGameAllowedToCreate extends Base {
 		WebElement enterGameName = driver.findElement(By.xpath("//input[@class='form-control']"));
 		js1.executeScript("arguments[0].click();", enterGameName);
 		enterGameName.sendKeys(gameURL);
-		
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[contains(text(),'Submit')]")));
-		WebElement button = driver.findElement(By.xpath("//button[contains(text(),'Submit')]"));
+		*/
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[contains(text(),'Create Game')]")));
+		WebElement button = driver.findElement(By.xpath("//button[contains(text(),'Create Game')]"));
 		js1.executeScript("arguments[0].click();", button);
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		
 		//checking element is empty or not
 		if(driver.findElements(By.xpath("(//a[@class='option clickable'])[1]")).isEmpty()){
@@ -134,7 +136,9 @@ public class FreeAccount_NoOfGameAllowedToCreate extends Base {
 
 	@AfterTest
 	public void close() {
-		 driver.quit();
+		
+		
+		//driver.quit();
 	}
 
 }

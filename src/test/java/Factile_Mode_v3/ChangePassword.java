@@ -46,7 +46,7 @@ public class ChangePassword extends Base {
 
 		Log_in_Elements lobj1 = new Log_in_Elements(driver);
 		lobj1.Log_in_button().click();
-		lobj1.getenterEmail().sendKeys("playfactile14@gmail.com");
+		lobj1.getenterEmail().sendKeys("playfactiletest@gmail.com");
 		lobj1.getenterPwd().sendKeys("12345678");
 		lobj1.getlogin().click();
 		

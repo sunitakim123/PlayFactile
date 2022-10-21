@@ -58,7 +58,7 @@ public class GoProToSubscriptionBussinessYearlyData_Verify extends Base {
 
 		Random randomGenerator = new Random();
 		int randomInt = randomGenerator.nextInt(1000);
-		Newgmailidsent = "username1" + randomInt + "@gmail.com";
+		Newgmailidsent = "Newuser1" + randomInt + "@gmail.com";
 		System.out.println(Newgmailidsent);
 		SignUP_elements sobj = new SignUP_elements(driver);
 		sobj.Sign_in_button().click();
@@ -67,7 +67,9 @@ public class GoProToSubscriptionBussinessYearlyData_Verify extends Base {
 		sobj.getConfirmPassword().sendKeys("12345678");
 		sobj.getSignIN().click();
 		Thread.sleep(3000);
-		sobj.getfreeaccount().click();
+		//sobj.getfreeaccount().click();
+		driver.navigate().refresh();
+		
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//li[@class='goPro nav-link']/a")));
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
 		WebElement GoProLink = driver.findElement(By.xpath("//li[@class='goPro nav-link']/a"));
@@ -98,11 +100,16 @@ public class GoProToSubscriptionBussinessYearlyData_Verify extends Base {
 		//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")));
 
 
+		sobj.getEmail().sendKeys(Newgmailidsent);
+		sobj.getPassword().sendKeys("12345678");
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		
+		/*
 		JavascriptExecutor js2 = (JavascriptExecutor) driver;
 		WebElement button2 = driver.findElement(By.xpath("//*[@class='goBack'][2]"));
 		js2.executeScript("arguments[0].click();", button2);
 		
-		
+		*/
 		//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")));
 
 		// driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")).click();
@@ -113,14 +120,14 @@ public class GoProToSubscriptionBussinessYearlyData_Verify extends Base {
 
 		System.out.println("Date after one month=" + futureDate);
 		Thread.sleep(3000);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='currentActivePlanLabel']/p")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='currentActivePlanLabel']/div")));
 
-		String datecaptureFromAccountPage = driver.findElement(By.xpath("//div[@class='currentActivePlanLabel']/p"))
+		String datecaptureFromAccountPage = driver.findElement(By.xpath("//div[@class='currentActivePlanLabel']/div"))
 				.getText();
 		//capture date from account page after successfully subscription.
 		System.out.println("datecaptureFromAccountPage" + datecaptureFromAccountPage);
 		//extracting only data here that why using substring method
-		String dateExtracted = datecaptureFromAccountPage.substring(56, 67);
+		String dateExtracted = datecaptureFromAccountPage.substring(68, 79);
 		System.out.println(":- " + dateExtracted);
 		DateFormat df3 = new SimpleDateFormat("dd-MMM-yyyy");
 		Date d1 = df3.parse(dateExtracted);
@@ -136,7 +143,7 @@ public class GoProToSubscriptionBussinessYearlyData_Verify extends Base {
 			System.out.println("They are the same date");
 		} else {
 			System.out.println("They are different dates");
-		}//delete_Account();
+		}delete_Account();
 	}
 
 	public void delete_Account() throws InterruptedException {
@@ -160,6 +167,6 @@ public class GoProToSubscriptionBussinessYearlyData_Verify extends Base {
 
 	@AfterTest
 	public void close() {
-		 driver.quit();
+		// driver.quit();
 	}
 }

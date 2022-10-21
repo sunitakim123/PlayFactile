@@ -1,6 +1,7 @@
 package Factile_Mode_v3;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 import java.util.Random;
@@ -25,7 +26,8 @@ public class Sign_Out extends Base {
 	int int2;
 	Actions act;
 	WebDriverWait wait;
-	String expectedURL = "https://v3.awspf.com/signin";
+	//String expectedURL = "https://awspf.com/signin";
+	String expectedURL = "https://playfactile.com/signin";
 	public static Logger Log = LogManager.getLogger(Sign_Out.class.getName());
 
 	@BeforeTest
@@ -58,7 +60,9 @@ public class Sign_Out extends Base {
 		Thread.sleep(5000);
 		String currentURL = driver.getCurrentUrl();
 		System.out.println(">>" + currentURL);
-		assertEquals(currentURL, expectedURL);
+		//assertEquals(currentURL, expectedURL);
+		assertTrue(currentURL.equals("https://awspf.com/signin") || currentURL.equals("https://www.playfactile.com/signin"));
+		
 	}
 	@AfterTest
 	public void close()

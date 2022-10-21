@@ -29,6 +29,7 @@ public class Support_Form extends Base {
 	public static Logger Log = LogManager.getLogger(Support_Form.class.getName());
 
 	@BeforeTest
+	
 	public void initilize() throws IOException, InterruptedException {
 
 		driver = IntilizeDriver();
@@ -58,7 +59,7 @@ public class Support_Form extends Base {
 		Select sobj = new Select(driver.findElement(By.xpath("//select[@id='contact_topic']")));
 		sobj.selectByValue("Other");
 		driver.findElement(By.xpath("//input[@placeholder='Enter your problem topic']"))
-				.sendKeys("for testing purpose");
+				.sendKeys("This  message sent  by  tester for testing purpose only, so kinldy ignore this mail. Thankyou");
 		driver.findElement(By.xpath("//textarea[@id='contact_desc']")).sendKeys("test data");
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@name='contact_send']")));
 		Thread.sleep(3000);
@@ -74,6 +75,6 @@ public class Support_Form extends Base {
 
 	@AfterTest
 	public void close() {
-		driver.quit();
+	//	driver.quit();
 	}
 }

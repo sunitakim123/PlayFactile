@@ -1,6 +1,7 @@
 package Factile_Mode_v3;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 import java.util.Set;
@@ -25,7 +26,7 @@ public class ForgetPassword extends Base {
 	Actions act;
 	WebDriverWait wait;
 	String parent;
-	String expectedUrl = "https://v3.awspf.com/mygames";
+	String expectedUrl = "https://awspf.com/mygames";
 	public static Logger Log = LogManager.getLogger(ForgetPassword.class.getName());
 
 	@BeforeTest
@@ -77,7 +78,9 @@ public class ForgetPassword extends Base {
 				Thread.sleep(5000);
 				String currentURL = null;
 				currentURL = driver.getCurrentUrl();
-				assertEquals(currentURL, expectedUrl);
+				//assertEquals(currentURL, expectedUrl);
+				assertTrue(currentURL.equals("https://awspf.com/mygames") || currentURL.equals("https://www.playfactile.com/mygames"));
+				
 			}
 		}
 

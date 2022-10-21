@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="Factile_Mode_v3.Listeners2"/>
   </listeners>
-  <test thread-count="5" name="Verifing home/school month end plan date(failed)">
+  <test thread-count="5" name="Verifing home/school yearly end plan date(failed)">
     <classes>
-      <class name="Factile_Mode_v3.GoProToSubscriptionHomeSchoolMonthlyData_Verify">
+      <class name="Factile_Mode_v3.GoProToSubscriptionHomeSchoolYearlyData_Verify">
         <methods>
-          <include name="GoProToHomeSchoolMonthlySubscriptionAndNextComingDate"/>
+          <include name="GoProToHomeSchoolYearlySubscriptionAndNextComingDate"/>
           <include name="initilize"/>
           <include name="close"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.GoProToSubscriptionHomeSchoolMonthlyData_Verify -->
+      </class> <!-- Factile_Mode_v3.GoProToSubscriptionHomeSchoolYearlyData_Verify -->
     </classes>
-  </test> <!-- Verifing home/school month end plan date(failed) -->
+  </test> <!-- Verifing home/school yearly end plan date(failed) -->
 </suite> <!-- Failed suite [Suite] -->

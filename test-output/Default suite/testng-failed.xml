@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify">
+      <class name="Factile_Mode_v3.DeleteAccount">
         <methods>
           <include name="initilize"/>
-          <include name="GoProTBussinessMonthlySubscriptionAndNextComingDate"/>
+          <include name="DeleteAccount"/>
           <include name="close"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify -->
+      </class> <!-- Factile_Mode_v3.DeleteAccount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

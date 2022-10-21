@@ -1,6 +1,7 @@
 package Factile_Mode_v3;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 import java.util.Random;
@@ -28,7 +29,7 @@ public class DeleteAccount extends Base {
 	int int2;
 	Actions act;
 	WebDriverWait wait;
-	String expectedURL = "https://v3.awspf.com/signin";
+	String expectedURL = "https://awspf.com/signin";
 	public static Logger Log = LogManager.getLogger(DeleteAccount.class.getName());
 
 	@BeforeTest
@@ -57,10 +58,17 @@ public class DeleteAccount extends Base {
 		
 		sobj.getConfirmPassword().sendKeys("12345678");
 		sobj.getSignIN().click();
-		sobj.getfreeaccount().click();
+		Thread.sleep(2000);
+		driver.navigate().refresh();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[@class='fa fa-times closeNotification']"));
 		
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[4]")).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='navbar-list-2']/ul/li[4]")));
+		JavascriptExecutor js5 = (JavascriptExecutor) driver;
+		WebElement ClickOnAccountMenu = driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[4]"));
+		js5.executeScript("arguments[0].click();", ClickOnAccountMenu);
+		
+		//driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[4]")).click();
 		Thread.sleep(3000);
 	//	driver.findElement(By.xpath("//ul[@class='navbar-nav menu']//li[4]")).click();
 		Thread.sleep(2000);
@@ -82,12 +90,13 @@ public class DeleteAccount extends Base {
 		Thread.sleep(7000);
 		String currentURL = driver.getCurrentUrl();
 		System.out.println(">>" + currentURL);
-		assertEquals(currentURL, expectedURL);
+		//assertEquals(currentURL, expectedURL);
+		 assertTrue(currentURL.equals("https://www.awspf.com/signin") || currentURL.equals("https://www.playfactile.com/signin"));
 	}
 
 	@AfterTest
 	public void close() {
-		 driver.quit();
+		// driver.quit();
 	}
 
 }

@@ -57,7 +57,7 @@ public class HeaderMenuInPaidAccount extends Base {
 		{
 		String myString=link.getText();
 		System.out.println(link.getText());
-		assertTrue(myString.equals("My Games") || myString.equals("Customize")||myString.equals("Account")||myString.equals("Support") || myString.equals("Sign Out"));		 
+		assertTrue(myString.equals("My Games") || myString.equals("Customize")||myString.equals("Account")||myString.equals("Support")||myString.equals("Change Account") || myString.equals("Sign Out"));		 
 		}
 	
 	}

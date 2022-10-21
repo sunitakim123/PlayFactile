@@ -58,16 +58,20 @@ public class GoProToSubscriptionBussinessMonthlyData_Verify extends Base {
 
 		Random randomGenerator = new Random();
 		int randomInt = randomGenerator.nextInt(1000);
-		Newgmailidsent = "username1" + randomInt + "@gmail.com";
+		Newgmailidsent = "Newuser1" + randomInt + "@gmail.com";
 		System.out.println(Newgmailidsent);
 		SignUP_elements sobj = new SignUP_elements(driver);
 		sobj.Sign_in_button().click();
 		sobj.getEmail().sendKeys(Newgmailidsent);
 		sobj.getPassword().sendKeys("12345678");
 		sobj.getConfirmPassword().sendKeys("12345678");
+		Thread.sleep(4000);
 		sobj.getSignIN().click();
-		Thread.sleep(3000);
-		sobj.getfreeaccount().click();
+		Thread.sleep(4000);
+		System.out.println(driver.getCurrentUrl());
+		driver.navigate().refresh();
+		//Thread.sleep(1500);
+		//sobj.getfreeaccount().click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//li[@class='goPro nav-link']/a")));
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
 		WebElement GoProLink = driver.findElement(By.xpath("//li[@class='goPro nav-link']/a"));
@@ -81,7 +85,7 @@ Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='cardNumber']")).sendKeys("5454545454545454");
 
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='cardExpiry']")));
-		driver.findElement(By.xpath("//input[@id='cardExpiry']")).sendKeys("1222");
+		driver.findElement(By.xpath("//input[@id='cardExpiry']")).sendKeys("1226");
 
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='cardCvc']")));
 		driver.findElement(By.xpath("//input[@id='cardCvc']")).sendKeys("111");
@@ -89,23 +93,27 @@ Thread.sleep(2000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='billingName']")));
 		driver.findElement(By.xpath("//input[@id='billingName']")).sendKeys("sunita");
 
-		wait.until(ExpectedConditions.presenceOfElementLocated(
+				wait.until(ExpectedConditions.presenceOfElementLocated(
 				By.xpath("//button[@class='SubmitButton SubmitButton--complete']")));
 		driver.findElement(
 				By.xpath("//button[@class='SubmitButton SubmitButton--complete']"))
 				.click();
-
 		
+		Thread.sleep(4000);
+		System.out.println("After payement url is="+driver.getCurrentUrl());
 		
 		//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")));
 
 		//driver.findElement(By.xpath("//*[@class='goBack'][2]")).click();
+		sobj.getEmail().sendKeys(Newgmailidsent);
+		sobj.getPassword().sendKeys("12345678");
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		
-		
+	/*
 		JavascriptExecutor js2 = (JavascriptExecutor) driver;
 		WebElement button2 = driver.findElement(By.xpath("//*[@class='goBack'][2]"));
 		js2.executeScript("arguments[0].click();", button2);
-		
+		*/
 		
 		// driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")).click();
 		WebElement ClickOnAccountLink = driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a"));
@@ -115,14 +123,14 @@ Thread.sleep(2000);
 
 		System.out.println("Date after one month=" + futureDate);
 		Thread.sleep(2000);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='currentActivePlanLabel']/p")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='currentActivePlanLabel']/div")));
 
-		String datecaptureFromAccountPage = driver.findElement(By.xpath("//div[@class='currentActivePlanLabel']/p"))
+		String datecaptureFromAccountPage = driver.findElement(By.xpath("//div[@class='currentActivePlanLabel']/div"))
 				.getText();
 		//capture date from account page after successfully subscription.
 		System.out.println("date capture From AccountPage:-" + datecaptureFromAccountPage);
 		//extracting only data here that why using substring method
-		String dateExtracted = datecaptureFromAccountPage.substring(41, 52);
+		String dateExtracted = datecaptureFromAccountPage.substring(68, 79);
 		System.out.println(":- " + dateExtracted);
 		DateFormat df3 = new SimpleDateFormat("dd-MMM-yyyy");
 		Date d1 = df3.parse(dateExtracted);
@@ -157,11 +165,11 @@ Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[contains(text(),'Delete!')]")).click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'Yes!')]")));
 		driver.findElement(By.xpath("//*[contains(text(),'Yes!')]")).click();
-		Thread.sleep(4000);
+		Thread.sleep(4000); 
 	}
 
 	@AfterTest
 	public void close() {
-		 driver.quit();
+		// driver.quit();
 	}
 }

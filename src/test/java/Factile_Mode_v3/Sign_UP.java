@@ -43,7 +43,7 @@ public class Sign_UP extends Base{
 	}
 	
 	
-	@Test
+	@Test(priority=1)
 	public void SignUP_Verify() throws InterruptedException
 	{
 		//driver.navigate().to("http://www.yopmail.com/en/");
@@ -57,12 +57,15 @@ public class Sign_UP extends Base{
 		sobj.getPassword().sendKeys("12345678");	
 		sobj.getConfirmPassword().sendKeys("12345678");
 		sobj.getSignIN().click();
-		sobj.getfreeaccount().click();
+		Thread.sleep(4000);
+		System.out.println(driver.getCurrentUrl());
+		driver.navigate().refresh();
 		String GmailAfterLogin=sobj.getemailFromAccountPage().getText();
 		assertEquals(GmailAfterLogin, Newgmailidsent);
 		Thread.sleep(4000);
 		//delete_Account();
 	}
+	 @Test (priority=2)
 		public void delete_Account() throws InterruptedException
 		{
 		driver.findElement(By.xpath("//ul[@class='navbar-nav menu']//li[4]")).click();
