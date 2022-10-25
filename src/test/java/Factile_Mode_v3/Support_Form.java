@@ -75,6 +75,6 @@ public class Support_Form extends Base {
 
 	@AfterTest
 	public void close() {
-	//	driver.quit();
+		driver.quit();
 	}
 }

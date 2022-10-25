@@ -31,7 +31,7 @@ public class TwoFactorAuthentication extends Base {
 	Actions act;
 	WebDriverWait wait;
 	String parent;
-	String expectedUrl = "https://www.playfactile.com/mygames";
+	//String expectedUrl = "https://www.playfactile.com/mygames";
 	public static Logger Log = LogManager.getLogger(TwoFactorAuthentication.class.getName());
 
 	@BeforeTest
@@ -84,13 +84,13 @@ public class TwoFactorAuthentication extends Base {
 		String currentURL = null;
 		currentURL = driver.getCurrentUrl();
 		//assertEquals(currentURL, expectedUrl);
-		assertTrue(currentURL.equals("https://awspf.com/mygames") || currentURL.equals("https://www.playfactile.com/mygames"));
+		assertTrue(currentURL.equals("https://www.awspf.com/mygames") || currentURL.equals("https://www.playfactile.com/mygames"));
 		
 	}
 
 	@AfterTest 
 	public void close() {
-		//driver.quit();
+		driver.quit();
 	}
 
 }

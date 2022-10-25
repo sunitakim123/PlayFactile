@@ -170,6 +170,6 @@ Thread.sleep(2000);
 
 	@AfterTest
 	public void close() {
-		// driver.quit();
+	driver.quit();
 	}
 }

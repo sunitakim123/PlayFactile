@@ -61,7 +61,7 @@ public class Sign_Out extends Base {
 		String currentURL = driver.getCurrentUrl();
 		System.out.println(">>" + currentURL);
 		//assertEquals(currentURL, expectedURL);
-		assertTrue(currentURL.equals("https://awspf.com/signin") || currentURL.equals("https://www.playfactile.com/signin"));
+		assertTrue(currentURL.equals("https://www.awspf.com/signin") || currentURL.equals("https://www.playfactile.com/signin"));
 		
 	}
 	@AfterTest

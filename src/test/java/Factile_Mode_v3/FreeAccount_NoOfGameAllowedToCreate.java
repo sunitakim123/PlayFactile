@@ -138,7 +138,7 @@ public class FreeAccount_NoOfGameAllowedToCreate extends Base {
 	public void close() {
 		
 		
-		//driver.quit();
+		driver.quit();
 	}
 
 }

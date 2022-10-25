@@ -49,7 +49,7 @@ public class DeleteAccount extends Base {
 		// driver.navigate().to("http://www.yopmail.com/en/");
 		Random randomGenerator = new Random();
 		int randomInt = randomGenerator.nextInt(1000);
-		String Newgmailidsent = "test" + randomInt + "@gmail.com";
+		String Newgmailidsent = "testing" + randomInt + "@gmail.com";
 		System.out.println(Newgmailidsent);
 		SignUP_elements sobj = new SignUP_elements(driver);
 		sobj.Sign_in_button().click();
@@ -60,18 +60,18 @@ public class DeleteAccount extends Base {
 		sobj.getSignIN().click();
 		Thread.sleep(2000);
 		driver.navigate().refresh();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@class='fa fa-times closeNotification']"));
+		Thread.sleep(6000);
+		//driver.findElement(By.xpath("//*[@class='fa fa-times closeNotification']"));
 		
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='navbar-list-2']/ul/li[4]")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[normalize-space()='Account']")));
 		JavascriptExecutor js5 = (JavascriptExecutor) driver;
-		WebElement ClickOnAccountMenu = driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[4]"));
-		js5.executeScript("arguments[0].click();", ClickOnAccountMenu);
-		
+		WebElement ClickOnAccountMenu = driver.findElement(By.xpath("//a[normalize-space()='Account']"));
+		js5.executeScript("arguments[0].click();", ClickOnAccountMenu); 
+		// wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='navbar-list-2']/ul/li[4]")));
 		//driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[4]")).click();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 	//	driver.findElement(By.xpath("//ul[@class='navbar-nav menu']//li[4]")).click();
-		Thread.sleep(2000);
+		
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='deleteAccountWrapper']/button")));
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
 		WebElement button = driver.findElement(By.xpath("//*[@class='deleteAccountWrapper']/button"));
@@ -96,7 +96,7 @@ public class DeleteAccount extends Base {
 
 	@AfterTest
 	public void close() {
-		// driver.quit();
+		  driver.quit();
 	}
 
 }
