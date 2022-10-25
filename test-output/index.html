@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\SUNITA\git\PlayFactile\testng5.xml</span>
+                    <span>C:\Users\SUNITA\git\PlayFactile\testng4.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">4 tests</span>
+                    <span class="test-stats">11 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">12 methods, 4 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.PageNotFound_Links_at_HomePage" class="method navigator-link" hash-for-method="PageNotFoundLinksAtHomePage">PageNotFoundLinksAtHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.Sign_Out" class="method navigator-link" hash-for-method="Sign_Out">Sign_Out</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.Support_Form" class="method navigator-link" hash-for-method="Support_Form_Verify">Support_Form_Verify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.TwoFactorAuthentication" class="method navigator-link" hash-for-method="Two_Factor_Authentication">Two_Factor_Authentication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,22 +131,42 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify" class="method navigator-link" hash-for-method="GoProTBussinessMonthlySubscriptionAndNextComingDate">GoProTBussinessMonthlySubscriptionAndNextComingDate</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.ChangePassword" class="method navigator-link" hash-for-method="ChangePassword">ChangePassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.GoProToSubscriptionBussinessYearlyData_Verify" class="method navigator-link" hash-for-method="GoProToBussinessYearlySubscriptionAndNextComingDate">GoProToBussinessYearlySubscriptionAndNextComingDate</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.DeleteAccount" class="method navigator-link" hash-for-method="DeleteAccount">DeleteAccount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.GoProToSubscriptionHomeSchoolMonthlyData_Verify" class="method navigator-link" hash-for-method="GoProToHomeSchoolMonthlySubscriptionAndNextComingDate">GoProToHomeSchoolMonthlySubscriptionAndNextComingDate</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.HeaderMenuInPaidAccount" class="method navigator-link" hash-for-method="Fetching_Header_menu_From_FreeAccount">Fetching_Header_menu_From_FreeAccount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.GoProToSubscriptionHomeSchoolYearlyData_Verify" class="method navigator-link" hash-for-method="GoProToHomeSchoolYearlySubscriptionAndNextComingDate">GoProToHomeSchoolYearlySubscriptionAndNextComingDate</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.HeaderMenuInFreeAccount" class="method navigator-link" hash-for-method="Fetching_Header_menus_From_Paid_Account">Fetching_Header_menus_From_Paid_Account</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.ForgetPassword" class="method navigator-link" hash-for-method="Forget_Password">Forget_Password</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.Log_In" class="method navigator-link" hash-for-method="Log_in">Log_in</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.Sign_UP" class="method navigator-link" hash-for-method="SignUP_Verify">SignUP_Verify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.Sign_UP" class="method navigator-link" hash-for-method="delete_Account">delete_Account</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -132,17 +181,181 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Factile_Mode_v3.GoProToSubscriptionHomeSchoolYearlyData_Verify</span>
+              <img src="failed.png"/>
+              <span class="class-name">Factile_Mode_v3.TwoFactorAuthentication</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="GoProToHomeSchoolYearlySubscriptionAndNextComingDate">
-                  </a> <!-- GoProToHomeSchoolYearlySubscriptionAndNextComingDate -->
-                  <span class="method-name">GoProToHomeSchoolYearlySubscriptionAndNextComingDate</span>
+                  <a name="Two_Factor_Authentication">
+                  </a> <!-- Two_Factor_Authentication -->
+                  <span class="method-name">Two_Factor_Authentication</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //button[@class=&apos;btn signin&apos;] (tried for 40 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Factile_Mode_v3.TwoFactorAuthentication.Two_Factor_Authentication(TwoFactorAuthentication.java:77)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;btn signin&apos;]&quot;}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-47CP8AH&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\SUNITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64903}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eb4035e93801ad63b92e377b8da03dd9
+*** Element info: {Using=xpath, value=//button[@class=&apos;btn signin&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 29 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Factile_Mode_v3.PageNotFound_Links_at_HomePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PageNotFoundLinksAtHomePage">
+                  </a> <!-- PageNotFoundLinksAtHomePage -->
+                  <span class="method-name">PageNotFoundLinksAtHomePage</span>
+                  <div class="stack-trace">java.net.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:325)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1505)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1420)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+	at java.base/sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:580)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:187)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
+	at Factile_Mode_v3.PageNotFound_Links_at_HomePage.ResponseCode(PageNotFound_Links_at_HomePage.java:110)
+	at Factile_Mode_v3.PageNotFound_Links_at_HomePage.PageNotFoundLinksAtHomePage(PageNotFound_Links_at_HomePage.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Factile_Mode_v3.Support_Form</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Support_Form_Verify">
+                  </a> <!-- Support_Form_Verify -->
+                  <span class="method-name">Support_Form_Verify</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;navbar-list-2&apos;]/ul/li[4]&quot;}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-47CP8AH&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\SUNITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65481}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 531c4f4f4c334afb6d681c4ed2a878ed
+*** Element info: {Using=xpath, value=//*[@id=&apos;navbar-list-2&apos;]/ul/li[4]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Factile_Mode_v3.Support_Form.Support_Form_Verify(Support_Form.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Factile_Mode_v3.Sign_Out</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Sign_Out">
+                  </a> <!-- Sign_Out -->
+                  <span class="method-name">Sign_Out</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[contains(text(),&apos;Sign Out&apos;)] (tried for 40 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Factile_Mode_v3.Sign_Out.Sign_Out(Sign_Out.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Sign Out&apos;)]&quot;}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-47CP8AH&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\SUNITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64560}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 67c0a1fe7d8b2ae0f66c6a2832b04247
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Sign Out&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 29 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Factile_Mode_v3.ForgetPassword</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Forget_Password">
+                  </a> <!-- Forget_Password -->
+                  <span class="method-name">Forget_Password</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -150,14 +363,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Factile_Mode_v3.GoProToSubscriptionHomeSchoolMonthlyData_Verify</span>
+              <span class="class-name">Factile_Mode_v3.HeaderMenuInPaidAccount</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="GoProToHomeSchoolMonthlySubscriptionAndNextComingDate">
-                  </a> <!-- GoProToHomeSchoolMonthlySubscriptionAndNextComingDate -->
-                  <span class="method-name">GoProToHomeSchoolMonthlySubscriptionAndNextComingDate</span>
+                  <a name="Fetching_Header_menu_From_FreeAccount">
+                  </a> <!-- Fetching_Header_menu_From_FreeAccount -->
+                  <span class="method-name">Fetching_Header_menu_From_FreeAccount</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -165,14 +378,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify</span>
+              <span class="class-name">Factile_Mode_v3.ChangePassword</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="GoProTBussinessMonthlySubscriptionAndNextComingDate">
-                  </a> <!-- GoProTBussinessMonthlySubscriptionAndNextComingDate -->
-                  <span class="method-name">GoProTBussinessMonthlySubscriptionAndNextComingDate</span>
+                  <a name="ChangePassword">
+                  </a> <!-- ChangePassword -->
+                  <span class="method-name">ChangePassword</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -180,14 +393,66 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Factile_Mode_v3.GoProToSubscriptionBussinessYearlyData_Verify</span>
+              <span class="class-name">Factile_Mode_v3.Log_In</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="GoProToBussinessYearlySubscriptionAndNextComingDate">
-                  </a> <!-- GoProToBussinessYearlySubscriptionAndNextComingDate -->
-                  <span class="method-name">GoProToBussinessYearlySubscriptionAndNextComingDate</span>
+                  <a name="Log_in">
+                  </a> <!-- Log_in -->
+                  <span class="method-name">Log_in</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Factile_Mode_v3.Sign_UP</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignUP_Verify">
+                  </a> <!-- SignUP_Verify -->
+                  <span class="method-name">SignUP_Verify</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="delete_Account">
+                  </a> <!-- delete_Account -->
+                  <span class="method-name">delete_Account</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Factile_Mode_v3.HeaderMenuInFreeAccount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Fetching_Header_menus_From_Paid_Account">
+                  </a> <!-- Fetching_Header_menus_From_Paid_Account -->
+                  <span class="method-name">Fetching_Header_menus_From_Paid_Account</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Factile_Mode_v3.DeleteAccount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteAccount">
+                  </a> <!-- DeleteAccount -->
+                  <span class="method-name">DeleteAccount</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -195,7 +460,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\SUNITA\git\PlayFactile\testng5.xml</span>
+            <span class="header-content">C:\Users\SUNITA\git\PlayFactile\testng4.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -205,26 +470,61 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;Factile_Mode_v3.Listeners2&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Verifing home/school month end plan date&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;sign up&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Factile_Mode_v3.GoProToSubscriptionHomeSchoolMonthlyData_Verify&quot;/&gt;
+      &lt;class name=&quot;Factile_Mode_v3.Sign_UP&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Verifing home/school month end plan date --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Verifing home/school yearly end plan date&quot;&gt;
+  &lt;/test&gt; &lt;!-- sign up --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Log in&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Factile_Mode_v3.GoProToSubscriptionHomeSchoolYearlyData_Verify&quot;/&gt;
+      &lt;class name=&quot;Factile_Mode_v3.Log_In&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Verifing home/school yearly end plan date --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Verifing bussiness month end plan date&quot;&gt;
+  &lt;/test&gt; &lt;!-- Log in --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;sign out&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify&quot;/&gt;
+      &lt;class name=&quot;Factile_Mode_v3.Sign_Out&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Verifing bussiness month end plan date --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Verifing bussiness yearly end plan date&quot;&gt;
+  &lt;/test&gt; &lt;!-- sign out --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Forget Password&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Factile_Mode_v3.GoProToSubscriptionBussinessYearlyData_Verify&quot;/&gt;
+      &lt;class name=&quot;Factile_Mode_v3.ForgetPassword&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Verifing bussiness yearly end plan date --&gt;
+  &lt;/test&gt; &lt;!-- Forget Password --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Two_Factor_Authentication&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Factile_Mode_v3.TwoFactorAuthentication&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Two_Factor_Authentication --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;change password&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Factile_Mode_v3.ChangePassword&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- change password --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;support form&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Factile_Mode_v3.Support_Form&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- support form --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;delete Account&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Factile_Mode_v3.DeleteAccount&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- delete Account --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;menus in free account inside header&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Factile_Mode_v3.HeaderMenuInFreeAccount&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- menus in free account inside header --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;menus in paid account inside header&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Factile_Mode_v3.HeaderMenuInPaidAccount&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- menus in paid account inside header --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;404 Page Not Found link at Home Page&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Factile_Mode_v3.PageNotFound_Links_at_HomePage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 404 Page Not Found link at Home Page --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -236,16 +536,37 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Verifing home/school month end plan date (1 class)</span>
+                <span class="test-name">sign up (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Verifing home/school yearly end plan date (1 class)</span>
+                <span class="test-name">Log in (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Verifing bussiness month end plan date (1 class)</span>
+                <span class="test-name">sign out (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Verifing bussiness yearly end plan date (1 class)</span>
+                <span class="test-name">Forget Password (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Two_Factor_Authentication (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">change password (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">support form (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">delete Account (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">menus in free account inside header (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">menus in paid account inside header (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">404 Page Not Found link at Home Page (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -271,28 +592,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'GoProTBussinessMonthlySubscriptionAndNextComingDate')
-data.setCell(0, 2, 'Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify')
-data.setCell(0, 3, 51897);
+data.setCell(0, 1, 'PageNotFoundLinksAtHomePage')
+data.setCell(0, 2, 'Factile_Mode_v3.PageNotFound_Links_at_HomePage')
+data.setCell(0, 3, 117822);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'GoProToHomeSchoolMonthlySubscriptionAndNextComingDate')
-data.setCell(1, 2, 'Factile_Mode_v3.GoProToSubscriptionHomeSchoolMonthlyData_Verify')
-data.setCell(1, 3, 51654);
+data.setCell(1, 1, 'Two_Factor_Authentication')
+data.setCell(1, 2, 'Factile_Mode_v3.TwoFactorAuthentication')
+data.setCell(1, 3, 96571);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'GoProToHomeSchoolYearlySubscriptionAndNextComingDate')
-data.setCell(2, 2, 'Factile_Mode_v3.GoProToSubscriptionHomeSchoolYearlyData_Verify')
-data.setCell(2, 3, 50789);
+data.setCell(2, 1, 'Support_Form_Verify')
+data.setCell(2, 2, 'Factile_Mode_v3.Support_Form')
+data.setCell(2, 3, 70031);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'GoProToBussinessYearlySubscriptionAndNextComingDate')
-data.setCell(3, 2, 'Factile_Mode_v3.GoProToSubscriptionBussinessYearlyData_Verify')
-data.setCell(3, 3, 49356);
+data.setCell(3, 1, 'Sign_Out')
+data.setCell(3, 2, 'Factile_Mode_v3.Sign_Out')
+data.setCell(3, 3, 67654);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Fetching_Header_menu_From_FreeAccount')
+data.setCell(4, 2, 'Factile_Mode_v3.HeaderMenuInPaidAccount')
+data.setCell(4, 3, 67450);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Forget_Password')
+data.setCell(5, 2, 'Factile_Mode_v3.ForgetPassword')
+data.setCell(5, 3, 44648);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'DeleteAccount')
+data.setCell(6, 2, 'Factile_Mode_v3.DeleteAccount')
+data.setCell(6, 3, 27735);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'SignUP_Verify')
+data.setCell(7, 2, 'Factile_Mode_v3.Sign_UP')
+data.setCell(7, 3, 18600);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'ChangePassword')
+data.setCell(8, 2, 'Factile_Mode_v3.ChangePassword')
+data.setCell(8, 3, 15761);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'delete_Account')
+data.setCell(9, 2, 'Factile_Mode_v3.Sign_UP')
+data.setCell(9, 3, 10829);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Log_in')
+data.setCell(10, 2, 'Factile_Mode_v3.Log_In')
+data.setCell(10, 3, 10746);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Fetching_Header_menus_From_Paid_Account')
+data.setCell(11, 2, 'Factile_Mode_v3.HeaderMenuInFreeAccount')
+data.setCell(11, 3, 8677);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 9 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -318,63 +671,180 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Factile_Mode_v3.GoProToSubscriptionHomeSchoolMonthlyData_Verify</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Factile_Mode_v3.Sign_UP</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">GoProToHomeSchoolMonthlySubscriptionAndNextComingDate</span>
-                <span class="method-start">10167 ms</span>
+                <span class="method-name">SignUP_Verify</span>
+                <span class="method-start">8313 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">delete_Account</span>
+                <span class="method-start">26947 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">61839 ms</span>
+                <span class="method-start">37789 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Factile_Mode_v3.GoProToSubscriptionHomeSchoolYearlyData_Verify</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Factile_Mode_v3.Log_In</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
-                <span class="method-start">62890 ms</span>
+                <span class="method-start">40349 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">GoProToHomeSchoolYearlySubscriptionAndNextComingDate</span>
-                <span class="method-start">70912 ms</span>
+                <span class="method-name">Log_in</span>
+                <span class="method-start">43436 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">121705 ms</span>
+                <span class="method-start">54199 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Factile_Mode_v3.Sign_Out</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
-                <span class="method-start">123246 ms</span>
+                <span class="method-start">55450 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">GoProTBussinessMonthlySubscriptionAndNextComingDate</span>
-                <span class="method-start">131099 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Sign_Out</span>
+                <span class="method-start">58980 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">183011 ms</span>
+                <span class="method-start">127065 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Factile_Mode_v3.GoProToSubscriptionBussinessYearlyData_Verify</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Factile_Mode_v3.ForgetPassword</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
-                <span class="method-start">183570 ms</span>
+                <span class="method-start">127804 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">GoProToBussinessYearlySubscriptionAndNextComingDate</span>
-                <span class="method-start">193483 ms</span>
+                <span class="method-name">Forget_Password</span>
+                <span class="method-start">130428 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">242845 ms</span>
+                <span class="method-start">175094 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Factile_Mode_v3.TwoFactorAuthentication</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initilize</span>
+                <span class="method-start">175714 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Two_Factor_Authentication</span>
+                <span class="method-start">178423 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">close</span>
+                <span class="method-start">275204 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Factile_Mode_v3.ChangePassword</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initilize</span>
+                <span class="method-start">275744 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">ChangePassword</span>
+                <span class="method-start">279339 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">close</span>
+                <span class="method-start">295105 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Factile_Mode_v3.Support_Form</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initilize</span>
+                <span class="method-start">296769 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Support_Form_Verify</span>
+                <span class="method-start">299584 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">close</span>
+                <span class="method-start">369839 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Factile_Mode_v3.DeleteAccount</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initilize</span>
+                <span class="method-start">370380 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">DeleteAccount</span>
+                <span class="method-start">372626 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">close</span>
+                <span class="method-start">400368 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Factile_Mode_v3.HeaderMenuInFreeAccount</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initilize</span>
+                <span class="method-start">400885 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">Fetching_Header_menus_From_Paid_Account</span>
+                <span class="method-start">403531 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">close</span>
+                <span class="method-start">412210 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Factile_Mode_v3.HeaderMenuInPaidAccount</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initilize</span>
+                <span class="method-start">412681 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">Fetching_Header_menu_From_FreeAccount</span>
+                <span class="method-start">414934 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">close</span>
+                <span class="method-start">482386 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Factile_Mode_v3.PageNotFound_Links_at_HomePage</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initilize</span>
+                <span class="method-start">482890 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PageNotFoundLinksAtHomePage</span>
+                <span class="method-start">485550 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">close</span>
+                <span class="method-start">603604 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
