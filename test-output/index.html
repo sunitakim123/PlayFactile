@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">16 methods,   16 passed</span>
+                    <span class="method-stats">16 methods, 3 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.PageNotFound_Links_at_HomePage" class="method navigator-link" hash-for-method="PageNotFoundLinksAtHomePage">PageNotFoundLinksAtHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.Sign_UP" class="method navigator-link" hash-for-method="SignUP_Verify">SignUP_Verify</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.Sign_UP" class="method navigator-link" hash-for-method="delete_Account">delete_Account</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -152,16 +176,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.PageNotFound_Links_at_HomePage" class="method navigator-link" hash-for-method="PageNotFoundLinksAtHomePage">PageNotFoundLinksAtHomePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.Sign_UP" class="method navigator-link" hash-for-method="SignUP_Verify">SignUP_Verify</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.Sign_Out" class="method navigator-link" hash-for-method="Sign_Out">Sign_Out</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -173,11 +187,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.TwoFactorAuthentication" class="method navigator-link" hash-for-method="Two_Factor_Authentication">Two_Factor_Authentication</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Factile_Mode_v3.Sign_UP" class="method navigator-link" hash-for-method="delete_Account">delete_Account</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -192,6 +201,113 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Factile_Mode_v3.PageNotFound_Links_at_HomePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PageNotFoundLinksAtHomePage">
+                  </a> <!-- PageNotFoundLinksAtHomePage -->
+                  <span class="method-name">PageNotFoundLinksAtHomePage</span>
+                  <div class="stack-trace">java.net.UnknownHostException: www.awspf.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:174)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:532)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:637)
+	at java.base/sun.net.www.protocol.https.HttpsClient.&lt;init&gt;(HttpsClient.java:266)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:380)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
+	at Factile_Mode_v3.PageNotFound_Links_at_HomePage.ResponseCode(PageNotFound_Links_at_HomePage.java:110)
+	at Factile_Mode_v3.PageNotFound_Links_at_HomePage.PageNotFoundLinksAtHomePage(PageNotFound_Links_at_HomePage.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Factile_Mode_v3.Sign_UP</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignUP_Verify">
+                  </a> <!-- SignUP_Verify -->
+                  <span class="method-name">SignUP_Verify</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;userEmail&apos;]&quot;}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-47CP8AH&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\SUNITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51600}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 382b761b28b154e49d5989bcd7bee656
+*** Element info: {Using=xpath, value=//span[@class=&apos;userEmail&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
+	at Factile_Mode_v3.Sign_UP.SignUP_Verify(Sign_UP.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="delete_Account">
+                  </a> <!-- delete_Account -->
+                  <span class="method-name">delete_Account</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;navbar-nav menu&apos;]//li[4]&quot;}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-47CP8AH&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\SUNITA\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51600}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 382b761b28b154e49d5989bcd7bee656
+*** Element info: {Using=xpath, value=//ul[@class=&apos;navbar-nav menu&apos;]//li[4]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Factile_Mode_v3.Sign_UP.delete_Account(Sign_UP.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -203,21 +319,6 @@
                   <a name="GoProToBussinessYearlySubscriptionAndNextComingDate">
                   </a> <!-- GoProToBussinessYearlySubscriptionAndNextComingDate -->
                   <span class="method-name">GoProToBussinessYearlySubscriptionAndNextComingDate</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Factile_Mode_v3.PageNotFound_Links_at_HomePage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="PageNotFoundLinksAtHomePage">
-                  </a> <!-- PageNotFoundLinksAtHomePage -->
-                  <span class="method-name">PageNotFoundLinksAtHomePage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -263,28 +364,6 @@
                   <a name="GoProTBussinessMonthlySubscriptionAndNextComingDate">
                   </a> <!-- GoProTBussinessMonthlySubscriptionAndNextComingDate -->
                   <span class="method-name">GoProTBussinessMonthlySubscriptionAndNextComingDate</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Factile_Mode_v3.Sign_UP</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="SignUP_Verify">
-                  </a> <!-- SignUP_Verify -->
-                  <span class="method-name">SignUP_Verify</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="delete_Account">
-                  </a> <!-- delete_Account -->
-                  <span class="method-name">delete_Account</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -595,72 +674,72 @@ data.addRows(16);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'PageNotFoundLinksAtHomePage')
 data.setCell(0, 2, 'Factile_Mode_v3.PageNotFound_Links_at_HomePage')
-data.setCell(0, 3, 300439);
+data.setCell(0, 3, 147702);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'GoProTBussinessMonthlySubscriptionAndNextComingDate')
-data.setCell(1, 2, 'Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify')
-data.setCell(1, 3, 55001);
+data.setCell(1, 1, 'SignUP_Verify')
+data.setCell(1, 2, 'Factile_Mode_v3.Sign_UP')
+data.setCell(1, 3, 69780);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'GoProToHomeSchoolMonthlySubscriptionAndNextComingDate')
-data.setCell(2, 2, 'Factile_Mode_v3.GoProToSubscriptionHomeSchoolMonthlyData_Verify')
-data.setCell(2, 3, 52021);
+data.setCell(2, 1, 'delete_Account')
+data.setCell(2, 2, 'Factile_Mode_v3.Sign_UP')
+data.setCell(2, 3, 60050);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'GoProToHomeSchoolYearlySubscriptionAndNextComingDate')
-data.setCell(3, 2, 'Factile_Mode_v3.GoProToSubscriptionHomeSchoolYearlyData_Verify')
-data.setCell(3, 3, 50690);
+data.setCell(3, 1, 'Two_Factor_Authentication')
+data.setCell(3, 2, 'Factile_Mode_v3.TwoFactorAuthentication')
+data.setCell(3, 3, 52355);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'GoProToBussinessYearlySubscriptionAndNextComingDate')
-data.setCell(4, 2, 'Factile_Mode_v3.GoProToSubscriptionBussinessYearlyData_Verify')
-data.setCell(4, 3, 49627);
+data.setCell(4, 1, 'GoProToHomeSchoolMonthlySubscriptionAndNextComingDate')
+data.setCell(4, 2, 'Factile_Mode_v3.GoProToSubscriptionHomeSchoolMonthlyData_Verify')
+data.setCell(4, 3, 51057);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'Two_Factor_Authentication')
-data.setCell(5, 2, 'Factile_Mode_v3.TwoFactorAuthentication')
-data.setCell(5, 3, 47013);
+data.setCell(5, 1, 'GoProTBussinessMonthlySubscriptionAndNextComingDate')
+data.setCell(5, 2, 'Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify')
+data.setCell(5, 3, 50279);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'Forget_Password')
-data.setCell(6, 2, 'Factile_Mode_v3.ForgetPassword')
-data.setCell(6, 3, 44228);
+data.setCell(6, 1, 'GoProToBussinessYearlySubscriptionAndNextComingDate')
+data.setCell(6, 2, 'Factile_Mode_v3.GoProToSubscriptionBussinessYearlyData_Verify')
+data.setCell(6, 3, 44646);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'DeleteAccount')
-data.setCell(7, 2, 'Factile_Mode_v3.DeleteAccount')
-data.setCell(7, 3, 30582);
+data.setCell(7, 1, 'GoProToHomeSchoolYearlySubscriptionAndNextComingDate')
+data.setCell(7, 2, 'Factile_Mode_v3.GoProToSubscriptionHomeSchoolYearlyData_Verify')
+data.setCell(7, 3, 43258);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'ChangePassword')
-data.setCell(8, 2, 'Factile_Mode_v3.ChangePassword')
-data.setCell(8, 3, 18781);
+data.setCell(8, 1, 'Forget_Password')
+data.setCell(8, 2, 'Factile_Mode_v3.ForgetPassword')
+data.setCell(8, 3, 39663);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'Support_Form_Verify')
-data.setCell(9, 2, 'Factile_Mode_v3.Support_Form')
-data.setCell(9, 3, 18569);
+data.setCell(9, 1, 'DeleteAccount')
+data.setCell(9, 2, 'Factile_Mode_v3.DeleteAccount')
+data.setCell(9, 3, 33767);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'SignUP_Verify')
-data.setCell(10, 2, 'Factile_Mode_v3.Sign_UP')
-data.setCell(10, 3, 17546);
+data.setCell(10, 1, 'Support_Form_Verify')
+data.setCell(10, 2, 'Factile_Mode_v3.Support_Form')
+data.setCell(10, 3, 19270);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'Sign_Out')
-data.setCell(11, 2, 'Factile_Mode_v3.Sign_Out')
-data.setCell(11, 3, 12995);
+data.setCell(11, 1, 'ChangePassword')
+data.setCell(11, 2, 'Factile_Mode_v3.ChangePassword')
+data.setCell(11, 3, 18526);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'delete_Account')
-data.setCell(12, 2, 'Factile_Mode_v3.Sign_UP')
-data.setCell(12, 3, 10867);
+data.setCell(12, 1, 'Sign_Out')
+data.setCell(12, 2, 'Factile_Mode_v3.Sign_Out')
+data.setCell(12, 3, 16454);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'Fetching_Header_menu_From_FreeAccount')
-data.setCell(13, 2, 'Factile_Mode_v3.HeaderMenuInPaidAccount')
-data.setCell(13, 3, 7656);
+data.setCell(13, 1, 'Fetching_Header_menus_From_Paid_Account')
+data.setCell(13, 2, 'Factile_Mode_v3.HeaderMenuInFreeAccount')
+data.setCell(13, 3, 10506);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'Fetching_Header_menus_From_Paid_Account')
-data.setCell(14, 2, 'Factile_Mode_v3.HeaderMenuInFreeAccount')
-data.setCell(14, 3, 5727);
+data.setCell(14, 1, 'Fetching_Header_menu_From_FreeAccount')
+data.setCell(14, 2, 'Factile_Mode_v3.HeaderMenuInPaidAccount')
+data.setCell(14, 3, 8452);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'Log_in')
 data.setCell(15, 2, 'Factile_Mode_v3.Log_In')
-data.setCell(15, 3, 3556);
+data.setCell(15, 3, 3560);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 minutes</span>
+              <span class="suite-total-time">Total running time: 11 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -693,225 +772,231 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">GoProToHomeSchoolMonthlySubscriptionAndNextComingDate</span>
-                <span class="method-start">11523 ms</span>
+                <span class="method-start">11604 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">63576 ms</span>
+                <span class="method-start">62701 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Factile_Mode_v3.GoProToSubscriptionHomeSchoolYearlyData_Verify</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
-                <span class="method-start">64754 ms</span>
+                <span class="method-start">64102 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">GoProToHomeSchoolYearlySubscriptionAndNextComingDate</span>
-                <span class="method-start">73198 ms</span>
+                <span class="method-start">73879 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">123921 ms</span>
+                <span class="method-start">117154 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
-                <span class="method-start">124612 ms</span>
+                <span class="method-start">118154 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">GoProTBussinessMonthlySubscriptionAndNextComingDate</span>
-                <span class="method-start">133365 ms</span>
+                <span class="method-start">127119 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">188383 ms</span>
+                <span class="method-start">177433 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Factile_Mode_v3.GoProToSubscriptionBussinessYearlyData_Verify</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
-                <span class="method-start">189536 ms</span>
+                <span class="method-start">178246 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">GoProToBussinessYearlySubscriptionAndNextComingDate</span>
-                <span class="method-start">197139 ms</span>
+                <span class="method-start">186399 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">246785 ms</span>
+                <span class="method-start">231072 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Factile_Mode_v3.Sign_UP</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
-                <span class="method-start">247421 ms</span>
+                <span class="method-start">231987 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">SignUP_Verify</span>
-                <span class="method-start">254776 ms</span>
+                <span class="method-start">241600 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">delete_Account</span>
-                <span class="method-start">272334 ms</span>
+                <span class="method-start">311624 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">283207 ms</span>
+                <span class="method-start">371923 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Factile_Mode_v3.Log_In</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
-                <span class="method-start">283809 ms</span>
+                <span class="method-start">372816 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">Log_in</span>
-                <span class="method-start">291612 ms</span>
+                <span class="method-start">381426 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">295174 ms</span>
+                <span class="method-start">384992 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Factile_Mode_v3.Sign_Out</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
-                <span class="method-start">295783 ms</span>
+                <span class="method-start">385606 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">Sign_Out</span>
-                <span class="method-start">301720 ms</span>
+                <span class="method-start">393909 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">314721 ms</span>
+                <span class="method-start">410368 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Factile_Mode_v3.ForgetPassword</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
-                <span class="method-start">314848 ms</span>
+                <span class="method-start">410604 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">Forget_Password</span>
-                <span class="method-start">333230 ms</span>
+                <span class="method-start">426526 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">377471 ms</span>
+                <span class="method-start">466208 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Factile_Mode_v3.TwoFactorAuthentication</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
-                <span class="method-start">378291 ms</span>
+                <span class="method-start">466930 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">Two_Factor_Authentication</span>
-                <span class="method-start">386657 ms</span>
+                <span class="method-start">475214 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">433676 ms</span>
+                <span class="method-start">527579 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Factile_Mode_v3.ChangePassword</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
-                <span class="method-start">433806 ms</span>
+                <span class="method-start">527768 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">ChangePassword</span>
-                <span class="method-start">442215 ms</span>
+                <span class="method-start">538266 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">461000 ms</span>
+                <span class="method-start">556798 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Factile_Mode_v3.Support_Form</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
-                <span class="method-start">461856 ms</span>
+                <span class="method-start">558796 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">Support_Form_Verify</span>
-                <span class="method-start">471717 ms</span>
+                <span class="method-start">567613 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">490352 ms</span>
+                <span class="method-start">586887 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Factile_Mode_v3.DeleteAccount</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
-                <span class="method-start">491541 ms</span>
+                <span class="method-start">588379 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">DeleteAccount</span>
-                <span class="method-start">500997 ms</span>
+                <span class="method-start">598086 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">531582 ms</span>
+                <span class="method-start">631859 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Factile_Mode_v3.HeaderMenuInFreeAccount</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
-                <span class="method-start">532326 ms</span>
+                <span class="method-start">632379 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">Fetching_Header_menus_From_Paid_Account</span>
-                <span class="method-start">540238 ms</span>
+                <span class="method-start">677984 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">545968 ms</span>
+                <span class="method-start">688507 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Factile_Mode_v3.HeaderMenuInPaidAccount</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
-                <span class="method-start">546525 ms</span>
+                <span class="method-start">689845 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">Fetching_Header_menu_From_FreeAccount</span>
-                <span class="method-start">556031 ms</span>
+                <span class="method-start">698072 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">563696 ms</span>
+                <span class="method-start">706529 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Factile_Mode_v3.PageNotFound_Links_at_HomePage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initilize</span>
-                <span class="method-start">564344 ms</span>
+                <span class="method-start">707254 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">PageNotFoundLinksAtHomePage</span>
-                <span class="method-start">573099 ms</span>
+                <span class="method-start">715417 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">873572 ms</span>
+                <span class="method-start">865031 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -172,6 +172,6 @@ public class GoProToSubscriptionHomeSchoolMonthlyData_Verify extends Base {
 
 	@AfterTest
 	public void close() {
-		//driver.quit();
+		driver.quit();
 	}
 }

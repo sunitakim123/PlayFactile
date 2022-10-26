@@ -4,39 +4,18 @@
   <listeners>
     <listener class-name="Factile_Mode_v3.Listeners2"/>
   </listeners>
-  <test thread-count="5" name="sign out(failed)">
+  <test thread-count="5" name="sign up(failed)">
     <classes>
-      <class name="Factile_Mode_v3.Sign_Out">
+      <class name="Factile_Mode_v3.Sign_UP">
         <methods>
-          <include name="initilize"/>
           <include name="close"/>
-          <include name="Sign_Out"/>
-        </methods>
-      </class> <!-- Factile_Mode_v3.Sign_Out -->
-    </classes>
-  </test> <!-- sign out(failed) -->
-  <test thread-count="5" name="Two_Factor_Authentication(failed)">
-    <classes>
-      <class name="Factile_Mode_v3.TwoFactorAuthentication">
-        <methods>
           <include name="initilize"/>
-          <include name="close"/>
-          <include name="Two_Factor_Authentication"/>
+          <include name="SignUP_Verify"/>
+          <include name="delete_Account"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.TwoFactorAuthentication -->
+      </class> <!-- Factile_Mode_v3.Sign_UP -->
     </classes>
-  </test> <!-- Two_Factor_Authentication(failed) -->
-  <test thread-count="5" name="support form(failed)">
-    <classes>
-      <class name="Factile_Mode_v3.Support_Form">
-        <methods>
-          <include name="Support_Form_Verify"/>
-          <include name="initilize"/>
-          <include name="close"/>
-        </methods>
-      </class> <!-- Factile_Mode_v3.Support_Form -->
-    </classes>
-  </test> <!-- support form(failed) -->
+  </test> <!-- sign up(failed) -->
   <test thread-count="5" name="404 Page Not Found link at Home Page(failed)">
     <classes>
       <class name="Factile_Mode_v3.PageNotFound_Links_at_HomePage">
