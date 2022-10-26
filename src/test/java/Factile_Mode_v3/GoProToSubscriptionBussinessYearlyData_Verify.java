@@ -62,6 +62,7 @@ public class GoProToSubscriptionBussinessYearlyData_Verify extends Base {
 		System.out.println(Newgmailidsent);
 		SignUP_elements sobj = new SignUP_elements(driver);
 		sobj.Sign_in_button().click();
+		Thread.sleep(3000);
 		sobj.getEmail().sendKeys(Newgmailidsent);
 		sobj.getPassword().sendKeys("12345678");
 		sobj.getConfirmPassword().sendKeys("12345678");
