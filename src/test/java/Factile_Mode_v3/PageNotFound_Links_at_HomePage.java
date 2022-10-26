@@ -120,5 +120,6 @@ public class PageNotFound_Links_at_HomePage extends Base {
 	public void close()
 	{ 
 		driver.quit();
+		
 	}
 }

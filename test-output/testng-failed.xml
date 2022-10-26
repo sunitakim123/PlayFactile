@@ -4,18 +4,28 @@
   <listeners>
     <listener class-name="Factile_Mode_v3.Listeners2"/>
   </listeners>
-  <test thread-count="5" name="sign up(failed)">
+  <test thread-count="5" name="Forget Password(failed)">
     <classes>
-      <class name="Factile_Mode_v3.Sign_UP">
+      <class name="Factile_Mode_v3.ForgetPassword">
         <methods>
-          <include name="close"/>
           <include name="initilize"/>
-          <include name="SignUP_Verify"/>
-          <include name="delete_Account"/>
+          <include name="close"/>
+          <include name="Forget_Password"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.Sign_UP -->
+      </class> <!-- Factile_Mode_v3.ForgetPassword -->
     </classes>
-  </test> <!-- sign up(failed) -->
+  </test> <!-- Forget Password(failed) -->
+  <test thread-count="5" name="Two_Factor_Authentication(failed)">
+    <classes>
+      <class name="Factile_Mode_v3.TwoFactorAuthentication">
+        <methods>
+          <include name="initilize"/>
+          <include name="close"/>
+          <include name="Two_Factor_Authentication"/>
+        </methods>
+      </class> <!-- Factile_Mode_v3.TwoFactorAuthentication -->
+    </classes>
+  </test> <!-- Two_Factor_Authentication(failed) -->
   <test thread-count="5" name="404 Page Not Found link at Home Page(failed)">
     <classes>
       <class name="Factile_Mode_v3.PageNotFound_Links_at_HomePage">

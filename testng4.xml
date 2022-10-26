@@ -4,7 +4,14 @@
 <listener class-name="Factile_Mode_v3.Listeners2"/>
 </listeners>
   
-    <test name="sign up">
+      
+    <test name="Numbers of game allowed to create in free account">
+    <classes>
+          <class name="Factile_Mode_v3.NoOfGameAllowedToCreate_IN_FreeAccount"/>
+           </classes>
+  </test> <!-- Test -->
+  
+   <test name="sign up">
     <classes>
           <class name="Factile_Mode_v3.Sign_UP"/>
            </classes>
@@ -64,9 +71,6 @@
           <class name="Factile_Mode_v3.PageNotFound_Links_at_HomePage"/>
            </classes>
   </test> <!-- Test -->
-   
-    
-  
   
    
    

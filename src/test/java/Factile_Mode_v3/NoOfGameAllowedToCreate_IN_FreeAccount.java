@@ -22,13 +22,13 @@ import org.testng.annotations.Test;
 import Page_Object_v3.SignUP_elements;
 import resources.Base;
 
-public class FreeAccount_NoOfGameAllowedToCreate extends Base {
+public class NoOfGameAllowedToCreate_IN_FreeAccount extends Base {
 	WebDriver driver;
 	int int2;
 	Actions act;
 	WebDriverWait wait;
 	String Newgmailidsent;
-	public static Logger Log = LogManager.getLogger(FreeAccount_NoOfGameAllowedToCreate.class.getName());
+	public static Logger Log = LogManager.getLogger(NoOfGameAllowedToCreate_IN_FreeAccount.class.getName());
 
 	@BeforeTest
 	public void initilize() throws IOException, InterruptedException {
