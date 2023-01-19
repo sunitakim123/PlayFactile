@@ -1,40 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="Factile_Mode_v3.Listeners2"/>
-  </listeners>
-  <test thread-count="5" name="Forget Password(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Factile_Mode_v3.ForgetPassword">
+      <class name="Factile_Mode_v3.Sign_UP">
         <methods>
-          <include name="initilize"/>
           <include name="close"/>
-          <include name="Forget_Password"/>
-        </methods>
-      </class> <!-- Factile_Mode_v3.ForgetPassword -->
-    </classes>
-  </test> <!-- Forget Password(failed) -->
-  <test thread-count="5" name="Two_Factor_Authentication(failed)">
-    <classes>
-      <class name="Factile_Mode_v3.TwoFactorAuthentication">
-        <methods>
           <include name="initilize"/>
-          <include name="close"/>
-          <include name="Two_Factor_Authentication"/>
+          <include name="SignUP_Verify"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.TwoFactorAuthentication -->
+      </class> <!-- Factile_Mode_v3.Sign_UP -->
     </classes>
-  </test> <!-- Two_Factor_Authentication(failed) -->
-  <test thread-count="5" name="404 Page Not Found link at Home Page(failed)">
-    <classes>
-      <class name="Factile_Mode_v3.PageNotFound_Links_at_HomePage">
-        <methods>
-          <include name="initilize"/>
-          <include name="PageNotFoundLinksAtHomePage"/>
-          <include name="close"/>
-        </methods>
-      </class> <!-- Factile_Mode_v3.PageNotFound_Links_at_HomePage -->
-    </classes>
-  </test> <!-- 404 Page Not Found link at Home Page(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

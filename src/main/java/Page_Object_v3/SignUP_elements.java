@@ -62,7 +62,7 @@ public WebDriver driver;
 	}
 			
 			
-	@FindBy(xpath="//span[@class='userEmail']")
+	@FindBy(xpath="//span[@class='font-bold navbar-text']")
 	WebElement getemailFromAccountPage;
 	public WebElement getemailFromAccountPage()
 	{

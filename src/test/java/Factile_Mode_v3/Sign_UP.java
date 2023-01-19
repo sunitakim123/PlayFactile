@@ -60,6 +60,7 @@ public class Sign_UP extends Base{
 		Thread.sleep(4000);
 		System.out.println(driver.getCurrentUrl());
 		driver.navigate().refresh();
+		
 		String GmailAfterLogin=sobj.getemailFromAccountPage().getText();
 		assertEquals(GmailAfterLogin, Newgmailidsent);
 		Thread.sleep(4000);

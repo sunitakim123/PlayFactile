@@ -1,25 +1,205 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-26T18:04:02 IST" name="Suite" finished-at="2022-10-26T18:05:52 IST" duration-ms="109934">
+  <suite started-at="2023-01-19T13:51:44 IST" name="Suite" finished-at="2023-01-19T14:01:12 IST" duration-ms="567768">
     <groups>
     </groups>
-    <test started-at="2022-10-26T18:04:02 IST" name="Numbers of game allowed to create in free account" finished-at="2022-10-26T18:05:52 IST" duration-ms="109934">
+    <test started-at="2023-01-19T13:51:44 IST" name="Numbers of game allowed to create in free account" finished-at="2023-01-19T13:53:32 IST" duration-ms="107901">
       <class name="Factile_Mode_v3.NoOfGameAllowedToCreate_IN_FreeAccount">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.NoOfGameAllowedToCreate_IN_FreeAccount@72efb5c1]" started-at="2022-10-26T18:04:02 IST" name="initilize" finished-at="2022-10-26T18:04:09 IST" duration-ms="6193" status="PASS">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.NoOfGameAllowedToCreate_IN_FreeAccount@2970a5bc]" started-at="2023-01-19T13:51:44 IST" name="initilize" finished-at="2023-01-19T13:51:52 IST" duration-ms="8280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="NoOfGamesCreationInFreeAccount_Verify()[pri:0, instance:Factile_Mode_v3.NoOfGameAllowedToCreate_IN_FreeAccount@72efb5c1]" started-at="2022-10-26T18:04:09 IST" name="NoOfGamesCreationInFreeAccount_Verify" finished-at="2022-10-26T18:05:51 IST" duration-ms="102859" status="PASS">
+        <test-method signature="NoOfGamesCreationInFreeAccount_Verify()[pri:0, instance:Factile_Mode_v3.NoOfGameAllowedToCreate_IN_FreeAccount@2970a5bc]" started-at="2023-01-19T13:51:52 IST" name="NoOfGamesCreationInFreeAccount_Verify" finished-at="2023-01-19T13:53:32 IST" duration-ms="99338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NoOfGamesCreationInFreeAccount_Verify -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.NoOfGameAllowedToCreate_IN_FreeAccount@72efb5c1]" started-at="2022-10-26T18:05:51 IST" name="close" finished-at="2022-10-26T18:05:52 IST" duration-ms="770" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.NoOfGameAllowedToCreate_IN_FreeAccount@2970a5bc]" started-at="2023-01-19T13:53:32 IST" name="close" finished-at="2023-01-19T13:53:32 IST" duration-ms="228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- Factile_Mode_v3.NoOfGameAllowedToCreate_IN_FreeAccount -->
     </test> <!-- Numbers of game allowed to create in free account -->
+    <test started-at="2023-01-19T13:53:32 IST" name="sign up" finished-at="2023-01-19T13:54:05 IST" duration-ms="32690">
+      <class name="Factile_Mode_v3.Sign_UP">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.Sign_UP@6c4f9535]" started-at="2023-01-19T13:53:32 IST" name="initilize" finished-at="2023-01-19T13:53:39 IST" duration-ms="6762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="SignUP_Verify()[pri:1, instance:Factile_Mode_v3.Sign_UP@6c4f9535]" started-at="2023-01-19T13:53:39 IST" name="SignUP_Verify" finished-at="2023-01-19T13:53:54 IST" duration-ms="14927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUP_Verify -->
+        <test-method signature="delete_Account()[pri:2, instance:Factile_Mode_v3.Sign_UP@6c4f9535]" started-at="2023-01-19T13:53:54 IST" name="delete_Account" finished-at="2023-01-19T13:54:05 IST" duration-ms="10729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete_Account -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.Sign_UP@6c4f9535]" started-at="2023-01-19T13:54:05 IST" name="close" finished-at="2023-01-19T13:54:05 IST" duration-ms="254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Factile_Mode_v3.Sign_UP -->
+    </test> <!-- sign up -->
+    <test started-at="2023-01-19T13:54:05 IST" name="Log in" finished-at="2023-01-19T13:54:13 IST" duration-ms="7891">
+      <class name="Factile_Mode_v3.Log_In">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.Log_In@70e659aa]" started-at="2023-01-19T13:54:05 IST" name="initilize" finished-at="2023-01-19T13:54:10 IST" duration-ms="4930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="Log_in()[pri:0, instance:Factile_Mode_v3.Log_In@70e659aa]" started-at="2023-01-19T13:54:10 IST" name="Log_in" finished-at="2023-01-19T13:54:13 IST" duration-ms="2760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Log_in -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.Log_In@70e659aa]" started-at="2023-01-19T13:54:13 IST" name="close" finished-at="2023-01-19T13:54:13 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Factile_Mode_v3.Log_In -->
+    </test> <!-- Log in -->
+    <test started-at="2023-01-19T13:54:13 IST" name="sign out" finished-at="2023-01-19T13:54:29 IST" duration-ms="16302">
+      <class name="Factile_Mode_v3.Sign_Out">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.Sign_Out@66238be2]" started-at="2023-01-19T13:54:13 IST" name="initilize" finished-at="2023-01-19T13:54:18 IST" duration-ms="5015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="Sign_Out()[pri:0, instance:Factile_Mode_v3.Sign_Out@66238be2]" started-at="2023-01-19T13:54:18 IST" name="Sign_Out" finished-at="2023-01-19T13:54:29 IST" duration-ms="11089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Sign_Out -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.Sign_Out@66238be2]" started-at="2023-01-19T13:54:29 IST" name="close" finished-at="2023-01-19T13:54:29 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Factile_Mode_v3.Sign_Out -->
+    </test> <!-- sign out -->
+    <test started-at="2023-01-19T13:54:29 IST" name="Forget Password" finished-at="2023-01-19T13:55:11 IST" duration-ms="41410">
+      <class name="Factile_Mode_v3.ForgetPassword">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.ForgetPassword@1e11bc55]" started-at="2023-01-19T13:54:29 IST" name="initilize" finished-at="2023-01-19T13:54:36 IST" duration-ms="6386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="Forget_Password()[pri:0, instance:Factile_Mode_v3.ForgetPassword@1e11bc55]" started-at="2023-01-19T13:54:36 IST" name="Forget_Password" finished-at="2023-01-19T13:55:10 IST" duration-ms="34705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Forget_Password -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.ForgetPassword@1e11bc55]" started-at="2023-01-19T13:55:10 IST" name="close" finished-at="2023-01-19T13:55:11 IST" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Factile_Mode_v3.ForgetPassword -->
+    </test> <!-- Forget Password -->
+    <test started-at="2023-01-19T13:55:11 IST" name="Two_Factor_Authentication" finished-at="2023-01-19T13:55:55 IST" duration-ms="44199">
+      <class name="Factile_Mode_v3.TwoFactorAuthentication">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.TwoFactorAuthentication@600b0b7]" started-at="2023-01-19T13:55:11 IST" name="initilize" finished-at="2023-01-19T13:55:16 IST" duration-ms="5686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="Two_Factor_Authentication()[pri:0, instance:Factile_Mode_v3.TwoFactorAuthentication@600b0b7]" started-at="2023-01-19T13:55:16 IST" name="Two_Factor_Authentication" finished-at="2023-01-19T13:55:55 IST" duration-ms="38506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Two_Factor_Authentication -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.TwoFactorAuthentication@600b0b7]" started-at="2023-01-19T13:55:55 IST" name="close" finished-at="2023-01-19T13:55:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Factile_Mode_v3.TwoFactorAuthentication -->
+    </test> <!-- Two_Factor_Authentication -->
+    <test started-at="2023-01-19T13:55:55 IST" name="change password" finished-at="2023-01-19T13:56:13 IST" duration-ms="17560">
+      <class name="Factile_Mode_v3.ChangePassword">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.ChangePassword@425357dd]" started-at="2023-01-19T13:55:55 IST" name="initilize" finished-at="2023-01-19T13:56:00 IST" duration-ms="5495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="ChangePassword()[pri:0, instance:Factile_Mode_v3.ChangePassword@425357dd]" started-at="2023-01-19T13:56:00 IST" name="ChangePassword" finished-at="2023-01-19T13:56:12 IST" duration-ms="11840" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChangePassword -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.ChangePassword@425357dd]" started-at="2023-01-19T13:56:12 IST" name="close" finished-at="2023-01-19T13:56:13 IST" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Factile_Mode_v3.ChangePassword -->
+    </test> <!-- change password -->
+    <test started-at="2023-01-19T13:56:13 IST" name="support form" finished-at="2023-01-19T13:56:34 IST" duration-ms="21127">
+      <class name="Factile_Mode_v3.Support_Form">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.Support_Form@372b0d86]" started-at="2023-01-19T13:56:13 IST" name="initilize" finished-at="2023-01-19T13:56:18 IST" duration-ms="5851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="Support_Form_Verify()[pri:0, instance:Factile_Mode_v3.Support_Form@372b0d86]" started-at="2023-01-19T13:56:18 IST" name="Support_Form_Verify" finished-at="2023-01-19T13:56:33 IST" duration-ms="15033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Support_Form_Verify -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.Support_Form@372b0d86]" started-at="2023-01-19T13:56:33 IST" name="close" finished-at="2023-01-19T13:56:34 IST" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Factile_Mode_v3.Support_Form -->
+    </test> <!-- support form -->
+    <test started-at="2023-01-19T13:56:34 IST" name="delete Account" finished-at="2023-01-19T13:57:06 IST" duration-ms="32431">
+      <class name="Factile_Mode_v3.DeleteAccount">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.DeleteAccount@7db0565c]" started-at="2023-01-19T13:56:34 IST" name="initilize" finished-at="2023-01-19T13:56:40 IST" duration-ms="6053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="DeleteAccount()[pri:0, instance:Factile_Mode_v3.DeleteAccount@7db0565c]" started-at="2023-01-19T13:56:40 IST" name="DeleteAccount" finished-at="2023-01-19T13:57:06 IST" duration-ms="26180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteAccount -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.DeleteAccount@7db0565c]" started-at="2023-01-19T13:57:06 IST" name="close" finished-at="2023-01-19T13:57:06 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Factile_Mode_v3.DeleteAccount -->
+    </test> <!-- delete Account -->
+    <test started-at="2023-01-19T13:57:06 IST" name="menus in free account inside header" finished-at="2023-01-19T13:57:15 IST" duration-ms="9189">
+      <class name="Factile_Mode_v3.HeaderMenuInFreeAccount">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.HeaderMenuInFreeAccount@6cc0bcf6]" started-at="2023-01-19T13:57:06 IST" name="initilize" finished-at="2023-01-19T13:57:11 IST" duration-ms="4682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="Fetching_Header_menus_From_Paid_Account()[pri:0, instance:Factile_Mode_v3.HeaderMenuInFreeAccount@6cc0bcf6]" started-at="2023-01-19T13:57:11 IST" name="Fetching_Header_menus_From_Paid_Account" finished-at="2023-01-19T13:57:15 IST" duration-ms="4315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Fetching_Header_menus_From_Paid_Account -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.HeaderMenuInFreeAccount@6cc0bcf6]" started-at="2023-01-19T13:57:15 IST" name="close" finished-at="2023-01-19T13:57:15 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Factile_Mode_v3.HeaderMenuInFreeAccount -->
+    </test> <!-- menus in free account inside header -->
+    <test started-at="2023-01-19T13:57:15 IST" name="menus in paid account inside header" finished-at="2023-01-19T13:57:28 IST" duration-ms="12480">
+      <class name="Factile_Mode_v3.HeaderMenuInPaidAccount">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.HeaderMenuInPaidAccount@344561e0]" started-at="2023-01-19T13:57:15 IST" name="initilize" finished-at="2023-01-19T13:57:22 IST" duration-ms="6465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="Fetching_Header_menu_From_FreeAccount()[pri:0, instance:Factile_Mode_v3.HeaderMenuInPaidAccount@344561e0]" started-at="2023-01-19T13:57:22 IST" name="Fetching_Header_menu_From_FreeAccount" finished-at="2023-01-19T13:57:28 IST" duration-ms="5811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Fetching_Header_menu_From_FreeAccount -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.HeaderMenuInPaidAccount@344561e0]" started-at="2023-01-19T13:57:28 IST" name="close" finished-at="2023-01-19T13:57:28 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Factile_Mode_v3.HeaderMenuInPaidAccount -->
+    </test> <!-- menus in paid account inside header -->
+    <test started-at="2023-01-19T13:57:28 IST" name="404 Page Not Found link at Home Page" finished-at="2023-01-19T14:01:12 IST" duration-ms="224009">
+      <class name="Factile_Mode_v3.PageNotFound_Links_at_HomePage">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.PageNotFound_Links_at_HomePage@781e7326]" started-at="2023-01-19T13:57:28 IST" name="initilize" finished-at="2023-01-19T13:57:34 IST" duration-ms="5932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilize -->
+        <test-method signature="PageNotFoundLinksAtHomePage()[pri:0, instance:Factile_Mode_v3.PageNotFound_Links_at_HomePage@781e7326]" started-at="2023-01-19T13:57:34 IST" name="PageNotFoundLinksAtHomePage" finished-at="2023-01-19T14:01:12 IST" duration-ms="217697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageNotFoundLinksAtHomePage -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Factile_Mode_v3.PageNotFound_Links_at_HomePage@781e7326]" started-at="2023-01-19T14:01:12 IST" name="close" finished-at="2023-01-19T14:01:12 IST" duration-ms="378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Factile_Mode_v3.PageNotFound_Links_at_HomePage -->
+    </test> <!-- 404 Page Not Found link at Home Page -->
   </suite> <!-- Suite -->
 </testng-results>
