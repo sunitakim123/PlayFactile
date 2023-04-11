@@ -4,3 +4,7 @@
 14:33:41.817 [main] INFO  Factile_Mode_v3.Log_In - Navigated to homePage
 14:35:49.687 [main] INFO  Factile_Mode_v3.Log_In - Driver is Initilize
 14:35:52.105 [main] INFO  Factile_Mode_v3.Log_In - Navigated to homePage
+15:43:01.420 [main] INFO  Factile_Mode_v3.DisplayAnswerButtonChecked - Driver is Initilize
+15:43:04.186 [main] INFO  Factile_Mode_v3.DisplayAnswerButtonChecked - Navigated to homePage
+15:43:15.063 [main] INFO  Factile_Mode_v3.DisplayAnswerButtonChecked - At customization page>> Checked Display Answer Button >> 
+15:44:09.941 [main] INFO  Factile_Mode_v3.DisplayAnswerButtonChecked - Display Answer Button>> When Checked
