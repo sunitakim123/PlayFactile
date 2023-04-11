@@ -50,6 +50,7 @@ public class Log_In extends Base{
 		lobj1.getenterEmail().sendKeys(prop.getProperty("username"));
 		lobj1.getenterPwd().sendKeys(prop.getProperty("pwd"));
 		lobj1.getlogin().click();
+		Log.info("Log in working fine");
 	}
 	@AfterTest
 	public void close()
