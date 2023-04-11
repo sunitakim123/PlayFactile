@@ -14,10 +14,10 @@ public class Log_in_Elements {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-		
+
 	
 
-	@FindBy(xpath="//a[@class='yellowSignUpButtonOutline']")
+	@FindBy(xpath="//a[text()='Sign In']")
 	
 	WebElement clickOnLog_in_home;
 	public WebElement Log_in_button()

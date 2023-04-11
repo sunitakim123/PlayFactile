@@ -1,51 +1,6 @@
-13:30:44.557 [main] INFO  Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify - Navigated to homePage
-13:31:24.947 [main] INFO  Factile_Mode_v3.GoProToSubscriptionBussinessYearlyData_Verify - Driver is Initilize
-13:31:29.138 [main] INFO  Factile_Mode_v3.GoProToSubscriptionBussinessYearlyData_Verify - Navigated to homePage
-13:32:02.644 [main] INFO  Factile_Mode_v3.Sign_UP - Driver is Initilize
-13:32:06.333 [main] INFO  Factile_Mode_v3.Sign_UP - Navigated to homePage
-13:32:28.162 [main] INFO  Factile_Mode_v3.Log_In - Driver is Initilize
-13:32:32.103 [main] INFO  Factile_Mode_v3.Log_In - Navigated to homePage
-13:32:34.553 [main] INFO  Factile_Mode_v3.Sign_Out - Driver is Initilize
-13:32:38.229 [main] INFO  Factile_Mode_v3.Sign_Out - Navigated to homePage
-13:32:49.816 [main] INFO  Factile_Mode_v3.ForgetPassword - Driver is Initilize
-13:32:54.485 [main] INFO  Factile_Mode_v3.ForgetPassword - Navigated to homePage
-13:33:22.173 [main] INFO  Factile_Mode_v3.TwoFactorAuthentication - Driver is Initilize
-13:33:26.322 [main] INFO  Factile_Mode_v3.TwoFactorAuthentication - Navigated to homePage
-13:34:05.563 [main] INFO  Factile_Mode_v3.ChangePassword - Driver is Initilize
-13:34:09.657 [main] INFO  Factile_Mode_v3.ChangePassword - Navigated to homePage
-13:34:23.263 [main] INFO  Factile_Mode_v3.Support_Form - Driver is Initilize
-13:34:27.097 [main] INFO  Factile_Mode_v3.Support_Form - Navigated to homePage
-13:34:43.065 [main] INFO  Factile_Mode_v3.DeleteAccount - Driver is Initilize
-13:34:47.647 [main] INFO  Factile_Mode_v3.DeleteAccount - Navigated to homePage
-13:35:15.108 [main] INFO  Factile_Mode_v3.HeaderMenuInFreeAccount - Driver is Initilize
-13:35:18.759 [main] INFO  Factile_Mode_v3.HeaderMenuInFreeAccount - Navigated to homePage
-13:35:24.562 [main] INFO  Factile_Mode_v3.HeaderMenuInPaidAccount - Driver is Initilize
-13:35:29.108 [main] INFO  Factile_Mode_v3.HeaderMenuInPaidAccount - Navigated to homePage
-13:35:34.106 [main] INFO  Factile_Mode_v3.PageNotFound_Links_at_HomePage - Driver is Initilize
-13:35:38.414 [main] INFO  Factile_Mode_v3.PageNotFound_Links_at_HomePage - Navigated to homePage
-13:42:16.686 [main] INFO  Factile_Mode_v3.DisplayAnswerButtonChecked - Driver is Initilize
-13:42:21.008 [main] INFO  Factile_Mode_v3.DisplayAnswerButtonChecked - Navigated to homePage
-13:42:30.879 [main] INFO  Factile_Mode_v3.DisplayAnswerButtonChecked - At customization page>> Checked Display Answer Button >> 
-13:44:17.534 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Driver is Initilize
-13:44:21.591 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Navigated to homePage
-13:44:32.491 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - At customization page>> Checked Display Exact Case >> 
-13:46:18.234 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Driver is Initilize
-13:46:22.829 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Navigated to homePage
-13:46:33.643 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - At customization page>> Checked Display Exact Case >> 
-13:47:27.448 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Display Exact Case>> When Checked
-13:47:34.882 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - Driver is Initilize
-13:47:39.176 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - Navigated to homePage
-13:47:49.973 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - At customization page>> Checked Display Exact Case >> 
-13:48:59.220 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - Display question on GameBoard>> When Checked
-13:49:06.497 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - Driver is Initilize
-13:49:10.982 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - Navigated to homePage
-13:49:21.763 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - At customization page>> Checked Display Exact Case >> 
-13:50:30.024 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - Display question on GameBoard>> When UnChecked
-13:50:37.404 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - Driver is Initilize
-13:50:41.817 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - Navigated to homePage
-13:50:51.606 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - At customization page>> Check Hide Category with Points>> 
-13:51:45.325 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - Hide category with points is working fine>> When Checked
-13:51:52.642 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnchecked - Driver is Initilize
-13:51:57.025 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnchecked - Navigated to homePage
-13:52:07.782 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnchecked - At customization page>> Check Hide Category with Points>> 
-13:53:00.801 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnchecked - Hide category with points is working fine>>When UnChecked
+14:31:24.854 [main] INFO  Factile_Mode_v3.Log_In - Driver is Initilize
+14:31:26.163 [main] INFO  Factile_Mode_v3.Log_In - Navigated to homePage
+14:33:39.546 [main] INFO  Factile_Mode_v3.Log_In - Driver is Initilize
+14:33:41.817 [main] INFO  Factile_Mode_v3.Log_In - Navigated to homePage
+14:35:49.687 [main] INFO  Factile_Mode_v3.Log_In - Driver is Initilize
+14:35:52.105 [main] INFO  Factile_Mode_v3.Log_In - Navigated to homePage
