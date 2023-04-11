@@ -94,18 +94,18 @@ public class DGBP_HSB_TestCase_9 extends Base {
 
 	public void modeaterscreen() throws InterruptedException {
 		driver.findElement(By.id("customize")).click();
-		Thread.sleep(3000);
-
+		Thread.sleep(2000);
+		System.out.println(driver.findElement(By.xpath("//label[text()='categoryAndPoint']")).getText());
 		// checking the exact case at player screen on gameboard
-		if (driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='categoryAndPoint']"))
+		if (driver.findElement(By.xpath("//label[text()='categoryAndPoint']"))
 				.isSelected()) {
 			System.out.println("nothing to do");
 		} else {
-			act = new Actions(driver);
+			/*act = new Actions(driver);
 			act.moveToElement(
-					driver.findElement(By.xpath("//div[@id='gameSettingSection']//input[@id='categoryAndPoint']")))
-					.click().perform();
-			;
+					driver.findElement(By.xpath("//label[text()='categoryAndPoint']")))
+					.click().perform(); */
+			driver.findElement(By.xpath("//label[text()='categoryAndPoint']")).click();
 
 		}
 		Log.info("At customization page>> Check Hide Category with Points>> ");

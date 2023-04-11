@@ -88,7 +88,7 @@ public class GoProToSubscriptionHomeSchoolMonthlyData_Verify extends Base {
 		driver.findElement(By.xpath("//input[@id='cardNumber']")).sendKeys("5454545454545454");
 
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='cardExpiry']")));
-		driver.findElement(By.xpath("//input[@id='cardExpiry']")).sendKeys("1222");
+		driver.findElement(By.xpath("//input[@id='cardExpiry']")).sendKeys("1226");
 
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='cardCvc']")));
 		driver.findElement(By.xpath("//input[@id='cardCvc']")).sendKeys("111");

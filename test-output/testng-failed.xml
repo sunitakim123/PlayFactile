@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Factile_Mode_v3.Sign_UP">
+      <class name="Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked">
         <methods>
-          <include name="close"/>
+          <include name="Display_Question_On_GameBoardTie_When_checked_At_Global_Settings"/>
           <include name="initilize"/>
-          <include name="SignUP_Verify"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.Sign_UP -->
+      </class> <!-- Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

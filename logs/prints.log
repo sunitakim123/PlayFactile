@@ -1,19 +1,24 @@
-13:54:10.465 [main] INFO  Factile_Mode_v3.Log_In - Navigated to homePage
-13:54:14.137 [main] INFO  Factile_Mode_v3.Sign_Out - Driver is Initilize
-13:54:18.476 [main] INFO  Factile_Mode_v3.Sign_Out - Navigated to homePage
-13:54:30.483 [main] INFO  Factile_Mode_v3.ForgetPassword - Driver is Initilize
-13:54:36.183 [main] INFO  Factile_Mode_v3.ForgetPassword - Navigated to homePage
-13:55:12.072 [main] INFO  Factile_Mode_v3.TwoFactorAuthentication - Driver is Initilize
-13:55:16.925 [main] INFO  Factile_Mode_v3.TwoFactorAuthentication - Navigated to homePage
-13:55:56.152 [main] INFO  Factile_Mode_v3.ChangePassword - Driver is Initilize
-13:56:00.978 [main] INFO  Factile_Mode_v3.ChangePassword - Navigated to homePage
-13:56:13.858 [main] INFO  Factile_Mode_v3.Support_Form - Driver is Initilize
-13:56:18.930 [main] INFO  Factile_Mode_v3.Support_Form - Navigated to homePage
-13:56:34.925 [main] INFO  Factile_Mode_v3.DeleteAccount - Driver is Initilize
-13:56:40.292 [main] INFO  Factile_Mode_v3.DeleteAccount - Navigated to homePage
-13:57:07.362 [main] INFO  Factile_Mode_v3.HeaderMenuInFreeAccount - Driver is Initilize
-13:57:11.384 [main] INFO  Factile_Mode_v3.HeaderMenuInFreeAccount - Navigated to homePage
-13:57:16.667 [main] INFO  Factile_Mode_v3.HeaderMenuInPaidAccount - Driver is Initilize
-13:57:22.382 [main] INFO  Factile_Mode_v3.HeaderMenuInPaidAccount - Navigated to homePage
-13:57:29.111 [main] INFO  Factile_Mode_v3.PageNotFound_Links_at_HomePage - Driver is Initilize
-13:57:34.351 [main] INFO  Factile_Mode_v3.PageNotFound_Links_at_HomePage - Navigated to homePage
+11:56:01.589 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Driver is Initilize
+11:56:05.772 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Navigated to homePage
+11:56:16.911 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - At customization page>> Checked Display Exact Case >> 
+11:57:09.952 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Display Exact Case>> When Checked
+11:57:17.357 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Driver is Initilize
+11:57:21.754 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Navigated to homePage
+11:57:32.586 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - At customization page>> Checked Display Exact Case >> 
+11:58:26.019 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Display Exact Case>> When Checked
+11:58:33.580 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - Driver is Initilize
+11:58:38.031 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - Navigated to homePage
+11:58:48.829 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - At customization page>> Checked Display Exact Case >> 
+11:59:58.207 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - Display question on GameBoard>> When Checked
+12:00:05.764 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - Driver is Initilize
+12:00:10.307 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - Navigated to homePage
+12:00:21.531 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - At customization page>> Checked Display Exact Case >> 
+12:01:29.680 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - Display question on GameBoard>> When UnChecked
+12:01:37.049 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - Driver is Initilize
+12:01:41.372 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - Navigated to homePage
+12:01:52.131 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - At customization page>> Check Hide Category with Points>> 
+12:02:45.972 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - Hide category with points is working fine>> When Checked
+12:02:53.518 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnchecked - Driver is Initilize
+12:02:57.715 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnchecked - Navigated to homePage
+12:03:08.546 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnchecked - At customization page>> Check Hide Category with Points>> 
+12:04:02.235 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnchecked - Hide category with points is working fine>>When UnChecked

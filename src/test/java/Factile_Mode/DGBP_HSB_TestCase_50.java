@@ -386,6 +386,7 @@ public class DGBP_HSB_TestCase_50 extends Base {
 
 			String acutalscoredpoints1=	driver1.findElement(By.xpath("(//td[@class='text-info'])[1]")).getText();
 			int acutalpoints1=Integer.parseInt(acutalscoredpoints1);
+			
 				Assert.assertEquals(expectedValue, acutalpoints1);
 				
 				

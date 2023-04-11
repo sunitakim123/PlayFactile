@@ -34,7 +34,7 @@ public class Base {
 
 		if (browserName.equals("chrome")) {
 			String osName = System.getProperty("os.name");
-			if (osName.equals("Windows 10")) {
+			if (osName.equals("Windows 11")) {
 
 				System.setProperty("webdriver.chrome.driver",
 				System.getProperty("user.dir") + "\\src\\main\\java\\Drivers\\chromedriver.exe");
