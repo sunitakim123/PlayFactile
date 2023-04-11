@@ -4,15 +4,26 @@
   <listeners>
     <listener class-name="Factile_Mode_v3.Listeners2"/>
   </listeners>
-  <test thread-count="5" name="Forget Password(failed)">
+  <test thread-count="5" name="Display Answer Button(failed)">
     <classes>
-      <class name="Factile_Mode_v3.ForgetPassword">
+      <class name="Factile_Mode_v3.DisplayAnswerButtonChecked">
         <methods>
           <include name="initilize"/>
-          <include name="close"/>
-          <include name="Forget_Password"/>
+          <include name="Display_Answer_Button_When_checked_At_Global_Settings"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.ForgetPassword -->
+      </class> <!-- Factile_Mode_v3.DisplayAnswerButtonChecked -->
     </classes>
-  </test> <!-- Forget Password(failed) -->
+  </test> <!-- Display Answer Button(failed) -->
+  <test thread-count="5" name="Display Exact Case When Checked(failed)">
+    <classes>
+      <class name="Factile_Mode_v3.DisplayExactCaseChecked">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initilize"/>
+          <include name="Display_Exact_Case_When_checked_At_Global_Settings"/>
+        </methods>
+      </class> <!-- Factile_Mode_v3.DisplayExactCaseChecked -->
+    </classes>
+  </test> <!-- Display Exact Case When Checked(failed) -->
 </suite> <!-- Failed suite [Suite] -->
