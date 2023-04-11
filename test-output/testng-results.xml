@@ -1,121 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-11T11:54:38 IST" name="Suite" finished-at="2023-04-11T12:04:05 IST" duration-ms="567884">
+  <suite started-at="2023-04-11T13:07:02 IST" name="Default suite" finished-at="2023-04-11T13:08:18 IST" duration-ms="76014">
     <groups>
     </groups>
-    <test started-at="2023-04-11T11:54:38 IST" name="Display Answer Button" finished-at="2023-04-11T11:55:57 IST" duration-ms="79455">
-      <class name="Factile_Mode_v3.DisplayAnswerButtonChecked">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.DisplayAnswerButtonChecked@72efb5c1]" started-at="2023-04-11T11:54:38 IST" name="initilize" finished-at="2023-04-11T11:54:47 IST" duration-ms="9005" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initilize -->
-        <test-method signature="Display_Answer_Button_When_checked_At_Global_Settings()[pri:0, instance:Factile_Mode_v3.DisplayAnswerButtonChecked@72efb5c1]" started-at="2023-04-11T11:54:47 IST" name="Display_Answer_Button_When_checked_At_Global_Settings" finished-at="2023-04-11T11:55:53 IST" duration-ms="66831" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Display_Answer_Button_When_checked_At_Global_Settings -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode_v3.DisplayAnswerButtonChecked@72efb5c1]" started-at="2023-04-11T11:55:53 IST" name="tearDown" finished-at="2023-04-11T11:55:57 IST" duration-ms="3554" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Factile_Mode_v3.DisplayAnswerButtonChecked -->
-    </test> <!-- Display Answer Button -->
-    <test started-at="2023-04-11T11:55:57 IST" name="Display Exact Case When Checked" finished-at="2023-04-11T11:57:13 IST" duration-ms="75629">
-      <class name="Factile_Mode_v3.DisplayExactCaseChecked">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.DisplayExactCaseChecked@30c31dd7]" started-at="2023-04-11T11:55:57 IST" name="initilize" finished-at="2023-04-11T11:56:05 IST" duration-ms="7905" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initilize -->
-        <test-method signature="Display_Exact_Case_When_checked_At_Global_Settings()[pri:0, instance:Factile_Mode_v3.DisplayExactCaseChecked@30c31dd7]" started-at="2023-04-11T11:56:05 IST" name="Display_Exact_Case_When_checked_At_Global_Settings" finished-at="2023-04-11T11:57:09 IST" duration-ms="64179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Display_Exact_Case_When_checked_At_Global_Settings -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode_v3.DisplayExactCaseChecked@30c31dd7]" started-at="2023-04-11T11:57:09 IST" name="tearDown" finished-at="2023-04-11T11:57:13 IST" duration-ms="3537" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Factile_Mode_v3.DisplayExactCaseChecked -->
-    </test> <!-- Display Exact Case When Checked -->
-    <test started-at="2023-04-11T11:57:13 IST" name="Display Exact Case When UNChecked" finished-at="2023-04-11T11:58:29 IST" duration-ms="76087">
-      <class name="Factile_Mode_v3.DisplayExactCaseUnChecked">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.DisplayExactCaseUnChecked@615f972]" started-at="2023-04-11T11:57:13 IST" name="initilize" finished-at="2023-04-11T11:57:21 IST" duration-ms="8165" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initilize -->
-        <test-method signature="Display_Exact_Case_When_checked_At_Global_Settings()[pri:0, instance:Factile_Mode_v3.DisplayExactCaseUnChecked@615f972]" started-at="2023-04-11T11:57:21 IST" name="Display_Exact_Case_When_checked_At_Global_Settings" finished-at="2023-04-11T11:58:26 IST" duration-ms="64264" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Display_Exact_Case_When_checked_At_Global_Settings -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode_v3.DisplayExactCaseUnChecked@615f972]" started-at="2023-04-11T11:58:26 IST" name="tearDown" finished-at="2023-04-11T11:58:29 IST" duration-ms="3649" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Factile_Mode_v3.DisplayExactCaseUnChecked -->
-    </test> <!-- Display Exact Case When UNChecked -->
-    <test started-at="2023-04-11T11:58:29 IST" name="Display Question On GameBoard &gt;&gt; When Checked" finished-at="2023-04-11T12:00:01 IST" duration-ms="92158">
-      <class name="Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked@1c25b8a7]" started-at="2023-04-11T11:58:29 IST" name="initilize" finished-at="2023-04-11T11:58:38 IST" duration-ms="8259" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initilize -->
-        <test-method signature="Display_Question_On_GameBoardTie_When_checked_At_Global_Settings()[pri:0, instance:Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked@1c25b8a7]" started-at="2023-04-11T11:58:38 IST" name="Display_Question_On_GameBoardTie_When_checked_At_Global_Settings" finished-at="2023-04-11T11:59:58 IST" duration-ms="80176" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Display_Question_On_GameBoardTie_When_checked_At_Global_Settings -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked@1c25b8a7]" started-at="2023-04-11T11:59:58 IST" name="tearDown" finished-at="2023-04-11T12:00:01 IST" duration-ms="3716" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked -->
-    </test> <!-- Display Question On GameBoard >> When Checked -->
-    <test started-at="2023-04-11T12:00:02 IST" name="Display Question On GameBoard &gt;&gt; When UNChecked" finished-at="2023-04-11T12:01:33 IST" duration-ms="91288">
-      <class name="Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked@1e11bc55]" started-at="2023-04-11T12:00:02 IST" name="initilize" finished-at="2023-04-11T12:00:10 IST" duration-ms="8299" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initilize -->
-        <test-method signature="Display_Question_On_GameBoardTie_When_checked_At_Global_Settings()[pri:0, instance:Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked@1e11bc55]" started-at="2023-04-11T12:00:10 IST" name="Display_Question_On_GameBoardTie_When_checked_At_Global_Settings" finished-at="2023-04-11T12:01:29 IST" duration-ms="79371" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Display_Question_On_GameBoardTie_When_checked_At_Global_Settings -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked@1e11bc55]" started-at="2023-04-11T12:01:29 IST" name="tearDown" finished-at="2023-04-11T12:01:33 IST" duration-ms="3605" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked -->
-    </test> <!-- Display Question On GameBoard >> When UNChecked -->
-    <test started-at="2023-04-11T12:01:33 IST" name="Hide Category With Points &gt;&gt; When Checked" finished-at="2023-04-11T12:02:49 IST" duration-ms="76296">
+    <test started-at="2023-04-11T13:07:02 IST" name="Default test" finished-at="2023-04-11T13:08:18 IST" duration-ms="76014">
       <class name="Factile_Mode_v3.HideCategoryWithPointsChecked">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.HideCategoryWithPointsChecked@600b0b7]" started-at="2023-04-11T12:01:33 IST" name="initilize" finished-at="2023-04-11T12:01:41 IST" duration-ms="8011" status="PASS">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.HideCategoryWithPointsChecked@7b324585]" started-at="2023-04-11T13:07:02 IST" name="initilize" finished-at="2023-04-11T13:07:11 IST" duration-ms="8775" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="Hide_category_with_Points_When_checked_At_Global_Settings()[pri:0, instance:Factile_Mode_v3.HideCategoryWithPointsChecked@600b0b7]" started-at="2023-04-11T12:01:41 IST" name="Hide_category_with_Points_When_checked_At_Global_Settings" finished-at="2023-04-11T12:02:45 IST" duration-ms="64599" status="PASS">
+        <test-method signature="Hide_category_with_Points_When_checked_At_Global_Settings()[pri:0, instance:Factile_Mode_v3.HideCategoryWithPointsChecked@7b324585]" started-at="2023-04-11T13:07:11 IST" name="Hide_category_with_Points_When_checked_At_Global_Settings" finished-at="2023-04-11T13:08:15 IST" duration-ms="63558" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Hide_category_with_Points_When_checked_At_Global_Settings -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode_v3.HideCategoryWithPointsChecked@600b0b7]" started-at="2023-04-11T12:02:45 IST" name="tearDown" finished-at="2023-04-11T12:02:49 IST" duration-ms="3680" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode_v3.HideCategoryWithPointsChecked@7b324585]" started-at="2023-04-11T13:08:15 IST" name="tearDown" finished-at="2023-04-11T13:08:18 IST" duration-ms="3646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Factile_Mode_v3.HideCategoryWithPointsChecked -->
-    </test> <!-- Hide Category With Points >> When Checked -->
-    <test started-at="2023-04-11T12:02:49 IST" name="Hide Category With Points When UnChecked" finished-at="2023-04-11T12:04:05 IST" duration-ms="76234">
-      <class name="Factile_Mode_v3.HideCategoryWithPointsUnchecked">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.HideCategoryWithPointsUnchecked@5bbc9f97]" started-at="2023-04-11T12:02:49 IST" name="initilize" finished-at="2023-04-11T12:02:57 IST" duration-ms="7991" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initilize -->
-        <test-method signature="Hide_category_with_Points_When_Unchecked_At_Global_Settings()[pri:0, instance:Factile_Mode_v3.HideCategoryWithPointsUnchecked@5bbc9f97]" started-at="2023-04-11T12:02:57 IST" name="Hide_category_with_Points_When_Unchecked_At_Global_Settings" finished-at="2023-04-11T12:04:02 IST" duration-ms="64520" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Hide_category_with_Points_When_Unchecked_At_Global_Settings -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode_v3.HideCategoryWithPointsUnchecked@5bbc9f97]" started-at="2023-04-11T12:04:02 IST" name="tearDown" finished-at="2023-04-11T12:04:05 IST" duration-ms="3721" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Factile_Mode_v3.HideCategoryWithPointsUnchecked -->
-    </test> <!-- Hide Category With Points When UnChecked -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
