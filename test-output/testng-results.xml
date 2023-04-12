@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-12T13:53:29 IST" name="Default suite" finished-at="2023-04-12T13:54:45 IST" duration-ms="76189">
+  <suite started-at="2023-04-12T17:08:42 IST" name="Default suite" finished-at="2023-04-12T17:10:10 IST" duration-ms="87843">
     <groups>
     </groups>
-    <test started-at="2023-04-12T13:53:29 IST" name="Default test" finished-at="2023-04-12T13:54:45 IST" duration-ms="76189">
+    <test started-at="2023-04-12T17:08:42 IST" name="Default test" finished-at="2023-04-12T17:10:10 IST" duration-ms="87843">
       <class name="Factile_Mode_v3.HideCategoryWithPointsUnChecked">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.HideCategoryWithPointsUnChecked@7b324585]" started-at="2023-04-12T13:53:29 IST" name="initilize" finished-at="2023-04-12T13:53:42 IST" duration-ms="12443" status="PASS">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.HideCategoryWithPointsUnChecked@7b324585]" started-at="2023-04-12T17:08:42 IST" name="initilize" finished-at="2023-04-12T17:08:54 IST" duration-ms="11380" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="Hide_category_with_Points_When_checked_At_Global_Settings()[pri:0, instance:Factile_Mode_v3.HideCategoryWithPointsUnChecked@7b324585]" started-at="2023-04-12T13:53:42 IST" name="Hide_category_with_Points_When_checked_At_Global_Settings" finished-at="2023-04-12T13:54:45 IST" duration-ms="63693" status="PASS">
+        <test-method signature="Hide_category_with_Points_When_checked_At_Global_Settings()[pri:0, instance:Factile_Mode_v3.HideCategoryWithPointsUnChecked@7b324585]" started-at="2023-04-12T17:08:54 IST" name="Hide_category_with_Points_When_checked_At_Global_Settings" finished-at="2023-04-12T17:10:06 IST" duration-ms="72803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Hide_category_with_Points_When_checked_At_Global_Settings -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode_v3.HideCategoryWithPointsUnChecked@7b324585]" started-at="2023-04-12T13:54:45 IST" name="tearDown" finished-at="2023-04-12T13:54:45 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode_v3.HideCategoryWithPointsUnChecked@7b324585]" started-at="2023-04-12T17:10:06 IST" name="tearDown" finished-at="2023-04-12T17:10:10 IST" duration-ms="3617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

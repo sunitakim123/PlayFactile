@@ -42,7 +42,7 @@
 
 	<test name="Hide Category With Points When UnChecked">
 		<classes>
-			<class name="Factile_Mode_v3.HideCategoryWithPointsUnchecked" />
+			<class name="Factile_Mode_v3.HideCategoryWithPointsUnChecked" />
 		</classes>
 	</test> <!-- Test -->
 

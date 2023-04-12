@@ -15,15 +15,48 @@
       </class> <!-- Factile_Mode_v3.DisplayAnswerButtonChecked -->
     </classes>
   </test> <!-- Display Answer Button(failed) -->
-  <test thread-count="5" name="Display Exact Case When Checked(failed)">
+  <test thread-count="5" name="Display Exact Case When UNChecked(failed)">
     <classes>
-      <class name="Factile_Mode_v3.DisplayExactCaseChecked">
+      <class name="Factile_Mode_v3.DisplayExactCaseUnChecked">
         <methods>
           <include name="tearDown"/>
-          <include name="initilize"/>
           <include name="Display_Exact_Case_When_checked_At_Global_Settings"/>
+          <include name="initilize"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.DisplayExactCaseChecked -->
+      </class> <!-- Factile_Mode_v3.DisplayExactCaseUnChecked -->
     </classes>
-  </test> <!-- Display Exact Case When Checked(failed) -->
+  </test> <!-- Display Exact Case When UNChecked(failed) -->
+  <test thread-count="5" name="Display Question On GameBoard &gt;&gt; When UNChecked(failed)">
+    <classes>
+      <class name="Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked">
+        <methods>
+          <include name="initilize"/>
+          <include name="tearDown"/>
+          <include name="Display_Question_On_GameBoardTie_When_checked_At_Global_Settings"/>
+        </methods>
+      </class> <!-- Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked -->
+    </classes>
+  </test> <!-- Display Question On GameBoard >> When UNChecked(failed) -->
+  <test thread-count="5" name="Hide Category With Points &gt;&gt; When Checked(failed)">
+    <classes>
+      <class name="Factile_Mode_v3.HideCategoryWithPointsChecked">
+        <methods>
+          <include name="Hide_category_with_Points_When_checked_At_Global_Settings"/>
+          <include name="initilize"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Factile_Mode_v3.HideCategoryWithPointsChecked -->
+    </classes>
+  </test> <!-- Hide Category With Points >> When Checked(failed) -->
+  <test thread-count="5" name="Hide Category With Points When UnChecked(failed)">
+    <classes>
+      <class name="Factile_Mode_v3.HideCategoryWithPointsUnChecked">
+        <methods>
+          <include name="Hide_category_with_Points_When_checked_At_Global_Settings"/>
+          <include name="tearDown"/>
+          <include name="initilize"/>
+        </methods>
+      </class> <!-- Factile_Mode_v3.HideCategoryWithPointsUnChecked -->
+    </classes>
+  </test> <!-- Hide Category With Points When UnChecked(failed) -->
 </suite> <!-- Failed suite [Suite] -->
