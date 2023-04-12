@@ -4,10 +4,17 @@
 		<listener class-name="Factile_Mode_v3.Listeners2" />
 	</listeners>
 
- <test name="Display Answer Button">
-		<classes>
-			<class name="Factile_Mode_v3.DisplayAnswerButtonChecked" />
-		</classes>
-	</test> <!-- Test -->
+      <test name="sign up">
+    <classes>
+          <class name="Factile_Mode_v3.Sign_UP"/>
+           </classes>
+  </test> <!-- Test -->
+   
+    <test name="Log in">
+    <classes>
+          <class name="Factile_Mode_v3.Log_In"/>
+           </classes>
+  </test> <!-- Test -->
+   
 
 </suite> <!-- Suite -->
