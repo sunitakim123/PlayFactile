@@ -170,7 +170,7 @@ public class HideCategoryWithPointsChecked extends Base {
 				Thread.sleep(2000);
 				String i = driver.findElement(By.xpath("//div[@class='counter-value']")).getText();
 				System.out.println(i);// System.out.println(driver.getTitle());
-				Thread.sleep(3000);
+				Thread.sleep(4000);
 
 				driver1 = IntilizeDriver();
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);

@@ -51,7 +51,7 @@ public class DisplayExactCaseUnChecked extends Base {
 	}
 
 	@Test
-	public void Display_Exact_Case_When_checked_At_Global_Settings() throws InterruptedException, IOException {
+	public void Display_Exact_Case_When_UnChecked_At_Global_Settings() throws InterruptedException, IOException {
 		Log_in_Elements lobj1 = new Log_in_Elements(driver);
 		lobj1.Log_in_button().click();
 		lobj1.getenterEmail().sendKeys(prop.getProperty("username"));
@@ -166,7 +166,7 @@ public class DisplayExactCaseUnChecked extends Base {
 				Thread.sleep(2000);
 				String i = driver.findElement(By.xpath("//div[@class='counter-value']")).getText();
 				System.out.println(i);// System.out.println(driver.getTitle());
-				Thread.sleep(3000);
+				Thread.sleep(4000);
 
 				driver1 = IntilizeDriver();
 				driver1.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
