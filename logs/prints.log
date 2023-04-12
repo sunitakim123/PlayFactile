@@ -1,10 +1,14 @@
-14:31:24.854 [main] INFO  Factile_Mode_v3.Log_In - Driver is Initilize
-14:31:26.163 [main] INFO  Factile_Mode_v3.Log_In - Navigated to homePage
-14:33:39.546 [main] INFO  Factile_Mode_v3.Log_In - Driver is Initilize
-14:33:41.817 [main] INFO  Factile_Mode_v3.Log_In - Navigated to homePage
-14:35:49.687 [main] INFO  Factile_Mode_v3.Log_In - Driver is Initilize
-14:35:52.105 [main] INFO  Factile_Mode_v3.Log_In - Navigated to homePage
-15:43:01.420 [main] INFO  Factile_Mode_v3.DisplayAnswerButtonChecked - Driver is Initilize
-15:43:04.186 [main] INFO  Factile_Mode_v3.DisplayAnswerButtonChecked - Navigated to homePage
-15:43:15.063 [main] INFO  Factile_Mode_v3.DisplayAnswerButtonChecked - At customization page>> Checked Display Answer Button >> 
-15:44:09.941 [main] INFO  Factile_Mode_v3.DisplayAnswerButtonChecked - Display Answer Button>> When Checked
+12:36:15.927 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - At customization page>> Check Hide Category with Points>> 
+12:38:22.742 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Driver is Initilize
+12:38:26.188 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Navigated to homePage
+12:38:37.613 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - At customization page>> Check Hide Category with Points>> 
+13:47:30.373 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Driver is Initilize
+13:47:34.445 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Navigated to homePage
+13:47:45.055 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - At customization page>> Check Hide Category with Points>> 
+13:51:02.774 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Driver is Initilize
+13:51:11.851 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Navigated to homePage
+13:51:23.321 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - At customization page>> Check Hide Category with Points>> 
+13:53:34.058 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Driver is Initilize
+13:53:42.188 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Navigated to homePage
+13:53:53.751 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - At customization page>> Check Hide Category with Points>> 
+13:54:45.923 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Hide category with points is not working >>When UnChecked

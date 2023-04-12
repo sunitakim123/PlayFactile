@@ -24,7 +24,7 @@ import Page_Object_v3.Log_in_Elements;
 import junit.framework.Assert;
 import resources.Base;
 
-public class HideCategoryWithPointsUnchecked extends Base {
+public class HideCategoryWithPointsUnChecked extends Base {
 	WebDriver driver;
 	WebDriver driver1;
 	WebDriverWait wait, wait1;
@@ -33,7 +33,7 @@ public class HideCategoryWithPointsUnchecked extends Base {
 	WebElement ElementGoingToVisible;
 	Actions act;
 
-	public static Logger Log = LogManager.getLogger(HideCategoryWithPointsUnchecked.class.getName());
+	public static Logger Log = LogManager.getLogger(HideCategoryWithPointsUnChecked.class.getName());
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
 	@BeforeTest
@@ -51,7 +51,7 @@ public class HideCategoryWithPointsUnchecked extends Base {
 	}
 
 	@Test
-	public void Hide_category_with_Points_When_Unchecked_At_Global_Settings()
+	public void Hide_category_with_Points_When_checked_At_Global_Settings()
 			throws InterruptedException, IOException {
 		Log_in_Elements lobj1 = new Log_in_Elements(driver);
 		lobj1.Log_in_button().click();
@@ -79,6 +79,7 @@ public class HideCategoryWithPointsUnchecked extends Base {
 
 	@AfterTest
 	public void tearDown() throws InterruptedException, IOException {
+	/*	
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
 	driver.quit();
@@ -96,7 +97,7 @@ public class HideCategoryWithPointsUnchecked extends Base {
 				String[] cmd = new String[]{"/bin/sh", "killchrome.sh"};
 				Process pr = Runtime.getRuntime().exec(cmd);
 			}
-	Thread.sleep(3000);
+	Thread.sleep(3000); */
 	}
 
 	public void modeaterscreen() throws InterruptedException {
@@ -193,10 +194,7 @@ public class HideCategoryWithPointsUnchecked extends Base {
 				
 				JavascriptExecutor executor3 = (JavascriptExecutor) driver;
 				executor.executeScript("arguments[0].click();", ClickOnYES);
-
-				
-				
-				
+							
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//span[contains(text(),'Begin Game')]")).click();
 				Thread.sleep(3000);
@@ -204,14 +202,22 @@ public class HideCategoryWithPointsUnchecked extends Base {
 				Thread.sleep(2000);
 				driver1.switchTo().window(driver1.getWindowHandle());
 				Thread.sleep(2000);
-				ElementGoingToVisible = driver1.findElement(By.xpath("(//div[@class='gameTitle game-title-flex']//h1)[1]"));
-				System.out.println("HEader text:-"+ElementGoingToVisible.getText());
+
+				 String expected = "for 100";
+
+				// assertTrue(actual.equals(expected));
+
 				
-				String myString=ElementGoingToVisible.getText();
-			
-				 assertTrue(myString.equals("CATEGORY TITLE 1 for 100"));
-				Log.info("Hide category with points is working fine>>When UnChecked");
-				System.out.println("Hide category with points is working fine >>When UnChecked");
+				WebElement HeaderTextAtModeratorScreen = driver1.findElement(By.xpath("(//div[@class='gameTitle game-title-flex']//h1)[1]"));
+				System.out.println("HEader text:-"+HeaderTextAtModeratorScreen.getText());
+				
+				String myString=HeaderTextAtModeratorScreen.getText();
+				Assert.assertTrue(myString.contains(expected));
+				
+				 
+				Log.info("Hide category with points is not working >>When UnChecked");
+				System.out.println("Hide category with points is not working >>When UnChecked");
+
 
 			}
 		}

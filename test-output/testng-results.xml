@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-11T15:42:56 IST" name="Default suite" finished-at="2023-04-11T15:44:13 IST" duration-ms="77349">
+  <suite started-at="2023-04-12T13:53:29 IST" name="Default suite" finished-at="2023-04-12T13:54:45 IST" duration-ms="76189">
     <groups>
     </groups>
-    <test started-at="2023-04-11T15:42:56 IST" name="Default test" finished-at="2023-04-11T15:44:13 IST" duration-ms="77349">
-      <class name="Factile_Mode_v3.DisplayAnswerButtonChecked">
-        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.DisplayAnswerButtonChecked@7b324585]" started-at="2023-04-11T15:42:56 IST" name="initilize" finished-at="2023-04-11T15:43:04 IST" duration-ms="7886" status="PASS">
+    <test started-at="2023-04-12T13:53:29 IST" name="Default test" finished-at="2023-04-12T13:54:45 IST" duration-ms="76189">
+      <class name="Factile_Mode_v3.HideCategoryWithPointsUnChecked">
+        <test-method is-config="true" signature="initilize()[pri:0, instance:Factile_Mode_v3.HideCategoryWithPointsUnChecked@7b324585]" started-at="2023-04-12T13:53:29 IST" name="initilize" finished-at="2023-04-12T13:53:42 IST" duration-ms="12443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilize -->
-        <test-method signature="Display_Answer_Button_When_checked_At_Global_Settings()[pri:0, instance:Factile_Mode_v3.DisplayAnswerButtonChecked@7b324585]" started-at="2023-04-11T15:43:04 IST" name="Display_Answer_Button_When_checked_At_Global_Settings" finished-at="2023-04-11T15:44:09 IST" duration-ms="65736" status="PASS">
+        <test-method signature="Hide_category_with_Points_When_checked_At_Global_Settings()[pri:0, instance:Factile_Mode_v3.HideCategoryWithPointsUnChecked@7b324585]" started-at="2023-04-12T13:53:42 IST" name="Hide_category_with_Points_When_checked_At_Global_Settings" finished-at="2023-04-12T13:54:45 IST" duration-ms="63693" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Display_Answer_Button_When_checked_At_Global_Settings -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode_v3.DisplayAnswerButtonChecked@7b324585]" started-at="2023-04-11T15:44:09 IST" name="tearDown" finished-at="2023-04-11T15:44:13 IST" duration-ms="3698" status="PASS">
+        </test-method> <!-- Hide_category_with_Points_When_checked_At_Global_Settings -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Factile_Mode_v3.HideCategoryWithPointsUnChecked@7b324585]" started-at="2023-04-12T13:54:45 IST" name="tearDown" finished-at="2023-04-12T13:54:45 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Factile_Mode_v3.DisplayAnswerButtonChecked -->
+      </class> <!-- Factile_Mode_v3.HideCategoryWithPointsUnChecked -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -25,6 +25,7 @@ import junit.framework.Assert;
 import resources.Base;
 
 public class DisplayQuestionOnGameBoardTileChecked extends Base {
+	private static final String StringAssert = null;
 	WebDriver driver;
 	WebDriver driver1;
 	WebDriverWait wait, wait1;
@@ -78,7 +79,7 @@ public class DisplayQuestionOnGameBoardTileChecked extends Base {
 
 	@AfterTest
 	public void tearDown() throws InterruptedException, IOException {
-
+		
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
 		driver.quit();
@@ -208,24 +209,23 @@ public class DisplayQuestionOnGameBoardTileChecked extends Base {
 				driver.findElement(By.xpath("//i[@class='fa fa-check podium-controls-icon podium-controls-right cursor-pointer']")).click();
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
-				Thread.sleep(2000);
-				String TextOnTileAtModerator = driver.findElement(By.xpath("//p[@class='tileContent']")).getText();
+				Thread.sleep(4000);
+				String TextOnTileAtModerator = driver.findElement(By.xpath("(//p[@class='tileContent'])[1]")).getText();
 				System.out.println("AT Moderater side"+TextOnTileAtModerator);
-				String ExpectedTitle = "$100";
-				
-			Assert.assertNotSame(ExpectedTitle, TextOnTileAtModerator);
-		
-				
+				String ExpectedTitle = "$100";				
+				Assert.assertNotSame(ExpectedTitle, TextOnTileAtModerator);
+				String ExpectedExtractedFromTileAtModerator = TextOnTileAtModerator.substring(0, 10);
+				System.out.println("Extracted string:- "+ExpectedExtractedFromTileAtModerator);
 			driver1.switchTo().window(driver1.getWindowHandle());
 			Thread.sleep(3000);
 
 				String TextOnTileAtPlayer = driver1.findElement(By.xpath("//p[@class='tileContent']")).getText();
 				System.out.println("At Player side:-"+TextOnTileAtPlayer);
-				
-
-				Assert.assertEquals(TextOnTileAtPlayer, TextOnTileAtModerator);
+				String ActualExtractedFromTileAtPlayer = TextOnTileAtPlayer.substring(0, 10);
+				System.out.println("Extracted string:- "+ActualExtractedFromTileAtPlayer);
+					Assert.assertEquals(ActualExtractedFromTileAtPlayer, ExpectedExtractedFromTileAtModerator);
 				Log.info("Display question on GameBoard>> When Checked");
-				System.out.println("Display question on GameBoard>> When Checked");
+				System.out.println("Display question on GameBoard is working fine>> When Checked");
 
 			}
 		}

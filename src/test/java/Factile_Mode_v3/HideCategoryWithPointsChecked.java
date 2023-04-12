@@ -194,9 +194,7 @@ public class HideCategoryWithPointsChecked extends Base {
 				
 				JavascriptExecutor executor3 = (JavascriptExecutor) driver;
 				executor.executeScript("arguments[0].click();", ClickOnYES);
-
-				
-				
+		
 				
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//span[contains(text(),'Begin Game')]")).click();
@@ -207,10 +205,9 @@ public class HideCategoryWithPointsChecked extends Base {
 				Thread.sleep(2000);
 				ElementNotGoingToVisible = driver1.findElement(By.xpath("(//div[@class='gameTitle game-title-flex']//h1)[1]"));
 				System.out.println("HEader text:-"+ElementNotGoingToVisible.getText());
-				
 				String myString=ElementNotGoingToVisible.getText();
 			
-				 assertTrue(myString.equals("---"));
+				assertTrue(myString.equals("---"));
 				Log.info("Hide category with points is working fine>> When Checked");
 				System.out.println("Hide category with points is working fine>> When Checked");
 
