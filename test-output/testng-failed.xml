@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="Factile_Mode_v3.Listeners2"/>
   </listeners>
-  <test thread-count="5" name="Display Exact Case When Checked(failed)">
+  <test thread-count="5" name="Hide Category With Points When UnChecked(failed)">
     <classes>
-      <class name="Factile_Mode_v3.DisplayExactCaseChecked">
+      <class name="Factile_Mode_v3.HideCategoryWithPointsUnChecked">
         <methods>
+          <include name="Hide_category_with_Points_When_checked_At_Global_Settings"/>
           <include name="tearDown"/>
           <include name="initilize"/>
-          <include name="Display_Exact_Case_When_checked_At_Global_Settings"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.DisplayExactCaseChecked -->
+      </class> <!-- Factile_Mode_v3.HideCategoryWithPointsUnChecked -->
     </classes>
-  </test> <!-- Display Exact Case When Checked(failed) -->
+  </test> <!-- Hide Category With Points When UnChecked(failed) -->
 </suite> <!-- Failed suite [Suite] -->

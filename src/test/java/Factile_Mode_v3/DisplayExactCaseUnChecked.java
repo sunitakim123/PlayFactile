@@ -177,9 +177,23 @@ public class DisplayExactCaseUnChecked extends Base {
 				driver1.findElement(By.xpath("//input[@id='pin']")).sendKeys(i);
 				Thread.sleep(5000);
 				WebElement JoinSubmit = driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']"));
+				Thread.sleep(2000);
+				
 				JavascriptExecutor executor2 = (JavascriptExecutor) driver1;
 				executor2.executeScript("arguments[0].click();", JoinSubmit);
 				Thread.sleep(2000);
+				
+				if(JoinSubmit.isDisplayed())
+				{
+					JavascriptExecutor executor3 = (JavascriptExecutor) driver1;
+					executor3.executeScript("arguments[0].click();", JoinSubmit);
+					Thread.sleep(2000);
+				}
+				else
+				{
+					System.out.println("nothing to do");
+				}
+				
 				driver1.findElement(By.xpath("(//span[@class='setupCharacterName'])[1]")).click();
 				Thread.sleep(2000);
 				driver.switchTo().window(driver.getWindowHandle());
