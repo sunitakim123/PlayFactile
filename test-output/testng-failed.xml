@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Factile_Mode_v3.Listeners2"/>
+  </listeners>
+  <test thread-count="5" name="Double Factile(failed)">
+    <classes>
+      <class name="Factile_Mode_v3.DoubleFactile">
+        <methods>
+          <include name="initilize"/>
+          <include name="tearDown"/>
+          <include name="Double_Factile_checked_At_Global_Settings"/>
+        </methods>
+      </class> <!-- Factile_Mode_v3.DoubleFactile -->
+    </classes>
+  </test> <!-- Double Factile(failed) -->
+  <test thread-count="5" name="Daily Double(failed)">
     <classes>
       <class name="Factile_Mode_v3.DailyDouble">
         <methods>
@@ -11,5 +25,5 @@
         </methods>
       </class> <!-- Factile_Mode_v3.DailyDouble -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Daily Double(failed) -->
+</suite> <!-- Failed suite [Suite] -->

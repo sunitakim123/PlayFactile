@@ -4,26 +4,26 @@
   <listeners>
     <listener class-name="Factile_Mode_v3.Listeners2"/>
   </listeners>
-  <test thread-count="5" name="Display Question On GameBoard &gt;&gt; When UNChecked(failed)">
+  <test thread-count="5" name="Double Factile(failed)">
     <classes>
-      <class name="Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked">
+      <class name="Factile_Mode_v3.DoubleFactile">
         <methods>
           <include name="initilize"/>
           <include name="tearDown"/>
-          <include name="Display_Question_On_GameBoardTie_When_checked_At_Global_Settings"/>
+          <include name="Double_Factile_checked_At_Global_Settings"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked -->
+      </class> <!-- Factile_Mode_v3.DoubleFactile -->
     </classes>
-  </test> <!-- Display Question On GameBoard >> When UNChecked(failed) -->
-  <test thread-count="5" name="Hide Category With Points &gt;&gt; When Checked(failed)">
+  </test> <!-- Double Factile(failed) -->
+  <test thread-count="5" name="Daily Double(failed)">
     <classes>
-      <class name="Factile_Mode_v3.HideCategoryWithPointsChecked">
+      <class name="Factile_Mode_v3.DailyDouble">
         <methods>
-          <include name="Hide_category_with_Points_When_checked_At_Global_Settings"/>
+          <include name="Daily_Double_checked_At_Global_Settings"/>
           <include name="initilize"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.HideCategoryWithPointsChecked -->
+      </class> <!-- Factile_Mode_v3.DailyDouble -->
     </classes>
-  </test> <!-- Hide Category With Points >> When Checked(failed) -->
+  </test> <!-- Daily Double(failed) -->
 </suite> <!-- Failed suite [Suite] -->
