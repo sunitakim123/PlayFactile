@@ -1,44 +1,6 @@
-14:13:03.073 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Driver is Initilize
-14:13:10.557 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Navigated to homePage
-14:13:24.066 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - At customization page>> Checked Display Answer Button >> 
-14:14:28.217 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Display Answer Button>> When Checked
-14:14:35.765 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Driver is Initilize
-14:14:40.711 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Navigated to homePage
-14:14:54.136 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - At customization page>> Checked Display Exact Case >> 
-14:15:52.915 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Display Exact Case>> When Checked
-14:16:00.413 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Driver is Initilize
-14:16:06.185 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Navigated to homePage
-14:16:20.260 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - At customization page>> Checked Display Exact Case >> 
-14:17:21.721 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Display Exact Case>> When Checked
-14:17:29.232 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - Driver is Initilize
-14:17:34.669 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - Navigated to homePage
-14:17:48.819 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - At customization page>> Checked Display Exact Case >> 
-14:19:08.303 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - Display question on GameBoard>> When Checked
-14:19:15.776 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - Driver is Initilize
-14:19:21.291 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - Navigated to homePage
-14:19:34.334 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - At customization page>> Checked Display Exact Case >> 
-14:20:50.641 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - Display question on GameBoard>> When UnChecked
-14:20:58.141 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - Driver is Initilize
-14:21:06.124 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - Navigated to homePage
-14:21:20.453 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - At customization page>> Check Hide Category with Points>> 
-14:22:21.106 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - Hide category with points is working fine>> When Checked
-14:22:28.560 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Driver is Initilize
-14:22:35.912 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Navigated to homePage
-14:22:48.999 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - At customization page>> Check Hide Category with Points>> 
-14:23:52.764 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Hide category with points is not working >>When UnChecked
-14:24:00.206 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - Driver is Initilize
-14:24:06.392 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - Navigated to homePage
-14:24:19.430 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - At customization page>> Checked Play As Numbered Tiles Instead Of Jeopardy-style >> 
-14:25:17.690 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - Play as Jeopardy Style
-14:25:25.252 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - Driver is Initilize
-14:25:31.647 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - Navigated to homePage
-14:25:46.067 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - At customization page>> Checked Play As Numbered Tiles Instead Of Jeopardy-style >> 
-14:26:46.217 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - Play as Numbered Tiles Instead OF Jeopardy Style
-16:20:04.462 [main] INFO  Factile_Mode_v3.DoubleFactile - Driver is Initilize
-16:20:10.746 [main] INFO  Factile_Mode_v3.DoubleFactile - Navigated to homePage
-16:20:42.751 [main] INFO  Factile_Mode_v3.DoubleFactile - At customization page>> Double Factile is Checked >> 
-16:23:14.384 [main] INFO  Factile_Mode_v3.DoubleFactile - Double Factile is working fine
-16:23:22.022 [main] INFO  Factile_Mode_v3.DailyDouble - Driver is Initilize
-16:23:29.934 [main] INFO  Factile_Mode_v3.DailyDouble - Navigated to homePage
-16:23:53.753 [main] INFO  Factile_Mode_v3.DailyDouble - At customization page>> Checked Daily Double >> 
-16:26:18.474 [main] INFO  Factile_Mode_v3.DailyDouble - Daily Double is working fine
+17:18:06.820 [main] INFO  Factile_Mode_v3.Log_In - Navigated to homePage
+17:18:10.916 [main] INFO  Factile_Mode_v3.Log_In - Log in working fine
+17:26:03.900 [main] INFO  Factile_Mode_v3.DailyDouble - Driver is Initilize
+17:26:11.000 [main] INFO  Factile_Mode_v3.DailyDouble - Navigated to homePage
+17:26:38.242 [main] INFO  Factile_Mode_v3.DailyDouble - At customization page>> Checked Daily Double >> 
+17:29:00.864 [main] INFO  Factile_Mode_v3.DailyDouble - Daily Double is working fine
