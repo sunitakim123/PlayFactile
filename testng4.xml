@@ -6,7 +6,7 @@
 
 	<test name="Display Answer Button">
 		<classes>
-			<class name="Factile_Mode_v3.DisplayAnswerButtonChecked" />
+			<class name="Factile_Mode_v3.DisplayAnswerButton" />
 		</classes>
 	</test> <!-- Test -->
 
@@ -43,6 +43,18 @@
 	<test name="Hide Category With Points When UnChecked">
 		<classes>
 			<class name="Factile_Mode_v3.HideCategoryWithPointsUnChecked" />
+		</classes>
+	</test> <!-- Test -->
+
+<test name="Play as Jeopardy Style instead of Number">
+		<classes>
+			<class name="Factile_Mode_v3.PlayAsJeopardyStyle" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Play as Numbered tiles instead of Jeopardy Style">
+		<classes>
+			<class name="Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked" />
 		</classes>
 	</test> <!-- Test -->
 

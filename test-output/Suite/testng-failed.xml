@@ -4,15 +4,26 @@
   <listeners>
     <listener class-name="Factile_Mode_v3.Listeners2"/>
   </listeners>
-  <test thread-count="5" name="Hide Category With Points When UnChecked(failed)">
+  <test thread-count="5" name="Display Question On GameBoard &gt;&gt; When UNChecked(failed)">
     <classes>
-      <class name="Factile_Mode_v3.HideCategoryWithPointsUnChecked">
+      <class name="Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked">
+        <methods>
+          <include name="initilize"/>
+          <include name="tearDown"/>
+          <include name="Display_Question_On_GameBoardTie_When_checked_At_Global_Settings"/>
+        </methods>
+      </class> <!-- Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked -->
+    </classes>
+  </test> <!-- Display Question On GameBoard >> When UNChecked(failed) -->
+  <test thread-count="5" name="Hide Category With Points &gt;&gt; When Checked(failed)">
+    <classes>
+      <class name="Factile_Mode_v3.HideCategoryWithPointsChecked">
         <methods>
           <include name="Hide_category_with_Points_When_checked_At_Global_Settings"/>
-          <include name="tearDown"/>
           <include name="initilize"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.HideCategoryWithPointsUnChecked -->
+      </class> <!-- Factile_Mode_v3.HideCategoryWithPointsChecked -->
     </classes>
-  </test> <!-- Hide Category With Points When UnChecked(failed) -->
+  </test> <!-- Hide Category With Points >> When Checked(failed) -->
 </suite> <!-- Failed suite [Suite] -->

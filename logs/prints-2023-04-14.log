@@ -1,0 +1,51 @@
+17:02:42.618 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - Hide category with points is working fine>> When Checked
+17:02:49.895 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Driver is Initilize
+17:02:54.273 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Navigated to homePage
+17:03:05.825 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - At customization page>> Check Hide Category with Points>> 
+17:04:06.949 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Hide category with points is not working >>When UnChecked
+17:04:14.284 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - Driver is Initilize
+17:04:19.632 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - Navigated to homePage
+17:04:32.100 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - At customization page>> Checked Play As Numbered Tiles Instead Of Jeopardy-style >> 
+17:05:52.162 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - Play as Jeopardy Style
+17:05:59.430 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - Driver is Initilize
+17:06:04.624 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - Navigated to homePage
+17:06:16.037 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - At customization page>> Checked Play As Numbered Tiles Instead Of Jeopardy-style >> 
+17:07:12.280 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - Play as Numbered Tiles Instead OF Jeopardy Style
+17:09:21.508 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Driver is Initilize
+17:09:26.505 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Navigated to homePage
+17:09:36.940 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - At customization page>> Checked Display Answer Button >> 
+17:10:37.658 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Display Answer Button>> When Checked
+17:10:45.277 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Driver is Initilize
+17:10:50.327 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Navigated to homePage
+17:11:01.628 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - At customization page>> Checked Display Exact Case >> 
+17:33:10.368 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+17:33:15.883 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+17:35:43.949 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+17:35:48.930 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+17:41:32.239 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+17:41:38.975 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+17:41:52.631 [main] INFO  Factile_Mode_v3.CustomNotification - At customization page>>Custom Notification is checked >> 
+17:43:11.872 [main] INFO  Factile_Mode_v3.CustomNotification - Display Answer Button>> When Checked
+17:46:23.493 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+17:46:29.080 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+17:47:02.523 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+17:47:06.750 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+18:23:54.363 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+18:23:59.963 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+18:24:14.660 [main] INFO  Factile_Mode_v3.CustomNotification - At customization page>>Custom Notification is checked >> 
+18:25:13.234 [main] INFO  Factile_Mode_v3.CustomNotification - Display Answer Button>> When Checked
+18:38:22.619 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+18:38:27.112 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+18:38:42.376 [main] INFO  Factile_Mode_v3.CustomNotification - At customization page>>Custom Notification is checked >> 
+18:39:45.224 [main] INFO  Factile_Mode_v3.CustomNotification - Custom Notification is working fine
+18:42:15.283 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+18:42:19.628 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+18:42:36.056 [main] INFO  Factile_Mode_v3.CustomNotification - At customization page>>Custom Notification is checked >> 
+18:43:47.784 [main] INFO  Factile_Mode_v3.CustomNotification - Custom Notification is working fine
+12:09:22.030 [main] INFO  Factile_Mode_v3.DoubleFactile - Driver is Initilize
+12:09:29.560 [main] INFO  Factile_Mode_v3.DoubleFactile - Navigated to homePage
+12:13:29.289 [main] INFO  Factile_Mode_v3.DoubleFactile - Driver is Initilize
+12:13:36.853 [main] INFO  Factile_Mode_v3.DoubleFactile - Navigated to homePage
+12:57:03.288 [main] INFO  Factile_Mode_v3.DoubleFactile - Driver is Initilize
+12:57:09.648 [main] INFO  Factile_Mode_v3.DoubleFactile - Navigated to homePage
+13:01:04.339 [main] INFO  Factile_Mode_v3.DoubleFactile - Driver is Initilize

@@ -10,6 +10,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,7 +25,7 @@ import Page_Object_v3.Log_in_Elements;
 import junit.framework.Assert;
 import resources.Base;
 
-public class DisplayAnswerButtonChecked extends Base {
+public class CustomNotification extends Base {
 	WebDriver driver;
 	WebDriver driver1;
 	WebDriverWait wait, wait1;
@@ -32,8 +33,9 @@ public class DisplayAnswerButtonChecked extends Base {
 	String s6, s7, GameName, GameURL, twitterLink, PintrestLink, t1, p1, parent, expectedValue, actualValue;
 	WebElement ElementNotGoingToVisible;
 	Actions act;
+	String Message="This is logged while automating the script,and it's only for testing purpose";
 
-	public static Logger Log = LogManager.getLogger(DisplayAnswerButtonChecked.class.getName());
+	public static Logger Log = LogManager.getLogger(CustomNotification.class.getName());
 	private static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\images\\eagle.jpg";
 
 	@BeforeTest
@@ -94,16 +96,16 @@ public class DisplayAnswerButtonChecked extends Base {
 			String[] cmd = new String[] { "/bin/sh", "killchrome.sh" };
 			Process pr = Runtime.getRuntime().exec(cmd);
 		}
-		Thread.sleep(3000); 
+		Thread.sleep(3000);  
 	}
 
 	public void modeaterscreen() throws InterruptedException {
 		driver.findElement(By.xpath("//a[@href='/customize']")).click();
 		Thread.sleep(2000);
-		System.out.println(driver.findElement(By.xpath("//label[text()='Display Answer Button']")).getText());
+		System.out.println(driver.findElement(By.xpath("//label[text()='Custom Notification']")).getText());
 
 		WebElement s1 = driver.findElement(
-				By.xpath("//label[contains(text(), 'Display Answer Button')]/preceding-sibling::input[@type='checkbox']"));
+				By.xpath("//label[contains(text(), 'Custom Notification')]/preceding-sibling::input[@type='checkbox']"));
 		
 		//WebElement s1 = driver.findElement(By.xpath("//label[text()='Display Question On Game Board Tile']"));
 		Boolean check = s1.isSelected();
@@ -116,8 +118,15 @@ public class DisplayAnswerButtonChecked extends Base {
 			executor.executeScript("arguments[0].click();", s1);
 			Thread.sleep(1000);
 		}
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//textarea[@class='w-100']")).sendKeys(Keys.CONTROL + "a");
+		Thread.sleep(1000);
+		
+		
+		driver.findElement(By.xpath("//textarea[@class='w-100']")).sendKeys(Message);
+		
 
-		Log.info("At customization page>> Checked Display Answer Button >> ");
+		Log.info("At customization page>>Custom Notification is checked >> ");
 	}
 
 	public void PlayerScreen() throws InterruptedException, IOException {
@@ -206,21 +215,17 @@ public class DisplayAnswerButtonChecked extends Base {
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//span[contains(text(),'Begin Game')]")).click();
 				Thread.sleep(3000);
-				driver.findElement(By.xpath("(//span[@data-points='100'])[1]")).click();
+				String MessageAtModeartorScreenOnGameBoard =driver.findElement(By.xpath("//p[@class='notificationSection']")).getText();
 				Thread.sleep(3000);
+				Assert.assertEquals(Message, MessageAtModeartorScreenOnGameBoard);
+				driver1.switchTo().window(driver1.getWindowHandle());
+				Thread.sleep(3000);
+				String MessageAtPlayerScreenOnGameBoard =driver1.findElement(By.xpath("//p[@class='notificationSection']")).getText();
+				Thread.sleep(3000);
+				Assert.assertEquals(Message, MessageAtPlayerScreenOnGameBoard);
 				
-				String QuestionAtModeraterScreen =driver.findElement(By.xpath("//div[@class='text-content-wrapper']//div//p")).getText();
-				System.out.println("Question is="+QuestionAtModeraterScreen);
-				Thread.sleep(2000);
-				driver.findElement(By.xpath("//span[text()='Toggle Que/Ans']")).click();
-				Thread.sleep(2000);
-				String ToggleAnswer=driver.findElement(By.xpath("//div[@class='text-content-wrapper']//div//p")).getText();
-				System.out.println("Toggle answer is:-"+ToggleAnswer);
-				
-				Assert.assertNotSame(QuestionAtModeraterScreen, ToggleAnswer);
-				
-				Log.info("Display Answer Button>> When Checked");
-				System.out.println("Display Answer Button>> When Checked");
+				Log.info("Custom Notification is working fine");
+				System.out.println("Custom Notification is working fine");
 
 			}
 		}

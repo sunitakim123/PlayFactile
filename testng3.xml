@@ -4,15 +4,15 @@
 		<listener class-name="Factile_Mode_v3.Listeners2" />
 	</listeners>
 
-      <test name="sign up">
+      <test name="Double Factile">
     <classes>
-          <class name="Factile_Mode_v3.Sign_UP"/>
+          <class name="Factile_Mode_v3.DoubleFactile"/>
            </classes>
   </test> <!-- Test -->
    
-    <test name="Log in">
+    <test name="Daily Double">
     <classes>
-          <class name="Factile_Mode_v3.Log_In"/>
+          <class name="Factile_Mode_v3.DailyDouble"/>
            </classes>
   </test> <!-- Test -->
    

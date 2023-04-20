@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Factile_Mode_v3.HideCategoryWithPointsChecked">
+      <class name="Factile_Mode_v3.DailyDouble">
         <methods>
-          <include name="Hide_category_with_Points_When_checked_At_Global_Settings"/>
+          <include name="Daily_Double_checked_At_Global_Settings"/>
           <include name="initilize"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.HideCategoryWithPointsChecked -->
+      </class> <!-- Factile_Mode_v3.DailyDouble -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
