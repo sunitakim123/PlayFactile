@@ -1,8 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-<listeners>
-<listener class-name="Factile_Mode.Listeners1"/>
-</listeners> <test name="sign up">
+	<listeners>
+		<listener class-name="Factile_Mode_v3.Listeners2" />
+	</listeners> 
+<test name="sign up">
     <classes>
           <class name="Factile_Mode_v3.Sign_UP"/>
            </classes>
