@@ -39,6 +39,7 @@ public class Sign_UP extends Base{
 		driver.manage().window().maximize();
 		wait = new WebDriverWait(driver, 60);
 		Log.info("Navigated to homePage");
+		Thread.sleep(2000);
 		
 	}
 	
@@ -52,10 +53,13 @@ public class Sign_UP extends Base{
 		 Newgmailidsent="username1"+randomInt+"@gmail.com";
 		System.out.println(Newgmailidsent);		
 		SignUP_elements sobj = new SignUP_elements(driver);		
-		sobj.Sign_in_button().click();		
+		Thread.sleep(3000);
+		sobj.Sign_in_button().click();	
+		Thread.sleep(2000);
 		sobj.getEmail().sendKeys(Newgmailidsent);	
 		sobj.getPassword().sendKeys("12345678");	
 		sobj.getConfirmPassword().sendKeys("12345678");
+		Thread.sleep(2000);
 		sobj.getSignIN().click();
 		Thread.sleep(4000);
 		System.out.println(driver.getCurrentUrl());

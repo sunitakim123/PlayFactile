@@ -40,7 +40,7 @@ public class Log_In extends Base{
 		driver.manage().window().maximize();
 		wait = new WebDriverWait(driver, 40);
 		Log.info("Navigated to homePage");
-		
+		Thread.sleep(2000);
 	}
 	
 	

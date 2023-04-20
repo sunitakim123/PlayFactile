@@ -49,7 +49,7 @@ public class Sign_Out extends Base {
 	public void Sign_Out() throws InterruptedException
 	{
 		//driver.navigate().to("http://www.yopmail.com/en/");
-
+		Thread.sleep(2000);
 		Log_in_Elements lobj1= new Log_in_Elements(driver);
 		WebElement ClickOnSignIN= driver.findElement(By.xpath("(//a[@href='/signin'])[2]"));
 
