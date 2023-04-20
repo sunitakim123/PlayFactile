@@ -53,13 +53,13 @@ public class DailyDouble extends Base {
 	@Test
 	public void Daily_Double_checked_At_Global_Settings() throws InterruptedException, IOException {
 		Log_in_Elements lobj1 = new Log_in_Elements(driver);
-		lobj1.Log_in_button().click();
+		driver.findElement(By.xpath("(//a[@href='/signin'])[2]")).click();
 		Thread.sleep(2000);
 		lobj1.getenterEmail().sendKeys(prop.getProperty("username"));
 		Thread.sleep(2000);
 		lobj1.getenterPwd().sendKeys(prop.getProperty("pwd"));
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("(//a[@href='/signin'])[2]")).click();
+		lobj1.getlogin().click();
 		Thread.sleep(3000);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='/settings']")));
 		driver.findElement(By.xpath("//a[@href='/settings']")).click();

@@ -34,3 +34,11 @@
 14:25:31.647 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - Navigated to homePage
 14:25:46.067 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - At customization page>> Checked Play As Numbered Tiles Instead Of Jeopardy-style >> 
 14:26:46.217 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - Play as Numbered Tiles Instead OF Jeopardy Style
+16:20:04.462 [main] INFO  Factile_Mode_v3.DoubleFactile - Driver is Initilize
+16:20:10.746 [main] INFO  Factile_Mode_v3.DoubleFactile - Navigated to homePage
+16:20:42.751 [main] INFO  Factile_Mode_v3.DoubleFactile - At customization page>> Double Factile is Checked >> 
+16:23:14.384 [main] INFO  Factile_Mode_v3.DoubleFactile - Double Factile is working fine
+16:23:22.022 [main] INFO  Factile_Mode_v3.DailyDouble - Driver is Initilize
+16:23:29.934 [main] INFO  Factile_Mode_v3.DailyDouble - Navigated to homePage
+16:23:53.753 [main] INFO  Factile_Mode_v3.DailyDouble - At customization page>> Checked Daily Double >> 
+16:26:18.474 [main] INFO  Factile_Mode_v3.DailyDouble - Daily Double is working fine
