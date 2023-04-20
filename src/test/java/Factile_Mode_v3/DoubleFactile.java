@@ -52,7 +52,8 @@ public class DoubleFactile extends Base {
 	@Test
 	public void Double_Factile_checked_At_Global_Settings() throws InterruptedException, IOException {
 		Log_in_Elements lobj1 = new Log_in_Elements(driver);
-		driver.findElement(By.xpath("(//a[@href='/signin'])[2]")).click();
+		Thread.sleep(2000);
+		lobj1.Log_in_button().click();
 		Thread.sleep(2000);
 		lobj1.getenterEmail().sendKeys(prop.getProperty("username"));
 		Thread.sleep(2000);
