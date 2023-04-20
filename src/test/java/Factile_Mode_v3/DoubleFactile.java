@@ -55,9 +55,10 @@ public class DoubleFactile extends Base {
 		lobj1.Log_in_button().click();
 		Thread.sleep(2000);
 		lobj1.getenterEmail().sendKeys(prop.getProperty("username"));
+		Thread.sleep(2000);
 		lobj1.getenterPwd().sendKeys(prop.getProperty("pwd"));
 		Thread.sleep(2000);
-		lobj1.getlogin().click();
+		driver.findElement(By.xpath("(//a[@href='/signin'])[2]")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//a[text()='My Games']")).click();
 		Thread.sleep(5000);

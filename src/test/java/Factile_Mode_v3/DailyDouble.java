@@ -56,9 +56,10 @@ public class DailyDouble extends Base {
 		lobj1.Log_in_button().click();
 		Thread.sleep(2000);
 		lobj1.getenterEmail().sendKeys(prop.getProperty("username"));
+		Thread.sleep(2000);
 		lobj1.getenterPwd().sendKeys(prop.getProperty("pwd"));
 		Thread.sleep(2000);
-		lobj1.getlogin().click();
+		driver.findElement(By.xpath("(//a[@href='/signin'])[2]")).click();
 		Thread.sleep(3000);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='/settings']")));
 		driver.findElement(By.xpath("//a[@href='/settings']")).click();
