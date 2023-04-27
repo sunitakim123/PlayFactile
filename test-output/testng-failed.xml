@@ -4,17 +4,6 @@
   <listeners>
     <listener class-name="Factile_Mode_v3.Listeners2"/>
   </listeners>
-  <test thread-count="5" name="Double Factile(failed)">
-    <classes>
-      <class name="Factile_Mode_v3.DoubleFactile">
-        <methods>
-          <include name="initilize"/>
-          <include name="tearDown"/>
-          <include name="Double_Factile_checked_At_Global_Settings"/>
-        </methods>
-      </class> <!-- Factile_Mode_v3.DoubleFactile -->
-    </classes>
-  </test> <!-- Double Factile(failed) -->
   <test thread-count="5" name="Daily Double(failed)">
     <classes>
       <class name="Factile_Mode_v3.DailyDouble">

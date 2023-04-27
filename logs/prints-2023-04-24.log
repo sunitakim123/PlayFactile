@@ -1,0 +1,56 @@
+17:17:09.000 [main] INFO  Factile_Mode_v3.ForgetPassword - Navigated to homePage
+17:17:56.332 [main] INFO  Factile_Mode_v3.TwoFactorAuthentication - Driver is Initilize
+17:18:02.841 [main] INFO  Factile_Mode_v3.TwoFactorAuthentication - Navigated to homePage
+17:18:46.560 [main] INFO  Factile_Mode_v3.ChangePassword - Driver is Initilize
+17:18:51.462 [main] INFO  Factile_Mode_v3.ChangePassword - Navigated to homePage
+17:19:04.548 [main] INFO  Factile_Mode_v3.Support_Form - Driver is Initilize
+17:19:10.822 [main] INFO  Factile_Mode_v3.Support_Form - Navigated to homePage
+17:19:28.748 [main] INFO  Factile_Mode_v3.DeleteAccount - Driver is Initilize
+17:19:35.409 [main] INFO  Factile_Mode_v3.DeleteAccount - Navigated to homePage
+17:20:05.932 [main] INFO  Factile_Mode_v3.HeaderMenuInFreeAccount - Driver is Initilize
+17:20:31.056 [main] INFO  Factile_Mode_v3.HeaderMenuInFreeAccount - Navigated to homePage
+17:20:45.338 [main] INFO  Factile_Mode_v3.HeaderMenuInPaidAccount - Driver is Initilize
+17:21:38.009 [main] INFO  Factile_Mode_v3.HeaderMenuInPaidAccount - Navigated to homePage
+17:22:09.635 [main] INFO  Factile_Mode_v3.PageNotFound_Links_at_HomePage - Driver is Initilize
+17:22:14.592 [main] INFO  Factile_Mode_v3.PageNotFound_Links_at_HomePage - Navigated to homePage
+17:28:53.399 [main] INFO  Factile_Mode_v3.DoubleFactile - Driver is Initilize
+17:28:59.680 [main] INFO  Factile_Mode_v3.DoubleFactile - Navigated to homePage
+17:29:34.372 [main] INFO  Factile_Mode_v3.DoubleFactile - At customization page>> Double Factile is Checked >> 
+17:32:39.232 [main] INFO  Factile_Mode_v3.DoubleFactile - Double Factile is working fine
+17:32:47.665 [main] INFO  Factile_Mode_v3.DailyDouble - Driver is Initilize
+17:32:54.028 [main] INFO  Factile_Mode_v3.DailyDouble - Navigated to homePage
+17:33:20.170 [main] INFO  Factile_Mode_v3.DailyDouble - At customization page>> Checked Daily Double >> 
+17:37:28.758 [main] INFO  Factile_Mode_v3.DoubleFactile - Driver is Initilize
+17:37:35.693 [main] INFO  Factile_Mode_v3.DoubleFactile - Navigated to homePage
+17:38:10.411 [main] INFO  Factile_Mode_v3.DoubleFactile - At customization page>> Double Factile is Checked >> 
+17:40:42.923 [main] INFO  Factile_Mode_v3.DailyDouble - Driver is Initilize
+11:50:21.676 [main] INFO  Factile_Mode_v3.DoubleFactile - Driver is Initilize
+11:50:31.212 [main] INFO  Factile_Mode_v3.DoubleFactile - Navigated to homePage
+11:51:08.320 [main] INFO  Factile_Mode_v3.DoubleFactile - At customization page>> Double Factile is Checked >> 
+11:53:49.415 [main] INFO  Factile_Mode_v3.DoubleFactile - Double Factile is working fine
+11:53:57.586 [main] INFO  Factile_Mode_v3.DailyDouble - Driver is Initilize
+11:54:05.872 [main] INFO  Factile_Mode_v3.DailyDouble - Navigated to homePage
+11:54:31.927 [main] INFO  Factile_Mode_v3.DailyDouble - At customization page>> Checked Daily Double >> 
+12:06:58.155 [main] INFO  Factile_Mode_v3.DoubleFactile - Driver is Initilize
+12:07:05.672 [main] INFO  Factile_Mode_v3.DoubleFactile - Navigated to homePage
+12:07:43.174 [main] INFO  Factile_Mode_v3.DoubleFactile - At customization page>> Double Factile is Checked >> 
+12:10:23.051 [main] INFO  Factile_Mode_v3.DoubleFactile - Double Factile is working fine
+12:10:31.503 [main] INFO  Factile_Mode_v3.DailyDouble - Driver is Initilize
+12:10:37.872 [main] INFO  Factile_Mode_v3.DailyDouble - Navigated to homePage
+12:11:06.599 [main] INFO  Factile_Mode_v3.DailyDouble - At customization page>> Checked Daily Double >> 
+12:12:06.362 [main] INFO  Factile_Mode_v3.DailyDouble - Driver is Initilize
+12:12:14.533 [main] INFO  Factile_Mode_v3.DailyDouble - Navigated to homePage
+12:12:42.941 [main] INFO  Factile_Mode_v3.DailyDouble - At customization page>> Checked Daily Double >> 
+12:18:42.410 [main] INFO  Factile_Mode_v3.DailyDouble - Driver is Initilize
+12:18:56.511 [main] INFO  Factile_Mode_v3.DailyDouble - Navigated to homePage
+12:19:23.028 [main] INFO  Factile_Mode_v3.DailyDouble - At customization page>> Checked Daily Double >> 
+14:52:33.249 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - Driver is Initilize
+14:53:05.644 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - Navigated to homePage
+14:53:43.411 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - At customization page>> Show Skip Question Button is Checked >> 
+15:03:46.464 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - Driver is Initilize
+15:03:54.610 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - Navigated to homePage
+15:04:20.807 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - At customization page>> Show Skip Question Button is Checked >> 
+15:19:21.204 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - Driver is Initilize
+15:19:28.911 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - Navigated to homePage
+15:19:55.254 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - At customization page>> Show Skip Question Button is Checked >> 
+15:38:44.552 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - Driver is Initilize

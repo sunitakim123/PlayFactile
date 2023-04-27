@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Factile_Mode_v3.DailyDouble">
+      <class name="Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer">
         <methods>
-          <include name="Daily_Double_checked_At_Global_Settings"/>
           <include name="initilize"/>
           <include name="tearDown"/>
+          <include name="Manually_EnableDisable_button_checked_At_Global_Settings"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.DailyDouble -->
+      </class> <!-- Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
