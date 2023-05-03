@@ -84,7 +84,7 @@ public class DailyDouble extends Base {
 
 	@AfterTest
 	public void tearDown() throws InterruptedException, IOException {
-		/*driver1.quit();
+		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
 		driver.quit();
 		String osName = System.getProperty("os.name");
@@ -99,7 +99,7 @@ public class DailyDouble extends Base {
 			String[] cmd = new String[] { "/bin/sh", "killchrome.sh" };
 			Process pr = Runtime.getRuntime().exec(cmd);
 		}
-		Thread.sleep(3000);*/
+		Thread.sleep(3000);
 	}
 
 	public void modeaterscreen() throws InterruptedException {

@@ -29,6 +29,8 @@ public class ChangePassword extends Base {
 	String expected = "Password changed successfully";
 	public static Logger Log = LogManager.getLogger(ChangePassword.class.getName());
 
+
+
 	@BeforeTest
 	public void initilize() throws IOException, InterruptedException {
 

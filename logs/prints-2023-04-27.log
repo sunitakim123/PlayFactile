@@ -1,0 +1,50 @@
+12:53:08.798 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - At customization page>> Check Hide Category with Points>> 
+12:55:19.227 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Driver is Initilize
+12:55:25.487 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Navigated to homePage
+12:55:40.024 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - At customization page>> Check Hide Category with Points>> 
+12:58:10.563 [main] INFO  Factile_Mode_v3.Sign_UP - Driver is Initilize
+12:58:19.390 [main] INFO  Factile_Mode_v3.Sign_UP - Navigated to homePage
+12:58:58.397 [main] INFO  Factile_Mode_v3.Log_In - Driver is Initilize
+12:59:04.635 [main] INFO  Factile_Mode_v3.Log_In - Navigated to homePage
+12:59:08.870 [main] INFO  Factile_Mode_v3.Log_In - Log in working fine
+12:59:10.793 [main] INFO  Factile_Mode_v3.Sign_Out - Driver is Initilize
+12:59:16.481 [main] INFO  Factile_Mode_v3.Sign_Out - Navigated to homePage
+13:02:18.945 [main] INFO  Factile_Mode_v3.DoubleFactile - Driver is Initilize
+13:02:26.311 [main] INFO  Factile_Mode_v3.DoubleFactile - Navigated to homePage
+13:02:58.529 [main] INFO  Factile_Mode_v3.DoubleFactile - At customization page>> Double Factile is Checked >> 
+13:05:36.077 [main] INFO  Factile_Mode_v3.DoubleFactile - Double Factile is working fine
+13:05:45.583 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Driver is Initilize
+13:05:52.654 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Navigated to homePage
+13:06:12.115 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - At customization page>> Manually Enable/disable The Buzzer is checked >> 
+13:07:38.921 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+13:08:09.567 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+13:08:40.302 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+13:09:10.975 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+13:09:41.676 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+13:10:12.398 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+13:10:21.404 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - Driver is Initilize
+13:10:28.350 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - Navigated to homePage
+13:10:53.740 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - At customization page>> Show Skip Question Button is Checked >> 
+13:12:03.573 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - Show Skip Question button is working fine
+13:12:12.501 [main] INFO  Factile_Mode_v3.SkipAndSeeAnswer - Driver is Initilize
+13:12:17.865 [main] INFO  Factile_Mode_v3.SkipAndSeeAnswer - Navigated to homePage
+13:13:40.960 [main] INFO  Factile_Mode_v3.SkipAndSeeAnswer - Skip/See Answer is working fine
+13:16:02.222 [main] INFO  Factile_Mode_v3.DoubleFactile - Driver is Initilize
+13:16:08.514 [main] INFO  Factile_Mode_v3.DoubleFactile - Navigated to homePage
+13:16:42.422 [main] INFO  Factile_Mode_v3.DoubleFactile - At customization page>> Double Factile is Checked >> 
+13:19:16.837 [main] INFO  Factile_Mode_v3.DoubleFactile - Double Factile is working fine
+13:19:26.388 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Driver is Initilize
+13:19:33.538 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Navigated to homePage
+13:19:47.007 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - At customization page>> Checked Display Answer Button >> 
+13:20:50.245 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Display Answer Button>> When Checked
+13:20:59.085 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Driver is Initilize
+13:21:06.096 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Navigated to homePage
+13:21:19.554 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - At customization page>> Checked Display Exact Case >> 
+13:22:26.415 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Display Exact Case>> When Checked
+13:22:35.384 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Driver is Initilize
+13:22:42.839 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Navigated to homePage
+13:22:54.898 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - At customization page>> Checked Display Exact Case >> 
+13:24:00.764 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Display Exact Case>> When Checked
+13:24:09.776 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - Driver is Initilize
+13:24:15.980 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - Navigated to homePage
+13:24:29.264 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - At customization page>> Checked Display Exact Case >> 

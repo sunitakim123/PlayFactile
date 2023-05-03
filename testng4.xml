@@ -10,11 +10,7 @@
            </classes>
   </test> <!-- Test -->
    
-    <test name="Daily Double">
-    <classes>
-          <class name="Factile_Mode_v3.DailyDouble"/>
-           </classes>
-  </test> <!-- Test -->
+
 	<test name="Display Answer Button">
 		<classes>
 			<class name="Factile_Mode_v3.DisplayAnswerButton" />
@@ -68,5 +64,39 @@
 			<class name="Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked" />
 		</classes>
 	</test> <!-- Test -->
+
+      <test name="Double Factile">
+    <classes>
+          <class name="Factile_Mode_v3.DoubleFactile"/>
+           </classes>
+  </test> <!-- Test -->
+      <test name="Daily Double">
+    <classes>
+          <class name="Factile_Mode_v3.DailyDouble"/>
+           </classes>
+  </test> <!-- Test -->
+   
+     <test name="Manually EnableAndDisable The Buzzer">
+    <classes>
+          <class name="Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer"/>
+           </classes>
+  </test> <!-- Test -->
+   
+
+   
+   
+    <test name="Show Skip Question Button">
+    <classes>
+          <class name="Factile_Mode_v3.ShowSkipQuestionButton"/>
+           </classes>
+  </test> <!-- Test -->
+  
+    <test name="Skip And See Answer">
+    <classes>
+          <class name="Factile_Mode_v3.SkipAndSeeAnswer"/>
+           </classes>
+  </test> <!-- Test -->
+   
+
 
 </suite> <!-- Suite -->

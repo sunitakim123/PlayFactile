@@ -9,7 +9,11 @@
           <class name="Factile_Mode_v3.DoubleFactile"/>
            </classes>
   </test> <!-- Test -->
-   
+      <test name="Daily Double">
+    <classes>
+          <class name="Factile_Mode_v3.DailyDouble"/>
+           </classes>
+  </test> <!-- Test -->
    
      <test name="Manually EnableAndDisable The Buzzer">
     <classes>
@@ -17,12 +21,7 @@
            </classes>
   </test> <!-- Test -->
    
-   
-    <test name="Daily Double">
-    <classes>
-          <class name="Factile_Mode_v3.DailyDouble"/>
-           </classes>
-  </test> <!-- Test -->
+
    
    
     <test name="Show Skip Question Button">
