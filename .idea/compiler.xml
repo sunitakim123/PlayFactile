@@ -7,8 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Play_Factile" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Play_Factile" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

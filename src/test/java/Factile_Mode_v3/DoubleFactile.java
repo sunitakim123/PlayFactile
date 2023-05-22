@@ -117,7 +117,7 @@ public class DoubleFactile extends Base {
 			String[] cmd = new String[] { "/bin/sh", "killchrome.sh" };
 			Process pr = Runtime.getRuntime().exec(cmd);
 		}
-		Thread.sleep(3000);
+		Thread.sleep(3000); 
 	}
 
 	public void modeaterscreen() throws InterruptedException {
@@ -211,15 +211,7 @@ public class DoubleFactile extends Base {
 				WebElement JoinSubmit = driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']"));
 				JavascriptExecutor executor2 = (JavascriptExecutor) driver1;
 				executor2.executeScript("arguments[0].click();", JoinSubmit);
-				Thread.sleep(2000);
-				if (JoinSubmit.isDisplayed()) {
-					JavascriptExecutor executor3 = (JavascriptExecutor) driver1;
-					executor3.executeScript("arguments[0].click();", JoinSubmit);
-					Thread.sleep(1000);
-				} else {
-					System.out.println("nothing to do");
-					Thread.sleep(1000);
-				}
+				
 				Thread.sleep(5000);
 				WebElement mascotselection = driver1.findElement(By.xpath("(//span[@class='setupCharacterName'])[1]"));
 				JavascriptExecutor executor4 = (JavascriptExecutor) driver1;

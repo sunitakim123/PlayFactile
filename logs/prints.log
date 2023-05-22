@@ -1,0 +1,40 @@
+16:35:47.828 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - At customization page>> Check Hide Category with Points>> 
+16:36:40.407 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Hide category with points is not working >>When UnChecked
+16:36:47.697 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - Driver is Initilize
+16:36:50.534 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - Navigated to homePage
+16:37:00.405 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - At customization page>> Checked Play As Numbered Tiles Instead Of Jeopardy-style >> 
+16:37:52.292 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - Play as Jeopardy Style
+16:37:59.510 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - Driver is Initilize
+16:38:01.974 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - Navigated to homePage
+16:38:12.948 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - At customization page>> Checked Play As Numbered Tiles Instead Of Jeopardy-style >> 
+16:39:06.813 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - Play as Numbered Tiles Instead OF Jeopardy Style
+16:39:14.049 [main] INFO  Factile_Mode_v3.DailyDouble - Driver is Initilize
+16:39:16.804 [main] INFO  Factile_Mode_v3.DailyDouble - Navigated to homePage
+16:39:40.744 [main] INFO  Factile_Mode_v3.DailyDouble - At customization page>> Checked Daily Double >> 
+16:41:58.904 [main] INFO  Factile_Mode_v3.DailyDouble - Daily Double is working fine
+16:42:06.556 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Driver is Initilize
+16:42:08.886 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Navigated to homePage
+16:42:26.555 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - At customization page>> Manually Enable/disable The Buzzer is checked >> 
+16:43:47.604 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+16:44:18.589 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+16:44:49.524 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+16:45:20.422 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+16:45:51.405 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+16:46:22.338 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+16:46:29.936 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - Driver is Initilize
+16:46:32.869 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - Navigated to homePage
+16:46:57.105 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - At customization page>> Show Skip Question Button is Checked >> 
+16:47:54.793 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - Show Skip Question button is working fine
+16:48:02.273 [main] INFO  Factile_Mode_v3.SkipAndSeeAnswer - Driver is Initilize
+16:48:05.161 [main] INFO  Factile_Mode_v3.SkipAndSeeAnswer - Navigated to homePage
+16:54:45.314 [main] INFO  Factile_Mode_v3.SkipAndSeeAnswer - Driver is Initilize
+16:54:48.111 [main] INFO  Factile_Mode_v3.SkipAndSeeAnswer - Navigated to homePage
+16:56:14.117 [main] INFO  Factile_Mode_v3.SkipAndSeeAnswer - Driver is Initilize
+16:56:16.686 [main] INFO  Factile_Mode_v3.SkipAndSeeAnswer - Navigated to homePage
+16:57:29.969 [main] INFO  Factile_Mode_v3.SkipAndSeeAnswer - Skip/See Answer is working fine
+16:58:00.794 [main] INFO  Factile_Mode_v3.TwoFactorAuthentication - Driver is Initilize
+16:58:03.480 [main] INFO  Factile_Mode_v3.TwoFactorAuthentication - Navigated to homePage
+15:51:11.965 [main] INFO  Factile_Mode_v3.TutorMode - Driver is Initilize
+15:51:17.525 [main] INFO  Factile_Mode_v3.TutorMode - Navigated to homePage
+15:51:38.460 [main] INFO  Factile_Mode_v3.TutorMode - At customization page>> Tutor Mode is checked >> 
+15:56:46.660 [main] INFO  Factile_Mode_v3.TutorMode - Tutor Mode is Working fine

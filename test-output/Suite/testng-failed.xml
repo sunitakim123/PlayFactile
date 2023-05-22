@@ -4,26 +4,37 @@
   <listeners>
     <listener class-name="Factile_Mode_v3.Listeners2"/>
   </listeners>
-  <test thread-count="5" name="Verifing bussiness month end plan date(failed)">
+  <test thread-count="5" name="Forget Password(failed)">
     <classes>
-      <class name="Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify">
+      <class name="Factile_Mode_v3.ForgetPassword">
         <methods>
-          <include name="GoProTBussinessMonthlySubscriptionAndNextComingDate"/>
+          <include name="initilize"/>
           <include name="close"/>
-          <include name="initilize"/>
+          <include name="Forget_Password"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify -->
+      </class> <!-- Factile_Mode_v3.ForgetPassword -->
     </classes>
-  </test> <!-- Verifing bussiness month end plan date(failed) -->
-  <test thread-count="5" name="Play as Numbered tiles instead of Jeopardy Style(failed)">
+  </test> <!-- Forget Password(failed) -->
+  <test thread-count="5" name="404 Page Not Found link at Home Page(failed)">
     <classes>
-      <class name="Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked">
+      <class name="Factile_Mode_v3.PageNotFound_Links_at_HomePage">
         <methods>
-          <include name="PlayAsNumberedTiles_Instead_Of_JeopardyStyle_checked_At_Global_Settings"/>
           <include name="initilize"/>
+          <include name="close"/>
+          <include name="PageNotFoundLinksAtHomePage"/>
+        </methods>
+      </class> <!-- Factile_Mode_v3.PageNotFound_Links_at_HomePage -->
+    </classes>
+  </test> <!-- 404 Page Not Found link at Home Page(failed) -->
+  <test thread-count="5" name="Skip And See Answer(failed)">
+    <classes>
+      <class name="Factile_Mode_v3.SkipAndSeeAnswer">
+        <methods>
+          <include name="initilize"/>
+          <include name="Verify_Skip_And_See_Answer"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked -->
+      </class> <!-- Factile_Mode_v3.SkipAndSeeAnswer -->
     </classes>
-  </test> <!-- Play as Numbered tiles instead of Jeopardy Style(failed) -->
+  </test> <!-- Skip And See Answer(failed) -->
 </suite> <!-- Failed suite [Suite] -->

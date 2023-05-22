@@ -1,0 +1,45 @@
+16:33:27.160 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Navigated to homePage
+16:34:31.649 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Driver is Initilize
+16:34:40.712 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Navigated to homePage
+16:34:54.443 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - At customization page>> Checked Display Exact Case >> 
+16:35:55.245 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Display Exact Case>> When Checked
+16:36:03.034 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Driver is Initilize
+16:36:10.398 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Navigated to homePage
+16:36:24.146 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - At customization page>> Checked Display Exact Case >> 
+16:37:28.173 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Display Exact Case>> When Checked
+16:37:35.897 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - Driver is Initilize
+16:37:43.027 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - Navigated to homePage
+16:37:57.528 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - At customization page>> Checked Display Exact Case >> 
+16:39:16.389 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - Display question on GameBoard>> When Checked
+16:39:24.003 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - Driver is Initilize
+16:39:29.430 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - Navigated to homePage
+16:39:44.160 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - At customization page>> Checked Display Exact Case >> 
+16:41:01.364 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - Display question on GameBoard>> When UnChecked
+16:41:08.993 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - Driver is Initilize
+16:41:15.987 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - Navigated to homePage
+16:41:29.670 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - At customization page>> Check Hide Category with Points>> 
+16:43:40.656 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Driver is Initilize
+16:43:48.765 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Navigated to homePage
+16:44:02.393 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - At customization page>> Check Hide Category with Points>> 
+16:45:03.148 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Hide category with points is not working >>When UnChecked
+16:45:10.704 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - Driver is Initilize
+16:45:17.356 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - Navigated to homePage
+16:45:29.942 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - At customization page>> Checked Play As Numbered Tiles Instead Of Jeopardy-style >> 
+16:46:28.802 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - Play as Jeopardy Style
+16:46:36.539 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - Driver is Initilize
+16:46:44.411 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - Navigated to homePage
+16:46:59.037 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - At customization page>> Checked Play As Numbered Tiles Instead Of Jeopardy-style >> 
+16:48:00.570 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - Play as Numbered Tiles Instead OF Jeopardy Style
+16:48:08.348 [main] INFO  Factile_Mode_v3.DailyDouble - Driver is Initilize
+16:48:15.091 [main] INFO  Factile_Mode_v3.DailyDouble - Navigated to homePage
+16:48:42.033 [main] INFO  Factile_Mode_v3.DailyDouble - At customization page>> Checked Daily Double >> 
+16:51:11.113 [main] INFO  Factile_Mode_v3.DailyDouble - Daily Double is working fine
+16:51:18.787 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Driver is Initilize
+16:51:25.250 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Navigated to homePage
+16:51:48.470 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - At customization page>> Manually Enable/disable The Buzzer is checked >> 
+16:53:18.743 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+16:53:49.425 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+16:54:20.054 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+16:54:50.713 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+16:55:21.376 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+16:55:51.967 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine

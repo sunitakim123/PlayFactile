@@ -1,4 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
 <suite name="Suite">
 	<listeners>
 		<listener class-name="Factile_Mode_v3.Listeners2" />
@@ -21,9 +22,6 @@
            </classes>
   </test> <!-- Test -->
    
-
-   
-   
     <test name="Show Skip Question Button">
     <classes>
           <class name="Factile_Mode_v3.ShowSkipQuestionButton"/>
@@ -35,7 +33,5 @@
           <class name="Factile_Mode_v3.SkipAndSeeAnswer"/>
            </classes>
   </test> <!-- Test -->
-   
 
-
-</suite> <!-- Suite -->
+ </suite> <!-- Suite -->

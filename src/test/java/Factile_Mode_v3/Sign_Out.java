@@ -74,7 +74,7 @@ public class Sign_Out extends Base {
 	@AfterTest
 	public void close()
 	{
-		//driver.quit(); 
+		driver.quit(); 
 	}
 	
 }

@@ -184,7 +184,7 @@ public class DisplayQuestionOnGameBoardTileChecked extends Base {
 				executor2.executeScript("arguments[0].click();", JoinSubmit);
 				Thread.sleep(2000);
 				
-				
+				/*
 				if(JoinSubmit.isDisplayed())
 				{
 					JavascriptExecutor executor3 = (JavascriptExecutor) driver1;
@@ -195,6 +195,7 @@ public class DisplayQuestionOnGameBoardTileChecked extends Base {
 				{
 					System.out.println("nothing to do");
 				}
+				*/
 				
 				driver1.findElement(By.xpath("(//span[@class='setupCharacterName'])[1]")).click();
 				Thread.sleep(2000);

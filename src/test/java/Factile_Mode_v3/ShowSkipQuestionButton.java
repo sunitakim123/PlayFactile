@@ -196,15 +196,7 @@ public class ShowSkipQuestionButton extends Base {
 				JavascriptExecutor executor2 = (JavascriptExecutor) driver1;
 				executor2.executeScript("arguments[0].click();", JoinSubmit);
 				Thread.sleep(2000);
-				if (JoinSubmit.isDisplayed()) {
-					JavascriptExecutor executor3 = (JavascriptExecutor) driver1;
-					executor3.executeScript("arguments[0].click();", JoinSubmit);
-					Thread.sleep(1000);
-				} else {
-					System.out.println("nothing to do");
-					Thread.sleep(1000);
-				}
-				Thread.sleep(5000);
+				
 				WebElement mascotselection = driver1.findElement(By.xpath("(//span[@class='setupCharacterName'])[1]"));
 				JavascriptExecutor executor4 = (JavascriptExecutor) driver1;
 				executor4.executeScript("arguments[0].click();", mascotselection);

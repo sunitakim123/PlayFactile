@@ -1,0 +1,54 @@
+12:41:09.661 [main] INFO  Factile_Mode_v3.CustomNotification - At customization page>>Custom Notification is checked >> 
+12:42:57.736 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+12:43:01.369 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+12:43:25.477 [main] INFO  Factile_Mode_v3.CustomNotification - At customization page>>Custom Notification is checked >> 
+12:48:19.156 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+12:48:25.378 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+12:48:53.932 [main] INFO  Factile_Mode_v3.CustomNotification - At customization page>>Custom Notification is checked >> 
+12:55:11.395 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+12:55:15.657 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+12:55:40.189 [main] INFO  Factile_Mode_v3.CustomNotification - At customization page>>Custom Notification is checked >> 
+12:57:12.590 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+12:57:56.809 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+12:59:41.844 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+13:00:10.099 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+13:00:35.135 [main] INFO  Factile_Mode_v3.CustomNotification - At customization page>>Custom Notification is checked >> 
+13:06:07.150 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+13:06:10.242 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+13:06:36.132 [main] INFO  Factile_Mode_v3.CustomNotification - At customization page>>Custom Notification is checked >> 
+13:14:08.540 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+13:14:16.563 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+13:14:43.030 [main] INFO  Factile_Mode_v3.CustomNotification - At customization page>>Custom Notification is checked >> 
+13:20:12.530 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+13:20:15.059 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+13:20:39.183 [main] INFO  Factile_Mode_v3.CustomNotification - At customization page>>Custom Notification is checked >> 
+13:21:36.368 [main] INFO  Factile_Mode_v3.CustomNotification - Custom Notification is working fine
+13:53:31.183 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+13:53:38.238 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+13:56:03.583 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+13:56:12.582 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+14:00:19.624 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+14:00:27.747 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+14:06:20.158 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+14:06:27.925 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+14:06:54.573 [main] INFO  Factile_Mode_v3.CustomNotification - At customization page>>Custom Notification is checked >> 
+14:08:01.675 [main] INFO  Factile_Mode_v3.CustomNotification - Custom Notification is working fine
+14:20:38.632 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+14:20:48.000 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+14:21:14.148 [main] INFO  Factile_Mode_v3.CustomNotification - At customization page>>Custom Notification is checked >> 
+14:22:21.766 [main] INFO  Factile_Mode_v3.CustomNotification - Custom Notification is working fine
+14:29:22.892 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+14:29:30.720 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+14:29:56.827 [main] INFO  Factile_Mode_v3.CustomNotification - At customization page>>Custom Notification is checked >> 
+14:31:01.065 [main] INFO  Factile_Mode_v3.CustomNotification - Custom Notification is working fine
+14:40:58.873 [main] INFO  Factile_Mode_v3.DailyDouble - Driver is Initilize
+14:41:06.436 [main] INFO  Factile_Mode_v3.DailyDouble - Navigated to homePage
+14:41:34.672 [main] INFO  Factile_Mode_v3.DailyDouble - At customization page>> Checked Daily Double >> 
+14:44:06.677 [main] INFO  Factile_Mode_v3.DailyDouble - Daily Double is working fine
+14:45:27.636 [main] INFO  Factile_Mode_v3.DeleteAccount - Driver is Initilize
+14:46:03.056 [main] INFO  Factile_Mode_v3.DailyDouble - Driver is Initilize
+14:46:05.693 [main] INFO  Factile_Mode_v3.DailyDouble - Navigated to homePage
+14:46:32.501 [main] INFO  Factile_Mode_v3.DailyDouble - At customization page>> Checked Daily Double >> 
+14:47:52.735 [main] INFO  Factile_Mode_v3.DailyDouble - Daily Double is working fine
+14:57:05.256 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Driver is Initilize
+14:57:08.652 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Navigated to homePage

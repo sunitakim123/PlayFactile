@@ -183,7 +183,7 @@ public class DisplayExactCaseUnChecked extends Base {
 				executor2.executeScript("arguments[0].click();", JoinSubmit);
 				Thread.sleep(2000);
 				
-				if(JoinSubmit.isDisplayed())
+			/*	if(JoinSubmit.isDisplayed())
 				{
 					JavascriptExecutor executor3 = (JavascriptExecutor) driver1;
 					executor3.executeScript("arguments[0].click();", JoinSubmit);
@@ -192,7 +192,7 @@ public class DisplayExactCaseUnChecked extends Base {
 				else
 				{
 					System.out.println("nothing to do");
-				}
+				} */
 				
 				driver1.findElement(By.xpath("(//span[@class='setupCharacterName'])[1]")).click();
 				Thread.sleep(2000);

@@ -1,0 +1,49 @@
+14:49:01.382 [main] INFO  Factile_Mode_v3.Support_Form - Driver is Initilize
+14:49:05.109 [main] INFO  Factile_Mode_v3.Support_Form - Navigated to homePage
+14:49:23.142 [main] INFO  Factile_Mode_v3.DeleteAccount - Driver is Initilize
+14:49:26.442 [main] INFO  Factile_Mode_v3.DeleteAccount - Navigated to homePage
+14:49:56.902 [main] INFO  Factile_Mode_v3.HeaderMenuInFreeAccount - Driver is Initilize
+14:50:00.070 [main] INFO  Factile_Mode_v3.HeaderMenuInFreeAccount - Navigated to homePage
+14:50:10.487 [main] INFO  Factile_Mode_v3.HeaderMenuInPaidAccount - Driver is Initilize
+14:50:13.808 [main] INFO  Factile_Mode_v3.HeaderMenuInPaidAccount - Navigated to homePage
+14:50:21.307 [main] INFO  Factile_Mode_v3.PageNotFound_Links_at_HomePage - Driver is Initilize
+14:50:26.065 [main] INFO  Factile_Mode_v3.PageNotFound_Links_at_HomePage - Navigated to homePage
+14:53:25.380 [main] INFO  Factile_Mode_v3.DoubleFactile - Driver is Initilize
+14:53:28.600 [main] INFO  Factile_Mode_v3.DoubleFactile - Navigated to homePage
+14:53:59.607 [main] INFO  Factile_Mode_v3.DoubleFactile - At customization page>> Double Factile is Checked >> 
+14:55:06.731 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Driver is Initilize
+14:55:09.974 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Navigated to homePage
+14:55:21.113 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - At customization page>> Checked Display Answer Button >> 
+14:56:30.136 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Driver is Initilize
+14:56:33.915 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Navigated to homePage
+14:56:45.511 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - At customization page>> Checked Display Exact Case >> 
+14:57:54.644 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Driver is Initilize
+14:57:57.705 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Navigated to homePage
+14:58:09.942 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - At customization page>> Checked Display Exact Case >> 
+14:59:19.068 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - Driver is Initilize
+14:59:22.512 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - Navigated to homePage
+14:59:34.322 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - At customization page>> Checked Display Exact Case >> 
+15:00:43.567 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - Driver is Initilize
+15:00:53.186 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - Navigated to homePage
+15:01:09.300 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - At customization page>> Checked Display Exact Case >> 
+15:02:18.472 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - Driver is Initilize
+15:02:26.813 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - Navigated to homePage
+15:02:41.761 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - At customization page>> Check Hide Category with Points>> 
+15:03:50.962 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Driver is Initilize
+15:03:59.006 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Navigated to homePage
+15:04:14.836 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - At customization page>> Check Hide Category with Points>> 
+15:05:24.079 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - Driver is Initilize
+15:05:27.848 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - Navigated to homePage
+15:05:39.598 [main] INFO  Factile_Mode_v3.PlayAsJeopardyStyle - At customization page>> Checked Play As Numbered Tiles Instead Of Jeopardy-style >> 
+15:06:48.850 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - Driver is Initilize
+15:06:52.636 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - Navigated to homePage
+15:07:04.880 [main] INFO  Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked - At customization page>> Checked Play As Numbered Tiles Instead Of Jeopardy-style >> 
+15:08:13.990 [main] INFO  Factile_Mode_v3.DailyDouble - Driver is Initilize
+15:08:17.846 [main] INFO  Factile_Mode_v3.DailyDouble - Navigated to homePage
+15:08:42.013 [main] INFO  Factile_Mode_v3.DailyDouble - At customization page>> Checked Daily Double >> 
+15:09:51.396 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Driver is Initilize
+15:09:54.192 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Navigated to homePage
+15:10:14.495 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - At customization page>> Manually Enable/disable The Buzzer is checked >> 
+15:11:23.704 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - Driver is Initilize
+15:11:27.025 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - Navigated to homePage
+15:11:51.225 [main] INFO  Factile_Mode_v3.ShowSkipQuestionButton - At customization page>> Show Skip Question Button is Checked >> 

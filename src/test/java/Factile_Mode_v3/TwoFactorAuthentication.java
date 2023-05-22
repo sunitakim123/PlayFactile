@@ -66,7 +66,7 @@ public class TwoFactorAuthentication extends Base {
 	
 		driver1.switchTo().frame("ifmail");
 		
-	//	String verificationcode = driver1.findElement(By.xpath("(//td[@class='content-block'])[3]")).getText();
+		//String verificationcode = driver1.findElement(By.xpath("(//td[@class='content-block'])[3]")).getText();
 		
 		String verificationcode =	driver1.findElement(By.xpath("//td[contains(text(),'Verification code')]")).getText();
 		
@@ -90,7 +90,7 @@ public class TwoFactorAuthentication extends Base {
 
 	@AfterTest 
 	public void close() {
-		//driver.quit();
+		driver.quit();
 	}
 
 }

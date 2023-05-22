@@ -1,29 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="Factile_Mode_v3.Listeners2"/>
-  </listeners>
-  <test thread-count="5" name="Verifing bussiness month end plan date(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify">
+      <class name="Factile_Mode_v3.SkipAndSeeAnswer">
         <methods>
-          <include name="GoProTBussinessMonthlySubscriptionAndNextComingDate"/>
-          <include name="close"/>
           <include name="initilize"/>
-        </methods>
-      </class> <!-- Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify -->
-    </classes>
-  </test> <!-- Verifing bussiness month end plan date(failed) -->
-  <test thread-count="5" name="Play as Numbered tiles instead of Jeopardy Style(failed)">
-    <classes>
-      <class name="Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked">
-        <methods>
-          <include name="PlayAsNumberedTiles_Instead_Of_JeopardyStyle_checked_At_Global_Settings"/>
-          <include name="initilize"/>
+          <include name="Verify_Skip_And_See_Answer"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.PlayAsNumberedTilesInsteadOfJeopardyStyleChecked -->
+      </class> <!-- Factile_Mode_v3.SkipAndSeeAnswer -->
     </classes>
-  </test> <!-- Play as Numbered tiles instead of Jeopardy Style(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

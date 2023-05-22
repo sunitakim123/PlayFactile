@@ -187,14 +187,6 @@ public class ManuallyEnableAndDisableTheBuzzer extends Base {
 				JavascriptExecutor executor2 = (JavascriptExecutor) driver1;
 				executor2.executeScript("arguments[0].click();", JoinSubmit);
 
-				if (JoinSubmit.isDisplayed()) {
-					JavascriptExecutor executor3 = (JavascriptExecutor) driver1;
-					executor3.executeScript("arguments[0].click();", JoinSubmit);
-					Thread.sleep(2000);
-				} else {
-					System.out.println("nothing to do");
-				}
-
 				Thread.sleep(2000);
 				driver1.findElement(By.xpath("(//span[@class='setupCharacterName'])[1]")).click();
 				Thread.sleep(2000);

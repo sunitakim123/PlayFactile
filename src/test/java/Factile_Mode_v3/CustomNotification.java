@@ -80,7 +80,7 @@ public class CustomNotification extends Base {
 
 	@AfterTest
 	public void tearDown() throws InterruptedException, IOException {
-
+/*
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
 		driver.quit();
@@ -97,10 +97,20 @@ public class CustomNotification extends Base {
 			Process pr = Runtime.getRuntime().exec(cmd);
 		}
 		Thread.sleep(3000);  
+		*/
 	}
 
 	public void modeaterscreen() throws InterruptedException {
+		
 		driver.findElement(By.xpath("//a[@href='/customize']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//div[@class='resetAllCustomization']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[@class='swal2-confirm swal2-styled']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[@class='swal2-confirm swal2-styled']")).click();
+		Thread.sleep(2000);
+		System.out.println(driver.findElement(By.xpath("//label[text()='Show Skip Question Button']")).getText());
 		Thread.sleep(2000);
 		System.out.println(driver.findElement(By.xpath("//label[text()='Custom Notification']")).getText());
 
@@ -191,17 +201,8 @@ public class CustomNotification extends Base {
 				JavascriptExecutor executor2 = (JavascriptExecutor) driver1;
 				executor2.executeScript("arguments[0].click();", JoinSubmit);
 				Thread.sleep(2000);
-				if(JoinSubmit.isDisplayed())
-				{
-					JavascriptExecutor executor3 = (JavascriptExecutor) driver1;
-					executor3.executeScript("arguments[0].click();", JoinSubmit);
-					Thread.sleep(2000);
-				}
-				else
-				{
-					System.out.println("nothing to do");
-				}
-				driver1.findElement(By.xpath("(//span[@class='setupCharacterName'])[1]")).click();
+				
+		driver1.findElement(By.xpath("(//span[@class='setupCharacterName'])[1]")).click();
 				Thread.sleep(2000);
 				driver.switchTo().window(driver.getWindowHandle());
 				Thread.sleep(2000);

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer">
+      <class name="Factile_Mode_v3.SkipAndSeeAnswer">
         <methods>
           <include name="initilize"/>
+          <include name="Verify_Skip_And_See_Answer"/>
           <include name="tearDown"/>
-          <include name="Manually_EnableDisable_button_checked_At_Global_Settings"/>
         </methods>
-      </class> <!-- Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer -->
+      </class> <!-- Factile_Mode_v3.SkipAndSeeAnswer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
