@@ -105,7 +105,9 @@ public class SkipAndSeeAnswer extends Base {
 	public void modeaterscreen() throws InterruptedException {
 		driver.findElement(By.xpath("//a[@href='/customize']")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//div[@class='resetAllCustomization']")).click();
+
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[@class='button customize-menu-btn  button--danger']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[@class='swal2-confirm swal2-styled']")).click();
 		Thread.sleep(2000);

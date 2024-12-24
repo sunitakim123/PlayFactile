@@ -58,7 +58,7 @@ public class HeaderMenuInFreeAccount extends Base {
 	for(WebElement link:allLinks){
 		String myString=link.getText();
 		 System.out.println(link.getText());
-		 assertTrue(myString.equals("Go Pro") || myString.equals("My Games") || myString.equals("Customize")||myString.equals("Account")||myString.equals("Support") || myString.equals("Sign Out") );	
+		 assertTrue(myString.equals("Go Pro") || myString.equals("My Games")  ||myString.equals("Question Bank") || myString.equals("Customize")||myString.equals("Account")||myString.equals("Support") || myString.equals("Sign Out") );	
 		 }
 	
 	}

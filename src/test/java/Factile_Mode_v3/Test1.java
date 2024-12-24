@@ -31,7 +31,7 @@ public class Test1 extends Base{
 	Actions act;
 	WebDriverWait wait;
 
-	public static Logger Log = LogManager.getLogger(Log_In.class.getName());
+	public static Logger Log = LogManager.getLogger(Test1.class.getName());
 
 	@BeforeTest
 	public void initilize() throws IOException, InterruptedException {		

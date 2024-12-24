@@ -109,10 +109,10 @@ public class GoProToSubscriptionHomeSchoolYearlyData_Verify extends Base {
 		
 		Thread.sleep(3000);
 		*/
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@href='/settings']")));
 		
 		// driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")).click();
-		WebElement ClickOnAccountLink = driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a"));
+		WebElement ClickOnAccountLink = driver.findElement(By.xpath("//a[@href='/settings']"));
 		js1.executeScript("arguments[0].click();", ClickOnAccountLink);
 		// Create object of SimpleDateFormat class and decide the format
 		LocalDate futureDate = LocalDate.now().plusYears(1);

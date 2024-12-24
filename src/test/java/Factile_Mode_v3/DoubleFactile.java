@@ -28,7 +28,7 @@ public class DoubleFactile extends Base {
 	WebDriver driver;
 	WebDriver driver1;
 	WebDriverWait wait, wait1;
-	int int2, expectedtotalscore, calculate, exp=0, calc;
+	int int2, expectedtotalscore, calculate, exp = 0, calc;
 	String s6, s7, GameName, GameURL, twitterLink, PintrestLink, t1, p1, parent, expectedValue, actualValue;
 	WebElement ElementNotGoingToVisible;
 	Actions act;
@@ -53,7 +53,7 @@ public class DoubleFactile extends Base {
 	public void Double_Factile_checked_At_Global_Settings() throws InterruptedException, IOException {
 		Log_in_Elements lobj1 = new Log_in_Elements(driver);
 		Thread.sleep(2000);
-		WebElement ClickOnSignIN= driver.findElement(By.xpath("(//a[@href='/signin'])[2]"));
+		WebElement ClickOnSignIN = driver.findElement(By.xpath("(//a[@href='/signin'])[2]"));
 		JavascriptExecutor executor6 = (JavascriptExecutor) driver;
 		executor6.executeScript("arguments[0].click();", ClickOnSignIN);
 		Thread.sleep(2000);
@@ -101,7 +101,7 @@ public class DoubleFactile extends Base {
 
 	@AfterTest
 	public void tearDown() throws InterruptedException, IOException {
-
+ 
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
 		driver.quit();
@@ -123,7 +123,9 @@ public class DoubleFactile extends Base {
 	public void modeaterscreen() throws InterruptedException {
 		driver.findElement(By.xpath("//a[@href='/customize']")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//div[@class='resetAllCustomization']")).click();
+
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[@class='button customize-menu-btn  button--danger']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[@class='swal2-confirm swal2-styled']")).click();
 		Thread.sleep(2000);
@@ -211,7 +213,7 @@ public class DoubleFactile extends Base {
 				WebElement JoinSubmit = driver1.findElement(By.xpath("//input[@class='joinBtn yellowBG mt-4 mb-4']"));
 				JavascriptExecutor executor2 = (JavascriptExecutor) driver1;
 				executor2.executeScript("arguments[0].click();", JoinSubmit);
-				
+
 				Thread.sleep(5000);
 				WebElement mascotselection = driver1.findElement(By.xpath("(//span[@class='setupCharacterName'])[1]"));
 				JavascriptExecutor executor4 = (JavascriptExecutor) driver1;
@@ -248,7 +250,7 @@ public class DoubleFactile extends Base {
 				driver.findElement(By.xpath("//button[@class='backToBoard']")).click();
 				Thread.sleep(2000);
 
-				driver.findElement(By.xpath("(//span[@class='option   clickable'])[3]")).click();
+				driver.findElement(By.xpath("(//span[@class='option   clickable'])[2]")).click();
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//button[@class='swal2-confirm swal2-styled']")).click();
 				Thread.sleep(2000);
@@ -292,18 +294,18 @@ public class DoubleFactile extends Base {
 					Thread.sleep(2000);
 					x = y;
 					System.out.println("value of x at last is :-" + x);
-					exp=calc + x;
+					exp = calc + x;
 					System.out.println(exp);
-					calc=exp;				
+					calc = exp;
 					System.out.println(calc);
 
 				}
-				int calculatedscore=score+calc;
+				int calculatedscore = score + calc;
 				System.out.println("Counted score:-" + calculatedscore);
 				String scoreInsidePodiumAtEnd = driver.findElement(By.xpath("//div[@class='podium-scoreboard-score']"))
 						.getText();
 				String actual = scoreInsidePodiumAtEnd.substring(1);
-				
+
 				int scoreactual = Integer.parseInt(actual);
 				System.out.println("Score inisde podium=" + scoreactual);
 				Assert.assertEquals(calculatedscore, scoreactual);

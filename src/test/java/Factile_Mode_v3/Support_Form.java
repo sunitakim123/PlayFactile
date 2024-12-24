@@ -52,7 +52,7 @@ public class Support_Form extends Base {
 		lobj1.getenterPwd().sendKeys(prop.getProperty("pwd"));
 		lobj1.getlogin().click();
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[4]")).click();
+		driver.findElement(By.xpath("//a[text()='Support']")).click();
 		Thread.sleep(3000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 

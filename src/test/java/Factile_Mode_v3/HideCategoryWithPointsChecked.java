@@ -103,6 +103,15 @@ public class HideCategoryWithPointsChecked extends Base {
 	public void modeaterscreen() throws InterruptedException {
 		driver.findElement(By.xpath("//a[@href='/customize']")).click();
 		Thread.sleep(2000);
+
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[@class='button customize-menu-btn  button--danger']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[@class='swal2-confirm swal2-styled']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[@class='swal2-confirm swal2-styled']")).click();
+		Thread.sleep(2000);
+		Thread.sleep(2000);
 		System.out.println(
 				driver.findElement(By.xpath("//label[text()='Hide Category And Points On Question Tile']")).getText());
 

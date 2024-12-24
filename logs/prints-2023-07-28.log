@@ -1,0 +1,53 @@
+15:40:52.681 [main] INFO  Factile_Mode_v3.ChangePassword - Driver is Initilize
+15:40:59.538 [main] INFO  Factile_Mode_v3.ChangePassword - Navigated to homePage
+15:41:22.918 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+15:41:28.380 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+15:41:54.050 [main] INFO  Factile_Mode_v3.CustomNotification - At customization page>>Custom Notification is checked >> 
+15:43:03.428 [main] INFO  Factile_Mode_v3.CustomPointsforRows - Driver is Initilize
+15:43:11.685 [main] INFO  Factile_Mode_v3.CustomPointsforRows - Navigated to homePage
+15:45:23.110 [main] INFO  Factile_Mode_v3.DailyDouble - Driver is Initilize
+15:45:29.588 [main] INFO  Factile_Mode_v3.DailyDouble - Navigated to homePage
+15:45:58.427 [main] INFO  Factile_Mode_v3.DailyDouble - At customization page>> Checked Daily Double >> 
+15:47:04.903 [main] INFO  Factile_Mode_v3.DeleteAccount - Driver is Initilize
+15:47:10.637 [main] INFO  Factile_Mode_v3.DeleteAccount - Navigated to homePage
+18:16:23.975 [main] INFO  Factile_Mode_v3.ChangePassword - Driver is Initilize
+18:16:31.523 [main] INFO  Factile_Mode_v3.ChangePassword - Navigated to homePage
+18:16:53.298 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+18:16:56.762 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+18:17:21.755 [main] INFO  Factile_Mode_v3.CustomNotification - At customization page>>Custom Notification is checked >> 
+18:18:28.297 [main] INFO  Factile_Mode_v3.CustomNotification - Custom Notification is working fine
+18:18:32.504 [main] INFO  Factile_Mode_v3.CustomPointsforRows - Driver is Initilize
+18:18:38.693 [main] INFO  Factile_Mode_v3.CustomPointsforRows - Navigated to homePage
+18:22:01.164 [main] INFO  Factile_Mode_v3.CustomPointsforRows - Custom Points for rows is working fine
+18:22:09.617 [main] INFO  Factile_Mode_v3.DailyDouble - Driver is Initilize
+18:22:15.102 [main] INFO  Factile_Mode_v3.DailyDouble - Navigated to homePage
+18:22:45.605 [main] INFO  Factile_Mode_v3.DailyDouble - At customization page>> Checked Daily Double >> 
+18:25:13.787 [main] INFO  Factile_Mode_v3.DailyDouble - Daily Double is working fine
+18:25:18.370 [main] INFO  Factile_Mode_v3.DeleteAccount - Driver is Initilize
+18:25:23.441 [main] INFO  Factile_Mode_v3.DeleteAccount - Navigated to homePage
+18:25:57.075 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Driver is Initilize
+18:26:01.622 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Navigated to homePage
+18:26:23.708 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - At customization page>> Checked Display Answer Button >> 
+18:27:24.553 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Display Answer Button>> When Checked
+18:27:32.191 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Driver is Initilize
+18:27:38.082 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Navigated to homePage
+18:27:58.464 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - At customization page>> Checked Display Exact Case >> 
+18:28:57.744 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Display Exact Case>> When Checked
+18:29:05.408 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Driver is Initilize
+18:29:12.673 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Navigated to homePage
+18:29:33.185 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - At customization page>> Checked Display Exact Case >> 
+18:30:34.592 [main] INFO  Factile_Mode_v3.DisplayExactCaseUnChecked - Display Exact Case>> When Checked
+18:30:42.140 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - Driver is Initilize
+18:30:45.879 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileChecked - Navigated to homePage
+18:31:51.031 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - Driver is Initilize
+18:31:55.826 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - Navigated to homePage
+18:32:16.941 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - At customization page>> Checked Display Exact Case >> 
+18:33:30.196 [main] INFO  Factile_Mode_v3.DisplayQuestionOnGameBoardTileUnChecked - Display question on GameBoard>> When UnChecked
+18:33:37.827 [main] INFO  Factile_Mode_v3.DoubleFactile - Driver is Initilize
+18:33:43.359 [main] INFO  Factile_Mode_v3.DoubleFactile - Navigated to homePage
+18:34:19.529 [main] INFO  Factile_Mode_v3.DoubleFactile - At customization page>> Double Factile is Checked >> 
+18:36:13.156 [main] INFO  Factile_Mode_v3.ForgetPassword - Driver is Initilize
+18:36:20.620 [main] INFO  Factile_Mode_v3.ForgetPassword - Navigated to homePage
+18:36:58.590 [main] INFO  Factile_Mode_v3.GoProToSubscriptionHomeSchoolMonthlyData_Verify - Driver is Initilize
+18:37:05.801 [main] INFO  Factile_Mode_v3.GoProToSubscriptionHomeSchoolMonthlyData_Verify - Navigated to homePage
+18:37:54.216 [main] INFO  Factile_Mode_v3.GoProToSubscriptionHomeSchoolYearlyData_Verify - Driver is Initilize

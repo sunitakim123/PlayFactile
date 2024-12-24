@@ -28,7 +28,7 @@ public class Listeners2 extends Base implements ITestListener {
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		extentTest.get().log(Status.PASS, "Test Passes");
+		test.log(Status.PASS, "Test Passed");
 
 	}
 
@@ -47,7 +47,7 @@ public class Listeners2 extends Base implements ITestListener {
 		try {
 			extentTest.get().addScreenCaptureFromPath(getscreenShotPath(testMethodName, driver), result.getMethod().getMethodName());
 			//getscreenShotPath(testMethodName, driver);
-		} catch (IOException e) {
+		} catch (Exception e) {
 
 			e.printStackTrace();
 		}

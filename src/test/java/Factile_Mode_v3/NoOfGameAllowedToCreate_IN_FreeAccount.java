@@ -68,36 +68,33 @@ public class NoOfGameAllowedToCreate_IN_FreeAccount extends Base {
 		int randomInt2 = randomGenerator.nextInt(10);
 		String gamename = "Test"+randomInt2;
 		String gameURL= "game" +randomInt2;
+
+
+
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='button sidebar-nav__btn--icon undefined  button--primary']")));
+	
+		driver.findElement(By.xpath("//button[@class='button sidebar-nav__btn--icon undefined  button--primary']")).click();
 		
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='form-control']")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[7]/div/div/div/div[2]/form/div[1]/input")));
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
-		WebElement textbox = driver.findElement(By.xpath("//input[@class='form-control']"));
+		WebElement textbox = driver.findElement(By.xpath("/html/body/div[7]/div/div/div/div[2]/form/div[1]/input"));
 		js1.executeScript("arguments[0].click();", textbox);
 		textbox.sendKeys(gamename);
-		/*
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='advanceOptionWrap']")));
-		WebElement ClickOnAdvancedOption = driver.findElement(By.xpath("//div[@class='advanceOptionWrap']"));
-		js1.executeScript("arguments[0].click();", ClickOnAdvancedOption);
-		
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='form-control']")));
-		WebElement enterGameName = driver.findElement(By.xpath("//input[@class='form-control']"));
-		js1.executeScript("arguments[0].click();", enterGameName);
-		enterGameName.sendKeys(gameURL);
-		*/
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[contains(text(),'Create Game')]")));
-		WebElement button = driver.findElement(By.xpath("//button[contains(text(),'Create Game')]"));
+	
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[7]/div/div/div/div[3]/button[2]")));
+		WebElement button = driver.findElement(By.xpath("/html/body/div[7]/div/div/div/div[3]/button[2]"));
 		js1.executeScript("arguments[0].click();", button);
 		Thread.sleep(3000);
 		
 		//checking element is empty or not
 		if(driver.findElements(By.xpath("(//a[@class='option clickable'])[1]")).isEmpty()){
 		    //THEN FETCH THE ERROR MESSAGE FROM POP UP.
-			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='swal2-content']")));
-			String s1= driver.findElement(By.xpath("//div[@id='swal2-content']")).getText();
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[7]/div/div/div[2]/div")));
+			String s1= driver.findElement(By.xpath("/html/body/div[7]/div/div/div[2]/div")).getText();
 			System.out.println("User who has free account are able to create total 3 games, and when user trying to create "+i+  "th game, the Error message he's getting:-"+s1);
 			
-			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='swal2-confirm swal2-styled']")));
-			WebElement button2 = driver.findElement(By.xpath("//button[@class='swal2-confirm swal2-styled']"));
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'Close')]")));
+			WebElement button2 = driver.findElement(By.xpath("//*[contains(text(),'Close')]"));
 			js1.executeScript("arguments[0].click();", button2);
 			
 			
@@ -115,8 +112,10 @@ public class NoOfGameAllowedToCreate_IN_FreeAccount extends Base {
 	}
 
 	public void delete_Account() throws InterruptedException {
-		driver.findElement(By.xpath("//ul[@class='navbar-nav menu']//li[4]")).click();
-		Thread.sleep(2000);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[normalize-space()='Account']")));
+		JavascriptExecutor js5 = (JavascriptExecutor) driver;
+		WebElement ClickOnAccountMenu = driver.findElement(By.xpath("//a[normalize-space()='Account']"));
+		js5.executeScript("arguments[0].click();", ClickOnAccountMenu); 
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='deleteAccountWrapper']/button")));
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
 		WebElement button = driver.findElement(By.xpath("//*[@class='deleteAccountWrapper']/button"));
@@ -131,7 +130,7 @@ public class NoOfGameAllowedToCreate_IN_FreeAccount extends Base {
 		driver.findElement(By.xpath("//*[contains(text(),'Delete!')]")).click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'Yes!')]")));
 		driver.findElement(By.xpath("//*[contains(text(),'Yes!')]")).click();
-		Thread.sleep(4000);
+
 	}
 
 	@AfterTest

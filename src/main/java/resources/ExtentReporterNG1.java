@@ -11,7 +11,7 @@ public class ExtentReporterNG1 {
 		//ExtentReports //ExtentSparkReports
 		String path =	System.getProperty("user.dir")+"\\reports\\index.html";
 		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
-		reporter.config().setReportName("Web Automation Result");
+		reporter.config().setReportName("PlayFactile  Automation TestCases Result");
 		reporter.config().setDocumentTitle("Test Results");
 		extent = new ExtentReports();
 		extent.attachReporter(reporter);

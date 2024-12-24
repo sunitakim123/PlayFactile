@@ -52,7 +52,7 @@ public class Sign_Out extends Base {
 		Thread.sleep(2000);
 		Log_in_Elements lobj1= new Log_in_Elements(driver);
 		WebElement ClickOnSignIN= driver.findElement(By.xpath("(//a[@href='/signin'])[2]"));
-
+////div[@class='mt-1 pr-3']
 		JavascriptExecutor executor6 = (JavascriptExecutor) driver;
 		executor6.executeScript("arguments[0].click();", ClickOnSignIN);
 		
@@ -60,10 +60,10 @@ public class Sign_Out extends Base {
 		lobj1.getenterEmail().sendKeys(prop.getProperty("username"));
 		lobj1.getenterPwd().sendKeys(prop.getProperty("pwd"));
 		lobj1.getlogin().click();
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(),'Sign Out')]")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='mt-1 pr-3']")));
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//span[contains(text(),'Sign Out')]")).click();
-		
+		driver.findElement(By.xpath("//div[@class='mt-1 pr-3']")).click();
+		driver.findElement(By.xpath("//*[@id=\"navbar-list-2\"]/ul/li[6]/div/ul/li[3]/span")).click();
 		Thread.sleep(5000);
 		String currentURL = driver.getCurrentUrl();
 		System.out.println(">>" + currentURL);

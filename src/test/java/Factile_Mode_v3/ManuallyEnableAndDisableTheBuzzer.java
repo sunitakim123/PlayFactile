@@ -78,6 +78,7 @@ public class ManuallyEnableAndDisableTheBuzzer extends Base {
 
 	@AfterTest
 	public void tearDown() throws InterruptedException, IOException {
+
 		driver1.quit();
 		driver.switchTo().window(driver.getWindowHandle());
 		driver.quit();
@@ -100,7 +101,9 @@ public class ManuallyEnableAndDisableTheBuzzer extends Base {
 	public void modeaterscreen() throws InterruptedException {
 		driver.findElement(By.xpath("//a[@href='/customize']")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//div[@class='resetAllCustomization']")).click();
+
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[@class='button customize-menu-btn  button--danger']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[@class='swal2-confirm swal2-styled']")).click();
 		Thread.sleep(2000);
@@ -202,6 +205,11 @@ public class ManuallyEnableAndDisableTheBuzzer extends Base {
 				Thread.sleep(3000);
 				driver.findElement(By.xpath("//span[contains(text(),'Begin Game')]")).click();
 				Thread.sleep(2000);
+
+				// for (int j = 1; j <= 6; j++) {
+				// driver.findElement(By.xpath("(//span[@data-points='100'])[" + j +
+				// "]")).click();
+
 				for (int j = 1; j <= 6; j++) {
 					driver.findElement(By.xpath("(//span[@data-points='100'])[" + j + "]")).click();
 					Thread.sleep(2000);
@@ -247,7 +255,7 @@ public class ManuallyEnableAndDisableTheBuzzer extends Base {
 
 				}
 
-			 }
+			}
 		}
 	}
 }

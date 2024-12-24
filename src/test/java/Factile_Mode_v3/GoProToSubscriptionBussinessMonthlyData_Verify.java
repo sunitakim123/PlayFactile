@@ -110,14 +110,8 @@ Thread.sleep(2000);
 		sobj.getPassword().sendKeys("12345678");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		
-	/*
-		JavascriptExecutor js2 = (JavascriptExecutor) driver;
-		WebElement button2 = driver.findElement(By.xpath("//*[@class='goBack'][2]"));
-		js2.executeScript("arguments[0].click();", button2);
-		*/
 		
-		// driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")).click();
-		WebElement ClickOnAccountLink = driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a"));
+		WebElement ClickOnAccountLink = driver.findElement(By.xpath("//a[@href='/settings']"));
 		js1.executeScript("arguments[0].click();", ClickOnAccountLink);
 		// Create object of SimpleDateFormat class and decide the format
 		LocalDate futureDate = LocalDate.now().plusMonths(1);
@@ -152,6 +146,7 @@ Thread.sleep(2000);
 
 	public void delete_Account() throws InterruptedException {
 		
+		Thread.sleep(3000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='deleteAccountWrapper']/button")));
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
 		WebElement button = driver.findElement(By.xpath("//*[@class='deleteAccountWrapper']/button"));

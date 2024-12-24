@@ -85,7 +85,8 @@ public class TwoFactorAuthentication extends Base {
 		currentURL = driver.getCurrentUrl();
 		//assertEquals(currentURL, expectedUrl);
 		assertTrue(currentURL.equals("https://www.awspf.com/mygames") || currentURL.equals("https://www.playfactile.com/mygames"));
-		
+		Log.info("Two Factor Authentication is working fine");
+		System.out.println("Two Factor Authentication  is working fine");
 	}
 
 	@AfterTest 

@@ -1,0 +1,50 @@
+18:38:00.235 [main] INFO  Factile_Mode_v3.GoProToSubscriptionHomeSchoolYearlyData_Verify - Navigated to homePage
+18:38:55.927 [main] INFO  Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify - Driver is Initilize
+18:39:03.275 [main] INFO  Factile_Mode_v3.GoProToSubscriptionBussinessMonthlyData_Verify - Navigated to homePage
+18:40:03.568 [main] INFO  Factile_Mode_v3.GoProToSubscriptionBussinessYearlyData_Verify - Driver is Initilize
+18:40:08.681 [main] INFO  Factile_Mode_v3.GoProToSubscriptionBussinessYearlyData_Verify - Navigated to homePage
+18:40:53.850 [main] INFO  Factile_Mode_v3.HeaderMenuInFreeAccount - Driver is Initilize
+18:41:00.136 [main] INFO  Factile_Mode_v3.HeaderMenuInFreeAccount - Navigated to homePage
+18:41:08.295 [main] INFO  Factile_Mode_v3.HeaderMenuInPaidAccount - Driver is Initilize
+18:41:19.490 [main] INFO  Factile_Mode_v3.HeaderMenuInPaidAccount - Navigated to homePage
+18:41:30.389 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - Driver is Initilize
+18:41:36.634 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - Navigated to homePage
+18:41:59.461 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - At customization page>> Check Hide Category with Points>> 
+18:43:01.009 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsChecked - Hide category with points is working fine>> When Checked
+18:43:08.765 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Driver is Initilize
+18:43:16.109 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Navigated to homePage
+18:43:37.726 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - At customization page>> Check Hide Category with Points>> 
+18:44:38.654 [main] INFO  Factile_Mode_v3.HideCategoryWithPointsUnChecked - Hide category with points is not working >>When UnChecked
+18:44:46.346 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Driver is Initilize
+18:44:52.790 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Navigated to homePage
+18:45:13.898 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - At customization page>> Manually Enable/disable The Buzzer is checked >> 
+18:46:45.572 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+18:47:16.489 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+18:47:47.278 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+18:48:18.075 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+18:48:48.965 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+18:49:19.812 [main] INFO  Factile_Mode_v3.ManuallyEnableAndDisableTheBuzzer - Enable/Disable buzzer is working fine
+18:49:28.002 [main] INFO  Factile_Mode_v3.MixQuestionTypesInChoice - Driver is Initilize
+18:49:34.205 [main] INFO  Factile_Mode_v3.MixQuestionTypesInChoice - Navigated to homePage
+18:49:56.088 [main] INFO  Factile_Mode_v3.MixQuestionTypesInChoice - At customization page>> Mix Question Type In Choice >> 
+13:07:02.319 [main] INFO  Factile_Mode_v3.Log_In - Driver is Initilize
+13:07:05.207 [main] INFO  Factile_Mode_v3.Log_In - Navigated to homePage
+13:07:09.472 [main] INFO  Factile_Mode_v3.Log_In - Log in working fine
+13:08:28.674 [main] INFO  Factile_Mode_v3.ChangePassword - Driver is Initilize
+13:08:30.980 [main] INFO  Factile_Mode_v3.ChangePassword - Navigated to homePage
+13:08:50.191 [main] INFO  Factile_Mode_v3.CustomNotification - Driver is Initilize
+13:08:52.908 [main] INFO  Factile_Mode_v3.CustomNotification - Navigated to homePage
+13:09:21.531 [main] INFO  Factile_Mode_v3.CustomNotification - At customization page>>Custom Notification is checked >> 
+13:10:30.829 [main] INFO  Factile_Mode_v3.CustomPointsforRows - Driver is Initilize
+13:10:32.858 [main] INFO  Factile_Mode_v3.CustomPointsforRows - Navigated to homePage
+13:12:42.537 [main] INFO  Factile_Mode_v3.DailyDouble - Driver is Initilize
+13:12:44.770 [main] INFO  Factile_Mode_v3.DailyDouble - Navigated to homePage
+13:13:11.453 [main] INFO  Factile_Mode_v3.DailyDouble - At customization page>> Checked Daily Double >> 
+13:14:18.249 [main] INFO  Factile_Mode_v3.DeleteAccount - Driver is Initilize
+13:14:20.738 [main] INFO  Factile_Mode_v3.DeleteAccount - Navigated to homePage
+13:14:52.805 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Driver is Initilize
+13:14:55.418 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - Navigated to homePage
+13:15:15.219 [main] INFO  Factile_Mode_v3.DisplayAnswerButton - At customization page>> Checked Display Answer Button >> 
+13:16:24.677 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Driver is Initilize
+13:16:26.727 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - Navigated to homePage
+13:16:46.891 [main] INFO  Factile_Mode_v3.DisplayExactCaseChecked - At customization page>> Checked Display Exact Case >> 

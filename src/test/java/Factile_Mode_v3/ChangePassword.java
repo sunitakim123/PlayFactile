@@ -53,14 +53,14 @@ public class ChangePassword extends Base {
 		lobj1.getlogin().click();
 		
 		
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='navbar-list-2']/ul/li[4]/a")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='navbar-list-2']/ul/li[5]/a")));
 		JavascriptExecutor js2 = (JavascriptExecutor) driver;
-		WebElement button2 = driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[4]/a"));
+		WebElement button2 = driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[5]/a"));
 		js2.executeScript("arguments[0].click();", button2);
 		
 		
 		
-		driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[4]/a")).click();
+		//driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[5]/a")).click();
 		Thread.sleep(2000);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='col-sm-12 col-md-3 col-lg-3']//input")));
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
@@ -83,43 +83,11 @@ public class ChangePassword extends Base {
 		Thread.sleep(4000); 
 		String acutalmsg = driver.findElement(By.xpath("//div[@id='swal2-content']")).getText();
 		System.out.println("Pop up message:- " + acutalmsg);
-		assertEquals(acutalmsg, expected);
-/*
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//button[@class='swal2-confirm swal2-styled']")).click();
-
-		Thread.sleep(6000);
-		driver.findElement(By.xpath("//span[contains(text(),'Sign Out')]")).click();
-		Thread.sleep(6000);
-
-		// resetting password back to the same
-		lobj1.getenterEmail().sendKeys("playfactile14@gmail.com");
-		lobj1.getenterPwd().sendKeys("12345678");
-		lobj1.getlogin().click();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[@id='navbar-list-2']/ul/li[3]/a")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//div[@class='col-sm-12 col-md-3 col-lg-3']//input")).click();
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='oldPass']")));
-		Thread.sleep(8000);
-		
-		driver.findElement(By.xpath("//input[@name='oldPass']")).sendKeys("12345678");
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='newPass']")));
-		driver.findElement(By.xpath("//input[@name='newPass']")).sendKeys("12345678");
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='cnfNewPass']")));
-		driver.findElement(By.xpath("//input[@name='cnfNewPass']")).sendKeys("12345678");
-
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@value='Save']")));
-		Thread.sleep(4000);
-
-		WebElement button2 = driver.findElement(By.xpath("//input[@value='Save']"));
-		js1.executeScript("arguments[0].click();", button2);
-*/
-	}
+		assertEquals(acutalmsg, expected);	}
 
 	@AfterTest
 	public void close() {
-		driver.quit();
+		//driver.quit();
 	}
 
 }
